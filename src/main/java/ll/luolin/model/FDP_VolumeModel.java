@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 空域模型（复用LayerModel的设计模式）
  */
-public class AirspaceModel {
+public class FDP_VolumeModel {
     public enum AirspaceType {
         FIR("飞行情报区"),
         SECTOR("扇区"),
@@ -61,12 +61,12 @@ public class AirspaceModel {
         new SimpleObjectProperty<>(javafx.scene.paint.Color.BLACK);
     private final DoubleProperty strokeWidth = new SimpleDoubleProperty(1.0);
     
-    public AirspaceModel() {
+    public FDP_VolumeModel() {
         // 设置默认样式
         type.addListener((obs, oldVal, newVal) -> setDefaultStyle(newVal));
     }
     
-    public AirspaceModel(String name, AirspaceType type) {
+    public FDP_VolumeModel(String name, AirspaceType type) {
         this();
         this.name.set(name);
         this.type.set(type);
