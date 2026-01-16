@@ -1,0 +1,14 @@
+---             
+--                   
+--  
+-- FILE :  DATASET_CONFIGURATION.ASF
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON    
+-- VERSION	  :   V5  
+--     
+--       
+-- 
+TARGET       | TCU
+PLATFORM     | OPS
+DISTRIBUTION | GZTM 
+--CENTRAL_ONLY | TRUE      

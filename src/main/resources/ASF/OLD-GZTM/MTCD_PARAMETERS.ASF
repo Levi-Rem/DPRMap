@@ -1,0 +1,104 @@
+
+/GLOBAL_PARAMETERS/ 
+
+TCT_MAX_VERTICAL_SPEED_CLIMB            | 8000FTM| 1200FTM
+TCT_MAX_VERTICAL_SPEED_DESCEND          | 8000FTM
+TCT_MIN_VERTICAL_SPEED_CLIMB            | 6000FTM
+TCT_MIN_VERTICAL_SPEED_DESCEND          | 6000FTM
+TCT_TIME_TO_LEAVE_CURRENT_LEVEL         | 480   |
+TCT_VERT_SPEED_CLIMB_THRESHOLD          | 8000FTM
+TCT_VERT_SPEED_DESCEND_THRESHOLD        | 8000FTM
+TCT_MIN_VERTICAL_SPEED_RATIO            | 0.5
+TCT_MAX_VERTICAL_SPEED_RATIO            | 1.0
+TCT_DISTANCE_OF_MANOEUVRE               | 18KM
+TCT_DIRECTION_TOLERANCE                 | 60
+TCT_INCREASED_DIRECTION_TOLERANCE       | 60
+TCT_FPL_HYPOTHESIS_ENABLED              | TRUE
+TCT_MIN_SPEED                           | K222.2
+TCT_MAX_SPEED                           | K1850.1 |
+TCT_PROCESS_TRACK_IN_HOLD | FALSE
+TCT_SUPPRESS_ALERT_VFR | FALSE
+TCT_SUPPRESS_ALERT_IFR | FALSE
+
+
+/PARAMETER_GROUPS/
+TCT_PARAMETER_GROUP_ID                  | 1
+TCT_OVERSHOOT                           | 100.0FT
+TCT_DEFAULT_TURN_RATE                   | 1.1
+--TCT_MIN_RATE_OF_TURN                    | 5
+TCT_IFL_ROC_ROD_S1                      | 2000FTM
+TCT_IFL_ROC_ROD_S2                      | 2000FTM
+TCT_IFL_ROC_ROD_S3                      | 0FTM
+TCT_IFL_FOR_LEVEL_CHECK                 | FALSE
+TCT_LATERAL_SEPARATION                  | 4.9NM
+TCT_ASSUME_NON_COUPLED_AS_RVSM          | TRUE
+--TCT_RVSM_LOWER_LIMIT                    | F450
+--TCT_RVSM_UPPER_LIMIT                    | F450
+TCT_ALT_SEP_LOW                         | F1.0
+TCT_ALT_SEP_HIGH                        | F19.5
+TCT_LOOKAHEAD_TIME                      | 300
+TCT_WARNING_TIME                        | 300
+TCT_IMMINENT_TIME                       | 180
+TCT_CONFLICT_QUALIITY_THRESHOLD         | 0.5
+TCT_CONFLICT_COUNTER_THRESHOLD          | 3
+TCT_CONFLICT_MISS_THRESHOLD             | 3
+TCT_DIVERGING_SEPARATION                | 4.9NM
+--TCT_PROCESS_TRACK_IN_HOLD               |        FALSE  
+TCT_CFL_FOR_LEVEL_CHECK | FALSE
+TCT_HOR_SEP_COARSE | 2
+TCT_IFL_LIMIT_TIME |2
+
+
+TCT_PARAMETER_GROUP_ID                  | 2
+TCT_OVERSHOOT                           | 30.5M
+TCT_DEFAULT_TURN_RATE                   | 10.0
+--TCT_MIN_RATE_OF_TURN                    | 120
+TCT_IFL_ROC_ROD_S1                      | 8000FTM
+TCT_IFL_ROC_ROD_S2                      | 8000FTM
+TCT_IFL_ROC_ROD_S3                      | 8000FTM
+TCT_IFL_FOR_LEVEL_CHECK                 | FALSE
+TCT_LATERAL_SEPARATION                  | 0.2KM
+TCT_ASSUME_NON_COUPLED_AS_RVSM          | FALSE
+--TCT_RVSM_LOWER_LIMIT                    | F450
+--TCT_RVSM_UPPER_LIMIT                    | F450
+TCT_ALT_SEP_LOW                         | S3.1
+TCT_ALT_SEP_HIGH                        | S60.8
+TCT_LOOKAHEAD_TIME                      | 480
+TCT_WARNING_TIME                        | 480
+TCT_IMMINENT_TIME                       | 480
+TCT_CONFLICT_QUALIITY_THRESHOLD         | 1.0
+TCT_CONFLICT_COUNTER_THRESHOLD          | 10
+TCT_CONFLICT_MISS_THRESHOLD             | 10
+TCT_DIVERGING_SEPARATION                | 10.0NM
+--TCT_PROCESS_TRACK_IN_HOLD               |        FALSE  
+TCT_CFL_FOR_LEVEL_CHECK | FALSE
+TCT_HOR_SEP_COARSE | 2
+TCT_IFL_LIMIT_TIME |2
+
+
+TCT_PARAMETER_GROUP_ID                  | 3
+TCT_OVERSHOOT                           | 150.0FT
+TCT_DEFAULT_TURN_RATE                   | 1.7
+--TCT_MIN_RATE_OF_TURN                    | 11
+TCT_IFL_ROC_ROD_S1                      | 2000FTM
+TCT_IFL_ROC_ROD_S2                      | 200FTM
+TCT_IFL_ROC_ROD_S3                      | 0FTM
+TCT_IFL_FOR_LEVEL_CHECK                 | TRUE
+TCT_LATERAL_SEPARATION                  | 4.2NM
+TCT_ASSUME_NON_COUPLED_AS_RVSM          | FALSE
+--TCT_RVSM_LOWER_LIMIT                    | F450
+--TCT_RVSM_UPPER_LIMIT                    | F450
+TCT_ALT_SEP_LOW                         | F1.5
+TCT_ALT_SEP_HIGH                        | F12.0
+TCT_LOOKAHEAD_TIME                      | 260
+TCT_WARNING_TIME                        | 240
+TCT_IMMINENT_TIME                       | 180
+TCT_CONFLICT_QUALIITY_THRESHOLD         | 0.6
+TCT_CONFLICT_COUNTER_THRESHOLD          | 3
+TCT_CONFLICT_MISS_THRESHOLD             | 4
+TCT_DIVERGING_SEPARATION                | 4.5NM
+--TCT_PROCESS_TRACK_IN_HOLD               |        FALSE  
+TCT_CFL_FOR_LEVEL_CHECK | FALSE
+TCT_HOR_SEP_COARSE | 2
+TCT_IFL_LIMIT_TIME |2
+

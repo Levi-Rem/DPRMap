@@ -1,0 +1,15 @@
+-- 
+--      FILE: TRACK_FILTERS.ASF 
+-- 
+--
+--      Version | Date   | Responsible     | Comment
+--
+-- .his 4.10.01 | 960604 | M.Watson (TRAC) | V3.10 simulator data -> v4.10
+-- .ver 4.41.01 | 971017 | D.Batty  (DMU)  | baseline
+-- 
+-- 
+-- Line Identificator | SAC |  SIC     | Point 1 | Point 2 | Level Min | Level Max | Track type | coupling |
+-------------------------------------------------------------------------------------------------------------- 
+--   SENDING_TRACK_3  |  02 | 00010000 |         |         |    100    |   200     |    SSR     |   Y      | 
+--   SENDING_TRACK_2  |  02 | 00010000 |         |         |           |           |   COMB     |          |      
+--   SENDING_TRACK_1  |  02 | 00010000 |         |         |           |           |    PSR     |   N      | 

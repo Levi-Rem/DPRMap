@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PdcParametersRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PdcParameters.xsd"><PdcParameters><CompanyInformation acarAddress="SYDGFXS" companyId="CAA"/><CompanyInformation acarAddress="SIATSTX" companyId="SIA"/><CompanyInformation acarAddress="DLHTSTX" companyId="DLH"/><CompanyInformation acarAddress="AFRTSTX" companyId="AFR"/><CompanyInformation acarAddress="SASTSTX" companyId="SAS"/><CompanyInformation acarAddress="NWATSTX" companyId="NWA"/></PdcParameters></PdcParametersRoot>

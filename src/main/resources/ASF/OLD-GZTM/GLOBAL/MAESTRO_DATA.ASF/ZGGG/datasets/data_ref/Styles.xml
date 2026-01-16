@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE StyleDatabase [
+<!ELEMENT StyleDatabase (Style*)>
+<!ATTLIST Style
+        name CDATA #REQUIRED>
+]>
+
+<!-- File generated on 2021/07/30 at 07:04:18 -->
+
+<StyleDatabase>
+   <Style name="Default" />
+</StyleDatabase>

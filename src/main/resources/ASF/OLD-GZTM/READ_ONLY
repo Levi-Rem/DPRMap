@@ -1,0 +1,96 @@
+/GZTM/
+CENTRAL_PATH|/usr/system/CENTRAL
+LOCAL_PATH|/usr/system/OPER
+gztmcdp1ali|CENTRAL CDP 
+gztmcdp1bli|CENTRAL CDP 
+gztmfdp1ali|FDP 
+gztmfdp1bli|FDP 
+gztmmst1ali|MSTS QNH 
+gztmmst1bli|MSTS QNH 
+gztmsgw1ali|AFP WAM 
+gztmsgw1bli|AFP WAM 
+gztmrec1ali|REC 
+gztmrec1bli|REC 
+gztmsnm1ali|SNM 
+gztmsnm1bli|SNM 
+gztmagp1ali|AGP 
+gztmagp1bli|AGP 
+gztmefd1ali|FEED 
+gztmefd1bli|FEED 
+gztmasp01li|REP 
+gztmod001li|MMI 
+gztmod002li|MMI 
+gztmod003li|MMI 
+gztmod004li|MMI 
+gztmod005li|MMI 
+gztmod006li|MMI 
+gztmod007li|MMI 
+gztmod008li|MMI 
+gztmod009li|MMI 
+gztmod010li|MMI 
+gztmod011li|MMI 
+gztmod012li|MMI 
+gztmod013li|MMI 
+gztmod014li|MMI 
+gztmod015li|MMI 
+gztmod016li|MMI 
+gztmod017li|MMI 
+gztmod018li|MMI 
+gztmod019li|MMI 
+gztmod020li|MMI 
+gztmod021li|MMI 
+gztmod022li|MMI 
+gztmod023li|MMI 
+gztmod024li|MMI 
+gztmod025li|MMI 
+gztmod026li|MMI 
+gztmod027li|MMI 
+gztmod028li|MMI 
+gztmod029li|MMI 
+gztmod030li|MMI 
+gztmod031li|MMI 
+gztmod032li|MMI 
+gztmod033li|MMI 
+gztmod034li|MMI 
+gztmod035li|MMI 
+gztmod036li|MMI 
+gztmod037li|MMI 
+gztmod038li|MMI 
+gztmod039li|MMI 
+gztmod040li|MMI 
+gztmod041li|MMI 
+gztmod042li|MMI 
+gztmod043li|MMI 
+gztmod044li|MMI 
+gztmflm01li|MMI 
+gztmflm02li|MMI 
+gztmatc01li|MMI 
+gztmfdo01li|MMI 
+gztmfdo02li|MMI 
+gztmtmp01li|MMI 
+gztmtmp02li|MMI 
+/GZRT/
+CENTRAL_PATH|/usr/system/CENTRAL
+LOCAL_PATH|/usr/system/OPER
+gzrtcdp1ali|CENTRAL CDP QNH 
+gzrtcdp1bli|CENTRAL CDP QNH 
+gzrtrec1ali|REC 
+gzrtrec1bli|REC 
+gzrtasp01li|REP 
+gzrtod001li|MMI 
+gzrtod002li|MMI 
+gzrtod003li|MMI 
+gzrtod004li|MMI 
+gzrtod005li|MMI 
+gzrtod006li|MMI 
+gzrtod007li|MMI 
+/GZBY/
+CENTRAL_PATH|/usr/system/CENTRAL
+LOCAL_PATH|/usr/system/OPER
+gztmfbs1ali|CENTRAL RBP QNH AFB SNB MSP AMB 
+gztmfbs1bli|CENTRAL RBP QNH AFB SNB MSP AMB 
+/GTBY/
+CENTRAL_PATH|/usr/system/CENTRAL
+LOCAL_PATH|/usr/system/OPER
+gzrtfbs1ali|CENTRAL RBP QNH AFB MSP AMB SNB 
+gzrtfbs1bli|CENTRAL RBP QNH AFB MSP AMB SNB 

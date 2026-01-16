@@ -1,0 +1,57 @@
+-- 
+--           FILE :  SECTORIZATION.ASF
+--
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--
+--
+--
+/OPS/ 
+--
+--
+-- 
+----------------------------------------------------------------------------
+-- Name  | STP | Logical Pos  | Logical Pos  | Logical Pos  | Logical Pos |
+----------------------------------------------------------------------------
+--
+-- TMA
+--
+  AP01	 | 1   | HE09	  | HE09     | HE09  | HE09  |   ||||||
+  AP02	 | 1   | HE08	  | HE08     | HE08  | HE08  |   ||||||
+  AP03   | 1   | HE06	  | HE06     | HE06  | HE06  |   ||||||
+  AP04	 | 1   | HE15	  | HE15     | HE15  | HE15  |   ||||||
+  AP05	 | 1   | HE14	  | HE14     | HE14  | HE14  |   ||||||
+  AP06   | 1   | HE10	  | HE10     | HE10  | HE10  |   ||||||
+  AP07   | 1   | HE07	  | HE07     | HE07  | HE07  |   ||||||
+  AM	 | 1   | HE15	  | HE15     | HE15  | HE15  |   ||||||
+  AP08   | 1   | HE14 	  | HE14     | HE14  | HE14  |   ||||||
+  AP09   | 1   | HE14 	  | HE14     | HE14  | HE14  |   ||||||
+  AP10   | 1   | HE14 	  | HE14     | HE14  | HE14  |   ||||||
+  AMAN   | 1   | AMAN1	  | AMAN1    | AMAN1 | AMAN1 |   ||||||
+
+--
+-- Baiyun Tower
+--
+  E1C    | 3   | E1C      | E1C      | E1C    | E1C   |   ||||||
+  E1P    | 3   | E1P  	  | E1P      | E1P    | E1P   |   ||||||
+  W1C    | 3   | W1C      | W1C      | W1C    | W1C   |   ||||||
+  W1P    | 3   | W1P 	  | W1P      | W1P    | W1P   |   ||||||
+  E2C    | 3   | E2C 	  | E2C      | E2C    | E2C   |   ||||||
+  E2P    | 3   | E2P  	  | E2P      | E2P    | E2P   |   ||||||
+  W2C    | 3   | W2C  	  | W2C      | W2C    | W2C   |   ||||||
+  W2P    | 3   | W2P      | W2P      | W2P    | W2P   |   ||||||
+
+
+/SECTORS_IN_FDECM_AREA/
+ZGAC | AC1 AC2 AC3 AC4 AC5 AC6 AC7 AC9 AC23 AC24 AC33 AC45 AC4T
+
+
+/SECTORS_IN_MHT_TWR_AREA/
+ZGTW | EC1C E1P W1C W1P  E2C E2P W2C W2P
+
+
+/SECTOR_PLANS_NAME/
+AM01+02| AM04| AM06 |AM09 |AM011| AM012 | AM013 |AM014|AP003 | AP001| 

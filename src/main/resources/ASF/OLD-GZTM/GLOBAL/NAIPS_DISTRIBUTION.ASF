@@ -1,0 +1,74 @@
+--
+--           FILE :  NAIPS_DISTRIBUTION.ASF 
+--
+--
+-- CREATION DATE  : 
+-- BY		  : 
+-- VERSION	  : 
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | Data not applicable to NESACC
+--
+--
+--
+--
+----------------------------------------------------------------------------------------------------
+-- Name | D/Q/DA | Functional sector Pos types | Comments
+----------------------------------------------------------------------------------------------------
+-- 
+--
+/ATIS/
+LOCATION | ZUUU 
+AP04   | DA | PLC | 
+--
+/AREA_QNH/
+LOCATION | ZUUU
+AP04   | DA | PLC |
+--
+/COM/
+LOCATION | ZUUU
+AP04   | Q  | PLC |
+--
+/METAR_SPECI/
+LOCATION | ZUUU
+AP04   | DA | PLC |
+--
+/ARFOR/
+LOCATION | ZUUU
+AP04   | DA | PLC |
+--
+/ATIS/
+LOCATION | ZUCK
+AP04   | DA | PLC |
+--
+/SPA/
+LOCATION  | ZUUU
+AP04   | Q  | PLC |
+--
+/MAA/
+LOCATION  | ZUUU
+AP04   | DA  | PLC |
+--
+/PROC/
+LOCATION  | ZUUU
+AP04   | D  | PLC |
+--
+/AIRMET/
+LOCATION  | ZUCK
+AP04   | D  | PLC |
+--
+/NAV/
+LOCATION  | ZUCK
+AP04   | Q  | PLC |
+--
+/ATS/
+LOCATION  | ZUUU
+AP04   | DA  | PLC |
+--
+/ARS/
+LOCATION  | ZUUU
+AP04   | Q  | PLC |
+--

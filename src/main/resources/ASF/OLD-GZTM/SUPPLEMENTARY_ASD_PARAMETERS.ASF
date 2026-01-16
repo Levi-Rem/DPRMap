@@ -1,0 +1,22 @@
+--
+--  FILE: SUPPLEMENTARY_ASD_PARAMETERS.ASF
+--
+-- CREATION DATE  :  24 Mar 2011
+-- BY             :  Kwang Wan
+-- VERSION        :  Initial
+--
+--
+--      Version | Date  | Responsible | Comment
+----------------|-------|-------------|---------------------------------------
+--      Initial |240311 | K WAN       | Initial
+--
+--
+
+/DEFAULT/
+SUPASD_POSITION_WINDOW_1|1|200|1900
+SUPASD_POSITION_WINDOW_2|2|210|900
+SUPASD_POSITION_WINDOW_3|2|220|220
+SUPASD_RANGE_SETTING |200
+SUPASD_WINDOW_SIZE|500|500
+SUPASD_SCALE_MARKER_POSITION |250|250
+SUPASD_RANGE_STEPS |10| 20|30|40|50|100|130|150|160|200|

@@ -1,0 +1,56 @@
+--
+-- FILE: AIRPORT_NAMES.ASF 
+--
+--========================================================================
+--[   GLOBAL   BLOCK   SYSTEM   ] 
+--========================================================================
+--
+--
+--
+-- Version      | Date          | Responsible            | Comment 
+-----------------|-------------|------------------------|------------------------------------------------------------------
+-- 1.1           30/03/98         Z. YAN     | Chinese Demo
+--
+--
+--========================================================================
+--[   SIMULATOR   ] 
+--========================================================================
+--
+--
+--
+-- Name  | Full Name         | Comments 
+-----------|--------------------|------------------------------------------------
+YMML  | Melbourne       | 
+WSSS  | Singapore          | 
+RJAA  | Tokyo                | 
+ZBAA  |  BEIJING | 
+ZBHH  |  HOHHOT | 
+ZBTJ  | Tianjin | 
+ZBYN  | TAIYUAN | 
+ZGGG  | GUANGZHOU |
+ZGHA  | CHANGSHA | 
+ZGHK  | HAIKOU | 
+ZGKL  | GUILIN  |
+ZGNN  | NANNING  |
+ZGSZ  | SHENZHEN  |
+ZLLL  | LANZHOU  |
+ZLXY  | XIAN | 
+ZPPP  | KUNMING  | 
+ZSAM  | XIAMEN  | 
+ZSHC  | HANGZHOU  | 
+ZSNB  | NINGBO  | 
+ZSOF  | HEFEI  | 
+ZSQD  | QINGDAO  | 
+ZSSS  | SHANGHAI  | 
+ZUUU  | CHENGDU  | 
+ZUXC  | XICHANG |
+ZWTN  | HOTAN  |
+ZWWW  | URUMUQI  |
+ZYCC  | CHANGCHUN  |
+ZYHB  | HARBIN  |
+ZYTL  | DALIAN  |
+ZYTX  | SHENYANG  |
+ZHHH  | Wuhan
+--
+--
+--

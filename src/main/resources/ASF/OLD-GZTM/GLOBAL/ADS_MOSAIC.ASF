@@ -1,0 +1,53 @@
+--
+--           FILE :  ADS_MOSAIC.ASF 
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.2  |21/10/04 | K WAN       | updated for Guangzhou SAT
+--
+--
+--
+--
+/PARAMETERS/
+MOSAIC_CELL_LONG_SIZE           | 1  |
+MOSAIC_CELL_LAT_SIZE            | 1  |
+NUMBER_OF_CONTRACTS             | 4  |
+ADS_PROJ_TIME_DELTA             | 15 |
+--
+/CONTRACTS/
+-- RECORD_NUMBER | 
+--   ADS_BASIC_UPDATE_RATE | 
+--     ADS_PERIOD_EARTH | 
+--       ADS_EARTH_REFERENCE_GROUP_REQUESTED |
+--         ADS_PERIOD_PREDICTED |
+--           ADS_PREDICTED_ROUTE_GROUP_REQUESTED |
+--              ADS_PERIOD_INTENT |
+--                ADS_INTENT_GROUP_REQUESTED |
+--                  ADS_PERIOD_AIR |
+--                    ADS_AIR_REFERENCE_GROUP_REQUESTED
+----------------------------------------------------------------------------------------------
+ 1 | 2  | 1 | TRUE  | 1 | TRUE  | 1 | TRUE  | 1 | TRUE  | 2 | FALSE |
+ 2 | 5  | 1 | TRUE  | 1 | TRUE  | 1 | TRUE  | 1 | TRUE  | 2 | FALSE |
+ 3 | 30 | 1 | TRUE  | 1 | TRUE  | 1 | TRUE  | 1 | TRUE  | 2 | FALSE |
+ 4 | 60 | 1 | FALSE | 1 | FALSE | 1 | FALSE | 1 | FALSE | 2 | FALSE | 
+--
+-- record 4 booleans set to false to limit responses from out of the fdrg.
+--
+/MOSAIC/ 
+--used radar coverage above 20000ft
+--
+-- Cell     	|	Rec	|	comments
+-- coords   	|	# 	|
+----------------|---------------|----------------------------------------------------
+1-111, 1-78	|	2	| The entire FPL SYSTEM AREA
+--
+--
+--

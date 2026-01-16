@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE sectorization SYSTEM "sectorization.dtd">
+<sectorization>
+
+  <ops>
+    <sector default_strip_format="1" logical_pos_plan1="EC01" logical_pos_plan2="EC01" logical_pos_plan3="EC01" logical_pos_plan4="EC01" name="AP1H"/>
+    <sector default_strip_format="1" logical_pos_plan1="EC01" logical_pos_plan2="EC01" logical_pos_plan3="EC01" logical_pos_plan4="EC01" name="AP1L"/>
+    <sector default_strip_format="1" logical_pos_plan1="EC04" logical_pos_plan2="EC04" logical_pos_plan3="EC04" logical_pos_plan4="EC04" name="AP2H"/>
+    <sector default_strip_format="1" logical_pos_plan1="EC04" logical_pos_plan2="EC04" logical_pos_plan3="EC04" logical_pos_plan4="EC04" name="AP2L"/>
+  </ops>
+
+  <functional_sector_data>
+    <functional_sector id="AP1H">
+      <default_strip_format>1</default_strip_format>
+      <logical_system_number>1</logical_system_number>
+    </functional_sector>
+    <functional_sector id="AP1L">
+      <default_strip_format>1</default_strip_format>
+      <logical_system_number>1</logical_system_number>
+    </functional_sector>
+    <functional_sector id="AP2H">
+      <default_strip_format>1</default_strip_format>
+      <logical_system_number>1</logical_system_number>
+    </functional_sector>
+    <functional_sector id="AP2L">
+      <default_strip_format>1</default_strip_format>
+      <logical_system_number>1</logical_system_number>
+    </functional_sector>
+  </functional_sector_data>
+
+</sectorization>

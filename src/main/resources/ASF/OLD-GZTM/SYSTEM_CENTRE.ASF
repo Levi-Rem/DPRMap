@@ -1,0 +1,20 @@
+-- 
+--           FILE :  SYSTEM_CENTRE 
+--
+--
+--
+--
+--      Version | Date     | Responsible | Comment 
+----------------|----------|-------------|---------------------------------------
+-- 
+--
+SYSTEM_CENTRE            |  232329N1131835E
+EXT_RADAR_SYSTEM_CENTRE  |  232329N1131835E
+-- 
+-- half great and small earth axis:
+--
+RDF_HALF_GREAT_AXIS  |  6378.137KM 
+RDF_HALF_SMALL_AXIS  |  6356.7523142KM 
+-- 
+HMI_SEGMENT_LENGTH_IN_SURVEILLANCE   |  50NM 
+HMI_SEGMENT_LENGTH_OUT_SURVEILLANCE  | 148NM 

@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feed_engine MHT4029.3_msg_trans_mode="" min_warn_time="120" na_string="NA">
+<synchros>
+<synchro key_count="3001" name="flight_plan_id"/>
+<synchro key_count="3001" name="system_track_id"/>
+<synchro key_count="301" name="adsc_track_id"/>
+<synchro key_count="1501" name="byps_track_id"/>
+</synchros>
+<sources>
+<source name="Identification">
+<range>
+<synchro-key bias="0" offset="0" synchro="flight_plan_id" type="s16"/>
+<synchro-key bias="0" offset="2" synchro="system_track_id" type="s16"/>
+</range>
+</source>
+<source name="FLIGHT_PLAN_T">
+<range>
+<synchro-key bias="0" offset="48" synchro="flight_plan_id" type="u16"/>
+</range>
+</source>
+<source name="QnhTL">
+<range/>
+</source>
+<source count="3000" first="1" life="10" name="AsterixAcc" size="24000">
+<range>
+<synchro-key bias="0" offset="4" synchro="system_track_id" type="u16"/>
+</range>
+</source>
+<source name="FdpDatapage">
+<range-select first="1" match_type="e32" offset="0" size="1"/>
+<range-select first="2" match_type="e32" offset="0" size="1"/>
+<range-select first="3" match_type="e32" offset="0" size="1"/>
+<range-select first="4" match_type="e32" offset="0" size="1"/>
+<range-select first="5" match_type="e32" offset="0" size="1"/>
+<range-select first="6" match_type="e32" offset="0" size="1"/>
+<range-select first="7" match_type="e32" offset="0" size="1"/>
+<range-select first="9" match_type="e32" offset="0" size="1"/>
+<range-select first="10" match_type="e32" offset="0" size="1"/>
+<range-select first="14" match_type="e32" offset="0" size="1"/>
+<range-select first="15" match_type="e32" offset="0" size="1"/>
+<range-select first="19" match_type="e32" offset="0" size="1"/>
+<range-select first="20" match_type="e32" offset="0" size="1"/>
+<range-select first="21" match_type="e32" offset="0" size="1"/>
+<range-select first="22" match_type="e32" offset="0" size="1"/>
+<range-select first="23" match_type="e32" offset="0" size="1"/>
+</source>
+</sources>
+<channels>
+<channel-udp address="233.0.0.8" id="1" name="Channel1" nic="eth3" port="EFEED_01" ttl="3"/>
+<channel-udp address="233.0.0.8" id="2" name="Channel2" nic="eth3" port="EFEED_02" ttl="3"/>
+<channel-udp address="233.0.0.8" id="3" name="Channel3" nic="eth3" port="EFEED_03" ttl="3"/>
+<channel-udp address="233.0.0.8" id="4" name="Channel4" nic="eth3" port="EFEED_04" ttl="3"/>
+<channel-udp address="233.0.0.7" id="5" name="Channel9" nic="eth3" port="EFEED_09" ttl="3"/>
+<channel-udp address="233.0.0.7" id="6" name="Channel7" nic="eth3" port="EFEED_07" ttl="3"/>
+<channel-udp address="233.0.0.7" id="7" name="Channel8" nic="eth3" port="EFEED_08" ttl="3"/>
+<channel-udp address="233.0.0.7" id="8" name="Channel10" nic="eth3" port="EFEED_10" ttl="3"/>
+<channel-udp address="233.0.0.7" id="9" name="Channel6" nic="eth3" port="EFEED_06" ttl="3"/>
+</channels>
+<messages>
+<message-text name="IDENT">
+<sources>
+<source name="Identification" range="0">
+<trigger event="field" offset="5" test="changed" type="e8"/>
+<trigger event="field" offset="4" test="changed" type="e8"/>
+<trigger event="field" offset="11" test="changed" type="e8"/>
+<trigger event="field" offset="0" test="changed" type="s16"/>
+<trigger event="field" offset="7" test="changed" type="u8"/>
+<trigger event="field" offset="2" test="changed" type="s16"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="IDENT" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="Identification"><field name="CLAM_RESULT" type="CLAM_RESULT_T">]]></text>
+<field function="" offset="10" source="0" type="e8">
+<key value="ADHERED"/>
+<key value="NOT_ADHERED"/>
+<key value="NOT_CHECKED"/>
+</field>
+<text><![CDATA[</field><field name="COMPOSED_OF_INFO_VALID" type="bool">]]></text>
+<field function="" offset="6" source="0" type="b8"/>
+<text><![CDATA[</field><field name="CONFLICT_FLIGHT_PLANS" type="s16">]]></text>
+<field function="" offset="28" source="0" type="s16"/>
+<text><![CDATA[</field><path name="CONFLICT_TRACKS"><field name="0" type="s16">]]></text>
+<field function="" offset="16" source="0" type="s16"/>
+<text><![CDATA[</field><field name="1" type="s16">]]></text>
+<field function="" offset="18" source="0" type="s16"/>
+<text><![CDATA[</field><field name="2" type="s16">]]></text>
+<field function="" offset="20" source="0" type="s16"/>
+<text><![CDATA[</field><field name="3" type="s16">]]></text>
+<field function="" offset="22" source="0" type="s16"/>
+<text><![CDATA[</field><field name="4" type="s16">]]></text>
+<field function="" offset="24" source="0" type="s16"/>
+<text><![CDATA[</field></path><field name="COUPLING_MODE" type="COUPLING_MODE_T">]]></text>
+<field function="" offset="5" source="0" type="e8">
+<key value="PSSR_COUPLING"/>
+<key value="ASSR_COUPLING"/>
+<key value="ICAO_CODE"/>
+<key value="CALLSIGN"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="COUPLING_STATUS" type="COUPLING_STATUS_T">]]></text>
+<field function="" offset="4" source="0" type="e8">
+<key value="AUTO"/>
+<key value="MANUAL"/>
+<key value="UNCOUPLED"/>
+</field>
+<text><![CDATA[</field><field name="CSTD_RESULT" type="CSTD_RESULT_T">]]></text>
+<field function="" offset="52" source="0" type="e8">
+<key value="NOT_COASTED"/>
+<key value="COASTED"/>
+</field>
+<text><![CDATA[</field><field name="DUP_STATUS" type="DUP_STATUS_T">]]></text>
+<field function="" offset="11" source="0" type="e8">
+<key value="NO_DUP"/>
+<key value="DUP"/>
+</field>
+<text><![CDATA[</field><field name="FLIGHT_PLAN_NUMBER" type="s16">]]></text>
+<field function="" offset="0" source="0" type="s16"/>
+<text><![CDATA[</field><field name="NB_CONFLICT_FLIGHT_PLANS" type="u16">]]></text>
+<field function="" offset="26" source="0" type="u16"/>
+<text><![CDATA[</field><field name="NB_CONFLICT_TRACKS" type="u16">]]></text>
+<field function="" offset="12" source="0" type="u16"/>
+<text><![CDATA[</field><field name="NEXT_FIX" type="u8">]]></text>
+<field function="" offset="7" source="0" type="u8"/>
+<text><![CDATA[</field><field name="PROXIMITY_RESULT" type="PROXIMITY_RESULT_T">]]></text>
+<field function="" offset="8" source="0" type="e8">
+<key value="IN_SIDE"/>
+<key value="OUT_SIDE"/>
+</field>
+<text><![CDATA[</field><field name="RAM_RESULT" type="RAM_RESULT_T">]]></text>
+<field function="" offset="9" source="0" type="e8">
+<key value="ON_ROUTE"/>
+<key value="OFF_ROUTE"/>
+<key value="NOT_CHECKED"/>
+</field>
+<text><![CDATA[</field><path name="RECORD_UPDATE_TIME"><field name="TIME_BASE_ID" type="s32">]]></text>
+<field function="" offset="48" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="40" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_USEC" type="s32">]]></text>
+<field function="" offset="44" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="SYSTEM_TRACK_NUMBER" type="s16">]]></text>
+<field function="" offset="2" source="0" type="s16"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field><field name="rec_time" type="rec_time">]]></text>
+<field function="" source="0" type="rec_time"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel1"/>
+</targets>
+</message-text>
+<message-text name="CO_FPL">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="field" offset="224" size="5" test="changed" type="string"/>
+<trigger event="field" offset="65" test="changed" type="s16"/>
+<trigger event="field" offset="5928" size="11" test="changed" type="string"/>
+<trigger bits="4" event="field" offset="252" shift="4" test="changed" type="bit-e"/>
+<trigger event="field" offset="260" size="156" test="changed" type="string"/>
+<trigger event="field" offset="120" test="changed" type="u8"/>
+<trigger event="field" offset="60" test="changed" type="s16"/>
+<trigger event="field" offset="6148" test="changed" type="s32"/>
+<trigger event="field" offset="5900" size="6" test="changed" type="string"/>
+<trigger event="field" offset="76" size="4" test="changed" type="string"/>
+<trigger event="field" offset="72" size="4" test="changed" type="string"/>
+<trigger event="field" offset="88" size="11" test="changed" type="string"/>
+<trigger event="field" offset="36" size="10" test="changed" type="string"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="CO_FPL" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><field name="ARRIVAL_RUNWAY" type="string">]]></text>
+<field function="" offset="5476" size="3" source="0" type="string"/>
+<text><![CDATA[</field><field name="ASSIGNED_RUNWAY" type="string">]]></text>
+<field function="" offset="6160" size="3" source="0" type="string"/>
+<text><![CDATA[</field><field name="ASSR_CODE" type="s16">]]></text>
+<field function="" offset="65" source="0" type="s16"/>
+<text><![CDATA[</field><path name="ATA"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="180" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ATD"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="84" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="CALLSIGN" type="string">]]></text>
+<field function="" offset="36" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="CFL" type="s16">]]></text>
+<field function="" offset="60" source="0" type="s16"/>
+<text><![CDATA[</field><field name="CONTROLLING_SECTOR" type="string">]]></text>
+<field function="" offset="224" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="CTOT" type="string">]]></text>
+<field function="" offset="6152" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="CURRENT_FIX" type="u8">]]></text>
+<field function="" offset="112" source="0" type="u8"/>
+<text><![CDATA[</field><path name="EOBT"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="6148" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETA"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="176" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETD"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="80" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETDB"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="124" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FPL_STATUS" type="STATUS">]]></text>
+<field bits="4" function="" offset="252" shift="4" source="0" type="bit-e">
+<key value="FUTURE"/>
+<key value="INACTIVE"/>
+<key value="PREACTIVATED"/>
+<key value="SUSPENDED"/>
+<key value="INHIBITED"/>
+<key value="COORDINATED"/>
+<key value="ACTIVE"/>
+<key value="FINISHED"/>
+<key value="CANCELLED"/>
+</field>
+<text><![CDATA[</field><field name="GATE_NAME" type="string">]]></text>
+<field function="" offset="7983" size="5" source="0" type="string"/>
+<text><![CDATA[</field><path name="HAND_OFF_INFO"><field name="NEXT_SECTOR" type="string">]]></text>
+<field function="" offset="213" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="HOLDING_INFO"><path name="HOLDING_ENTRY_TIME"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="188" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="HOLDING_EXIT_TIME"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="192" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="HOLDING_POINT" type="u8">]]></text>
+<field function="" offset="196" source="0" type="u8"/>
+<text><![CDATA[</field><field name="HOLDING_STATUS" type="HOLDING_STATUS_T">]]></text>
+<field function="" offset="197" source="0" type="e8">
+<key value="HOLD_ON_FIX"/>
+<key value="INIT_HOLD"/>
+<key value="NO_HOLD"/>
+</field>
+<text><![CDATA[</field></path><field name="NBR_OF_AIRCRAFT" type="u8">]]></text>
+<field function="" offset="5480" source="0" type="u8"/>
+<text><![CDATA[</field><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="OP_DATA" type="string">]]></text>
+<field function="" offset="8001" size="20" source="0" type="string"/>
+<text><![CDATA[</field><field name="PREVIOUS_SECTOR" type="string">]]></text>
+<field function="" offset="5636" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="PSSR_CODE" type="s16">]]></text>
+<field function="" offset="62" source="0" type="s16"/>
+<text><![CDATA[</field><field name="REGISTRATION_NUMBER" type="string">]]></text>
+<field function="" offset="5664" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="ROUTE_FIELD" type="string">]]></text>
+<field function="" offset="260" size="156" source="0" type="string"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field><field name="rec_time" type="rec_time">]]></text>
+<field function="" source="0" type="rec_time"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel2"/>
+</targets>
+</message-text>
+<message-text name="QNH">
+<sources>
+<source name="QnhTL" range="0">
+<trigger event="field" offset="0" size="4" test="changed" type="string"/>
+<trigger event="field" offset="28" test="changed" type="s32"/>
+<trigger event="field" offset="20" test="changed" type="s32"/>
+<trigger event="field" offset="24" test="changed" type="s32"/>
+<trigger event="field" offset="6" test="changed" type="u16"/>
+<trigger event="field" offset="12" test="changed" type="u32"/>
+<trigger event="field" offset="8" test="changed" type="u32"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="QNH" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="QnhTL"><field name="AIRPORT_NAME" type="string">]]></text>
+<field function="" offset="0" size="4" source="0" type="string"/>
+<text><![CDATA[</field><path name="MODIF_TIME"><field name="TIME_BASE_ID" type="s32">]]></text>
+<field function="" offset="28" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="20" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_USEC" type="s32">]]></text>
+<field function="" offset="24" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="QNH" type="u16">]]></text>
+<field function="" offset="6" source="0" type="u16"/>
+<text><![CDATA[</field><field name="TA" type="u32">]]></text>
+<field function="" offset="12" source="0" type="u32"/>
+<text><![CDATA[</field><field name="TL" type="u32">]]></text>
+<field function="" offset="8" source="0" type="u32"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field><field name="rec_time" type="rec_time">]]></text>
+<field function="" source="0" type="rec_time"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel3"/>
+</targets>
+</message-text>
+<message-text name="FIXES1">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="field" offset="224" size="5" test="changed" type="string"/>
+<trigger event="field" offset="65" test="changed" type="s16"/>
+<trigger event="field" offset="5928" size="11" test="changed" type="string"/>
+<trigger bits="4" event="field" offset="252" shift="4" test="changed" type="bit-e"/>
+<trigger event="field" offset="260" size="156" test="changed" type="string"/>
+<trigger event="field" offset="120" test="changed" type="u8"/>
+<trigger event="field" offset="60" test="changed" type="s16"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="FIXES1" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><path name="FIXES"><path name="0"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="460" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="444" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="436" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="440" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="1"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="516" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="500" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="492" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="496" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="2"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="572" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="556" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="548" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="552" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="3"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="628" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="612" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="604" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="608" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="4"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="684" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="668" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="660" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="664" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="5"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="740" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="724" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="716" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="720" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="6"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="796" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="780" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="772" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="776" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="7"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="852" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="836" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="828" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="832" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="8"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="908" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="892" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="884" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="888" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="9"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="964" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="948" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="940" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="944" source="0" type="f32"/>
+<text><![CDATA[</field></path></path></path><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message-text>
+<message-text name="FIXES2">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="field" offset="224" size="5" test="changed" type="string"/>
+<trigger event="field" offset="65" test="changed" type="s16"/>
+<trigger event="field" offset="5928" size="11" test="changed" type="string"/>
+<trigger bits="4" event="field" offset="252" shift="4" test="changed" type="bit-e"/>
+<trigger event="field" offset="260" size="156" test="changed" type="string"/>
+<trigger event="field" offset="120" test="changed" type="u8"/>
+<trigger event="field" offset="60" test="changed" type="s16"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="FIXES2" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><path name="FIXES"><path name="10"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1020" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1004" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="996" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1000" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="11"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1076" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1060" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1052" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1056" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="12"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1132" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1116" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1108" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1112" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="13"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1188" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1172" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1164" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1168" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="14"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1244" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1228" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1220" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1224" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="15"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1300" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1284" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1276" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1280" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="16"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1356" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1340" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1332" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1336" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="17"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1412" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1396" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1388" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1392" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="18"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1468" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1452" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1444" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1448" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="19"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1524" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1508" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1500" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1504" source="0" type="f32"/>
+<text><![CDATA[</field></path></path></path><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message-text>
+<message-text name="FIXES3">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="field" offset="224" size="5" test="changed" type="string"/>
+<trigger event="field" offset="65" test="changed" type="s16"/>
+<trigger event="field" offset="5928" size="11" test="changed" type="string"/>
+<trigger bits="4" event="field" offset="252" shift="4" test="changed" type="bit-e"/>
+<trigger event="field" offset="260" size="156" test="changed" type="string"/>
+<trigger event="field" offset="120" test="changed" type="u8"/>
+<trigger event="field" offset="60" test="changed" type="s16"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="FIXES3" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><path name="FIXES"><path name="20"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1580" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1564" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1556" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1560" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="21"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1636" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1620" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1612" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1616" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="22"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1692" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1676" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1668" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1672" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="23"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1748" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1732" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1724" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1728" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="24"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1804" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1788" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1780" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1784" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="25"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1860" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1844" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1836" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1840" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="26"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1916" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1900" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1892" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1896" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="27"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="1972" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="1956" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="1948" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="1952" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="28"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2028" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2012" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2004" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2008" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="29"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2084" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2068" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2060" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2064" source="0" type="f32"/>
+<text><![CDATA[</field></path></path></path><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message-text>
+<message-text name="FIXES4">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="field" offset="65" test="changed" type="s16"/>
+<trigger event="field" offset="60" test="changed" type="s16"/>
+<trigger bits="4" event="field" offset="252" shift="4" test="changed" type="bit-e"/>
+<trigger event="field" offset="5928" size="11" test="changed" type="string"/>
+<trigger event="field" offset="224" size="5" test="changed" type="string"/>
+<trigger event="field" offset="260" size="156" test="changed" type="string"/>
+<trigger event="field" offset="120" test="changed" type="u8"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="FIXES4" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><path name="FIXES"><path name="30"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2140" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2124" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2116" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2120" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="31"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2196" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2180" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2172" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2176" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="32"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2252" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2236" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2228" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2232" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="33"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2308" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2292" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2284" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2288" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="34"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2364" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2348" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2340" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2344" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="35"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2420" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2404" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2396" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2400" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="36"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2476" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2460" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2452" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2456" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="37"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2532" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2516" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2508" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2512" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="38"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2588" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2572" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2564" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2568" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="39"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2644" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2628" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2620" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2624" source="0" type="f32"/>
+<text><![CDATA[</field></path></path></path><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message-text>
+<message-text name="FIXES5">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="field" offset="65" test="changed" type="s16"/>
+<trigger event="field" offset="60" test="changed" type="s16"/>
+<trigger event="field" offset="224" size="5" test="changed" type="string"/>
+<trigger event="field" offset="5928" size="11" test="changed" type="string"/>
+<trigger event="field" offset="260" size="156" test="changed" type="string"/>
+<trigger event="field" offset="120" test="changed" type="u8"/>
+<trigger bits="4" event="field" offset="252" shift="4" test="changed" type="bit-e"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="FIXES5" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><path name="FIXES"><path name="40"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2700" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2684" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2676" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2680" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="41"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2756" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2740" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2732" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2736" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="42"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2812" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2796" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2788" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2792" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="43"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2868" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2852" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2844" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2848" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="44"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2924" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2908" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2900" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2904" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="45"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="2980" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="2964" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="2956" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="2960" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="46"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3036" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3020" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3012" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3016" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="47"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3092" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3076" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3068" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3072" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="48"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3148" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3132" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3124" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3128" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="49"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3204" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3188" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3180" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3184" source="0" type="f32"/>
+<text><![CDATA[</field></path></path></path><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message-text>
+<message-text name="FIXES6">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="field" offset="65" test="changed" type="s16"/>
+<trigger event="field" offset="60" test="changed" type="s16"/>
+<trigger event="field" offset="224" size="5" test="changed" type="string"/>
+<trigger bits="4" event="field" offset="252" shift="4" test="changed" type="bit-e"/>
+<trigger event="field" offset="5928" size="11" test="changed" type="string"/>
+<trigger event="field" offset="260" size="156" test="changed" type="string"/>
+<trigger event="field" offset="120" test="changed" type="u8"/>
+<trigger event="create"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="FIXES6" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><path name="FIXES"><path name="50"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3260" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3244" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3236" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3240" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="51"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3316" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3300" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3292" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3296" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="52"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3372" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3356" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3348" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3352" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="53"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3428" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3412" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3404" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3408" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="54"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3484" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3468" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3460" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3464" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="55"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3540" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3524" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3516" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3520" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="56"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3596" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3580" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3572" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3576" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="57"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3652" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3636" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3628" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3632" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="58"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3708" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3692" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3684" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3688" source="0" type="f32"/>
+<text><![CDATA[</field></path></path><path name="59"><path name="DISPLAYED_ETO"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="3764" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIX_NAME" type="string">]]></text>
+<field function="" offset="3748" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="GEO_POSITION"><field name="LAT" type="f32">]]></text>
+<field function="" offset="3740" source="0" type="f32"/>
+<text><![CDATA[</field><field name="LONG" type="f32">]]></text>
+<field function="" offset="3744" source="0" type="f32"/>
+<text><![CDATA[</field></path></path></path><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message-text>
+<message-text name="Qingsuan_FP">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="create"/>
+<trigger event="update"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="Qingsuan_FP" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><field name="ADAR" type="string">]]></text>
+<field function="" offset="184" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ADEP" type="string">]]></text>
+<field function="" offset="76" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ADES" type="string">]]></text>
+<field function="" offset="72" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="AIRCRAFT_TYPE" type="string">]]></text>
+<field function="" offset="68" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ARRIVAL_RUNWAY" type="string">]]></text>
+<field function="" offset="5476" size="3" source="0" type="string"/>
+<text><![CDATA[</field><field name="ASSIGNED_RUNWAY" type="string">]]></text>
+<field function="" offset="6160" size="3" source="0" type="string"/>
+<text><![CDATA[</field><path name="ATA"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="180" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ATD"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="84" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="CALLSIGN" type="string">]]></text>
+<field function="" offset="36" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="CONTROLLING_SECTOR" type="string">]]></text>
+<field function="" offset="224" size="5" source="0" type="string"/>
+<text><![CDATA[</field><path name="CREATION_TIME"><field name="TIME_BASE_ID" type="s32">]]></text>
+<field function="" offset="8" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="0" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_USEC" type="s32">]]></text>
+<field function="" offset="4" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="CTOT" type="string">]]></text>
+<field function="" offset="6152" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="CURRENT_FIX" type="u8">]]></text>
+<field function="" offset="112" source="0" type="u8"/>
+<text><![CDATA[</field><field name="DEPARTURE_RUNWAY" type="string">]]></text>
+<field function="" offset="116" size="3" source="0" type="string"/>
+<text><![CDATA[</field><field name="DESTINATION_FIR" type="string">]]></text>
+<field function="" offset="5484" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="DOF" type="string">]]></text>
+<field function="" offset="5900" size="6" source="0" type="string"/>
+<text><![CDATA[</field><path name="EOBT"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="6148" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETA"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="176" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETD"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="80" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETDB"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="124" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETO_MODIF_TIME"><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="24" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIRST_PROPOSAL_SECTOR" type="string">]]></text>
+<field function="" offset="5644" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="FLIGHT_CATEGORY" type="FLIGHT_CATEGORY_T">]]></text>
+<field bits="2" function="" offset="56" shift="5" source="0" type="bit-e">
+<key value="OVERFLIGHT"/>
+<key value="DOMESTIC"/>
+<key value="OUTBOUND"/>
+<key value="INBOUND"/>
+</field>
+<text><![CDATA[</field><field name="FLIGHT_DIRECTION" type="FLIGHT_DIRECTION_T">]]></text>
+<field bits="1" function="" offset="433" shift="5" source="0" type="bit-e">
+<key value="BLANK"/>
+<key value="SOUTH_WEST"/>
+</field>
+<text><![CDATA[</field><field name="FLIGHT_TYPES" type="FLIGHT_TYPES">]]></text>
+<field bits="4" function="" offset="200" shift="3" source="0" type="bit-e">
+<key value="S"/>
+<key value="N"/>
+<key value="G"/>
+<key value="M"/>
+<key value="X"/>
+<key value="E"/>
+<key value="B"/>
+<key value="J"/>
+<key value="Q"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="FNC_SECTOR_ID_CONTROLLING" type="s32">]]></text>
+<field function="" offset="6984" source="0" type="s32"/>
+<text><![CDATA[</field><field name="FPL_COUPLED_BY_RDP_EN_ROUTE" type="bool">]]></text>
+<field bits="1" function="" offset="204" shift="0" source="0" type="bit-b"/>
+<text><![CDATA[</field><field name="FPL_STATUS" type="STATUS">]]></text>
+<field bits="4" function="" offset="252" shift="4" source="0" type="bit-e">
+<key value="FUTURE"/>
+<key value="INACTIVE"/>
+<key value="PREACTIVATED"/>
+<key value="SUSPENDED"/>
+<key value="INHIBITED"/>
+<key value="COORDINATED"/>
+<key value="ACTIVE"/>
+<key value="FINISHED"/>
+<key value="CANCELLED"/>
+</field>
+<text><![CDATA[</field><field name="IFPLID" type="string">]]></text>
+<field function="" offset="6220" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="INSIDE_FDRG" type="bool">]]></text>
+<field bits="1" function="" offset="428" shift="0" source="0" type="bit-b"/>
+<text><![CDATA[</field><field name="IS_FLIGHT_OUTSIDE_FDRG" type="bool">]]></text>
+<field bits="1" function="" offset="433" shift="3" source="0" type="bit-b"/>
+<text><![CDATA[</field><path name="MODIFICATION_TIME"><field name="TIME_BASE_ID" type="s32">]]></text>
+<field function="" offset="20" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="12" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_USEC" type="s32">]]></text>
+<field function="" offset="16" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="NBR_OF_AIRCRAFT" type="u8">]]></text>
+<field function="" offset="5480" source="0" type="u8"/>
+<text><![CDATA[</field><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="OP_DATA" type="string">]]></text>
+<field function="" offset="8001" size="20" source="0" type="string"/>
+<text><![CDATA[</field><field name="PREVIOUS_SECTOR" type="string">]]></text>
+<field function="" offset="5636" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="REGISTRATION_NUMBER" type="string">]]></text>
+<field function="" offset="5664" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="ROUTE_FIELD" type="string">]]></text>
+<field function="" offset="260" size="156" source="0" type="string"/>
+<text><![CDATA[</field><path name="TAXI_TIME"><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="6176" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="UID" type="s32">]]></text>
+<field function="" offset="5888" source="0" type="s32"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel7"/>
+</targets>
+</message-text>
+<message-binary name="Qingsuan_62">
+<source name="AsterixAcc"/>
+<targets>
+<target channel="Channel8"/>
+</targets>
+</message-binary>
+<message-text name="Fenshan_output">
+<sources>
+<source name="FdpDatapage" range="7">
+<trigger event="create"/>
+<trigger event="update"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="Fenshan_output" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FdpDatapage:SECTOC"><path name="SECTOC_DATA"><path name="DATA"><path name="0"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="28" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="34" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="1"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="40" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="46" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="2"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="52" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="58" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="3"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="64" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="70" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="4"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="76" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="82" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="5"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="88" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="94" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="6"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="100" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="106" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="7"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="112" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="118" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="8"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="124" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="130" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="9"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="136" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="142" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="10"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="148" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="154" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="11"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="160" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="166" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="12"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="172" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="178" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="13"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="184" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="190" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="14"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="196" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="202" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="15"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="208" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="214" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="16"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="220" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="226" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="17"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="232" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="238" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="18"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="244" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="250" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="19"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="256" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="262" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="20"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="268" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="274" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="21"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="280" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="286" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="22"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="292" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="298" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="23"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="304" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="310" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="24"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="316" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="322" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path></path></path><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel9"/>
+</targets>
+</message-text>
+<message-text name="Fenshan_output2">
+<sources>
+<source name="FdpDatapage" range="7">
+<trigger event="create"/>
+<trigger event="update"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="Fenshan_output2" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FdpDatapage:SECTOC"><path name="SECTOC_DATA"><path name="DATA"><path name="25"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="328" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="334" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="26"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="340" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="346" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="27"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="352" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="358" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="28"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="364" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="370" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="29"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="376" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="382" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="30"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="388" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="394" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="31"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="400" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="406" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="32"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="412" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="418" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="33"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="424" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="430" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="34"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="436" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="442" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="35"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="448" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="454" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="36"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="460" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="466" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="37"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="472" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="478" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="38"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="484" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="490" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="39"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="496" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="502" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="40"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="508" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="514" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="41"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="520" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="526" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="42"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="532" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="538" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="43"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="544" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="550" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="44"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="556" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="562" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="45"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="568" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="574" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="46"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="580" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="586" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="47"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="592" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="598" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="48"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="604" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="610" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="49"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="616" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="622" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path></path></path><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel9"/>
+</targets>
+</message-text>
+<message-text name="FDR_out_28">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="create"/>
+<trigger event="update"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="FDR_out_28" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><field name="ADEP" type="string">]]></text>
+<field function="" offset="76" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ADES" type="string">]]></text>
+<field function="" offset="72" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="AIRCRAFT_TYPE" type="string">]]></text>
+<field function="" offset="68" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ARRIVAL_RUNWAY" type="string">]]></text>
+<field function="" offset="5476" size="3" source="0" type="string"/>
+<text><![CDATA[</field><field name="ASSR_CODE" type="s16">]]></text>
+<field function="" offset="65" source="0" type="s16"/>
+<text><![CDATA[</field><field name="ASSR_MODE" type="SSR_MODES">]]></text>
+<field bits="7" function="" offset="64" shift="0" source="0" type="bit-e">
+<key value="MODE_A"/>
+<key value="MODE_B"/>
+<key value="MODE_C"/>
+<key value="MODE_D"/>
+<key value="MODE_R"/>
+<key value="MODE_S"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><path name="ATA"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="180" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ATD"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="84" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="CALLSIGN" type="string">]]></text>
+<field function="" offset="36" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="CFL" type="s16">]]></text>
+<field function="" offset="60" source="0" type="s16"/>
+<text><![CDATA[</field><field name="CFL_UNITY" type="LEVEL_TYPE_T">]]></text>
+<field bits="3" function="" offset="52" shift="4" source="0" type="bit-e">
+<key value=""/>
+<key value="F"/>
+<key value="S"/>
+<key value="A"/>
+<key value="M"/>
+<key value="VFR"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="CONTROLLING_SECTOR" type="string">]]></text>
+<field function="" offset="224" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="CTOT" type="string">]]></text>
+<field function="" offset="6152" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="DEPARTURE_RUNWAY" type="string">]]></text>
+<field function="" offset="116" size="3" source="0" type="string"/>
+<text><![CDATA[</field><field name="DOF" type="string">]]></text>
+<field function="" offset="5900" size="6" source="0" type="string"/>
+<text><![CDATA[</field><path name="EOBT"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="6148" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FLIGHT_RULES" type="FLIGHT_RULES">]]></text>
+<field bits="3" function="" offset="200" shift="0" source="0" type="bit-e">
+<key value="I"/>
+<key value="V"/>
+<key value="Y"/>
+<key value="Z"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="FLIGHT_TYPES" type="FLIGHT_TYPES">]]></text>
+<field bits="4" function="" offset="200" shift="3" source="0" type="bit-e">
+<key value="S"/>
+<key value="N"/>
+<key value="G"/>
+<key value="M"/>
+<key value="X"/>
+<key value="E"/>
+<key value="B"/>
+<key value="J"/>
+<key value="Q"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="FPL_STATUS" type="STATUS">]]></text>
+<field bits="4" function="" offset="252" shift="4" source="0" type="bit-e">
+<key value="FUTURE"/>
+<key value="INACTIVE"/>
+<key value="PREACTIVATED"/>
+<key value="SUSPENDED"/>
+<key value="INHIBITED"/>
+<key value="COORDINATED"/>
+<key value="ACTIVE"/>
+<key value="FINISHED"/>
+<key value="CANCELLED"/>
+</field>
+<text><![CDATA[</field><field name="GATE_NAME" type="string">]]></text>
+<field function="" offset="7983" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="IFPLID" type="string">]]></text>
+<field function="" offset="6220" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="NBR_OF_AIRCRAFT" type="u8">]]></text>
+<field function="" offset="5480" source="0" type="u8"/>
+<text><![CDATA[</field><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="PSSR_CODE" type="s16">]]></text>
+<field function="" offset="62" source="0" type="s16"/>
+<text><![CDATA[</field><field name="PSSR_MODE" type="SSR_MODES">]]></text>
+<field bits="3" function="" offset="56" shift="0" source="0" type="bit-e">
+<key value="MODE_A"/>
+<key value="MODE_B"/>
+<key value="MODE_C"/>
+<key value="MODE_D"/>
+<key value="MODE_R"/>
+<key value="MODE_S"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="REGISTRATION_NUMBER" type="string">]]></text>
+<field function="" offset="5664" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="ROUTE_FIELD" type="string">]]></text>
+<field function="" offset="260" size="156" source="0" type="string"/>
+<text><![CDATA[</field><field name="SID" type="string">]]></text>
+<field function="" offset="88" size="11" source="0" type="string"/>
+<text><![CDATA[</field><field name="STAR" type="string">]]></text>
+<field function="" offset="101" size="11" source="0" type="string"/>
+<text><![CDATA[</field><field name="WTC" type="WAKE_TURBULENCES">]]></text>
+<field bits="3" function="" offset="57" shift="0" source="0" type="bit-e">
+<key value="L"/>
+<key value="M"/>
+<key value="H"/>
+<key value="J"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel10"/>
+</targets>
+</message-text>
+<message-text name="Fenshan_output3">
+<sources>
+<source name="FdpDatapage" range="7">
+<trigger event="create"/>
+<trigger event="update"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="Fenshan_output3" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FdpDatapage:SECTOC"><path name="SECTOC_DATA"><path name="DATA"><path name="50"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="628" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="634" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="51"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="640" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="646" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="52"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="652" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="658" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="53"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="664" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="670" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="54"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="676" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="682" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="55"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="688" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="694" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="56"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="700" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="706" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="57"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="712" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="718" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="58"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="724" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="730" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path><path name="59"><field name="FUNCTIONAL_SECTOR_NAME" type="string">]]></text>
+<field function="" offset="736" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="LOGICAL_POSITION" type="string">]]></text>
+<field function="" offset="742" size="5" source="0" type="string"/>
+<text><![CDATA[</field></path></path></path><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel9"/>
+</targets>
+</message-text>
+<message-text name="tong_hua">
+<sources>
+<source name="FLIGHT_PLAN_T" range="0">
+<trigger event="create"/>
+<trigger event="update"/>
+<trigger event="delete"/>
+</source>
+</sources>
+<structure>
+<text><![CDATA[<message name="tong_hua" time="]]></text>
+<field type="time"/>
+<text><![CDATA["><path name="FLIGHT_PLAN_T"><field name="ADAR" type="string">]]></text>
+<field function="" offset="184" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ADEP" type="string">]]></text>
+<field function="" offset="76" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ADES" type="string">]]></text>
+<field function="" offset="72" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="AIRCRAFT_TYPE" type="string">]]></text>
+<field function="" offset="68" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="ARRIVAL_RUNWAY" type="string">]]></text>
+<field function="" offset="5476" size="3" source="0" type="string"/>
+<text><![CDATA[</field><path name="ATA"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="180" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ATD"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="84" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="CALLSIGN" type="string">]]></text>
+<field function="" offset="36" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="CFL" type="s16">]]></text>
+<field function="" offset="60" source="0" type="s16"/>
+<text><![CDATA[</field><field name="CFL_UNITY" type="LEVEL_TYPE_T">]]></text>
+<field bits="3" function="" offset="52" shift="4" source="0" type="bit-e">
+<key value=""/>
+<key value="F"/>
+<key value="S"/>
+<key value="A"/>
+<key value="M"/>
+<key value="VFR"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="CONTROLLING_SECTOR" type="string">]]></text>
+<field function="" offset="224" size="5" source="0" type="string"/>
+<text><![CDATA[</field><path name="CREATION_TIME"><field name="TIME_BASE_ID" type="s32">]]></text>
+<field function="" offset="8" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="0" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_USEC" type="s32">]]></text>
+<field function="" offset="4" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="CTOT" type="string">]]></text>
+<field function="" offset="6152" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="DEPARTURE_RUNWAY" type="string">]]></text>
+<field function="" offset="116" size="3" source="0" type="string"/>
+<text><![CDATA[</field><field name="DESTINATION_FIR" type="string">]]></text>
+<field function="" offset="5484" size="4" source="0" type="string"/>
+<text><![CDATA[</field><field name="DOF" type="string">]]></text>
+<field function="" offset="5900" size="6" source="0" type="string"/>
+<text><![CDATA[</field><path name="EOBT"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="6148" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETA"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="176" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETD"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="80" source="0" type="s32"/>
+<text><![CDATA[</field></path><path name="ETDB"><field name="DATE_IN_SECONDS" type="s32">]]></text>
+<field function="" offset="124" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="FIRST_PROPOSAL_SECTOR" type="string">]]></text>
+<field function="" offset="5644" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="FLIGHT_CATEGORY" type="FLIGHT_CATEGORY_T">]]></text>
+<field bits="2" function="" offset="56" shift="5" source="0" type="bit-e">
+<key value="OVERFLIGHT"/>
+<key value="DOMESTIC"/>
+<key value="OUTBOUND"/>
+<key value="INBOUND"/>
+</field>
+<text><![CDATA[</field><field name="FLIGHT_DIRECTION" type="FLIGHT_DIRECTION_T">]]></text>
+<field bits="1" function="" offset="433" shift="5" source="0" type="bit-e">
+<key value="BLANK"/>
+<key value="SOUTH_WEST"/>
+</field>
+<text><![CDATA[</field><field name="FLIGHT_TYPES" type="FLIGHT_TYPES">]]></text>
+<field bits="4" function="" offset="200" shift="3" source="0" type="bit-e">
+<key value="S"/>
+<key value="N"/>
+<key value="G"/>
+<key value="M"/>
+<key value="X"/>
+<key value="E"/>
+<key value="B"/>
+<key value="J"/>
+<key value="Q"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="FPL_COUPLED_BY_RDP_EN_ROUTE" type="bool">]]></text>
+<field bits="1" function="" offset="204" shift="0" source="0" type="bit-b"/>
+<text><![CDATA[</field><field name="FPL_STATUS" type="STATUS">]]></text>
+<field bits="4" function="" offset="252" shift="4" source="0" type="bit-e">
+<key value="FUTURE"/>
+<key value="INACTIVE"/>
+<key value="PREACTIVATED"/>
+<key value="SUSPENDED"/>
+<key value="INHIBITED"/>
+<key value="COORDINATED"/>
+<key value="ACTIVE"/>
+<key value="FINISHED"/>
+<key value="CANCELLED"/>
+</field>
+<text><![CDATA[</field><field name="IFPLID" type="string">]]></text>
+<field function="" offset="6220" size="10" source="0" type="string"/>
+<text><![CDATA[</field><path name="MODIFICATION_TIME"><field name="TIME_BASE_ID" type="s32">]]></text>
+<field function="" offset="20" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="12" source="0" type="s32"/>
+<text><![CDATA[</field><field name="UNIVERSAL_USEC" type="s32">]]></text>
+<field function="" offset="16" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="NBR_OF_AIRCRAFT" type="u8">]]></text>
+<field function="" offset="5480" source="0" type="u8"/>
+<text><![CDATA[</field><field name="NUMBER" type="u16">]]></text>
+<field function="" offset="48" source="0" type="u16"/>
+<text><![CDATA[</field><field name="OP_DATA" type="string">]]></text>
+<field function="" offset="8001" size="20" source="0" type="string"/>
+<text><![CDATA[</field><field name="PREVIOUS_SECTOR" type="string">]]></text>
+<field function="" offset="5636" size="5" source="0" type="string"/>
+<text><![CDATA[</field><field name="REGISTRATION_NUMBER" type="string">]]></text>
+<field function="" offset="5664" size="10" source="0" type="string"/>
+<text><![CDATA[</field><field name="RFL_UNITY" type="LEVEL_TYPE_T">]]></text>
+<field bits="3" function="" offset="252" shift="1" source="0" type="bit-e">
+<key value=""/>
+<key value="F"/>
+<key value="S"/>
+<key value="A"/>
+<key value="M"/>
+<key value="VFR"/>
+<key value="NONE"/>
+</field>
+<text><![CDATA[</field><field name="RFL_VALUE" type="s16">]]></text>
+<field function="" offset="5532" source="0" type="s16"/>
+<text><![CDATA[</field><field name="ROUTE_FIELD" type="string">]]></text>
+<field function="" offset="260" size="156" source="0" type="string"/>
+<text><![CDATA[</field><field name="SID" type="string">]]></text>
+<field function="" offset="88" size="11" source="0" type="string"/>
+<text><![CDATA[</field><field name="STAR" type="string">]]></text>
+<field function="" offset="101" size="11" source="0" type="string"/>
+<text><![CDATA[</field><path name="TAXI_TIME"><field name="UNIVERSAL_SEC" type="s32">]]></text>
+<field function="" offset="6176" source="0" type="s32"/>
+<text><![CDATA[</field></path><field name="UID" type="s32">]]></text>
+<field function="" offset="5888" source="0" type="s32"/>
+<text><![CDATA[</field><field name="rec_id" type="rec_id">]]></text>
+<field function="" source="0" type="rec_id"/>
+<text><![CDATA[</field></path></message>]]></text>
+</structure>
+<targets>
+<target channel="Channel6"/>
+</targets>
+</message-text>
+</messages>
+</feed_engine>

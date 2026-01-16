@@ -1,0 +1,99 @@
+--
+--
+--
+--
+--
+--           FILE :  MSAW_DAIW_PARAMETERS.ASF
+--
+--  CREATION DATE :  JANUARY 10, 2005
+--  BY		  :  DPR GROUP
+--  VERSION	  :  OPS_V1.0
+-- 
+--
+--
+-- MODIFICATION DATE | MODIFIED BY | COMMENT 
+---------------------|-------------|--------------
+--                   |             | 
+--
+--
+--
+--
+--
+-- note: *_RATE_THRSHOLD should be set to 3000 when DPR amendment is made
+--
+-- Description of MSAW Parameters
+---------------------------------
+--
+MSAW_LOOK_AHEAD_TIME	| 75
+DAIW_LOOK_AHEAD_TIME	| 60
+
+MSAW_WARNING_TIME		| 30
+DAIW_WARNING_TIME		| 30
+
+MSAW_INTENSITY_THRESHOLD	| 2
+DAIW_INTENSITY_THRESHOLD	| 5
+
+DAIW_RATE_THRESHOLD		| 3000FTM
+MSAW_RATE_THRESHOLD		| 4000FTM
+--RDF_DAIW_RATE_THRESHOLD		| 650MM
+--RDF_MSAW_RATE_THRESHOLD		| 650MM
+
+
+DAIW_LEVEL_THRESHOLD	| 1000FT
+MSAW_LEVEL_THRESHOLD	| 1000FT
+
+DAIW_UPDATE_PERIOD		| 2
+MSAW_UPDATE_PERIOD		| 2
+
+DAIW_DISPLAY_TIME		| 1
+
+MSAW_VFR_ACT		| TRUE
+
+MSAW_IFR_ALTITUDE_MARGIN	| 300M 
+MSAW_VFR_ALTITUDE_MARGIN    | 300M 
+--
+--
+--
+--
+--MSAW_ELIGIBILITY                | FPDATA_HOLD_ONLY
+--DAIW_ELIGIBILITY                | FPDATA_HOLD_ONLY
+MSAW_ELIGIBILITY                | COUPLED_FPL
+DAIW_ELIGIBILITY                | COUPLED_FPL
+
+-- FPDATA_HOLD_ONLY = Coupled + uncoupled tracks considered for MSAW processing
+-- FPDATA_ALL = Coupled tracks considered for MSAW processing
+
+-- new for EXV5
+MSAW_IFR_ACT              | FALSE
+MSAW_USE_RRL              | TRUE
+DAIW_USE_RRL              | FALSE
+
+
+DAIW_EXCLUDE_VFR          | TRUE
+
+DAIW_EXCLUDE_IFR          | FALSE
+MSAW_MAX_RATE_VALUE       |  4000FTM
+
+
+
+MSAW_PRE_WARNING_TIME     | 70
+MSAW_TAG_VFR_ACT          | FALSE
+APM_UP_ENABLED            | TRUE
+RIW_INTENSITY_THRESHOLD   | 2
+RIW_UPDATE_PERIOD         | 2
+RTIW_LOOK_AHEAD_TIME      | 90
+RTIW_WARNING_TIME         | 60
+RTIW_INTENSITY_THRESHOLD  | 2
+RTIW_RATE_THRESHOLD       | 3000FTM
+RTIW_LEVEL_THRESHOLD      | 1000FT
+RTIW_UPDATE_PERIOD        | 2 
+RTIW_USE_RRL              | FALSE      
+RTIW_EXCLUDE_VFR          | TRUE
+RTIW_EXCLUDE_IFR          | FALSE
+RTIW_ELIGIBILITY          | COUPLED_FPL_TAG
+ENABLE_MB_BRTA_PROC_AND_TRANS  | N
+
+
+
+
+

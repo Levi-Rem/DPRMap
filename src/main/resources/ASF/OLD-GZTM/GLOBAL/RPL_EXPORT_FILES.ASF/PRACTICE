@@ -1,0 +1,13 @@
+0 050303 SNDR: CCA                                   RPLBULK            
+0 050303 DEST:                                       RPLBULK            
+1 RPL     05-00 NLST 000000                                             
+2 041001 041101 1234567 CSN3111    B777 H ZGGG 0900 ZBAA 0230 +         
+3 N0480S0840 YIN/N0280F018 BUBDA LIG                                    
+2 050301 050930 1234567 TEST001    B737 M ZGGG 0100 ZBAA 0240 +         
+3 K0800S1020 YIN BUBDA                                                  
+2 050301 050930 1030507 TEST002    B777 H ZGGG 0100 ZSSS 0130 +         
+3 K0850S1020 LMN P163                                                   
+2 050301 050930 1204560 TEST003    B757 M ZGGG 0110 ZUUU 0200 +         
+3 K0800S1020 YIN QP                                                     
+9 050303 SNDR: CCA                                   000008             
+

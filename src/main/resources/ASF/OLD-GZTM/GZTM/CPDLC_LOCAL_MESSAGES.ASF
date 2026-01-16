@@ -1,0 +1,553 @@
+--
+--          FILE  : CPDLC_LOCAL_MESSAGES.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+
+/TMA/
+--/CCR1 /
+
+-- Class | Message| Arg No. | Arguments
+--       | No.    |         |
+---------|--------|---------|----------------------------------------|
+EMERG    | 170    |    1    | THIS IS THE EMERGENCY FREE TEXT TO SEND
+
+LOCAL_1  | 9      |    1    | 1130
+
+         | 69     |    1    | 0915
+
+         |100     |    1    | 1825
+         |        |    2    | N465
+
+         |123     |    1    | 7777
+
+         |128     |    1    | 110
+         |128     |    1    | 120
+         |128     |    1    | 130
+         |128     |    1    | 140
+         |128     |    1    | 150
+         |128     |    1    | 160
+         |128     |    1    | 170
+         |128     |    1    | 180
+         |128     |    1    | 190
+
+LOCAL_2  | 9      |    1    | 2301
+
+
+         |128     |    1    | 040
+         |128     |    1    | 050
+         |128     |    1    | 060
+         |128     |    1    | 070
+         |128     |    1    | 080
+         |128     |    1    | 090
+         |128     |    1    | 100
+         |128     |    1    | 110
+         |128     |    1    | 120
+         |128     |    1    | 130
+         |128     |    1    | 140
+         |128     |    1    | 150
+         |128     |    1    | 160
+         |128     |    1    | 170
+         |128     |    1    | 180
+         |128     |    1    | 190
+         |128     |    1    | 200
+
+-- APP = Approach, TWR = Tower, FIN = Finals, GCT = Ground Control, 
+-- CLD = Clearance Delivery, DEP = Departures, CNT = Control 
+ATS_UNIT_NAME | ZBAA APP 
+ATS_UNIT_NAME | ZBAA CTR
+ATS_UNIT_NAME | ZBAA TWR
+ATS_UNIT_NAME | ZBAA FIN
+ATS_UNIT_NAME | ZBAA GCT
+ATS_UNIT_NAME | ZBAA CLD
+ATS_UNIT_NAME | ZBAA DEP
+ATS_UNIT_NAME | ZBAA CNT
+
+
+-- Appendix : CPDLC Uplink Messages List
+--
+--    (Sorted by ICAO Message Element Id)
+--
+-- Msg 000: UNABLE
+-- Msg 001: STANDBY
+-- Msg 002: REQUEST DEFERRED
+-- Msg 003: ROGER
+-- Msg 004: AFFIRM
+-- Msg 005: NEGATIVE
+-- Msg 006: EXPECT [level]
+-- Msg 007: EXPECT CLIMB AT [time]
+-- Msg 008: EXPECT CLIMB AT [position]
+-- Msg 009: EXPECT DESCENT AT [time]
+--
+-- Msg 010: EXPECT DESCENT AT [position]
+-- Msg 011: EXPECT CRUISE CLIMB AT [time]
+-- Msg 012: EXPECT CRUISE CLIMB AT [position]
+-- Msg 013: AT [time] EXPECT CLIMB TO [level]
+-- Msg 014: AT [position] EXPECT CLIMB TO [level]
+-- Msg 015: AT [time] EXPECT DESCENT TO [level]
+-- Msg 016: AT [position] EXPECT DESCENT TO [level]
+-- Msg 017: AT [time] EXPECT CRUISE CLIMB TO [level]
+-- Msg 018: AT [position] EXPECT CRUISE CLIMB TO [level]
+-- Msg 019: MAINTAIN [level]
+--
+-- Msg 020: CLIMB TO [level]
+-- Msg 021: AT [time] CLIMB TO [level]
+-- Msg 022: AT [position] CLIMB TO [level]
+-- Msg 023: DESCEND TO [level]
+-- Msg 024: AT [time] DESCEND TO [level]
+-- Msg 025: AT [position] DESCEND TO [level]
+-- Msg 026: CLIMB TO REACH [level] BY [time]
+-- Msg 027: CLIMB TO REACH [level] BY [position]
+-- Msg 028: DESCEND TO REACH [level] BY [time]
+-- Msg 029: DESCEND TO REACH [level] BY [position]
+--
+-- Msg 030: MAINTAIN BLOCK [level] TO [level]
+-- Msg 031: CLIMB TO AND MAINTAIN BLOCK [level] TO [level]
+-- Msg 032: DESCEND TO AND MAINTAIN BLOCK [level] TO [level]
+-- Msg 033: CRUISE altitude
+-- Msg 034: CRUISE CLIMB TO [level]
+-- Msg 035: CRUISE CLIMB ABOVE [level]
+-- Msg 036: EXPEDITE CLIMB TO [level]
+-- Msg 037: EXPEDITE DESCENT TO [level]
+-- Msg 038: IMMEDIATELY CLIMB TO [level]
+-- Msg 039: IMMEDIATELY DESCEND TO [level]
+--
+-- Msg 040: IMMEDIATELY STOP CLIMB AT [level]
+-- Msg 041: IMMEDIATELY STOP DESCEND AT [level]
+-- Msg 042: EXPECT TO CROSS [position] AT [time]
+-- Msg 043: EXPECT TO CROSS [position] AT OR ABOVE [level]
+-- Msg 044: EXPECT TO CROSS [position] AT OR BELOW [level]
+-- Msg 045: EXPECT TO CROSS [position] AT AND MAINTAIN [level]
+-- Msg 046: CROSS [position] AT [level]
+-- Msg 047: CROSS [position] AT OR ABOVE [level]
+-- Msg 048: CROSS [position] AT OR BELOW [level]
+-- Msg 049: CROSS [position] AT AND MAINTAIN [level]
+--
+-- Msg 050: CROSS [position] BETWEEN [level] AND [level]
+-- Msg 051: CROSS [position] AT [time]
+-- Msg 052: CROSS [position] AT OR BEFORE [time]
+-- Msg 053: CROSS [position] AT OR AFTER [time]
+-- Msg 054: CROSS [position] BETWEEN [time] AND [time]
+-- Msg 055: CROSS [position] AT [speed]
+-- Msg 056: CROSS [position] AT OR LESS THAN [speed]
+-- Msg 057: CROSS [position] AT OR GREATER THAN [speed]
+-- Msg 058: CROSS [position] AT [time] AT [level]
+-- Msg 059: CROSS [position] AT OR BEFORE [time] AT [level]
+--
+-- Msg 060: CROSS [position] AT OR AFTER [time] AT [level]
+-- Msg 061: CROSS [position] AT AND MAINTAIN [level] AT [speed]
+-- Msg 062: AT [time] CROSS [position] AT AND MAINTAIN [level]
+-- Msg 063: AT [time] CROSS [position] AT AND MAINTAIN [level] AT [speed]
+-- Msg 064: OFFSET [distance offset] [direction] OF ROUTE
+-- Msg 065: AT [position] OFFSET [distance offset] [direction] OF ROUTE
+-- Msg 066: AT [time] OFFSET [distance offset] [direction] OF ROUTE
+-- Msg 067: PROCEED BACK ON ROUTE
+-- Msg 068: REJOIN ROUTE BY [position]
+-- Msg 069: REJOIN ROUTE BY [time]
+
+-- Msg 070: EXPECT BACK ON ROUTE BY [position]
+-- Msg 071: EXPECT BACK ON ROUTE BY [time]
+-- Msg 072: RESUME OWN NAVIGATION
+-- Msg 073: [pre departure clearance]
+-- Msg 074: PROCEED DIRECT TO [position]
+-- Msg 075: WHEN ABLE PROCEED DIRECT TO [position]
+-- Msg 076: AT [time] PROCEED DIRECT TO [position]
+-- Msg 077: AT [position] PROCEED DIRECT TO [position]
+-- Msg 078: AT [level] PROCEED DIRECT TO [position]
+-- Msg 079: CLEARED TO [position] VIA [route clearance]
+--
+-- Msg 080: CLEARED [route clearance]
+-- Msg 081: CLEARED [procedure name]
+-- Msg 082: CLEARED TO DEVIATE UP TO [distance offset] [direction] OF ROUTE
+-- Msg 083: AT [position] CLEARED [route clearance]
+-- Msg 084: AT [position] CLEARED [procedure name]
+-- Msg 085: EXPECT [route clearance]
+-- Msg 086: AT [position] EXPECT [route clearance]
+-- Msg 087: EXPECT DIRECT TO [position]
+-- Msg 088: AT [position] EXPECT DIRECT TO [position]
+-- Msg 089: AT [time] EXPECT DIRECT TO [position]
+--
+-- Msg 090: AT [level] EXPECT DIRECT TO [position]
+-- Msg 091: HOLD AT [position] MAINTAIN [level] INBOUND TRACK [degrees] [direction] TURNS [legtype]
+-- Msg 092: HOLD AT [position] AS PUBLISHED MAINTAIN [level]
+-- Msg 093: EXPECT FURTHER CLEARANCE AT [time]
+-- Msg 094: TURN [direction] HEADING [degrees]
+-- Msg 095: TURN [direction] GROUP TRACK [degrees]
+-- Msg 096: CONTINUE PRESENT HEADING
+-- Msg 097: AT [position] FLY HEADING [degrees]
+-- Msg 098: IMMEDIATLY TURN [direction] HEADING [degrees]
+-- Msg 099: EXPECT [procedure name]
+--
+-- Msg 100: AT time EXPECT [speed]
+-- Msg 101: AT [position] EXPECT [speed]
+-- Msg 102: AT [level] EXPECT [speed]
+-- Msg 103: AT [time] EXPECT [speed] TO [speed]
+-- Msg 104: AT [position] EXPECT [speed] TO [speed]
+-- Msg 105: AT [level] EXPECT [speed] TO [speed]
+-- Msg 106: MAINTAIN [speed]
+-- Msg 107: MAINTAIN PRESENT SPEED
+-- Msg 108: MAINTAIN [speed] OR GREATER
+-- Msg 109: MAINTAIN [speed] OR LESS
+--
+-- Msg 110: MAINTAIN [speed] TO [speed]
+-- Msg 111: INCREASE SPEED TO [speed]
+-- Msg 112: INCREASE SPEED TO [speed] OR GREATER
+-- Msg 113: REDUCE SPEED TO [speed]
+-- Msg 114: REDUCE SPEED TO [speed] OR LESS
+-- Msg 115: DO NOT EXCEED [speed]
+-- Msg 116: RESUME NORMAL SPEED
+-- Msg 117: CONTACT [unitname] [frequency]
+-- Msg 118: AT [position] CONTACT [unitname] [frequency]
+-- Msg 119: AT [time] CONTACT [unitname] [frequency]
+--
+-- Msg 120: MONITOR [unitname] [frequency]
+-- Msg 121: AT [position] MONITOR [unitname] [frequency]
+-- Msg 122: AT [time] MONITOR [unitname] [frequency]
+-- Msg 123: SQUAWK [code]
+-- Msg 124: STOP SQUAWK
+-- Msg 125: SQUAWK MODE CHARLIE
+-- Msg 126: STOP SQUAWK MODE CHARLIE
+-- Msg 127: REPORT BACK ON ROUTE
+-- Msg 128: REPORT LEAVING [level]
+-- Msg 129: REPORT MAINTAINING [level]
+--
+-- Msg 130: REPORT PASSING [level]
+-- Msg 131: REPORT REMAINING FUEL AND PERSONS ON BOARD
+-- Msg 132: REPORT POSITION
+-- Msg 133: REPORT PRESENT LEVEL
+-- Msg 134: REPORT SPEED
+-- Msg 135: CONFIRM ASSIGNED LEVEL
+-- Msg 136: CONFIRM ASSIGNED SPEED
+-- Msg 137: CONFIRM ASSIGNED ROUTE
+-- Msg 138: CONFIRM TIME OVER REPORTED WAYPOINT
+-- Msg 139: CONFIRM REPORTED WAYPOINT
+--
+-- Msg 140: CONFIRM NEXT WAYPOINT
+-- Msg 141: CONFIRM NEXT WAYPOINT ETA
+-- Msg 142: CONFIRM ENSUING WAYPOINT
+-- Msg 143: CONFIRM REQUEST
+-- Msg 144: CONFIRM SQUAWK
+-- Msg 145: REPORT HEADING
+-- Msg 146: REPORT GOURND TRACK
+-- Msg 147: REQUEST POSITION REPORT
+-- Msg 148: WHEN CAN YOU ACCEPT [level]
+-- Msg 149: CAN YOU ACCEPT [level] AT [position]
+--
+-- Msg 150: CAN YOU ACCEPT [level] AT [time]
+-- Msg 151: WHEN CAN YOU ACCEPT [speed]
+-- Msg 152: WHEN CAN YOU ACCEPT [distance offset] [direction] OFFSET
+-- Msg 153: ALTIMETER [altimeter]
+-- Msg 154: RADAR SERVICE TERMINATED
+-- Msg 155: RADAR CONTACT [position]
+-- Msg 156: RADAR CONTACT LOST
+-- Msg 157: CHECK STUCK MICROPHONE [frequency]
+-- Msg 158: ATIS [atis code]
+-- Msg 159: ERROR [error information]
+--
+-- Msg 160: NEXT DATA AUTHORITY [facility designation]
+-- Msg 161: END SERVICE
+-- Msg 162: SERVICE UNAVAILABLE
+-- Msg 163: [facility designation] [tp4table]
+-- Msg 164: WHEN READY
+-- Msg 165: THEN
+-- Msg 166: DUE TO TRAFFIC
+-- Msg 167: DUE TO AIRSPACE RESTRICTION
+-- Msg 168: DISREGARD
+-- Msg 169: [free text]
+--
+-- Msg 170: [emergency free text]
+-- Msg 171: CLIMB AT [vertical rate] MINIMUM
+-- Msg 172: CLIMB AT [vertical rate] MAXIMUM
+-- Msg 173: DESCEND AT [vertical rate] MINIMUM
+-- Msg 174: DESCEND AT [vertical rate] MAXIMUM
+-- Msg 175: REPORT REACHING [level]
+-- Msg 176: MAINTAIN OWN SEPARATION AND VMS
+-- Msg 177: AT PILOTS DISCRETION
+-- Msg 178: [track detail msg]
+-- Msg 179: SQUAWK IDENT
+--
+-- Msg 180: REPORT REACHING BLOCK [level] TO [level]
+-- Msg 181: REPORT DISTANCE [to/from] [position]
+-- Msg 182: CONFIRM ATIS CODE" }
+--
+-----------------------------------------------
+--
+--
+/TMB/
+--/CCR1 /
+
+-- Class | Message| Arg No. | Arguments
+--       | No.    |         |
+---------|--------|---------|----------------------------------------|
+EMERG    | 170    |    1    | THIS IS THE EMERGENCY FREE TEXT TO SEND
+
+LOCAL_1  | 9      |    1    | 1130
+
+         | 69     |    1    | 0915
+
+         |100     |    1    | 1825
+         |        |    2    | N465
+
+         |123     |    1    | 7777
+
+         |128     |    1    | 110
+         |128     |    1    | 120
+         |128     |    1    | 130
+         |128     |    1    | 140
+         |128     |    1    | 150
+         |128     |    1    | 160
+         |128     |    1    | 170
+         |128     |    1    | 180
+         |128     |    1    | 190
+
+LOCAL_2  | 9      |    1    | 2301
+
+         |128     |    1    | 040
+         |128     |    1    | 050
+         |128     |    1    | 060
+         |128     |    1    | 070
+         |128     |    1    | 080
+         |128     |    1    | 090
+         |128     |    1    | 100
+         |128     |    1    | 110
+         |128     |    1    | 120
+         |128     |    1    | 130
+         |128     |    1    | 140
+         |128     |    1    | 150
+         |128     |    1    | 160
+         |128     |    1    | 170
+         |128     |    1    | 180
+         |128     |    1    | 190
+         |128     |    1    | 200
+
+-- APP = Approach, TWR = Tower, FIN = Finals, GCT = Ground Control, 
+-- CLD = Clearance Delivery, DEP = Departures, CNT = Control 
+ATS_UNIT_NAME | ZBAA APP 
+ATS_UNIT_NAME | ZBAA CTR
+ATS_UNIT_NAME | ZBAA TWR
+ATS_UNIT_NAME | ZBAA FIN
+ATS_UNIT_NAME | ZBAA GCT
+ATS_UNIT_NAME | ZBAA CLD
+ATS_UNIT_NAME | ZBAA DEP
+ATS_UNIT_NAME | ZBAA CNT
+
+
+-- Appendix : CPDLC Uplink Messages List
+--
+--    (Sorted by ICAO Message Element Id)
+--
+-- Msg 000: UNABLE
+-- Msg 001: STANDBY
+-- Msg 002: REQUEST DEFERRED
+-- Msg 003: ROGER
+-- Msg 004: AFFIRM
+-- Msg 005: NEGATIVE
+-- Msg 006: EXPECT [level]
+-- Msg 007: EXPECT CLIMB AT [time]
+-- Msg 008: EXPECT CLIMB AT [position]
+-- Msg 009: EXPECT DESCENT AT [time]
+--
+-- Msg 010: EXPECT DESCENT AT [position]
+-- Msg 011: EXPECT CRUISE CLIMB AT [time]
+-- Msg 012: EXPECT CRUISE CLIMB AT [position]
+-- Msg 013: AT [time] EXPECT CLIMB TO [level]
+-- Msg 014: AT [position] EXPECT CLIMB TO [level]
+-- Msg 015: AT [time] EXPECT DESCENT TO [level]
+-- Msg 016: AT [position] EXPECT DESCENT TO [level]
+-- Msg 017: AT [time] EXPECT CRUISE CLIMB TO [level]
+-- Msg 018: AT [position] EXPECT CRUISE CLIMB TO [level]
+-- Msg 019: MAINTAIN [level]
+--
+-- Msg 020: CLIMB TO [level]
+-- Msg 021: AT [time] CLIMB TO [level]
+-- Msg 022: AT [position] CLIMB TO [level]
+-- Msg 023: DESCEND TO [level]
+-- Msg 024: AT [time] DESCEND TO [level]
+-- Msg 025: AT [position] DESCEND TO [level]
+-- Msg 026: CLIMB TO REACH [level] BY [time]
+-- Msg 027: CLIMB TO REACH [level] BY [position]
+-- Msg 028: DESCEND TO REACH [level] BY [time]
+-- Msg 029: DESCEND TO REACH [level] BY [position]
+--
+-- Msg 030: MAINTAIN BLOCK [level] TO [level]
+-- Msg 031: CLIMB TO AND MAINTAIN BLOCK [level] TO [level]
+-- Msg 032: DESCEND TO AND MAINTAIN BLOCK [level] TO [level]
+-- Msg 033: CRUISE altitude
+-- Msg 034: CRUISE CLIMB TO [level]
+-- Msg 035: CRUISE CLIMB ABOVE [level]
+-- Msg 036: EXPEDITE CLIMB TO [level]
+-- Msg 037: EXPEDITE DESCENT TO [level]
+-- Msg 038: IMMEDIATELY CLIMB TO [level]
+-- Msg 039: IMMEDIATELY DESCEND TO [level]
+--
+-- Msg 040: IMMEDIATELY STOP CLIMB AT [level]
+-- Msg 041: IMMEDIATELY STOP DESCEND AT [level]
+-- Msg 042: EXPECT TO CROSS [position] AT [time]
+-- Msg 043: EXPECT TO CROSS [position] AT OR ABOVE [level]
+-- Msg 044: EXPECT TO CROSS [position] AT OR BELOW [level]
+-- Msg 045: EXPECT TO CROSS [position] AT AND MAINTAIN [level]
+-- Msg 046: CROSS [position] AT [level]
+-- Msg 047: CROSS [position] AT OR ABOVE [level]
+-- Msg 048: CROSS [position] AT OR BELOW [level]
+-- Msg 049: CROSS [position] AT AND MAINTAIN [level]
+--
+-- Msg 050: CROSS [position] BETWEEN [level] AND [level]
+-- Msg 051: CROSS [position] AT [time]
+-- Msg 052: CROSS [position] AT OR BEFORE [time]
+-- Msg 053: CROSS [position] AT OR AFTER [time]
+-- Msg 054: CROSS [position] BETWEEN [time] AND [time]
+-- Msg 055: CROSS [position] AT [speed]
+-- Msg 056: CROSS [position] AT OR LESS THAN [speed]
+-- Msg 057: CROSS [position] AT OR GREATER THAN [speed]
+-- Msg 058: CROSS [position] AT [time] AT [level]
+-- Msg 059: CROSS [position] AT OR BEFORE [time] AT [level]
+--
+-- Msg 060: CROSS [position] AT OR AFTER [time] AT [level]
+-- Msg 061: CROSS [position] AT AND MAINTAIN [level] AT [speed]
+-- Msg 062: AT [time] CROSS [position] AT AND MAINTAIN [level]
+-- Msg 063: AT [time] CROSS [position] AT AND MAINTAIN [level] AT [speed]
+-- Msg 064: OFFSET [distance offset] [direction] OF ROUTE
+-- Msg 065: AT [position] OFFSET [distance offset] [direction] OF ROUTE
+-- Msg 066: AT [time] OFFSET [distance offset] [direction] OF ROUTE
+-- Msg 067: PROCEED BACK ON ROUTE
+-- Msg 068: REJOIN ROUTE BY [position]
+-- Msg 069: REJOIN ROUTE BY [time]
+
+-- Msg 070: EXPECT BACK ON ROUTE BY [position]
+-- Msg 071: EXPECT BACK ON ROUTE BY [time]
+-- Msg 072: RESUME OWN NAVIGATION
+-- Msg 073: [pre departure clearance]
+-- Msg 074: PROCEED DIRECT TO [position]
+-- Msg 075: WHEN ABLE PROCEED DIRECT TO [position]
+-- Msg 076: AT [time] PROCEED DIRECT TO [position]
+-- Msg 077: AT [position] PROCEED DIRECT TO [position]
+-- Msg 078: AT [level] PROCEED DIRECT TO [position]
+-- Msg 079: CLEARED TO [position] VIA [route clearance]
+--
+-- Msg 080: CLEARED [route clearance]
+-- Msg 081: CLEARED [procedure name]
+-- Msg 082: CLEARED TO DEVIATE UP TO [distance offset] [direction] OF ROUTE
+-- Msg 083: AT [position] CLEARED [route clearance]
+-- Msg 084: AT [position] CLEARED [procedure name]
+-- Msg 085: EXPECT [route clearance]
+-- Msg 086: AT [position] EXPECT [route clearance]
+-- Msg 087: EXPECT DIRECT TO [position]
+-- Msg 088: AT [position] EXPECT DIRECT TO [position]
+-- Msg 089: AT [time] EXPECT DIRECT TO [position]
+--
+-- Msg 090: AT [level] EXPECT DIRECT TO [position]
+-- Msg 091: HOLD AT [position] MAINTAIN [level] INBOUND TRACK [degrees] [direction] TURNS [legtype]
+-- Msg 092: HOLD AT [position] AS PUBLISHED MAINTAIN [level]
+-- Msg 093: EXPECT FURTHER CLEARANCE AT [time]
+-- Msg 094: TURN [direction] HEADING [degrees]
+-- Msg 095: TURN [direction] GROUP TRACK [degrees]
+-- Msg 096: CONTINUE PRESENT HEADING
+-- Msg 097: AT [position] FLY HEADING [degrees]
+-- Msg 098: IMMEDIATLY TURN [direction] HEADING [degrees]
+-- Msg 099: EXPECT [procedure name]
+--
+-- Msg 100: AT time EXPECT [speed]
+-- Msg 101: AT [position] EXPECT [speed]
+-- Msg 102: AT [level] EXPECT [speed]
+-- Msg 103: AT [time] EXPECT [speed] TO [speed]
+-- Msg 104: AT [position] EXPECT [speed] TO [speed]
+-- Msg 105: AT [level] EXPECT [speed] TO [speed]
+-- Msg 106: MAINTAIN [speed]
+-- Msg 107: MAINTAIN PRESENT SPEED
+-- Msg 108: MAINTAIN [speed] OR GREATER
+-- Msg 109: MAINTAIN [speed] OR LESS
+--
+-- Msg 110: MAINTAIN [speed] TO [speed]
+-- Msg 111: INCREASE SPEED TO [speed]
+-- Msg 112: INCREASE SPEED TO [speed] OR GREATER
+-- Msg 113: REDUCE SPEED TO [speed]
+-- Msg 114: REDUCE SPEED TO [speed] OR LESS
+-- Msg 115: DO NOT EXCEED [speed]
+-- Msg 116: RESUME NORMAL SPEED
+-- Msg 117: CONTACT [unitname] [frequency]
+-- Msg 118: AT [position] CONTACT [unitname] [frequency]
+-- Msg 119: AT [time] CONTACT [unitname] [frequency]
+--
+-- Msg 120: MONITOR [unitname] [frequency]
+-- Msg 121: AT [position] MONITOR [unitname] [frequency]
+-- Msg 122: AT [time] MONITOR [unitname] [frequency]
+-- Msg 123: SQUAWK [code]
+-- Msg 124: STOP SQUAWK
+-- Msg 125: SQUAWK MODE CHARLIE
+-- Msg 126: STOP SQUAWK MODE CHARLIE
+-- Msg 127: REPORT BACK ON ROUTE
+-- Msg 128: REPORT LEAVING [level]
+-- Msg 129: REPORT MAINTAINING [level]
+--
+-- Msg 130: REPORT PASSING [level]
+-- Msg 131: REPORT REMAINING FUEL AND PERSONS ON BOARD
+-- Msg 132: REPORT POSITION
+-- Msg 133: REPORT PRESENT LEVEL
+-- Msg 134: REPORT SPEED
+-- Msg 135: CONFIRM ASSIGNED LEVEL
+-- Msg 136: CONFIRM ASSIGNED SPEED
+-- Msg 137: CONFIRM ASSIGNED ROUTE
+-- Msg 138: CONFIRM TIME OVER REPORTED WAYPOINT
+-- Msg 139: CONFIRM REPORTED WAYPOINT
+--
+-- Msg 140: CONFIRM NEXT WAYPOINT
+-- Msg 141: CONFIRM NEXT WAYPOINT ETA
+-- Msg 142: CONFIRM ENSUING WAYPOINT
+-- Msg 143: CONFIRM REQUEST
+-- Msg 144: CONFIRM SQUAWK
+-- Msg 145: REPORT HEADING
+-- Msg 146: REPORT GOURND TRACK
+-- Msg 147: REQUEST POSITION REPORT
+-- Msg 148: WHEN CAN YOU ACCEPT [level]
+-- Msg 149: CAN YOU ACCEPT [level] AT [position]
+--
+-- Msg 150: CAN YOU ACCEPT [level] AT [time]
+-- Msg 151: WHEN CAN YOU ACCEPT [speed]
+-- Msg 152: WHEN CAN YOU ACCEPT [distance offset] [direction] OFFSET
+-- Msg 153: ALTIMETER [altimeter]
+-- Msg 154: RADAR SERVICE TERMINATED
+-- Msg 155: RADAR CONTACT [position]
+-- Msg 156: RADAR CONTACT LOST
+-- Msg 157: CHECK STUCK MICROPHONE [frequency]
+-- Msg 158: ATIS [atis code]
+-- Msg 159: ERROR [error information]
+--
+-- Msg 160: NEXT DATA AUTHORITY [facility designation]
+-- Msg 161: END SERVICE
+-- Msg 162: SERVICE UNAVAILABLE
+-- Msg 163: [facility designation] [tp4table]
+-- Msg 164: WHEN READY
+-- Msg 165: THEN
+-- Msg 166: DUE TO TRAFFIC
+-- Msg 167: DUE TO AIRSPACE RESTRICTION
+-- Msg 168: DISREGARD
+-- Msg 169: [free text]
+--
+-- Msg 170: [emergency free text]
+-- Msg 171: CLIMB AT [vertical rate] MINIMUM
+-- Msg 172: CLIMB AT [vertical rate] MAXIMUM
+-- Msg 173: DESCEND AT [vertical rate] MINIMUM
+-- Msg 174: DESCEND AT [vertical rate] MAXIMUM
+-- Msg 175: REPORT REACHING [level]
+-- Msg 176: MAINTAIN OWN SEPARATION AND VMS
+-- Msg 177: AT PILOTS DISCRETION
+-- Msg 178: [track detail msg]
+-- Msg 179: SQUAWK IDENT
+--
+-- Msg 180: REPORT REACHING BLOCK [level] TO [level]
+-- Msg 181: REPORT DISTANCE [to/from] [position]
+-- Msg 182: CONFIRM ATIS CODE" }
+--
+-----------------------------------------------
+--
+

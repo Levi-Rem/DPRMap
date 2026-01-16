@@ -1,0 +1,4 @@
+#define 16_width 1
+#define 16_height 1
+static char 16_bits[] = {
+   0x00};

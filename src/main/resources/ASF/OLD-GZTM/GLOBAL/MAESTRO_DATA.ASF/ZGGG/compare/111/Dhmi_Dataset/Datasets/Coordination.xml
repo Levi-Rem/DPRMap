@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Coordination xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Coordination.xsd">
+
+	<RemarkPreface>
+		<DepartureClearance>
+		</DepartureClearance>
+		<StartUpClearance>
+		</StartUpClearance>
+	</RemarkPreface>
+
+	<ControllerRemark>
+		<Remark></Remark>
+	</ControllerRemark>
+
+	<InfoStrip>
+		<Message></Message>
+	</InfoStrip>
+
+	<ReprintStrip>
+		<ReprintPosition>
+			<PositionID></PositionID>
+			<CentreID></CentreID>
+		</ReprintPosition>
+	</ReprintStrip>
+
+</Coordination>
+

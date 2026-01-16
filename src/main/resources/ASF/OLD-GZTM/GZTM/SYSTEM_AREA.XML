@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE system_area SYSTEM "system_area.dtd">
+<system_area>
+
+  <system_area_data hmi_segment_length="50.000000" magnetic_declination_latitude="16.000000" magnetic_declination_longitude="106.000000" name="" north_east_point_latitude="81.000000" north_east_point_longitude="170.000000" rdf_half_great_axis="6378137.000000" rdf_half_small_axis="6356752.500000" south_west_point_latitude="4.000000" south_west_point_longitude="60.000000" system_center_latitude="23.391388" system_center_longitude="113.309723"/>
+
+</system_area>

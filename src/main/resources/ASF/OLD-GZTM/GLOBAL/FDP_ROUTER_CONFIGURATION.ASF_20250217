@@ -1,0 +1,36 @@
+--      Version | Date    | Responsible | Comment
+----------------|---------|-------------|---------------------------------------
+--      Initial |19/03/07 | K WAN     | Initial
+--      UPDATE  |09/09/09 | FJN       | ACCORDING MAIL LG 08 SEP 2009
+--     V2.36.4  |15/09/09 | K WAN     | updated with site interface data
+--     V2.38.1  |18/09/09 | K WAN     | updated with site interface data
+
+/IDENTIFICATION/
+
+EXTS_TCP_24 | TCP_4 | | |
+EXTS_TCP_25 | TCP_5 | | |
+EXTS_TCP_26 | TCP_6 | | |
+EXTS_TCP_27 | TCP_7 | | |
+
+/TCP_IP/
+
+--FIPS
+TCP_4   | FALSE |        | SERVER | 4029_3 |                               |  | TCP_PORT_4 | 1 |  10000|  60 | 10 | 0 | 0|150
+--External AMAN
+TCP_5   | FALSE |        | SERVER | 4029_3 |                               |  | TCP_PORT_5 | 1 | 10000 | 60 | 10 | 0 | 0 |150 
+--To Eurocat ACC as client
+TCP_6   | FALSE |        | CLIENT | 4029_3 |192.168.172.109 192.168.172.110|  | TCP_PORT_6 | 1 | 10000 | 60 | 10 | 0 | 0 |
+--To LES ACC as client (UNUSED)
+TCP_7   | FALSE |        | CLIENT | 4029_3 |192.192.192.192                |  | TCP_PORT_7 | 1 |  10000|  15 | 10 | 0 | 0|
+
+/SEQUENCE/
+
+SEQ_1 |   | OTH |3  | USR | OTH |   | ABCDEF    | EUR |   | PWD | OTH |   | ABCDEF    | EUR |   | ACP |
+--
+-- Sequence_Id | Heartbeat_type | Seq_msg_init_1| SPDU_subtype_val_1 | Seq_msg_1 |
+-- Seq_msg_init_2| SPDU_subtype_val_2 | Seq_msg_2 | Seq_msg_init_3| SPDU_subtype_val_3 |
+-- Seq_msg_3 | Seq_msg_init_4| SPDU_subtype_val_4 | Seq_msg_4 | Seq_msg_init_5|
+-- SPDU_subtype_val_5 | Seq_msg_5 |
+-- ASCII
+
+/FTP_IP/

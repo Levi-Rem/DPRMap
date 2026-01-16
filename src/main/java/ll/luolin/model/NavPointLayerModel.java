@@ -4,9 +4,12 @@ package ll.luolin.model;
 import javafx.beans.property.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import ll.luolin.model.ASFModel.NavPointModel;
+import ll.luolin.model.ASFModel.PointModel;
 import ll.luolin.utils.LogUtils;
 
 import java.io.File;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -92,10 +95,10 @@ public class NavPointLayerModel {
     /**
      * 批量添加导航点
      */
-    public void addNavPoints(List<NavPointModel> points) {
+    public void addNavPoints(List<? extends PointModel> points) {
         LogUtils.info("NavPointLayerModel-addNavPoints-批量添加导航点");
 
-        navPointsProperty.addAll(points);
+        navPointsProperty.addAll((Collection<? extends NavPointModel>) points);
         updatePointsVisibility();
     }
 

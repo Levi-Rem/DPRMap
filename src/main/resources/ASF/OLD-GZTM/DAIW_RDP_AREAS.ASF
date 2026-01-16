@@ -1,0 +1,107 @@
+--
+--           FILE :  DAIW_ADS.ASF 
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.1  | 4/10/04 | K WAN       | updated for Guangzhou SAT
+--      V2.3.6  |13/01/05 | K WAN       | SAT3 Phase II flight test
+--      V2.3.6  |16/01/05 | K WAN       | deleted TEST1, TES2, TES3
+--
+--
+/POINTS/
+--
+--ZGD155    (East of Hainan Island)
+ ZGD155_1 | 200000N1110000E |
+ ZGD155_2 | 192000N1110000E |
+ ZGD155_3 | 192000N1120000E |
+ ZGD155_4 | 200000N1120000E |
+
+--ZGD156   (SE of Hainan Island)
+ ZGD156_1 | 190000N1104000E |
+ ZGD156_2 | 180500N1100700E |
+ ZGD156_3 | 174200N1104800E |
+ ZGD156_4 | 183800N1112000E |
+ 
+
+--ZGD157   (South of Hainan Island)
+ ZGD157_1 | 181000N1092000E | 
+ ZGD157_2 | 173000N1092000E |
+ ZGD157_3 | 173000N1100000E |
+ ZGD157_4 | 181000N1100000E |
+
+--ZGD158 | (Beijiao Reef)
+ ZGD158_1 | 172500N1110000E |
+ ZGD158_2 | 170000N1110000E |
+ ZGD158_3 | 170000N1114000E |
+ ZGD158_4 | 172500N1114000E |
+ 
+
+
+ NTZM	 |  233602N1132130E   |
+ NTZR	 |  233609N1132100E   |
+ NTZV	 |  232438N1131754E   |
+ NTZL	 |  232431N1131825E   |
+
+ NTZF	 |  232225N1131752E   |
+ NTZG	 |  232232N1131721E   |
+ NTZH	 |  231100N1131416E   |
+ NTZB	 |  231053N1131447E   |
+
+
+
+
+/ARCS/
+-- <Arc_Id>|<Start_Point_Id>|<End_Point_Id>|<Centre_Coord>|<Precision>
+--
+-- ZSD504 (Gun Firing | Daily:H24)
+-- ARCD504 | ZSD504_S       | ZSD504_E     | 305018N1213318E  | HI
+--
+--
+/RHUMB_LINES/
+--
+/VOLUMES/----
+--name |FPCF|FLOOR  | CEILING|  limit points(max 16)
+------------------------------------------------------------
+-- ZGD155 | y  | 6000M | 15000M | ZGD155_1 ZGD155_2 ZGD155_3 ZGD155_4
+-- ZGD156 | Y  | 1000M | 20000M | ZGD156_1 ZGD156_2 ZGD156_3 ZGD156_4
+-- ZGD157 | Y  | 6000M | 15000M | ZGD157_1 ZGD157_2 ZGD157_3 ZGD157_4
+-- ZGD158 | Y  | 4000M | 18000M | ZGD158_1 ZGD158_2 ZGD158_3 ZGD158_4
+-- NTZ20    | Y  | 0M    | 1200M  | NTZM NTZR NTZV NTZL
+-- NTZ02    | Y  | 0M    | 1200M  | NTZF NTZG NTZH NTZB
+
+
+ 
+ 
+-- TEST1  | Y  |  0M    |  3300M | TEST_1   TEST_2   TEST_3    TEST_4
+-- TES2   | Y  |  0M    |  6000M | TES_1   TES_2   TES_3    TES_4
+-- TES3   | Y  |  0M    |  3600M | TES3_1   TES3_2   TES3_3    TES3_4
+ 
+ -----------------------------------------------------------
+--
+--
+/DAIW_ATTRIBUTES/
+--
+--name     |   p1      |   p2      |   p3      |   p4   | GCP | LINE | SURFACE | PATTERN | DASH   |
+---------------------------------------------------------------------------------------------------
+--ZGD155     |22:01*04:00|06:01*12:00|	       |	|  HI | THIN |     N   |      2  | DASH_DOT |
+--ZGD156     |22:01*14:00|	   |	       |	|  HI | THIN |     N   |      2  | DASH_DOT |
+--ZGD157     |02:01*13:00|	   |	       |	|  HI | THIN |     N   |      2  | DASH_DOT |
+--ZGD158     |23:00*00:30|14:00*17:00|	       |	|  HI | THIN |     Y   |      2  | DASH_DOT |
+
+--NTZ20      |00:00*24:00|           |	       |	|  HI | THIN |     Y   |      2  | DASH_DOT |
+--NTZ02      |00:00*24:00|           |	       |	|  HI | THIN |     Y   |      2  | DASH_DOT |
+
+
+
+
+-- TEST1      |00:00*23:30|           |           |        |  HI | THIN |     Y   |      2  | DASH_DOT |
+-- TES2       |00:00*23:30|           |           |        |  HI | THIN |     Y   |      2  | DASH_DOT |
+-- TES3       |00:00*23:30|           |           |        |  HI | THIN |     Y   |      2  | DASH_DOT |

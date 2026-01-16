@@ -1,0 +1,67 @@
+--
+--           FILE :  ALTITUDE_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+RDF_ALT_AGE_THRESHOLD                | 40
+RDF_ALT_NOISE_WINDOW_FOR_ASS_LEVEL   | 500.0FT
+RDF_ALT_NOISE_WINDOW_BET_ASS_LEVEL   | 500.0FT
+RDF_ALT_EVOL_WINDOW_4                | 300.0FT
+RDF_ALT_ESTB_WINDOW_4                | 200.0FT
+RDF_ALT_EVOL_WINDOW_5                | 800.0FT
+RDF_ALT_ESTB_WINDOW_5                | 200.0FT
+RDF_ALT_EVOL_WINDOW_6                | 900.0FT
+RDF_ALT_ESTB_WINDOW_6                | 200.0FT
+RDF_ALT_EVOL_WINDOW_7                | 1100.0FT
+RDF_ALT_ESTB_WINDOW_7                | 250.0FT
+RDF_ALT_EVOL_WINDOW_8                | 1200.0FT
+RDF_ALT_ESTB_WINDOW_8                | 250.0FT
+RDF_ALT_EVOL_WINDOW_9                | 1400.0FT
+RDF_ALT_ESTB_WINDOW_9                | 300.0FT
+RDF_ALT_EVOL_WINDOW_10               | 1500.0FT
+RDF_ALT_ESTB_WINDOW_10               | 400.0FT
+RDF_ALT_EVOL_WINDOW_11               | 1700.0FT
+RDF_ALT_ESTB_WINDOW_11               | 500.0FT
+RDF_ALT_EVOL_WINDOW_12               | 1800.0FT
+RDF_ALT_ESTB_WINDOW_12               | 500.0FT
+RDF_ALT_EVOL_WINDOW_13               | 2000.0FT
+RDF_ALT_ESTB_WINDOW_13               | 500.0FT
+RDF_ALT_EVOL_WINDOW_14               | 2100.0FT
+RDF_ALT_ESTB_WINDOW_14               | 500.0FT
+RDF_ALT_EVOL_WINDOW_15               | 2300.0FT
+RDF_ALT_ESTB_WINDOW_15               | 500.0FT
+RDF_ALT_EVOL_WINDOW_16               | 2400.0FT
+RDF_ALT_ESTB_WINDOW_16               | 500.0FT
+RDF_ALT_EVOL_WINDOW_17               | 2600.0FT
+RDF_ALT_ESTB_WINDOW_17               | 500.0FT
+--
+-- time diff in s
+RDF_ALT_TIME_DIFF                    | 12
+--
+-- climb/descent rate in feet/sec # mislabelled RDF_STCA_RODC_THRESHOLD in App B
+RDF_ALT_HIGH_RATE_THRESHOLD          | 5.000FTS
+RDF_ALT_LOW_RATE_THRESHOLD           | 1.333FTS
+--
+-- altitude in feet
+RDF_ALT_STAB_RANGE                   | 100.0FT
+RDF_ALT_STAB_FACTOR                  | 400.0FT
+--
+
+--
+RDF_ALT_RVSM_VERTICAL_SEPARATION_LIMIT | F290.0
+--
+RDF_ALT_VERT_SEP_HIGH                | F20.0
+RDF_ALT_VERT_SEP_LOW                 | F10.0
+RDF_ALT_VERT_SEP_RVSM                | F10.0
+--

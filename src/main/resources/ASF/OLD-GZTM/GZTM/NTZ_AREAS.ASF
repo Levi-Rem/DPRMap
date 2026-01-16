@@ -1,0 +1,122 @@
+/POINTS/
+--
+NTZ1 | 235508.0N1131436.0E
+NTZ2 | 235507.0N1133502.0E
+NTZ3 | 225111.0N1131926.0E
+NTZ4 | 225110.0N1125905.0E
+--
+/NTZ_ELIGIBILITY_AREA_DEFINITION/
+--
+ZGGG_ELIG |ZGGG | 3000M | NTZ1 NTZ2 NTZ3 NTZ4
+--
+/NTZ_AREA_DEFINITION/
+NTZ_MAP_PARAM | THIN | N | 30 | FINE |
+--NTZ_AREA | Airport | Left | Right | Width | Height | Height | NTZ    | NTZ Runway |
+--Name     | name    | RWY  | RWY   |       | inner  | outer  | length | offset     |
+W2E2N1 | ZGGG    | 01L  | 02R   | 610M | 150M   | 1408M  | 24000M |	   |
+W2E2N2 | ZGGG    | 01L  | 02R   | 610M | 150M   | 1723M  | 30000M |	   |
+W2E2N3 | ZGGG    | 01L  | 02R   | 610M | 150M   | 2038M  | 36000M |	   |
+
+W2E2S1 | ZGGG    | 19R  | 20L   | 610M | 150M   | 1408M  | 24000M |     |
+W2E2S2 | ZGGG    | 19R  | 20L   | 610M | 150M   | 1723M  | 30000M |     |
+W2E2S3 | ZGGG    | 19R  | 20L   | 610M | 150M   | 2038M  | 36000M |     |
+
+W1E2N1 | ZGGG    | 01R  | 02R   | 610M  | 150M   | 1408M  | 24000M |	   |
+W1E2N2 | ZGGG    | 01R  | 02R   | 610M  | 150M   | 1723M  | 30000M |	   |
+W1E2N3 | ZGGG    | 01R  | 02R   | 610M  | 150M   | 2038M  | 36000M |	   |
+
+W1E2S1 | ZGGG    | 19L  | 20L   | 610M  | 150M   | 1408M  | 24000M |     |
+W1E2S2 | ZGGG    | 19L  | 20L   | 610M  | 150M   | 1723M  | 30000M |     |
+W1E2S3 | ZGGG    | 19L  | 20L   | 610M  | 150M   | 2038M  | 36000M |     |
+
+W1E1S1 | ZGGG    | 19L  | 20R   | 610M  | 150M   | 1408M  | 24000M |     |
+W1E1S2 | ZGGG    | 19L  | 20R   | 610M  | 150M   | 1723M  | 30000M |     |
+W1E1S3 | ZGGG    | 19L  | 20R   | 610M  | 150M   | 2038M  | 36000M |     |
+
+W2E1S1 | ZGGG    | 19R  | 20R   | 610M | 150M   | 1408M  | 24000M |     |
+W2E1S2 | ZGGG    | 19R  | 20R   | 610M | 150M   | 1723M  | 30000M |     |
+W2E1S3 | ZGGG    | 19R  | 20R   | 610M | 150M   | 2038M  | 36000M |     |
+
+W1E1N1 | ZGGG    | 01R  | 02L   | 610M  | 150M   | 1408M  | 24000M |	   |
+W1E1N2 | ZGGG    | 01R  | 02L   | 610M  | 150M   | 1723M  | 30000M |	   |
+W1E1N3 | ZGGG    | 01R  | 02L   | 610M  | 150M   | 2038M  | 36000M |	   |
+
+W2E1N1 | ZGGG    | 01L  | 02L   | 610M | 150M   | 1408M  | 24000M |	   |
+W2E1N2 | ZGGG    | 01L  | 02L   | 610M | 150M   | 1723M  | 30000M |	   |
+W2E1N3 | ZGGG    | 01L  | 02L   | 610M | 150M   | 2038M  | 36000M |	   |
+
+
+/LMA_DEFINITION/
+
+L119L1  | W1E2S1 | 19L | 
+L120L1  | W1E2S1 | 20L | 
+
+L119L2  | W1E2S2 | 19L |
+L120L2  | W1E2S2 | 20L | 
+
+L119L3  | W1E2S3 | 19L | 
+L120L3  | W1E2S3 | 20L | 
+
+L219R1  | W2E2S1 | 19R | 
+L220L1  | W2E2S1 | 20L | 
+
+L219R2  | W2E2S2 | 19R |
+L220L2  | W2E2S2 | 20L | 
+
+L219R3  | W2E2S3 | 19R | 
+L220L3  | W2E2S3 | 20L | 
+
+L319L1  | W1E1S1 | 19L | 
+L320R1  | W1E1S1 | 20R | 
+
+L319L2  | W1E1S2 | 19L |
+L320R2  | W1E1S2 | 20R | 
+
+L319L3  | W1E1S3 | 19L | 
+L320R3  | W1E1S3 | 20R | 
+
+L419R1  | W2E1S1 | 19R | 
+L420R1  | W2E1S1 | 20R | 
+
+L419R2  | W2E1S2 | 19R |
+L420R2  | W2E1S2 | 20R | 
+
+L419R3  | W2E1S3 | 19R | 
+L420R3  | W2E1S3 | 20R | 
+
+L501R1  | W1E2N1 | 01R | 
+L502R1  | W1E2N1 | 02R | 
+
+L501R2  | W1E2N2 | 01R |
+L502R2  | W1E2N2 | 02R | 
+
+L501R3  | W1E2N3 | 01R | 
+L502R3  | W1E2N3 | 02R | 
+
+L601L1  | W2E2N1 | 01L | 
+L602R1  | W2E2N1 | 02R | 
+
+L601L2  | W2E2N2 | 01L |
+L602R2  | W2E2N2 | 02R | 
+
+L601L3  | W2E2N3 | 01L | 
+L602R3  | W2E2N3 | 02R | 
+
+L701R1  | W1E1N1 | 01R | 
+L702L1  | W1E1N1 | 02L | 
+
+L701R2  | W1E1N2 | 01R |
+L702L2  | W1E1N2 | 02L | 
+
+L701R3  | W1E1N3 | 01R | 
+L702L3  | W1E1N3 | 02L | 
+
+L801L1  | W2E1N1 | 01L | 
+L802L1  | W2E1N1 | 02L | 
+
+L801L2  | W2E1N2 | 01L |
+L802L2  | W2E1N2 | 02L | 
+
+L801L3  | W2E1N3 | 01L | 
+L802L3  | W2E1N3 | 02L | 
+

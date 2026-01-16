@@ -1,0 +1,39 @@
+#******************************************************************************#
+#                                                                              #
+#                 SUB-SYSTEM CONFIGURATION PARAMETERS                          #
+#                                                                              #
+#******************************************************************************#
+
+# Global Workbench configuration name
+GlobalConfigName        = TRAINING;
+
+# If set to true, the session will start automatically upon startup
+AutoStartSession        = FALSE;
+
+
+#*******************************************************************************#
+#                                                                               #
+#                  PARAMETERS CONTOLLING RECORDING                              #
+#                                                                               #
+#*******************************************************************************#
+
+# List of events to be recorded. If this parameter is not set, recording is
+# not used.
+Record                  = ;
+
+# Set to true means the recording start at WB initialization.
+# Set to False means the recording start only after the first synchronization
+#    message.
+# ForceRecordingStart is set to false by default.
+ForceRecordingStart     = FALSE;
+
+# Period for changing recording file (minutes)
+RecordingPeriod         = 360;
+
+
+#******************************************************************************#
+#                                                                              #
+#                PARAMETERS LICENCE                                            #
+#                                                                              #
+#******************************************************************************#
+#LicenceKey =

@@ -1,0 +1,348 @@
+--  
+--           FILE :  MMI_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :   2005-04-19
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--
+--
+--
+-- Flight Plan track update period (seconds)
+--
+   HMI_FPT_PERIOD_UPDT | 30
+--
+--
+-- ICM ack timeout (seconds)
+--
+   HMI_ICM_TIMEOUT | 30
+--
+-- Track label time share period (seconds)
+--
+   HMI_TIME_SHARE_PERIOD | 4
+--
+-- Track angle display timeout (seconds)
+--
+--   HMI_TRK_ANGLE_TIMOUT | 30
+--
+--
+-- Last radar position display timeout (minutes)
+--
+--   HMI_RADAR_LRP_PERIOD | 30
+--
+--
+-- Last ADS position display timeout (minutes)
+--
+   HMI_ADS_LRP_PERIOD | 60
+--
+--
+-- Time of Passing display timeout (seconds)
+--
+   HMI_TRK_ETP_TIMEOUT | 30
+--
+--
+-- Number of pixels around the designated pixel to check the
+-- vicinity of a known point
+--
+   HMI_POINT_VICINITY | 10
+--
+--
+-- Default QNH to be used in bypass
+--
+   HMI_BYPASS_DEFAULT_QNH | 1013.2
+--
+--
+-- Default TA to be used in bypass (feet)
+--
+   HMI_BYPASS_DEFAULT_TA | 10000FT
+--
+--
+-- Maximum number of tracks with filtering
+--
+--   HMI_NB_MAX_TRK_FILTER | 300
+--
+--
+-- Low track filter level
+--
+--   HMI_NB_LOW_TRK_FILTER | 280
+--
+--
+-- Percentage capacity of the track filter area w.r.t. display area
+--
+--   HMI_TFA_FILTER_COEFF | 30
+--
+--
+-- Time added to get ETD for coordination (minutes)
+-- set from 10 to 0 to allow ETN to = clnce delivery time. 
+-- May impact on EST sending
+--
+   HMI_DEPARTURE_COORDINATION_DELAY | 10
+--
+--
+-- Timeout for cancelling a RADTAG after de-coupling (minutes)
+--
+--   HMI_RADTAG_TIMEOUT  | 10
+
+--
+-- Period before alert if a strip field is left open (seconds)
+--
+   HMI_STRIP_OPEN_TIME  | 30
+--
+--
+-- Period (mins) after which radtag which cannot be allocated is deleted
+--
+--   HMI_RADTAG_ALLOC_FAILURE | 15
+--
+--
+-- Number of minutes after which a radtag handoff is timedout
+--
+--   HMI_RADTAG_HANDOFF_TIMEOUT | 2
+--
+--
+-- Time out for erasing the graphic display of the FPCP trial probe (seconds)
+--
+-- Last radar position display timeout (minutes)
+--
+-- HMI_SURVEILLANCE_LRP_PERIOD | 30
+
+--
+  HMI_SURV_LRP_PERIOD | 30
+HMI_DEFAULT_LST_ENABLE | Y
+--
+-- Timeout for cancelling a RADTAG after de-coupling (minutes)
+--
+   HMI_SURVEILLANCE_TAG_TIMEOUT | 10
+--
+--
+--
+-- Period (mins) after which radtag which cannot be allocated is deleted
+--
+--   HMI_SURVEILLANCE_TAG_ALLOC_FAILURE | 15
+--
+--
+--
+--
+-- Number of minutes after which a radtag handoff is timedout
+--
+   HMI_SURVEILLANCE_TAG_HANDOFF_TIMEOUT | 2
+--
+--
+-- Time out for erasing the graphic display of the FPCP trial probe (seconds)
+--
+
+   HMI_FPCP_TRIAL_TIMEOUT        | 30
+
+
+--   FPCP_TRIAL_TIMEOUT             | 30
+   HMI_TRK_ANGLE_TIMEOUT          | 30
+   ADSB_UNCERT_LIMIT              | 3
+--
+   HMI_ERROR_COLOR_TIMEOUT        | 1
+   HMI_MAX_DISP_PIC_SIZE          | 5000NM
+--   HMI_MAX_DISP_PIC_SIZE          | 5000NM
+   HMI_TRK_LAT_C_LOOK_AHEAD       | 100
+   HMI_TRK_LAT_C_TIMEOUT	  | 20
+   HMI_CPDLC_TRANSITION_ALTITUDE  | S0300
+   HMI_WIN_TITLE_BAR_JURISDICTION | Y
+   HMI_WIN_TITLE_BAR_ANNOUNCED    | Y
+   HMI_PTR_POS                    | LATLONG
+-- 
+
+   HMI_RRL_VALIDITY_TIMEOUT            | 1
+   HMI_RRL_EXPIRY_TIMEOUT             | 1
+  -- HMI_PSSR_COUPLING_WARNING           | Y
+   HMI_RVSM_EQUIPMENT_CONFIRMATION     | Y
+   HMI_RVSM_CONFIRM_SUSPENSION         | Y
+   HMI_RVSM_CONFIRM_EXEMPTION          | Y
+   HMI_PRE_OVERLOAD_NB_TRK             | 950
+   HMI_OVERLOAD_NB_TRK                 | 1000
+   HMI_END_PRE_OVERLOAD_NB_TRK         | 900
+   HMI_CPDLC_AUTO_STORE_TIMEOUT        | 5
+   HMI_STRIP_CHANGE_INDICATOR_PERIOD   | 0
+   SCREEN_CAPTURE_FILE_FORMAT          | XPM
+   HMI_ENABLE_CROSSING_LABEL           | N
+   HMI_FPCF_CTR_NOTIFICATION_RULE      | AJA
+   HMI_LEVEL_TYPE_TO_DISPLAY           | LAST_RECEIVED
+   HMI_MIN_AURAL_VOL                   | 0
+   HMI_MAX_AURAL_VOL                   | 60
+   HMI_HIST_TIMEOUT_RPLY               |  10
+   HMI_RA_ALERT_PROCESSING             | N
+   RA_ALERT_PRESENT                    | 3
+   HMI_DEF_LOCAL_PRIV_MAP_PRIORITY     | 1
+   HMI_DEF_USER_PRIV_MAP_PRIORITY      | 2
+   HMI_DEF_GLOBAL_PRIV_MAP_PRIORITY    | 3
+  --HMI_ICAO_24_BIT_CODE_MISMATCH_WARNING | Y
+   TCT_UNCOUPLED_DISABLE               | N
+   HMI_TRG_ID_UNCOUPLED_DISPLAY        | Y
+  --HMI_CALLSIGN_MISMATCH_WARNING       | Y
+   PLM_CFL_MIN                         | 10
+   PLM_SA_MIN                          | 10
+--   PLM_THRESHOLD                       | 190
+--   PLM_DELAY_UPDATES                   | 6
+   PLM_SA_AGE                          | 10
+--   HMI_RECAT_DISPLAY                   | N
+   HMI_DFT_THRESHOLD                   | 0
+   HMI_DFT_UNIT                        | Metric
+   HMI_ROCD_SOURCE                     | MSTS
+   HMI_QUICKLOOK_SELECTION             | SSR
+MISS_APPROACH_INDICATOR | MIS
+HMI_DISP_A_IN_SSR_MODE_ENABLE       | Y
+HMI_ENABLE_ADES_MOD_ON_LABEL | Y
+FORCE_ASSR_ALLOCATION_CONFIRMATION  | Y
+HMI_SAVE_LOAD_PASSWORD_ENABLED | N
+   HMI_SAVE_LOAD_PASSWORD | 12345678
+PLM_TAG_ELIGIBILITY                 | TRUE
+NON_JURIS_HIGHLIGHT_TIME | 0
+HMI_CONT_SECTOR_DISPLAY             | Y
+LABEL_Y_INDICATOR | MODE_S
+HMI_WORKING_MODE_PASSWORD_ENABLED | Y
+HMI_WORKING_MODE_PASSWORD   | 123456
+HMI_ACTUAL_RAIW_ENABLED   | Y
+HMI_AIRCRAFT_TYPE_INTERACTION | Y
+HMI_ENABLE_CFL_MVA_WARNING | Y
+HMI_XFLM_ACK_ENABLE             | Y
+XFLM_DELAY_DISPLAY_TIME         | 30
+HMI_LIMITED_PLC_FUNCTIONS | Y
+--
+/HMI_GENERIC_METRIC_LEVEL_POPUP_VALUES/
+0030 | 0060 | 0090 | 0120 | 0150 | 0180 | 0210 | 0240 | 0270 | 0300 | 0330 | 0360 | 0390 | 0420 | 0450 | 0480 |
+0510 | 0540 | 0570 | 0600 | 0630 | 0660 | 0690 | 0720 | 0750 | 0780 | 0810 | 0840 | 0890 | 0920 | 0950 | 0980 | 
+1010 | 1040 | 1070 | 1100 | 1130 | 1160 | 1190 | 1220 | 1250 | 1310 | 1370 | 1430 | 1490 | 1550 |
+--
+-- 
+/HMI_GENERIC_IMPERIAL_LEVEL_POPUP_VALUES/
+020 | 030 | 040 | 050 | 060 | 070 | 080 | 090 | 100 | 110 | 120 | 130 | 140 | 150 | 160 | 170 | 180 | 190 | 200 | 
+210 | 220 | 230 | 240 | 250 | 260 | 270 | 280 | 290 | 300 | 310 | 320 | 330 | 340 | 350 | 360 | 370 | 380 | 390 | 
+400 | 410 | 430 | 450 | 470 | 490 | 
+--
+--
+/HMI_GENERIC_IMP_MIX_LEVEL_POPUP_VALUES/
+020-0061 | 030-0091 | 040-0122 | 050-0152 | 060-0183 | 070-0213 | 080-0244 | 090-0274 | 100-0305 | 110-0335 | 120-0366 | 
+130-0396 | 140-0427 | 150-0457 | 160-0488 | 170-0518 | 180-0549 | 190-0579 | 200-0610 | 210-0640 | 220-0671 | 230-0701 | 
+240-0732 | 250-0762 | 260-0792 | 270-0823 | 280-0853 | 290-0884 | 300-0914 | 310-0945 | 320-0975 | 330-1006 | 340-1036 |
+350-1067 | 360-1097 | 370-1128 | 380-1158 | 390-1189 | 400-1219 | 410-1250 | 430-1311 | 450-1372 | 470-1433 | 490-1494 | 
+510-1554 |
+
+--
+--
+/HMI_GENERIC_MET_MIX_LEVEL_POPUP_VALUES/
+0060-020 | 0090-030 | 0120-039 | 0150-049 | 0180-059 | 0210-069 | 0240-079 | 0270-089 | 0300-098 | 0330-108 | 0360-118 | 
+0390-128 | 0420-138 | 0450-148 | 0480-157 | 0510-167 | 0540-177 | 0570-187 | 0600-197 | 0630-207 | 0660-217 | 0690-226 | 
+0720-236 | 0750-246 | 0780-256 | 0810-266 | 0840-276 | 0890-292 | 0920-302 | 0950-312 | 0980-322 | 1010-331 | 1040-341 | 
+1070-351 | 1100-361 | 1130-371 | 1160-381 | 1190-390 | 1220-400 | 1250-410 | 1310-430 | 1370-449 | 1430-469 | 1490-489|
+1550-509 |
+
+
+/HMI_SMR_TRACK_DISPLAY/
+ZGGG | 10NM
+
+--
+--
+/REPLAY_USER_AUTHORITY/
+--USERNAME
+-----------------------------
+--
+REPLAY01 | REPLAY02 |
+--
+--
+/APPROACH_INDICATOR/
+ILS | VSA | VOR |NDB |
+
+--
+--
+/HMI_SIMILAR_ALPHANUMERIC/
+--AAC | AAA AAB AAD AAE AAF AAG AAH AAI AAJ AAK
+--O|Q
+--6|9
+
+/HMI_SIMILAR_CALLSIGN/
+--CSN123|CSN1139
+--DYB001|GOU002
+--CCA123|CCA456
+--CSN456|CSN789
+--CES5181|CES2861
+
+SHADOW_SC_ENABLED | TRUE
+SC_ENABLED | TRUE
+
+/HMI_SIMILAR_RULES/
+--<RULE_id> | <enable> |<RULE_airline check>|
+--if not specified, the rule is disabled by default
+--RULE_1 | Y | N |
+RULE_2 | Y | N |
+RULE_3 | Y | N |
+--RULE_4 | Y | N |
+--RULE_5 | Y | N |
+RULE_6 | Y | N |
+--RULE_7 | Y | N |
+--RULE_8 | Y | N |
+--RULE_9 | Y | N |
+--RULE_10| Y | N |
+--RULE_11| Y | N |
+--RULE_12| Y | N |
+--RULE_13| Y | N |
+--RULE_14| Y | N |
+--RULE_15| Y | N |
+--RULE_16| Y | N |
+
+/HMI_HIGHLY_SIMILAR_RULES/
+--<RULE_id> | <RULE_enable> |<RULE_airline check>|
+--if not specified, the rule is disabled by default 
+--RULE_2 | Y | Y |
+--RULE_3 | Y | Y |
+
+
+/DEPARTURE_LIST_WINDOW/
+AIRPOT_RUNWAY_PAIR | ZGGG/01
+COLUMN_SET | CTOT PKC SSRCODE
+
+/HMI_SC_WHITE_NAME_LIST/
+--------------------------------------------------
+OMA001 |OMA002  |OMA003      |B007    |EFEAD    |
+AF001  |OMA020  |OMA12345    |B008    |QTR111   |
+CSN123 |CSN312  | CHH1239    |CHH1932 |CHH1139  |
+OM00?  |        |            |        |         |
+TEST05|TEST52|TEST53|TEST54|TEST55|
+
+/HMI_WAKE_TURBULENCE_INDICATOR/
+A320|B737|J|C|
+
+CSEC_UNCONTROLLED_DISPLAY | N
+
+------------Added in V10.8----------------
+HMI_LEFT_SINGLE_CLICK_ACID_FUNCTION | FPW
+HMI_LEFT_DOUBLE_CLICK_ACID_FUNCTION | SSR
+
+HMI_MIDDLE_CLICK_BACK_CENTRE_FUNCTION | Y
+
+HMI_POST_JURISDICTION_FLASH_TIME | 120
+
+
+/HMI_POST_DISP_WARNING/
+--Y |  NTZ WTIW PRE_WTIW DTZ PDM CSTD STCA PRE_STCA MSAW PRE_MSAW APMW APMW_UP RIW MTCD DAIW RTIW TDAW FPCP_PRED FPCP_RISK SAP CLAM RAM ACTUAL_RAIW RAIW DUP ICAO_DUP ICW BPMW ARCW AOLW MPR SAR MA ETO FDECM_F FDECM_T_F U_LAM FDECM_C SC RCP RSP MOPS PLM
+--Y | STCA RAM
+STCA MSAW DAIW NTZ DTZ APMW CLAM RAM MTCD PDM RIW RTIW
+--Y |  NTZ WTIW PRE_WTIW DTZ PDM CSTD STCA PRE_STCA MSAW PRE_MSAW APMW APMW_UP RIW MTCD DAIW RTIW TDAW FPCP_PRED FPCP_RISK SAP CLAM RAM ACTUAL_RAIW RAIW DUP ICAO_DUP ICW BPMW ARCW AOLW MPR SAR MA ETO FDECM_F FDECM_T_F U_LAM FDECM_C SC RCP RSP MOPS PLM
+
+   HMI_SYNC_BRL       | EC_PLC | N |
+   HMI_SYNC_IQL       | EC_PLC | N |
+   HMI_SYNC_ACTYPE_HL | EC_PLC | N |
+   HMI_SYNC_C_PROMPT  | NONE   | N |
+   HMI_SYNC_CFL_HL    | EC_PLC | N |
+   HMI_SYNC_CFL_ACK   | NONE   | N |
+
+--PLM_ROUTINE_THRESHOLD| 101
+PLM_ROUTINE_THRESHOLD| 101
+PLM_ROUTINE_DELAY_UPDATES | 10
+PLM_IMMINENT_THRESHOLD | 101
+PLM_IMMINENT_DELAY_UPDATES | 10
+
+/HMI_MISMATCH_WARNING/
+PSSR_COUPLING     |YELLOW   |Y |TT
+CALLSIGN          |RED      |Y
+ICAO_24_BIT_CODE  |PLUM     |Y
+--ICAO_24_BIT_CODE  |PLUM     |Y

@@ -1,0 +1,6870 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE error_messages SYSTEM "error_messages.dtd">
+<error_messages>
+
+  <error id="0">
+    <name>OK</name>
+    <text>OK</text>
+  </error>
+
+  <error id="1">
+    <name>UNDEFINED</name>
+    <text>UNDEFINED</text>
+  </error>
+
+  <error id="10">
+    <name>FPL_STATUS_IS_SHUTDOWN</name>
+    <text>Message rejected. FPl is shutdown.</text>
+  </error>
+
+  <error id="100">
+    <name>SID_IS_NOT_FEASIBLE</name>
+    <text>Sid $ is not feasible</text>
+  </error>
+
+  <error id="1000">
+    <name>BINARY_SECTION_ERROR</name>
+    <text>Call TSM : BINARY_SECTION_ERROR (GRIB)</text>
+  </error>
+
+  <error id="1001">
+    <name>ETX_NOT_FOUND</name>
+    <text>Call TSM : ETX_NOT_FOUND (METEO MESSAGE)</text>
+  </error>
+
+  <error id="1002">
+    <name>END_SECTION_ERROR</name>
+    <text>Call TSM : END_SECTION_ERROR (METEO)</text>
+  </error>
+
+  <error id="1003">
+    <name>STRING_7777_EXPECTED</name>
+    <text>Call TSM : STRING_7777_EXPECTED (GRIB)</text>
+  </error>
+
+  <error id="1004">
+    <name>UNEXPECTED_GRIB_MESSAGE_DELIVERY</name>
+    <text>Call TSM : UNEXPECTED_GRIB_MESSAGE_....</text>
+  </error>
+
+  <error id="1005">
+    <name>ILLEGAL_NUMBER_OF_PACKING_BITS</name>
+    <text>Call TSM: ILLEGAL_NUMBER_OF_PACKING_BITS</text>
+  </error>
+
+  <error id="1006">
+    <name>WMO_HEADER_ERROR</name>
+    <text>Call TSM : WMO_HEADER_ERROR (GRIB)</text>
+  </error>
+
+  <error id="1007">
+    <name>ASCII_H_EXPECTED_IN_WMO_HEADER</name>
+    <text>Call TSM: ASCII_H_EXPECTED_IN_WMO_HEADER</text>
+  </error>
+
+  <error id="1008">
+    <name>INCOMPATIBLE_PACKING_BITS</name>
+    <text>Call TSM: INCOMPATIBLE_PACKING_BITS</text>
+  </error>
+
+  <error id="1009">
+    <name>INVALID_QNH_UPDATE_TIME_FROM_MMI</name>
+    <text>Displayed data is not current- REPEAT</text>
+  </error>
+
+  <error id="101">
+    <name>CANNOT_ENTER_SID_WHEN_ACTIVE</name>
+    <text>Cannot enter SID. FDR already active</text>
+  </error>
+
+  <error id="1010">
+    <name>QNH_VALUE_OUT_OF_RANGE_FROM_MMI</name>
+    <text>QNH value is not valid ( 900-1080 )</text>
+  </error>
+
+  <error id="1011">
+    <name>INVALID_QNH_INDEX_FROM_MMI</name>
+    <text>Call TSM : INVALID_QNH_INDEX_FROM_MMI</text>
+  </error>
+
+  <error id="1012">
+    <name>INVALID_QNH_SENSOR_NAME_FROM_MMI</name>
+    <text>Call TSM : INVALID_QNH_SENSOR_NAME (MMI)</text>
+  </error>
+
+  <error id="1013">
+    <name>QNH_VALUE_OUT_OF_RANGE_FROM_SENSOR</name>
+    <text>QNH value is not valid ( 900-1080 )</text>
+  </error>
+
+  <error id="1014">
+    <name>INVALID_QNH_SENSOR_NAME_FROM_SENSOR</name>
+    <text>Call TSM:INVALID_QNH_SENSOR_NAME (SENS)</text>
+  </error>
+
+  <error id="1015">
+    <name>INVALID_MSG_IDENT_FROM_SENSOR</name>
+    <text>Call TSM: INVALID_MSG_IDENT_FROM_SENSOR</text>
+  </error>
+
+  <error id="1016">
+    <name>INVALID_QNH_MSG_LENGTH_FROM_FP</name>
+    <text>Call TSM: INVALID_QNH_MSG_LENGTH_FROM_FP</text>
+  </error>
+
+  <error id="1017">
+    <name>QNH_VALUE_OUT_OF_RANGE</name>
+    <text>QNH_VALUE_OUT_OF_RANGE</text>
+  </error>
+
+  <error id="1018">
+    <name>SVC_INVALID_UID</name>
+    <text>SVC invalid UID</text>
+  </error>
+
+  <error id="1019">
+    <name>SVC_INVALID_CSN</name>
+    <text>SVC invalid CSN</text>
+  </error>
+
+  <error id="102">
+    <name>CANNOT_MODIFY_OVERFLOWN_STAR</name>
+    <text>Too late to modify system STAR. Use RER</text>
+  </error>
+
+  <error id="1020">
+    <name>SVC_MIDNIGHT_INVALID_CSN</name>
+    <text>Midnight msg with CSN different from 1</text>
+  </error>
+
+  <error id="1021">
+    <name>SVC_LR_EXP_MESSAGE_NOT_PROCESSED</name>
+    <text>Service msg LR EXP not auto processed</text>
+  </error>
+
+  <error id="1022">
+    <name>SVC_REPEAT_MESSAGE_EXPECTED</name>
+    <text>Call TSM : SVC_REPEAT_MESSAGE_EXPECTED</text>
+  </error>
+
+  <error id="1023">
+    <name>SVC_MIDNIGHT_MESSAGE_EXPECTED</name>
+    <text>Call TSM : SVC_MIDNIGHT_MESSAGE_EXPECTED</text>
+  </error>
+
+  <error id="1024">
+    <name>SVC_MISSING_CIRCUIT_IDENTIFICATION</name>
+    <text>Call TSM : SVC_MISSING_CIRCUIT_IDENT...</text>
+  </error>
+
+  <error id="1025">
+    <name>SVC_MISSING_CSN</name>
+    <text>Call TSM : SVC_MISSING_CSN</text>
+  </error>
+
+  <error id="1026">
+    <name>RDP_TRACK_AND_FPL_INV_COUPLING_CRITERIA</name>
+    <text>Coupling failed. Track or FDR cancelled</text>
+  </error>
+
+  <error id="1027">
+    <name>RDP_TRACK_AND_FPL_DIFFERENT_SSR_CODES</name>
+    <text>Coupling failed. SSR codes do not match</text>
+  </error>
+
+  <error id="1028">
+    <name>RDP_TRACK_AND_FPL_COUPLING_NOT_ESTABLISHED</name>
+    <text>Coupling failed. Track and FDR coupled</text>
+  </error>
+
+  <error id="1029">
+    <name>RDP_TRACK_NOT_COUPLED</name>
+    <text>Decoupling refused : Track not coupled</text>
+  </error>
+
+  <error id="103">
+    <name>STAR_IS_NOT_FEASIBLE</name>
+    <text>Star $ is not feasible</text>
+  </error>
+
+  <error id="1030">
+    <name>RDP_DATA_PAGE_NOT_UPDATED</name>
+    <text>Data page update refused</text>
+  </error>
+
+  <error id="1031">
+    <name>PROCESSING_OF_PREVIOUS_CONFIG_NOT_FINISHED</name>
+    <text>PROCESSING OF PREV CONFIG NOT FINISHED</text>
+  </error>
+
+  <error id="1032">
+    <name>POSITION_NOT_SECTORIZED</name>
+    <text>Position has not been allocated a sector</text>
+  </error>
+
+  <error id="1033">
+    <name>FLEX_IDENT_EXPECTED</name>
+    <text>Call TSM : FLEX_IDENT_EXPECTED</text>
+  </error>
+
+  <error id="1034">
+    <name>FLEXTRACK_NAME_ERR</name>
+    <text>Syntax error in flextrack name field</text>
+  </error>
+
+  <error id="1035">
+    <name>FLEXTRACK_GENERATION_TIME_NOT_FOUND</name>
+    <text>TDM generation time cannot be determined</text>
+  </error>
+
+  <error id="1036">
+    <name>FLEXTRACK_NUMBER_NOT_FOUND</name>
+    <text>Flextrack number cannot be determined</text>
+  </error>
+
+  <error id="1037">
+    <name>TERMINATION_TIME_ELAPSED</name>
+    <text>TDM invalid : Deactivation</text>
+  </error>
+
+  <error id="1038">
+    <name>UNKNOWN_FLEX_POINT_ROUTE</name>
+    <text>UNKNOWN FLEXTRACK ROUTE OR WAYPOINT</text>
+  </error>
+
+  <error id="1039">
+    <name>ILLEGAL_FLEX_TRACK_ROUTE</name>
+    <text>TDM rejected: FDRG entry point not found</text>
+  </error>
+
+  <error id="104">
+    <name>ROUTE_DIRECTION_IS_AMBIGUOUS</name>
+    <text>Cannot determine direction on $</text>
+  </error>
+
+  <error id="1040">
+    <name>FLEX_TRACK_NOT_CROSSING_FPSA</name>
+    <text>TDM rejected: FPSA entry point not found</text>
+  </error>
+
+  <error id="1041">
+    <name>REMARK_FIELD_EXPECTED</name>
+    <text>RMK field in TDM is required</text>
+  </error>
+
+  <error id="1042">
+    <name>FLEXTRACK_BASE_FULL</name>
+    <text>TDM rejected. Flextrack table is full</text>
+  </error>
+
+  <error id="1043">
+    <name>AMDT_TRACK_NOT_FOUND</name>
+    <text>AMDT rejected. Original TDM not found</text>
+  </error>
+
+  <error id="1044">
+    <name>AMDT_EXPECTED</name>
+    <text>Number indicates msg should be TDM AMDT</text>
+  </error>
+
+  <error id="1045">
+    <name>ACTIVATION_TIME_INTERVAL_SYNTAX_ERR</name>
+    <text>Syntax error in activation time field</text>
+  </error>
+
+  <error id="1046">
+    <name>ACTIVATION_TIME_NOT_FOUND</name>
+    <text>Flextrack activation time not found</text>
+  </error>
+
+  <error id="1047">
+    <name>TERMINATION_TIME_NOT_FOUND</name>
+    <text>Flextrack deactivation time not found</text>
+  </error>
+
+  <error id="1048">
+    <name>ILLEGAL_INTERSECTS_ON_FLEXTRACK</name>
+    <text>Flextrack cannot start &amp; end at same pt</text>
+  </error>
+
+  <error id="1049">
+    <name>TRACK_WAYPOINT_NOT_FOUND</name>
+    <text>Flextrack route details not found</text>
+  </error>
+
+  <error id="105">
+    <name>SOFT_ERROR_INVALID_INDEX</name>
+    <text>Call TSM : SOFT_ERROR_INVALID_INDEX</text>
+  </error>
+
+  <error id="1050">
+    <name>TRACK_ALT_NOT_FOUND</name>
+    <text>Flextrack altitude not found</text>
+  </error>
+
+  <error id="1051">
+    <name>TRACK_DIR_NOT_FOUND</name>
+    <text>FLEXTRACK ROUTE DIRECTION EXPECTED</text>
+  </error>
+
+  <error id="1052">
+    <name>TRACK_NO_ERR</name>
+    <text>Track number less than previous TDM</text>
+  </error>
+
+  <error id="1053">
+    <name>VALIDITY_PERIOD_TOO_LONG</name>
+    <text>Validity period exceeds 24 hours</text>
+  </error>
+
+  <error id="1054">
+    <name>FLEXTRACK_NOT_VALID</name>
+    <text>Flextrack in route is no longer valid</text>
+  </error>
+
+  <error id="1055">
+    <name>TRACKNAME_NOT_UNIQUE</name>
+    <text>Flextrack name already exists</text>
+  </error>
+
+  <error id="1056">
+    <name>FLEXTRACK_UNKNOWN_STATUS</name>
+    <text>FLEXTRACK UNKNOWN STATUS</text>
+  </error>
+
+  <error id="1057">
+    <name>FLEXTRACK_GENERATION_TIME_INVALID</name>
+    <text>Flextrack generation time is invalid</text>
+  </error>
+
+  <error id="1058">
+    <name>FLEXTRACK_ACTIVATION_TIME_INVALID</name>
+    <text>Flextrack activation time is invalid</text>
+  </error>
+
+  <error id="1059">
+    <name>FLEXTRACK_TERMINATION_TIME_INVALID</name>
+    <text>Flextrack deactivation time is invalid</text>
+  </error>
+
+  <error id="106">
+    <name>POINT_DOES_NOT_BELONG_TO_THE_ROUTE</name>
+    <text>#1$ is not defined on #2$</text>
+  </error>
+
+  <error id="1060">
+    <name>TOO_MANY_FLEXTRACKS_IN_ROUTE</name>
+    <text>Too many flextracks in route field</text>
+  </error>
+
+  <error id="1061">
+    <name>MESSAGE_SENT_ON_WRONG_TRANSMISSION</name>
+    <text>Msg type not allowed on transmission</text>
+  </error>
+
+  <error id="1062">
+    <name>FPCP_BASE_UNKNOWN_FPCP</name>
+    <text>FPCP BASE UNKNOWN FPCP</text>
+  </error>
+
+  <error id="1063">
+    <name>FPCP_BASE_DISK_ERROR</name>
+    <text>Call TSM : FPCP_BASE_DISK_ERROR</text>
+  </error>
+
+  <error id="1064">
+    <name>TAP_PROCESSING_FAILED</name>
+    <text>TAP PROCESSING FAILED</text>
+  </error>
+
+  <error id="1065">
+    <name>FPCP_INHIBITED</name>
+    <text>FPCP navbl: FPCP is inhibited</text>
+  </error>
+
+  <error id="1066">
+    <name>NOT_AN_FPCR_FLIGHT_PLAN</name>
+    <text>FPCP navbl: FDR is not in FPCP region</text>
+  </error>
+
+  <error id="1067">
+    <name>FPL_NOT_IN_COORDINATED_OR_ACTIVE_STATE</name>
+    <text>FPCP navbl: FDR is not coord or active</text>
+  </error>
+
+  <error id="1068">
+    <name>MANUAL_PROBE_ON_AUTOMATIC_FPCP_IS_NOT_ALLOWED</name>
+    <text>FPCP navbl: Auto FPCP in progress</text>
+  </error>
+
+  <error id="1069">
+    <name>FPCP_DOES_NOT_EXIST_IN_FPCP_DATABASE</name>
+    <text>FPCP failed: not existing in database</text>
+  </error>
+
+  <error id="107">
+    <name>POINT_OUT_OF_LATERAL_TOLERANCE</name>
+    <text>Designated point outside route tolerance</text>
+  </error>
+
+  <error id="1070">
+    <name>FPCP_DOES_ALREADY_EXISTS_IN_FPCP_DATABASE</name>
+    <text>FPCP failed: already in FPCF database</text>
+  </error>
+
+  <error id="1071">
+    <name>FPCP_TAP_ERRONEOUS_SPEED</name>
+    <text>FPCP rejected: Speed not appropriate</text>
+  </error>
+
+  <error id="1072">
+    <name>FPCP_TAP_ERRONEOUS_LEVEL</name>
+    <text>FPCP rejected: Level not appropriate</text>
+  </error>
+
+  <error id="1073">
+    <name>FPCP_TAP_ERRONEOUS_ROUTE</name>
+    <text>FPCP rejected: Error in route</text>
+  </error>
+
+  <error id="1074">
+    <name>FPCP_TAP_UNKNOWN_FLIGHT_PLAN</name>
+    <text>FPCP rejected: FDR not stored</text>
+  </error>
+
+  <error id="1075">
+    <name>FPCF_FLIGHT_PLAN_DATABASE_FULL</name>
+    <text>FPCF DATABASE FULL</text>
+  </error>
+
+  <error id="1076">
+    <name>MANUAL_CANCELLATION_NOT_ALLOWED_ON_AUTOMATIC_FPCP</name>
+    <text>FPCP rejected: manual cancel not allowed</text>
+  </error>
+
+  <error id="1077">
+    <name>FPCP_FPL_NO_MORE_ACTIVE</name>
+    <text>FPCP FPL NO MORE ACTIVE</text>
+  </error>
+
+  <error id="1078">
+    <name>FPCF_TOO_MANY_SAVED_TRIALS</name>
+    <text>FPCF_TOO_MANY_SAVED_TRIALS</text>
+  </error>
+
+  <error id="1079">
+    <name>SAP_BASE_UNKNOWN_SAP</name>
+    <text>SAP_BASE_UNKNOWN_SAP</text>
+  </error>
+
+  <error id="108">
+    <name>POINT_IS_NOT_A_TRANSITION_WITH_SID</name>
+    <text>$ is not last point of $</text>
+  </error>
+
+  <error id="1080">
+    <name>SAP_BASE_DISK_ERROR</name>
+    <text>SAP_BASE_DISK_ERROR</text>
+  </error>
+
+  <error id="1081">
+    <name>SAP_INHIBITED</name>
+    <text>SAP_INHIBITED</text>
+  </error>
+
+  <error id="1082">
+    <name>NOT_AN_SAP_FLIGHT_PLAN</name>
+    <text>NOT_AN_SAP_FLIGHT_PLAN</text>
+  </error>
+
+  <error id="1083">
+    <name>MANUAL_PROBE_ON_AUTOMATIC_SAP_IS_NOT_ALLOWED</name>
+    <text>MAN_PROBE_ON_AUTO_SAP_IS_NOT_ALLOWED</text>
+  </error>
+
+  <error id="1084">
+    <name>SAP_DOES_NOT_EXIST_IN_SAP_DATABASE</name>
+    <text>SAP_DOES_NOT_EXIST_IN_SAP_DATABASE</text>
+  </error>
+
+  <error id="1085">
+    <name>SAP_ALREADY_EXISTS_IN_SAP_DATABASE</name>
+    <text>SAP_ALREADY_EXISTS_IN_SAP_DATABASE</text>
+  </error>
+
+  <error id="1086">
+    <name>SAP_TAP_ERRONEOUS_SPEED</name>
+    <text>SAP_TAP_ERRONEOUS_SPEED</text>
+  </error>
+
+  <error id="1087">
+    <name>SAP_TAP_ERRONEOUS_LEVEL</name>
+    <text>SAP_TAP_ERRONEOUS_LEVEL</text>
+  </error>
+
+  <error id="1088">
+    <name>SAP_TAP_ERRONEOUS_ROUTE</name>
+    <text>SAP_TAP_ERRONEOUS_ROUTE</text>
+  </error>
+
+  <error id="1089">
+    <name>SAP_TAP_UNKNOWN_FLIGHT_PLAN</name>
+    <text>SAP_TAP_UNKNOWN_FLIGHT_PLAN</text>
+  </error>
+
+  <error id="109">
+    <name>ADEP_IS_NOT_COMPATIBLE_WITH_SID</name>
+    <text>SID $ is not defined for ADEP</text>
+  </error>
+
+  <error id="1090">
+    <name>MANUAL_CANCELLATION_NOT_ALLOWED_ON_AUTOMATIC_SAP</name>
+    <text>MAN_CANCEL_NOT_ALLOWED_ON_AUTO_SAP</text>
+  </error>
+
+  <error id="1091">
+    <name>AIP_INVALID_INCOMING_MESSAGE_TYPE</name>
+    <text>Call TSM: AIP_INVALID_INCOMING_MESSAGE..</text>
+  </error>
+
+  <error id="1092">
+    <name>AIP_INVALID_REDUNDANCY_DATA_ACTION</name>
+    <text>Call TSM: AIP_INVALID_REDUNDANCY_DATA_..</text>
+  </error>
+
+  <error id="1093">
+    <name>AIP_INVALID_REDUNDANCY_REPORT_ACTION</name>
+    <text>Call TSM: AIP_INVALID_REDUNDANCY_REPORT.</text>
+  </error>
+
+  <error id="1094">
+    <name>AIP_REQUEST_FROM_INVALID_LOGICAL_POSITION</name>
+    <text>Call TSM: AIP_REQUEST_FROM_INVALID_...</text>
+  </error>
+
+  <error id="1095">
+    <name>AIP_SENDING_MESSAGE_TO_OP_QUEUE_FAILED</name>
+    <text>Call TSM: AIP_SENDING_MESSAGE_TO_OP_Q..</text>
+  </error>
+
+  <error id="1096">
+    <name>AIP_SENDING_MESSAGE_TO_DAI_FAILED</name>
+    <text>Call TSM:AIP_SENDING_MESSAGE_TO_DAI_FAIL</text>
+  </error>
+
+  <error id="1097">
+    <name>AIP_SENDING_REPORT_TO_FD_EX_FAILED</name>
+    <text>Call TSM:AIP_SENDING_REPORT_TO_FD_EX..</text>
+  </error>
+
+  <error id="1098">
+    <name>AIP_INVALID_DATABASE_UPDATE_TYPE</name>
+    <text>Call TSM: AIP_INVALID_DATABASE_UPDATE_TY</text>
+  </error>
+
+  <error id="1099">
+    <name>AIP_PRODUCT_REQUESTS_DBA_UNKNOWN_ITEM</name>
+    <text>Call TSM: AIP_PRODUCT_REQUESTS_DBA_UNK..</text>
+  </error>
+
+  <error id="11">
+    <name>FPL_STATUS_IS_UNDEFINED</name>
+    <text>Message rejected. Fpl is not started</text>
+  </error>
+
+  <error id="110">
+    <name>RWY_IS_NOT_COMPATIBLE_WITH_SID</name>
+    <text>SID $ is not defined for runway</text>
+  </error>
+
+  <error id="1100">
+    <name>AIP_PRODUCT_REQUESTS_DBA_INSERT_DENIED</name>
+    <text>Call TSM: AIP_PRODUCT_REQUESTS_DBA_INS..</text>
+  </error>
+
+  <error id="1101">
+    <name>AIP_DAI_ATIS_DBA_IS_FULL</name>
+    <text>Message rejected. ATIS database full.</text>
+  </error>
+
+  <error id="1102">
+    <name>AIP_DAI_ATIS_DBA_DISK_IO_ERROR</name>
+    <text>Call TSM:AIP_DAI_ATIS_DBA_DISK_IO_ERROR</text>
+  </error>
+
+  <error id="1103">
+    <name>AIP_DAI_ATIS_DBA_UNKNOWN_ITEM</name>
+    <text>Call TSM:AIP_DAI_ATIS_DBA_UNKNOWN_ITEM</text>
+  </error>
+
+  <error id="1104">
+    <name>AIP_DAI_ATIS_DBA_INSERT_DENIED</name>
+    <text>Call TSM:AIP_DAI_ATIS_DBA_INSERT_DENIED</text>
+  </error>
+
+  <error id="1105">
+    <name>AIP_ATIS_PRODUCT_NOT_FOUND</name>
+    <text>ATIS product not defined</text>
+  </error>
+
+  <error id="1106">
+    <name>AIP_ATIS_MESSAGE_KEY_NOT_FOUND</name>
+    <text>Can't delete: Invalid ATIS message key</text>
+  </error>
+
+  <error id="1107">
+    <name>AIP_DAI_MET_DBA_IS_FULL</name>
+    <text>Message rejected. MET database full.</text>
+  </error>
+
+  <error id="1108">
+    <name>AIP_DAI_MET_DBA_DISK_IO_ERROR</name>
+    <text>Call TSM: AIP_DAI_MET_DBA_DISK_IO_ERROR</text>
+  </error>
+
+  <error id="1109">
+    <name>AIP_DAI_MET_DBA_UNKNOWN_ITEM</name>
+    <text>Call TSM: AIP_DAI_MET_DBA_UNKNOWN_ITEM</text>
+  </error>
+
+  <error id="111">
+    <name>STAR_IS_NOT_THE_LAST_ROUTE_ELEMENT</name>
+    <text>$ must be the last route element</text>
+  </error>
+
+  <error id="1110">
+    <name>AIP_DAI_MET_DBA_INSERT_DENIED</name>
+    <text>Call TSM: AIP_DAI_MET_DBA_INSERT_DENIED</text>
+  </error>
+
+  <error id="1111">
+    <name>AIP_MET_PRODUCT_NOT_FOUND</name>
+    <text>MET product not defined</text>
+  </error>
+
+  <error id="1112">
+    <name>AIP_MET_MESSAGE_KEY_NOT_FOUND</name>
+    <text>Can't delete: Invalid MET message key</text>
+  </error>
+
+  <error id="1113">
+    <name>AIP_DAI_NOTAM_DBA_IS_FULL</name>
+    <text>Message rejected. NOTAM database full.</text>
+  </error>
+
+  <error id="1114">
+    <name>AIP_DAI_NOTAM_DBA_DISK_IO_ERROR</name>
+    <text>Call TSM:AIP_DAI_NOTAM_DBA_DISK_IO_ERROR</text>
+  </error>
+
+  <error id="1115">
+    <name>AIP_DAI_NOTAM_DBA_UNKNOWN_ITEM</name>
+    <text>Call TSM: AIP_DAI_NOTAM_DBA_UNKNOWN_ITEM</text>
+  </error>
+
+  <error id="1116">
+    <name>AIP_DAI_NOTAM_DBA_INSERT_DENIED</name>
+    <text>Call TSM:AIP_DAI_NOTAM_DBA_INSERT_DENIED</text>
+  </error>
+
+  <error id="1117">
+    <name>AIP_NOTAM_PRODUCT_NOT_FOUND</name>
+    <text>NOTAM product not defined</text>
+  </error>
+
+  <error id="1118">
+    <name>AIP_NOTAM_MESSAGE_KEY_NOT_FOUND</name>
+    <text>Can't delete: Invalid NOTAM message key</text>
+  </error>
+
+  <error id="1119">
+    <name>AIP_INVALID_IMBEDED_MESSAGE_TYPE</name>
+    <text>Call TSM: AIP_INVALID_IMBEDED_MESSAGE...</text>
+  </error>
+
+  <error id="112">
+    <name>IDENTICAL_ITEM</name>
+    <text>$ is entered twice in a row</text>
+  </error>
+
+  <error id="1120">
+    <name>AIP_CORRESPONDING_REQUEST_NOT_FOUND</name>
+    <text>Call TSM: AIP_CORRESPONDING_REQUEST_....</text>
+  </error>
+
+  <error id="1121">
+    <name>AIP_INVALID_LOAD_ACTION</name>
+    <text>Call TSM: AIP_INVALID_LOAD_ACTION</text>
+  </error>
+
+  <error id="1122">
+    <name>AIP_DAI_ATIS_DBA_INIT_FAILED</name>
+    <text>Call TSM: AIP_DAI_ATIS_DBA_INIT_FAILED</text>
+  </error>
+
+  <error id="1123">
+    <name>AIP_DAI_MET_DBA_INIT_FAILED</name>
+    <text>Call TSM: AIP_DAI_MET_DBA_INIT_FAILED</text>
+  </error>
+
+  <error id="1124">
+    <name>AIP_DAI_NOTAM_DBA_INIT_FAILED</name>
+    <text>Call TSM: AIP_DAI_NOTAM_DBA_INIT_FAILED</text>
+  </error>
+
+  <error id="1125">
+    <name>AIP_PRODUCT_REQUESTS_DBA_INIT_FAILED</name>
+    <text>Call TSM:AIP_PRODUCT_REQUESTS_DBA_INIT..</text>
+  </error>
+
+  <error id="1126">
+    <name>AIP_SENDING_DOWNLOAD_TO_OP_QUEUE_FAILED</name>
+    <text>Call TSM: AIP_SENDING_DOWNLOAD_TO_OP_Q..</text>
+  </error>
+
+  <error id="1127">
+    <name>AIP_SENDING_DOWNLOAD_ACK_TO_DAI_FAILED</name>
+    <text>Call TSM: AIP_SENDING_DOWNLOAD_ACK_TO...</text>
+  </error>
+
+  <error id="1128">
+    <name>AIP_PRODUCT_REQUESTS_DBA_IS_FULL</name>
+    <text>Request function busy, try again later</text>
+  </error>
+
+  <error id="1129">
+    <name>AIP_PRODUCT_REQUESTS_DBA_DISK_IO_ERROR</name>
+    <text>Call TSM:AIP_PRODUCT_REQUESTS_DBA_DISK..</text>
+  </error>
+
+  <error id="113">
+    <name>SOFTWARE_ERROR_ITEM_MUST_BE_IDENTIFIED</name>
+    <text>Call TSM: SOFTWARE_ERROR_ITEM_MUST_BE...</text>
+  </error>
+
+  <error id="1130">
+    <name>AIP_REQUESTED_MET_PRODUCT_NOT_FOUND</name>
+    <text>MET product not held:Request in progress</text>
+  </error>
+
+  <error id="1131">
+    <name>AIP_REQUESTED_NOTAM_PRODUCT_NOT_FOUND</name>
+    <text>NOTAM not held: Request in progress</text>
+  </error>
+
+  <error id="1132">
+    <name>AIP_PRODUCT_REQUEST_REJECTED_DOWNLOAD_IN_PROGRESS</name>
+    <text>AIF request navbl: Download in progress.</text>
+  </error>
+
+  <error id="1133">
+    <name>AIP_SENDING_PRODUCT_REQUEST_TO_FD_EX_FAILED</name>
+    <text>Call TSM: AIP_SENDING_PRODUCT_REQUEST...</text>
+  </error>
+
+  <error id="1134">
+    <name>AIP_NAIPS_REQUEST_FAILED</name>
+    <text>Call TSM: AIP_NAIPS_REQUEST_FAILED</text>
+  </error>
+
+  <error id="1135">
+    <name>AIP_NAIPS_REQUEST_FAILED_NAIPS_LINE_NOT_OK</name>
+    <text>Link to NAIPS not available</text>
+  </error>
+
+  <error id="1136">
+    <name>AIP_SENDING_REQUEST_REPORT_TO_DAI_FAILED</name>
+    <text>Call TSM: AIP_SENDING_REQUEST_REPORT...</text>
+  </error>
+
+  <error id="1137">
+    <name>AIP_DAI_ATIS_DBA_MESSAGE_TO_BE_COPIED_NOT_FOUND</name>
+    <text>ATIS message no longer exists.</text>
+  </error>
+
+  <error id="1138">
+    <name>AIP_DAI_MET_DBA_MESSAGE_TO_BE_COPIED_NOT_FOUND</name>
+    <text>MET message no longer exists.</text>
+  </error>
+
+  <error id="1139">
+    <name>AIP_DAI_NOTAM_DBA_MESSAGE_TO_BE_COPIED_NOT_FOUND</name>
+    <text>NOTAM message no longer exists.</text>
+  </error>
+
+  <error id="114">
+    <name>SID_IS_NOT_THE_FIRST_ROUTE_ELEMENT</name>
+    <text>$ must be the first route element</text>
+  </error>
+
+  <error id="1140">
+    <name>AIP_COPY_REQUEST_REJECTED_DOWNLOAD_IN_PROGRESS</name>
+    <text>AIF copy navbl: Download in progress.</text>
+  </error>
+
+  <error id="1141">
+    <name>AIP_SENDING_DOWNLOAD_REQUEST_TO_FD_EX_FAILED</name>
+    <text>Call TSM: AIP_SENDING_DOWNLOAD_REQUEST..</text>
+  </error>
+
+  <error id="1142">
+    <name>AIP_INVALID_DOWNLOAD_REQUEST</name>
+    <text>Call TSM: AIP_INVALID_DOWNLOAD_REQUEST</text>
+  </error>
+
+  <error id="1143">
+    <name>AIP_LIST_REINIT_REQUEST_REJECTED_DOWNLOAD_IN_PROGRESS</name>
+    <text>Call TSM: AIP_LIST_REINIT_REQUEST_REJ...</text>
+  </error>
+
+  <error id="1144">
+    <name>AIP_RAZ_LIST_MESSAGE_NOT_CORRECTLY_SENT</name>
+    <text>Call TSM: AIP_RAZ_LIST_MESSAGE_NOT_COR..</text>
+  </error>
+
+  <error id="1145">
+    <name>SYNTAX_INVALID_MESSAGE_TYPE</name>
+    <text>Call TSM: SYNTAX_INVALID_MESSAGE_TYPE</text>
+  </error>
+
+  <error id="1146">
+    <name>SYNTAX_INVALID_DATABASE_UPDATE_TYPE</name>
+    <text>Call TSM: SYNTAX_INVALID_DATABASE_UPD..</text>
+  </error>
+
+  <error id="1147">
+    <name>SYNTAX_INVALID_MESSAGE_KEY</name>
+    <text>Call TSM:SYNTAX_INVALID_MESSAGE_KEY</text>
+  </error>
+
+  <error id="1148">
+    <name>SYNTAX_INVALID_LOCATION</name>
+    <text>Call TSM: SYNTAX_INVALID_LOCATION</text>
+  </error>
+
+  <error id="1149">
+    <name>SYNTAX_INVALID_MESSAGE_TEXT_COUNT</name>
+    <text>Call TSM: SYNTAX_INVALID_MESSAGE_TEXT...</text>
+  </error>
+
+  <error id="115">
+    <name>POINT_IS_NOT_A_TRANSITION_WITH_STAR</name>
+    <text>$ is not first point of $</text>
+  </error>
+
+  <error id="1150">
+    <name>SYNTAX_INVALID_NOTAM_CATEGORY</name>
+    <text>Call TSM: SYNTAX_INVALID_NOTAM_CATEGORY</text>
+  </error>
+
+  <error id="1151">
+    <name>SYNTAX_INVALID_MET_CATEGORY</name>
+    <text>Call TSM: SYNTAX_INVALID_MET_CATEGORY</text>
+  </error>
+
+  <error id="1152">
+    <name>SYNTAX_INVALID_SEQUENCE_NUMBER</name>
+    <text>Call TSM: SYNTAX_INVALID_SEQUENCE_NUMBER</text>
+  </error>
+
+  <error id="1153">
+    <name>SYNTAX_INVALID_MORE_FLAG</name>
+    <text>Call TSM: SYNTAX_INVALID_MORE_FLAG</text>
+  </error>
+
+  <error id="1154">
+    <name>SYNTAX_INVALID_IMBEDED_MESSAGE_TYPE</name>
+    <text>Call TSM: SYNTAX_INVALID_IMBEDED_MESS...</text>
+  </error>
+
+  <error id="1155">
+    <name>SYNTAX_INVALID_LOAD_ACTION</name>
+    <text>Call TSM: SYNTAX_INVALID_LOAD_ACTION</text>
+  </error>
+
+  <error id="1156">
+    <name>INVALID_DATE</name>
+    <text>Call TSM: INVALID_DATE</text>
+  </error>
+
+  <error id="1157">
+    <name>INVALID_TIME</name>
+    <text>Call TSM:INVALID_TIME</text>
+  </error>
+
+  <error id="1158">
+    <name>AIP_OP_QUEUE_BASE_MCQ_FULL</name>
+    <text>Warning : "AIQ" database full.</text>
+  </error>
+
+  <error id="1159">
+    <name>AIP_OP_QUEUE_BASE_MCQ_EMPTY</name>
+    <text>No messages are in the "AIQ".</text>
+  </error>
+
+  <error id="116">
+    <name>ADES_IS_NOT_COMPATIBLE_WITH_STAR</name>
+    <text>STAR $ not defined for ADES</text>
+  </error>
+
+  <error id="1160">
+    <name>AIP_OP_QUEUE_BASE_MCQ_BUSY_FULL</name>
+    <text>Call TSM:AIP_OP_QUEUE_BASE_MCQ_BUSY_FULL</text>
+  </error>
+
+  <error id="1161">
+    <name>AIP_OP_QUEUE_ITEM_NOT_FOUND_IN_MCQ_BASE</name>
+    <text>Call TSM: AIP_OP_QUEUE_ITEM_NOT_FOUND...</text>
+  </error>
+
+  <error id="1162">
+    <name>AIP_OP_QUEUE_ITEM_ALREADY_BUSY_IN_MCQ_BASE</name>
+    <text>Call TSM:AIP_OP_QUEUE_ITEM_ALREADY_BUSY</text>
+  </error>
+
+  <error id="1163">
+    <name>PDC_CPDLC_CONNECTION_IS_PENDING</name>
+    <text>PDC refused: CPDLC connection in progres</text>
+  </error>
+
+  <error id="1164">
+    <name>PDC_CPDLC_CONNECTION_NOT_ESTABLISHED</name>
+    <text>PDC refused: Flight not CPDLC connected</text>
+  </error>
+
+  <error id="1165">
+    <name>PDC_INVALID_AIRCRAFT_STATE</name>
+    <text>PDC refused: not preactive/ coordinated</text>
+  </error>
+
+  <error id="1166">
+    <name>PDC_INVALID_AIRCRAFT_TYPE</name>
+    <text>PDC refused: Aircraft type is not valid</text>
+  </error>
+
+  <error id="1167">
+    <name>PDC_INVALID_CALLSIGN</name>
+    <text>PDC refused: ACID is invalid</text>
+  </error>
+
+  <error id="1168">
+    <name>PDC_INVALID_ADEP</name>
+    <text>PDC refused: ADEP is invalid</text>
+  </error>
+
+  <error id="1169">
+    <name>PDC_INVALID_ADES</name>
+    <text>PDC refused: ADES is invalid</text>
+  </error>
+
+  <error id="117">
+    <name>RWY_IS_NOT_COMPATIBLE_WITH_STAR</name>
+    <text>STAR $ is not defined for runway</text>
+  </error>
+
+  <error id="1170">
+    <name>PDC_INVALID_ETD</name>
+    <text>PDC refused: ETD is invalid</text>
+  </error>
+
+  <error id="1171">
+    <name>PDC_INVALID_RFL</name>
+    <text>PDC refused: RFL is invalid</text>
+  </error>
+
+  <error id="1172">
+    <name>PDC_INVALID_SID</name>
+    <text>PDC refused: SID designator is invalid</text>
+  </error>
+
+  <error id="1173">
+    <name>PDC_INVALID_FREQ</name>
+    <text>PDC refused: Dep freq is invalid</text>
+  </error>
+
+  <error id="1174">
+    <name>PDC_INVALID_ALT</name>
+    <text>PDC refused:Level restriction is invalid</text>
+  </error>
+
+  <error id="1175">
+    <name>PDC_UNKNOWN_ERROR</name>
+    <text>Call TSM : PDC_UNKNOWN_ERROR</text>
+  </error>
+
+  <error id="1176">
+    <name>CPD_CPDLC_CONNECTION_IS_NOT_ESTABLISHED</name>
+    <text>CPDLC navbl: A/craft not CPDLC connected</text>
+  </error>
+
+  <error id="1177">
+    <name>CPD_AIRCRAFT_IS_NOT_LOGGED_ON</name>
+    <text>CPDLC navbl: Aircraft is not logged on</text>
+  </error>
+
+  <error id="1178">
+    <name>CPD_CANNOT_SEND_CR_IN_THIS_STATE</name>
+    <text>CR refused: Connection pending or exists</text>
+  </error>
+
+  <error id="1179">
+    <name>CPD_MANUAL_ACK_NOT_ALLOWED_FOR_THIS_MESSAGE</name>
+    <text>Manual ACK navbl for this message</text>
+  </error>
+
+  <error id="118">
+    <name>ROUTE_AND_ROUTE_DO_NOT_INTERSECT</name>
+    <text>Intersection of $ &amp; $ ambiguous</text>
+  </error>
+
+  <error id="1180">
+    <name>CPD_FDP_WILL_REFUSE_THIS_NEW_CLEARANCE</name>
+    <text>Clearance can't be sent: rejected by FDP</text>
+  </error>
+
+  <error id="1181">
+    <name>CPD_UNABLE_TO_SEND_MESSAGE</name>
+    <text>Call TSM: CPD_UNABLE_TO_SEND_MESSAGE</text>
+  </error>
+
+  <error id="1182">
+    <name>NOT_MET_UNDEFINED_MESSAGE_TYPE</name>
+    <text>NOT_MET_UNDEFINED_MESSAGE_TYPE</text>
+  </error>
+
+  <error id="1183">
+    <name>NOT_MET_MESSAGE_IDENTIFIER_EXPECTED</name>
+    <text>NOT_MET_MESSAGE_IDENTIFIER_EXPECTED</text>
+  </error>
+
+  <error id="1184">
+    <name>NOT_MET_INVALID_VALIDITY_PERIOD</name>
+    <text>NOT_MET_INVALID_VALIDITY_PERIOD</text>
+  </error>
+
+  <error id="1185">
+    <name>CONSECUTIVE_DUPLICATE_POINTS</name>
+    <text>CONSECUTIVE_DUPLICATE_POINTS</text>
+  </error>
+
+  <error id="1186">
+    <name>WARNING_DUPLICATE_POINT_IS_UNKNOWN</name>
+    <text>WARNING_DUPLICATE_POINT_IS_UNKNOWN</text>
+  </error>
+
+  <error id="1187">
+    <name>FLEXTRACK_BEGINNING_DUPLICATE_POINT</name>
+    <text>FLEXTRACK_BEGINNING_DUPLICATE_POINT</text>
+  </error>
+
+  <error id="1188">
+    <name>NOT_MET_INVALID_OBSERVATION_TIME</name>
+    <text>NOT_MET_INVALID_OBSERVATION_TIME</text>
+  </error>
+
+  <error id="1189">
+    <name>NOT_MET_SEMANTIC_ERROR_IN_VALIDITY_PERIOD</name>
+    <text>NOT_MET_SEMANTIC_ERR_VALIDITY_PERIOD</text>
+  </error>
+
+  <error id="119">
+    <name>FIX_LIST_IS_TOO_LONG</name>
+    <text>Number of points exceeds allowed maximum</text>
+  </error>
+
+  <error id="1190">
+    <name>NOT_MET_VALIDITY_PERIOD_EXPECTED</name>
+    <text>NOT_MET_VALIDITY_PERIOD_EXPECTED</text>
+  </error>
+
+  <error id="1191">
+    <name>NOT_MET_OBSERVATION_TIME_EXPECTED</name>
+    <text>NOT_MET_OBSERVATION_TIME_EXPECTED</text>
+  </error>
+
+  <error id="1192">
+    <name>NOT_MET_INVALID_DATE_SYNTAX</name>
+    <text>NOT_MET_INVALID_DATE_SYNTAX</text>
+  </error>
+
+  <error id="1193">
+    <name>NOT_MET_UNEXPECTED_END_OF_MESSAGE</name>
+    <text>NOT_MET_UNEXPECTED_END_OF_MESSAGE</text>
+  </error>
+
+  <error id="1194">
+    <name>NOT_MET_INVALID_MESSAGE_LENGTH</name>
+    <text>NOT_MET_INVALID_MESSAGE_LENGTH</text>
+  </error>
+
+  <error id="1195">
+    <name>NOT_MET_AIRCRAFT_IDENTIFICATION_EXPECTED</name>
+    <text>NOT_MET_AIRCRAFT_IDENTIFICATION_EXPECTED</text>
+  </error>
+
+  <error id="1196">
+    <name>NOT_MET_AREA_DESIGNATOR_EXPECTED</name>
+    <text>NOT_MET_AREA_DESIGNATOR_EXPECTED</text>
+  </error>
+
+  <error id="1197">
+    <name>NOT_MET_QNH_VALUE_NOT_FOUND</name>
+    <text>NOT_MET_QNH_VALUE_NOT_FOUND</text>
+  </error>
+
+  <error id="1198">
+    <name>NOT_MET_INVALID_QNH_FORMAT</name>
+    <text>NOT_MET_INVALID_QNH_FORMAT</text>
+  </error>
+
+  <error id="1199">
+    <name>NOT_MET_AERODROME_NAME_EXPECTED</name>
+    <text>NOT_MET_AERODROME_NAME_EXPECTED</text>
+  </error>
+
+  <error id="12">
+    <name>FPL_MESSAGE_NOT_PROCESSED</name>
+    <text>This type of message is not processed</text>
+  </error>
+
+  <error id="120">
+    <name>STAR_IS_THE_FIRST_KNOWN_ELEMENT</name>
+    <text>A known route item must preceed $</text>
+  </error>
+
+  <error id="1200">
+    <name>NOT_MET_AERODROME_NOT_FOUND</name>
+    <text>NOT_MET_AERODROME_NOT_FOUND</text>
+  </error>
+
+  <error id="1201">
+    <name>NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_TAF</name>
+    <text>NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_TAF</text>
+  </error>
+
+  <error id="1202">
+    <name>NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_ARFOR</name>
+    <text>NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_ARFOR</text>
+  </error>
+
+  <error id="1203">
+    <name>NOT_MET_METAR_BUNDLED_MISSING_BUNDLE_END</name>
+    <text>NOT_MET_METAR_BUNDLED_MISSING_BUNDLE_END</text>
+  </error>
+
+  <error id="1204">
+    <name>MMI_NOT_MET_CREATE_REQUEST_INVALID_NOTAM_TYPE</name>
+    <text>MMI_NOT_MET_CREATE_INVALID_NOTAM_TYPE</text>
+  </error>
+
+  <error id="1205">
+    <name>NOT_MET_INVALID_NOTAM_TYPE</name>
+    <text>NOT_MET_INVALID_NOTAM_TYPE</text>
+  </error>
+
+  <error id="1206">
+    <name>NOT_MET_INVALID_NOTAM_NEW</name>
+    <text>NOT_MET_INVALID_NOTAM_NEW</text>
+  </error>
+
+  <error id="1207">
+    <name>NOT_MET_SYNTAX_ERROR_IN_NOTAM_TYPE</name>
+    <text>NOT_MET_SYNTAX_ERROR_IN_NOTAM_TYPE</text>
+  </error>
+
+  <error id="1208">
+    <name>NOT_MET_INVALID_ALTITUDES</name>
+    <text>NOT_MET_INVALID_ALTITUDES</text>
+  </error>
+
+  <error id="1209">
+    <name>NOT_MET_INVALID_SERIES_NUMBER</name>
+    <text>NOT_MET_INVALID_SERIES_NUMBER</text>
+  </error>
+
+  <error id="121">
+    <name>KNOWN_ELEMENT_EXPECTED_AFTER_ROUTE</name>
+    <text>A known route item must follow $</text>
+  </error>
+
+  <error id="1210">
+    <name>NOT_MET_INVALID_LONGITUDE</name>
+    <text>NOT_MET_INVALID_LONGITUDE</text>
+  </error>
+
+  <error id="1211">
+    <name>NOT_MET_INVALID_LATITUDE</name>
+    <text>NOT_MET_INVALID_LATITUDE</text>
+  </error>
+
+  <error id="1212">
+    <name>NOT_MET_INVALID_QUALIFIER_FIELDS</name>
+    <text>NOT_MET_INVALID_QUALIFIER_FIELDS</text>
+  </error>
+
+  <error id="1213">
+    <name>NOT_MET_INVALID_NOTAM_TEXT</name>
+    <text>NOT_MET_INVALID_NOTAM_TEXT</text>
+  </error>
+
+  <error id="1214">
+    <name>NOT_MET_INVALID_FIR_SYNTAX</name>
+    <text>NOT_MET_INVALID_FIR_SYNTAX</text>
+  </error>
+
+  <error id="1215">
+    <name>NOT_MET_INVALID_ICAO_LOCATION_INDICATOR_SYNTAX</name>
+    <text>NOT_MET_INVALID_ICAO_LOCATION_IND_SYNTAX</text>
+  </error>
+
+  <error id="1216">
+    <name>NOT_MET_INVALID_FIELD</name>
+    <text>NOT_MET_INVALID_FIELD</text>
+  </error>
+
+  <error id="1217">
+    <name>NOT_MET_INVALID_METEO_WATCH_OFFICE</name>
+    <text>NOT_MET_INVALID_METEO_WATCH_OFFICE</text>
+  </error>
+
+  <error id="1218">
+    <name>NOT_MET_INVALID_SIGMET_SEQUENCE</name>
+    <text>NOT_MET_INVALID_SIGMET_SEQUENCE</text>
+  </error>
+
+  <error id="1219">
+    <name>NOT_MET_INVALID_AIRMET_SEQUENCE</name>
+    <text>NOT_MET_INVALID_AIRMET_SEQUENCE</text>
+  </error>
+
+  <error id="122">
+    <name>UNKNOWN_POINT_USED_AS_INTERSECTION</name>
+    <text>UNKNOWN_POINT_USED_AS_INTERSECTION</text>
+  </error>
+
+  <error id="1220">
+    <name>NOT_MET_INVALID_MET_REPORT_SPECIAL_SEQUENCE</name>
+    <text>NOT_MET_INVALID_MET_REPORT_SPECIAL_SEQ</text>
+  </error>
+
+  <error id="1221">
+    <name>OVERLAPPING_VALIDITY_PERIOD</name>
+    <text>OVERLAPPING_VALIDITY_PERIOD</text>
+  </error>
+
+  <error id="1222">
+    <name>MMI_NOT_MET_INVALID_UPDATE_COMMAND_SYNTAX</name>
+    <text>MMI_NOT_MET_INV_UPDATE_CMD_SYNTAX</text>
+  </error>
+
+  <error id="1223">
+    <name>MMI_NOT_MET_INVALID_UPDATE_COMMAND</name>
+    <text>MMI_NOT_MET_INVALID_UPDATE_COMMAND</text>
+  </error>
+
+  <error id="1224">
+    <name>MMI_NOT_MET_UNKNOWN_UPDATE_COMMAND</name>
+    <text>MMI_NOT_MET_UNKNOWN_UPDATE_COMMAND</text>
+  </error>
+
+  <error id="1225">
+    <name>NOT_MET_DATA_BASE_FULL</name>
+    <text>NOT_MET_DATA_BASE_FULL</text>
+  </error>
+
+  <error id="1226">
+    <name>MMI_NOT_MET_MULTIPLE_MESSAGES_NOT_ALLOWED</name>
+    <text>MMI_NOT_MET_MULTIPLE_MSGS_NOT_ALLOWED</text>
+  </error>
+
+  <error id="1227">
+    <name>MMI_NOT_MET_RECORD_IS_OUTDATED</name>
+    <text>MMI_NOT_MET_RECORD_IS_OUTDATED</text>
+  </error>
+
+  <error id="1228">
+    <name>MMI_NOT_MET_DELETE_REQUEST_OF_EMPTY_RECORD</name>
+    <text>MMI_NOT_MET_DELETE_OF_EMPTY_RECORD</text>
+  </error>
+
+  <error id="1229">
+    <name>MMI_NOT_MET_DELETE_REQUEST_OF_UNEXISTING_RECORD</name>
+    <text>MMI_NOT_MET_DELETE_OF_UNEXISTING_RECORD</text>
+  </error>
+
+  <error id="123">
+    <name>FIRST_DEFINED_POINT_IS_WITHIN_FDRG</name>
+    <text>FIRST_DEFINED_POINT_IS_WITHIN_FDRG</text>
+  </error>
+
+  <error id="1230">
+    <name>MMI_NOT_MET_UPDATE_REQUEST_OF_EMPTY_RECORD</name>
+    <text>MMI_NOT_MET_UPDATE_OF_EMPTY_RECORD</text>
+  </error>
+
+  <error id="1231">
+    <name>MMI_NOT_MET_UPDATE_REQUEST_OF_UNEXISTING_RECORD</name>
+    <text>MMI_NOT_MET_UPDATE_OF_UNEXISTING_RECORD</text>
+  </error>
+
+  <error id="1232">
+    <name>MMI_NOT_MET_UPDATE_REQUEST_DUPLICATES_AN_EXISTING_RECORD</name>
+    <text>MMI_NOT_MET_UPDATE_DUPES_EXISTING_REC</text>
+  </error>
+
+  <error id="1233">
+    <name>MMI_NOT_MET_CREATE_REQUEST_OF_EXISTING_RECORD</name>
+    <text>MMI_NOT_MET_CREATE_OF_EXISTING_RECORD</text>
+  </error>
+
+  <error id="1234">
+    <name>MMI_NOT_MET_CREATE_REQUEST_FOR_EXISTING_AREA_DESIGNATOR</name>
+    <text>MMI_NOT_MET_CREATE_EXISTING_AREA_DESIG</text>
+  </error>
+
+  <error id="1235">
+    <name>MMI_NOT_MET_UPDATE_REQUEST_DUPLICATES_EXISTING_AREA_DESIGNATOR</name>
+    <text>MMI_NOT_MET_UPDATE_DUPES_AREA_DESIG</text>
+  </error>
+
+  <error id="1236">
+    <name>MMI_NOT_MET_UPDATE_REQUEST_CAN_NOT_CHANGE_NOTAM_TYPE</name>
+    <text>MMI_NOT_MET_UPDATE_CANT_CHG_NOTAM_TYPE</text>
+  </error>
+
+  <error id="1237">
+    <name>MMI_NOT_MET_UPDATE_REQUEST_CAN_NOT_CHANGE_NOTAM_ID</name>
+    <text>MMI_NOT_MET_UPDATE_CANT_CHANGE_NOTAM_ID</text>
+  </error>
+
+  <error id="1238">
+    <name>MMI_NOT_MET_UPDATE_REQUEST_CAN_NOT_CHANGE_PARENT_NOTAM_ID</name>
+    <text>MMI_NOT_MET_UPD_CANT_CHG_PARENT_NOTAM_ID</text>
+  </error>
+
+  <error id="1239">
+    <name>MMI_NOT_MET_MESSAGE_NOT_FOUND</name>
+    <text>MMI_NOT_MET_MESSAGE_NOT_FOUND</text>
+  </error>
+
+  <error id="124">
+    <name>THE_ROUTE_IS_USED_IN_INVALID_DIRECTION</name>
+    <text>$ cannot be flown in this direction</text>
+  </error>
+
+  <error id="1240">
+    <name>FPL_DOF_INVALID_DATE</name>
+    <text>DOF is invalid</text>
+  </error>
+
+  <error id="1241">
+    <name>DOF_CANNOT_BE_DETERMINED</name>
+    <text>DOF_CANNOT_BE_DETERMINED</text>
+  </error>
+
+  <error id="1242">
+    <name>FPL_DOF_MISSING_DATE</name>
+    <text>No DOF received in this message</text>
+  </error>
+
+  <error id="1243">
+    <name>MTP_RECEIVED_EMPTY_STRING_FROM_MMI</name>
+    <text>MTP_RECEIVED_EMPTY_STRING_FROM_MMI</text>
+  </error>
+
+  <error id="1244">
+    <name>FPL_RVSM_STATE_INCOMPATIBLE</name>
+    <text>FPL_RVSM_STATE_INCOMPATIBLE</text>
+  </error>
+
+  <error id="1245">
+    <name>RNAV_INCOMPATIBLE_WITH_ROUTE</name>
+    <text>RNAV_INCOMPATIBLE_WITH_ROUTE</text>
+  </error>
+
+  <error id="1246">
+    <name>RVSM_INCOMPATIBLE_WITH_ROUTE</name>
+    <text>RVSM_INCOMPATIBLE_WITH_ROUTE</text>
+  </error>
+
+  <error id="1247">
+    <name>RNP_INCOMPATIBLE_WITH_ROUTE</name>
+    <text>RNP_INCOMPATIBLE_WITH_ROUTE</text>
+  </error>
+
+  <error id="1248">
+    <name>LEVEL_NOT_AUTHORISED_WITH_ROUTE</name>
+    <text>LEVEL_NOT_AUTHORISED_WITH_ROUTE</text>
+  </error>
+
+  <error id="1249">
+    <name>LEVEL_BELOW_ROUTE_MINIMUM_LEVEL</name>
+    <text>LEVEL_BELOW_ROUTE_MINIMUM_LEVEL</text>
+  </error>
+
+  <error id="125">
+    <name>AIRCRAFT_TYPE_IS_NOT_KNOWN</name>
+    <text>Aircraft type not defined</text>
+  </error>
+
+  <error id="1250">
+    <name>MULTIPLE_WARNINGS</name>
+    <text>MULTIPLE_WARNINGS</text>
+  </error>
+
+  <error id="1251">
+    <name>DCC_OBSOLETE_MODIFICATION_TIME</name>
+    <text>DCC_OBSOLETE_MODIFICATION_TIME</text>
+  </error>
+
+  <error id="1252">
+    <name>DCC_INVALID_COMMAND</name>
+    <text>DCC_INVALID_COMMAND</text>
+  </error>
+
+  <error id="1253">
+    <name>DCC_INVALID_DCC_IDENTIFICATION</name>
+    <text>DCC_INVALID_DCC_IDENTIFICATION</text>
+  </error>
+
+  <error id="1254">
+    <name>DCC_INVALID_CALLSIGN</name>
+    <text>DCC_INVALID_CALLSIGN</text>
+  </error>
+
+  <error id="1255">
+    <name>DCC_INVALID_START_DATE</name>
+    <text>DCC_INVALID_START_DATE</text>
+  </error>
+
+  <error id="1256">
+    <name>DCC_INVALID_END_DATE</name>
+    <text>DCC_INVALID_END_DATE</text>
+  </error>
+
+  <error id="1257">
+    <name>DCC_INVALID_OPERATION_DAYS</name>
+    <text>DCC_INVALID_OPERATION_DAYS</text>
+  </error>
+
+  <error id="1258">
+    <name>DCC_INVALID_ADES</name>
+    <text>DCC_INVALID_ADES</text>
+  </error>
+
+  <error id="1259">
+    <name>DCC_INVALID_ADEP</name>
+    <text>DCC_INVALID_ADEP</text>
+  </error>
+
+  <error id="126">
+    <name>WAKE_TURBULENCE_IS_NOT_COMPATIBLE</name>
+    <text>Incorrect WAKE TURB category for type</text>
+  </error>
+
+  <error id="1260">
+    <name>DCC_INVALID_DEP_TIME</name>
+    <text>DCC_INVALID_DEP_TIME</text>
+  </error>
+
+  <error id="1261">
+    <name>DCC_INVALID_AIRCRAFT_TYPE</name>
+    <text>DCC_INVALID_AIRCRAFT_TYPE</text>
+  </error>
+
+  <error id="1262">
+    <name>DCC_INVALID_FLIGHT_TYPE</name>
+    <text>DCC_INVALID_FLIGHT_TYPE</text>
+  </error>
+
+  <error id="1263">
+    <name>DCC_INVALID_REGISTRATION_NUMBER</name>
+    <text>DCC_INVALID_REGISTRATION_NUMBER</text>
+  </error>
+
+  <error id="1264">
+    <name>DCC_INVALID_DCC_STATUS</name>
+    <text>DCC_INVALID_DCC_STATUS</text>
+  </error>
+
+  <error id="1265">
+    <name>DCC_INVALID_REMARKS</name>
+    <text>DCC_INVALID_REMARKS</text>
+  </error>
+
+  <error id="1266">
+    <name>DCC_CLEARANCE_DATABASE_IS_FULL</name>
+    <text>Diplomatic Cleared DB Full</text>
+  </error>
+
+  <error id="1267">
+    <name>DCC_DUPLICATE_FDRS_EXIST</name>
+    <text>DCC_DUPLICATE_FDRS_EXIST</text>
+  </error>
+
+  <error id="1268">
+    <name>DCC_EXEMPTION_DATABASE_IS_FULL</name>
+    <text>Diplomatic Exemption DB Full</text>
+  </error>
+
+  <error id="1269">
+    <name>DCC_BANNED_DATABASE_IS_FULL</name>
+    <text>Diplomatic Banned DB Full</text>
+  </error>
+
+  <error id="127">
+    <name>ROUTE_IS_TRUNCATED</name>
+    <text>Route is truncated</text>
+  </error>
+
+  <error id="1270">
+    <name>DCC_INVALID_DATABASE_IS_FULL</name>
+    <text>DCC_INVALID_DATABASE_IS_FULL</text>
+  </error>
+
+  <error id="1271">
+    <name>DCC_DCC_IDENTIFICATION_ALREADY_EXISTS</name>
+    <text>DCC_DCC_IDENTIFICATION_ALREADY_EXISTS</text>
+  </error>
+
+  <error id="1272">
+    <name>DCC_CANNOT_MODIFY_DCC_IDENTIFICATION</name>
+    <text>DCC_CANNOT_MODIFY_DCC_IDENTIFICATION</text>
+  </error>
+
+  <error id="1273">
+    <name>DCC_DCC_IDENTIFICATION_DOES_NOT_EXIST</name>
+    <text>DCC_DCC_IDENTIFICATION_DOES_NOT_EXIST</text>
+  </error>
+
+  <error id="1274">
+    <name>DCC_END_DATE_BEFORE_TODAY</name>
+    <text>DCC_END_DATE_BEFORE_TODAY</text>
+  </error>
+
+  <error id="1275">
+    <name>DCC_END_DATE_BEFORE_START_DATE</name>
+    <text>DCC_END_DATE_BEFORE_START_DATE</text>
+  </error>
+
+  <error id="1276">
+    <name>DCC_REQUEST_ALREADY_IN_PROGRESS</name>
+    <text>DCC_REQUEST_ALREADY_IN_PROGRESS</text>
+  </error>
+
+  <error id="1277">
+    <name>DCC_EXPORT_ALREADY_IN_PROGRESS</name>
+    <text>Export already in progress</text>
+  </error>
+
+  <error id="1278">
+    <name>DCC_REMOTE_FILE_REQUEST_NOT_AVAILABLE</name>
+    <text>External DCC Interface not available</text>
+  </error>
+
+  <error id="1279">
+    <name>DCC_LOCAL_FILE_REQUEST_NOT_AVAILABLE</name>
+    <text>Unable to read the specified file</text>
+  </error>
+
+  <error id="128">
+    <name>ROUTE_IS_TRUNCATED_BEFORE_REENTRY</name>
+    <text>Route is truncated. Create reentry path.</text>
+  </error>
+
+  <error id="1280">
+    <name>DCC_EXPORT_FILE_REQUEST_NOT_AVAILABLE</name>
+    <text>Unable to write the specified file</text>
+  </error>
+
+  <error id="1281">
+    <name>DCC_FILE_START</name>
+    <text>DCC_FILE_START</text>
+  </error>
+
+  <error id="1282">
+    <name>DCC_FILE_END</name>
+    <text>DCC_FILE_END</text>
+  </error>
+
+  <error id="1283">
+    <name>DCC_RECORD_DOES_NOT_EXIST</name>
+    <text>DCC_RECORD_DOES_NOT_EXIST</text>
+  </error>
+
+  <error id="1284">
+    <name>DCC_CDC_WRITE_ERROR</name>
+    <text>DCC_CDC_WRITE_ERROR</text>
+  </error>
+
+  <error id="1285">
+    <name>DCC_FILE_WRITE_ERROR</name>
+    <text>DCC_FILE_WRITE_ERROR</text>
+  </error>
+
+  <error id="1286">
+    <name>DCC_LOCAL_FILE_TRANSFER_CANCELLED</name>
+    <text>DCC_LOCAL_FILE_TRANSFER_CANCELLED</text>
+  </error>
+
+  <error id="1287">
+    <name>DCC_REQUEST_REJECTED_FILE_PROCESSING</name>
+    <text>Invalid Clearance File received</text>
+  </error>
+
+  <error id="1288">
+    <name>DCC_MAXIMUM_NUMBER_OF_RECORDS_PROCESSED</name>
+    <text>DCC_MAXIMUM_NUMBER_OF_RECORDS_PROCESSED</text>
+  </error>
+
+  <error id="1289">
+    <name>DCC_LOCAL_FILE_DOES_NOT_EXIST</name>
+    <text>DCC file does not exist</text>
+  </error>
+
+  <error id="129">
+    <name>FPSA_ROUTE_IS_TRUNCATED</name>
+    <text>Exit reentry FPSA route is truncated</text>
+  </error>
+
+  <error id="1290">
+    <name>DCC_DATABASE_APPROACHING_CAPACITY</name>
+    <text>DCC_DATABASE_APPROACHING_CAPACITY</text>
+  </error>
+
+  <error id="1291">
+    <name>INVALID_EXEMPTION_LIST_DATAPAGE</name>
+    <text>INVALID_EXEMPTION_LIST_DATAPAGE</text>
+  </error>
+
+  <error id="1292">
+    <name>ATOW_INPUT_IS_NOT_ELIGIBLE</name>
+    <text>ATOW_INPUT_IS_NOT_ELIGIBLE</text>
+  </error>
+
+  <error id="1293">
+    <name>ATOW_OUT_OF_RANGE</name>
+    <text>ATOW_OUT_OF_RANGE</text>
+  </error>
+
+  <error id="1294">
+    <name>ATOW_INCOMPATIBLE_WITH_AC_TYPE</name>
+    <text>ATOW_INCOMPATIBLE_WITH_AC_TYPE</text>
+  </error>
+
+  <error id="1295">
+    <name>SYNTAX_FIELD_18_ILLEGAL_DLA_SWITCH</name>
+    <text>SYNTAX_FIELD_18_ILLEGAL_DLA_SWITCH</text>
+  </error>
+
+  <error id="1296">
+    <name>SYNTAX_FIELD_18_PBN_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_PBN_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="1297">
+    <name>PBN_ITEM_IS_MORE_THAN_LIMIT</name>
+    <text>PBN_EXCEEDS_MAX_#1$_ENTRIE(#2$_CHARS)</text>
+  </error>
+
+  <error id="1298">
+    <name>SYNTAX_FIELD_18_SUR_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_SUR_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="1299">
+    <name>SYNTAX_FIELD_18_STS_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_STS_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="13">
+    <name>FPL_CALLSIGN_ALREADY_ACTIVE</name>
+    <text>This ACID already coordinated or active</text>
+  </error>
+
+  <error id="130">
+    <name>ENTER_MODE_NOT_DETERMINED</name>
+    <text>Call TSM : ENTER_MODE_NOT_DETERMINED</text>
+  </error>
+
+  <error id="1300">
+    <name>SYNTAX_FIELD_18_TALT_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_TALT_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="1301">
+    <name>SYNTAX_FIELD_18_DLE_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_DLE_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="1302">
+    <name>SYNTAX_FIELD_18_ORGN_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_ORGN_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="1303">
+    <name>SYNTAX_FIELD_18_NAV_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_NAV_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="1304">
+    <name>SYNTAX_FIELD_18_PER_SWITCH_NOT_VALID</name>
+    <text>SYNTAX_FIELD_18_PER_SWITCH_NOT_VALID</text>
+  </error>
+
+  <error id="1305">
+    <name>SYNTAX_RVSM_SWITCH_CONFLICT</name>
+    <text>STS/NONRVSM and W shouldn't coexist</text>
+  </error>
+
+  <error id="1306">
+    <name>FLIGHT_PLAN_FORMAT_INCOMPATIBLE</name>
+    <text>FLIGHT_PLAN_FORMAT_INCOMPATIBLE</text>
+  </error>
+
+  <error id="1307">
+    <name>FIELD_10_AND_F18_INCONSISTENT</name>
+    <text>$</text>
+  </error>
+
+  <error id="1308">
+    <name>SEMANTIC_SSR_EQUIPMENT_INVALID</name>
+    <text>SEMANTIC_SSR_EQUIPMENT_INVALID</text>
+  </error>
+
+  <error id="1309">
+    <name>INVALID_ARCADDR</name>
+    <text>NVALID_ARCADDR</text>
+  </error>
+
+  <error id="131">
+    <name>UNKNOWN_TOC_SENDER</name>
+    <text>TOC sent by an unknown centre</text>
+  </error>
+
+  <error id="1310">
+    <name>INVALID_RUNWAY</name>
+    <text>INVALID_ARCADDR</text>
+  </error>
+
+  <error id="1311">
+    <name>INVALID_FPCTST</name>
+    <text>INVALID_FPCTST</text>
+  </error>
+
+  <error id="1312">
+    <name>INVALID_HRSP</name>
+    <text>INVALID_HRSP</text>
+  </error>
+
+  <error id="1313">
+    <name>INVALID_ISCOUPLE</name>
+    <text>INVALID_ISCOUPLE</text>
+  </error>
+
+  <error id="1314">
+    <name>INVALID_GATE</name>
+    <text>INVALID_GATE</text>
+  </error>
+
+  <error id="1315">
+    <name>SECTOR_NOT_IN_LOGICAL_POSITION</name>
+    <text>SECTOR_NOT_IN_LOGICAL_POSITION</text>
+  </error>
+
+  <error id="1316">
+    <name>RUNWAY_NOT_ASSOCIATE_WITH_AIRPORT</name>
+    <text>RUNWAY_NOT_ASSOCIATE_WITH_AIRPORT</text>
+  </error>
+
+  <error id="1317">
+    <name>INVALID_AIRPORT_WITH_RUNWAY_MSG</name>
+    <text>INVALID_AIRPORT_WITH_RUNWAY_MSG</text>
+  </error>
+
+  <error id="1318">
+    <name>INVALID_SECTOR_ASSIGNMENT_MSG</name>
+    <text>INVALID_SECTOR_ASSIGNMENT_MSG</text>
+  </error>
+
+  <error id="1319">
+    <name>INVALID_FREQ</name>
+    <text>**</text>
+  </error>
+
+  <error id="132">
+    <name>CENTER_CANNOT_HANDLE_AIDC</name>
+    <text>TOC sent to a non AIDC center</text>
+  </error>
+
+  <error id="1320">
+    <name>INVALID_HRSQ</name>
+    <text>**</text>
+  </error>
+
+  <error id="1321">
+    <name>INVALID_TIME_DELAY</name>
+    <text>**</text>
+  </error>
+
+  <error id="1322">
+    <name>INVALID_FF</name>
+    <text>**</text>
+  </error>
+
+  <error id="1323">
+    <name>INVALID_FFSTO</name>
+    <text>**</text>
+  </error>
+
+  <error id="1324">
+    <name>INVALID_ACM</name>
+    <text>**</text>
+  </error>
+
+  <error id="1325">
+    <name>INVALID_ARRNO</name>
+    <text>**</text>
+  </error>
+
+  <error id="1326">
+    <name>INVALID_COORTYPE</name>
+    <text>**</text>
+  </error>
+
+  <error id="1327">
+    <name>INVALID_CLAM_KIND</name>
+    <text>**</text>
+  </error>
+
+  <error id="1328">
+    <name>INVALID_SUPINFO</name>
+    <text>**</text>
+  </error>
+
+  <error id="1329">
+    <name>MISSING_FIELD_AIRPORT</name>
+    <text>MISSING_FIELD_AIRPORT</text>
+  </error>
+
+  <error id="133">
+    <name>UNKNOWN_AOC_SENDER</name>
+    <text>AOC sent by an unknown centre</text>
+  </error>
+
+  <error id="1330">
+    <name>MISSING_FIELD_ARCADDR</name>
+    <text>MISSING_FIELD_ARCADDR</text>
+  </error>
+
+  <error id="1331">
+    <name>MISSING_FIELD_ARWY</name>
+    <text>MISSING_FIELD_ARWY</text>
+  </error>
+
+  <error id="1332">
+    <name>MISSING_FIELD_DRWY</name>
+    <text>MISSING_FIELD_DRWY</text>
+  </error>
+
+  <error id="1333">
+    <name>MISSING_FIELD_ETA</name>
+    <text>MISSING_FIELD_ETA</text>
+  </error>
+
+  <error id="1334">
+    <name>MISSING_FIELD_FPCTST</name>
+    <text>MISSING_FIELD_FPCTST</text>
+  </error>
+
+  <error id="1335">
+    <name>MISSING_FIELD_HRSP</name>
+    <text>MISSING_FIELD_HRSP</text>
+  </error>
+
+  <error id="1336">
+    <name>MISSING_FIELD_ISCOUPLE</name>
+    <text>MISSING_FIELD_ISCOUPLE</text>
+  </error>
+
+  <error id="1337">
+    <name>MISSING_FIELD_PBN</name>
+    <text>MISSING_FIELD_PBN</text>
+  </error>
+
+  <error id="1338">
+    <name>MISSING_FIELD_PKC</name>
+    <text>MISSING_FIELD_PKC</text>
+  </error>
+
+  <error id="1339">
+    <name>MISSING_FIELD_RWYLIST</name>
+    <text>MISSING_FIELD_RWYLIST</text>
+  </error>
+
+  <error id="134">
+    <name>AOC_SENDER_NOT_COMPATIBLE_WITH_TOC_ADDRESSEE</name>
+    <text>TOC sent to $ -AOC received from $</text>
+  </error>
+
+  <error id="1340">
+    <name>MISSING_FIELD_SECDEST</name>
+    <text>MISSING_FIELD_SECDEST</text>
+  </error>
+
+  <error id="1341">
+    <name>MISSING_FIELD_SECLIST</name>
+    <text>MISSING_FIELD_SECLIST</text>
+  </error>
+
+  <error id="1342">
+    <name>MISSING_FIELD_SPLD</name>
+    <text>MISSING_FIELD_SPLD</text>
+  </error>
+
+  <error id="1343">
+    <name>MISSING_FIELD_TXT</name>
+    <text>MISSING_FIELD_TXT</text>
+  </error>
+
+  <error id="1344">
+    <name>MISSING_FIELD_XFL</name>
+    <text>MISSING_FIELD_XFL</text>
+  </error>
+
+  <error id="1345">
+    <name>MISSING_FIELD_MSGID</name>
+    <text>**</text>
+  </error>
+
+  <error id="1346">
+    <name>MISSING_FIELD_REFMSGID</name>
+    <text>**</text>
+  </error>
+
+  <error id="1347">
+    <name>MISSING_FIELD_RSP</name>
+    <text>**</text>
+  </error>
+
+  <error id="1348">
+    <name>MISSING_FIELD_SUPINFO</name>
+    <text>**</text>
+  </error>
+
+  <error id="1349">
+    <name>MISSING_FIELD_ACCTTL</name>
+    <text>**</text>
+  </error>
+
+  <error id="135">
+    <name>EXIT_POINT_IS_NOT_KNOWN</name>
+    <text>Unable to calculate FDRG exit point</text>
+  </error>
+
+  <error id="1350">
+    <name>MISSING_FIELD_ACCTTG</name>
+    <text>**</text>
+  </error>
+
+  <error id="1351">
+    <name>MISSING_FIELD_ACM</name>
+    <text>**</text>
+  </error>
+
+  <error id="1352">
+    <name>MISSING_FIELD_AMANTIME</name>
+    <text>**</text>
+  </error>
+
+  <error id="1353">
+    <name>MISSING_FIELD_ARRNO</name>
+    <text>**</text>
+  </error>
+
+  <error id="1354">
+    <name>MISSING_FIELD_COORTYPE</name>
+    <text>**</text>
+  </error>
+
+  <error id="1355">
+    <name>MISSING_FIELD_HRSQ</name>
+    <text>**</text>
+  </error>
+
+  <error id="1356">
+    <name>MISSING_FIELD_ORGAD</name>
+    <text>**</text>
+  </error>
+
+  <error id="1357">
+    <name>MISSING_FIELD_SOURCE</name>
+    <text>**</text>
+  </error>
+
+  <error id="1358">
+    <name>MISSING_FIELD_UPTTL</name>
+    <text>**</text>
+  </error>
+
+  <error id="1359">
+    <name>MISSING_FIELD_UPTTG</name>
+    <text>**</text>
+  </error>
+
+  <error id="136">
+    <name>FPSA_EXIT_POINT_IS_NOT_KNOWN</name>
+    <text>Unable to calculate FPSA exit point</text>
+  </error>
+
+  <error id="1360">
+    <name>MISSING_FIELD_FF</name>
+    <text>**</text>
+  </error>
+
+  <error id="1361">
+    <name>MISSING_FIELD_FFSTO</name>
+    <text>**</text>
+  </error>
+
+  <error id="1362">
+    <name>ERROR_IN_CONVERT_INTO_FDEXM</name>
+    <text>ERROR_IN_CONVERT_INTO_FDEXM</text>
+  </error>
+
+  <error id="1363">
+    <name>INSUFFICIENT_COORD_DATA</name>
+    <text>**</text>
+  </error>
+
+  <error id="1364">
+    <name>CHND_FOR_DEPARTURE_FLIGHT_RECEIVED</name>
+    <text>**</text>
+  </error>
+
+  <error id="1365">
+    <name>INVALID_HRSQ_KIND</name>
+    <text>**</text>
+  </error>
+
+  <error id="1366">
+    <name>NO_CHND_RECEIVED_FROM_THE_CENTER</name>
+    <text>**</text>
+  </error>
+
+  <error id="1367">
+    <name>CENTER_CANNOT_HANDLE_FDECM</name>
+    <text>**</text>
+  </error>
+
+  <error id="1368">
+    <name>UNKONWN_ADJACENT_CENTER</name>
+    <text>**</text>
+  </error>
+
+  <error id="1369">
+    <name>INVALID_HRSP_KIND</name>
+    <text>**</text>
+  </error>
+
+  <error id="137">
+    <name>LEAVE_MODE_NOT_DETERMINED</name>
+    <text>Call TSM : LEAVE_MODE_NOT_DETERMINED</text>
+  </error>
+
+  <error id="1370">
+    <name>AMAN_ARWY_NOT_ELIGIBLE</name>
+    <text>ARWY doesn't meet mandatory criteria</text>
+  </error>
+
+  <error id="1371">
+    <name>ADES_NOT_MANAGED_BY_AMAN</name>
+    <text>ADES isn't managed by AMAN</text>
+  </error>
+
+  <error id="1372">
+    <name>NOT_AN_ARRIVAL_FLIGHT</name>
+    <text>Not an arrival flight</text>
+  </error>
+
+  <error id="138">
+    <name>ROUTE_IS_NOT_CONTINOUS</name>
+    <text>Route element #2$ is unknown</text>
+  </error>
+
+  <error id="139">
+    <name>ONLY_AIRPORT_IN_EXIT_REENTRY_TRUNC_ROUTE</name>
+    <text>Airport alone in trunc. route</text>
+  </error>
+
+  <error id="14">
+    <name>FPL_IS_NOT_A_DEPARTURE_FLIGHT</name>
+    <text>Call TSM : FPL_IS_NOT_A_DEPARTURE_FLIGHT</text>
+  </error>
+
+  <error id="140">
+    <name>ROUTE_CONTAINS_CONSECUTIVE_IDENTICAL_FIXES</name>
+    <text>Colocated code/coord used consecutively</text>
+  </error>
+
+  <error id="141">
+    <name>ROUTE_CONTAINS_TOO_MANY_AIRWAYS</name>
+    <text>Route contains too many airways</text>
+  </error>
+
+  <error id="142">
+    <name>SOFTWARE_ERROR_IN_EXTRACT_ROUTE</name>
+    <text>Call TSM:SOFTWARE_ERROR_IN_EXTRACT_ROUTE</text>
+  </error>
+
+  <error id="143">
+    <name>SPEED_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE</name>
+    <text>$ not appropriate for type</text>
+  </error>
+
+  <error id="144">
+    <name>LEVEL_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE</name>
+    <text>$ is too high for type</text>
+  </error>
+
+  <error id="145">
+    <name>SPEED_15C_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE</name>
+    <text>$ not appropriate for type</text>
+  </error>
+
+  <error id="146">
+    <name>LEVEL_15C_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE</name>
+    <text>$ is too high for type</text>
+  </error>
+
+  <error id="147">
+    <name>ALL_POINTS_OVERFLOWN_MOD_REFUSED</name>
+    <text>Mod. refused: all points are overflown</text>
+  </error>
+
+  <error id="148">
+    <name>ESTIMATED_ELAPSED_TIME_IS_TOO_LARGE</name>
+    <text>EET exceeds maximum allowed</text>
+  </error>
+
+  <error id="149">
+    <name>ROUTE_IS_NOT_A_TRANSITION_WITH_STAR</name>
+    <text>Transition from $ to $ ambiguous</text>
+  </error>
+
+  <error id="15">
+    <name>DEP_REFUSED_ON_AFIL_FLIGHT</name>
+    <text>DEP refused : This is an AFIL flight</text>
+  </error>
+
+  <error id="150">
+    <name>STAR_CANNOT_FOLLOW_SID</name>
+    <text>STAR #2$ cannot follow SID #1$</text>
+  </error>
+
+  <error id="151">
+    <name>ELEMENT_IS_NOT_A_TRANSITION_WITH_STAR</name>
+    <text>Call TSM : ELEMENT_IS_NOT_..._WITH_STAR</text>
+  </error>
+
+  <error id="152">
+    <name>ROUTE_IS_NOT_A_TRANSITION_WITH_SID</name>
+    <text>Transition from #2$ to #1$ ambiguous</text>
+  </error>
+
+  <error id="153">
+    <name>SSR_MODE_AND_CODE_ARE_INCOMPATIBLE</name>
+    <text>SSR code not compatible with equip</text>
+  </error>
+
+  <error id="154">
+    <name>POINT_INCOMPATIBLE_WITH_LEVEL</name>
+    <text>RFL not appropriate for point $</text>
+  </error>
+
+  <error id="155">
+    <name>LEVEL_INCOMPATIBLE_WITH_ROUTE</name>
+    <text>LEVEL_INCOMPATIBLE_WITH_ROUTE</text>
+  </error>
+
+  <error id="156">
+    <name>ROUTE_IS_TOO_LONG</name>
+    <text>Route contains too many points</text>
+  </error>
+
+  <error id="157">
+    <name>SECTOR_LIST_IS_TOO_LONG</name>
+    <text>Too many sectors are crossed</text>
+  </error>
+
+  <error id="158">
+    <name>SOFTWARE_ERROR_IN_PROFILE</name>
+    <text>Call TSM : SOFTWARE_ERROR_IN_PROFILE</text>
+  </error>
+
+  <error id="159">
+    <name>POSTING_LIST_TOO_LONG</name>
+    <text>Call TSM : POSTING_LIST_TOO_LONG</text>
+  </error>
+
+  <error id="16">
+    <name>FPL_IS_NOT_AN_INBOUND_FLIGHT</name>
+    <text>Call TSM : FPL_IS_NOT_AN_INBOUND_FLIGHT</text>
+  </error>
+
+  <error id="160">
+    <name>HANDOFF_LIST_TOO_LONG</name>
+    <text>Call TSM : HANDOFF_LIST_TOO_LONG</text>
+  </error>
+
+  <error id="161">
+    <name>FPL_INVALID_ROUTE_AMENDMENT</name>
+    <text>Can't amend before overflown points</text>
+  </error>
+
+  <error id="162">
+    <name>FPL_AMENDMENT_POINT_MUST_BE_AFTER_POINT</name>
+    <text>Can't reroute flight backwards</text>
+  </error>
+
+  <error id="163">
+    <name>FPL_AMENDMENT_POINT_MUST_BE_IN_FIELD15</name>
+    <text>Point #1$ is not in route field</text>
+  </error>
+
+  <error id="164">
+    <name>INVALID_CURRENT_POINTER</name>
+    <text>Call TSM : INVALID_CURRENT_POINTER</text>
+  </error>
+
+  <error id="165">
+    <name>NO_POSTING_FOR_FDT</name>
+    <text>No posting for fdt #1$</text>
+  </error>
+
+  <error id="166">
+    <name>EET_MUST_BE_PRESENT_IN_OTHER_INFO</name>
+    <text>An EET in other info field is required</text>
+  </error>
+
+  <error id="167">
+    <name>EET_REQUIRED_FOR_COMPUTATION_OF_ETOS</name>
+    <text>EET is required for computation of ETOs</text>
+  </error>
+
+  <error id="168">
+    <name>STAR_ALONE_NOT_ALLOWED</name>
+    <text>Route must contain more than STAR</text>
+  </error>
+
+  <error id="169">
+    <name>SID_ALONE_NOT_ALLOWED</name>
+    <text>Route must contain more than SID</text>
+  </error>
+
+  <error id="17">
+    <name>TOC_ON_COORD_DEPARTURE_FLIGHT_REFUSED</name>
+    <text>TOC rejected : FDR is coord. departure</text>
+  </error>
+
+  <error id="170">
+    <name>CANNOT_ALLOCATE_A_STAR</name>
+    <text>Can't allocate a STAR due to DCT routing</text>
+  </error>
+
+  <error id="171">
+    <name>CANNOT_ALLOCATE_A_SID</name>
+    <text>Can't allocate a SID due to DCT routing</text>
+  </error>
+
+  <error id="172">
+    <name>ADEP_NOT_BELONGING_TO_ROUTE</name>
+    <text>ADEP_NOT_BELONGING_TO_ROUTE</text>
+  </error>
+
+  <error id="173">
+    <name>ADES_NOT_BELONGING_TO_ROUTE</name>
+    <text>ADES_NOT_BELONGING_TO_ROUTE</text>
+  </error>
+
+  <error id="174">
+    <name>EET_IN_FDRG_EXCEED_MAX_ALLOWED</name>
+    <text>EET in FDRG exceeds the allowed maximum</text>
+  </error>
+
+  <error id="175">
+    <name>TOTAL_EET_EXCEED_MAX_ALLOWED</name>
+    <text>Total EET exceeds the allowed maximum</text>
+  </error>
+
+  <error id="176">
+    <name>FUNCTIONAL_SECTOR_NOT_FOUND</name>
+    <text>CSEC for flight can't be determined</text>
+  </error>
+
+  <error id="177">
+    <name>INVALID_FORECAST_SUMMARY_REQUEST</name>
+    <text>Invalid #1$ entered</text>
+  </error>
+
+  <error id="178">
+    <name>FPL_HOLDING_FIX_NOT_IN_CONVERTED_ROUTE</name>
+    <text>Holding fix has been skipped from route</text>
+  </error>
+
+  <error id="179">
+    <name>FPL_FLIGHT_NOT_IN_HOLD_STATE</name>
+    <text>Call TSM : FPL_FLIGHT_NOT_IN_HOLD_STATE</text>
+  </error>
+
+  <error id="18">
+    <name>FPL_IS_NOT_AN_OUTBOUND_FLIGHT</name>
+    <text>HND rejected : Flight not leaving FDRG</text>
+  </error>
+
+  <error id="180">
+    <name>ORIGINATOR_NOT_ALLOWED</name>
+    <text>Unauthorised originator of the message</text>
+  </error>
+
+  <error id="181">
+    <name>INVALID_YEAR</name>
+    <text>Invalid year</text>
+  </error>
+
+  <error id="182">
+    <name>INVALID_MONTH</name>
+    <text>Invalid month</text>
+  </error>
+
+  <error id="183">
+    <name>INVALID_DAY</name>
+    <text>Invalid day</text>
+  </error>
+
+  <error id="184">
+    <name>INVALID_HOUR</name>
+    <text>Invalid time in message</text>
+  </error>
+
+  <error id="185">
+    <name>ILLEGAL_TIME</name>
+    <text>Illegal time $</text>
+  </error>
+
+  <error id="186">
+    <name>MAX_ELAPSE_TIME_EXCEEDED</name>
+    <text>ETI #1$ to #2$ too long</text>
+  </error>
+
+  <error id="187">
+    <name>FPL_CANNOT_ENTER_PILOT_ETO_ON_ADEP</name>
+    <text>Cannot enter a pilot ETO on the ADEP</text>
+  </error>
+
+  <error id="188">
+    <name>MESSAGE_NOT_TRANSMITTED</name>
+    <text>Call TSM : MESSAGE_NOT_TRANSMITTED</text>
+  </error>
+
+  <error id="189">
+    <name>MESSAGE_NOT_PROCESSED_USE_TRS</name>
+    <text>Msg not processed. Send via TRS window</text>
+  </error>
+
+  <error id="19">
+    <name>FPL_ETO_ON_OVERFLOWN_FIX_IS_INVALID</name>
+    <text>Can't change time on an overflown point</text>
+  </error>
+
+  <error id="190">
+    <name>DATA_ADDRESS_ERROR</name>
+    <text>Msg type cannot be sent to this address</text>
+  </error>
+
+  <error id="191">
+    <name>INCORRECT_ADDRESSEE_TYPE</name>
+    <text>Msg type cannot be sent to $</text>
+  </error>
+
+  <error id="192">
+    <name>MODIFICATION_REFUSED</name>
+    <text>Modification refused</text>
+  </error>
+
+  <error id="193">
+    <name>ILLEGAL_CPL_MODIFICATION</name>
+    <text>Only fields 7c, 14, 15 can be modified</text>
+  </error>
+
+  <error id="194">
+    <name>MODIFICATION_COMMAND_NOT_ALLOWED</name>
+    <text>Modification for #1$ not allowed</text>
+  </error>
+
+  <error id="195">
+    <name>SSR_CODE_INVALID</name>
+    <text>SSR code is not available</text>
+  </error>
+
+  <error id="196">
+    <name>AIRPORT_INVALID</name>
+    <text>ADES cannot be AFIL</text>
+  </error>
+
+  <error id="197">
+    <name>ASS_LEVEL_MUST_BE_FILLED_IN</name>
+    <text>Call TSM : ASS_LEVEL_MUST_BE_FILLED_IN</text>
+  </error>
+
+  <error id="198">
+    <name>ROUTE_INVALID</name>
+    <text>Skipped points not allowed for AFIL</text>
+  </error>
+
+  <error id="199">
+    <name>EMPTY_ROUTE_NOT_ALLOWED</name>
+    <text>Can't reroute ADEP DCT ADES via strip</text>
+  </error>
+
+  <error id="2">
+    <name>NOK</name>
+    <text>Call TSM : NOK</text>
+  </error>
+
+  <error id="20">
+    <name>FPL_CAN_NOT_SET_OVERFLOWN_FIX_TO_COMPULSORY</name>
+    <text>Can't make an overflown point compulsory</text>
+  </error>
+
+  <error id="200">
+    <name>OTHERINF_MUST_BE_FILLED_IN</name>
+    <text>A "0" or valid iindicator is required</text>
+  </error>
+
+  <error id="201">
+    <name>ETD_MUST_BE_FILLED_IN</name>
+    <text>ETD is required</text>
+  </error>
+
+  <error id="202">
+    <name>ETD_MUST_NOT_BE_FILLED_IN</name>
+    <text>ETD must not be specified</text>
+  </error>
+
+  <error id="203">
+    <name>INVALID_ETD_ON_DELAY</name>
+    <text>ETD must not be earlier than present ETD</text>
+  </error>
+
+  <error id="204">
+    <name>ENTRY_TIME_MUST_BE_FILLED_IN</name>
+    <text>Time at coordination point is missing</text>
+  </error>
+
+  <error id="205">
+    <name>DOF_AND_F18_INCONSISTENCY</name>
+    <text>Field A and DOF/ are inconsistent</text>
+  </error>
+
+  <error id="206">
+    <name>FPL_STATUS_DELAY_INVALID</name>
+    <text>Delay time format incorrect</text>
+  </error>
+
+  <error id="207">
+    <name>TOO_MANY_FIXES_IN_DLA</name>
+    <text>Number of delay points exceeds 10</text>
+  </error>
+
+  <error id="208">
+    <name>DELAY_TWICE_ON_SAME_POINT</name>
+    <text>Same point appears twice in switch DLA/</text>
+  </error>
+
+  <error id="209">
+    <name>ENTRY_POINT_INVALID</name>
+    <text>Coordination point is not on the route</text>
+  </error>
+
+  <error id="21">
+    <name>FPL_CAN_NOT_MAKE_PT_OUTSIDE_FDRG_COMPULSORY</name>
+    <text>Compulsory pts not allowed outside fdrg</text>
+  </error>
+
+  <error id="210">
+    <name>ENTRY_POINT_NOT_FOUND</name>
+    <text>Cannot determine entry point to FDRG</text>
+  </error>
+
+  <error id="211">
+    <name>FPSA_ENTRY_POINT_NOT_FOUND</name>
+    <text>Cannot determine entry point to FPSA</text>
+  </error>
+
+  <error id="212">
+    <name>AFTN_LINE_FAILURE</name>
+    <text>AFTN connection has failed</text>
+  </error>
+
+  <error id="213">
+    <name>AIDC_LINE_FAILURE</name>
+    <text>AIDC_LINE_FAILURE</text>
+  </error>
+
+  <error id="214">
+    <name>AMHS_LINE_FAILURE</name>
+    <text>AMHS_LINE_FAILURE</text>
+  </error>
+
+  <error id="215">
+    <name>AMHS_ADDRESS_NOT_FOUND</name>
+    <text>AMHS_ADDRESS_NOT_FOUND</text>
+  </error>
+
+  <error id="216">
+    <name>ET_CONNECTION_FAILURE</name>
+    <text>Eurocat-T connection failure</text>
+  </error>
+
+  <error id="217">
+    <name>EXTS_CONNECTION_FAILURE</name>
+    <text>EXTS_CONNECTION_FAILURE</text>
+  </error>
+
+  <error id="218">
+    <name>AFTN_PRIORITY_MUST_BE_FILLED_IN</name>
+    <text>Call TSM: AFTN_PRIORITY_MUST_BE_FILLED..</text>
+  </error>
+
+  <error id="219">
+    <name>AFTN_PRIORITY_INVALID</name>
+    <text>Call TSM : AFTN_PRIORITY_INVALID</text>
+  </error>
+
+  <error id="22">
+    <name>FPL_CAN_NOT_REPORT_ON_OVERFLOWN_FIX</name>
+    <text>Can't report before an overflown point</text>
+  </error>
+
+  <error id="220">
+    <name>AFTN_DEST_MUST_BE_FILLED_IN</name>
+    <text>Call TSM : AFTN_DEST_MUST_BE_FILLED_IN</text>
+  </error>
+
+  <error id="221">
+    <name>AFTN_DEST_INVALID</name>
+    <text>Invalid AFTN address</text>
+  </error>
+
+  <error id="222">
+    <name>AFTN_TEXT_MUST_BE_FILLED_IN</name>
+    <text>Call TSM : AFTN_TEXT_MUST_BE_FILLED_IN</text>
+  </error>
+
+  <error id="223">
+    <name>AIDC_REFERENCE_INFORMATION_INVALID</name>
+    <text>Call TSM: AIDC_REFERENCE_INFO.._INVALID</text>
+  </error>
+
+  <error id="224">
+    <name>AFTN_TOO_MANY_ADDRESSEES</name>
+    <text>Call TSM : AFTN_TOO_MANY_ADDR</text>
+  </error>
+
+  <error id="225">
+    <name>ONLY_ONE_AIDC_ADDRESSEE_ALLOWED</name>
+    <text>Too many AIDC addr: $ / $</text>
+  </error>
+
+  <error id="226">
+    <name>ONLY_ONE_ICAO_L_ADDRESSEE_ALLOWED</name>
+    <text>ONLY_ONE_ICAO_L_ADDRESSEE_ALLOWED</text>
+  </error>
+
+  <error id="227">
+    <name>NO_PREVIOUS_POSSIBLE</name>
+    <text>Previous SSR code is not available</text>
+  </error>
+
+  <error id="228">
+    <name>RUNWAY_DOES_NOT_BELONG_TO_ADES</name>
+    <text>Runway #1$ is not defined for #2$</text>
+  </error>
+
+  <error id="229">
+    <name>RUNWAY_DOES_NOT_BELONG_TO_ADEP</name>
+    <text>Runway #1$ is not defined for #2$</text>
+  </error>
+
+  <error id="23">
+    <name>FPL_ENTERED_DELAY_OVERTAKES_LIMIT</name>
+    <text>Delay time exceeds the defined limit</text>
+  </error>
+
+  <error id="230">
+    <name>NO_RUNWAY_DEFINED_FOR_ADEP</name>
+    <text>Runways are not defined at $</text>
+  </error>
+
+  <error id="231">
+    <name>NO_RUNWAY_DEFINED_FOR_ADES</name>
+    <text>Runways are not defined at $</text>
+  </error>
+
+  <error id="232">
+    <name>INVALID_INTEGER_32_VALUE</name>
+    <text>Invalid integer value</text>
+  </error>
+
+  <error id="233">
+    <name>INVALID_FLOAT_32_VALUE</name>
+    <text>Invalid float value</text>
+  </error>
+
+  <error id="234">
+    <name>INVALID_FIX_NAME</name>
+    <text>Profile Calculation Fix $ is not known</text>
+  </error>
+
+  <error id="235">
+    <name>FPL_SSR_NO_MORE_CODE</name>
+    <text>All auto assigned SSR codes used</text>
+  </error>
+
+  <error id="236">
+    <name>FPL_SSR_CODE_IS_ALLOCATED_WARNING</name>
+    <text>Entered code rejected-New code allocated</text>
+  </error>
+
+  <error id="237">
+    <name>FPL_SSR_CODE_IS_ALLOCATED_FATAL</name>
+    <text>SSR code is already allocated</text>
+  </error>
+
+  <error id="238">
+    <name>FPL_NO_SSR_CODE_FOUND_IN_FAMILY_WITH_GIVEN_DIGITS</name>
+    <text>SSR code does not belong to family</text>
+  </error>
+
+  <error id="239">
+    <name>FPL_SSR_INVALID_EQUIPMENT</name>
+    <text>Code rejected. No SSR equipment in FDR</text>
+  </error>
+
+  <error id="24">
+    <name>FPL_WRONG_POINT_OCCURENCE</name>
+    <text>Call TSM : FPL_WRONG_POINT_OCCURENCE</text>
+  </error>
+
+  <error id="240">
+    <name>FPL_PSSR_INVALID_EQUIPMENT</name>
+    <text>Code rejected. No PSSR equipment in FDR</text>
+  </error>
+
+  <error id="241">
+    <name>NO_SSR_CODE_ALLOCATED_TO_THE_FLIGHT</name>
+    <text>No SSR code was allocated. Code required</text>
+  </error>
+
+  <error id="242">
+    <name>ROUTE_ALTERNATIVE_CHANGE</name>
+    <text>Alternative change in #1$</text>
+  </error>
+
+  <error id="243">
+    <name>ROUTE_ALTERNATIVE_INVALID</name>
+    <text>The alternative route is not compatible</text>
+  </error>
+
+  <error id="244">
+    <name>ROUTE_IS_DEACTIVATED</name>
+    <text>Route #1$ is not activated</text>
+  </error>
+
+  <error id="245">
+    <name>DATAPAGE_MESSAGE_NOT_PROCESSED</name>
+    <text>DATAPAGE_MESSAGE_NOT_PROCESSED</text>
+  </error>
+
+  <error id="246">
+    <name>DATAPAGE_RECEIVED_IS_NOT_THE_LATEST_VERSION</name>
+    <text>Displayed data not current-Repeat action</text>
+  </error>
+
+  <error id="247">
+    <name>PROCESSING_OF_PREVIOUS_SECTO_NOT_FINISHED</name>
+    <text>PROCESSING OF PREV SECTOR NOT FINISHED</text>
+  </error>
+
+  <error id="248">
+    <name>FPL_CONTROL_SSR_INHIBITED</name>
+    <text>FPL control SSR inhibited</text>
+  </error>
+
+  <error id="249">
+    <name>FPL_TOO_LATE_TO_CANCEL_SHUTDOWN</name>
+    <text>FPL too late to cancel shutdown</text>
+  </error>
+
+  <error id="25">
+    <name>UPR_NOT_ALLOWED_ON_FLIGHT_IN_HOLD</name>
+    <text>UPR not allowed when in holding state</text>
+  </error>
+
+  <error id="250">
+    <name>FPL_SHUTDOWN_ALREADY_INITIATED</name>
+    <text>FPL shutdown already initiated</text>
+  </error>
+
+  <error id="251">
+    <name>FPL_SHUTDOWN_FAILURE</name>
+    <text>FDP shutdown process failed</text>
+  </error>
+
+  <error id="252">
+    <name>FPL_PAPER_STRIPS_PRINTING_IN_PROGRESS</name>
+    <text>FPL_PAPER_STRIPS_PRINTING_IN_PROGRESS</text>
+  </error>
+
+  <error id="253">
+    <name>STRIP_BASE_IS_FULL</name>
+    <text>Strip data base is full</text>
+  </error>
+
+  <error id="254">
+    <name>STRIP_DSCR_NOT_EXIST</name>
+    <text>The strip format doesn't exist</text>
+  </error>
+
+  <error id="255">
+    <name>STRIP_ALREADY_DISPLAYED</name>
+    <text>Strip already displayed at DEST position</text>
+  </error>
+
+  <error id="256">
+    <name>SYNTAX_LATITUDE_IN_DEGRE_MINUTE_EXPECTED</name>
+    <text>Syntax error: Lat in deg &amp; min expected</text>
+  </error>
+
+  <error id="257">
+    <name>SYNTAX_LONGITUDE_IN_DEGRE_EXPECTED</name>
+    <text>Syntax error: Long in degrees expected</text>
+  </error>
+
+  <error id="258">
+    <name>SYNTAX_LONGITUDE_IN_DEGRE_MINUTE_EXPECTED</name>
+    <text>Syntax error: Long in deg &amp; min expected</text>
+  </error>
+
+  <error id="259">
+    <name>SYNTAX_LEVEL_EXPECTED</name>
+    <text>Level cannot be determined</text>
+  </error>
+
+  <error id="26">
+    <name>UPR_AFTER_HOLDING_POINT_REFUSED_ON_FLIGHT_IN_INIT_HOLD</name>
+    <text>Can't UPR past the holding point</text>
+  </error>
+
+  <error id="260">
+    <name>SYNTAX_CROSS_MODE_EXPECTED</name>
+    <text>Crossing mode cannot be determined</text>
+  </error>
+
+  <error id="261">
+    <name>SYNTAX_ALL_FIELD_14_ELEMENTS_EXPECTED</name>
+    <text>SYNTAX_ALL_FIELD_14_ELEMENTS_EXPECTED</text>
+  </error>
+
+  <error id="262">
+    <name>SYNTAX_CROSS_MODE_INVALID</name>
+    <text>Crossing mode invalid</text>
+  </error>
+
+  <error id="263">
+    <name>SYNTAX_SPEED_EXPECTED</name>
+    <text>Cruising speed cannot be determined</text>
+  </error>
+
+  <error id="264">
+    <name>SYNTAX_SPEED_LEVEL_EXPECTED</name>
+    <text>Call TSM : SYNTAX_SPEED_LEVEL_EXPECTED</text>
+  </error>
+
+  <error id="265">
+    <name>SYNTAX_ROUTE_ITEM_EXPECTED</name>
+    <text>Syntax error in route</text>
+  </error>
+
+  <error id="266">
+    <name>SYNTAX_ROUTE_ELEMENT_EXPECTED</name>
+    <text>Syntax error in route field</text>
+  </error>
+
+  <error id="267">
+    <name>SYNTAX_ROUTE_TOO_LONG</name>
+    <text>Route field exceeds 250 characters</text>
+  </error>
+
+  <error id="268">
+    <name>SYNTAX_FLEX_ROUTE_TOO_LONG</name>
+    <text>SYNTAX_FLEX_ROUTE_TOO_LONG</text>
+  </error>
+
+  <error id="269">
+    <name>SYNTAX_COP_EXPECTED</name>
+    <text>Syntax error in COP field</text>
+  </error>
+
+  <error id="27">
+    <name>INHIBITION_NOT_ALLOWED_ON_FLIGHT_IN_HOLD</name>
+    <text>Can't inhibit when in holding state</text>
+  </error>
+
+  <error id="270">
+    <name>SYNTAX_TEXT_TOO_LONG</name>
+    <text>Too many characters in the message</text>
+  </error>
+
+  <error id="271">
+    <name>SYNTAX_INVALID_INDICATOR_POSITION</name>
+    <text>Indicator used incorrectly in route</text>
+  </error>
+
+  <error id="272">
+    <name>SYNTAX_TWO_CONSECUTIVE_INDICATORS_DETECTED</name>
+    <text>Indicators cannot be used consecutively</text>
+  </error>
+
+  <error id="273">
+    <name>TRUNCATION_NOT_ALLOWED_INSIDE_FDRG</name>
+    <text>Truncation not allowed inside FDRG</text>
+  </error>
+
+  <error id="274">
+    <name>SYNTAX_OPENING_BRACKET_EXPECTED</name>
+    <text>SYNTAX : Opening Bracket Expected</text>
+  </error>
+
+  <error id="275">
+    <name>SYNTAX_DASH_EXPECTED</name>
+    <text>Call TSM : SYNTAX_DASH_EXPECTED</text>
+  </error>
+
+  <error id="276">
+    <name>SYNTAX_DASH_FIELD_A_EXPECTED</name>
+    <text>Error in field A or end of msg ref</text>
+  </error>
+
+  <error id="277">
+    <name>DOF_DIFFERENT_FROM_FIELD_A</name>
+    <text>DOF_DIFFERENT_FROM_FIELD_A</text>
+  </error>
+
+  <error id="278">
+    <name>SYNTAX_DASH_FIELD5_EXPECTED</name>
+    <text>Error in field 3 or no "-" before EMERG</text>
+  </error>
+
+  <error id="279">
+    <name>SYNTAX_DASH_FIELD7_EXPECTED</name>
+    <text>No "-" before ACID or error in prev fld</text>
+  </error>
+
+  <error id="28">
+    <name>HOLD_EXIT_TIME_BEFORE_SYSTEM_ETO</name>
+    <text>Hold exit-time #1$ is before eto #2$</text>
+  </error>
+
+  <error id="280">
+    <name>SYNTAX_DASH_FIELD8_EXPECTED</name>
+    <text>Error in ACID or no "-" before FRUL</text>
+  </error>
+
+  <error id="281">
+    <name>SYNTAX_DASH_FIELD9_EXPECTED</name>
+    <text>Error in FRUL or no "-" before TYPE</text>
+  </error>
+
+  <error id="282">
+    <name>SYNTAX_DASH_FIELD10_EXPECTED</name>
+    <text>Error in TYPE or no "-" before EQUIP</text>
+  </error>
+
+  <error id="283">
+    <name>SYNTAX_DASH_FIELD13_EXPECTED</name>
+    <text>No "-" before ADEP or error in prev fld</text>
+  </error>
+
+  <error id="284">
+    <name>SYNTAX_DASH_FIELD14_EXPECTED</name>
+    <text>Error in ADEP or no "-" before COP</text>
+  </error>
+
+  <error id="285">
+    <name>SYNTAX_DASH_FIELD15_EXPECTED</name>
+    <text>No "-" before TAS / error in prev field</text>
+  </error>
+
+  <error id="286">
+    <name>SYNTAX_DASH_FIELD16_EXPECTED</name>
+    <text>No "-" before ADES or error in prev fld</text>
+  </error>
+
+  <error id="287">
+    <name>SYNTAX_DASH_FIELD17_EXPECTED</name>
+    <text>No "-" before AARR / error in prev field</text>
+  </error>
+
+  <error id="288">
+    <name>SYNTAX_DASH_FIELD18_EXPECTED</name>
+    <text>Error in field 16 or no "-" before OTHER</text>
+  </error>
+
+  <error id="289">
+    <name>SYNTAX_DASH_FIELD19_EXPECTED</name>
+    <text>Error in OTHER or no "-" before SUP INFO</text>
+  </error>
+
+  <error id="29">
+    <name>ILLEGAL_ETO_DELAY_ON_HOLD_FIX</name>
+    <text>ETO DELAY and HOLD cannot be on same pt.</text>
+  </error>
+
+  <error id="290">
+    <name>SYNTAX_DASH_FIELD20_EXPECTED</name>
+    <text>No "-" before F20 or error in prev field</text>
+  </error>
+
+  <error id="291">
+    <name>SYNTAX_DASH_FIELD21_EXPECTED</name>
+    <text>No "-" before F21 or error in prev field</text>
+  </error>
+
+  <error id="292">
+    <name>SYNTAX_DASH_FIELD22_EXPECTED</name>
+    <text>No "-" before AMDT or error in prev fld</text>
+  </error>
+
+  <error id="293">
+    <name>SYNTAX_DASH_FIELD23_EXPECTED</name>
+    <text>SYNTAX_DASH_FIELD23_EXPECTED</text>
+  </error>
+
+  <error id="294">
+    <name>SYNTAX_SLASH_EXPECTED</name>
+    <text>"/" missing or field syntax error</text>
+  </error>
+
+  <error id="295">
+    <name>SYNTAX_SPACE_EXPECTED</name>
+    <text>Space is missing or field syntax error</text>
+  </error>
+
+  <error id="296">
+    <name>SYNTAX_MESSAGE_TYPE_EXPECTED</name>
+    <text>Message type cannot be determined</text>
+  </error>
+
+  <error id="297">
+    <name>SYNTAX_MESSAGE_REF_INVALID</name>
+    <text>No "-" before ACID or error in MSG REF</text>
+  </error>
+
+  <error id="298">
+    <name>SYNTAX_TIME_EXPECTED</name>
+    <text>Syntax error : Cannot determine time</text>
+  </error>
+
+  <error id="299">
+    <name>SYNTAX_EET_TIME_EXPECTED</name>
+    <text>Syntax error : Cannot determine time</text>
+  </error>
+
+  <error id="3">
+    <name>CMD_NOT_ALLOWED</name>
+    <text>Command not allowed</text>
+  </error>
+
+  <error id="30">
+    <name>FPL_CAN_NOT_INSERT_HLD_FIX_RETRY</name>
+    <text>Could not insert Hold Fix-Retry</text>
+  </error>
+
+  <error id="300">
+    <name>SYNTAX_ADES_EXPECTED</name>
+    <text>ADES cannot be determined</text>
+  </error>
+
+  <error id="301">
+    <name>SYNTAX_ADEP_EXPECTED</name>
+    <text>ADEP cannot be determined</text>
+  </error>
+
+  <error id="302">
+    <name>SYNTAX_AIRPORT_EXPECTED</name>
+    <text>Arrival airport cannot be determined</text>
+  </error>
+
+  <error id="303">
+    <name>SYNTAX_EMERGENCY_OR_OACI_ID_EXPECTED</name>
+    <text>SAR Phase cannot be determined</text>
+  </error>
+
+  <error id="304">
+    <name>SYNTAX_F5_ADDRESS_EXPECTED</name>
+    <text>Originator address cannot be determined</text>
+  </error>
+
+  <error id="305">
+    <name>SYNTAX_EMERGENCY_NATURE_EXPECTED</name>
+    <text>Nature of emergency cannot be determined</text>
+  </error>
+
+  <error id="306">
+    <name>SYNTAX_CALLSIGN_EXPECTED</name>
+    <text>Syntax error : ACID cannot be determined</text>
+  </error>
+
+  <error id="307">
+    <name>SYNTAX_SSR_CODE_EXPECTED</name>
+    <text>SSR code syntax error in field 7</text>
+  </error>
+
+  <error id="308">
+    <name>SYNTAX_SSR_MODE_EXPECTED</name>
+    <text>SSR mode syntax error in field 7</text>
+  </error>
+
+  <error id="309">
+    <name>SYNTAX_FLIGHT_TYPE_EXPECTED</name>
+    <text>Type of flight cannot be determined</text>
+  </error>
+
+  <error id="31">
+    <name>PILOT_ETO_EARLIER_THAN_SYSTEM_ETO_ON_CURRENT</name>
+    <text>Time earlier than ATO on overflown point</text>
+  </error>
+
+  <error id="310">
+    <name>SYNTAX_FLIGHT_RULE_EXPECTED</name>
+    <text>Flight rule cannot be determined</text>
+  </error>
+
+  <error id="311">
+    <name>SYNTAX_AIRCRAFT_TYPE_EXPECTED</name>
+    <text>Aircraft type cannot be determined</text>
+  </error>
+
+  <error id="312">
+    <name>SYNTAX_WAKE_TURBULENCE_EXPECTED</name>
+    <text>Wake Turb Cat cannot be determined</text>
+  </error>
+
+  <error id="313">
+    <name>SYNTAX_SSR_EQUIPMENT_EXPECTED</name>
+    <text>SSR equipment cannot be determined</text>
+  </error>
+
+  <error id="314">
+    <name>SYNTAX_COM_NAV_APP_EXPECTED</name>
+    <text>Com/Nav equipment cannot be determined</text>
+  </error>
+
+  <error id="315">
+    <name>SYNTAX_ROUTE_EXPECTED</name>
+    <text>Route cannot be determined</text>
+  </error>
+
+  <error id="316">
+    <name>SYNTAX_FIELD17C_REFUSED</name>
+    <text>Free text refused. AARR not "ZZZZ"</text>
+  </error>
+
+  <error id="317">
+    <name>SYNTAX_FIELD17C_EXPECTED</name>
+    <text>Free text expected. AARR is "ZZZZ"</text>
+  </error>
+
+  <error id="318">
+    <name>SYNTAX_FIELD_NUMBER_EXPECTED</name>
+    <text>Field number cannot be determined</text>
+  </error>
+
+  <error id="319">
+    <name>SYNTAX_ARGUMENTS_EXPECTED</name>
+    <text>SYNTAX : Arguments Expected $</text>
+  </error>
+
+  <error id="32">
+    <name>PILOT_ETO_EARLIER_THAN_PILOT_ETO_ON_CURRENT</name>
+    <text>Time earlier than ATO on overflown point</text>
+  </error>
+
+  <error id="320">
+    <name>SYNTAX_TEXT_TRUNCATED</name>
+    <text>SYNTAX : Text Truncated</text>
+  </error>
+
+  <error id="321">
+    <name>SYNTAX_ROUTE_TRUNCATED</name>
+    <text>SYNTAX : Route Truncated</text>
+  </error>
+
+  <error id="322">
+    <name>AMBIGUOUS_FORMAT_MESSAGE</name>
+    <text>AMBIGUOUS_FORMAT_MESSAGE</text>
+  </error>
+
+  <error id="323">
+    <name>SYNTAX_OTHER_INFO_SWITCH_EXPECTED</name>
+    <text>A "0" or valid text is required</text>
+  </error>
+
+  <error id="324">
+    <name>SYNTAX_SUP_INFO_SWITCH_EXPECTED</name>
+    <text>Supplementary Info indicator expected</text>
+  </error>
+
+  <error id="325">
+    <name>SYNTAX_OTHER_INFO_SWITCH_ARGUMENT_EXPECTED</name>
+    <text>Text required after indicator</text>
+  </error>
+
+  <error id="326">
+    <name>SYNTAX_SUP_INFO_SWITCH_ARGUMENT_EXPECTED</name>
+    <text>Text required after indicator</text>
+  </error>
+
+  <error id="327">
+    <name>SYNTAX_AIRCRAFT_ADS_CODE_EXPECTED</name>
+    <text>Syntax error : Invalid datalink CODE</text>
+  </error>
+
+  <error id="328">
+    <name>SYNTAX_OTHER_INFO_SWITCH_UNHANDLED</name>
+    <text>Unknown indicator in Other Info field</text>
+  </error>
+
+  <error id="329">
+    <name>SYNTAX_SUP_INFO_SWITCH_UNHANDLED</name>
+    <text>Unknown indicator in Sup Info field</text>
+  </error>
+
+  <error id="33">
+    <name>PILOT_ETO_EARLIER_THAN_PREVIOUS_PILOT_ETO</name>
+    <text>Time earlier than preceeding pilot ETO</text>
+  </error>
+
+  <error id="330">
+    <name>SYNTAX_OTHER_INFO_TRUNCATED</name>
+    <text>Other Info field exceeds 250 characters</text>
+  </error>
+
+  <error id="331">
+    <name>SYNTAX_LRM_FIELD18_INCORRECT</name>
+    <text>Syntax error in field 18 of LRM</text>
+  </error>
+
+  <error id="332">
+    <name>SYNTAX_SUP_INFO_TRUNCATED</name>
+    <text>Sup Info field exceeds 100 characters</text>
+  </error>
+
+  <error id="333">
+    <name>SYNTAX_ATS_FPL_MESSAGE_EXPECTED</name>
+    <text>Call TSM:SYNTAX_ATS_FPL_MESSAGE_EXPECTED</text>
+  </error>
+
+  <error id="334">
+    <name>CFMU_MSG_REJECTED_CTOT_INVALID</name>
+    <text>CFMU_MSG_REJECTED_CTOT_INVALID</text>
+  </error>
+
+  <error id="335">
+    <name>CFMU_MSG_PROC_NOT_FULL_OR_PARTIAL</name>
+    <text>CFMU_MSG_PROC_NOT_FULL_OR_PARTIAL</text>
+  </error>
+
+  <error id="336">
+    <name>ONLY_ONE_ICAO_LAM_ADDRESS_ALLOWED</name>
+    <text>ONLY_ONE_ICAO_LAM_ADDRESS_ALLOWED</text>
+  </error>
+
+  <error id="337">
+    <name>ONLY_ADEXP_ADDRESSES_ALLOWED</name>
+    <text>ONLY_ADEXP_ADDRESSES_ALLOWED</text>
+  </error>
+
+  <error id="338">
+    <name>CPL_AND_EST_NOT_SENT_TO_ADEXP_CENTERS</name>
+    <text>CPL_AND_EST_NOT_SENT_TO_ADEXP_CENTERS</text>
+  </error>
+
+  <error id="339">
+    <name>SYNTAX_ADEXP_FPL_MESSAGE_EXPECTED</name>
+    <text>SYNTAX_ADEXP_FPL_MESSAGE_EXPECTED</text>
+  </error>
+
+  <error id="34">
+    <name>PILOT_ETO_LATER_THAN_FOLLOWING_PILOT_ETO</name>
+    <text>Time later than subsequent pilot ETO</text>
+  </error>
+
+  <error id="340">
+    <name>SYNTAX_INVALID_SENDING_UNIT</name>
+    <text>SYNTAX_INVALID_SENDING_UNIT</text>
+  </error>
+
+  <error id="341">
+    <name>SYNTAX_INVALID_ARCID</name>
+    <text>SYNTAX_INVALID_ARCID</text>
+  </error>
+
+  <error id="342">
+    <name>SYNTAX_DUPLICATE_ARCID</name>
+    <text>SYNTAX_DUPLICATE_ARCID</text>
+  </error>
+
+  <error id="343">
+    <name>SYNTAX_UNKNOWN_ADDRESS</name>
+    <text>SYNTAX_UNKNOWN_ADDRESS</text>
+  </error>
+
+  <error id="344">
+    <name>SYNTAX_INVALID_SSR_MODE</name>
+    <text>SYNTAX_INVALID_SSR_MODE</text>
+  </error>
+
+  <error id="345">
+    <name>SYNTAX_INVALID_SSR_CODE</name>
+    <text>SYNTAX_INVALID_SSR_CODE</text>
+  </error>
+
+  <error id="346">
+    <name>SYNTAX_INVALID_FLIGHT_RULES</name>
+    <text>SYNTAX_INVALID_FLIGHT_RULES</text>
+  </error>
+
+  <error id="347">
+    <name>SYNTAX_INVALID_FLIGHT_TYPE</name>
+    <text>SYNTAX_INVALID_FLIGHT_TYPE</text>
+  </error>
+
+  <error id="348">
+    <name>SYNTAX_INVALID_AIRCRAFT_MODEL</name>
+    <text>SYNTAX_INVALID_AIRCRAFT_MODEL</text>
+  </error>
+
+  <error id="349">
+    <name>SYNTAX_INVALID_WAKE_TURBULENCE_CATEGORY</name>
+    <text>SYNTAX_INVALID_WAKE_TURBULENCE_CATEGORY</text>
+  </error>
+
+  <error id="35">
+    <name>PILOT_ETO_ON_CURRENT_CAN_NOT_BE_IN_FUTURE</name>
+    <text>Can't change ATO to a time in the future</text>
+  </error>
+
+  <error id="350">
+    <name>SYNTAX_INVALID_CNA_EQUIPMENT_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_CNA_EQUIPMENT_DESIGNATOR</text>
+  </error>
+
+  <error id="351">
+    <name>SYNTAX_INVALID_SSR_EQUIPMENT_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_SSR_EQUIPMENT_DESIGNATOR</text>
+  </error>
+
+  <error id="352">
+    <name>SYNTAX_INVALID_AERODROME_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_AERODROME_DESIGNATOR</text>
+  </error>
+
+  <error id="353">
+    <name>SYNTAX_INVALID_DEPARTURE_AERODROME</name>
+    <text>SYNTAX_INVALID_DEPARTURE_AERODROME</text>
+  </error>
+
+  <error id="354">
+    <name>SYNTAX_INVALID_DESTINATION_AERODROME</name>
+    <text>SYNTAX_INVALID_DESTINATION_AERODROME</text>
+  </error>
+
+  <error id="355">
+    <name>SYNTAX_INVALID_ARRIVAL_AERODROME</name>
+    <text>SYNTAX_INVALID_ARRIVAL_AERODROME</text>
+  </error>
+
+  <error id="356">
+    <name>SYNTAX_EXPECTED_TIME_DESIGNATOR_NOT_FOUND</name>
+    <text>SYNTAX_EXPECTED_TIME_DESIGNATOR</text>
+  </error>
+
+  <error id="357">
+    <name>SYNTAX_TIME_DESIGNATOR_FOUND_WHEN_NOT_EXPECTED</name>
+    <text>SYNTAX_TIME_DESIGNATOR_FOUND</text>
+  </error>
+
+  <error id="358">
+    <name>SYNTAX_INVALID_TIME_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_TIME_DESIGNATOR</text>
+  </error>
+
+  <error id="359">
+    <name>SYNTAX_MISSING_TIME_DESGNATOR</name>
+    <text>SYNTAX_MISSING_TIME_DESGNATOR</text>
+  </error>
+
+  <error id="36">
+    <name>PILOT_ATO_WHEN_COORDINATED_NOT_ALLOWED</name>
+    <text>Can't enter ETO until the FDR is active</text>
+  </error>
+
+  <error id="360">
+    <name>SYNTAX_INVALID_BOUNDARY_POINT_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_BOUNDARY_POINT_DESIGNATOR</text>
+  </error>
+
+  <error id="361">
+    <name>SYNTAX_INVALID_ENROUTE_POINT</name>
+    <text>SYNTAX_INVALID_ENROUTE_POINT</text>
+  </error>
+
+  <error id="362">
+    <name>SYNTAX_INVALID_LAT_LON_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_LAT_LON_DESIGNATOR</text>
+  </error>
+
+  <error id="363">
+    <name>SYNTAX_INVALID_NAVAID_FIX</name>
+    <text>SYNTAX_INVALID_NAVAID_FIX</text>
+  </error>
+
+  <error id="364">
+    <name>SYNTAX_INVALID_LEVEL_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_LEVEL_DESIGNATOR</text>
+  </error>
+
+  <error id="365">
+    <name>SYNTAX_MISSING_LEVEL_DESIGNATOR</name>
+    <text>SYNTAX_MISSING_LEVEL_DESIGNATOR</text>
+  </error>
+
+  <error id="366">
+    <name>SYNTAX_INVALID_SUPPLEMENTARY_CROSSING_DATA</name>
+    <text>SYNTAX_INVALID_SUPPLEMENTARY</text>
+  </error>
+
+  <error id="367">
+    <name>SYNTAX_INVALID_SUPPLEMENTARY_CROSSING_LEVEL</name>
+    <text>SYNTAX_INVALID_SUPPLEMENTARY</text>
+  </error>
+
+  <error id="368">
+    <name>SYNTAX_MISSING_SUPPLEMENTARY_CROSSING_LEVEL</name>
+    <text>SYNTAX_MISSING_SUPPLEMENTAR</text>
+  </error>
+
+  <error id="369">
+    <name>SYNTAX_INVALID_CROSSING_CONDITION</name>
+    <text>SYNTAX_INVALID_CROSSING_CONDITION</text>
+  </error>
+
+  <error id="37">
+    <name>PILOT_ATO_WHEN_IN_HOLDING_NOT_ALLOWED</name>
+    <text>PILOT_ATO_WHEN_IN_HOLDING_NOT_ALLOWED</text>
+  </error>
+
+  <error id="370">
+    <name>SYNTAX_MISSING_CROSSING_CONDITION</name>
+    <text>SYNTAX_MISSING_CROSSING_CONDITION</text>
+  </error>
+
+  <error id="371">
+    <name>SYNTAX_INVALID_SPEED_LEVEL_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_SPEED_LEVEL_DESIGNATOR</text>
+  </error>
+
+  <error id="372">
+    <name>SYNTAX_MISSING_SPEED_LEVEL_DESIGNATOR</name>
+    <text>SYNTAX_MISSING_SPEED_LEVEL_DESIGNATOR</text>
+  </error>
+
+  <error id="373">
+    <name>SYNTAX_INVALID_SPEED_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_SPEED_DESIGNATOR</text>
+  </error>
+
+  <error id="374">
+    <name>SYNTAX_MISSING_SPEED_DESIGNATOR</name>
+    <text>-SYNTAX_MISSING_SPEED_DESIGNATOR</text>
+  </error>
+
+  <error id="375">
+    <name>SYNTAX_INVALID_ROUTE_ELEMENT_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_ROUTE_ELEMENT_DESIGNATOR</text>
+  </error>
+
+  <error id="376">
+    <name>SYNTAX_INVALID_ATS_ROUTE_SIGNIFICANT_POINT_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_ATS_ROUTE_SIGNIFICANT</text>
+  </error>
+
+  <error id="377">
+    <name>SYNTAX_INVALID_ATS_ROUTE_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_ATS_ROUTE_DESIGNATOR</text>
+  </error>
+
+  <error id="378">
+    <name>SYNTAX_INVALID_SIGNIFICANT_POINT_DESIGNATOR</name>
+    <text>SYNTAX_INVALID_SIGNIFICANT_POINT</text>
+  </error>
+
+  <error id="379">
+    <name>SYNTAX_FLIGHT_RULES_INDICATOR_DOES_NOT_FOLLOW_SIGNIFICANT_POINT</name>
+    <text>SYNTAX_FLIGHT_RULES_INDICATOR_DOES</text>
+  </error>
+
+  <error id="38">
+    <name>DELAY_INCOMPATIBLE_WITH_PILOT_ESTIMATES</name>
+    <text>DLA too long. Can't meet next pilot ETO</text>
+  </error>
+
+  <error id="380">
+    <name>SYNTAX_ADDITIONAL_DATA_FOLLOWS_TRUNCATION_INDICATOR</name>
+    <text>SYNTAX_ADDITIONAL_DATA_FOLLOWS</text>
+  </error>
+
+  <error id="381">
+    <name>SYNTAX_INCORRECT_CRUISE_CLIMB_FORMAT</name>
+    <text>SYNTAX_INCORRECT_CRUISE_CLIMB_FORMAT</text>
+  </error>
+
+  <error id="382">
+    <name>SYNTAX_CONFLICTING_DIRECTION</name>
+    <text>SYNTAX_CONFLICTING_DIRECTION</text>
+  </error>
+
+  <error id="383">
+    <name>SYNTAX_INVALID_OTHER_INFORMATION_ELEMENT</name>
+    <text>SYNTAX_INVALID_OTHER_INFORMATION_ELEMENT</text>
+  </error>
+
+  <error id="384">
+    <name>SYNTAX_INVALID_SUPPLEMENTARY_INFORMATION_ELEMENT</name>
+    <text>SYNTAX_INVALID_SUPPLEMENTARY_INFORMATION</text>
+  </error>
+
+  <error id="385">
+    <name>SYNTAX_INVALID_AMENDMENT_FIELD_DATA</name>
+    <text>SYNTAX_INVALID_AMENDMENT_FIELD_DATA</text>
+  </error>
+
+  <error id="386">
+    <name>SYNTAX_MISSING_FIELD</name>
+    <text>SYNTAX_MISSING_FIELD</text>
+  </error>
+
+  <error id="387">
+    <name>SYNTAX_MISSING_FIELD_AD</name>
+    <text>SYNTAX_MISSING_FIELD_AD</text>
+  </error>
+
+  <error id="388">
+    <name>SYNTAX_MISSING_FIELD_ADA</name>
+    <text>SYNTAX_MISSING_FIELD_ADA</text>
+  </error>
+
+  <error id="389">
+    <name>SYNTAX_MISSING_FIELD_ADARR</name>
+    <text>SYNTAX_MISSING_FIELD_ADARR</text>
+  </error>
+
+  <error id="39">
+    <name>FPL_HAS_NO_FLIGHT_DATA_TYPE</name>
+    <text>Call TSM : FPL_HAS_NO_FLIGHT_DATA_TYPE</text>
+  </error>
+
+  <error id="390">
+    <name>SYNTAX_MISSING_FIELD_ADARRZ</name>
+    <text>SYNTAX_MISSING_FIELD_ADARRZ</text>
+  </error>
+
+  <error id="391">
+    <name>SYNTAX_MISSING_FIELD_ADD</name>
+    <text>SYNTAX_MISSING_FIELD_ADD</text>
+  </error>
+
+  <error id="392">
+    <name>SYNTAX_MISSING_FIELD_ADDR</name>
+    <text>SYNTAX_MISSING_FIELD_ADDR</text>
+  </error>
+
+  <error id="393">
+    <name>SYNTAX_MISSING_FIELD_ADEP</name>
+    <text>SYNTAX_MISSING_FIELD_ADEP</text>
+  </error>
+
+  <error id="394">
+    <name>SYNTAX_MISSING_FIELD_ADEPK</name>
+    <text>SYNTAX_MISSING_FIELD_ADEPK</text>
+  </error>
+
+  <error id="395">
+    <name>SYNTAX_MISSING_FIELD_ADEPOLD</name>
+    <text>SYNTAX_MISSING_FIELD_ADEPOLD</text>
+  </error>
+
+  <error id="396">
+    <name>SYNTAX_MISSING_FIELD_ADES</name>
+    <text>SYNTAX_MISSING_FIELD_ADES</text>
+  </error>
+
+  <error id="397">
+    <name>SYNTAX_MISSING_FIELD_ADESK</name>
+    <text>SYNTAX_MISSING_FIELD_ADESK</text>
+  </error>
+
+  <error id="398">
+    <name>SYNTAX_MISSING_FIELD_ADESOLD</name>
+    <text>SYNTAX_MISSING_FIELD_ADESOLD</text>
+  </error>
+
+  <error id="399">
+    <name>SYNTAX_MISSING_FIELD_ADEXPTXT</name>
+    <text>SYNTAX_MISSING_FIELD_ADEXPTXT</text>
+  </error>
+
+  <error id="4">
+    <name>FPL_STATUS_INCOMPATIBLE_WITH_MESSAGE</name>
+    <text>Message not compatible with FP state</text>
+  </error>
+
+  <error id="40">
+    <name>FPL_TIME_IS_IN_THE_PAST</name>
+    <text>$ is too far in the past</text>
+  </error>
+
+  <error id="400">
+    <name>SYNTAX_MISSING_FIELD_AFILDATA</name>
+    <text>SYNTAX_MISSING_FIELD_AFILDATA</text>
+  </error>
+
+  <error id="401">
+    <name>SYNTAX_MISSING_FIELD_AHEAD</name>
+    <text>SYNTAX_MISSING_FIELD_AHEAD</text>
+  </error>
+
+  <error id="402">
+    <name>SYNTAX_MISSING_FIELD_ALTNZ</name>
+    <text>SYNTAX_MISSING_FIELD_ALTNZ</text>
+  </error>
+
+  <error id="403">
+    <name>SYNTAX_MISSING_FIELD_ALTRNT1</name>
+    <text>SYNTAX_MISSING_FIELD_ALTRNT1</text>
+  </error>
+
+  <error id="404">
+    <name>SYNTAX_MISSING_FIELD_ALTRNT2</name>
+    <text>SYNTAX_MISSING_FIELD_ALTRNT2</text>
+  </error>
+
+  <error id="405">
+    <name>SYNTAX_MISSING_FIELD_AOBD</name>
+    <text>SYNTAX_MISSING_FIELD_AOBD</text>
+  </error>
+
+  <error id="406">
+    <name>SYNTAX_MISSING_FIELD_AOBT</name>
+    <text>SYNTAX_MISSING_FIELD_AOBT</text>
+  </error>
+
+  <error id="407">
+    <name>SYNTAX_MISSING_FIELD_ARCID</name>
+    <text>SYNTAX_MISSING_FIELD_ARCID</text>
+  </error>
+
+  <error id="408">
+    <name>SYNTAX_MISSING_FIELD_ARCIDK</name>
+    <text>SYNTAX_MISSING_FIELD_ARCIDK</text>
+  </error>
+
+  <error id="409">
+    <name>SYNTAX_MISSING_FIELD_ARCIDOLD</name>
+    <text>SYNTAX_MISSING_FIELD_ARCIDOLD</text>
+  </error>
+
+  <error id="41">
+    <name>FPL_TIME_IS_IN_THE_FUTURE</name>
+    <text>$ is too far in the future</text>
+  </error>
+
+  <error id="410">
+    <name>SYNTAX_MISSING_FIELD_ARCTYP</name>
+    <text>SYNTAX_MISSING_FIELD_ARCTYP</text>
+  </error>
+
+  <error id="411">
+    <name>SYNTAX_MISSING_FIELD_ARPLNB</name>
+    <text>SYNTAX_MISSING_FIELD_ARPLNB</text>
+  </error>
+
+  <error id="412">
+    <name>SYNTAX_MISSING_FIELD_ASPEED</name>
+    <text>SYNTAX_MISSING_FIELD_ASPEED</text>
+  </error>
+
+  <error id="413">
+    <name>SYNTAX_MISSING_FIELD_ATA</name>
+    <text>SYNTAX_MISSING_FIELD_ATA</text>
+  </error>
+
+  <error id="414">
+    <name>SYNTAX_MISSING_FIELD_ATD</name>
+    <text>SYNTAX_MISSING_FIELD_ATD</text>
+  </error>
+
+  <error id="415">
+    <name>SYNTAX_MISSING_FIELD_ATOT</name>
+    <text>SYNTAX_MISSING_FIELD_ATOT</text>
+  </error>
+
+  <error id="416">
+    <name>SYNTAX_MISSING_FIELD_ATSRT</name>
+    <text>SYNTAX_MISSING_FIELD_ATSRT</text>
+  </error>
+
+  <error id="417">
+    <name>SYNTAX_MISSING_FIELD_AWR</name>
+    <text>SYNTAX_MISSING_FIELD_AWR</text>
+  </error>
+
+  <error id="418">
+    <name>SYNTAX_MISSING_FIELD_CASSADDR</name>
+    <text>SYNTAX_MISSING_FIELD_CASSADDR</text>
+  </error>
+
+  <error id="419">
+    <name>SYNTAX_MISSING_FIELD_CEQPT</name>
+    <text>SYNTAX_MISSING_FIELD_CEQPT</text>
+  </error>
+
+  <error id="42">
+    <name>FPL_ACT_ENTRY_TIME_OUTSIDE_WINDOW</name>
+    <text>ACT entry time outside window</text>
+  </error>
+
+  <error id="420">
+    <name>SYNTAX_MISSING_FIELD_CFL</name>
+    <text>SYNTAX_MISSING_FIELD_CFL</text>
+  </error>
+
+  <error id="421">
+    <name>SYNTAX_MISSING_FIELD_CHGRUL</name>
+    <text>SYNTAX_MISSING_FIELD_CHGRUL</text>
+  </error>
+
+  <error id="422">
+    <name>SYNTAX_MISSING_FIELD_COBD</name>
+    <text>SYNTAX_MISSING_FIELD_COBD</text>
+  </error>
+
+  <error id="423">
+    <name>SYNTAX_MISSING_FIELD_COBT</name>
+    <text>SYNTAX_MISSING_FIELD_COBT</text>
+  </error>
+
+  <error id="424">
+    <name>SYNTAX_MISSING_FIELD_COM</name>
+    <text>SYNTAX_MISSING_FIELD_COM</text>
+  </error>
+
+  <error id="425">
+    <name>SYNTAX_MISSING_FIELD_COMMENT</name>
+    <text>SYNTAX_MISSING_FIELD_COMMENT</text>
+  </error>
+
+  <error id="426">
+    <name>SYNTAX_MISSING_FIELD_CONDID</name>
+    <text>SYNTAX_MISSING_FIELD_CONDID</text>
+  </error>
+
+  <error id="427">
+    <name>SYNTAX_MISSING_FIELD_COORDATA</name>
+    <text>SYNTAX_MISSING_FIELD_COORDATA</text>
+  </error>
+
+  <error id="428">
+    <name>SYNTAX_MISSING_FIELD_COP</name>
+    <text>SYNTAX_MISSING_FIELD_COP</text>
+  </error>
+
+  <error id="429">
+    <name>SYNTAX_MISSING_FIELD_CRSCLIMB</name>
+    <text>SYNTAX_MISSING_FIELD_CRSCLIMB</text>
+  </error>
+
+  <error id="43">
+    <name>FPL_FLIGHT_NOT_OUTSIDE_TAAATS</name>
+    <text>Flight is currently not outside FDRG</text>
+  </error>
+
+  <error id="430">
+    <name>SYNTAX_MISSING_FIELD_CSTAT</name>
+    <text>SYNTAX_MISSING_FIELD_CSTAT</text>
+  </error>
+
+  <error id="431">
+    <name>SYNTAX_MISSING_FIELD_CTOD</name>
+    <text>SYNTAX_MISSING_FIELD_CTOD</text>
+  </error>
+
+  <error id="432">
+    <name>SYNTAX_MISSING_FIELD_CTOT</name>
+    <text>SYNTAX_MISSING_FIELD_CTOT</text>
+  </error>
+
+  <error id="433">
+    <name>SYNTAX_MISSING_FIELD_DAT</name>
+    <text>SYNTAX_MISSING_FIELD_DAT</text>
+  </error>
+
+  <error id="434">
+    <name>SYNTAX_MISSING_FIELD_DAYS</name>
+    <text>SYNTAX_MISSING_FIELD_DAYS</text>
+  </error>
+
+  <error id="435">
+    <name>SYNTAX_MISSING_FIELD_DAYSK</name>
+    <text>SYNTAX_MISSING_FIELD_DAYSK</text>
+  </error>
+
+  <error id="436">
+    <name>SYNTAX_MISSING_FIELD_DAYSOLD</name>
+    <text>SYNTAX_MISSING_FIELD_DAYSOLD</text>
+  </error>
+
+  <error id="437">
+    <name>SYNTAX_MISSING_FIELD_DCT</name>
+    <text>SYNTAX_MISSING_FIELD_DCT</text>
+  </error>
+
+  <error id="438">
+    <name>SYNTAX_MISSING_FIELD_DELAYS</name>
+    <text>SYNTAX_MISSING_FIELD_DELAYS</text>
+  </error>
+
+  <error id="439">
+    <name>SYNTAX_MISSING_FIELD_DEPZ</name>
+    <text>SYNTAX_MISSING_FIELD_DEPZ</text>
+  </error>
+
+  <error id="44">
+    <name>FPL_MILITARY_CENTERS_DO_NOT_MATCH</name>
+    <text>Military center mismatch with entry fix</text>
+  </error>
+
+  <error id="440">
+    <name>SYNTAX_MISSING_FIELD_DESC</name>
+    <text>SYNTAX_MISSING_FIELD_DESC</text>
+  </error>
+
+  <error id="441">
+    <name>SYNTAX_MISSING_FIELD_DESTZ</name>
+    <text>SYNTAX_MISSING_FIELD_DESTZ</text>
+  </error>
+
+  <error id="442">
+    <name>SYNTAX_MISSING_FIELD_EETFIR</name>
+    <text>SYNTAX_MISSING_FIELD_EETFIR</text>
+  </error>
+
+  <error id="443">
+    <name>SYNTAX_MISSING_FIELD_EETLAT</name>
+    <text>SYNTAX_MISSING_FIELD_EETLAT</text>
+  </error>
+
+  <error id="444">
+    <name>SYNTAX_MISSING_FIELD_EETLONG</name>
+    <text>SYNTAX_MISSING_FIELD_EETLONG</text>
+  </error>
+
+  <error id="445">
+    <name>SYNTAX_MISSING_FIELD_EETPT</name>
+    <text>SYNTAX_MISSING_FIELD_EETPT</text>
+  </error>
+
+  <error id="446">
+    <name>SYNTAX_MISSING_FIELD_ENDTIME</name>
+    <text>SYNTAX_MISSING_FIELD_ENDTIME</text>
+  </error>
+
+  <error id="447">
+    <name>SYNTAX_MISSING_FIELD_ENTRYDATA</name>
+    <text>SYNTAX_MISSING_FIELD_ENTRYDATA</text>
+  </error>
+
+  <error id="448">
+    <name>SYNTAX_MISSING_FIELD_EOBD</name>
+    <text>SYNTAX_MISSING_FIELD_EOBD</text>
+  </error>
+
+  <error id="449">
+    <name>SYNTAX_MISSING_FIELD_EOBDK</name>
+    <text>SYNTAX_MISSING_FIELD_EOBDK</text>
+  </error>
+
+  <error id="45">
+    <name>FPL_NO_LAM_RECEIVED_ON_EST</name>
+    <text>LAM not received for EST</text>
+  </error>
+
+  <error id="450">
+    <name>SYNTAX_MISSING_FIELD_EOBDOLD</name>
+    <text>SYNTAX_MISSING_FIELD_EOBDOLD</text>
+  </error>
+
+  <error id="451">
+    <name>SYNTAX_MISSING_FIELD_EOBT</name>
+    <text>SYNTAX_MISSING_FIELD_EOBT</text>
+  </error>
+
+  <error id="452">
+    <name>SYNTAX_MISSING_FIELD_EOBTK</name>
+    <text>SYNTAX_MISSING_FIELD_EOBTK</text>
+  </error>
+
+  <error id="453">
+    <name>SYNTAX_MISSING_FIELD_EOBTOLD</name>
+    <text>SYNTAX_MISSING_FIELD_EOBTOLD</text>
+  </error>
+
+  <error id="454">
+    <name>SYNTAX_MISSING_FIELD_ERRFIELD</name>
+    <text>SYNTAX_MISSING_FIELD_ERRFIELD</text>
+  </error>
+
+  <error id="455">
+    <name>SYNTAX_MISSING_FIELD_ERROR</name>
+    <text>SYNTAX_MISSING_FIELD_ERROR</text>
+  </error>
+
+  <error id="456">
+    <name>SYNTAX_MISSING_FIELD_ESTDATA</name>
+    <text>SYNTAX_MISSING_FIELD_ESTDATA</text>
+  </error>
+
+  <error id="457">
+    <name>SYNTAX_MISSING_FIELD_ETOD</name>
+    <text>SYNTAX_MISSING_FIELD_ETOD</text>
+  </error>
+
+  <error id="458">
+    <name>SYNTAX_MISSING_FIELD_ETOT</name>
+    <text>SYNTAX_MISSING_FIELD_ETOT</text>
+  </error>
+
+  <error id="459">
+    <name>SYNTAX_MISSING_FIELD_EXTADDR</name>
+    <text>SYNTAX_MISSING_FIELD_EXTADDR</text>
+  </error>
+
+  <error id="46">
+    <name>FPL_NO_LAM_RECEIVED_ON_PAC</name>
+    <text>LAM not received for PAC</text>
+  </error>
+
+  <error id="460">
+    <name>SYNTAX_MISSING_FIELD_FILENB</name>
+    <text>SYNTAX_MISSING_FIELD_FILENB</text>
+  </error>
+
+  <error id="461">
+    <name>SYNTAX_MISSING_FIELD_FILTIM</name>
+    <text>SYNTAX_MISSING_FIELD_FILTIM</text>
+  </error>
+
+  <error id="462">
+    <name>SYNTAX_MISSING_FIELD_FILRTE</name>
+    <text>SYNTAX_MISSING_FIELD_FILRTE</text>
+  </error>
+
+  <error id="463">
+    <name>SYNTAX_MISSING_FIELD_FLBAND</name>
+    <text>SYNTAX_MISSING_FIELD_FLBAND</text>
+  </error>
+
+  <error id="464">
+    <name>SYNTAX_MISSING_FIELD_FLTRUL</name>
+    <text>SYNTAX_MISSING_FIELD_FLTRUL</text>
+  </error>
+
+  <error id="465">
+    <name>SYNTAX_MISSING_FIELD_FLTTYP</name>
+    <text>SYNTAX_MISSING_FIELD_FLTTYP</text>
+  </error>
+
+  <error id="466">
+    <name>SYNTAX_MISSING_FIELD_FMP</name>
+    <text>SYNTAX_MISSING_FIELD_FMP</text>
+  </error>
+
+  <error id="467">
+    <name>SYNTAX_MISSING_FIELD_FMPLIST</name>
+    <text>SYNTAX_MISSING_FIELD_FMPLIST</text>
+  </error>
+
+  <error id="468">
+    <name>SYNTAX_MISSING_FIELD_FPLSTAT</name>
+    <text>SYNTAX_MISSING_FIELD_FPLSTAT</text>
+  </error>
+
+  <error id="469">
+    <name>SYNTAX_MISSING_FIELD_FREQ</name>
+    <text>SYNTAX_MISSING_FIELD_FREQ</text>
+  </error>
+
+  <error id="47">
+    <name>FPL_NO_LAM_RECEIVED_ON_EMG</name>
+    <text>LAM not received for EMG</text>
+  </error>
+
+  <error id="470">
+    <name>SYNTAX_MISSING_FIELD_FSTDAY</name>
+    <text>SYNTAX_MISSING_FIELD_FSTDAY</text>
+  </error>
+
+  <error id="471">
+    <name>SYNTAX_MISSING_FIELD_FURTHRTE</name>
+    <text>SYNTAX_MISSING_FIELD_FURTHRTE</text>
+  </error>
+
+  <error id="472">
+    <name>SYNTAX_MISSING_FIELD_GEO</name>
+    <text>SYNTAX_MISSING_FIELD_GEO</text>
+  </error>
+
+  <error id="473">
+    <name>SYNTAX_MISSING_FIELD_IFP</name>
+    <text>SYNTAX_MISSING_FIELD_IFP</text>
+  </error>
+
+  <error id="474">
+    <name>SYNTAX_MISSING_FIELD_IFPDLIST</name>
+    <text>SYNTAX_MISSING_FIELD_IFPDLIST</text>
+  </error>
+
+  <error id="475">
+    <name>SYNTAX_MISSING_FIELD_IFPDSLIST</name>
+    <text>SYNTAX_MISSING_FIELD_IFPDSLIST</text>
+  </error>
+
+  <error id="476">
+    <name>SYNTAX_MISSING_FIELD_IFPLID</name>
+    <text>SYNTAX_MISSING_FIELD_IFPLID</text>
+  </error>
+
+  <error id="477">
+    <name>SYNTAX_MISSING_FIELD_IFPSMOD</name>
+    <text>SYNTAX_MISSING_FIELD_IFPSMOD</text>
+  </error>
+
+  <error id="478">
+    <name>SYNTAX_MISSING_FIELD_IFPURESP</name>
+    <text>SYNTAX_MISSING_FIELD_IFPURESP</text>
+  </error>
+
+  <error id="479">
+    <name>SYNTAX_MISSING_FIELD_IGNORE</name>
+    <text>SYNTAX_MISSING_FIELD_IGNORE</text>
+  </error>
+
+  <error id="48">
+    <name>FPL_NO_LAM_RECEIVED_ON_MIS</name>
+    <text>LAM not received for MIS</text>
+  </error>
+
+  <error id="480">
+    <name>SYNTAX_MISSING_FIELD_IOBD</name>
+    <text>SYNTAX_MISSING_FIELD_IOBD</text>
+  </error>
+
+  <error id="481">
+    <name>SYNTAX_MISSING_FIELD_IOBT</name>
+    <text>SYNTAX_MISSING_FIELD_IOBT</text>
+  </error>
+
+  <error id="482">
+    <name>SYNTAX_MISSING_FIELD_LACDR</name>
+    <text>SYNTAX_MISSING_FIELD_LACDR</text>
+  </error>
+
+  <error id="483">
+    <name>SYNTAX_MISSING_FIELD_LATSA</name>
+    <text>SYNTAX_MISSING_FIELD_LATSA</text>
+  </error>
+
+  <error id="484">
+    <name>SYNTAX_MISSING_FIELD_LCATSRTE</name>
+    <text>SYNTAX_MISSING_FIELD_LCATSRTE</text>
+  </error>
+
+  <error id="485">
+    <name>SYNTAX_MISSING_FIELD_LFIR</name>
+    <text>SYNTAX_MISSING_FIELD_LFIR</text>
+  </error>
+
+  <error id="486">
+    <name>SYNTAX_MISSING_FIELD_LRAR</name>
+    <text>SYNTAX_MISSING_FIELD_LRAR</text>
+  </error>
+
+  <error id="487">
+    <name>SYNTAX_MISSING_FIELD_LRCA</name>
+    <text>SYNTAX_MISSING_FIELD_LRCA</text>
+  </error>
+
+  <error id="488">
+    <name>SYNTAX_MISSING_FIELD_LSTDAY</name>
+    <text>SYNTAX_MISSING_FIELD_LSTDAY</text>
+  </error>
+
+  <error id="489">
+    <name>SYNTAX_MISSING_FIELD_MACH</name>
+    <text>SYNTAX_MISSING_FIELD_MACH</text>
+  </error>
+
+  <error id="49">
+    <name>FPL_NO_OLDI_LAM_RECEIVED_ON_ACT</name>
+    <text>No LAM received for ACT</text>
+  </error>
+
+  <error id="490">
+    <name>SYNTAX_MISSING_FIELD_MESVALPERIOD</name>
+    <text>SYNTAX_MISSING_FIELD_MESVALPERIOD</text>
+  </error>
+
+  <error id="491">
+    <name>SYNTAX_MISSING_FIELD_MINLINEUP</name>
+    <text>SYNTAX_MISSING_FIELD_MINLINEUP</text>
+  </error>
+
+  <error id="492">
+    <name>SYNTAX_MISSING_FIELD_MODIFNB</name>
+    <text>SYNTAX_MISSING_FIELD_MODIFNB</text>
+  </error>
+
+  <error id="493">
+    <name>SYNTAX_MISSING_FIELD_MSGREF</name>
+    <text>SYNTAX_MISSING_FIELD_MSGREF</text>
+  </error>
+
+  <error id="494">
+    <name>SYNTAX_MISSING_FIELD_MSGSUM</name>
+    <text>SYNTAX_MISSING_FIELD_MSGSUM</text>
+  </error>
+
+  <error id="495">
+    <name>SYNTAX_MISSING_FIELD_MSGTXT</name>
+    <text>SYNTAX_MISSING_FIELD_MSGTXT</text>
+  </error>
+
+  <error id="496">
+    <name>SYNTAX_MISSING_FIELD_MSGTYP</name>
+    <text>SYNTAX_MISSING_FIELD_MSGTYP</text>
+  </error>
+
+  <error id="497">
+    <name>SYNTAX_MISSING_FIELD_NAV</name>
+    <text>SYNTAX_MISSING_FIELD_NAV</text>
+  </error>
+
+  <error id="498">
+    <name>SYNTAX_MISSING_FIELD_NBARC</name>
+    <text>SYNTAX_MISSING_FIELD_NBARC</text>
+  </error>
+
+  <error id="499">
+    <name>SYNTAX_MISSING_FIELD_NBRFPD</name>
+    <text>SYNTAX_MISSING_FIELD_NBRFPD</text>
+  </error>
+
+  <error id="5">
+    <name>NO_FPL_IN_COMPATIBLE_STATUS</name>
+    <text>FDR not found or not in compatible state</text>
+  </error>
+
+  <error id="50">
+    <name>FPL_NO_OLDI_LAM_RECEIVED_ON_PAC</name>
+    <text>No LAM received for PAC</text>
+  </error>
+
+  <error id="500">
+    <name>SYNTAX_MISSING_FIELD_NEWCTOT</name>
+    <text>SYNTAX_MISSING_FIELD_NEWCTOT</text>
+  </error>
+
+  <error id="501">
+    <name>SYNTAX_MISSING_FIELD_NEWENDTIME</name>
+    <text>SYNTAX_MISSING_FIELD_NEWENDTIME</text>
+  </error>
+
+  <error id="502">
+    <name>SYNTAX_MISSING_FIELD_NEWEOBD</name>
+    <text>SYNTAX_MISSING_FIELD_NEWEOBD</text>
+  </error>
+
+  <error id="503">
+    <name>SYNTAX_MISSING_FIELD_NEWEOBT</name>
+    <text>SYNTAX_MISSING_FIELD_NEWEOBT</text>
+  </error>
+
+  <error id="504">
+    <name>SYNTAX_MISSING_FIELD_NEWPTOT</name>
+    <text>SYNTAX_MISSING_FIELD_NEWPTOT</text>
+  </error>
+
+  <error id="505">
+    <name>SYNTAX_MISSING_FIELD_NEWRTE</name>
+    <text>SYNTAX_MISSING_FIELD_NEWRTE</text>
+  </error>
+
+  <error id="506">
+    <name>SYNTAX_MISSING_FIELD_NEWSTARTTIME</name>
+    <text>SYNTAX_MISSING_FIELD_NEWSTARTTIME</text>
+  </error>
+
+  <error id="507">
+    <name>SYNTAX_MISSING_FIELD_OLDMSG</name>
+    <text>SYNTAX_MISSING_FIELD_OLDMSG</text>
+  </error>
+
+  <error id="508">
+    <name>SYNTAX_MISSING_FIELD_OPADDR</name>
+    <text>SYNTAX_MISSING_FIELD_OPADDR</text>
+  </error>
+
+  <error id="509">
+    <name>SYNTAX_MISSING_FIELD_OPR</name>
+    <text>SYNTAX_MISSING_FIELD_OPR</text>
+  </error>
+
+  <error id="51">
+    <name>FPL_NO_OLDI_LAM_RECEIVED</name>
+    <text>No LAM received for OLDI message</text>
+  </error>
+
+  <error id="510">
+    <name>SYNTAX_MISSING_FIELD_ORGMSG</name>
+    <text>SYNTAX_MISSING_FIELD_ORGMSG</text>
+  </error>
+
+  <error id="511">
+    <name>SYNTAX_MISSING_FIELD_ORGN</name>
+    <text>SYNTAX_MISSING_FIELD_ORGN</text>
+  </error>
+
+  <error id="512">
+    <name>SYNTAX_MISSING_FIELD_ORGNID</name>
+    <text>SYNTAX_MISSING_FIELD_ORGNID</text>
+  </error>
+
+  <error id="513">
+    <name>SYNTAX_MISSING_FIELD_ORGRTE</name>
+    <text>SYNTAX_MISSING_FIELD_ORGRTE</text>
+  </error>
+
+  <error id="514">
+    <name>SYNTAX_MISSING_FIELD_ORIGIN</name>
+    <text>SYNTAX_MISSING_FIELD_ORIGIN</text>
+  </error>
+
+  <error id="515">
+    <name>SYNTAX_MISSING_FIELD_ORIGINDT</name>
+    <text>SYNTAX_MISSING_FIELD_ORIGINDT</text>
+  </error>
+
+  <error id="516">
+    <name>SYNTAX_MISSING_FIELD_PART</name>
+    <text>SYNTAX_MISSING_FIELD_PART</text>
+  </error>
+
+  <error id="517">
+    <name>SYNTAX_MISSING_FIELD_PER</name>
+    <text>SYNTAX_MISSING_FIELD_PER</text>
+  </error>
+
+  <error id="518">
+    <name>SYNTAX_MISSING_FIELD_POSITION</name>
+    <text>SYNTAX_MISSING_FIELD_POSITION</text>
+  </error>
+
+  <error id="519">
+    <name>SYNTAX_MISSING_FIELD_PREVARCID</name>
+    <text>SYNTAX_MISSING_FIELD_PREVARCID</text>
+  </error>
+
+  <error id="52">
+    <name>LAM_NOT_PROCESSED</name>
+    <text>LAM_NOT_PROCESSED</text>
+  </error>
+
+  <error id="520">
+    <name>SYNTAX_MISSING_FIELD_PREVSSRCODE</name>
+    <text>SYNTAX_MISSING_FIELD_PREVSSRCODE</text>
+  </error>
+
+  <error id="521">
+    <name>SYNTAX_MISSING_FIELD_PROPFL</name>
+    <text>SYNTAX_MISSING_FIELD_PROPFL</text>
+  </error>
+
+  <error id="522">
+    <name>SYNTAX_MISSING_FIELD_PTOT</name>
+    <text>SYNTAX_MISSING_FIELD_PTOT</text>
+  </error>
+
+  <error id="523">
+    <name>SYNTAX_MISSING_FIELD_QRORGN</name>
+    <text>SYNTAX_MISSING_FIELD_QRORGN</text>
+  </error>
+
+  <error id="524">
+    <name>SYNTAX_MISSING_FIELD_RALT</name>
+    <text>SYNTAX_MISSING_FIELD_RALT</text>
+  </error>
+
+  <error id="525">
+    <name>SYNTAX_MISSING_FIELD_RATE</name>
+    <text>SYNTAX_MISSING_FIELD_RATE</text>
+  </error>
+
+  <error id="526">
+    <name>SYNTAX_MISSING_FIELD_RATEPDLST</name>
+    <text>SYNTAX_MISSING_FIELD_RATEPDLST</text>
+  </error>
+
+  <error id="527">
+    <name>SYNTAX_MISSING_FIELD_REASON</name>
+    <text>SYNTAX_MISSING_FIELD_REASON</text>
+  </error>
+
+  <error id="528">
+    <name>SYNTAX_MISSING_FIELD_REF</name>
+    <text>SYNTAX_MISSING_FIELD_REF</text>
+  </error>
+
+  <error id="529">
+    <name>SYNTAX_MISSING_FIELD_REFDATA</name>
+    <text>SYNTAX_MISSING_FIELD_REFDATA</text>
+  </error>
+
+  <error id="53">
+    <name>FPL_NO_ICAO_LAM_RECEIVED_ON_EST</name>
+    <text>LAM NOT RECEIVED FOR EST SENT</text>
+  </error>
+
+  <error id="530">
+    <name>SYNTAX_MISSING_FIELD_REG</name>
+    <text>SYNTAX_MISSING_FIELD_REG</text>
+  </error>
+
+  <error id="531">
+    <name>SYNTAX_MISSING_FIELD_REGCAUSE</name>
+    <text>SYNTAX_MISSING_FIELD_REGCAUSE</text>
+  </error>
+
+  <error id="532">
+    <name>SYNTAX_MISSING_FIELD_REGLOC</name>
+    <text>SYNTAX_MISSING_FIELD_REGLOC</text>
+  </error>
+
+  <error id="533">
+    <name>SYNTAX_MISSING_FIELD_REGUL</name>
+    <text>SYNTAX_MISSING_FIELD_REGUL</text>
+  </error>
+
+  <error id="534">
+    <name>SYNTAX_MISSING_FIELD_REJCTOT</name>
+    <text>SYNTAX_MISSING_FIELD_REJCTOT</text>
+  </error>
+
+  <error id="535">
+    <name>SYNTAX_MISSING_FIELD_RELEASE</name>
+    <text>SYNTAX_MISSING_FIELD_RELEASE</text>
+  </error>
+
+  <error id="536">
+    <name>SYNTAX_MISSING_FIELD_RENAME</name>
+    <text>SYNTAX_MISSING_FIELD_RENAME</text>
+  </error>
+
+  <error id="537">
+    <name>SYNTAX_MISSING_FIELD_RESPBY</name>
+    <text>SYNTAX_MISSING_FIELD_RESPBY</text>
+  </error>
+
+  <error id="538">
+    <name>SYNTAX_MISSING_FIELD_RFL</name>
+    <text>SYNTAX_MISSING_FIELD_RFL</text>
+  </error>
+
+  <error id="539">
+    <name>SYNTAX_MISSING_FIELD_RFP</name>
+    <text>SYNTAX_MISSING_FIELD_RFP</text>
+  </error>
+
+  <error id="54">
+    <name>FPL_NO_ICAO_LAM_RECEIVED_ON_CPL</name>
+    <text>LAM NOT RECEIVED FOR CPL SENT</text>
+  </error>
+
+  <error id="540">
+    <name>SYNTAX_MISSING_FIELD_RFPDLIST</name>
+    <text>SYNTAX_MISSING_FIELD_RFPDLIST</text>
+  </error>
+
+  <error id="541">
+    <name>SYNTAX_MISSING_FIELD_RFPDSLIST</name>
+    <text>SYNTAX_MISSING_FIELD_RFPDSLIST</text>
+  </error>
+
+  <error id="542">
+    <name>SYNTAX_MISSING_FIELD_RIF</name>
+    <text>SYNTAX_MISSING_FIELD_RIF</text>
+  </error>
+
+  <error id="543">
+    <name>SYNTAX_MISSING_FIELD_RMK</name>
+    <text>SYNTAX_MISSING_FIELD_RMK</text>
+  </error>
+
+  <error id="544">
+    <name>SYNTAX_MISSING_FIELD_ROUTE</name>
+    <text>SYNTAX_MISSING_FIELD_ROUTE</text>
+  </error>
+
+  <error id="545">
+    <name>SYNTAX_MISSING_FIELD_RRTEFROM</name>
+    <text>SYNTAX_MISSING_FIELD_RRTEFROM</text>
+  </error>
+
+  <error id="546">
+    <name>SYNTAX_MISSING_FIELD_RRTEREF</name>
+    <text>SYNTAX_MISSING_FIELD_RRTEREF</text>
+  </error>
+
+  <error id="547">
+    <name>SYNTAX_MISSING_FIELD_RRTETO</name>
+    <text>SYNTAX_MISSING_FIELD_RRTETO</text>
+  </error>
+
+  <error id="548">
+    <name>SYNTAX_MISSING_FIELD_RTEPTS</name>
+    <text>SYNTAX_MISSING_FIELD_RTEPTS</text>
+  </error>
+
+  <error id="549">
+    <name>SYNTAX_MISSING_FIELD_RVR</name>
+    <text>SYNTAX_MISSING_FIELD_RVR</text>
+  </error>
+
+  <error id="55">
+    <name>FPL_NO_ICAO_LAM_RECEIVED</name>
+    <text>FPL_NO_ICAO_LAM_RECEIVED</text>
+  </error>
+
+  <error id="550">
+    <name>SYNTAX_MISSING_FIELD_RVRCOND</name>
+    <text>SYNTAX_MISSING_FIELD_RVRCOND</text>
+  </error>
+
+  <error id="551">
+    <name>SYNTAX_MISSING_FIELD_RVRPERIOD</name>
+    <text>SYNTAX_MISSING_FIELD_RVRPERIOD</text>
+  </error>
+
+  <error id="552">
+    <name>SYNTAX_MISSING_FIELD_SECTOR</name>
+    <text>SYNTAX_MISSING_FIELD_SECTOR</text>
+  </error>
+
+  <error id="553">
+    <name>SYNTAX_MISSING_FIELD_SEL</name>
+    <text>SYNTAX_MISSING_FIELD_SEL</text>
+  </error>
+
+  <error id="554">
+    <name>SYNTAX_MISSING_FIELD_SENDTO</name>
+    <text>SYNTAX_MISSING_FIELD_SENDTO</text>
+  </error>
+
+  <error id="555">
+    <name>SYNTAX_MISSING_FIELD_SEQPT</name>
+    <text>SYNTAX_MISSING_FIELD_SEQPT</text>
+  </error>
+
+  <error id="556">
+    <name>SYNTAX_MISSING_FIELD_SID</name>
+    <text>SYNTAX_MISSING_FIELD_SID</text>
+  </error>
+
+  <error id="557">
+    <name>SYNTAX_MISSING_FIELD_SPEED</name>
+    <text>SYNTAX_MISSING_FIELD_SPEED</text>
+  </error>
+
+  <error id="558">
+    <name>SYNTAX_MISSING_FIELD_SPLA</name>
+    <text>SYNTAX_MISSING_FIELD_SPLA</text>
+  </error>
+
+  <error id="559">
+    <name>SYNTAX_MISSING_FIELD_SPLADDR</name>
+    <text>SYNTAX_MISSING_FIELD_SPLADDR</text>
+  </error>
+
+  <error id="56">
+    <name>FPL_NO_AIDC_LAM_RECEIVED</name>
+    <text>FPL_NO_AIDC_LAM_RECEIVED</text>
+  </error>
+
+  <error id="560">
+    <name>SYNTAX_MISSING_FIELD_SPLC</name>
+    <text>SYNTAX_MISSING_FIELD_SPLC</text>
+  </error>
+
+  <error id="561">
+    <name>SYNTAX_MISSING_FIELD_SPLDCAP</name>
+    <text>SYNTAX_MISSING_FIELD_SPLDCAP</text>
+  </error>
+
+  <error id="562">
+    <name>SYNTAX_MISSING_FIELD_SPLDCOL</name>
+    <text>SYNTAX_MISSING_FIELD_SPLDCOL</text>
+  </error>
+
+  <error id="563">
+    <name>SYNTAX_MISSING_FIELD_SPLDCOV</name>
+    <text>SYNTAX_MISSING_FIELD_SPLDCOV</text>
+  </error>
+
+  <error id="564">
+    <name>SYNTAX_MISSING_FIELD_SPLDNB</name>
+    <text>SYNTAX_MISSING_FIELD_SPLDNB</text>
+  </error>
+
+  <error id="565">
+    <name>SYNTAX_MISSING_FIELD_SPLE</name>
+    <text>SYNTAX_MISSING_FIELD_SPLE</text>
+  </error>
+
+  <error id="566">
+    <name>SYNTAX_MISSING_FIELD_SPLJ</name>
+    <text>SYNTAX_MISSING_FIELD_SPLJ</text>
+  </error>
+
+  <error id="567">
+    <name>SYNTAX_MISSING_FIELD_SPLN</name>
+    <text>SYNTAX_MISSING_FIELD_SPLN</text>
+  </error>
+
+  <error id="568">
+    <name>SYNTAX_MISSING_FIELD_SPLP</name>
+    <text>SYNTAX_MISSING_FIELD_SPLP</text>
+  </error>
+
+  <error id="569">
+    <name>SYNTAX_MISSING_FIELD_SPLR</name>
+    <text>SYNTAX_MISSING_FIELD_SPLR</text>
+  </error>
+
+  <error id="57">
+    <name>OLDI_LINE_FAILURE</name>
+    <text>OLDI connection has failed</text>
+  </error>
+
+  <error id="570">
+    <name>SYNTAX_MISSING_FIELD_SPLS</name>
+    <text>SYNTAX_MISSING_FIELD_SPLS</text>
+  </error>
+
+  <error id="571">
+    <name>SYNTAX_MISSING_FIELD_SRC</name>
+    <text>SYNTAX_MISSING_FIELD_SRC</text>
+  </error>
+
+  <error id="572">
+    <name>SYNTAX_MISSING_FIELD_SSRCODE</name>
+    <text>SYNTAX_MISSING_FIELD_SSRCODE</text>
+  </error>
+
+  <error id="573">
+    <name>SYNTAX_MISSING_FIELD_STAR</name>
+    <text>SYNTAX_MISSING_FIELD_STAR</text>
+  </error>
+
+  <error id="574">
+    <name>SYNTAX_MISSING_FIELD_STARTTIME</name>
+    <text>SYNTAX_MISSING_FIELD_STARTTIME</text>
+  </error>
+
+  <error id="575">
+    <name>SYNTAX_MISSING_FIELD_STAY</name>
+    <text>SYNTAX_MISSING_FIELD_STAY</text>
+  </error>
+
+  <error id="576">
+    <name>SYNTAX_MISSING_FIELD_STAYINFO</name>
+    <text>SYNTAX_MISSING_FIELD_STAYINFO</text>
+  </error>
+
+  <error id="577">
+    <name>SYNTAX_MISSING_FIELD_STS</name>
+    <text>SYNTAX_MISSING_FIELD_STS</text>
+  </error>
+
+  <error id="578">
+    <name>SYNTAX_MISSING_FIELD_SUBMTYPE</name>
+    <text>SYNTAX_MISSING_FIELD_SUBMTYPE</text>
+  </error>
+
+  <error id="579">
+    <name>SYNTAX_MISSING_FIELD_TAXITIME</name>
+    <text>SYNTAX_MISSING_FIELD_TAXITIME</text>
+  </error>
+
+  <error id="58">
+    <name>CANNOT_ENTER_FIR_AND_AFTN_ADDRESS</name>
+    <text>AFTN add. &amp; FIR id cannot both be filled</text>
+  </error>
+
+  <error id="580">
+    <name>SYNTAX_MISSING_FIELD_TFCVOL</name>
+    <text>SYNTAX_MISSING_FIELD_TFCVOL</text>
+  </error>
+
+  <error id="581">
+    <name>SYNTAX_MISSING_FIELD_TFV</name>
+    <text>SYNTAX_MISSING_FIELD_TFV</text>
+  </error>
+
+  <error id="582">
+    <name>SYNTAX_MISSING_FIELD_TITLE</name>
+    <text>SYNTAX_MISSING_FIELD_TITLE</text>
+  </error>
+
+  <error id="583">
+    <name>SYNTAX_MISSING_FIELD_TITLE2</name>
+    <text>SYNTAX_MISSING_FIELD_TITLE2</text>
+  </error>
+
+  <error id="584">
+    <name>SYNTAX_MISSING_FIELD_TTLEET</name>
+    <text>SYNTAX_MISSING_FIELD_TTLEET</text>
+  </error>
+
+  <error id="585">
+    <name>SYNTAX_MISSING_FIELD_TYPZ</name>
+    <text>SYNTAX_MISSING_FIELD_TYPZ</text>
+  </error>
+
+  <error id="586">
+    <name>SYNTAX_MISSING_FIELD_UNIT</name>
+    <text>SYNTAX_MISSING_FIELD_UNIT</text>
+  </error>
+
+  <error id="587">
+    <name>SYNTAX_MISSING_FIELD_VALFROM</name>
+    <text>SYNTAX_MISSING_FIELD_VALFROM</text>
+  </error>
+
+  <error id="588">
+    <name>SYNTAX_MISSING_FIELD_VALFROMK</name>
+    <text>SYNTAX_MISSING_FIELD_VALFROMK</text>
+  </error>
+
+  <error id="589">
+    <name>SYNTAX_MISSING_FIELD_VALFROMOLD</name>
+    <text>SYNTAX_MISSING_FIELD_VALFROMOLD</text>
+  </error>
+
+  <error id="59">
+    <name>FIR_NOT_CONNECTED_TO_OLDI_LINE</name>
+    <text>Cannot send message to non OLDI FIR</text>
+  </error>
+
+  <error id="590">
+    <name>SYNTAX_MISSING_FIELD_VALIDITYDATE</name>
+    <text>SYNTAX_MISSING_FIELD_VALIDITYDATE</text>
+  </error>
+
+  <error id="591">
+    <name>SYNTAX_MISSING_FIELD_VALUNTIL</name>
+    <text>SYNTAX_MISSING_FIELD_VALUNTIL</text>
+  </error>
+
+  <error id="592">
+    <name>SYNTAX_MISSING_FIELD_VALUNTILK</name>
+    <text>SYNTAX_MISSING_FIELD_VALUNTILK</text>
+  </error>
+
+  <error id="593">
+    <name>SYNTAX_MISSING_FIELD_VALUNTILOLD</name>
+    <text>SYNTAX_MISSING_FIELD_VALUNTILOLD</text>
+  </error>
+
+  <error id="594">
+    <name>SYNTAX_MISSING_FIELD_WKTRC</name>
+    <text>SYNTAX_MISSING_FIELD_WKTRC</text>
+  </error>
+
+  <error id="595">
+    <name>SYNTAX_INVALID_TXT_FIELD</name>
+    <text>SYNTAX_INVALID_TXT_FIELD</text>
+  </error>
+
+  <error id="596">
+    <name>SYNTAX_INVALID_ESTIMATE_DATA</name>
+    <text>SYNTAX_INVALID_ESTIMATE_DATA</text>
+  </error>
+
+  <error id="597">
+    <name>SYNTAX_INVALID_HEADING</name>
+    <text>SYNTAX_INVALID_HEADING</text>
+  </error>
+
+  <error id="598">
+    <name>SYNTAX_INVALID_FLIGHT_PLAN_INDICATOR</name>
+    <text>SYNTAX_INVALID_FLIGHT_PLAN_INDICATOR</text>
+  </error>
+
+  <error id="599">
+    <name>SYNTAX_STATUS_EXPECTED</name>
+    <text>SYNTAX_STATUS_EXPECTED</text>
+  </error>
+
+  <error id="6">
+    <name>FPL_CDEP_NOT_ALLOWED_FOR_RADAR_COUPLED_FLIGHT_PLAN</name>
+    <text>CDEP refused for radar / ADS coupled FDR</text>
+  </error>
+
+  <error id="60">
+    <name>FIR_NAME_DEST_INVALID</name>
+    <text>Syntax error in FIR name</text>
+  </error>
+
+  <error id="600">
+    <name>SYNTAX_INVALID_DAYS_OF_OPERATION</name>
+    <text>SYNTAX_INVALID_DAYS_OF_OPERATION</text>
+  </error>
+
+  <error id="601">
+    <name>SYNTAX_INVALID_CONDITION_DESCRIPTION</name>
+    <text>SYNTAX_INVALID_CONDITION_DESCRIPTION</text>
+  </error>
+
+  <error id="602">
+    <name>SYNTAX_INVALID_FLOW_DATA</name>
+    <text>SYNTAX_INVALID_FLOW_DATA</text>
+  </error>
+
+  <error id="603">
+    <name>SYNTAX_INVALID_FIRST_DAY_OF_OPERATION</name>
+    <text>SYNTAX_INVALID_FIRST_DAY_OF_OPERATION</text>
+  </error>
+
+  <error id="604">
+    <name>SYNTAX_INVALID_GEO_POINT_DESCRIPTION</name>
+    <text>SYNTAX_INVALID_GEO_POINT_DESCRIPTION</text>
+  </error>
+
+  <error id="605">
+    <name>SYNTAX_INVALID_FIELD_IFP</name>
+    <text>SYNTAX_INVALID_FIELD_IFP</text>
+  </error>
+
+  <error id="606">
+    <name>SYNTAX_INVALID_IFPS_DATA</name>
+    <text>SYNTAX_INVALID_IFPS_DATA</text>
+  </error>
+
+  <error id="607">
+    <name>SYNTAX_INVALID_IGNORE_DATA</name>
+    <text>SYNTAX_INVALID_IGNORE_DATA</text>
+  </error>
+
+  <error id="608">
+    <name>SYNTAX_INVALID_ATS_ROUTE_DESCRIPTION</name>
+    <text>SYNTAX_INVALID_ATS_ROUTE_DESCRIPTION</text>
+  </error>
+
+  <error id="609">
+    <name>SYNTAX_INVALID_AIRSPACE_DESCRIPTION</name>
+    <text>SYNTAX_INVALID_AIRSPACE_DESCRIPTION</text>
+  </error>
+
+  <error id="61">
+    <name>FPL_ARR_RECEIVED_AND_STILL_ASSOCIATED</name>
+    <text>WARNING ! Flight is still associated</text>
+  </error>
+
+  <error id="610">
+    <name>SYNTAX_INVALID_FIR_DESCRIPTION</name>
+    <text>SYNTAX_INVALID_FIR_DESCRIPTION</text>
+  </error>
+
+  <error id="611">
+    <name>SYNTAX_INVALID_VALPERIOD</name>
+    <text>SYNTAX_INVALID_VALPERIOD</text>
+  </error>
+
+  <error id="612">
+    <name>SYNTAX_INVALID_MODIF_NUMBER</name>
+    <text>SYNTAX_INVALID_MODIF_NUMBER</text>
+  </error>
+
+  <error id="613">
+    <name>SYNTAX_INVALID_MSG_SUMMARY</name>
+    <text>SYNTAX_INVALID_MSG_SUMMARY</text>
+  </error>
+
+  <error id="614">
+    <name>SYNTAX_INVALID_FPD_NUMBER</name>
+    <text>SYNTAX_INVALID_FPD_NUMBER</text>
+  </error>
+
+  <error id="615">
+    <name>SYNTAX_INVALID_DATE_OR_TIME</name>
+    <text>SYNTAX_INVALID_DATE_OR_TIME</text>
+  </error>
+
+  <error id="616">
+    <name>SYNTAX_INVALID_PART_NUMBER</name>
+    <text>SYNTAX_INVALID_PART_NUMBER</text>
+  </error>
+
+  <error id="617">
+    <name>SYNTAX_INVALID_RATE</name>
+    <text>SYNTAX_INVALID_RATE</text>
+  </error>
+
+  <error id="618">
+    <name>SYNTAX_INVALID_REASON</name>
+    <text>SYNTAX_INVALID_REASON</text>
+  </error>
+
+  <error id="619">
+    <name>SYNTAX_INVALID_REGULATION_LOCATION</name>
+    <text>SYNTAX_INVALID_REGULATION_LOCATION</text>
+  </error>
+
+  <error id="62">
+    <name>FPL_ACT_ALREADY_RECEIVED</name>
+    <text>FPL_ACT_ALREADY_RECEIVED</text>
+  </error>
+
+  <error id="620">
+    <name>SYNTAX_INVALID_REGULATION</name>
+    <text>SYNTAX_INVALID_REGULATION</text>
+  </error>
+
+  <error id="621">
+    <name>SYNTAX_INVALID_RELEASE</name>
+    <text>SYNTAX_INVALID_RELEASE</text>
+  </error>
+
+  <error id="622">
+    <name>SYNTAX_INVALID_REQUESTED_FLIGHT_PLAN_DATA</name>
+    <text>SYNTAX_INVALID_REQUESTED_FLIGHT</text>
+  </error>
+
+  <error id="623">
+    <name>SYNTAX_INVALID_REROUTE_REFERENCE</name>
+    <text>SYNTAX_INVALID_REROUTE_REFERENCE</text>
+  </error>
+
+  <error id="624">
+    <name>SYNTAX_INVALID_RVR_DATA</name>
+    <text>SYNTAX_INVALID_RVR_DATA</text>
+  </error>
+
+  <error id="625">
+    <name>SYNTAX_INVALID_ROUTE_POINTS</name>
+    <text>SYNTAX_INVALID_ROUTE_POINTS</text>
+  </error>
+
+  <error id="626">
+    <name>SYNTAX_INVALID_SECTOR</name>
+    <text>SYNTAX_INVALID_SECTOR</text>
+  </error>
+
+  <error id="627">
+    <name>SYNTAX_INVALID_UNIT</name>
+    <text>SYNTAX_INVALID_UNIT</text>
+  </error>
+
+  <error id="628">
+    <name>SYNTAX_FIELD_TEXT_TOO_LONG</name>
+    <text>SYNTAX_FIELD_TEXT_TOO_LONG</text>
+  </error>
+
+  <error id="629">
+    <name>SYNTAX_INVALID_LAST_DAY_OF_OPERATION</name>
+    <text>SYNTAX_INVALID_LAST_DAY_OF_OPERATION</text>
+  </error>
+
+  <error id="63">
+    <name>FPL_NO_ACP_RECEIVED_ON_EST</name>
+    <text>ACP not received for EST</text>
+  </error>
+
+  <error id="630">
+    <name>SYNTAX_INVALID_SID</name>
+    <text>SYNTAX_INVALID_SID</text>
+  </error>
+
+  <error id="631">
+    <name>SYNTAX_INVALID_STAR</name>
+    <text>SYNTAX_INVALID_STAR</text>
+  </error>
+
+  <error id="632">
+    <name>SYNTAX_INVALID_FLIGHT_PLAN_SOURCE</name>
+    <text>SYNTAX_INVALID_FLIGHT_PLAN_SOURCE</text>
+  </error>
+
+  <error id="633">
+    <name>SYNTAX_INVALID_STAY_DATA</name>
+    <text>SYNTAX_INVALID_STAY_DATA</text>
+  </error>
+
+  <error id="634">
+    <name>SYNTAX_ERROR_IN_FIELD</name>
+    <text>SYNTAX_ERROR_IN_FIELD</text>
+  </error>
+
+  <error id="635">
+    <name>SYNTAX_UNKNOWN_OR_UNEXPECTED_FIELD</name>
+    <text>SYNTAX_UNKNOWN_OR_UNEXPECTED_FIELD</text>
+  </error>
+
+  <error id="636">
+    <name>SYNTAX_INVALID_DATE</name>
+    <text>SYNTAX_INVALID_DATE</text>
+  </error>
+
+  <error id="637">
+    <name>SYNTAX_AIRCRAFT_NB_INVALID</name>
+    <text>SYNTAX_AIRCRAFT_NB_INVALID</text>
+  </error>
+
+  <error id="638">
+    <name>SYNTAX_FREQUENCY_EXPECTED</name>
+    <text>SYNTAX_FREQUENCY_EXPECTED</text>
+  </error>
+
+  <error id="639">
+    <name>SYNTAX_COORDATA_OR_ETD_MUST_BE_PRESENT</name>
+    <text>SYNTAX_COORDATA_OR_ETD_MUST_BE_PRESENT</text>
+  </error>
+
+  <error id="64">
+    <name>FPL_ACP_SENT_ON_EST</name>
+    <text>ACP sent for EST</text>
+  </error>
+
+  <error id="640">
+    <name>SYNTAX_ERROR_IN_ADDR_FIELD</name>
+    <text>SYNTAX_ERROR_IN_ADDR_FIELD</text>
+  </error>
+
+  <error id="641">
+    <name>SYNTAX_ERROR_IN_CASSADDR_FIELD</name>
+    <text>SYNTAX_ERROR_IN_CASSADDR_FIELD</text>
+  </error>
+
+  <error id="642">
+    <name>SYNTAX_ERROR_IN_FMPLIST_FIELD</name>
+    <text>SYNTAX_ERROR_IN_FMPLIST_FIELD</text>
+  </error>
+
+  <error id="643">
+    <name>SYNTAX_ERROR_IN_IFPDLIST_FIELD</name>
+    <text>SYNTAX_ERROR_IN_IFPDLIST_FIELD</text>
+  </error>
+
+  <error id="644">
+    <name>SYNTAX_ERROR_IN_IFPDSLIST_FIELD</name>
+    <text>SYNTAX_ERROR_IN_IFPDSLIST_FIELD</text>
+  </error>
+
+  <error id="645">
+    <name>SYNTAX_ERROR_IN_IGNORE_FIELD</name>
+    <text>SYNTAX_ERROR_IN_IGNORE_FIELD</text>
+  </error>
+
+  <error id="646">
+    <name>SYNTAX_ERROR_IN_LACDR_FIELD</name>
+    <text>SYNTAX_ERROR_IN_LACDR_FIELD</text>
+  </error>
+
+  <error id="647">
+    <name>SYNTAX_ERROR_IN_LATSA_FIELD</name>
+    <text>SYNTAX_ERROR_IN_LATSA_FIELD</text>
+  </error>
+
+  <error id="648">
+    <name>SYNTAX_ERROR_IN_LCATSRTE_FIELD</name>
+    <text>SYNTAX_ERROR_IN_LCATSRTE_FIELD</text>
+  </error>
+
+  <error id="649">
+    <name>SYNTAX_ERROR_IN_LFIR_FIELD</name>
+    <text>SYNTAX_ERROR_IN_LFIR_FIELD</text>
+  </error>
+
+  <error id="65">
+    <name>FPL_ACP_SENT_ON_PAC</name>
+    <text>ACP sent for PAC</text>
+  </error>
+
+  <error id="650">
+    <name>SYNTAX_ERROR_IN_LRAR_FIELD</name>
+    <text>SYNTAX_ERROR_IN_LRAR_FIELD</text>
+  </error>
+
+  <error id="651">
+    <name>SYNTAX_ERROR_IN_LRCA_FIELD</name>
+    <text>SYNTAX_ERROR_IN_LRCA_FIELD</text>
+  </error>
+
+  <error id="652">
+    <name>SYNTAX_ERROR_IN_RATEPDLST_FIELD</name>
+    <text>SYNTAX_ERROR_IN_RATEPDLST_FIELD</text>
+  </error>
+
+  <error id="653">
+    <name>SYNTAX_ERROR_IN_RFPDLIST_FIELD</name>
+    <text>SYNTAX_ERROR_IN_RFPDLIST_FIELD</text>
+  </error>
+
+  <error id="654">
+    <name>SYNTAX_ERROR_IN_RFPDSLIST_FIELD</name>
+    <text>SYNTAX_ERROR_IN_RFPDSLIST_FIELD</text>
+  </error>
+
+  <error id="655">
+    <name>SYNTAX_ERROR_IN_RTEPTS_FIELD</name>
+    <text>SYNTAX_ERROR_IN_RTEPTS_FIELD</text>
+  </error>
+
+  <error id="656">
+    <name>SYNTAX_ERROR_IN_RVRCOND_FIELD</name>
+    <text>SYNTAX_ERROR_IN_RVRCOND_FIELD</text>
+  </error>
+
+  <error id="657">
+    <name>SYNTAX_ERROR_IN_SENDTO_FIELD</name>
+    <text>SYNTAX_ERROR_IN_SENDTO_FIELD</text>
+  </error>
+
+  <error id="658">
+    <name>SYNTAX_ERROR_IN_SPLADDR_FIELD</name>
+    <text>SYNTAX_ERROR_IN_SPLADDR_FIELD</text>
+  </error>
+
+  <error id="659">
+    <name>SYNTAX_INVALID_TITLE</name>
+    <text>SYNTAX_INVALID_TITLE</text>
+  </error>
+
+  <error id="66">
+    <name>FPL_ACP_NOT_ON_EST_OR_PAC</name>
+    <text>ACP does not correspond to an EST or PAC</text>
+  </error>
+
+  <error id="660">
+    <name>SYNTAX_ERROR_FIELD_23_MISSING</name>
+    <text>SYNTAX_ERROR_FIELD_23_MISSING</text>
+  </error>
+
+  <error id="661">
+    <name>SYNTAX_ERROR_FIELD_23_ETT_MISSING</name>
+    <text>SYNTAX_ERROR_FIELD_23_ETT_MISSING</text>
+  </error>
+
+  <error id="662">
+    <name>SYNTAX_ERROR_INVALID_EUROCAT_T_MESSAGE</name>
+    <text>SYNTAX_ERROR_INVALID_EUROCAT_T_MESSAGE</text>
+  </error>
+
+  <error id="663">
+    <name>SYNTAX_FIELD_23_SWITCH_UNHANDLED</name>
+    <text>SYNTAX_FIELD_23_SWITCH_UNHANDLED</text>
+  </error>
+
+  <error id="664">
+    <name>SYNTAX_ERROR_FIELD_23_CALLSIGN_TOO_LONG</name>
+    <text>SYNTAX_ERROR_FIELD_23_CALLSIGN_TOO_LONG</text>
+  </error>
+
+  <error id="665">
+    <name>SYNTAX_ERROR_FIELD_23_CALLSIGN</name>
+    <text>SYNTAX_ERROR_FIELD_23_CALLSIGN</text>
+  </error>
+
+  <error id="666">
+    <name>SYNTAX_ERROR_FIELD_23_ADEP</name>
+    <text>SYNTAX_ERROR_FIELD_23_ADEP</text>
+  </error>
+
+  <error id="667">
+    <name>SYNTAX_ERROR_FIELD_23_EOBT</name>
+    <text>SYNTAX_ERROR_FIELD_23_EOBT</text>
+  </error>
+
+  <error id="668">
+    <name>SYNTAX_ERROR_FIELD_23_DOF</name>
+    <text>SYNTAX_ERROR_FIELD_23_DOF</text>
+  </error>
+
+  <error id="669">
+    <name>SYNTAX_ERROR_FIELD_23_ADES</name>
+    <text>SYNTAX_ERROR_FIELD_23_ADES</text>
+  </error>
+
+  <error id="67">
+    <name>FPL_NO_ACP_RECEIVED_ON_PAC</name>
+    <text>ACP not received for PAC</text>
+  </error>
+
+  <error id="670">
+    <name>SYNTAX_ERROR_FIELD_23_ARW</name>
+    <text>SYNTAX_ERROR_FIELD_23_ARW</text>
+  </error>
+
+  <error id="671">
+    <name>SYNTAX_ERROR_FIELD_23_ETT</name>
+    <text>SYNTAX_ERROR_FIELD_23_ETT</text>
+  </error>
+
+  <error id="672">
+    <name>SYNTAX_ERROR_FIELD_23_DRW</name>
+    <text>SYNTAX_ERROR_FIELD_23_DRW</text>
+  </error>
+
+  <error id="673">
+    <name>SYNTAX_ERROR_FIELD_23_RRQ</name>
+    <text>SYNTAX_ERROR_FIELD_23_RRQ</text>
+  </error>
+
+  <error id="674">
+    <name>SYNTAX_ERROR_FIELD_23_GAT</name>
+    <text>SYNTAX_ERROR_FIELD_23_GAT</text>
+  </error>
+
+  <error id="675">
+    <name>SYNTAX_FIELD23_ETA_SWITCH_NOT_ALLOWED</name>
+    <text>SYNTAX_FIELD23_ETA_SWITCH_NOT_ALLOWED</text>
+  </error>
+
+  <error id="676">
+    <name>SYNTAX_FIELD23_ARW_SWITCH_NOT_ALLOWED</name>
+    <text>SYNTAX_FIELD23_ARW_SWITCH_NOT_ALLOWED</text>
+  </error>
+
+  <error id="677">
+    <name>SYNTAX_FIELD23_ETT_SWITCH_NOT_ALLOWED</name>
+    <text>SYNTAX_FIELD23_ETT_SWITCH_NOT_ALLOWED</text>
+  </error>
+
+  <error id="678">
+    <name>SYNTAX_FIELD23_DRW_SWITCH_NOT_ALLOWED</name>
+    <text>SYNTAX_FIELD23_DRW_SWITCH_NOT_ALLOWED</text>
+  </error>
+
+  <error id="679">
+    <name>SYNTAX_FIELD23_RRQ_SWITCH_NOT_ALLOWED</name>
+    <text>SYNTAX_FIELD23_RRQ_SWITCH_NOT_ALLOWED</text>
+  </error>
+
+  <error id="68">
+    <name>EST_OR_PAC_ALREADY_AUTO_PROCESSED</name>
+    <text>Est or PAC already auto processed</text>
+  </error>
+
+  <error id="680">
+    <name>SYNTAX_FIELD23_GAT_SWITCH_NOT_ALLOWED</name>
+    <text>SYNTAX_FIELD23_GAT_SWITCH_NOT_ALLOWED</text>
+  </error>
+
+  <error id="681">
+    <name>SYNTAX_FIELD23_DCL_SWITCH_NOT_ALLOWED</name>
+    <text>SYNTAX_FIELD23_DCL_SWITCH_NOT_ALLOWED</text>
+  </error>
+
+  <error id="682">
+    <name>FIELD23AF_MUST_BE_FILLED_IN</name>
+    <text>FIELD23AF_MUST_BE_FILLED_IN</text>
+  </error>
+
+  <error id="683">
+    <name>FIELD23_KEY_SWITCH_ERROR</name>
+    <text>FIELD23_KEY_SWITCH_ERROR</text>
+  </error>
+
+  <error id="684">
+    <name>UNHANDLED_FIELD</name>
+    <text>UNHANDLED_FIELD</text>
+  </error>
+
+  <error id="685">
+    <name>FIELD_23_RECEIVED_FROM_NON_TECOS_AREA</name>
+    <text>FIELD_23_RECEIVED_FROM_NON_TECOS_AREA</text>
+  </error>
+
+  <error id="686">
+    <name>SYNTAX_ERROR_IN_RRQ_FIELD</name>
+    <text>SYNTAX_ERROR_IN_RRQ_FIELD</text>
+  </error>
+
+  <error id="687">
+    <name>RRQ_SWITCH_NOT_ALLOWED_IN_MSG</name>
+    <text>RRQ_SWITCH_NOT_ALLOWED_IN_MSG</text>
+  </error>
+
+  <error id="688">
+    <name>DCL_MESSAGE_ALREADY_SENT</name>
+    <text>DCL_MESSAGE_ALREADY_SENT</text>
+  </error>
+
+  <error id="689">
+    <name>FLIGHT_PLAN_NOT_DEPARTING_FROM_EUROCAT_T</name>
+    <text>FLIGHT_PLAN_NOT_DEPARTING_FROM_EUROCAT_T</text>
+  </error>
+
+  <error id="69">
+    <name>FPL_NO_AIDC_LAM_RECEIVED_ON_CPL</name>
+    <text>FPL_NO_AIDC_LAM_RECEIVED_ON_CPL</text>
+  </error>
+
+  <error id="690">
+    <name>DASH_FIELD30_EXPECTED</name>
+    <text>DASH_FIELD30_EXPECTED</text>
+  </error>
+
+  <error id="691">
+    <name>SYNTAX_ERROR_FIELD_30_TRU</name>
+    <text>SYNTAX_ERROR_FIELD_30_TRU</text>
+  </error>
+
+  <error id="692">
+    <name>SYNTAX_ERROR_FIELD_31_ADS</name>
+    <text>SYNTAX_ERROR_FIELD_31_ADS</text>
+  </error>
+
+  <error id="693">
+    <name>DASH_FIELD31_EXPECTED</name>
+    <text>DASH_FIELD31_EXPECTED</text>
+  </error>
+
+  <error id="694">
+    <name>HDG_SWITCH_ARGUMENT_EXPECTED</name>
+    <text>HDG_SWITCH_ARGUMENT_EXPECTED</text>
+  </error>
+
+  <error id="695">
+    <name>DCT_SWITCH_ARGUMENT_EXPECTED</name>
+    <text>DCT_SWITCH_ARGUMENT_EXPECTED</text>
+  </error>
+
+  <error id="696">
+    <name>OTD_SWITCH_ARGUMENT_EXPECTED</name>
+    <text>OTD_SWITCH_ARGUMENT_EXPECTED</text>
+  </error>
+
+  <error id="697">
+    <name>ADS_SWITCH_ARGUMENT_EXPECTED</name>
+    <text>ADS_SWITCH_ARGUMENT_EXPECTED</text>
+  </error>
+
+  <error id="698">
+    <name>DUPLICATE_SWITCH</name>
+    <text>DUPLICATE_SWITCH</text>
+  </error>
+
+  <error id="699">
+    <name>TRU_INVALID_SWITCH_ORDER</name>
+    <text>TRU_INVALID_SWITCH_ORDER</text>
+  </error>
+
+  <error id="7">
+    <name>FPL_CDEP_NOT_ALLOWED_FOR_INBOUND_FLIGHT_PLAN</name>
+    <text>CDEP refused for inbound FDR</text>
+  </error>
+
+  <error id="70">
+    <name>COP_NOT_FOUND_ON_XFL_MODIFICATION</name>
+    <text>No corresponding COP</text>
+  </error>
+
+  <error id="700">
+    <name>TRU_SWITCH_ALREADY_DEFINED</name>
+    <text>TRU_SWITCH_ALREADY_DEFINED</text>
+  </error>
+
+  <error id="701">
+    <name>ADS_TRACK_NOT_COUPLED</name>
+    <text>ADS_TRACK_NOT_COUPLED</text>
+  </error>
+
+  <error id="702">
+    <name>ADS_TRACK_COUPLED</name>
+    <text>ADS_TRACK_COUPLED</text>
+  </error>
+
+  <error id="703">
+    <name>FMF_TOO_LONG_IN_F18</name>
+    <text>FMF_TOO_LONG_IN_F18</text>
+  </error>
+
+  <error id="704">
+    <name>FMF_NOT_ALLOWED_IN_F18</name>
+    <text>FMF_NOT_ALLOWED_IN_F18</text>
+  </error>
+
+  <error id="705">
+    <name>SYNTAX_AIS_MESSAGE_STARTING_WITH_BS</name>
+    <text>Call TSM: SYNTAX_AIS_MESSAGE_STARTING_..</text>
+  </error>
+
+  <error id="706">
+    <name>SYNTAX_CRCRLF_SEQUENCE_INVALID</name>
+    <text>SYNTAX : CRCRLF Sequence Invalid</text>
+  </error>
+
+  <error id="707">
+    <name>SYNTAX_ILLEGAL_CHARACTER</name>
+    <text>Invalid control character found in text</text>
+  </error>
+
+  <error id="708">
+    <name>SYNTAX_ATS_FPL_TYPE_UNKNOWN</name>
+    <text>SYNTAX : ATS FPL Type Unknown</text>
+  </error>
+
+  <error id="709">
+    <name>SYNTAX_MESSAGE_NUMBER_EXPECTED</name>
+    <text>Message number cannot be determined</text>
+  </error>
+
+  <error id="71">
+    <name>FPL_BASE_DATA_BASE_FULL</name>
+    <text>FDR creation rejected. Database full</text>
+  </error>
+
+  <error id="710">
+    <name>SYNTAX_TOO_MANY_LINES</name>
+    <text>Message exceeds 40 lines</text>
+  </error>
+
+  <error id="711">
+    <name>SYNTAX_UNHANDLED_FIELD</name>
+    <text>Call TSM : SYNTAX_UNHANDLED_FIELD</text>
+  </error>
+
+  <error id="712">
+    <name>SYNTAX_MESSAGE_REFERENCE_EXPECTED</name>
+    <text>Syntax error in message reference field</text>
+  </error>
+
+  <error id="713">
+    <name>SYNTAX_CIRCUIT_IDENTIFICATION_EXPECTED</name>
+    <text>Circuit ident. cannot be determined</text>
+  </error>
+
+  <error id="714">
+    <name>SYNTAX_CHANNEL_SEQUENCE_NUMBER_EXPECTED</name>
+    <text>CSN cannot be determined</text>
+  </error>
+
+  <error id="715">
+    <name>SYNTAX_TRANSMISSION_TIME_EXPECTED</name>
+    <text>Transmission cannot be determined</text>
+  </error>
+
+  <error id="716">
+    <name>SYNTAX_PRIORITY_EXPECTED</name>
+    <text>Message priority cannot be determined</text>
+  </error>
+
+  <error id="717">
+    <name>SYNTAX_ADDRESSEE_EXPECTED</name>
+    <text>Message addressee missing</text>
+  </error>
+
+  <error id="718">
+    <name>SYNTAX_FILLING_TIME_EXPECTED</name>
+    <text>SYNTAX : Filling time expected</text>
+  </error>
+
+  <error id="719">
+    <name>SYNTAX_ORIGINATOR_EXPECTED</name>
+    <text>Originator of msg cannot be determined</text>
+  </error>
+
+  <error id="72">
+    <name>FPL_BASE_DISK_ERROR</name>
+    <text>Call TSM : FPL_BASE_DISK_ERROR</text>
+  </error>
+
+  <error id="720">
+    <name>SYNTAX_AIDC_MESSAGE_DATA_ID_EXPECTED</name>
+    <text>Message data ident. cannot be determined</text>
+  </error>
+
+  <error id="721">
+    <name>SYNTAX_AIDC_TIME_STAMP_EXPECTED</name>
+    <text>Message time stamp cannot be determined</text>
+  </error>
+
+  <error id="722">
+    <name>SYNTAX_AIDC_REFERENCE_INFO_EXPECTED</name>
+    <text>Message reference data not found</text>
+  </error>
+
+  <error id="723">
+    <name>SYNTAX_INVALID_CRC</name>
+    <text>Call TSM : SYNTAX_INVALID_CRC</text>
+  </error>
+
+  <error id="724">
+    <name>SYNTAX_CRC_EXPECTED</name>
+    <text>Call TSM : SYNTAX_CRC_EXPECTED</text>
+  </error>
+
+  <error id="725">
+    <name>SYNTAX_SOH_CHARACTER_EXPECTED</name>
+    <text>Call TSM : SYNTAX SOH/STX CHAR EXPECTED</text>
+  </error>
+
+  <error id="726">
+    <name>SYNTAX_STX_CHARACTER_EXPECTED</name>
+    <text>Call TSM : SYNTAX_STX_CHARACTER_EXPECTED</text>
+  </error>
+
+  <error id="727">
+    <name>SYNTAX_ETX_CHARACTER_EXPECTED</name>
+    <text>Call TSM : SYNTAX_ETX_CHARACTER_EXPECTED</text>
+  </error>
+
+  <error id="728">
+    <name>SYNTAX_AIS_MESSAGE_EXPECTED</name>
+    <text>Call TSM : SYNTAX_AIS_MESSAGE_EXPECTED</text>
+  </error>
+
+  <error id="729">
+    <name>SYNTAX_AIS_MESSAGE_ENDING_SEQUENCE_EXPECTED</name>
+    <text>Call TSM : SYNTAX_AIS_MESSAGE_ENDING....</text>
+  </error>
+
+  <error id="73">
+    <name>FPL_BASE_UNKNOWN_FPL</name>
+    <text>The requested FDR is not stored</text>
+  </error>
+
+  <error id="730">
+    <name>SYNTAX_INVALID_TRANSMISSION_IDENTIFICATION</name>
+    <text>Call TSM : SYNTAX_INVALID_TRANSMISSION..</text>
+  </error>
+
+  <error id="731">
+    <name>SYNTAX_MISSING_SEPARATOR</name>
+    <text>Call TSM : SYNTAX_MISSING_SEPARATOR</text>
+  </error>
+
+  <error id="732">
+    <name>SYNTAX_INVALID_PRIORITY</name>
+    <text>Message priority cannot be determined</text>
+  </error>
+
+  <error id="733">
+    <name>SYNTAX_INVALID_ADDRESSEE</name>
+    <text>Addressee cannot be determined</text>
+  </error>
+
+  <error id="734">
+    <name>SYNTAX_INVALID_ORIGINATOR</name>
+    <text>Originator cannot be determined</text>
+  </error>
+
+  <error id="735">
+    <name>AMHS_ORIGINATOR_CONVERSION_ERROR</name>
+    <text>AMHS_ORIGINATOR_CONVERSION_ERROR</text>
+  </error>
+
+  <error id="736">
+    <name>ITA2_SPACING_SIGNAL_EXPECTED</name>
+    <text>ITA2_SPACING_SIGNAL_EXPECTED</text>
+  </error>
+
+  <error id="737">
+    <name>SYNTAX_ERROR_IN_ITA2_AFTN_FOOTER</name>
+    <text>SYNTAX_ERROR_IN_ITA2_AFTN_FOOTER</text>
+  </error>
+
+  <error id="738">
+    <name>SYNTAX_PRIORITY_PROMPT_EXPECTED</name>
+    <text>SYNTAX_PRIORITY_PROMPT_EXPECTED</text>
+  </error>
+
+  <error id="739">
+    <name>SYNTAX_OPT_HEADING_INFO_PROMPT_EXPECTED</name>
+    <text>SYNTAX_OPT_HEADING_INFO_PROMPT_EXPECTED</text>
+  </error>
+
+  <error id="74">
+    <name>FPL_BASE_FPL_ALREADY_EXISTS</name>
+    <text>FDR already exists</text>
+  </error>
+
+  <error id="740">
+    <name>SYNTAX_FILLING_TIME_PROMPT_EXPECTED</name>
+    <text>SYNTAX_FILLING_TIME_PROMPT_EXPECTED</text>
+  </error>
+
+  <error id="741">
+    <name>SYNTAX_GATE_EXPECTED</name>
+    <text>SYNTAX : Gate Name Expected</text>
+  </error>
+
+  <error id="742">
+    <name>SYNTAX_REGISTRATION_EXPECTED</name>
+    <text>Aircraft REG cannot be determined</text>
+  </error>
+
+  <error id="743">
+    <name>SYNTAX_OLD_REG_EXPECTED</name>
+    <text>SYNTAX : Old Registration Expected</text>
+  </error>
+
+  <error id="744">
+    <name>SYNTAX_BRIDGE_EXPECTED</name>
+    <text>SYNTAX : Bridge Expected</text>
+  </error>
+
+  <error id="745">
+    <name>SYNTAX_BLOCK_TIME_EXPECTED</name>
+    <text>SYNTAX : Block Time Expected</text>
+  </error>
+
+  <error id="746">
+    <name>SYNTAX_GATE_SWITCH_EXPECTED</name>
+    <text>SYNTAX : Gate Switch Expected</text>
+  </error>
+
+  <error id="747">
+    <name>SYNTAX_REG_SWITCH_EXPECTED</name>
+    <text>SYNTAX : Registratino Switch Expected</text>
+  </error>
+
+  <error id="748">
+    <name>SYNTAX_BRIDGE_SWITCH_EXPECTED</name>
+    <text>SYNTAX : Bridge Switch Expected</text>
+  </error>
+
+  <error id="749">
+    <name>SYNTAX_B_TIME_SWITCH_EXPECTED</name>
+    <text>SYNTAX : Block Time Switch Expected</text>
+  </error>
+
+  <error id="75">
+    <name>FPL_BASE_AMBIGUOUS_REQUEST</name>
+    <text>Can't link msg to FDR, multi FDR's exist</text>
+  </error>
+
+  <error id="750">
+    <name>SYNTAX_ERROR</name>
+    <text>Syntax error $</text>
+  </error>
+
+  <error id="751">
+    <name>SYNTAX_SWITCH_FI_MUST_BE_IN_FIRST_POSITION</name>
+    <text>"FI" must be first indicator in report</text>
+  </error>
+
+  <error id="752">
+    <name>SYNTAX_ANOTHER_SWITCH_IS_EXPECTED</name>
+    <text>Syntax error : An indicator is missing</text>
+  </error>
+
+  <error id="753">
+    <name>SYNTAX_OV_SWITCH_MISSING</name>
+    <text>Syntax error : "OV" indicator not found</text>
+  </error>
+
+  <error id="754">
+    <name>SYNTAX_EO_SWITCH_MISSING</name>
+    <text>Syntax error : "EO" indicator not found</text>
+  </error>
+
+  <error id="755">
+    <name>SYNTAX_NP_SWITCH_MISSING</name>
+    <text>Syntax error : "NP" indicator not found</text>
+  </error>
+
+  <error id="756">
+    <name>SYNTAX_ABM_NOT_PROCESSED</name>
+    <text>Syntax error : "ABM" not processed</text>
+  </error>
+
+  <error id="757">
+    <name>MESSAGE_FOR_CONSULTATION</name>
+    <text>Queued for information / manual handling</text>
+  </error>
+
+  <error id="758">
+    <name>TRACK_DEFINITION_MSG_FOR_CONSULTATION</name>
+    <text>TDM queued for information</text>
+  </error>
+
+  <error id="759">
+    <name>POSITION_REPORT_MSG_FOR_CONSULTATION</name>
+    <text>Position report queued for information</text>
+  </error>
+
+  <error id="76">
+    <name>FPL_BASE_NO_ACTIVE_FPL</name>
+    <text>Call TSM : FPL_BASE_NO_ACTIVE_FPL</text>
+  </error>
+
+  <error id="760">
+    <name>MSG_RECEIVED_FOR_PREAC_FDR</name>
+    <text>MSG_RECEIVED_FOR_PREAC_FDR</text>
+  </error>
+
+  <error id="761">
+    <name>CHG_WITH_F18_MODIF</name>
+    <text>CHG_WITH_F18_MODIF</text>
+  </error>
+
+  <error id="762">
+    <name>AEP_POS_SWITCH_EXPECTED</name>
+    <text>Syntax error : Indicator not found</text>
+  </error>
+
+  <error id="763">
+    <name>AIREP_MESSAGE_EXPECTED</name>
+    <text>POS report category expected</text>
+  </error>
+
+  <error id="764">
+    <name>AIDC_LAM_RECEIVED_FOR_UNKNOWN_MSG</name>
+    <text>Call TSM : AIDC_LAM_RECEIVED_FOR_UNK...</text>
+  </error>
+
+  <error id="765">
+    <name>EMERG_MESSAGE_NOT_PROCESSED</name>
+    <text>ALR and RCF msgs require manual handling</text>
+  </error>
+
+  <error id="766">
+    <name>MSG_TYP_NOT_PROCESSED</name>
+    <text>This msg requires manual handling</text>
+  </error>
+
+  <error id="767">
+    <name>COORD_MESSAGE_NOT_AUTO_PROCESSED_FROM_ICAO</name>
+    <text>Non-AIDC msg : Must be handled manually</text>
+  </error>
+
+  <error id="768">
+    <name>ACP_LAM_NOT_PROCESSED_FROM_ICAO</name>
+    <text>Non-AIDC ACP or LAM : Handle manually</text>
+  </error>
+
+  <error id="769">
+    <name>ACP_NOT_PROCESSED</name>
+    <text>ACP not processed: unknown $</text>
+  </error>
+
+  <error id="77">
+    <name>FPL_BASE_INVALID_DATA</name>
+    <text>Call TSM : FPL_BASE_NO_ACTIVE_FPL</text>
+  </error>
+
+  <error id="770">
+    <name>REJ_NOT_PROCESSED</name>
+    <text>REJ not processed: unknown $</text>
+  </error>
+
+  <error id="771">
+    <name>LRM_NOT_PROCESSED</name>
+    <text>LRM not processed: unknown ref. message</text>
+  </error>
+
+  <error id="772">
+    <name>AIREP_TYPE_UNKNOWN</name>
+    <text>Position report message unknown</text>
+  </error>
+
+  <error id="773">
+    <name>POSITION_REPORT_TIME_OUTSIDE_WINDOW</name>
+    <text>Reported time outside allowed tollerance</text>
+  </error>
+
+  <error id="774">
+    <name>LEVEL_NOT_COMPATIBLE_WITH_PCFL</name>
+    <text>Report level does not match CFL</text>
+  </error>
+
+  <error id="775">
+    <name>AIREP_MSG_NOT_ALLOWED_ON_COUPLED_FLIGHT</name>
+    <text>Report rejected : FDR coupled to a track</text>
+  </error>
+
+  <error id="776">
+    <name>TIME_ON_POINT_CANNOT_BE_IN_THE_PAST</name>
+    <text>ETO on $ can't be in the past</text>
+  </error>
+
+  <error id="777">
+    <name>TIME_ON_POINT_MUST_ME_IN_THE_PAST</name>
+    <text>ATO on $ must be in the past</text>
+  </error>
+
+  <error id="778">
+    <name>EXTRA_CHARACTER_DETECTED</name>
+    <text>Syntax error in EET/</text>
+  </error>
+
+  <error id="779">
+    <name>CLOSING_BRACKET_EXPECTED</name>
+    <text>")" missing or error in previous field</text>
+  </error>
+
+  <error id="78">
+    <name>FPL_BASE_NO_MORE_FPL</name>
+    <text>Call TSM : FPL_BASE_NO_MORE_FPL</text>
+  </error>
+
+  <error id="780">
+    <name>MESSAGE_DISCARDED</name>
+    <text>Message discarded (QTA QTA&lt;VT&gt;&lt;ETX&gt;)</text>
+  </error>
+
+  <error id="781">
+    <name>POINT_FIR_TIME_EXPECTED</name>
+    <text>Location after EET/ not known</text>
+  </error>
+
+  <error id="782">
+    <name>SWITCH_ALREADY_DEFINED</name>
+    <text>An indicator occurs twice in field 18</text>
+  </error>
+
+  <error id="783">
+    <name>SWITCH_ALTN_REFUSED</name>
+    <text>ALTN/ refused. Alternate not "ZZZZ"</text>
+  </error>
+
+  <error id="784">
+    <name>SWITCH_TYP_REFUSED</name>
+    <text>TYP/ refused. Aircaft type not "ZZZZ"</text>
+  </error>
+
+  <error id="785">
+    <name>SWITCH_ALTN_EXPECTED</name>
+    <text>ALTN/ not found in other info field</text>
+  </error>
+
+  <error id="786">
+    <name>SWITCH_TYP_EXPECTED</name>
+    <text>TYP/ not found in other info field</text>
+  </error>
+
+  <error id="787">
+    <name>SWITCH_DEP_REFUSED</name>
+    <text>DEP/ refused. ADEP not "ZZZZ"</text>
+  </error>
+
+  <error id="788">
+    <name>SWITCH_DEST_REFUSED</name>
+    <text>DEST/ refused. ADES not "ZZZZ"</text>
+  </error>
+
+  <error id="789">
+    <name>SWITCH_DEP_EXPECTED</name>
+    <text>DEP/ not found in other info field</text>
+  </error>
+
+  <error id="79">
+    <name>FPL_BASE_OBSOLETE_DATA</name>
+    <text>Displayed data not current-repeat action</text>
+  </error>
+
+  <error id="790">
+    <name>SWITCH_DEST_EXPECTED</name>
+    <text>DEST/ not found in other info field</text>
+  </error>
+
+  <error id="791">
+    <name>SYNTAX_DASH_SWITCH_EXPECTED</name>
+    <text>Call TSM : SYNTAX_DASH_SWITCH_EXPECTED</text>
+  </error>
+
+  <error id="792">
+    <name>SYNTAX_DASH_SWITCH_UNEXPECTED</name>
+    <text>Call TSM : SYNTAX_DASH_SWITCH_UNEXPECTED</text>
+  </error>
+
+  <error id="793">
+    <name>SYNTAX_COMPULSORY_SWITCH_MISSING</name>
+    <text>Call TSM: SYNTAX_COMPULSORY_SWITCH_MIS..</text>
+  </error>
+
+  <error id="794">
+    <name>SYNTAX_UNEXPECTED_SWITCH</name>
+    <text>Call TSM: SYNTAX_UNEXPECTED_SWITCH</text>
+  </error>
+
+  <error id="795">
+    <name>SYNTAX_SID_EXPECTED</name>
+    <text>SID is not defined</text>
+  </error>
+
+  <error id="796">
+    <name>SYNTAX_STAR_EXPECTED</name>
+    <text>STAR is not defined</text>
+  </error>
+
+  <error id="797">
+    <name>SYNTAX_DEPARTURE_RUNWAY_NAME_EXPECTED</name>
+    <text>Departure runway is not defined</text>
+  </error>
+
+  <error id="798">
+    <name>SYNTAX_ARRIVAL_RUNWAY_NAME_EXPECTED</name>
+    <text>Arrival runway is not defined</text>
+  </error>
+
+  <error id="799">
+    <name>SYNTAX_GATE_NAME_EXPECTED</name>
+    <text>Syntax error in Gate field</text>
+  </error>
+
+  <error id="8">
+    <name>INVALID_CLEARED_BLOCK_LEVEL</name>
+    <text>INVALID_CLEARED_BLOCK_LEVEL</text>
+  </error>
+
+  <error id="80">
+    <name>PAST_FPL_BASE_DATA_BASE_FULL</name>
+    <text>PAST_FPL_BASE_DATA_BASE_FULL</text>
+  </error>
+
+  <error id="800">
+    <name>SYNTAX_PHYSICAL_CSU_NAME_EXPECTED</name>
+    <text>Call TSM: SYNTAX_PHYSICAL_CSU_NAME_EXP..</text>
+  </error>
+
+  <error id="801">
+    <name>SYNTAX_UNKNOWN_PHYSICAL_CSU_NAME</name>
+    <text>Call TSM: SYNTAX_UNKNOWN_PHYSICAL_CSU..</text>
+  </error>
+
+  <error id="802">
+    <name>SYNTAX_LOGICAL_POSITION_NAME_EXPECTED</name>
+    <text>Call TSM: SYNTAX_LOGICAL_POSITION_NAME..</text>
+  </error>
+
+  <error id="803">
+    <name>SYNTAX_UNKNOWN_LOGICAL_POSITION_NAME</name>
+    <text>Call TSM: SYNTAX_UNKNOWN_LOGICAL_POS...</text>
+  </error>
+
+  <error id="804">
+    <name>SYNTAX_INVALID_MMI_MESSAGE_TYP</name>
+    <text>Call TSM: SYNTAX_INVALID_MMI_MESSAGE_TYP</text>
+  </error>
+
+  <error id="805">
+    <name>SYNTAX_INVALID_REFERENCE_FIX</name>
+    <text>Call TSM: SYNTAX_INVALID_REFERENCE_FIX</text>
+  </error>
+
+  <error id="806">
+    <name>SYNTAX_INVALID_OPDATA</name>
+    <text>Too many or invalid chars in label data</text>
+  </error>
+
+  <error id="807">
+    <name>SYNTAX_INVALID_VIP</name>
+    <text>Invalid chars in VIP data</text>
+  </error>
+
+  <error id="808">
+    <name>SYNTAX_INVALID_FMF_FIELD</name>
+    <text>SYNTAX_INVALID_FMF_FIELD</text>
+  </error>
+
+  <error id="809">
+    <name>SYNTAX_INVALID_RCT_FIELD</name>
+    <text>SYNTAX_INVALID_RCT_FIELD</text>
+  </error>
+
+  <error id="81">
+    <name>PAST_FPL_BASE_DISK_ERROR</name>
+    <text>PAST_FPL_BASE_DISK_ERROR</text>
+  </error>
+
+  <error id="810">
+    <name>SYNTAX_INVALID_ENT_FIELD</name>
+    <text>SYNTAX_INVALID_ENT_FIELD</text>
+  </error>
+
+  <error id="811">
+    <name>SYNTAX_INVALID_RFX_FIELD</name>
+    <text>SYNTAX_INVALID_RFX_FIELD</text>
+  </error>
+
+  <error id="812">
+    <name>FPL_DPE_INSERT_OF_LOGICAL_POSITION_FAILED</name>
+    <text>FPL_DPE_INSERT_OF_LOGICAL_POS_FAILED</text>
+  </error>
+
+  <error id="813">
+    <name>FPL_DPE_POINT_MAX_NB_DPE_POINTS_DEFINED</name>
+    <text>FPL_DPE_POINT_MAX_NB_DPE_POINTS_DEFINED</text>
+  </error>
+
+  <error id="814">
+    <name>FPL_DPE_POINT_ALREADY_INSERTED_BY_LOGICAL_POSITION</name>
+    <text>FPL_DPE_PT_ALREADY_INSERTED_BY_LOG_POS</text>
+  </error>
+
+  <error id="815">
+    <name>FPL_DPE_POINT_MAX_NB_LOGICAL_POS_FOR_DPE_POINT_DEFINED</name>
+    <text>FPL_DPE_PT_MAX_NB_LOG_POS_FOR_DPE_PT_DEF</text>
+  </error>
+
+  <error id="816">
+    <name>FPL_DPE_POINT_INVALID_DPE_POINT_MESSAGE_RECEIVED</name>
+    <text>FPL_DPE_PT_INV_DPE_POINT_MESS_RECEIVED</text>
+  </error>
+
+  <error id="817">
+    <name>FPL_DPE_POINT_ERROR_INSERTING_DPE_POINT</name>
+    <text>FPL_DPE_POINT_ERROR_INSERTING_DPE_POINT</text>
+  </error>
+
+  <error id="818">
+    <name>FPL_DPE_POINT_ERROR_REMOVING_DPE_POINT</name>
+    <text>FPL_DPE_POINT_ERROR_REMOVING_DPE_POINT</text>
+  </error>
+
+  <error id="819">
+    <name>FPL_DPE_POINT_ROUTE_NOT_UP_TO_DATE</name>
+    <text>FPL_DPE_POINT_ROUTE_NOT_UP_TO_DATE</text>
+  </error>
+
+  <error id="82">
+    <name>PAST_FPL_BASE_UNKNOWN_FPL</name>
+    <text>No History Record of FPL With This ACID</text>
+  </error>
+
+  <error id="820">
+    <name>FPL_DPE_POINT_LOG_POS_NOT_ASSOC_TO_DPE_POINT</name>
+    <text>FPL_DPE_PT_LOG_POS_NOT_ASSOC_TO_DPE_PT</text>
+  </error>
+
+  <error id="821">
+    <name>FPL_DPE_POINT_RECEIVED_WHILST_IN_RAM</name>
+    <text>FPL_DPE_POINT_RECEIVED_WHILST_IN_RAM</text>
+  </error>
+
+  <error id="822">
+    <name>FPL_DPE_POINT_INCORRECT_FPL_STATE</name>
+    <text>FPL_DPE_POINT_INCORRECT_FPL_STATE</text>
+  </error>
+
+  <error id="823">
+    <name>SYNTAX_INVALID_GLOBAL_OPS_INFO</name>
+    <text>Too many or invalid chars in global data</text>
+  </error>
+
+  <error id="824">
+    <name>SYNTAX_INVALID_ALERT_INHIBITION</name>
+    <text>Call TSM:SYNTAX_INVALID_ALERT_INHIBITION</text>
+  </error>
+
+  <error id="825">
+    <name>SYNTAX_INVALID_STRIP_VERSION</name>
+    <text>Call TSM: SYNTAX_INVALID_STRIP_VERSION</text>
+  </error>
+
+  <error id="826">
+    <name>SPACE_EXPECTED_AFTER</name>
+    <text>Space expected after $</text>
+  </error>
+
+  <error id="827">
+    <name>ERROR_IN_EXTRACTING</name>
+    <text>Error in field $</text>
+  </error>
+
+  <error id="828">
+    <name>HOLDING_POINT_NOT_FOUND</name>
+    <text>Holding point not found</text>
+  </error>
+
+  <error id="829">
+    <name>FPL_STATE_MUST_BE_FUTURE_TO_REPLACE</name>
+    <text>FPL/PLN for FDR not in FUTURE state</text>
+  </error>
+
+  <error id="83">
+    <name>PAST_FPL_BASE_INVALID_DATA</name>
+    <text>PAST_FPL_BASE_INVALID_DATA</text>
+  </error>
+
+  <error id="830">
+    <name>FPL_ROUTES_MUST_MATCH_TO_REPLACE</name>
+    <text>FPL/PLN for FDR with different route</text>
+  </error>
+
+  <error id="831">
+    <name>RTN_ALN_RECEIVED_FOR_EXISTING_FDR</name>
+    <text>RTN or ALN received for an existing FDR</text>
+  </error>
+
+  <error id="832">
+    <name>AIRPORT_MUST_BELONG_TO_FDRG</name>
+    <text>Airport does not belong to the FDRG</text>
+  </error>
+
+  <error id="833">
+    <name>NO_PREFERENTIAL_ROUTE_DEFINED</name>
+    <text>No pref. route between $ and $</text>
+  </error>
+
+  <error id="834">
+    <name>FPL_LUKEWARM_CMD_NOT_PROCESSED</name>
+    <text>Request refused : $</text>
+  </error>
+
+  <error id="835">
+    <name>FPL_LUKEWARM_SAVE_STATUS</name>
+    <text>FPL Save $</text>
+  </error>
+
+  <error id="836">
+    <name>FPL_LUKEWARM_RESTORE_STATUS</name>
+    <text>FPL Restore $</text>
+  </error>
+
+  <error id="837">
+    <name>FPL_LUKEWARM_RESTORE_UPR_IN_FUTURE</name>
+    <text>UPR refused: time in the future</text>
+  </error>
+
+  <error id="838">
+    <name>OP_QUEUE_BASE_MCQ_FULL</name>
+    <text>Flight data queue database full</text>
+  </error>
+
+  <error id="839">
+    <name>OP_QUEUE_BASE_MCQ_EMPTY</name>
+    <text>No messages are in the queue</text>
+  </error>
+
+  <error id="84">
+    <name>PAST_FPL_BASE_NO_MORE_FPL</name>
+    <text>PAST_FPL_BASE_NO_MORE_FPL</text>
+  </error>
+
+  <error id="840">
+    <name>OP_QUEUE_BASE_MCQ_BUSY_FULL</name>
+    <text>Call TSM : OP_QUEUE_BASE_MCQ_BUSY_FULL</text>
+  </error>
+
+  <error id="841">
+    <name>OP_QUEUE_ITEM_NOT_FOUND_IN_MCQ_BASE</name>
+    <text>Call TSM : OP_QUEUE_ITEM_NOT_FOUND_IN...</text>
+  </error>
+
+  <error id="842">
+    <name>OP_QUEUE_ITEM_ALREADY_BUSY_IN_MCQ_BASE</name>
+    <text>Call TSM : OP_QUEUE_ITEM_ALREADY_BUSY..</text>
+  </error>
+
+  <error id="843">
+    <name>OP_QUEUE_BASE_MSG_IN_FULL</name>
+    <text>Call TSM : OP_QUEUE_BASE_MSG_IN_FULL</text>
+  </error>
+
+  <error id="844">
+    <name>OP_QUEUE_BASE_MSG_IN_EMPTY</name>
+    <text>Message in base is empty.</text>
+  </error>
+
+  <error id="845">
+    <name>OP_QUEUE_BASE_MSG_IN_BUSY_FULL</name>
+    <text>Too many dequeued messages that queue</text>
+  </error>
+
+  <error id="846">
+    <name>OP_QUEUE_ITEM_NOT_FOUND_IN_MSG_IN_BASE</name>
+    <text>Call TSM : OP_QUEUE_ITEM_NOT_FOUND_IN_..</text>
+  </error>
+
+  <error id="847">
+    <name>OP_QUEUE_ITEM_ALREADY_BUSY_IN_MSG_IN_BASE</name>
+    <text>CQ message already dequeued.</text>
+  </error>
+
+  <error id="848">
+    <name>WAITING_MESSAGE</name>
+    <text>Please wait. Processing in progress</text>
+  </error>
+
+  <error id="849">
+    <name>RPL_SUCCESS</name>
+    <text>Action completed</text>
+  </error>
+
+  <error id="85">
+    <name>PAST_FPL_BASE_OBSOLETE_DATA</name>
+    <text>PAST_FPL_BASE_OBSOLETE_DATA</text>
+  </error>
+
+  <error id="850">
+    <name>RPL_INVALID_KEY</name>
+    <text>Invalid function key pressed</text>
+  </error>
+
+  <error id="851">
+    <name>RPL_INVALID_CHOICE</name>
+    <text>Invalid choice</text>
+  </error>
+
+  <error id="852">
+    <name>RPL_DB_EMPTY</name>
+    <text>RPL database is empty</text>
+  </error>
+
+  <error id="853">
+    <name>RPL_DB_FULL</name>
+    <text>RPL database is full</text>
+  </error>
+
+  <error id="854">
+    <name>RPL_DB_LOCKED</name>
+    <text>RPL database locked. Use escape to quit</text>
+  </error>
+
+  <error id="855">
+    <name>RPL_DB_CANNOT_BE_LOCKED</name>
+    <text>RPL database lock impossible</text>
+  </error>
+
+  <error id="856">
+    <name>RPL_NULL_CLS</name>
+    <text>ACID is required</text>
+  </error>
+
+  <error id="857">
+    <name>RPL_INVALID_CLS</name>
+    <text>Invalid ACID</text>
+  </error>
+
+  <error id="858">
+    <name>RPL_INVALID_DAY</name>
+    <text>Invalid day</text>
+  </error>
+
+  <error id="859">
+    <name>RPL_DAY_NOT_IN_PERIOD</name>
+    <text>Day not within validity period</text>
+  </error>
+
+  <error id="86">
+    <name>CDC_IO_ERROR</name>
+    <text>Call TSM : CDC_IO_ERROR</text>
+  </error>
+
+  <error id="860">
+    <name>RPL_INVALID_DATE</name>
+    <text>Invalid date format</text>
+  </error>
+
+  <error id="861">
+    <name>RPL_INVALID_TIME</name>
+    <text>Invalid time</text>
+  </error>
+
+  <error id="862">
+    <name>RPL_FROM_GREATER_THAN_UNTIL</name>
+    <text>Beginning date is after end date</text>
+  </error>
+
+  <error id="863">
+    <name>RPL_NULL_PERIOD</name>
+    <text>Time period is required</text>
+  </error>
+
+  <error id="864">
+    <name>RPL_OBSOLETE_PERIOD</name>
+    <text>Time period has expired</text>
+  </error>
+
+  <error id="865">
+    <name>RPL_TMP_PERIOD_NOT_IN_VALID_PERIOD</name>
+    <text>Temp period not within validity period</text>
+  </error>
+
+  <error id="866">
+    <name>RPL_INVALID_PERIOD_NOT_IN_VALID_PERIOD</name>
+    <text>Invalid period outside validity period</text>
+  </error>
+
+  <error id="867">
+    <name>RPL_INVALID_AC_TYPE</name>
+    <text>Aircraft type not defined</text>
+  </error>
+
+  <error id="868">
+    <name>RPL_INVALID_WTUR</name>
+    <text>Invalid Wake Turbulence Category</text>
+  </error>
+
+  <error id="869">
+    <name>RPL_INVALID_TAS</name>
+    <text>Invalid True Air Speed</text>
+  </error>
+
+  <error id="87">
+    <name>FPL_CDC_STORE_FULL</name>
+    <text>Live FPL Stores Full</text>
+  </error>
+
+  <error id="870">
+    <name>RPL_INVALID_RFL</name>
+    <text>Invalid RFL</text>
+  </error>
+
+  <error id="871">
+    <name>RPL_INVALID_ROUTE</name>
+    <text>Error in route field</text>
+  </error>
+
+  <error id="872">
+    <name>RPL_INVALID_FLIGHT_LEVEL_RANGE</name>
+    <text>Invalid flight level range</text>
+  </error>
+
+  <error id="873">
+    <name>RPL_INVALID_AIRPORT</name>
+    <text>Airport code is not known</text>
+  </error>
+
+  <error id="874">
+    <name>RPL_INVALID_ETB_ETD</name>
+    <text>RPL_INVALID_ETB_ETD</text>
+  </error>
+
+  <error id="875">
+    <name>RPL_NO_SUCH_RPL</name>
+    <text>No RPL's with this criterion</text>
+  </error>
+
+  <error id="876">
+    <name>RPL_NO_RPL_WITH_CLS</name>
+    <text>No RPL's for this ACID</text>
+  </error>
+
+  <error id="877">
+    <name>RPL_NO_NXT_RPL_WITH_CLS</name>
+    <text>No next RPL for this ACID</text>
+  </error>
+
+  <error id="878">
+    <name>RPL_NO_PRV_RPL_WITH_CLS</name>
+    <text>No previous RPL with this ACID</text>
+  </error>
+
+  <error id="879">
+    <name>RPL_NO_OBSOLETE_RPL</name>
+    <text>No obsolete RPL's were found</text>
+  </error>
+
+  <error id="88">
+    <name>FPL_CDC_NOT_FULL_BUT_NO_SPACES_AVAIL</name>
+    <text>No records currently avail in FPL CDC</text>
+  </error>
+
+  <error id="880">
+    <name>RPL_NO_NXT_OBSOLETE_RPL</name>
+    <text>No next obsolete RPL</text>
+  </error>
+
+  <error id="881">
+    <name>RPL_NO_PRV_OBSOLETE_RPL</name>
+    <text>No previous obsolete RPL</text>
+  </error>
+
+  <error id="882">
+    <name>RPL_NO_INCOHERENT_RPL</name>
+    <text>No incoherent RPL's were found</text>
+  </error>
+
+  <error id="883">
+    <name>RPL_NO_PRV_INCOHERENT_RPL</name>
+    <text>No previous incoherent RPL</text>
+  </error>
+
+  <error id="884">
+    <name>RPL_NO_NXT_INCOHERENT_RPL</name>
+    <text>No next incoherent RPL</text>
+  </error>
+
+  <error id="885">
+    <name>RPL_MODIFIED_RPL</name>
+    <text>RPL has been modified since your request</text>
+  </error>
+
+  <error id="886">
+    <name>RPL_MODIFIED_OR_DELETED_RPL</name>
+    <text>RPL has been deleted</text>
+  </error>
+
+  <error id="887">
+    <name>RPL_ACCESSIBLE_RPL</name>
+    <text>This RPL is now accessible</text>
+  </error>
+
+  <error id="888">
+    <name>RPL_WAIT_RPL</name>
+    <text>Another user is modifying this RPL</text>
+  </error>
+
+  <error id="889">
+    <name>RPL_SIMILAR_RPL</name>
+    <text>Similar RPL : ~~~~~~ ~~~~~~ ~~~~~~~</text>
+  </error>
+
+  <error id="89">
+    <name>NOT_ALLOWED_INDICATOR</name>
+    <text>$ not allowed after $</text>
+  </error>
+
+  <error id="890">
+    <name>RPL_PRINTING_FAILED</name>
+    <text>Call TSM : RPL_PRINTING_FAILED</text>
+  </error>
+
+  <error id="891">
+    <name>RPL_WRITING_FAILED</name>
+    <text>Call TSM : RPL_WRITING_FAILED</text>
+  </error>
+
+  <error id="892">
+    <name>RPL_TAPE_NOT_MOUNTED</name>
+    <text>Call TSM : RPL_TAPE_NOT_MOUNTED</text>
+  </error>
+
+  <error id="893">
+    <name>RPL_TAPE_SECTOR_ERROR</name>
+    <text>Call TSM : RPL_TAPE_SECTOR_ERROR</text>
+  </error>
+
+  <error id="894">
+    <name>RPL_TAPE_READ_ERROR</name>
+    <text>Call TSM : RPL_TAPE_READ_ERROR</text>
+  </error>
+
+  <error id="895">
+    <name>RPL_TAPE_WRITE_ERROR</name>
+    <text>Call TSM : RPL_TAPE_WRITE_ERROR</text>
+  </error>
+
+  <error id="896">
+    <name>RPL_RFPF_UNEXPECTED_EOF</name>
+    <text>Call TSM : RPL_RFPF_UNEXPECTED_EOF</text>
+  </error>
+
+  <error id="897">
+    <name>RPL_RFPF_SENDER_SYNTAX_ERROR</name>
+    <text>Call TSM : RPL_RFPF_SENDER_SYNTAX_ERROR</text>
+  </error>
+
+  <error id="898">
+    <name>RPL_RFPF_DEST_SYNTAX_ERROR</name>
+    <text>Call TSM : RPL_RFPF_DEST_SYNTAX_ERROR</text>
+  </error>
+
+  <error id="899">
+    <name>RPL_RFPF_HEADER_SYNTAX_ERROR</name>
+    <text>Call TSM : RPL_RFPF_HEADER_SYNTAX_ERROR</text>
+  </error>
+
+  <error id="9">
+    <name>FPL_STATUS_IS_HALT</name>
+    <text>Message rejected. FPL has been stopped.</text>
+  </error>
+
+  <error id="90">
+    <name>INDICATOR_IS_NOT_COMPATIBLE_WITH_FLIGHT_RULE</name>
+    <text>FRUL must be Y or Z for a change enroute</text>
+  </error>
+
+  <error id="900">
+    <name>RPL_RFPF_RPL_SYNTAX_ERROR</name>
+    <text>Call TSM : RPL_RFPF_RPL_SYNTAX_ERROR</text>
+  </error>
+
+  <error id="901">
+    <name>RPL_RESTORE_NOT_NOW</name>
+    <text>Cannot restore. Database locked</text>
+  </error>
+
+  <error id="902">
+    <name>RPL_UNKNOWN_RPL</name>
+    <text>There is no similar RPL in the Database</text>
+  </error>
+
+  <error id="903">
+    <name>RPL_INVALID_EXPORT_FILENAME</name>
+    <text>Export file name invalid</text>
+  </error>
+
+  <error id="904">
+    <name>RPL_INVALID_IMPORT_FILENAME</name>
+    <text>Import file name invalid</text>
+  </error>
+
+  <error id="905">
+    <name>RPL_UNKNOWN_IMPORT_FILENAME</name>
+    <text>Import file name unknown</text>
+  </error>
+
+  <error id="906">
+    <name>RPL_EXISTING_EXPORT_FILENAME</name>
+    <text>File exists: &lt;filename&gt;/DEL to overwrite</text>
+  </error>
+
+  <error id="907">
+    <name>RPL_MISSING_DISTRIBUTED_FILE</name>
+    <text>Call TSM : RPL_MISSING_DISTRIBUTED_FILE</text>
+  </error>
+
+  <error id="908">
+    <name>RPL_ERROR_COPYING_FILES</name>
+    <text>Call TSM : RPL_ERROR_COPYING_FILES</text>
+  </error>
+
+  <error id="909">
+    <name>RPL_ERROR_IMPORT_DIRECTORY</name>
+    <text>Call TSM : RPL_ERROR_IMPORT_DIRECTORY</text>
+  </error>
+
+  <error id="91">
+    <name>FRULE_Y_Z_NOT_ALLOWED_WITHOUT_ENROUTE_INDICATOR</name>
+    <text>Change of FRUL not indicated in route</text>
+  </error>
+
+  <error id="910">
+    <name>RPL_ERROR_IMPORT_FILES</name>
+    <text>Call TSM : RPL_ERROR_IMPORT_FILES</text>
+  </error>
+
+  <error id="911">
+    <name>RPL_NO_NEXT_POSSIBLE</name>
+    <text>No next page</text>
+  </error>
+
+  <error id="912">
+    <name>RPL_NO_PREVIOUS_POSSIBLE</name>
+    <text>No previous page</text>
+  </error>
+
+  <error id="913">
+    <name>RPL_MISSING_PASSIVE_FILE</name>
+    <text>Call TSM : RPL_MISSING_PASSIVE_FILE</text>
+  </error>
+
+  <error id="914">
+    <name>RPL_MANUAL_SWITCH_NOT_ALLOWED</name>
+    <text>Manual switch not allowed in this state</text>
+  </error>
+
+  <error id="915">
+    <name>RPL_MANUAL_SWITCH_REJECTED</name>
+    <text>RPL_MANUAL_SWITCH_REJECTED</text>
+  </error>
+
+  <error id="916">
+    <name>RPL_INVALID_PASSIVE_DATES</name>
+    <text>Invalid passive file validity dates</text>
+  </error>
+
+  <error id="917">
+    <name>RPL_ERROR_IN_DB_SWITCH</name>
+    <text>Call TSM : RPL_ERROR_IN_DB_SWITCH</text>
+  </error>
+
+  <error id="918">
+    <name>RPL_INVALID_EQPT_SWITCH_IN_FIELD_18</name>
+    <text>RPL_INVALID_EQPT_SWITCH_IN_FIELD_18</text>
+  </error>
+
+  <error id="919">
+    <name>STE_DB_EMPTY</name>
+    <text>STE database empty</text>
+  </error>
+
+  <error id="92">
+    <name>ROUTE_IS_EMPTY</name>
+    <text>Cannot determine flight plan trajectory</text>
+  </error>
+
+  <error id="920">
+    <name>STE_DB_FULL</name>
+    <text>STE database full</text>
+  </error>
+
+  <error id="921">
+    <name>STE_DB_LOCKED</name>
+    <text>STE database locked, use &lt;ESC&gt; to quit</text>
+  </error>
+
+  <error id="922">
+    <name>STE_NO_SUCH_STE</name>
+    <text>No STE with this criterion</text>
+  </error>
+
+  <error id="923">
+    <name>STE_NO_SUCH_STE_WITH_CLS</name>
+    <text>No STE with this ACID</text>
+  </error>
+
+  <error id="924">
+    <name>STE_NO_NXT_STE_WITH_CLS</name>
+    <text>No next STE with this ACID</text>
+  </error>
+
+  <error id="925">
+    <name>STE_NO_PRV_STE_WITH_CLS</name>
+    <text>No previous STE with this ACID</text>
+  </error>
+
+  <error id="926">
+    <name>STE_NO_OBSOLETE_STE</name>
+    <text>There is no obsolete STE</text>
+  </error>
+
+  <error id="927">
+    <name>STE_NO_NXT_OBSOLETE_STE</name>
+    <text>No next obsolete STE</text>
+  </error>
+
+  <error id="928">
+    <name>STE_NO_PRV_OBSOLETE_STE</name>
+    <text>No previous obsolete STE</text>
+  </error>
+
+  <error id="929">
+    <name>STE_NO_INCOHERENT_STE</name>
+    <text>There is no incoherent STE</text>
+  </error>
+
+  <error id="93">
+    <name>NO_POINTS_IN_FDRG_AIRSPACE</name>
+    <text>Route field must contain a known point</text>
+  </error>
+
+  <error id="930">
+    <name>STE_NO_NXT_INCOHERENT_STE</name>
+    <text>No next incoherent STE</text>
+  </error>
+
+  <error id="931">
+    <name>STE_NO_PRV_INCOHERENT_STE</name>
+    <text>No previous incoherent STE</text>
+  </error>
+
+  <error id="932">
+    <name>STE_MODIFIED_STE</name>
+    <text>This STE has been modified</text>
+  </error>
+
+  <error id="933">
+    <name>STE_MODIFIED_OR_DELETED_STE</name>
+    <text>This STE has been modified or deleted</text>
+  </error>
+
+  <error id="934">
+    <name>STE_ACCESSIBLE_STE</name>
+    <text>This STE is now accessible</text>
+  </error>
+
+  <error id="935">
+    <name>STE_WAIT_STE</name>
+    <text>Another user is modifying this STE</text>
+  </error>
+
+  <error id="936">
+    <name>STE_SIMILAR_STE</name>
+    <text>Similar STE : ~~~~~~ ~~~~~~ ~~~~~~~</text>
+  </error>
+
+  <error id="937">
+    <name>STE_TAPE_NOT_MOUNTED</name>
+    <text>Call TSM : STE_TAPE_NOT_MOUNTED</text>
+  </error>
+
+  <error id="938">
+    <name>STE_UNKNOWN_STE</name>
+    <text>There is no similar STE in the database</text>
+  </error>
+
+  <error id="939">
+    <name>STE_MISSING_DISTRIBUTED_FILE</name>
+    <text>Call TSM : STE_MISSING_DISTRIBUTED_FILE</text>
+  </error>
+
+  <error id="94">
+    <name>NO_POINTS_IN_FPEA</name>
+    <text>No points found in FP extended area</text>
+  </error>
+
+  <error id="940">
+    <name>STE_RFPF_SENDER_SYNTAX_ERROR</name>
+    <text>Call TSM : STE_RFPF_SENDER_SYNTAX_ERROR</text>
+  </error>
+
+  <error id="941">
+    <name>STE_MISSING_PASSIVE_FILE</name>
+    <text>Call TSM : STE_MISSING_PASSIVE_FILE</text>
+  </error>
+
+  <error id="942">
+    <name>STE_INVALID_EQPT_SWITCH_IN_FIELD_18</name>
+    <text>STE_INVALID_EQPT_SWITCH_IN_FIELD_18</text>
+  </error>
+
+  <error id="943">
+    <name>AFTN_TRANSMISSION_BASE_IS_FULL</name>
+    <text>Call TSM: AFTN_TRANSMISSION_BASE_IS_FULL</text>
+  </error>
+
+  <error id="944">
+    <name>EXT_TO_FPL_FIFO_FULL</name>
+    <text>Call TSM : EXT_TO_FPL_FIFO_FULL</text>
+  </error>
+
+  <error id="945">
+    <name>COPY_IN_PROGRESS</name>
+    <text>Request rejected : Copy in progress</text>
+  </error>
+
+  <error id="946">
+    <name>NO_CONNECTION_WITH_TAPE_HANDLER</name>
+    <text>Call TSM:NO_CONNECTION_WITH_TAPE_HANDLER</text>
+  </error>
+
+  <error id="947">
+    <name>UNABLE_TO_COMPOSE_DATA</name>
+    <text>Call TSM : UNABLE_TO_COMPOSE_DATA</text>
+  </error>
+
+  <error id="948">
+    <name>UNABLE_TO_RESTORE_DATA</name>
+    <text>Call TSM : Unable To Restore Data</text>
+  </error>
+
+  <error id="949">
+    <name>UNABLE_TO_STOP_REPLAY</name>
+    <text>Call TSM : Unable To Stop Replay</text>
+  </error>
+
+  <error id="95">
+    <name>NO_POINTS_IN_FPSA</name>
+    <text>No points found in FP system area</text>
+  </error>
+
+  <error id="950">
+    <name>REPLAY_COMPOSITION_FAILED</name>
+    <text>#1$</text>
+  </error>
+
+  <error id="951">
+    <name>REPLAY_PERIOD_UNAVAILABLE</name>
+    <text>REPLAY_PERIOD_UNAVAILABLE</text>
+  </error>
+
+  <error id="952">
+    <name>TAPE_REQUEST</name>
+    <text>End of replay tape : Replace tape</text>
+  </error>
+
+  <error id="953">
+    <name>VR_TAPE_REQUEST</name>
+    <text>R_TAPE_REQUEST</text>
+  </error>
+
+  <error id="954">
+    <name>TAPE_NOT_WRITE_PROTECTED</name>
+    <text>Call TSM : TAPE_NOT_WRITE_PROTECTED</text>
+  </error>
+
+  <error id="955">
+    <name>MEDIA_IS_LOCKED</name>
+    <text>The Media is locked</text>
+  </error>
+
+  <error id="956">
+    <name>MEDIA_ERROR</name>
+    <text>Media ERROR</text>
+  </error>
+
+  <error id="957">
+    <name>VR_ERROR</name>
+    <text>VR_ERROR</text>
+  </error>
+
+  <error id="958">
+    <name>VR_ERROR_2</name>
+    <text>Call TSM : Voice recorder TAPE ERROR</text>
+  </error>
+
+  <error id="959">
+    <name>NO_TAPE_ACCESS</name>
+    <text>Call TSM : NO_TAPE_ACCESS</text>
+  </error>
+
+  <error id="96">
+    <name>ROUTE_USES_POINT_OUTSIDE_FPEA</name>
+    <text>Route uses point located outside FPEA</text>
+  </error>
+
+  <error id="960">
+    <name>INCORRECT_VERSION</name>
+    <text>Call TSM : INCORRECT_VERSION</text>
+  </error>
+
+  <error id="961">
+    <name>INCORRECT_TAPE</name>
+    <text>Call TSM : INCORRECT_TAPE inserted</text>
+  </error>
+
+  <error id="962">
+    <name>INCORRECT_DVD</name>
+    <text>INCORRECT_DVD</text>
+  </error>
+
+  <error id="963">
+    <name>INCORRECT_GAME_NR</name>
+    <text>NCORRECT_GAME_NR</text>
+  </error>
+
+  <error id="964">
+    <name>INCORRECT_EXERCISE_NR</name>
+    <text>NCORRECT_EXERCISE_NR</text>
+  </error>
+
+  <error id="965">
+    <name>INCORRECT_GROUP_NR</name>
+    <text>INCORRECT_GROUP_N</text>
+  </error>
+
+  <error id="966">
+    <name>INVALID_MMI_POSITION</name>
+    <text>Invalid MMI position for replay</text>
+  </error>
+
+  <error id="967">
+    <name>INVALID_CHANNEL_NR</name>
+    <text>Invalid channel number</text>
+  </error>
+
+  <error id="968">
+    <name>INVALID_SERVER</name>
+    <text>INVALID_SERVER</text>
+  </error>
+
+  <error id="969">
+    <name>BUSY_STEPPING</name>
+    <text>Busy stepping</text>
+  </error>
+
+  <error id="97">
+    <name>ILLEGAL_MODIFICATION_OF_FIELD_15</name>
+    <text>Change to F15 not allowed with FP state</text>
+  </error>
+
+  <error id="970">
+    <name>NO_VR_RESOURCE</name>
+    <text>Call TSM : NO VR resource. local replay?</text>
+  </error>
+
+  <error id="971">
+    <name>VR_CONNECT_FAIL</name>
+    <text>Call TSM : Unable to connect to VR</text>
+  </error>
+
+  <error id="972">
+    <name>VR_SET_TIME_FAIL</name>
+    <text>Unable to find timestamp on VR</text>
+  </error>
+
+  <error id="973">
+    <name>TIME_IN_FUTURE</name>
+    <text>Replay time must be in the past</text>
+  </error>
+
+  <error id="974">
+    <name>TIME_IN_PAST</name>
+    <text>Replay time no longer available</text>
+  </error>
+
+  <error id="975">
+    <name>TIME_TOO_RECENT</name>
+    <text>TIME_TOO_RECENT</text>
+  </error>
+
+  <error id="976">
+    <name>RECORDING_DISABLED</name>
+    <text>Recording disabled : Call TSM</text>
+  </error>
+
+  <error id="977">
+    <name>UNKNOWN_MESSAGE</name>
+    <text>Call TSM : UNKNOWN_MESSAGE(IPC)</text>
+  </error>
+
+  <error id="978">
+    <name>BAD_AUDIO_TRACK</name>
+    <text>BAD_AUDIO_TRACK</text>
+  </error>
+
+  <error id="979">
+    <name>MAX_MIXED_REC_CHAN_EXCEEDED</name>
+    <text>MAX_MIXED_REC_CHAN_EXCEEDED</text>
+  </error>
+
+  <error id="98">
+    <name>CPL_MODIFICATION_OF_ROUTE_REJECTED</name>
+    <text>$ CPL route mod refused with FP state</text>
+  </error>
+
+  <error id="980">
+    <name>MAX_AUDIO_OUTPUTS_EXCEEDED</name>
+    <text>Max audio outputs exceeded</text>
+  </error>
+
+  <error id="981">
+    <name>INVALID_AUDIO_OUTPUT_NR</name>
+    <text>INVALID_AUDIO_OUTPUT_NR</text>
+  </error>
+
+  <error id="982">
+    <name>COMPOSE_WAS_NOT_AUDIO</name>
+    <text>COMPOSE_WAS_NOT_AUDIO</text>
+  </error>
+
+  <error id="983">
+    <name>AUDIO_OUTPUT_ALREADY_USED</name>
+    <text>AUDIO_OUTPUT_ALREADY_USED</text>
+  </error>
+
+  <error id="984">
+    <name>TIME_SPAN_TOO_LONG</name>
+    <text>TIME_SPAN_TOO_LONG</text>
+  </error>
+
+  <error id="985">
+    <name>ALREADY_ACTIVE</name>
+    <text>Immediate replay navbl: REC is busy</text>
+  </error>
+
+  <error id="986">
+    <name>INDICATOR_SECTION_ERROR</name>
+    <text>Call TSM: INDICATOR_SECTION_ERROR (GRIB)</text>
+  </error>
+
+  <error id="987">
+    <name>PRODUCT_DEFINITION_SECTION_ERROR</name>
+    <text>Call TSM: PRODUCT_DEFINITION_SECTION_...</text>
+  </error>
+
+  <error id="988">
+    <name>NOT_FPSA_METEO_AREA</name>
+    <text>Call TSM : NOT_FPSA_METEO_AREA (not N/O)</text>
+  </error>
+
+  <error id="989">
+    <name>METEO_DATA_OUTSIDE_FPSA</name>
+    <text>Metro data outside FPSA</text>
+  </error>
+
+  <error id="99">
+    <name>ILLEGAL_CPL_ABI_ROUTE_MODIFICATION</name>
+    <text>Illegal route received in CPL/ABI msg.</text>
+  </error>
+
+  <error id="990">
+    <name>METEO_PREVIOUS_DATA_EMPTY</name>
+    <text>No data available</text>
+  </error>
+
+  <error id="991">
+    <name>NOT_TAAATS_DATA_TYPE</name>
+    <text>Call TSM : INCORRECT GRIB DATA TYPE</text>
+  </error>
+
+  <error id="992">
+    <name>INCORRECT_NO_OF_FLIGHT_LEVELS</name>
+    <text>Call TSM : INCORRECT_NO_OF_FLIGHT_LEVELS</text>
+  </error>
+
+  <error id="993">
+    <name>INVALID_WIND_DIRECTION</name>
+    <text>Call TSM : INVALID_WIND_DIRECTION (GRIB)</text>
+  </error>
+
+  <error id="994">
+    <name>INVALID_WIND_SPEED</name>
+    <text>Call TSM : INVALID_WIND_SPEED (GRIB)</text>
+  </error>
+
+  <error id="995">
+    <name>INVALID_TEMPERATURE</name>
+    <text>Call TSM : INVALID_TEMPERATURE</text>
+  </error>
+
+  <error id="996">
+    <name>NOT_TAAATS_PRESSURE_ALT</name>
+    <text>Call TSM: INCORRECT PRESSURE ALTITUDE</text>
+  </error>
+
+  <error id="997">
+    <name>NOT_TAAATS_FORECAST_PERIOD</name>
+    <text>Call TSM : INCORRECT FORECAST PERIOD</text>
+  </error>
+
+  <error id="998">
+    <name>SECTION_UNIT_RESERVED_ERROR</name>
+    <text>Call TSM : SECTION_UNIT_RESERVED_ERROR</text>
+  </error>
+
+  <error id="999">
+    <name>SECTION_OR_NOT_1ST_ORDER_PACKING</name>
+    <text>Call TSM : SECTION_OR_NOT_1ST_ORDER_...</text>
+  </error>
+
+</error_messages>

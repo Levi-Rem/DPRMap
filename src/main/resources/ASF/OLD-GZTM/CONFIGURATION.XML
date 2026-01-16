@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE configuration SYSTEM "configuration.dtd">
+<configuration>
+
+  <logical_system_names>
+    <logical_system name="TMA" physical_partition_name="GUTM"/>
+  </logical_system_names>
+
+  <physical_positions_definition>
+    <position device_name="guvmod004li" device_type="ONE_K" name="POS1" screen_nb="1"/>
+    <position device_name="zzerod009li" device_type="ONE_K" name="POS2" screen_nb="1"/>
+    <position device_name="guvmod001li" device_type="TX" name="POS3" screen_nb="1"/>
+    <position device_name="guvmod003li" device_type="ONE_K" name="POS4" screen_nb="1"/>
+    <position device_name="guerod005li" device_type="ONE_K" name="POS5" screen_nb="1"/>
+    <position device_name="guerod006li" device_type="ONE_K" name="POS6" screen_nb="1"/>
+    <position device_name="guerod007li" device_type="TWO_K" name="POS7" screen_nb="1"/>
+    <position device_name="guerod008li" device_type="ONE_K" name="POS8" screen_nb="1"/>
+  </physical_positions_definition>
+
+  <nodes_definition>
+    <node first_stp_id="2" logical_system_name="TMA" msp="8" name="MMI001" partition_id="TMA" position_name1="POS1" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+    <node first_stp_id="2" logical_system_name="TMA" msp="8" name="MMI002" partition_id="TMA" position_name1="POS2" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+    <node first_stp_id="4" logical_system_name="TMA" msp="8" name="MMI003" partition_id="TMA" position_name1="POS3" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+    <node first_stp_id="4" logical_system_name="TMA" msp="8" name="MMI004" partition_id="TMA" position_name1="POS4" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+    <node first_stp_id="6" logical_system_name="TMA" msp="8" name="MMI005" partition_id="TMA" position_name1="POS5" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+    <node first_stp_id="6" logical_system_name="TMA" msp="8" name="MMI006" partition_id="TMA" position_name1="POS6" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+    <node first_stp_id="8" logical_system_name="TMA" msp="8" name="MMI007" partition_id="TMA" position_name1="POS7" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+    <node first_stp_id="8" logical_system_name="TMA" msp="8" name="MMI008" partition_id="TMA" position_name1="POS8" position_name2="" position_name3="" position_name4="" second_stp_id=""/>
+  </nodes_definition>
+
+</configuration>

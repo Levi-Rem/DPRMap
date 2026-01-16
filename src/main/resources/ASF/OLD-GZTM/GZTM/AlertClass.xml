@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AlertClassRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AlertClass.xsd"><AlertClass activatedFlag="ON" classNumber="0"/><AlertClass activatedFlag="ON" classNumber="1"/><AlertClass activatedFlag="ON" classNumber="2"/><AlertClass activatedFlag="ON" classNumber="3"/><AlertClass activatedFlag="OFF" classNumber="4"/></AlertClassRoot>

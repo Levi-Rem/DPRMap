@@ -1,0 +1,151 @@
+--  
+--
+--
+--  CREATION DATE :  APRIL 01, 2003
+--  BY            :  YAN ZHONG
+--  VERSION       :  ISIM_01
+--
+--
+--
+--      Version | Date    | Responsible  | Comment 
+----------------|---------|------------- |----------------------------------
+--     ISIM_01  | 01/04/03| ZHONG  YAN   | NESACC SHANGHAI FAT
+--
+--
+--
+--
+-- +++ DESCRIPTION NAI AND BLANK AREAS file
+--
+-- Rmq : azimuth [0..3599] 
+--
+-- /Radar Name 1/
+--
+-- Whole NAI Area : choose between (NAI_WHOLE_AREAS,NO_NAI_WHOLE_AREAS) 
+-- in case of NAI_WHOLE_AREAS , the section (NAI_POLAR_AREAS )
+-- will be not read
+--
+-- NAI_WHOLE_AREAS or NO_NAI_WHOLE_AREAS
+--
+-- ** NAI_POLAR_AREAS
+-- --     Starting    Point          |  Ending point
+---------------------------------------------------------------
+-- --     radius     |  azimuth      |  radius         | azimuth
+-- ---------------------------------------------------------------
+--           xxx     |      xxx      |       xxx       |   xxx   |
+--           ...     |      ...      |       ...       |   ...   |
+--
+-- ** BLK_POLAR_AREAS
+--
+-- --     Starting    Point          |  Ending point
+-- ---------------------------------------------------------------
+-- --     radius     |  azimuth      |  radius         | azimuth
+-- ---------------------------------------------------------------
+--           xxx     |      xxx      |       xxx       |   xxx   |
+--           ...     |      ...      |       ...       |   ...   |
+--
+-- /Radar Name 2/
+--
+-- ...
+--
+-- +++  END DESCRIPTION file
+--
+--/SITEA/
+--
+--
+/XLN/
+--
+--
+NO_NAI_WHOLE_AREAS
+--
+** NAI_POLAR_AREAS
+-- --     Starting      Point          |  Ending       point
+-- ----------------------------------------------------------------------------
+-- --     radius       |  azimuth      |  radius           | azimuth | plots type
+-- ALL_PLOTS - PRIMARY_PLOTS - SECONDARY_PLOTS - COMBINED_PLOTS
+-- PRIMARY_AND_SECONDARY_PLOTS - PRIMARY_AND_COMBINED_PLOTS - SECONDARY_AND_COMBINED_PLOTS
+-- ----------------------------------------------------------------------------
+           8.9NM       |     410       |    9.5NM          |   610   | PRIMARY_PLOTS |
+           8.3NM       |    1390       |    9.2NM          |  1500   | PRIMARY_PLOTS |
+          30.4NM       |    1812       |   31.2NM          |  1813   | ALL_PLOTS     |
+         164.4NM       |    2615       |   225.8NM         |  2636   |SECONDARY_PLOTS|
+           0.1NM       |    3157       |    8.2NM          |  3379   | ALL_PLOTS     |
+--
+** BLK_POLAR_AREAS
+--
+-- --     Starting      Point          |  Ending       point
+-- ----------------------------------------------------------------------------
+-- --     radius       |  azimuth      |  radius           | azimuth | plots type
+-- ALL_PLOTS - PRIMARY_PLOTS - SECONDARY_PLOTS - COMBINED_PLOTS
+-- PRIMARY_AND_SECONDARY_PLOTS - PRIMARY_AND_COMBINED_PLOTS - SECONDARY_AND_COMBINED_PLOTS
+-- ----------------------------------------------------------------------------
+           1.5NM       |    1280       |    2.0NM          |  1430   | PRIMARY_PLOTS |
+           1.0NM       |    1790       |    3.1NM          |  1820   | PRIMARY_PLOTS |
+--
+--
+/DHZ/
+--
+--
+NO_NAI_WHOLE_AREAS
+--
+--** NAI_POLAR_AREAS
+** BLK_POLAR_AREAS
+-- --     Starting      Point          |  Ending       point
+-- ----------------------------------------------------------------------------
+-- --     radius       |  azimuth      |  radius           | azimuth | plots type
+-- ALL_PLOTS - PRIMARY_PLOTS - SECONDARY_PLOTS - COMBINED_PLOTS
+-- PRIMARY_AND_SECONDARY_PLOTS - PRIMARY_AND_COMBINED_PLOTS - SECONDARY_AND_COMBINED_PLOTS
+-- ----------------------------------------------------------------------------
+          18.3NM       |    2430       |    38.34NM        |  2439   | ALL_PLOTS     |
+--
+/SHG/
+--
+-- as long as this radar has a problem in the south azimuth (188-192 degrees) we need this area
+-- otherwise, the noise is far too big compare to the nominal one
+--
+NO_NAI_WHOLE_AREAS
+--
+** BLK_POLAR_AREAS
+-- --     Starting      Point          |  Ending       point
+-- ----------------------------------------------------------------------------
+-- --     radius       |  azimuth      |  radius           | azimuth | plots type
+-- ALL_PLOTS - PRIMARY_PLOTS - SECONDARY_PLOTS - COMBINED_PLOTS
+-- PRIMARY_AND_SECONDARY_PLOTS - PRIMARY_AND_COMBINED_PLOTS - SECONDARY_AND_COMBINED_PLOTS
+-- ----------------------------------------------------------------------------
+          60.0NM       |    1870       |    250.0NM        |  1920   | ALL_PLOTS     |
+--
+/PNX/
+--
+-- as long as this radar has a problem in the south azimuth (188-192 degrees) we need this area
+-- otherwise, the noise is far too big compare to the nominal one
+--
+NO_NAI_WHOLE_AREAS
+--
+** BLK_POLAR_AREAS
+-- --     Starting      Point          |  Ending       point
+-- ----------------------------------------------------------------------------
+-- --     radius       |  azimuth      |  radius           | azimuth | plots type
+-- ALL_PLOTS - PRIMARY_PLOTS - SECONDARY_PLOTS - COMBINED_PLOTS
+-- PRIMARY_AND_SECONDARY_PLOTS - PRIMARY_AND_COMBINED_PLOTS - SECONDARY_AND_COMBINED_PLOTS
+-- ----------------------------------------------------------------------------
+          45.0KM       |    2180       |    400.0KM        |  2350   |SECONDARY_PLOTS|
+          45.0KM       |    2180       |    200.0KM        |  2350   |PRIMARY_AND_COMBINED_PLOTS|
+--           0.0KM       |    2180       |    400.0KM        |  2350   |SECONDARY_PLOTS|
+--           0.0KM       |    2180       |    200.0KM        |  2350   |PRIMARY_AND_COMBINED_PLOTS|
+--
+--
+/MAC/
+--
+-- as long as this radar has a problem in the south azimuth (188-192 degrees) we need this area
+-- otherwise, the noise is far too big compare to the nominal one
+--
+NO_NAI_WHOLE_AREAS
+--
+** BLK_POLAR_AREAS
+-- --     Starting      Point          |  Ending       point
+-- ----------------------------------------------------------------------------
+-- --     radius       |  azimuth      |  radius           | azimuth | plots type
+-- ALL_PLOTS - PRIMARY_PLOTS - SECONDARY_PLOTS - COMBINED_PLOTS
+-- PRIMARY_AND_SECONDARY_PLOTS - PRIMARY_AND_COMBINED_PLOTS - SECONDARY_AND_COMBINED_PLOTS
+-- ----------------------------------------------------------------------------
+          00.0KM       |     929       |    400.0KM        |   942   |SECONDARY_PLOTS|
+--

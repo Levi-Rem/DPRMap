@@ -1,0 +1,46 @@
+--
+--           FILE :  RAC_INHIBITION.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+STCA_HOLD_STATE_ELIG | TRUE |
+MSAW_HOLD_STATE_ELIG | TRUE |
+DAIW_HOLD_STATE_ELIG | TRUE |
+CSTD_HOLD_STATE_ELIG | FALSE |
+NTZ_HOLD_STATE_ELIG  | TRUE |
+RTIW_HOLD_STATE_ELIG | FALSE |
+
+/SSR_CODE_STCA/
+
+/SSR_CODE_MSAW/
+
+/SSR_CODE_DAIW/
+
+/CALLSIGN_STCA_MSAW/
+
+/CALLSIGN_DAIW/
+
+/SSR_CODE_CSTD/
+
+/CALLSIGN_CSTD/
+
+/SSR_CODE_NTZ/
+
+/CALLSIGN_NTZ/
+
+/SSR_CODE_DTZ/
+
+/CALLSIGN_DTZ/
+
+

@@ -1,0 +1,38 @@
+/DAP_DISPLAY_CONFIGURATIONS/
+ DAPALL  |ID|ADR|3A|FSS|MAC|IAR|BVR|MHG|BPS|RAN|TAR|TAN|TAS|GSP|GVR|VUN|GAL|PUN|ROCROD|MDA|
+ DAPACC1 |3A|ID|ADR|FSS|MHG|IAR|MAC|BVR|
+ DAPTMA1 |ID|3A|ADR|FSS|IAR|BPS|MHG|
+ DAPRT1  |ADR|ID|3A|IAR|MHG|FSS|BPS|
+-- 
+--
+/DAP_DISPLAY_TEXT/
+
+ID | Target ID   |63.75| |
+ADR| 24-BIT      |63.75| |
+3A | SSR         |0.0  | |
+FSS| FSSA        |63.75|Y|
+MAC| Mach No     |15.0 | |
+IAR| IAS         |63.75|N|
+BVR| Vert Rate   |20.5 |N|
+MHG| Heading     |40.9 | |
+BPS| QNH         |63.75| |
+RAN|RollAngle    |63.75| |
+TAR|AngleRate    |63.75| |
+TAN|TrackAngle   |63.75| |
+TAS|TAS          |10.0 |Y|
+GSP|GS           |0.0  |Y|
+GVR|GeometricVR  |20.5 |Y|
+VUN|VU           |63.75| |
+GAL|GA           |63.75|Y|
+PUN|P Uncertainty|20.0||
+ROCROD|A Tracker |63.75|Y|
+MDA|Mode 3/A     |63.75| |
+-- SAL|Selected Altitude |63.75|
+
+/DAP_CONFIGURATION_ALLOCATION/
+ DAPALL  | DAP_DEFAULT | TMP1
+
+ DAPTMA1 | TMA | SUP1 | TMB | SUP2
+ DAPRT1  | TWR | SUPTW
+
+

@@ -1,0 +1,72 @@
+--
+--
+--  FILE: AURAL_ALERTS.ASF 
+--
+-- CREATION DATE  :  24 MAR 2011
+-- BY		  :  Kwang Wan
+-- VERSION	  :  
+-- 
+--
+--      Version | Date  | Responsible | Comment 
+----------------|-------|-------------|---------------------------------------
+--      Initial |240311 | K WAN       | Initial
+-- 
+--
+HMI_AURAL_CYCLE_START_TIME | 1
+--
+--
+--  CYCLE DELAY TIME (SEC) <1 to 600>
+--  NO. OF CYCLES          <1 to 10>
+--
+/FIXED_AURAL_ALERTS/
+-- AURAL ALERT NAME | WAVE FILENAME | NO. OF CYCLES | CYCLE DELAY TIME(SEC) | COMMENT
+---------------------------------------------------------------------------------------------------
+FIXED_1             | AIF           | 1             | 1                     |
+FIXED_2             | TIMER         | CONT          | 1                     |
+--
+--
+--
+/PRIORITY_AURAL_ALERTS/
+-- AURAL ALERT NAME | WAVE FILENAME | NO. OF CYCLES | CYCLE DELAY TIME(SEC)| COMMENT
+-----------------------------------------------------------------------------------------------------
+PRIORITY_1          | NTZ           | CONT          | NONE                  |
+PRIORITY_2          | DTZ           | CONT          | NONE                  |
+PRIORITY_3          | STCA          | CONT          | NONE                  |
+PRIORITY_4          | EMG           | CONT          | NONE                  |
+PRIORITY_5          | HIJ           | CONT          | NONE                  |
+PRIORITY_6          | RAD           | CONT          | NONE                  |
+PRIORITY_7          | MSAW          | CONT          | NONE                  |
+PRIORITY_8          | APMW          | CONT          | NONE                  |
+PRIORITY_9          | PRE_STCA      | CONT          | NONE                  |
+PRIORITY_10         | DAIW          | CONT          | NONE                  |
+PRIORITY_11         | RAIW          | CONT          | NONE                  |
+PRIORITY_12         | CLAM          | 7             | 1                     |
+PRIORITY_13         | RIW           | CONT          | NONE                  |
+PRIORITY_14         | RAM           | 5             | 1                     |
+--
+--
+--
+/ASSOC_PRIORITY_AURAL_ALERTS/
+-- AURAL ALERT NAME | ALARM AND WARNINGS | NON ACK DELAY | COMMENT
+-----------------------------------------------------------------------------------------------------
+PRIORITY_1          | NTZ                | Y             |
+PRIORITY_2          | DTZ                | Y             |
+PRIORITY_3          | STCA               | Y             |
+PRIORITY_4          | ADC CIV            | Y             |
+PRIORITY_5          | HIJ                | Y             |
+PRIORITY_6          | RAD                | Y             |
+PRIORITY_7          | MSAW               | Y             |
+PRIORITY_8          | APMW               | Y             |
+PRIORITY_9          | PRE_STCA           | Y             |
+PRIORITY_10         | DAIW               | Y             |
+PRIORITY_11         | RAIW               | Y             |
+PRIORITY_12         | CLAM               | Y             |
+PRIORITY_13         | RIW                | Y             | 
+PRIORITY_14         | RAM                | Y             |
+--
+--
+--
+/TEST_SOUND_VOLUME_FILE/
+-- WAVE FILENAME | NO. OF CYCLES | COMMENT
+---------------------------------------------------------
+TEST_SOUND       | 1             |                                                           

@@ -1,0 +1,18 @@
+--
+--           File :  ASPB_PARAMETERS.ASF 
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+--
+
+
+--      Version | Date  | Responsible | Comment 
+----------------|-------|-------------|---------
+--              |240311 | K WAN       | 
+
+ASPB_TOTAL_REC_VOICE_CHANNELS          | 1000 
+ASPB_MAX_MIXED_VOICE_CHANNELS          | 4 
+ASPB_MAX_SIMUL_PLAYBACK_VOICE_CHANNELS | 4
+ASPB_TOTAL_PLAYBACK_VOICE_CHANNELS     | 30
+ASPB_MAX_VOICE_REPLAYERS               | 2 

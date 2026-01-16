@@ -1,0 +1,25 @@
+#-----------------------------------------------------------------------------------------#
+#                                                                                         #
+#                            MAESTRO First+ Configuration file                            #
+#                                                                                         #
+#-----------------------------------------------------------------------------------------#
+#                                                                                         #
+# This file contain all the First+ Working position names and their use in Maestro.       #
+# There is one line per First+ Working position with the following format:                #
+#                                                                                         #
+#       <Working Position> <Role> <Session Number>                                        #
+#                                                                                         #
+# Where:                                                                                  #
+#       <Working Position> is the hostname or IP address of the working position          #
+#                                                                                         #
+#       <Role> is APP or ACC or PILOT                                                     #
+#                                                                                         #
+#       <Session Number> is the First+ simulation session number ranging                  #
+#                        from 1 to 3 or 0 if the working position is unused               #
+#                                                                                         #
+# The fields must be separated by one or more Space or Horizontal Tabulation characters   #
+#                                                                                         #
+# Lines beginning with a '#' character in the first column are comment                    #
+# lines and are ignored.                                                                  #
+#                                                                                         #
+#-----------------------------------------------------------------------------------------#

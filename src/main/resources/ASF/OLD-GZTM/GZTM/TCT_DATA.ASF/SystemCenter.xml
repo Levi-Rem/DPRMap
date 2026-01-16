@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systemCenterRoot rdfHalfGreatAxis="6378137.00000000" rdfHalfSmallAxis="6356752.31420000" xmlns="N_DATA_MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="N_DATA_MODEL SystemCenterDM.xsd"><systemCenterPoint><latitude>392955N</latitude><longitude>1163506E</longitude></systemCenterPoint></systemCenterRoot>

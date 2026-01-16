@@ -1,14 +1,17 @@
 // controller/NavPointController.java
 package ll.luolin.controller;
 
-import javafx.beans.property.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import ll.luolin.model.ASFModel.FDP_VOLUMES_DEFINITION_Model;
+import ll.luolin.model.ASFModel.PointModel;
 import ll.luolin.model.NavPointLayerModel;
-import ll.luolin.model.NavPointModel;
-import ll.luolin.service.AsfService;
+import ll.luolin.model.ASFModel.NavPointModel;
+import ll.luolin.service.parserService.CHARACTERISTIC_POINTS_Service;
+import ll.luolin.service.parserService.FDP_VOLUMES_DEFINITION_Service;
+import ll.luolin.utils.ASFFileParser;
 import ll.luolin.utils.LogUtils;
 import ll.luolin.view.MapCanvas;
 
@@ -24,8 +27,14 @@ public class NavPointController {
     private final ObservableList<NavPointLayerModel> navPointLayers =
             FXCollections.observableArrayList();
 
+    private final ASFFileParser ASFFileParser = ll.luolin.utils.ASFFileParser.getInstance();
     private MapCanvas mapCanvas;
-    private final AsfService asfService = AsfService.getInstance();
+    private final CHARACTERISTIC_POINTS_Service CHARACTERISTICPOINTSService = CHARACTERISTIC_POINTS_Service.getInstance();
+
+    // 添加空域相关属性
+    private final ObservableList<FDP_VOLUMES_DEFINITION_Model> FDP_VOLUMES_DEFINITION_MODEL = FXCollections.observableArrayList();
+    private final FDP_VOLUMES_DEFINITION_Service FDP_VOLUMES_DEFINITION_SERVICE = FDP_VOLUMES_DEFINITION_Service.getInstance();
+
 
     public NavPointController() {
         // 初始化
@@ -51,11 +60,12 @@ public class NavPointController {
         File selectedFile = fileChooser.showOpenDialog(stage);
         if (selectedFile != null) {
             try {
+                LogUtils.info("选择的文件：" + selectedFile.getAbsolutePath());
                 // 解析ASF文件
-                List<NavPointModel> points = asfService.parseAsfFile(selectedFile);
+                List<? extends PointModel> points = ASFFileParser.parseASFFile(selectedFile.getAbsolutePath());
 
                 if (points.isEmpty()) {
-                    showWarning("文件内容为空", "未找到有效的导航点数据");
+                    showWarning("文件内容为空:", selectedFile.getName());
                     return;
                 }
 

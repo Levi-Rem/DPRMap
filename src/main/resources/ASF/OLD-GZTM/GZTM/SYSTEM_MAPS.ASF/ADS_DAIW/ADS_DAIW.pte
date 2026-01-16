@@ -1,0 +1,23 @@
+--*
+--*
+--* MAP GENERATOR 	THOMSON-CSF/SDC/BCM
+--*
+--*
+--*       begin of file
+--*
+--*
+--*
+--*  PROJECT ADS_DAIW LIST OF EXTERNAL POINTS 
+--*
+ 0          GEO      22 20  0.0  117 00  0.0
+--
+ 1          GEO      22 20  0.0  118 00  0.0
+--
+ 2          GEO      22 00  0.0  118 00  0.0
+--
+ 3          GEO      22 00  0.0  170 00  0.0
+--
+--*
+--*        end of file
+--*
+--*

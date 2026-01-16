@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TMAConfigurations>
+	<TMAManagers>
+		<TMA name="ZGGG">
+			<Configuration>
+				<Current name="01">
+					<Departure />
+				</Current>
+			</Configuration>
+			<Strategy>
+				<Departure>
+					<Current><Id></Id></Current>
+				</Departure>
+			</Strategy>
+		</TMA>
+	</TMAManagers>
+
+	<Capacity>
+		<RunwayGroup name="SINGLE" airport="ZGGG">
+			<Departure>
+				<Default>
+					<Rate ratePerHour=" 40" />
+					<Pressure time=" 300" aircrafts=" 4" /> 
+				</Default>
+			</Departure>
+		</RunwayGroup>
+		<Airport name="ZGGG">
+			<Departure>
+				<Default>
+					<Rate ratePerHour=" 40" />
+					<Pressure time=" 300" aircrafts=" 4" /> 
+				</Default>
+			</Departure>
+		</Airport>
+
+	</Capacity>
+</TMAConfigurations>

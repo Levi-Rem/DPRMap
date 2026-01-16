@@ -1,0 +1,210 @@
+ ---- 
+-- 
+--  FILE          :  FPL_PARAMETERS.ASF
+--
+--
+--
+--
+--
+--
+
+--  changed  FPL_FINISH_COORD to 90 seconds
+--
+--=======================================+========+========+=======================
+--                                       |        |        |
+--   FPL parameters                      |  VAL A |  VAL B | -- COMMENTS
+--                                       | ACC    | TMA/TWR |
+--=======================================+========+========+=======================
+OUT_OF_ASSOCIATION_DISTANCE_HOLDING      |  3.0NM | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+OUT_OF_ASSOCIATION_DISTANCE              |  8.0NM | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_ETD_RANGE                            |   240  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_CROSSED_SECTOR_MIN_DISTANCE          |   1NM  |   
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_ETB_DELTA                            |    240  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_ESTIMATE_DELTA                       |     5  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_ETD_DELTA                            |    20  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_COOR_AREA_X                          |   10NM |               --5nm orig //2005-8-10 03:16 utc changed     
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_COOR_AREA_Y                          |   10NM |               --5nm orig //2005-8-10 03:16 utc changed 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_GRIBDATA_UNVALID                     |     5  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+MAX_TIME_BETWEEN_POINTS			 |     4  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+--FPL_ETO_DELTA                            |     3  |                
+FPL_ETO_DELTA                            |    60  |                
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_ETO_REPPOINT                         |     3  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_WARNING_FREE_SSR_THRESHOLD           |    20  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_NO_WARNING_FREE_SSR_THRESHOLD        |    25  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+DEFAULT_CODE_FREEZING_PERIOD             |     5  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_UTILIZATION_WARNING_LEVEL            |    80  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_UTILIZATION_DELTA_LEVEL              |     5  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+MAX_PROFILE_RADAR_LEVEL_DISCREPANCY      |   F10  |               
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+ATD_OR_ATA_DELAY                         |    59  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+REFERENCE_TIME_DELAY                     |     0  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+DEFAULT_LEVEL_FOR_VFR                    | 1100FT | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+COP_LOOK_BACKWARD_TIME                   |    15  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+COP_LOOK_FORWARD_TIME                    |    15  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_AOC_RCP_TIMEOUT                      |     2  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_TM_PERIOD                            |     1  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_TM_LOOK_AHEAD_TIME                   |    90  |               --30 min orig //2005-8-10 03:16 utc changed 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_POS_REP_DELTA                        |    30  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+MINIMAL_DISTANCE_FOR_HEADING_COMPUTATION |  3.0NM |  
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_FINISH_DECOUPLE                      |     5  |     5  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_PREACTIVE_POSTING_HORIZON            |    15  |    15  |     15  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_COORDINATE_POSTING_HORIZON           |    15  |    15  |     15  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_FINISH_PREACT                        |   240  |   240  |    240  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_FINISH_COORD                         |    90  |    90  |     90  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+--FPL_FINISH_CON                         |    60  |    60  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_FINISH_END                           |    5   |    5   |     5   |   ----5min 2005-10-26
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_TRNG_AUTO_ACCEPT                     |     1  |     1  |      1  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_INBTOC_ACT                           |    30  |    30  |     30  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_INBNOTOC_ACT                         |    30  |    30  |     30  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+PREACTIVATED_DEPARTURE_CHANGE_TIME       |    30  |    30  |     30  | --2005_1_5
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+PREACTIVATED_INBOUND_CHANGE_TIME         |    40  |    40  |     40  |--2005_1_5   45 MIN ORIG
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_HAND_OFF_FIRST_WITH_TOC              |     0  |     0  |      0  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+CANCELLED_CHANGE_TIME                    |     5  |     5  |      5  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+HAND_OFF_LIMIT_TIME                      |     2  |     2  |      2  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+DELETE_ON_ACCEPT_DELAY                   |     3  |     3  |      3  |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+ACTIVE_EXITING_OUTPUT_TIME               |    25  |   25   |    25   |--2005_1_5
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+ACTIVE_LANDING_OUTPUT_TIME               |    25  |   25   |    25   |--2005_1_5
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_STAR_ALLOC                           |    40  |   40   |    40   |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_REF_LOCATION_FOR_CPL_RX              | 232333N1131833E | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_HOLDING_DELAY_TIME                   |    7   | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_FINISH_SAR                           |    2   |    2   |     2   |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_LFL_UFL_RANGE                        |    F5   | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FLOW_SEQ_TIME_AREA                       |   45   | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+--MAX_HOURS_IN_THE_FUTURE                  |   48  | 
+
+MAX_HOURS_IN_THE_FUTURE                  |   120  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_FINISH_FUTURE                        |    30  |   30 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+PAST_DATABASE_DELETE_TIME                |    24  | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_MPR_ALERT_TOLERANCE                  |   5    | 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+-- NON_RVSM_HIGHLIGHT_LEVEL          --  |   F310 | 
+-- NON_RVSM_HIGHLIGHT_LEVEL                 |   S0680| 
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_ARR_TIMEOUT                          |   200  |  -- FPL_ARR_TIMEOUT : time duration, within which if the 
+--                                       |        |  -- system does not receive the second APR following the 
+--                                       |        |  -- first such report when the aircraft enters the runway 
+--                                       |        |  -- ARR circle centred around the R/W threshold, the ARR 
+--                                       |        |  -- message will then be sent to the addresses defined in 
+--                                       |        |  -- the CITY PAIR table in the FD_EX file by the FDP automatically
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+ETO_CHANGE_WARNING_THRESHOLD             |    0   |         ---3 orig      
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+ETO_WARNING_LOOK_AHEAD                   |    0   |                 20 orig
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+FPL_COORDINATED_DELTA                    |    5   |    5   |    5   |
+--  -  -  -  -  -  -  -  -  -  -  -  -   +--------+--------+  -  -  -  -  -  -  -  -  - 
+
+-- new for EXV5
+--
+DEFAULT_VERTICAL_HAND_OFF_TIME           |    1   |    1   |    1   |
+DEFAULT_HORIZONTAL_HAND_OFF_TIME         |    1   |    1   |    1   |
+DEFAULT_VERTICAL_HAND_OFF_DISTANCE       |   5NM  |   5NM  |   5NM  |
+DEFAULT_HORIZONTAL_HAND_OFF_DISTANCE     |   5NM  |   5NM  |   5NM  |
+DELETE_ON_ACCEPT_DISTANCE                |   10NM |   10NM |   10NM |
+DELETE_ON_REJECT_DELAY                   |    0   |     0  |     0  |
+DELETE_ON_REJECT_DISTANCE                |    0NM |    0NM |    0NM |
+FPL_SYSTEM_POSITION_UPDATE_TIME          | 240  | --(seconds)
+FPL_ETO_DISCREPANCY_MAX_ALLOWED          | 360  | --(seconds)
+RVSM_BAND_FLOOR                          | 290  |
+FPL_BACKUP_PERIOD                        |  40  |
+--SAVE AT TIME AFTER START
+FPL_BACKUP_START                         |  60  |
+FPL_BACKUP_TRANSFER                      |   1  |
+FPL_TRANSITION_FIX_AREA_X                | 5NM  |
+FPL_TRANSITION_FIX_AREA_Y                | 5NM  |
+FPL_SURVEILLANCE_TAG_SSR_LIFETIME        |   4  |
+TIME_PAST_ENTRY_POINT                    |  120 |
+FPL_833_TRANSITION_LEVEL                 | F290 | --8.33 capability is only displayed in label above F460
+RVSM_LOWER_LIMIT                         | F290 |...
+RVSM_UPPER_LIMIT                         | F410 |
+FPL_EOBT_DELTA                           |   0  |
+FPL_RESET_CSN_TOLERANCE                  |   0  |
+FPL_MIN_TIME_FOR_RESEQUENCE_NOTIFICATION    |   3 |
+FPL_LIMIT_TIME_FOR_RESEQUENCE_NOTIFICATION  |  60 |
+FPL_MIN_TIME_FOR_GROUND_DELAY_NOTIFICATION  |   3 |
+OUT_OF_ASSOC_DISTANCE_DPE_PT             | 1.0  | --NM
+FPL_POINT_VICINITY                       |   1  |
+FPL_STRIP_PRINT_TARGET                   | PRINT_FUNC_SEC | --Not used in ATMAS
+EXT_RPL_UPGRADE_INACT_STATE              | 0400 | 0400 |
+FPL_833_OPTION                           |   N  | --8.33kHz processing disabled
+RVSM_MILITARY_EXEMPT                     |   N  |
+FLOW_SEQ_IN_FDRG_ONLY                    |   N  |
+ENABLE_ALT_MANUAL_STRIP_LIST             |   Y  |
+FPL_AUTOMATIC_RESET_OF_CSN               |   N  |
+QUEUING_FOR_REDUCED_FIELD_10A            |   N  |
+CONSECUTIVE_CODED_ROUTES                 |   Y  |
+RVSM_STS_AUTO_EXEMPT                     |   N  |
+NON_RVSM_HIGHLIGHT_LEVEL                 | F285 |
+FPL_DEPARTURE_COORDINATION_DELAY         |   20  |
+FDEXM_SYNTAX_CORRECTION_ENABLED | FALSE |
+AIRCRAFT_TYPE_SUBSTITUTION      | B737  |
+WAKE_TURBULENCE_SUBSTITUTION    | M     |
+RFL_SUBSTITUTION                | S0800 |
+TAS_SUBSTITUTION                | N0333 |
+TWR_SSR_AT_COORD                | FALSE |
+TWR_SSR_AT_DECOORD              | FALSE |
+
+--add for gtma 
+METEO_GRIB_NADIA_FORMAT         | Y  |
+MAX_PROFILE_NFL_DISCREPANCY     | F10|
+--MAX_PROFILE_ETN_DISCREPANCY     | 1  |
+FDEXM_UPDT_PERIOD               | 10 |
+CTMA_TRIGGER_THRESHOLD          | 2  |
+FPL_FIPS_COORDINATION_ENABLE    | Y  |
+ENABLE_IFPLID_CREATION          |TRUE| 
+ENABLE_CRWY_RECEPTION_FROM_FIPS | Y  |

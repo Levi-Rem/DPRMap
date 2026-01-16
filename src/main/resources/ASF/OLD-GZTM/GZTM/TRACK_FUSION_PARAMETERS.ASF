@@ -1,0 +1,77 @@
+----------------------------------------------------------
+--	                                                --
+--             TRACK_FUSION_PARAMETERS.ASF              --
+--	                                                --
+----------------------------------------------------------
+ 
+--
+-- mjm 2/3/04 taking values from MRTS_PARAMETERS.ASF
+-- Credibility factor initialization value in position criterion
+MRT_CREDIBILITY_FACTOR_INIT | 20
+
+-- COEFFICIENT USED TO COMPUTE CREDIBILITY FACCOR IN POSITION CRITERION
+MRT_CREDIBILITY_FACTOR_COEF | 2 
+
+-- VALUE THAT MUST REACH CREDIBILITY FACTGOR TO ALLOW ASSOCIATION 
+-- BETWEEN LOCAL AND SYSTEM TRACKS
+MRT_CREDIBILITY_LEVEL | 20 
+
+-- VALUE THAT MUST REACH CREDIBILITY FACTOR TO ALLOW ASSOCIATION
+-- KEEPING OF TWO COMPAREDD LOCAL TRACKS
+MRT_CREDIBILITY_LEVEL_2 | 15 
+
+ 
+
+-- Minimum value of MTQ used in choice of local tracks taken into 
+-- account for system track updating
+MRT_MTQ_THRESHOLD | 15 
+ 
+-- Minimum speed to peform speed criteria
+MRT_SPEED_BASIS | N0100 
+
+-- Offset to add to credibility factor when speed criterion is satisfied
+MRT_SATISFIED_SPEED_OFFSET | 8
+-- Offset to add to credibility factor when speed criterion is not
+-- satisfied
+MRT_NOT_SATISFIED_SPEED_OFFSET | -8.0
+ 
+MRT_SPEED_ERROR_RATIO | 0.85
+
+MRT_MTQ_THRESHOLD_SSR | 12.0
+
+MRT_COMPATIBLE_ALTITUDE_OFFSET | 10.0
+
+MRT_NOT_COMPATIBLE_ALTITUDE_OFFSET | -10.0
+
+MRT_DELTA_WEIGHT | 0.5
+
+
+MRT_ALLOWED_ASSOCIATIONS_TABLE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | 
+
+
+
+MRT_RADAR_DISTANCE_AREA_TABLE | 50.0NM | 128.0NM | 255.0NM |
+
+
+MRT_POS_WINDOW_SIZE_PRIMARY_TABLE |2.0NM |2.0NM |4.0NM |4.0NM |
+
+MRT_POS_WINDOW_SIZE_SECONDARY_TABLE |2.0NM |2.0NM |4.0NM |4.0NM |
+
+MRT_POS_WINDOW_SIZE_COMBINED_TABLE|2.0NM |2.0NM |4.0NM |4.0NM |
+
+MRT_ALTITUDE_ALLOWED_DIFFERENCE | F30
+
+MRT_MONOPULSE_RADAR_COEF |1500.0
+
+MRT_SSR_CRITERION_OFFSET | 10.0 |-10.0 | 0.0 | -5.0 | 0.0 | 0.0 | 
+                            0.0 | -5   | 8.0 | -8.0 | 0.0 | 0.0 | 
+                            0.0 |  0.0 | 0.0 | 0.0  | 8.0 | -8.0|
+
+    
+
+
+
+
+
+ 
+

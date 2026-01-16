@@ -1,0 +1,70 @@
+--
+--           FILE :  ILS.ASF 
+--
+--
+-- CREATION DATE  :  
+-- BY		  :  
+-- VERSION	  :  
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+--
+--ZGGG 
+
+--
+/ILS/
+02IBB       | ZGGG   | 02L  |
+--
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232232N1131819E   | 014     | 30 | 7.1KM |  14M    | 0900M | 
+--
+--
+/ILS/
+20IAA       | ZGGG   | 20R  |
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232426N1131850E   | 194     | 30 | 8.0KM |  15M    | 0800M | 
+--
+--
+/ILS/
+01IOO       | ZGGG   | 01  |
+--
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232237N1131701E   | 014     | 30 | 7.1KM |  12M    | 1200M | 
+--
+--
+/ILS/
+19IPP       | ZGGG   | 19  |
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232430N1131731E   | 194     | 30 | 8.1KM |  13M    | 1200M | 
+--
+--
+/ILS/
+02IDM       | ZGGG   | 02R  |
+--
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232210N1131828E   | 014     | 30 | 5.2KM |  13M    | 0900M | 
+--
+--
+/ILS/
+20IXL       | ZGGG   | 20L  |
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232410N1131900E   | 194     | 30 | 4.2KM |  13M    | 0800M | 
+--

@@ -1,0 +1,28 @@
+--
+--
+--  FILE: SENSOR_AREA_OF_INTEREST.ASF
+--
+-- CREATION DATE  :  25 Mar 2011
+-- BY             :  Kwang Wan
+-- VERSION        :  Initial
+--
+--
+--      Version | Date  | Responsible | Comment
+----------------|-------|-------------|---------------------------------------
+--      Initial |250311 | K WAN       | Initial
+--
+--
+/POINTS/
+-- Point name | Point position
+-------------------------------
+
+/ARCS/
+
+/RHUMB_LINES/
+
+/AREAS/
+
+-- AOI area Id | min_level | max_level | limit points
+----------------------------------------------------------------------------------
+--AOIBIG | 000 | 650 | NW004 NE004 ME004 SW001 SW002 NW006
+

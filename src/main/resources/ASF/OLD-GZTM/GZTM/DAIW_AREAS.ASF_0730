@@ -1,0 +1,261 @@
+--  
+--
+--
+--  CREATION DATE :  sep, 2015
+--  BY            :  lee
+--  VERSION       :  ISIM_01
+--
+--
+--
+--      Version | Date    | Responsible  | Comment 
+----------------|---------|------------- |----------------------------------
+--     ISIM_01  | 01/04/03| ZHONG  YAN   | NESACC SHANGHAI FAT
+--
+--
+--
+-- 
+
+---------------------------------------------------------------------------------- 
+--  CREATION DATE :  17,SEP 2014
+--  BY            :  Sun Hao
+--  VERSION       :  NEUP 1.0
+--
+--
+--		
+--      Version | Date        | Responsible  | Comment 
+----------------|-------------|------------- |----------------------------------
+--    NEUP 1.0  | 17,SEP 2014 |      S.H     | FOR  NEUP  SAT
+--
+ 
+--
+/POINTS/
+--HYHD
+--  HY1  | 231716N1140218E |
+--  HY2  | 235452N1143420E |
+--  HY3  | 224716N1143420E |
+--  HY4  | 224354N1140240E |
+--  HY5  | 225103N1140001E |
+--  HY6  | 230534N1140001E |
+--  HY7  | 230651N1141010E |
+
+--SSF35K
+-- SSF_3  | 232432N1130416E |
+-- SSF_7  | 230659N1124335E |
+
+--CC301
+ CC_1  | 231317N1132203E |
+ CC_2  | 230626N1133609E |
+ CC_3  | 225256N1132859E |
+ CC_4  | 224808N1131609E |
+ CC_5  | 230917N1131835E |
+
+--SS
+-- SS_1  | 235128N1123427E |
+-- SS_2  | 234741N1130559E |
+-- SS_3  | 230651N1130259E |
+-- SS_4  | 230708N1122850E |
+-- SS_5  | 233817N1122554E |
+
+--FS35K
+ FS35KC| 230531N1130358E |
+ FS35KA| 230539N1124331E |
+ FS35KB| 232401N1130824E |
+
+--FS2V
+ FS2V_1| 230341N1122905E |
+ FS2V_2| 230036N1131107E |
+ FS2V_3| 223159N1132108E |
+ FS2V_4| 221510N1125351E |
+ FS2V_5| 224940N1121320E |
+
+--NB
+ NB_1  | 230917N1131703E |
+ NB_2  | 230917N1131836E |
+ NB_3  | 230625N1131836E |
+ NB_4  | 230625N1131703E |
+
+--FS30KM FS35KM
+ FS01  | 232149N1130448E |
+ FS02  | 232058N1130840E |
+ FS03  | 232040N1130937E |
+ FS04  | 232013N1131031E |
+ FS05  | 231938N1131117E |
+ FS06  | 231857N1131156E |
+ FS07  | 231808N1131229E |
+ FS08  | 231714N1131251E |
+ FS09  | 231619N1131303E |
+ FS10  | 231525N1131305E |
+ FS11  | 231429N1131255E |
+ FS12  | 225827N1130843E |
+ FS13  | 225908N1130551E |
+ FS14  | 230525N1130400E |
+ FS15  | 230537N1124628E |
+ FS16  | 230746N1124637E |
+ FS17  | 230959N1124709E |
+ FS18  | 231148N1124749E |
+ FS19  | 231342N1124854E |
+ FS20  | 231523N1125003E |
+ FS21  | 231707N1125144E |
+ FS22  | 231833N1125329E |
+ FS23  | 231937N1125520E |
+ FS24  | 232034N1125728E |
+ FS25  | 232111N1125937E |
+ FS26  | 232139N1130156E |
+ FS27  | 232154N1130446E |
+ FS28  | 230547N1124334E |
+ FS29  | 230810N1124344E |
+ FS30  | 231045N1124420E |
+ FS31  | 231245N1124503E |
+ FS32  | 231509N1124623E |
+ FS33  | 231702N1124741E |
+ FS34  | 231901N1124939E |
+ FS35  | 232035N1125132E |
+ FS36  | 232200N1125358E |
+ FS37  | 232304N1125623E |
+ FS38  | 232348N1125857E |
+ FS39  | 232418N1130120E |
+ FS40  | 232427N1130455E | 
+
+
+--HY
+ HY_1  | 232127N1140523E |
+-- HY_2  | 233827N1141955E |
+ HY_3  | 235313N1143211E |
+ HY_4  | 224651N1143806E |
+ HY_5  | 224419N1141323E |
+ HY_6  | 224816N1140713E |
+ HY_7  | 230635N1140434E |
+-- HY_8  | 230714N1140925E |
+ HY_9  | 230720N1140909E |
+ HY_10 | 231600N1140607E |
+
+--X63N20
+HYN20_1| 224652N1143801E |
+HYN20_2| 224416N1141322E |
+HYN20_3| 224818N1140709E | 
+--HYN20_4| 230635N1140434E | 
+--HYN20_5| 230720N1140909E | HY_9
+--HYN20_6| 231600N1140607E | HY_10
+HYN20_7| 231830N1140546E | 
+HYN20_8| 232208N1143458E | 
+
+
+--FS35KM & FS35NO
+ DA200 | 230507N1124345E |
+ DA201 | 232356N1130441E | 
+ DA202 | 232156N1130441E |
+ DA203 | 232106N1130822E |
+ DA204 | 231439N1131252E |
+ DA205 | 225829N1130843E |
+ DA206 | 225915N1130547E |
+ DA207 | 230359N1130454E |
+ DA208 | 230500N1130412E |
+ DA209 | 231546N1130707E |
+ DA210 | 230414N1131011E |
+ DA211 | 230452N1130705E |
+ DA212 | 230404N1130654E |
+ DA213 | 230358N1130536E |
+ DA214 | 230159N1130936E |
+
+--SSFS16&SSFS12  20240226  by jiajun
+ DA300 | 234402N1130644E |
+ DA301 | 234218N1130655E |
+ DA302 | 233618N1130608E |
+ DA303 | 232548N1130441E |
+ DA304 | 233817N1131027E |
+ DA305 | 232657N1131146E |
+ DA306 | 231957N1131054E |
+ DA307 | 232038N1130948E |
+ DA308 | 232107N1130820E |
+ DA309 | 232156N1130442E |
+ DA310 | 234204N1130435E |
+ DA311 | 234449N1130248E |
+ DA312 | 234629N1125840E |
+ DA313 | 234726N1125821E |
+ DA314 | 234240N1130105E |
+ DA315 | 232548N1130440E |
+
+
+
+
+
+/ARCS/
+FS35K_AR| FS35KA | FS35KB | 230531N1130358E | HI
+FS30KMAR | FS15 | FS27 | 230525N1130400E | HI
+--FS35KMAR | FS28 | FS40 | 230525N1130400E | HI
+FS35KMA1 | DA200| DA201| 230500N1130412E | HI   --centre point is DA208
+FS35KMA2 | DA203| DA204| 231546N1130707E | HI   --centre point is DA209
+SSFS16   | DA313| DA300| 234240N1130105E | HI   --centre point is DA314
+--
+--
+/RHUMB_LINES/
+--
+--
+
+/VOLUMES/
+--
+--name |FPCF|FLOOR  | CEILING|  limit points(max 16)
+------------------------------------------------------------
+-- HYHD   | y  |    0M |  6000M | HY1 HY2 HY3 HY4 HY5 HY6 HY7
+ CC301  | y  |    0M |  1490M | CC_1 CC_2 CC_3 CC_4 CC_5 
+-- SS     | y  |    0M |  2090M | SS_1 SS_2 SS_3 SS_4 SS_5
+-- SSF35K | y  |    0M |  2090M | SS_1 SS_2 SSF_3 FS35KB FS35KC FS35KA SSF_7 SS_4 SS_5 
+-- FS35K  | y  |    0M |  1790M | FS35KA FS35K_AR FS35KB FS35KC
+ FS2V   | y  |    0M |  6000M | FS2V_1 FS2V_2 FS2V_3 FS2V_4 FS2V_5
+ NB     | y  |    0M |  2390M | NB_1 NB_2 NB_3 NB_4
+ HY     | y  |    0M |  5990M | HY_1 HY_3 HY_4 HY_5 HY_6 HY_7 HY_9 HY_10
+ X63N20  | y  |    0M |  5990M | HYN20_1 HYN20_2 HYN20_3 HY_7 HY_9 HY_10 HYN20_7 HYN20_8
+ FS30KM  | y  |    0M |  1790M |  FS01 FS02 FS03 FS04 FS05 FS06 FS07 FS08 FS09 FS10 FS11 FS12 FS13 FS14 FS15 FS30KMAR FS27 
+-- FS35KM  | y  |    0M |  1790M |  FS01 FS02 FS03 FS04 FS05 FS06 FS07 FS08 FS09 FS10 FS11 FS12 FS13 FS14 FS28 FS35KMAR FS40 
+ FS35KM | y | 0M | 1790M | DA200 FS35KMA1 DA201 DA202 DA203 FS35KMA2 DA204 DA210 DA211 DA212 DA213 DA214 DA205 DA206 DA207 DA208
+ FS35NO  | y  |    0M |  1790M |  DA200 FS35KMA1 DA201 DA202 DA207 DA208
+ FSE18   | y  |    0M |  1790M |  DA202 DA203 FS35KMA2 DA204 DA210 DA211 DA212 DA213 DA214 DA205 DA206 DA207
+ SSFS12  | y  |    0M |  1190M |  DA302 DA304 DA305 DA306 DA307 DA308 DA309 DA303
+ SSFS16  | y  |    0M |  1590M |  DA303 DA315 DA310 DA311 DA312 DA313 SSFS16 DA300 DA301 DA302
+--
+--
+/DAIW_ACTIVITY/
+--
+
+--name     | GCP | LINE TYPE  | Sur typ |   pattn type  | dash tupe| p1         | p2        | p3 | p4 |
+------------------------------------------------------------------------------------------------------------
+  CC301   |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+  FS2V    |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+  NB      |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+  HY      |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+  FS30KM  |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+  FS35KM  |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+  FS35NO  |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+  FSE18   |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+ SSFS12   |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+ SSFS16   |  HI | THIN       |     N   |	 2     | DASH_DOT | 
+|           |     |         |               |  |||| 
+--
+ X63N20    |  HI | THIN       |     N   |         2     | DASH_DOT |
+|           |     |         |               |  ||||
+
+DAIW_PRE_DISPLAY_TIME  | 180
+
+DAIW_POST_DISPLAY_TIME | 10
+
+PRE_ACTIVE_DAIW_ATTRIBUTES  |  THIN |   N     |  0      | DASH_DOT |
+
+ACTIVE_DAIW_ATTRIBUTES      | THICK |   N     |  0      | SOLID    |
+
+POST_ACTIVE_DAIW_ATTRIBUTES |  THIN |   N     |  0      | FINE     |

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE AmanHmiConfiguration [
+<!ELEMENT AmanHmiConfiguration (MainTmas | MainRunways | ParticularizedRunways | AuthorizedTmas | GeneralAuthorizedRunways | ArrivalAuthorizedRunways | AuthorizedFeeders | AuthorizedMeteringFixs | AuthorizedSectors | DepartureAuthorizedRunways | AuthorizedSids | AuthorizedTransitionFixs | Views | DisplayOptions | General_CommandOptions | Arrival_CommandOptions | Departure_CommandOptions | AutomaticCoordinationOptions)>
+<!ELEMENT MainTmas (MainTma*)>
+<!ELEMENT MainRunways (MainRunway*)>
+<!ELEMENT ParticularizedRunways (ParticularizedRunway*)>
+<!ELEMENT AuthorizedTmas (AuthorizedTma*)>
+<!ELEMENT GeneralAuthorizedRunways (GeneralAuthorizedRunway*)>
+<!ELEMENT ArrivalAuthorizedRunways (ArrivalAuthorizedRunway*)>
+<!ELEMENT AuthorizedFeeders (AuthorizedFeeder*)>
+<!ELEMENT AuthorizedMeteringFixs (AuthorizedMeteringFix*)>
+<!ELEMENT AuthorizedSectors (AuthorizedSector*)>
+<!ELEMENT DepartureAuthorizedRunways (DepartureAuthorizedRunway*)>
+<!ELEMENT AuthorizedSids (AuthorizedSid*)>
+<!ELEMENT AuthorizedTransitionFixs (AuthorizedTransitionFix*)>
+<!ELEMENT Views (View*)>
+<!ELEMENT View (ViewSide*)>
+<!ELEMENT ViewSide (ArrivalFields? | DepartureFields? | Timeline*)>
+<!ELEMENT ArrivalFields (ArrivalField*)>
+<!ELEMENT DepartureFields (DepartureField*)>
+<!ELEMENT Timeline (Axis*)>
+<!ELEMENT Axis (RunwayFilters? | FeederFilters? | MeteringFixFilters? | SectorFilters?)>
+<!ELEMENT RunwayFilters (RunwayFilter*)>
+<!ELEMENT FeederFilters (FeederFilter*)>
+<!ELEMENT MeteringFixFilters (MeteringFixFilter*)>
+<!ELEMENT SectorFilters (SectorFilter*)>
+<!ELEMENT SidFilters (SidFilter*)>
+<!ELEMENT DisplayOptions (DisplayOption*)>
+<!ELEMENT General_CommandOptions (General_CommandOption*)>
+<!ELEMENT Arrival_CommandOptions (Arrival_CommandOption*)>
+<!ELEMENT Departure_CommandOptions (Departure_CommandOption*)>
+<!ELEMENT AutomaticCoordinationOptions (AutomaticCoordinationOption*)>
+<!ELEMENT ArrivalField EMPTY>
+<!ELEMENT DepartureField EMPTY>
+<!ELEMENT RunwayFilter EMPTY>
+<!ELEMENT FeederFilter EMPTY>
+<!ELEMENT MeteringFixFilter EMPTY>
+<!ELEMENT SectorFilter EMPTY>
+<!ELEMENT SidFilter EMPTY>
+<!ELEMENT DisplayOption EMPTY>
+<!ELEMENT General_CommandOption EMPTY>
+<!ELEMENT Arrival_CommandOption EMPTY>
+<!ELEMENT Departure_CommandOption EMPTY>
+<!ELEMENT AutomaticCoordinationOption EMPTY>
+<!ATTLIST AmanHmiConfiguration
+    style CDATA #REQUIRED>
+<!ATTLIST MainTmas
+    list CDATA #REQUIRED>
+<!ATTLIST MainTma
+    value CDATA #REQUIRED>
+<!ATTLIST MainRunways
+    list CDATA #REQUIRED>
+<!ATTLIST MainRunway
+    value CDATA #REQUIRED>
+<!ATTLIST ParticularizedRunways
+    list CDATA #REQUIRED>
+<!ATTLIST ParticularizedRunway
+    value CDATA #REQUIRED>
+<!ATTLIST AuthorizedTmas
+    list CDATA #REQUIRED>
+<!ATTLIST AuthorizedTma
+    value CDATA #REQUIRED>
+<!ATTLIST GeneralAuthorizedRunways
+    list CDATA #REQUIRED>
+<!ATTLIST GeneralAuthorizedRunway
+    value CDATA #REQUIRED>
+<!ATTLIST ArrivalAuthorizedRunways
+    list CDATA #REQUIRED>
+<!ATTLIST ArrivalAuthorizedRunway
+    value CDATA #REQUIRED>
+<!ATTLIST AuthorizedFeeders
+    list CDATA #REQUIRED>
+<!ATTLIST AuthorizedFeeder
+    value CDATA #REQUIRED>
+<!ATTLIST AuthorizedMeteringFixs
+    list CDATA #REQUIRED>
+<!ATTLIST AuthorizedMeteringFix
+    value CDATA #REQUIRED>
+<!ATTLIST AuthorizedSectors
+    list CDATA #REQUIRED>
+<!ATTLIST AuthorizedSector
+    value CDATA #REQUIRED>
+<!ATTLIST DepartureAuthorizedRunways
+    list CDATA #REQUIRED>
+<!ATTLIST DepartureAuthorizedRunway
+    value CDATA #REQUIRED>
+<!ATTLIST AuthorizedSids
+    list CDATA #REQUIRED>
+<!ATTLIST AuthorizedSid
+    value CDATA #REQUIRED>
+<!ATTLIST AuthorizedTransitionFixs
+    list CDATA #REQUIRED>
+<!ATTLIST AuthorizedTransitionFix
+    value CDATA #REQUIRED>
+<!ATTLIST View
+    name CDATA #REQUIRED
+    mode CDATA #REQUIRED
+    scale CDATA #REQUIRED
+    direction CDATA #REQUIRED>
+<!ATTLIST ViewSide
+    side CDATA #REQUIRED
+    visible CDATA #REQUIRED
+    reference CDATA #REQUIRED
+    offset CDATA #REQUIRED>
+<!ATTLIST ArrivalField
+    content CDATA #REQUIRED
+    color CDATA #REQUIRED
+    bold CDATA #REQUIRED
+    italic CDATA #REQUIRED
+    font_size CDATA #REQUIRED>
+<!ATTLIST DepartureField
+    content CDATA #REQUIRED
+    color CDATA #REQUIRED
+    bold CDATA #REQUIRED
+    italic CDATA #REQUIRED
+    font_size CDATA #REQUIRED>
+<!ATTLIST Timeline
+    index CDATA #REQUIRED
+    visible CDATA #REQUIRED
+    show_arrival_rates CDATA #REQUIRED
+    show_departure_rates CDATA #REQUIRED>
+<!ATTLIST Axis
+    side CDATA #REQUIRED
+    visible CDATA #REQUIRED
+    show_extra_flight CDATA #REQUIRED>
+<!ATTLIST RunwayFilters
+    list CDATA #REQUIRED>
+<!ATTLIST RunwayFilter
+    value CDATA #REQUIRED>
+<!ATTLIST FeederFilters
+    list CDATA #REQUIRED>
+<!ATTLIST FeederFilter
+    value CDATA #REQUIRED>
+<!ATTLIST MeteringFixFilters
+    list CDATA #REQUIRED>
+<!ATTLIST MeteringFixFilter
+    value CDATA #REQUIRED>
+<!ATTLIST SectorFilters
+    list CDATA #REQUIRED>
+<!ATTLIST SectorFilter
+    value CDATA #REQUIRED>
+<!ATTLIST SidFilters
+    list CDATA #REQUIRED>
+<!ATTLIST SidFilter
+    value CDATA #REQUIRED>
+<!ATTLIST DisplayOption
+    name CDATA #REQUIRED
+    value CDATA #REQUIRED>
+<!ATTLIST General_CommandOption
+    name CDATA #REQUIRED
+    value CDATA #REQUIRED>
+<!ATTLIST Arrival_CommandOption
+    name CDATA #REQUIRED
+    value CDATA #REQUIRED>
+<!ATTLIST Departure_CommandOption
+    name CDATA #REQUIRED
+    value CDATA #REQUIRED>
+<!ATTLIST AutomaticCoordinationOption
+    name CDATA #REQUIRED
+    value CDATA #REQUIRED>
+]>
+<AmanHmiConfiguration style="Default" >
+  <MainTmas list="FULL" />
+  <MainRunways list="FULL" />
+  <ParticularizedRunways list="FULL" />
+  <AuthorizedTmas list="FULL" />
+  <GeneralAuthorizedRunways list="FULL" />
+  <ArrivalAuthorizedRunways list="FULL" />
+  <AuthorizedFeeders list="FULL" />
+  <AuthorizedMeteringFixs list="FULL" />
+  <AuthorizedSectors list="FULL" />
+  <DepartureAuthorizedRunways list="FULL" />
+  <AuthorizedSids list="FULL" />
+  <AuthorizedTransitionFixs list="FULL" />
+  <Views>
+    <View name="ZGGG" mode="EXPORT" scale="30" direction="TOP_TO_BOTTOM" >
+      <ViewSide side="SIDE1" visible="TRUE" reference="RUNWAY_STA_MTOT" offset="0" >
+        <ArrivalFields>
+          <ArrivalField content="Sta_Mm" color="Trajectory_Color" bold="TRUE" italic="TRUE" font_size="1" />
+          <ArrivalField content="Call_Sign" color="Arrival_Status_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Complete_Type" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Dt_Current" color="Current_App_Delay_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Priority" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </ArrivalFields>
+        <DepartureFields>
+          <DepartureField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </DepartureFields>
+        <Timeline index="1" visible="TRUE" show_arrival_rates="TRUE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="FALSE" show_extra_flight="FALSE" />
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="PARTIAL" >
+              <RunwayFilter value="ZGGG/01" />
+              <RunwayFilter value="ZGGG/19" />
+            </RunwayFilters>
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="2" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="PARTIAL" >
+              <RunwayFilter value="ZGGG/02L" />
+              <RunwayFilter value="ZGGG/20R" />
+            </RunwayFilters>
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="PARTIAL" >
+              <RunwayFilter value="ZGGG/02R" />
+              <RunwayFilter value="ZGGG/20L" />
+            </RunwayFilters>
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="3" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+        <Timeline index="4" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+      </ViewSide>
+      <ViewSide side="SIDE2" visible="FALSE" reference="RUNWAY_STA_MTOT" offset="0" />
+      <ViewSide side="SIDE3" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE4" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE5" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE6" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE7" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE8" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+    </View>
+    <View name="FF" mode="APP_FRANCE" scale="40" direction="BOTTOM_TO_TOP" >
+      <ViewSide side="SIDE1" visible="TRUE" reference="RUNWAY_STA_NONE" offset="0" >
+        <ArrivalFields>
+          <ArrivalField content="Speed_Advisory" color="Arrival_Status_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Sta_Ff_Mm" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Complete_Type" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Dc_Current" color="Metering_Fix_Constraints_Status_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Arrival Runway" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Reduced_Type" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </ArrivalFields>
+        <DepartureFields>
+          <DepartureField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </DepartureFields>
+        <Timeline index="1" visible="TRUE" show_arrival_rates="TRUE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="PARTIAL" >
+              <FeederFilter value="GYA" />
+            </FeederFilters>
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="2" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="3" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="4" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+      </ViewSide>
+      <ViewSide side="SIDE2" visible="TRUE" reference="RUNWAY_STA_NONE" offset="-10" >
+        <ArrivalFields>
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </ArrivalFields>
+        <DepartureFields>
+          <DepartureField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </DepartureFields>
+        <Timeline index="1" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="2" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="3" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="4" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+      </ViewSide>
+      <ViewSide side="SIDE3" visible="TRUE" reference="RUNWAY_STA_NONE" offset="0" >
+        <ArrivalFields>
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </ArrivalFields>
+        <DepartureFields>
+          <DepartureField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </DepartureFields>
+        <Timeline index="1" visible="TRUE" show_arrival_rates="FALSE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="2" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+        <Timeline index="3" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+        <Timeline index="4" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+      </ViewSide>
+      <ViewSide side="SIDE4" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE5" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE6" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE7" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE8" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+    </View>
+    <View name="TEXT" mode="EXPORT" scale="30" direction="TOP_TO_BOTTOM" >
+      <ViewSide side="SIDE1" visible="TRUE" reference="RUNWAY_STA_MTOT" offset="0" >
+        <ArrivalFields>
+          <ArrivalField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </ArrivalFields>
+        <DepartureFields>
+          <DepartureField content="Call_Sign" color="Constant_Color" bold="FALSE" italic="FALSE" font_size="0" />
+        </DepartureFields>
+        <Timeline index="1" visible="TRUE" show_arrival_rates="TRUE" show_departure_rates="FALSE" >
+          <Axis side="LEFT" visible="FALSE" show_extra_flight="FALSE" />
+          <Axis side="RIGHT" visible="TRUE" show_extra_flight="FALSE" >
+            <RunwayFilters list="FULL" />
+            <FeederFilters list="FULL" />
+            <MeteringFixFilters list="FULL" />
+            <SectorFilters list="FULL" />
+            <SidFilters list="FULL" />
+            <TransitionFixFilters list="FULL" />
+          </Axis>
+        </Timeline>
+        <Timeline index="2" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+        <Timeline index="3" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+        <Timeline index="4" visible="FALSE" show_arrival_rates="FALSE" show_departure_rates="FALSE" />
+      </ViewSide>
+      <ViewSide side="SIDE2" visible="FALSE" reference="RUNWAY_STA_MTOT" offset="0" />
+      <ViewSide side="SIDE3" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE4" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE5" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE6" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE7" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+      <ViewSide side="SIDE8" visible="FALSE" reference="RUNWAY_STA_NONE" offset="0" />
+    </View>
+  </Views>
+  <DisplayOptions>
+    <DisplayOption name="ACC_CONF" value="ON" />
+    <DisplayOption name="WIND" value="ON" />
+    <DisplayOption name="STRATEGY" value="ON" />
+    <DisplayOption name="REAL_RATES" value="ON" />
+    <DisplayOption name="TRAFFIC_LOAD" value="ON" />
+    <DisplayOption name="RIGHTS_HANDLING" value="ON" />
+    <DisplayOption name="FLIGHT_PLAN" value="ON" />
+    <DisplayOption name="RUNWAY_CLOSURE" value="ON" />
+    <DisplayOption name="SEQUENCE_GAP" value="ON" />
+    <DisplayOption name="CONF_RATE_COORDINATION" value="ON" />
+    <DisplayOption name="ACC_CONF_COORDINATION" value="ON" />
+    <DisplayOption name="STRATEGY_COORDINATION" value="ON" />
+    <DisplayOption name="STRATEGY_DELAY_COORDINATION" value="ON" />
+    <DisplayOption name="AUTOMATIC_COORDINATION" value="ON" />
+    <DisplayOption name="MANUAL_COORDINATION" value="ON" />
+    <DisplayOption name="CONFIRM_REMOVE" value="OFF" />
+    <DisplayOption name="CONFIRM_DESEQUENCE" value="OFF" />
+    <DisplayOption name="CONFIRM_MOVE" value="OFF" />
+    <DisplayOption name="CONFIRM_EXCHANGE" value="ON" />
+    <DisplayOption name="CONFIRM_APPLY_WHATIF_SESSION" value="ON" />
+    <DisplayOption name="CONFIRM_RESET_WHATIF_SESSION" value="ON" />
+    <DisplayOption name="DISPLAY_CANCELLED_COMMAND" value="ON" />
+    <DisplayOption name="DISPLAY_RUNWAY_INDICATOR" value="ON" />
+    <DisplayOption name="DISPLAY_FEEDER_INDICATOR" value="ON" />
+    <DisplayOption name="DISPLAY_METERING_FIX_INDICATOR" value="ON" />
+    <DisplayOption name="DISPLAY_TOTAL_INDICATOR" value="ON" />
+    <DisplayOption name="METERING_FIX_INFO" value="ON" />
+    <DisplayOption name="STRATEGY_DELAY_ALLOCATION" value="ON" />
+    <DisplayOption name="STAND_INFO" value="ON" />
+    <DisplayOption name="FLIGHT_SEARCH" value="ON" />
+  </DisplayOptions>
+  <General_CommandOptions>
+    <General_CommandOption name="CONF_RATES" value="ON" />
+    <General_CommandOption name="STRATEGY" value="ON" />
+    <General_CommandOption name="ACC_CONF" value="ON" />
+    <General_CommandOption name="WIND" value="ON" />
+    <General_CommandOption name="GENERAL_COORDINATION" value="ON" />
+    <General_CommandOption name="STRATEGY_DELAY_ALLOCATION" value="ON" />
+    <General_CommandOption name="METERING_FIX_RATES" value="ON" />
+    <General_CommandOption name="TRANSITION_FIX_RATES" value="ON" />
+    <General_CommandOption name="CLOSURE_SLOTS_FROM_AXIS" value="ON" />
+    <General_CommandOption name="GAP_SLOTS_FROM_AXIS" value="ON" />
+    <General_CommandOption name="APPLY_WHATIF_SESSION" value="ON" />
+    <General_CommandOption name="RESET_WHATIF_SESSION" value="ON" />
+    <General_CommandOption name="RATIO_ARRIVAL_DEPARTURE" value="ON" />
+  </General_CommandOptions>
+  <Arrival_CommandOptions>
+    <Arrival_CommandOption name="INFORMATION" value="ON" />
+    <Arrival_CommandOption name="PARTICULARIZATION" value="ON" />
+    <Arrival_CommandOption name="RECOMPUTE" value="ON" />
+    <Arrival_CommandOption name="REFRESH_DELAY" value="ON" />
+    <Arrival_CommandOption name="ALTERNATE_RUNWAY" value="ON" />
+    <Arrival_CommandOption name="CHANGE_RUNWAY" value="ON" />
+    <Arrival_CommandOption name="CHANGE_FEEDER" value="OFF" />
+    <Arrival_CommandOption name="CHANGE_METERING_FIX" value="ON" />
+    <Arrival_CommandOption name="CHANGE_TRAJECTORY" value="ON" />
+    <Arrival_CommandOption name="CHANGE_ETA_FF" value="ON" />
+    <Arrival_CommandOption name="ZERO_DELAY" value="ON" />
+    <Arrival_CommandOption name="METERING_FIX_CONSTRAINTS_COMMANDS" value="ON" />
+    <Arrival_CommandOption name="METERING_FIX_ACK_CONSTRAINTS_COMMANDS" value="ON" />
+    <Arrival_CommandOption name="FEEDER_FIX_EAT_CONSTRAINTS_COMMANDS" value="ON" />
+    <Arrival_CommandOption name="FEEDER_FIX_CTA_CONSTRAINTS_COMMANDS" value="ON" />
+    <Arrival_CommandOption name="FEEDER_FIX_EAT_ACK_CONSTRAINTS_COMMANDS" value="ON" />
+    <Arrival_CommandOption name="FEEDER_FIX_CTA_ACK_CONSTRAINTS_COMMANDS" value="ON" />
+    <Arrival_CommandOption name="TRANSFER_SPEED" value="ON" />
+    <Arrival_CommandOption name="COORDINATION_WITH_CALLSIGN" value="ON" />
+    <Arrival_CommandOption name="SET_MISSED_APPROACH_INDICATOR" value="ON" />
+    <Arrival_CommandOption name="MISSED_APP_WITH_STACK" value="ON" />
+    <Arrival_CommandOption name="INSERT_FLIGHT_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_FLIGHT_FROM_FLIGHT_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_FLIGHT_FROM_AXIS_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_OVERSHOOT_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="MOVE_ON_LANDED_FLIGHTS_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_PENDING_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_DUMMY_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_DEPARTURE" value="ON" />
+    <Arrival_CommandOption name="CLOSURE_SLOTS_FROM_FLIGHT" value="ON" />
+    <Arrival_CommandOption name="GAP_SLOTS_FROM_FLIGHT" value="ON" />
+    <Arrival_CommandOption name="EXTRA_FLIGHT" value="ON" />
+    <Arrival_CommandOption name="MAKE_PENDING" value="ON" />
+    <Arrival_CommandOption name="DESEQUENCE" value="ON" />
+    <Arrival_CommandOption name="REMOVE" value="ON" />
+    <Arrival_CommandOption name="MOTION_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="EXCHANGE_RUNWAY_VIEW" value="ON" />
+    <Arrival_CommandOption name="FREEZE" value="ON" />
+    <Arrival_CommandOption name="MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="RECOMPUTE_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="REMOVE_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="REFRESH_DELAY_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="DESEQUENCE_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="ALTERNATE_RUNWAY_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="CHANGE_RUNWAY_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="CHANGE_FEEDER_MULTISELECTION" value="OFF" />
+    <Arrival_CommandOption name="CHANGE_TRAJECTORY_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="CHANGE_DELAY_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="COORDINATION_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="TRANSFER_CONSTRAINT_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="TRANSFER_SPEED_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="METERING_FIX_CONSTRAINT_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="PARTICULARIZATION_MULTISELECTION" value="ON" />
+    <Arrival_CommandOption name="ATA_FF_COMMANDS" value="ON" />
+    <Arrival_CommandOption name="INSERT_FLIGHT_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_FLIGHT_FROM_FLIGHT_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_FLIGHT_FROM_AXIS_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_OVERSHOOT_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_PENDING_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="INSERT_DUMMY_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="MOTION_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="EXCHANGE_FEEDER_VIEW" value="ON" />
+    <Arrival_CommandOption name="GAP_SLOTS_FROM_METERING" value="ON" />
+    <Arrival_CommandOption name="MOTION_METERING_FIX_VIEW" value="ON" />
+    <Arrival_CommandOption name="EXCHANGE_METERING_FIX_VIEW" value="ON" />
+    <Arrival_CommandOption name="SPEED_ADVISORY" value="ON" />
+    <Arrival_CommandOption name="SET_SPEED_ADVISORY" value="ON" />
+    <Arrival_CommandOption name="CONFIRM_SPEED_ADVISORY" value="ON" />
+    <Arrival_CommandOption name="CANCEL_SPEED_ADVISORY" value="ON" />
+  </Arrival_CommandOptions>
+  <Departure_CommandOptions>
+    <Departure_CommandOption name="INFORMATION" value="OFF" />
+    <Departure_CommandOption name="PARTICULARIZATION" value="OFF" />
+    <Departure_CommandOption name="RECOMPUTE" value="OFF" />
+    <Departure_CommandOption name="ALTERNATE_RUNWAY" value="OFF" />
+    <Departure_CommandOption name="CHANGE_RUNWAY" value="OFF" />
+    <Departure_CommandOption name="MODULATE_TAXITIME" value="OFF" />
+    <Departure_CommandOption name="LOCK" value="OFF" />
+    <Departure_CommandOption name="CLOSURE_SLOTS_FROM_FLIGHT" value="OFF" />
+    <Departure_CommandOption name="GAP_SLOTS_FROM_FLIGHT" value="OFF" />
+    <Departure_CommandOption name="DESEQUENCE" value="OFF" />
+    <Departure_CommandOption name="MOTION_RUNWAY_VIEW" value="OFF" />
+    <Departure_CommandOption name="EXCHANGE_RUNWAY_VIEW" value="OFF" />
+    <Departure_CommandOption name="FREEZE" value="OFF" />
+    <Departure_CommandOption name="REMOVE" value="OFF" />
+    <Departure_CommandOption name="INSERT_FLIGHT_RUNWAY_VIEW" value="OFF" />
+    <Departure_CommandOption name="INSERT_FLIGHT_FROM_FLIGHT_RUNWAY_VIEW" value="OFF" />
+    <Departure_CommandOption name="INSERT_FLIGHT_FROM_AXIS_RUNWAY_VIEW" value="OFF" />
+  </Departure_CommandOptions>
+  <AutomaticCoordinationOptions>
+    <AutomaticCoordinationOption name="INSERT_OVERSHOOT" value="ON" />
+    <AutomaticCoordinationOption name="INSERT_OVERSHOOT_RUNWAY" value="ON" />
+    <AutomaticCoordinationOption name="INSERT_SLOT" value="ON" />
+    <AutomaticCoordinationOption name="INSERT_SLOT_RUNWAY" value="ON" />
+    <AutomaticCoordinationOption name="INSERT_SLOT_METERING" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_SLOT_METERING" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_SLOT" value="ON" />
+    <AutomaticCoordinationOption name="MOVE_FLIGHT" value="ON" />
+    <AutomaticCoordinationOption name="EXCHANGE_FLIGHTS" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_FLIGHT_RUNWAY" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_FLIGHT_ETA_FF" value="ON" />
+    <AutomaticCoordinationOption name="REMOVE_FLIGHT" value="ON" />
+    <AutomaticCoordinationOption name="FREEZE_FLIGHT" value="ON" />
+    <AutomaticCoordinationOption name="UNFREEZE_FLIGHT" value="ON" />
+    <AutomaticCoordinationOption name="REFRESH_DELAY" value="ON" />
+    <AutomaticCoordinationOption name="EXCHANGE_ON_STACK" value="ON" />
+    <AutomaticCoordinationOption name="DESEQUENCE_FLIGHT" value="ON" />
+    <AutomaticCoordinationOption name="RESEQUENCE_FLIGHT" value="ON" />
+    <AutomaticCoordinationOption name="REMOVE_FLIGHTS" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_FLIGHT_FEEDER" value="OFF" />
+    <AutomaticCoordinationOption name="DELETE_SLOT" value="ON" />
+    <AutomaticCoordinationOption name="DELETE_SLOT_METERING" value="ON" />
+    <AutomaticCoordinationOption name="INSERT_DEPARTURE" value="ON" />
+    <AutomaticCoordinationOption name="BACK_TO_PENDING_LIST" value="ON" />
+    <AutomaticCoordinationOption name="ZERO_DELAY" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_FLIGHT_ATA_FF" value="ON" />
+    <AutomaticCoordinationOption name="EXCHANGE_ATA_FF" value="ON" />
+    <AutomaticCoordinationOption name="FREEZE_ATA_FF" value="ON" />
+    <AutomaticCoordinationOption name="UNFREEZE_ATA_FF" value="ON" />
+    <AutomaticCoordinationOption name="EXTRA_FLIGHT" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_TRAJECTORY" value="ON" />
+    <AutomaticCoordinationOption name="CHANGE_METERING_FIX" value="ON" />
+    <AutomaticCoordinationOption name="MOVE_FLIGHT_METERING" value="ON" />
+    <AutomaticCoordinationOption name="SEND_CTA_FF" value="ON" />
+    <AutomaticCoordinationOption name="SEND_EAT_FF" value="ON" />
+    <AutomaticCoordinationOption name="SEND_CTA_MF" value="ON" />
+    <AutomaticCoordinationOption name="MODIFY_CTA_FF" value="ON" />
+    <AutomaticCoordinationOption name="MODIFY_EAT_FF" value="ON" />
+    <AutomaticCoordinationOption name="MODIFY_CTA_MF" value="ON" />
+    <AutomaticCoordinationOption name="DELETE_CTA_FF" value="ON" />
+    <AutomaticCoordinationOption name="DELETE_EAT_FF" value="ON" />
+    <AutomaticCoordinationOption name="DELETE_CTA_MF" value="ON" />
+    <AutomaticCoordinationOption name="ACKNOWLEDGE_CTA_FF" value="ON" />
+    <AutomaticCoordinationOption name="ACKNOWLEDGE_EAT_FF" value="ON" />
+    <AutomaticCoordinationOption name="ACKNOWLEDGE_CTA_MF" value="ON" />
+    <AutomaticCoordinationOption name="SET_MISSED_APPROACH" value="ON" />
+    <AutomaticCoordinationOption name="MISSED_APPROACH_WITH_STACK" value="ON" />
+    <AutomaticCoordinationOption name="PARTICULARIZE" value="ON" />
+    <AutomaticCoordinationOption name="SET_TRANSFER_SPEED" value="ON" />
+    <AutomaticCoordinationOption name="SPEED_ADVISORY" value="ON" />
+    <AutomaticCoordinationOption name="MOVE_FLIGHT_ALTERNATE" value="ON" />
+  </AutomaticCoordinationOptions>
+</AmanHmiConfiguration>

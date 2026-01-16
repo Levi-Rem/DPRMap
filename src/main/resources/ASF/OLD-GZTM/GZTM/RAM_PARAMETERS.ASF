@@ -1,0 +1,41 @@
+--
+--           FILE :  RAM_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  
+-- BY		  :  
+-- VERSION	  :  
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.2  |12/10/04 | K WAN       | RAM_UPDATE_PERIOD changed to 9
+--
+--
+--
+--
+--RAM_CORRIDOR_WIDTH_UNPUBLISHED | 30NM
+--RAM_CORRIDOR_WIDTH_PUBLISHED   | 30NM
+--RDF_RAM_CORRIDOR_WIDTH_UNPUBLISHED | 10NM
+--RDF_RAM_CORRIDOR_WIDTH_PUBLISHED   | 10NM
+--
+--RAM_POINT_RADIUS               | 30NM
+--
+--RAM_UPDATE_PERIOD              | 9
+--
+--
+RAM_CORRIDOR_WIDTH_FF_AREA     |  5NM
+--
+RAM_POINT_RADIUS_FF_AREA       |  5NM
+--
+RNP_RAM_CORRIDOR_WIDTH_FF_AREA |  5NM
+--
+RNP_RAM_POINT_RADIUS_FF_AREA   |  5NM
+--
+/FEEDER_FIX/
+USE_FF_PARAMETERS_FOR          | NON_RNP |
+--
+--
+--

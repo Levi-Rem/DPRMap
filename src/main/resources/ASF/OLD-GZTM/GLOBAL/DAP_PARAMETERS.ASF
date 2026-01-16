@@ -1,0 +1,30 @@
+-- DAP: Downlinked Aircraft Parameters
+
+--      Version | Date  | Responsible | Comment
+----------------|-------|-------------|----------------------
+--              |240311 | K WAN       | Operational settings
+
+MAGNETIC_HEADING         | DIST | NOT_USED |
+TRUE_AIRSPEED            | DIST | NOT_USED |
+SELECTED_ALTITUDE        | DIST | NOT_USED |
+FSS_ALTITUDE             | DIST | NOT_USED |
+COMM_ACAS_CAPABILITY     | DIST |
+STATUS_ADSB              | DIST |
+ACAS_RESOLUTION          | DIST |
+BARO_VERTICAL_RATE       | DIST | NOT_USED |
+GEO_VERTICAL_RATE        | DIST | NOT_USED |
+ROLL_ANGLE               | DIST | NOT_USED |
+TRACK_ANGLE_RATE         | DIST | NOT_USED |
+TRACK_ANGLE              | DIST | NOT_USED |
+GROUND_SPEED             | DIST | NOT_USED |
+POSITION_DATA            | DIST |
+METEO_DATA               | DIST |
+GEOMETRIC_ALTITUDE       | DIST |
+POSITION_UNCERTAINTY     | DIST | NOT_USED |
+INDICATED_AIRSPEED       | DIST |
+MACH_NUMBER              | DIST |
+TRAJECTORY_INTENT_STATUS | DIST |
+TRAJECTORY_INTENT_DATA   | DIST |
+EMITTER_CATEGORY         | DIST |
+VELOCITY_UNCERTAINTY            | DIST |
+BAROMETRIC_PRESSURE_SETTING     | DIST |

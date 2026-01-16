@@ -1,0 +1,42 @@
+
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      Initial |19/03/07 | K WAN     | Initial
+--      UPDATE  |09/09/09 | FJN       | ACCORDING MAIL LG 08 SEP 2009
+--     V2.36.4  |15/09/09 | K WAN     | updated with site interface data
+--     V2.38.1  |18/09/09 | K WAN     | updated with site interface data
+
+/IDENTIFICATION/
+
+EXTS_TCP_4 | TCP_1 |  |  |
+EXTS_TCP_5 | TCP_2 |  |  |
+
+--EXTS_TCP_1 | TCP_1 | EXTSUSR1 | EXTSPWD1 |
+--EXTS_TCP_6 | TCP_2 | EXTSUSR2 | EXTSPWD2 |
+--EXTS_TCP_7 | TCP_3 | EXTSUSR3 | EXTSPWD3 |
+
+
+/TCP_IP/
+
+TCP_1   | FALSE |        | CLIENT | XML |   |dummymet | TCP_PORT_20 | 1 | 9000 | 60 | 60 | 90 | 90 | DUMMYDATA
+TCP_2   | FALSE |        | CLIENT | XML |   |twasnas01sv | TCP_PORT_1 | 1 | 9000 | 60 | 60 | 90 | 90 | AWOSDATA
+
+--TCP_1 | FALSE | SEQ_1  | CLIENT | IA5 |   |twihexe01li| TCP_PORT_1 |   |  350 |  0 | 10 | 20 | 40
+--TCP_2 | FALSE |        | SERVER | IA5 |   |           | TCP_PORT_2 | 1 |  350 | 20 | 10 | 20 | 40
+--TCP_3 | FALSE |        | SERVER | IA5 |   |           | TCP_PORT_3 | 1 |  350 |  0 | 10 | 20 | 40
+
+
+/SEQUENCE/
+
+SEQ_1 |   | OTH |3  | USR | OTH |   | ABCDEF    | EUR |   | PWD | OTH |   | ABCDEF    | EUR |   | ACP |
+--
+-- Sequence_Id | Heartbeat_type | Seq_msg_init_1| SPDU_subtype_val_1 | Seq_msg_1 |
+-- Seq_msg_init_2| SPDU_subtype_val_2 | Seq_msg_2 | Seq_msg_init_3| SPDU_subtype_val_3 |
+-- Seq_msg_3 | Seq_msg_init_4| SPDU_subtype_val_4 | Seq_msg_4 | Seq_msg_init_5|
+-- SPDU_subtype_val_5 | Seq_msg_5 |
+-- ASCII
+
+
+/FTP_IP/
+
+

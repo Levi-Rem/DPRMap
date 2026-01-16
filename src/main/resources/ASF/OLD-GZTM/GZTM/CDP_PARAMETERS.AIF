@@ -1,0 +1,16 @@
+GZTM {
+}
+
+GZRT {
+        REM_TWR_RADAR_IDS          2        3
+        RDP_WEATHER_CONSUMER       TRUE
+        RDP_FILT_CENTRE_GEO        23.393       113.310
+        RDP_FILT_RADIUS_NM         50.000
+        RDP_FILT_LEVEL             197
+        ADS_FILT_CENTRE_GEO        23.184       113.267
+        ADS_FILT_RADIUS_NM         50.000
+        ADS_FILT_LEVEL             197
+        FPL_FILT_POINTS_GEO        24.221       112.411       22.418       114.348
+        FPL_FILT_LEVEL             294
+}
+

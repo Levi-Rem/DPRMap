@@ -1,0 +1,5 @@
+Configuration file not found.
+Could not read value of resource nedit.autoWrap
+Could not read value of resource nedit.autoIndent
+Could not read value of resource nedit.showMatching
+NEdit: Parse error in macro menu item, only letters, digits, and - allowed in action names

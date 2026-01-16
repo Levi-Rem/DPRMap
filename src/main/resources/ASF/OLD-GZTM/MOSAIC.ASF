@@ -1,0 +1,33 @@
+--
+--           FILE :  MOSAIC.ASF
+-- 
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.1  | 5/10/04 | K WAN       | updated for Guangzhou SIM SAT
+--      V2.3.2  |16/10/04 | K WAN       | MOSAIC inside SYSTEM GRID
+--
+--
+RDF_MRT_SW_POS     | 160000N1050000E
+RDF_MRT_NB_ROWS    | 90
+RDF_MRT_NB_COLUMNS | 65
+RDF_MRT_CELL_SIZE  | 16NMX16NM
+--
+-- radars that are to be enabled: can be ALL 
+-- or names of 5 radars in TMA dataset
+--
+SELECTED_RADARS    | PNX XLN DHZ SHG WZS
+--
+--
+-- coordinates of cells and radar names in order of priority
+--
+/MOSAIC/
+-- Cell Coords |   P1   |   P2   |   P3   |   P4   |   P5   |
+-------------------------------------------------------------

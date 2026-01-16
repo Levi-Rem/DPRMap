@@ -1,0 +1,11 @@
+#-----------------------------------------------------------------------------#
+#                                                                             #
+# UBSS configuration parameters                                               #
+#                                                                             #
+#-----------------------------------------------------------------------------#
+
+OrdersPort		= "GW_LISTEN";
+ErrorsPort		= "GW_ERROR";
+EventsPort		= "PORT2";
+FlpToMaestroFifo	= "FLP_TO_MAESTRO_DATA_F";
+MaestroToFlpFifo	= "MAESTRO_TO_FLP_DATA_F";

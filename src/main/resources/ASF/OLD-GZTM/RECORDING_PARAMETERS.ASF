@@ -1,0 +1,60 @@
+--
+--           File :  RECORDING_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+--
+REC_SATURATION_ALERT         | 70      -- %
+REC_DISK_REMOVE_QUOTA        | 95      -- %
+--REC_LOC_SATURATION_ALERT     | 70      -- %
+REC_LOC_SATURATION_ALERT     | 85      -- %
+
+REC_LOC_DISK_REMOVE_QUOTA    | 95      -- %
+
+-- 2003/03/24 OV change REC_ARCHIVE_TIME; non-obstructive for fat   
+-- 2004/12/20 WYF change REC_ARCHIVE_TIME for test    
+REC_ARCHIVE_TIME             |  22:15  -- 00:00 .. 23:59 UTC 
+                                       -- 16:15 is 03:15 AET
+-- REC_ARCHIVE_TIME             |  04:15  -- 00:00 .. 23:59 UTC
+                                       -- 04:15 UTC is 12:15 CST
+-- 2003/03/24 OV change REC_ARCHIVE_TIME; non-obstructive for fat       
+
+REC_ARCHIVE_PERIOD           |  24     -- Hours   6 8 12 24
+REC_ARCHIVE_FAIL_DELAY       |  01:00  -- Hours   0 .. 24
+REC_RECORDING_PERIOD         |  15     -- Minutes 10 .. 60
+REC_SNAPSHOT_INTERVAL        |  30     -- Minutes 10 .. 60 
+REC_MAX_SCRATCHPAD           |  240    -- Minutes 30 .. 240
+-- REC_MAX_DATA_ON_DISK         |  48     
+REC_MAX_DATA_ON_DISK         |  48     
+       
+--REC_TAPE_SIZE                | 12000    -- Mbytes 100 .. 12288 
+REC_ARCHIVE_OVERLAP          | 120
+REC_DAT_TAPE_SIZE            | 72000
+REC_AIT_TAPE_SIZE            | 20000
+REC_DVD_SIZE                 | 20000
+       
+REC_DATA_TRANSFER_TIME       |  5
+REC_FILE_TRANSFER_TIME       |  30
+REC_PERIOD_DELETE_TIMEOUT    |  9
+       
+/DISK_1/
+REC_DISK_DEVICE_NAME         | /dev/sda3
+REC_DISK_DIRECTORY_NAME      | rec_disk_01
+REC_DISK_ALLOCATED_QUOTA     | 81920
+
+-- 2007/04/13 GG - Incfease of the REC_DISK_ALLOCATED_QUOTA to 26 GB - maximum allowed with the current size disk for normal operation of E-X system and Alpha True64.
+
+REC_ARCHIVE_DISK_SIZE           | 1573000
+REC_ARCHIVE_RECYCLE_PERIOD      | 60
+REC_AUTO_ARCHIVE_TO_REM_MEDIA   | N

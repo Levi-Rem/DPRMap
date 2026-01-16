@@ -1,0 +1,61 @@
+
+--      Version    | Date   | Responsible        | Comment
+----------------   |--------|--------------------|----------------------------------
+
+--                 | 240311 | K WAN              | NOT USED IN PHILIPPINE
+
+
+
+SEND_AUTO_DR_MESSAGE | FALSE
+NASP_ENABLED         | FALSE
+NAS_SEND_IN_ADVANCE  | 1440
+
+/AIR_DEFENCE_TABLE/
+-- Air defence | ICAO     | NAS | RETRY   | No of   | Test Msg | Link |
+-- Centre ID   | Address  | ID  | Timeout | retries | Interval |      |
+---------------|----------|-----|---------|---------|----------|------|
+-- NASTP          | LALALLAA | C   | 60      | 3       | 60       | 180 |
+-- NAS2           | LALALLAB | B   | 120     | 3       | 60       | 180 |
+-- NAS3           | LALALLAC | C   | 180     | 4       | 60       | 180 |
+-- NAS4           | LALALLAD | D   | 240     | 5       | 60       | 180 |
+-- NAS5           | LALALLAE | E   | 300     | 6       | 60       | 180 |
+-- NAS6           | LALALLAF | F   | 60      | 2       | 60       | 180 |
+-- NAS7           | LALALLAG | G   | 60      | 2       | 60       | 180 |
+-- NAS8           | LLLALLAH | H   | 60      | 2       | 60       | 180 |
+-- NAS9           | LLLLKKAI | I   | 60      | 2       | 60       | 180 |
+-- NAS10          | LLLLLLAJ | J   | 60      | 2       | 60       | 180 |
+
+-- NAS11          | LBLBLLEA | A   |  0      | 0       |  0       |   0 |
+-- NAS12          | LBLBLLAB | B   |500      |20       |999       | 999 |
+-- NAS13          | LALBLLAC | B   | 60      | 2       | 60       | 180 |
+-- NAS14          | LCLALLAD | B   | 60      | 2       | 60       | 180 |
+-- NAS15          | LDLALLAE | B   | 60      | 2       | 60       | 180 |
+-- NAS16          | LELALLAF | B   | 60      | 2       | 60       | 180 |
+-- NAS17          | LFLALLAG | B   | 60      | 2       | 60       | 180 |
+-- NAS18          | LGLALLAH | B   | 60      | 2       | 60       | 180 |
+-- NAS19          | LHLALLAI | B   | 60      | 2       | 60       | 180 |
+-- NAS20          | LILALLAJ | B   | 60      | 2       | 60       | 180 |
+
+/NAS_LINE_CONFIGURATION/
+
+-- EXTS_1  | X25 | IA5 | LABCLABC |
+-- EXTS_2  | X25 | IA5 | XB |
+-- EXTS_3  | X25 | IA5 | XB |
+-- EXTS_4  | X25 | IA5 | XB |
+-- EXTS_5  | X25 | IA5 | XB |
+-- EXTS_6  | X25 | IA5 | XB |
+-- EXTS_7  | X25 | IA5 | XB |
+-- EXTS_8  | X25 | IA5 | XB |
+-- EXTS_9  | X25 | IA5 | XB |
+-- EXTS_10 | X25 | IA5 | XB |
+
+-- EXTS_11 | X25 | IA5 | XB |
+-- EXTS_12 | X25 | IA5 | XB |
+-- EXTS_13 | X25 | IA5 | XB |
+-- EXTS_14 | X25 | IA5 | XB |
+-- EXTS_15 | X25 | IA5 | XB |
+-- EXTS_16 | X25 | IA5 | XB |
+-- EXTS_17 | X25 | IA5 | XB |
+-- EXTS_18 | X25 | IA5 | XB |
+-- EXTS_19 | X25 | IA5 | XB |
+-- EXTS_20 | X25 | IA5 | XB |

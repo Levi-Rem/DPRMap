@@ -1,0 +1,74 @@
+--    
+--  FILE          : ADSB_PARAMETERS.ASF
+--  FIRST EDITING : JUNE 1, 2004
+--  BY            : DATA GROUP, BEIJING
+--  VERSION       : BJ_OPS_1.0
+--
+--
+--  Mod Date   | Responsible | Brief Comments on Mod Contents 
+---------------|-------------|----------------------------------
+--
+--
+--
+ 
+ADSB_SITE_GEO_RANGE                  | 0.2NM
+ADSB_SITE_ALTITUDE_RANGE             | 500FT
+ADSB_SITE_PERIOD                     | 60
+ADSB_TST_PROC_ENABLE                 | N
+ADSB_LINK_TECH_INDICATOR             | N
+ADSB_PACKING_PERIOD                  | 0
+ADSB_TRACKED_REPORT_AGE_THRESHOLD    | 1
+ADSB_RADAR_QUALITY_COUNT             | 2
+ADSB_QUALITY_COUNT                   | 2
+ADSB_CORRELATION_RANGE               | 10
+ADSB_RELIABILITY_TIME_TOLERANCE      | 2
+ADSB_GBS_MINIMUM_SPEED_LABEL_DISPLAY | N60
+ADSB_SIM_FILTER_ENABLE               | Y
+CANCEL_ON_GBS                        | Y
+
+ADSB_FOM_THRESHOLD                   | 5
+ADSB_SITE_FOM_THRESHOLD              | 1
+ADSB_FOM_LOW_QUAL_THRESHOLD          | 7
+ADSB_NACP_THRESHOLD                  | 8
+ADSB_SITE_NACP_THRESHOLD             | 5
+ADSB_NACP_LOW_QUAL_THRESHOLD         | 8
+ADSB_NUCP_THRESHOLD                  | 5
+ADSB_SITE_NUCP_THRESHOLD             | 5
+ADSB_NUCP_LOW_QUAL_THRESHOLD         | 6
+ADSB_SIL_THRESHOLD                   | 1
+ADSB_SITE_SIL_THRESHOLD              | 1
+ADSB_NIC_THRESHOLD                   | 7
+ADSB_SITE_NIC_THRESHOLD              | 4
+
+ADF_TRACK_END_OVERLOAD               | 10
+ADF_TRACK_PRE_OVERLOAD               | 10
+ADF_TRACK_END_PRE_OVERLOAD           | 10 
+ADSB_ALTITUDE_THRESHOLD              | F130
+ADSB_LEVEL_THRESHOLD                 | F130
+
+ADSBTP_UPDATE_PERIOD                  | 3.0
+ADSB_RELIABLE_WHEN_MULTIPLE_DETECTION | Y
+ADSB_ALT_ENABLE                       | Y
+ADSB_ABL_AGE                          | 3
+ADSB_DUPE_GEO_RANGE                   | 3.0NM
+ADSB_VELOCITY_TOLERANCE               | 0
+ADSB_MISS_TOLERANCE                   | 5
+ADSB_DETECT_MISSES                    | 3
+ADSB_POS_MIN_AGE                      | 5
+ADSB_POS_MAX_AGE                      | 20
+ADSB_GRND_SPEED_AGE                   | 3
+ADSB_ATTITUDE_TRIGGER                 | 250FTM
+
+ADSB_VERT_RATE_INITIATE_SAMPLES       | 3
+ADSB_VERT_RATE_HISTORY                | 10
+ADSB_VERT_RATE_MAX_AGE                | 10
+ADSB_VERT_RATE_SENSITIVITY            | 125FTM
+ADSB_VERT_RATE_MANOEUVRE_PERIOD       | 3
+ADSB_VERT_RATE_CRUISE_PERIOD          | 5
+ADSB_ALT_MAX_AGE                      | 20
+
+ADSB_REPORT_COUNT_WINDOW             | 10
+ADSB_REPORT_REJECT_THRESHOLD         | 50
+
+VERTICAL_RATE                        | GEO_CALC_VR | BARO_SMOOTH_VR |
+

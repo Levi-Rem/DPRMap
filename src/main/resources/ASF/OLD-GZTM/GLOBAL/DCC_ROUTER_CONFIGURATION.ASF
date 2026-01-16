@@ -1,0 +1,55 @@
+-- 24 MAR 2011
+-- K WAN
+-- NOT USED IN PHILIPPINE PROGRAM
+
+/IDENTIFICATION/
+--
+-- EXT_center_func_Id | TCP_IP_line_Id | Keyword_1 | Keyword_2 |
+--EXTS_TCP_1 | TCP_1 | BARNEY | XYWERT1 |
+--EXTS_TCP_2 | TCP_2 | RACOVE | WERTRX3 |
+--EXTS_TCP_3 | TCP_2 | FWERNE | ASDFER4 |
+--EXTS_TCP_4 | TCP_3 |
+
+/TCP_IP/
+--
+-- TCP_IP_line_Id | Authentication | Sequence_Id | Local_Role | Message_type | IP
+--addresses | IP addresse Names | TCP port Name | TCP_Max_Number_Clients | TCP_Data_Max_Length
+--| Interconnection_timeout | Authentication_timeout | Heartbeat_timeout | Inactivity_timeout
+-------------------|------------------|---------------|------------|------------------------
+--TCP_1 | TRUE | SEQ_1   | CLIENT | IA5 | |IPA1  | TCP_PORT_3 | 3| 2100 |60  | 120 | 180 | 120
+--TCP_2 | TRUE | SEQ_1| SERVER | BIN | |  | TCP_PORT_4 | 3| 2100 | 60 | 120 | 60 | 120
+--TCP_3 | FALSE |SEQ_2| CLIENT | IA5 | | IPA2 | TCP_PORT_2 | 1| 2100 | 60 | 120 | 60 | 120
+
+
+/FTP_IP/
+-- FTP_ID = FTP_SERVICE_Id
+-- ROLE   = Local Role id
+-- SRV    = Service Type
+-- IP@    = IP Address
+-- IPN    = IP Address Names
+-- POL    = Server Reception Polling
+-- DLY    = MAX Delay Time
+-- CNX    = Connection Timeout
+-- PERIOD = Periodic Service Time
+--
+-- FTP_ID | ROLE   | SRV   | IP@          | IPN | POL | DLY | CNX | PERIOD   |
+----------|--------|-------|--------------|-----|-----|-----|-----|----------|
+   FTP_1  | SERVER | RECPT |              |     | 30  | 60  |     |
+-- FTP_1  | SERVER | RECPT |              |    | 10 | 10 |  | 00:10:00 |
+-- FTP_2  | CLIENT | RECPT |              |118 |    |    | 0 | 00:10:00 |
+--FTP_3 | CLIENT | TRANS | 10.0.0.1          | |    | 10 | 30 | 23:59:59
+--FTP_4 | CLIENT | RECPT | 10.0.0.3 10.0.0.4 | |    | 20 | 40 | 24:00:00
+--FTP_5 | CLIENT | TRANS |          |IPA1 IPA2 | 5  | 5  | 56 | 19:59:59
+
+/SEQUENCE/
+--
+-- Sequence_Id | Heartbeat_type | Seq_msg_init_1| SPDU_subtype_val_1 | Seq_msg_1 |
+--Seq_msg_init_2| SPDU_subtype_val_2 | Seq_msg_2 | Seq_msg_init_3| SPDU_subtype_val_3 |
+--Seq_msg_3 | Seq_msg_init_4| SPDU_subtype_val_4 | Seq_msg_4 | Seq_msg_init_5|
+--SPDU_subtype_val_5 | Seq_msg_5 |
+
+--- Binary
+--SEQ_1 | 10 | EUR | 1 | USR |OTH | 1 | KEYWORD_1 | EUR | 3 | PWD |OTH | 4 | KEYWORD_2 | EUR | 5 | ACP |
+
+--- ASCII
+--SEQ_2 | | EUR |3 | USR |OTH | | KEYWORD_1 | EUR | | PWD |OTH | | KEYBOARD_2 | EUR | | ACP |

@@ -1,0 +1,15 @@
+MAP "SHOEBOX" CREATION " " RELEASE " "
+TYPE "CLASSIC"
+PRIORITY 80
+#
+POLY : ZGGG  
+       POINT "1" POINT "2" POINT "3" 
+       POINT "4" POINT "5" POINT "6" POINT "7" 
+       POINT "8" POINT "9" POINT "10" POINT "11" 
+       POINT "12" 
+        8; 9; 0; BORDER_YES; SURFACE_NO; 
+       GC_PREC_NONE ; PLAIN ;NORMAL ; EXP_YES;
+       ""
+#
+   END.
+#

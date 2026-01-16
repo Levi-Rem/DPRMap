@@ -1,0 +1,846 @@
+-- 
+-- FILE: STRIP.ASF 
+--
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      V2.3.5  | 01/04/05| ATMB        | 
+
+-- Notes re format:
+-- 1. INIT string : ^T positioning coodinates = column, ^J positioning coodinates = row
+-- 2. Data between ^Q and next positioning coordinates is bitmap info. Must end with ^G
+-- 3. The "|" character is an instruction for a new line
+-- 4. The INIT part uses the strip printer language and the field part uses Eurocat specific language
+--    then translates to the printer specific language by DPR
+-- 5. NESACC has : 61 columns / 10 rows; Length = 157.5 mm or 625 units; 1 unit ~ 0.2525mm
+--
+--
+--
+-- Each strip contains 11 lines and 80 columns. Data can be printed on line no. 1 to 10
+-- Cannot draw a horizontal line starting at ^T000 or ^T001. It must start at ^T002.
+--
+-- ^T002^J04^L0000020237:
+-- T002 means start at tab=No.2 ie.. 2 columns from the left hand end of the strip
+-- J04 means start at Line No.4
+-- 
+-- L0000020237 defines the line that is drawn:
+-- Only the last =7 characters are of interest. The 002 means the height of the line. 0237 means the width of the line
+-- 0020237 means 002 units high and 0237 units long. ie. a long thin line.
+-- 1560001 means 156 units high and 0001 units long ie. a tall thin line from bottom of the strip to the top.
+--
+-- ^T013^J07^E0402D: Is used to insert permanent characters into a strip. In this case the letter "D" is placed
+-- at Tab=13 and Line No.7 and is drawn in character size 4x2.
+-- ^T017^J02^E0201CI: In this case the letters "CI" are placed at Tab=17 and Line No.2 and are drawn in 
+-- character size 2x1.
+--
+--
+--
+--SUPPORTED FDFs
+--
+-- FDF  1 : CALLSIGN
+-- FDF  4 : FRULE
+-- FDF  5 : FTYPE
+-- FDF  7 : AC_TYPE
+-- FDF  8 : WTUR
+-- FDF 11 : ADEP
+-- FDF 12 : ATD_HOURS
+-- FDF 13 : ATD_MINS
+-- FDF 14 : ETD_HOURS
+-- FDF 15 : ETD_MINS
+-- FDF 16 : ENTRY_POINT
+-- FDF 17 : ENTRY_TIME
+-- FDF 18 : ASS_LOWER_LEVEL
+-- FDF 20 : CRUIS_SPEED
+-- FDF 21 : CRUIS_LEVEL
+-- FDF 23 : SID
+-- FDF 25 : ADES
+-- FDF 26 : ETA_HOURS
+-- FDF 27 : ETA_MINS
+-- FDF 28 : VIP status
+-- FDF 30 : F18PER
+-- FDF 31 : OTHERINF
+-- FDF 32 : GLOBAL_OPS_INFO
+-- FDF 33 : HOLDP
+-- FDF 34 : PDC_INFO
+-- FDF 35 : AFL
+-- FDF 36 : CONTROL_SECTOR
+-- FDF 37 : CPDLC_STATUS
+-- FDF 40 : PRL
+-- FDF 41 : ASS_SSR_CODE
+-- FDF 42 : GATE_NUMBER
+-- FDF 50 : FPL_STATUS
+-- FDF 54 : OUTPUT_DATA_HOURS
+-- FDF 55 : OUTPUT_DATA_MINS
+-- FDF 56 : OUTPUT_DATA_DAY
+-- FDF 57 : OUTPUT_DATA_MONTH
+-- FDF 58 : OUTPUT_DATA_YEAR
+-- FDF 59 : MESSAGE_SENDING_STATUS
+-- FDF 60 : EXIT_POINT
+-- FDF 61 : EXIT_TIME
+-- FDF 62 : EXIT_LEVEL
+-- FDF 64 : BEACON_1 NAME
+-- FDF 65 : BEACON_1 ETO HOURS
+-- FDF 66 : BEACON_1 ETO MINS
+-- FDF 67 : BEACON_1 PCFL
+-- FDF 68 : BEACON_2 NAME
+-- FDF 69 : BEACON_2 ETO HOURS
+-- FDF 70 : BEACON_2 ETO MINS
+-- FDF 71 : BEACON_2 PCFL
+-- FDF 72 : BEACON_3 NAME
+-- FDF 73 : BEACON_3 ETO HOURS
+-- FDF 74 : BEACON_3 ETO MINS
+-- FDF 75 : BEACON_3 PCFL
+-- FDF 76 : BEACON_4 NAME
+-- FDF 77 : BEACON_4 ETO HOURS
+-- FDF 78 : BEACON_4 ETO MINS
+-- FDF 79 : BEACON_4 PCFL
+-- FDF 80 : BEACON_5 NAME
+-- FDF 81 : BEACON_5 ETO HOURS
+-- FDF 82 : BEACON_5 ETO MINS
+-- FDF 83 : BEACON_5 PCFL
+-- FDF 84 : BEACON_6 NAME
+-- FDF 85 : BEACON_6 ETO HOURS
+-- FDF 86 : BEACON_6 ETO MINS
+-- FDF 87 : BEACON_6 PCFL
+-- FDF 96 : PSSR_CODE
+-- FDF 98 : RUNWAY
+-- FDF 100: FDR_PUS
+--
+-- 10 formats possible
+--
+-- ********************
+-- PAPER STRIP FORMAT 1 
+-- ********************
+/DESIGNATION_FIX_LIST/
+
+
+/TWR_DEP/
+--
+-- 
+INIT |^T012^J11^L0001560001
+     |^T020^J11^L0001560001
+     |^T039^J11^L0001560001
+     |^T048^J04^L0000600001
+   
+   --  |^T051^J11^L0001560001
+   
+    -- |^T055^J11^L0000600001
+   
+     |^T039^J04^L0000010240
+    
+    
+    
+     |^T002^J06^E0101A
+    
+     |^T021^J10^E0201P
+
+     |^T021^J03^E0101P/B
+     |^T026^J03^E0101S/T
+     |^T021^J05^E0101TAX
+   --  |^T059^J10^E0101:
+
+    -- |^T033^J03^E0101R/W
+    -- |^T040^J02^E0201SID
+    -- |^T040^J11^E0201SID
+
+
+
+     |^T040^J06^E0101ATIS OBT  SLT
+    -- |^T045^J06^E0201SLT
+ 
+ 
+ 
+     |^T050^J03^E0101INA
+     |^T060^J10^E0101:
+     
+     |^T060^J09^E0101/
+   
+
+  
+--FDF | Row | Column | Field | Font |	      |
+--No. | No. |	No.  | Length| Size | Inverse | Comment
+--------------------------------------------------------------------------------------
+-- 
+--
+1     |  3  |	2    |   8  |  C31 |	 0    | callsign
+41    |  5  |	3    |   4   |  C11 |	 0    | ASSR 
+7     |  9  |   2    |   4   |  C11 |    0     | airaft type
+5     |  9  |	8   |   2   |  C11 |	 0    | FLIGHT TYPE
+
+
+
+25    |  3  |   13   |   4   |  C31 |    0    | ADES
+
+98    |  2  |	32   |	4    |  C11 |	0     |  RUNWAY
+
+42    |  9  |   22   |   4   |  C11 |   0     |   GATE_NUMBER
+
+
+18    |  2  |   54   |   4   |  C11 |    0    | CFL
+
+23    |  2  |   40   |   6   |  C11 |    0    | SID
+
+32    |  7  |   43   |   15   |  C11 |    0    |GLOBAL_OPS_INFO
+
+14    |  5  |   13   |   2   |  C11 |    0    | ETD HH
+15    |  5  |   15   |   2   |  C11 |    0    | ETD MM
+--36    |  9 |	22   |   4   |  C11 |	 0    | sector name
+--57    |  9  |   58   |   2   |  C11 |    0    | currentdate month
+--56    |  9  |   60   |   2   |  C11 |    0    | currentdate day
+--54    |  9  |   57   |   2   |  C11 |    0    | currentdate HH
+--55    |  9  |   60   |   2   |  C11 |    0    | currentdate MM
+57    |  8  |   58  |	2   |  C11 |	0     | currentdate month
+56    |  8  |   61  |	2   |  C11 |	0     | currentdate day
+54    |  9  |   58  |	2   |  C11 |	0     | currentdate HH
+55    |  9  |   61  |	2   |  C11 |	0     | currentdate MM
+
+
+
+
+-- ********************
+-- PAPER STRIP FORMAT 2 
+-- ********************
+--
+--
+/TWR_ARR/
+--
+-- 
+INIT |^T012^J11^L0001560001
+     |^T033^J11^L0001560001
+     |^T042^J11^L0001560001
+     |^T013^J03^E0101QNH
+    -- |^T027^J03^E0101R/W
+     |^T013^J10^E0101VAC
+     |^T043^J03^E0101TAX
+     |^T002^J06^E0101A
+     |^T043^J10^E0101P
+   --  |^T059^J10^E0101:
+     |^T060^J10^E0101:
+     
+     |^T060^J09^E0101/
+ 
+     
+     
+--FDF | Row | Column | Field | Font |	      |
+--No. | No. |	No.  | Length| Size | Inverse | Comment
+--------------------------------------------------------------------------------------
+-- 
+--
+
+1     |  3  |	2    |   8   |  C31 |	 0    | callsign
+41    |  5  |	3    |   4   |  C11 |	 0    | ASSR 
+
+7     |  9  |   2    |   4   |  C11 |    0     | airaft type
+5     |  9  |	8    |   2   |  C11 |	 0    | FLIGHT TYPE
+
+98    |  2  |   26   |   4   |  C11 |   0     | RUNWAY
+42    |  9  |   45   |   4   |  C11 |   0     |   GATE_NUMBER
+
+--36    |  3  |   13   |   4   |  C21 |    0    | SECTOR NAME
+11    |  2  |   35    |   4  |  C11 |    0    | ADEP
+26    |  4  |   35    |   2   |  C11 |    0    | ETA HH
+27    |  4  |   37    |   2   |  C11 |    0    | ETA MM
+--57    |  9  |   58   |   2   |  C11 |    0    | currentdate month
+--56    |  9  |   60   |   2   |  C11 |    0    | currentdate day
+--54    |  9  |   57   |   2   |  C11 |    0    | currentdate HH
+--55    |  9  |   60   |   2   |  C11 |    0    | currentdate MM
+57    |  8  |   58  |	2   |  C11 |	0     | currentdate month
+56    |  8  |   61  |	2   |  C11 |	0     | currentdate day
+54    |  9  |   58  |	2   |  C11 |	0     | currentdate HH
+55    |  9  |   61  |	2   |  C11 |	0     | currentdate MM
+
+
+--
+-- ********************
+-- PAPER STRIP FORMAT 3 
+-- ********************
+--
+/TMA_ARR/
+--
+-- 
+INIT |^T018^J11^L0001560001
+     |^T036^J11^L0001560001
+     |^T041^J11^L0001560001
+     |^T046^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T055^J11^L0001560001    
+     |^T036^J04^L0000010143
+     
+     |^T036^J06^E0101A
+     |^T047^J03^E0101FAF
+   --  |^T051^J06^E0101R/W
+     |^T056^J03^E0101M
+     |^T056^J05^E0101E
+ 
+ 
+     |^T056^J08^E0101A
+     |^T056^J10^E0101I
+     |^T060^J10^E0101:
+     
+     |^T060^J09^E0101/
+ 
+     |^T009^J10^E0101/ 
+     |^T010^J07^E0101A
+
+  
+--FDF | Row | Column | Field | Font |	      |
+--No. | No. |	No.  | Length| Size | Inverse | Comment
+--------------------------------------------------------------------------------------
+-- 
+--
+1     |  3  |	4   |   8   |  C31 |	0     | callsign
+7     |  6  |   1   |   4   |  C11 |    0     | airaft type
+8     |  6  |   5   |   1   |  C11 |    0     | turbulence cat 
+5     |  6  |	8   |   2   |  C11 |	0     | FLIGHT TYPE
+41    |  6  |	11  |   4   |  C11 |	0     | ASSR 
+11    |  9  |   1   |   4   |  C11 |    0     | ADEP
+12    |  9  |	5   |   2   |  C11 |	0     | ATD_HOURS
+13    |  9  |	7   |   2   |  C11 |	0     | ATD_MINS
+26    |  9  |   10  |	2   |  C11 |	0     | ETA HH
+27    |  9  |   12  |	2   |  C11 |	0     | ETA MM
+25    |  9  |   14  |	4   |  C11 |	0     | ADES
+
+
+--16    |  2  |	36  |	5   |  C11 |	0     | ENTRY POINT 
+--17    |  7  |	36  |	4   |  C11 |	0     | ENTRY TIME  
+
+64    |  2  |	36  |	5   |  C11 |	0     |  POINT 1
+65    |  7  |	36  |	2   |  C11 |	0     |  HH POINT 1
+66    |  7  |	38  |	2   |  C11 |	0     |  MM POINT 1
+
+98    |  5  |	51  |	4   |  C11 |	0     |  RUNWAY
+
+36    |  4  |	60  |	4   |  C11 |	0     | sector name
+57    |  8  |   58  |	2   |  C11 |	0     | currentdate month
+56    |  8  |   61  |	2   |  C11 |	0     | currentdate day
+54    |  9  |   58  |	2   |  C11 |	0     | currentdate HH
+55    |  9  |   61  |	2   |  C11 |	0     | currentdate MM
+
+
+
+--
+-- ********************
+-- PAPER STRIP FORMAT 4 
+-- ********************
+--
+/TMA_DEP/
+--
+INIT |^T018^J11^L0001560001
+     
+     |^T041^J11^L0001560001
+     |^T046^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T055^J11^L0001560001    
+     |^T041^J04^L0000010089
+     
+     |^T041^J06^E0101D
+     
+   --  |^T051^J06^E0101R/W
+     |^T056^J03^E0101M
+     |^T056^J05^E0101E
+ 
+ 
+     |^T056^J08^E0101A
+     |^T056^J10^E0101I
+     |^T060^J10^E0101:
+     
+     |^T060^J09^E0101/
+ 
+     |^T009^J10^E0101/ 
+     |^T010^J07^E0101A
+
+  
+--FDF | Row | Column | Field | Font |	      |
+--No. | No. |	No.  | Length| Size | Inverse | Comment
+--------------------------------------------------------------------------------------
+-- 
+--
+1     |  3  |	4   |   8   |  C31 |	0     | callsign
+7     |  6  |   1   |   4   |  C11 |    0     | airaft type
+8     |  6  |   5   |   1   |  C11 |    0     | turbulence cat 
+5     |  6  |	8   |   2   |  C11 |	0     | FLIGHT TYPE
+41    |  6  |	11  |   4   |  C11 |	0     | ASSR 
+11    |  9  |   1   |   4   |  C11 |    0     | ADEP
+12    |  9  |	5   |   2   |  C11 |	0     | ETD_HOURS
+13    |  9  |	7   |   2   |  C11 |	0     | ETD_MINS
+14    |  9  |   10  |	2   |  C11 |	0     | ETA HH
+15    |  9  |   12  |	2   |  C11 |	0     | ETA MM
+25    |  9  |   14  |	4   |  C11 |	0     | ADES
+
+--60    |  2  |	41  |	5   |  C11 |	0     | EXIT POINT 
+--61    |  7  |	41  |	4   |  C11 |	0     | EXIT TIME 
+
+68    |  2  |	41  |	5   |  C11 |	0     |  POINT 2
+69    |  7  |	41  |	2   |  C11 |	0     |  HH POINT 2
+70    |  7  |	43  |	2   |  C11 |	0     |  MM POINT 2
+
+98    |  5  |	51  |	4   |  C11 |	0     |  RUNWAY
+
+ 
+36    |  4  |	60  |	4   |  C11 |	0     | sector name
+57    |  8  |   58  |	2   |  C11 |	0     | currentdate month
+56    |  8  |   61  |	2   |  C11 |	0     | currentdate day
+54    |  9  |   58  |	2   |  C11 |	0     | currentdate HH
+55    |  9  |   61  |	2   |  C11 |	0     | currentdate MM
+
+-- ********************
+-- PAPER STRIP FORMAT 5 
+-- ********************
+
+/TMA_OVER/
+--
+INIT |^T018^J11^L0001560001
+     
+     |^T041^J11^L0001560001
+     |^T046^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T055^J11^L0001560001    
+     |^T041^J04^L0000010089
+     
+   
+     
+  --   |^T051^J06^E0101R/W
+     |^T056^J03^E0101M
+     |^T056^J05^E0101E
+ 
+ 
+     |^T056^J08^E0101A
+     |^T056^J10^E0101I
+     |^T060^J10^E0101:
+     
+     |^T060^J09^E0101/
+ 
+     |^T009^J10^E0101/ 
+     |^T010^J07^E0101A
+
+  
+--FDF | Row | Column | Field | Font |	      |
+--No. | No. |	No.  | Length| Size | Inverse | Comment
+--------------------------------------------------------------------------------------
+-- 
+--
+1     |  3  |	4   |   8   |  C31 |	0     | callsign
+7     |  6  |   1   |   4   |  C11 |    0     | airaft type
+8     |  6  |   5   |   1   |  C11 |    0     | turbulence cat 
+5     |  6  |	8   |   2   |  C11 |	0     | FLIGHT TYPE
+41    |  6  |	11  |   4   |  C11 |	0     | ASSR 
+11    |  9  |   1   |   4   |  C11 |    0     | ADEP
+12    |  9  |	5   |   2   |  C11 |	0     | ETD_HOURS
+13    |  9  |	7   |   2   |  C11 |	0     | ETD_MINS
+14    |  9  |   10  |	2   |  C11 |	0     | ETA HH
+15    |  9  |   12  |	2   |  C11 |	0     | ETA MM
+25    |  9  |   14  |	4   |  C11 |	0     | ADES
+
+
+
+--60    |  2  |	46  |	5   |  C11 |	0     | EXIT POINT 
+--61    |  4  |	46  |	4   |  C11 |	0     | EXIT TIME  
+
+76    |  2  | 46  |   5   |  C11 |    0     |  POINT 4
+77    |  4  | 46  |   2   |  C11 |    0     |  HH POINT 4
+78    |  4  | 48  |   2   |  C11 |    0     |  MM POINT 4
+
+--72    |  2  | 36  |   5   |  C11 |    0     |  POINT 3
+--73    |  7  | 36  |   2   |  C11 |    0     |  HH POINT 3
+--74    |  7  | 38  |   2   |  C11 |    0     |  MM POINT 3
+
+98    |  5  |	51  |	4   |  C11 |	0     |  RUNWAY
+
+
+
+
+36    |  4  |	60  |	4   |  C11 |	0     | sector name
+57    |  8  |   58  |	2   |  C11 |	0     | currentdate month
+56    |  8  |   61  |	2   |  C11 |	0     | currentdate day
+54    |  9  |   58  |	2   |  C11 |	0     | currentdate HH
+55    |  9  |   61  |	2   |  C11 |	0     | currentdate MM
+--16    |  2  |	41  |	5   |  C11 |	0     | ENTRY POINT 
+--17    |  4  |	41  |	4   |  C11 |	0     | ENTRY TIME  
+
+68    |  2  |	41  |	5   |  C11 |	0     |  POINT 2
+69    |  4  |	41  |	2   |  C11 |	0     |  HH POINT 2
+70    |  4  |	43  |	2   |  C11 |	0     |  MM POINT 2
+
+
+
+----------------------
+
+
+-----------------------
+
+
+
+
+
+--
+-- ********************
+-- PAPER STRIP FORMAT 6
+-- ********************
+--
+/TMA_BLANK/
+-- 
+INIT |^T018^J11^L0001560001
+     |^T036^J11^L0001560001
+     |^T041^J11^L0001560001
+     |^T046^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T055^J11^L0001560001    
+     |^T036^J04^L0000010143
+     |^T056^J03^E0101M
+     |^T056^J05^E0101E
+ 
+ 
+     |^T056^J08^E0101A
+     |^T056^J10^E0101I
+     |^T060^J10^E0101:
+     
+     |^T060^J09^E0101/
+ 
+     
+
+  
+--FDF | Row | Column | Field | Font |	      |
+--No. | No. |	No.  | Length| Size | Inverse | Comment
+--------------------------------------------------------------------------------------
+-- 
+--
+--1     |  3  | 4   |   8   |  C31 |    0     | callsign
+--7     |  6  |	1   |	4   |  C11 |	0    | airaft type
+57    |  8  |   58  |	2   |  C11 |	0     | currentdate month
+56    |  8  |   61  |	2   |  C11 |	0     | currentdate day
+
+
+
+--
+-- ********************
+-- PAPER STRIP FORMAT 7 
+-- ********************
+--
+/ACC_INB/
+INIT |^T002^J04^L0000010119
+     |^T014^J11^L0001560001
+
+     |^T022^J11^L0001560001
+     |^T014^J05^L0000010080
+     |^T043^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T043^J05^L0000010080
+     |^T056^J11^L0001560001
+     |^T059^J10^E0101/
+     |^T009^J08^E0101A
+     |^T018^J05^E0101/
+     |^T047^J05^E0101/
+   --  |^T046^J11^L0001560001
+    -- |^T051^J11^L0001560001^T056^J11^L0001560001
+    -- |^T058^J03^E0101I^T058^J05^E0101M^T058^J07^E0101A
+    -- |^T059^J10^E0101:   
+--FDF | Row | Column | Field | Font |		|
+--No. | No. | No.    | Length| Size | Inverse | Comment
+----------------------------------------------------------------------------------
+1     |  3  | 2    |   8   |  C31 |    0    | callsign
+7     |  5  | 1    |   4   |  C21 |    0    | airaft type
+--36	|  5  | 5    |   5   |  C21 |	 0    | sector name
+8     |  7  | 1    |   1   |  C21 |    0    | turbulence cat
+--18    |  3  | 18   |   4   |  C21 |    0    | CFL
+41    |  7  | 10   |   4   |  C21 |    0    | ASSR  
+11    |  9  | 1    |   4   |  C21 |    0    | ADEP
+12    |  9  | 5    |   2   |  C11 |    0    | ATD HH
+13    |  9  | 7    |   2   |  C11 |    0    | ATD MM
+25    |  9  | 9    |   4   |  C21 |    0    | ADES
+64    |  2  | 16   |   5   |  C21 |    0    | POINT 1
+68    |  2  | 23   |   5   |  C21 |    0    | POINT 2
+72    |  2  | 28   |   5   |  C21 |    0    | POINT 3
+76    |  2  | 33   |   5   |  C21 |    0    | POINT 4
+80    |  2  | 38   |   5   |  C21 |    0    | POINT 5
+84    |  2  | 45   |   5   |  C21 |    0    | POINT 6
+65    |  4  | 14   |   2   |  C11 |    0    | HH POINT 1
+66    |  4  | 16   |   2   |  C11 |    0    | mm POINT 1
+--69    |  5  | 32   |   2   |  C11 |    0    | HH point 2
+--70    |  5  | 34   |   2   |  C11 |    0    | mm point 2
+--73    |  5  | 37   |   2   |  C11 |    0    | HH point 3
+--74    |  5  | 39   |   2   |  C11 |    0    | mm point 3
+--77    |  5  | 42   |   2   |  C11 |    0    | HH point 4
+--78    |  5  | 44   |   2   |  C11 |    0    | mm point 4
+--81    |  5  | 47   |   2   |  C11 |    0    | HH point 5
+--82    |  5  | 49   |   2   |  C11 |    0    | mm point 5
+85    |  4  | 43   |   2   |  C11 |    0    | HH point 6
+86    |  4  | 45   |   2   |  C11 |    0    | mm point 6
+57    |  9  | 57   |   2   |  C11 |    0    | currentdate month
+56    |  9  | 60   |   2   |  C11 |    0    | currentdate day
+--54    |  9  | 57   |   2   |  C11 |    0    | currentdate HH
+--55    |  9  | 60   |   2   |  C11 |    0    | currentdate MM
+
+--
+--INIT |^T002^J04^L0000010119^T014^J11^L0001560001
+--     |^T026^J11^L0001560001^T026^J04^L0000010300
+--     |^T031^J11^L0001560001^T036^J11^L0001560001
+--     |^T041^J11^L0001560001^T046^J11^L0001560001
+--     |^T051^J11^L0001560001^T056^J11^L0001560001
+--     |^T058^J03^E0101I^T058^J05^E0101M^T058^J07^E0101A
+--     |^T059^J09^E0101.^T059^J10^E0101:
+--     |^T005^J06^E0201/
+--FDF | Row | Column| Field | Font |	    |
+--No. | No. |No.    | Length| Size | Inverse | Comment
+------------------------------------------------------------------------------------
+--1     |  3  | 2    |   8   |  C31 |    0    | callsign
+--7     |  5  | 1    |   4   |  C21 |    0    | airaft type  
+--36    |  5  | 5    |   5   |  C21 |    0    | sector name
+--8     |  7  | 1    |   1   |  C21 |    0    | turbulence cat
+--18    |  3  | 16   |   4   |  C21 |    0    | CFL
+--41    |  7  | 9    |   4   |  C21 |    0    | ASSR  
+--11    |  9  | 1    |   4   |  C21 |    0    | ADEP
+--12    |  9  | 5    |   2   |  C21 |    0    | ATD HH
+--13    |  9  | 7    |   2   |  C21 |    0    | ATD MM
+--25    |  9  | 9    |   4   |  C21 |    0    | ADES
+--64    |  2  | 27   |   5   |  C21 |    0    | POINT 1
+--68    |  2  | 32   |   5   |  C21 |    0    | POINT 2
+--72    |  2  | 37   |   5   |  C21 |    0    | POINT 3
+--76    |  2  | 42   |   5   |  C21 |    0    | POINT 4
+--80    |  2  | 47   |   5   |  C21 |    0    | POINT 5
+--84    |  2  | 52   |   5   |  C21 |    0    | POINT 6
+--65    |  5  | 27   |   2   |  C11 |    0    | HH POINT 1
+--66    |  5  | 29   |   2   |  C11 |    0    | mm POINT 1
+--69    |  5  | 32   |   2   |  C11 |    0    | HH point 2
+--70    |  5  | 34   |   2   |  C11 |    0    | mm point 2
+--73    |  5  | 37   |   2   |  C11 |    0    | HH point 3
+--74    |  5  | 39   |   2   |  C11 |    0    | mm point 3
+--77    |  5  | 42   |   2   |  C11 |    0    | HH point 4
+--78    |  5  | 44   |   2   |  C11 |    0    | mm point 4
+--81    |  5  | 47   |   2   |  C11 |    0    | HH point 5
+--82    |  5  | 49   |   2   |  C11 |    0    | mm point 5
+--85    |  5  | 52   |   2   |  C11 |    0    | HH point 6
+--86    |  5  | 54   |   2   |  C11 |    0    | mm point 6
+--57    |  8  | 57   |   2   |  C11 |    0    | currentdate month
+--56    |  8  | 60   |   2   |  C11 |    0    | currentdate day
+--54    |  9  | 57   |   2   |  C11 |    0    | currentdate HH
+--55    |  9  | 60   |   2   |  C11 |    0    | currentdate MM
+--
+--
+--
+-- ********************
+-- PAPER STRIP FORMAT 8
+-- ********************
+--
+/ACC_OUB/
+--
+--
+INIT |^T002^J04^L0000010119
+     |^T014^J11^L0001560001
+
+     |^T022^J11^L0001560001
+     |^T014^J05^L0000010080
+     |^T043^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T043^J05^L0000010080
+     |^T056^J11^L0001560001
+     |^T059^J10^E0101/
+     |^T009^J08^E0101A
+     |^T018^J05^E0101/
+     |^T047^J05^E0101/
+     --|^T046^J11^L0001560001
+    -- |^T051^J11^L0001560001^T056^J11^L0001560001
+    -- |^T058^J03^E0101I^T058^J05^E0101M^T058^J07^E0101A
+    -- |^T059^J10^E0101:   
+--FDF | Row | Column | Field | Font |		|
+--No. | No. | No.    | Length| Size | Inverse | Comment
+----------------------------------------------------------------------------------
+1     |  3  | 2    |   8   |  C31 |    0    | callsign
+7     |  5  | 1    |   4   |  C21 |    0    | airaft type
+--36	|  5  | 5    |   5   |  C21 |	 0    | sector name
+8     |  7  | 1    |   1   |  C21 |    0    | turbulence cat
+--18    |  3  | 18   |   4   |  C21 |    0    | CFL
+41    |  7  | 10   |   4   |  C21 |    0    | ASSR  
+11    |  9  | 1    |   4   |  C21 |    0    | ADEP
+14    |  9  | 5    |   2   |  C11 |    0    | ETD HH
+15    |  9  | 7    |   2   |  C11 |    0    | ETD MM
+25    |  9  | 9    |   4   |  C21 |    0    | ADES
+64    |  2  | 16   |   5   |  C21 |    0    | POINT 1
+68    |  2  | 23   |   5   |  C21 |    0    | POINT 2
+72    |  2  | 28   |   5   |  C21 |    0    | POINT 3
+76    |  2  | 33   |   5   |  C21 |    0    | POINT 4
+80    |  2  | 38   |   5   |  C21 |    0    | POINT 5
+84    |  2  | 45   |   5   |  C21 |    0    | POINT 6
+65    |  4  | 14   |   2   |  C11 |    0    | HH POINT 1
+66    |  4  | 16   |   2   |  C11 |    0    | mm POINT 1
+--69    |  5  | 32   |   2   |  C11 |    0    | HH point 2
+--70    |  5  | 34   |   2   |  C11 |    0    | mm point 2
+--73    |  5  | 37   |   2   |  C11 |    0    | HH point 3
+--74    |  5  | 39   |   2   |  C11 |    0    | mm point 3
+--77    |  5  | 42   |   2   |  C11 |    0    | HH point 4
+--78    |  5  | 44   |   2   |  C11 |    0    | mm point 4
+--81    |  5  | 47   |   2   |  C11 |    0    | HH point 5
+--82    |  5  | 49   |   2   |  C11 |    0    | mm point 5
+85    |  4  | 43   |   2   |  C11 |    0    | HH point 6
+86    |  4  | 45   |   2   |  C11 |    0    | mm point 6
+57    |  9  | 57   |   2   |  C11 |    0    | currentdate month
+56    |  9  | 60   |   2   |  C11 |    0    | currentdate day
+--54    |  9  | 57   |   2   |  C11 |    0    | currentdate HH
+--55    |  9  | 60   |   2   |  C11 |    0    | currentdate MM
+
+
+
+--INIT |^T002^J04^L0000010119^T014^J11^L0001560001
+--
+--     |^T026^J11^L0001560001^T026^J04^L0000010300
+----     |^T031^J11^L0001560001^T036^J11^L0001560001
+ --    |^T041^J11^L0001560001^T046^J11^L0001560001
+--     |^T051^J11^L0001560001^T056^J11^L0001560001
+--     |^T058^J03^E0101I^T058^J05^E0101M^T058^J07^E0101A
+--     |^T059^J09^E0101.^T059^J10^E0101:   
+--FDF	| Row | Column | Field | Font | 	    |
+--No.	| No. |       No.  | Length| Size | Inverse | Comment
+------------------------------------------------------------------------------------
+--1     |  3  | 2    |   8   |  C31 |    0    | callsign
+--7     |  5  | 1    |   4   |  C21 |    0    | airaft type
+--36    |  5  | 5    |   5   |  C21 |    0    | sector name
+--8     |  7  | 1    |   1   |  C21 |    0    | turbulence cat
+--100   |  3  | 19   |   1   |  C21 |    0    | # if RFL different from PUS
+--21    |  3  | 20   |   4   |  C21 |    0    | RFL
+--41    |  7  | 9    |   4   |  C21 |    0    | ASSR  
+--11    |  9  | 1    |   4   |  C21 |    0    | ADEP
+--12    |  9  | 5    |   2   |  C21 |    0    | ATD HH
+--13    |  9  | 7    |   2   |  C21 |    0    | ATD MM
+--25    |  9  | 9    |   4   |  C21 |    0    | ADES
+--68    |  2  | 27   |   5   |  C21 |    0    | POINT 1 (start from 2nd point)
+--72    |  2  | 32   |   5   |  C21 |    0    | POINT 2
+--76    |  2  | 37   |   5   |  C21 |    0    | POINT 3
+--80    |  2  | 42   |   5   |  C21 |    0    | POINT 4
+--84    |  2  | 47   |   5   |  C21 |    0    | POINT 5
+--88	|  2  |       52   |   5   |  C21 |    0    | POINT 6
+--69    |  5  | 27   |   2   |  C11 |    0    | HH point 1
+--70    |  5  | 29   |   2   |  C11 |    0    | mm point 1
+--73    |  5  | 32   |   2   |  C11 |    0    | HH point 2
+--74    |  5  | 34   |   2   |  C11 |    0    | mm point 2
+--77    |  5  | 37   |   2   |  C11 |    0    | HH point 3
+--78    |  5  | 39   |   2   |  C11 |    0    | mm point 3
+--81    |  5  | 42   |   2   |  C11 |    0    | HH point 4
+--82    |  5  | 44   |   2   |  C11 |    0    | mm point 4
+--85    |  5  | 47   |   2   |  C11 |    0    | HH point 5
+--86    |  5  | 49   |   2   |  C11 |    0    | mm point 5
+--89	|  5  |       52   |   2   |  C11 |    0    | HH point 6
+--90	|  5  |       54   |   2   |  C11 |    0    | mm point 6
+--57    |  8  |	57   |   2   |  C11 |  0    | currentdate month
+--56    |  8  |	60   |   2   |  C11 |  0    | currentdate day
+--54    |  9  |	57   |   2   |  C11 |  0    | currentdate HH
+--55    |  9  |	60   |   2   |  C11 |  0    | currentdate MM
+--
+--
+-- ********************
+-- PAPER STRIP FORMAT 9
+-- ********************
+--
+/ACC_OVER/
+--
+INIT |^T002^J04^L0000010119
+     |^T014^J11^L0001560001
+
+     |^T022^J11^L0001560001
+     |^T014^J05^L0000010080
+     |^T043^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T043^J05^L0000010080
+     |^T056^J11^L0001560001
+     |^T059^J10^E0101/
+     |^T009^J08^E0101A
+    |^T018^J05^E0101/
+    |^T047^J05^E0101/
+  --   |^T046^J11^L0001560001
+  --   |^T051^J11^L0001560001^T056^J11^L0001560001
+  --   |^T058^J03^E0101I^T058^J05^E0101M^T058^J07^E0101A
+   --  |^T059^J10^E0101:   
+--FDF | Row | Column | Field | Font |		|
+--No. | No. | No.    | Length| Size | Inverse | Comment
+----------------------------------------------------------------------------------
+1     |  3  | 2    |   8   |  C31 |    0    | callsign
+7     |  5  | 1    |   4   |  C21 |    0    | airaft type
+--36	|  5  | 5    |   5   |  C21 |	 0    | sector name
+8     |  7  | 1    |   1   |  C21 |    0    | turbulence cat
+--18    |  3  | 18   |   4   |  C21 |    0    | CFL
+41    |  7  | 10   |   4   |  C21 |    0    | ASSR  
+11    |  9  | 1    |   4   |  C21 |    0    | ADEP
+12    |  9  | 5    |   2   |  C11 |    0    | ATD HH
+13    |  9  | 7    |   2   |  C11 |    0    | ATD MM
+25    |  9  | 9    |   4   |  C21 |    0    | ADES
+64    |  2  | 16   |   5   |  C21 |    0    | POINT 1
+68    |  2  | 23   |   5   |  C21 |    0    | POINT 2
+72    |  2  | 28   |   5   |  C21 |    0    | POINT 3
+76    |  2  | 33   |   5   |  C21 |    0    | POINT 4
+80    |  2  | 38   |   5   |  C21 |    0    | POINT 5
+84    |  2  | 45   |   5   |  C21 |    0    | POINT 6
+65    |  4  | 14   |   2   |  C11 |    0    | HH POINT 1
+66    |  4  | 16   |   2   |  C11 |    0    | mm POINT 1
+--69    |  5  | 32   |   2   |  C11 |    0    | HH point 2
+--70    |  5  | 34   |   2   |  C11 |    0    | mm point 2
+--73    |  5  | 37   |   2   |  C11 |    0    | HH point 3
+--74    |  5  | 39   |   2   |  C11 |    0    | mm point 3
+--77    |  5  | 42   |   2   |  C11 |    0    | HH point 4
+--78    |  5  | 44   |   2   |  C11 |    0    | mm point 4
+--81    |  5  | 47   |   2   |  C11 |    0    | HH point 5
+--82    |  5  | 49   |   2   |  C11 |    0    | mm point 5
+85    |  4  | 43   |   2   |  C11 |    0    | HH point 6
+86    |  4  | 45   |   2   |  C11 |    0    | mm point 6
+57    |  9  | 57   |   2   |  C11 |    0    | currentdate month
+56    |  9  | 60   |   2   |  C11 |    0    | currentdate day
+--54    |  9  | 57   |   2   |  C11 |    0    | currentdate HH
+--55    |  9  | 60   |   2   |  C11 |    0    | currentdate MM
+
+-- ********************
+-- PAPER STRIP FORMAT 10
+-- ********************
+--
+/ACC_BLANK/
+--
+INIT |^T002^J04^L0000010119
+     |^T014^J11^L0001560001
+
+     |^T022^J11^L0001560001
+     |^T014^J05^L0000010080
+     |^T043^J11^L0001560001
+     |^T051^J11^L0001560001
+     |^T043^J05^L0000010080
+     |^T056^J11^L0001560001
+     |^T059^J10^E0101/
+     |^T009^J08^E0101A
+  --   |^T018^J05^E0101/
+  --   |^T047^J05^E0101/
+  --   |^T046^J11^L0001560001
+  --   |^T051^J11^L0001560001^T056^J11^L0001560001
+  --   |^T058^J03^E0101I^T058^J05^E0101M^T058^J07^E0101A
+  --   |^T059^J10^E0101:   
+--FDF | Row | Column | Field | Font |		|
+--No. | No. | No.    | Length| Size | Inverse | Comment
+----------------------------------------------------------------------------------
+----1     |  3  | 2    |   8   |  C31 |    0    | callsign
+----7     |  5  | 1    |   4   |  C21 |    0    | airaft type
+--36	|  5  | 5    |   5   |  C21 |	 0    | sector name
+----8     |  7  | 1    |   1   |  C21 |    0    | turbulence cat
+--18    |  3  | 18   |   4   |  C21 |    0    | CFL
+----41    |  7  | 10   |   4   |  C21 |    0    | ASSR  
+----11    |  9  | 1    |   4   |  C21 |    0    | ADEP
+----12    |  9  | 5    |   2   |  C11 |    0    | ATD HH
+----13    |  9  | 7    |   2   |  C11 |    0    | ATD MM
+----25    |  9  | 9    |   4   |  C21 |    0    | ADES
+----64    |  2  | 16   |   5   |  C21 |    0    | POINT 1
+----68    |  2  | 23   |   5   |  C21 |    0    | POINT 2
+----72    |  2  | 28   |   5   |  C21 |    0    | POINT 3
+----76    |  2  | 33   |   5   |  C21 |    0    | POINT 4
+----80    |  2  | 38   |   5   |  C21 |    0    | POINT 5
+----84    |  2  | 45   |   5   |  C21 |    0    | POINT 6
+----65    |  4  | 14   |   2   |  C11 |    0    | HH POINT 1
+----66    |  4  | 16   |   2   |  C11 |    0    | mm POINT 1
+--69    |  5  | 32   |   2   |  C11 |    0    | HH point 2
+--70    |  5  | 34   |   2   |  C11 |    0    | mm point 2
+--73    |  5  | 37   |   2   |  C11 |    0    | HH point 3
+--74    |  5  | 39   |   2   |  C11 |    0    | mm point 3
+--77    |  5  | 42   |   2   |  C11 |    0    | HH point 4
+--78    |  5  | 44   |   2   |  C11 |    0    | mm point 4
+--81    |  5  | 47   |   2   |  C11 |    0    | HH point 5
+--82    |  5  | 49   |   2   |  C11 |    0    | mm point 5
+----85    |  4  | 43   |   2   |  C11 |    0    | HH point 6
+----86    |  4  | 45   |   2   |  C11 |    0    | mm point 6
+57    |  9  | 57   |   2   |  C11 |    0    | currentdate month
+56    |  9  | 60   |   2   |  C11 |    0    | currentdate day
+--54    |  9  | 57   |   2   |  C11 |    0    | currentdate HH
+--55    |  9  | 60   |   2   |  C11 |    0    | currentdate MM

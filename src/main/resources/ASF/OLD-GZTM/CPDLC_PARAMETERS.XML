@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE cpdlc_parameters SYSTEM "cpdlc_parameters.dtd">
+<cpdlc_parameters>
+
+  <parameters>
+    <parameter name="cpdlc_auto_connect_req" value="TRUE"/>
+    <parameter name="cpdlc_controller_response" value="30"/>
+    <parameter name="cpdlc_database_warning" value="85"/>
+    <parameter name="cpdlc_history_transfer" value="30"/>
+    <parameter name="cpdlc_nda_resend_timeout" value="120"/>
+    <parameter name="cpdlc_nda_send_time" value="600"/>
+    <parameter name="cpdlc_pilot_response" value="90"/>
+  </parameters>
+
+  <external_adep_list/>
+
+  <automatic_squawk_code_entry_fir_list/>
+
+  <automatic_squawk_code_adep_list/>
+
+  <cpdlc_fir_configuration>
+    <configuration id="1">
+      <adjacent_fir>ZGAC</adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="10">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="11">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="12">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="13">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="14">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="15">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="16">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="17">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="18">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="19">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="2">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="20">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="3">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="4">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="5">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="6">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="7">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="8">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+    <configuration id="9">
+      <adjacent_fir></adjacent_fir>
+      <auto_nda_request>FALSE</auto_nda_request>
+      <nda_retransmit_enable>FALSE</nda_retransmit_enable>
+      <auto_eos_request>FALSE</auto_eos_request>
+    </configuration>
+  </cpdlc_fir_configuration>
+
+  <cpdlc_special_self_closing_uplinks>
+    <uplink number="135"/>
+    <uplink number="181"/>
+  </cpdlc_special_self_closing_uplinks>
+
+</cpdlc_parameters>

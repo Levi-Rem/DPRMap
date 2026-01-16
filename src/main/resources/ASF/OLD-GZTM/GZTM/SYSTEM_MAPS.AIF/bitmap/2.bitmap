@@ -1,0 +1,6 @@
+#define 2_width 5
+#define 2_height 5
+#define 2_x_hot 2
+#define 2_y_hot 2
+static char 2_bits[] = {
+   0x15, 0x0e, 0x1b, 0x0e, 0x15};

@@ -1,0 +1,23 @@
+--
+--           FILE : CLAM_PARAMETERS.ASF
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--
+--
+--
+--
+CLAM_LEVEL_THRESHOLD       | S0060 
+--
+CLAM_DEVIATION             | S6
+--
+CLAM_TRACK_LEVEL_THRESHOLD | S0090
+--
+CLAM_CFL_CHANGE_TIME_OUT   | 40
+
+--  
+CLAM_LEVEL_FLIGHT_DELAY    | 4
+
+CLAM_TAG_ELIGIBILITY   | TRUE
+

@@ -1,0 +1,39 @@
+--
+--           FILE :  HOLDING.ASF
+--
+--
+-- CREATION DATE  : 
+-- BY		  : 
+-- VERSION	  : 
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 |       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+-- 
+--
+/HLD1/
+-- 
+-- time|heading|direction|comments
+-----------------------------------------
+   50 | 314   | RIGHT   | ALL LEVELS
+   30 | 314   | RIGHT   | ALL LEVELS
+   20 | 314   | RIGHT   | ALL LEVELS
+--
+--
+APPLIES_TO | CZH
+--
+--
+--
+/HLD2/
+-- 
+-- time|heading|direction|comments
+-----------------------------------------
+   50 | 137   | RIGHT   | ALL LEVELS
+   30 | 137   | RIGHT   | ALL LEVELS
+   20 | 137   | RIGHT   | ALL LEVELS
+--
+--
+APPLIES_TO | ZYG

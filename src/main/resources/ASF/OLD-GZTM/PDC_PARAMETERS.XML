@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE pdc_parameters SYSTEM "pdc_parameters.dtd">
+<pdc_parameters>
+
+  <acars>
+    <acars_addresse ACARS_address="AFRTSTX" company_name="AFR" name="4"/>
+    <acars_addresse ACARS_address="SYDGFXS" company_name="CAA" name="1"/>
+    <acars_addresse ACARS_address="DLHTSTX" company_name="DLH" name="3"/>
+    <acars_addresse ACARS_address="NWATSTX" company_name="NWA" name="6"/>
+    <acars_addresse ACARS_address="SASTSTX" company_name="SAS" name="5"/>
+    <acars_addresse ACARS_address="SIATSTX" company_name="SIA" name="2"/>
+  </acars>
+
+  <twr/>
+
+</pdc_parameters>

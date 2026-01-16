@@ -1,0 +1,39 @@
+--
+--           FILE : CALL_SIGN_CONDITIONS.ASF
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+--
+-- THE GROUP NUMBER OF CALL SIGNS DEFINED HERE CAN BE REFERENCED IN
+-- POSTING AND AUTOMATIC TRANSFER CONDITIONS FILE (THE 4TH CONDITION)
+--
+--
+-- number of lists
+--
+/C0/
+QF
+BZ
+SN13A1
+
+
+/C1/
+BINKY
+
+/C2/
+SMEG
+--
+--
+--
+--
+--
+--

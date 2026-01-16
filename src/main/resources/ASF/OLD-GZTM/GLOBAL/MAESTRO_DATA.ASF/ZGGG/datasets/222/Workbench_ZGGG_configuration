@@ -1,0 +1,39 @@
+#******************************************************************************#
+#                                                                              #
+#                 SUB-SYSTEM CONFIGURATION PARAMETERS                          #
+#                                                                              #
+#******************************************************************************#
+
+# Global Workbench configuration name
+GlobalConfigName        = LOCAL;
+
+# If set to true, the session will start automatically upon startup
+AutoStartSession        = TRUE;
+
+
+#*******************************************************************************#
+#                                                                               #
+#                  PARAMETERS CONTOLLING RECORDING                              #
+#                                                                               #
+#*******************************************************************************#
+
+# List of events to be recorded. If this parameter is not set, recording is
+# not used.
+Record                  = Application;
+
+# Set to true means the recording start at WB initialization.
+# Set to False means the recording start only after the first synchronization
+#    message.
+# ForceRecordingStart is set to false by default.
+ForceRecordingStart     = TRUE;
+
+# Period for changing recording file (minutes)
+RecordingPeriod         = 360;
+
+
+#******************************************************************************#
+#                                                                              #
+#                PARAMETERS LICENCE                                            #
+#                                                                              #
+#******************************************************************************#
+#LicenceKey = 8A19577E76BB673FCD35A0B04BE14A11C2206243FCF7A44FDC5FF5F26835679F226F13DEF2B4163576FD7316D4E916291D17EFA361E0F1C43762A282A31BFEF539AD911C66DFA54DD77A5212ED7C0D27;

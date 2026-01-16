@@ -5,10 +5,9 @@ import javafx.beans.binding.Bindings;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.geometry.Insets;
-import javafx.scene.image.ImageView;
 import ll.luolin.controller.NavPointController;
 import ll.luolin.model.NavPointLayerModel;
-import ll.luolin.model.NavPointModel;
+import ll.luolin.model.ASFModel.NavPointModel;
 import ll.luolin.utils.LogUtils;
 
 

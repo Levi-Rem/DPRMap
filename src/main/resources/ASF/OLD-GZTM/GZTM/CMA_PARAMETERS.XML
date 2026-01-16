@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE cma_parameters SYSTEM "cma_parameters.dtd">
+<cma_parameters>
+
+  <parameters>
+    <parameter name="cma_contact_time" value="1200"/>
+    <parameter name="cma_exit_coord_time" value="1200"/>
+    <parameter name="cma_inbound_logon_delta" value="300"/>
+    <parameter name="cma_outbound_logon_delta" value="300"/>
+    <parameter name="cma_own_address" value="CANGWYA"/>
+    <parameter name="cma_own_fir_name" value="ZGGG"/>
+  </parameters>
+
+  <cma_auto_contact/>
+
+</cma_parameters>

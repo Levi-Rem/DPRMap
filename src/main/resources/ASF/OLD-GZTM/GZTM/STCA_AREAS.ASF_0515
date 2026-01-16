@@ -1,0 +1,112 @@
+--
+--           File: STCA_AREAS.ASF
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      V2.3.2  | 11/3/05 | GZ ATMB     | updated for Guangzhou STCA ACC AREA
+--      V3.1.1  | 25/8/05 | GZ ATMB     | updated for Guangzhou STCA ACC AREA
+
+
+/POINTS/
+--
+-- PTS FOR STCA GUANGZHOU ACC
+
+  CA1    |  332216N1140402E   |
+  CA2    |  333526N1173615E   |
+--CA3    |  271700N1155915E   |
+  CA4    |  225729N1183000E   |
+  CA5    |  202230N1111946E   |
+  CA6    |  254143N1070620E   |
+  CA7    |  343056N1090544E   |
+
+--
+-- PTS FOR STCA TMA -- GUANGZHOU TMA pts
+--
+-- Q1     |  241229N1132442E    |
+-- Q2     |  241106N1133254E    |
+-- Q3     |  240706N1135618E    |
+-- Q4     |  234531N1141414E    |
+ Q5     |  233855N1141941E    |
+ Q6     |  232600N1142742E    |
+ Q7     |  231524N1141118E    |
+ Q8     |  225400N1140342E    |
+ Q9     |  225254N1132900E    |
+ Q10	|  223730N1131942E    |
+ Q11    |  223300N1131141E    |
+ Q12    |  222736N1124453E    |
+ Q13    |  224312N1122915E    |
+ Q14	|  230417N1122907E    |
+ Q15	|  233818N1122554E    |
+ Q16    |  240911N1125119E    |
+ Q17    |  242313N1130257E    |
+ Q18    |  242056N1132513E    |
+ Q19    |  241907N1134238E    |
+ Q20    |  241651N1140358E    |
+ Q21    |  240500N1141250E    |
+ Q22    |  234749N1141217E    |
+
+
+ JD2	|  225355N1140008E    |
+ JD3	|  224257N1140453E    |
+ JD4	|  222450N1133126E    |
+ JD5	|  224145N1132213E    |
+
+ 
+
+ I1     |  233411N1131856E    |
+ I2     |  233328N1132211E    |
+ I3     |  231254N1131645E    |
+ I4     |  231337N1131330E    |
+ 
+ 
+ INH1    |  222627N1125948E   |
+ INH2    |  223800N1132000E   |
+ INH3    |  225234N1132944E   |
+ INH4    |  225356N1140342E   |
+ INH5    |  223711N1144423E   |
+ INH6    |  222503N1144514E   |
+ INH7    |  215001N1130001E   |
+
+
+
+
+   
+/ARCS/
+--
+/RHUMB_LINES/
+--
+
+/STCA_AREA/
+--
+-- STCA Area number
+-- |  RVSM_capable_flag
+-- |  | Predefined_ROC_ROD_rate used?
+-- |  | |  Precision
+-- |  | |  |   min_altitude
+-- |  | |  |   |      max_altitude
+-- |  | |  |   |      |      RDF_STCA_ALT_SEP_THRESHOLD[F100.0 - F500.0]/F290.0
+-- |  | |  |   |      |      |    RDF_STCA_RVSM_VERTICAL_LIMIT[F100.0 - F500.0]/F410.0
+-- |  | |  |   |      |      |    |      RDF_STCA_ALT_SEP_LOW[F1.0 - F20.0]/F10.0
+-- |  | |  |   |      |      |    |      |    RDF_STCA_ALT_SEP_HIGH[F1.0 - F20.0]/F10
+-- |  | |  |   |      |      |    |      |    |    RDF_STCA_FINE_PLANAR_SEP[F2.0NM - 10.0NM]/3.0NM
+-- |  | |  |   |      |      |    |      |    |    |   RDF_STCA_LOOK_AHEAD_TIME[60 - 120]/90
+-- |  | |  |   |      |      |    |      |    |    |   |   Point_Id
+-- v  v v  v   v      v      v    v      v    v    v   v   v
+-----|-|-|--|-----|-----|-----|-----|-----|-----|----|---|-----------------------------------------
+APP1 |Y|N|NO|S0000|S0660|S0360|S1255|S0025|S0025|10KM| 90| Q5 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18 Q19 Q20 Q21 Q22
+APP2 |Y|N|NO|S0000|S0425|S0360|S1255|S0025|S0025|10KM| 90| Q9 JD2 JD3 JD4 JD5
+ACC1 |Y|N|NO|S0000|S3000|S0880|S1255|S0026|S0056|10NM| 90| CA1 CA2 CA4 CA5 CA6 CA7
+--
+/INHIBIT/
+-- area|    | alt  | alt  | 
+-- name| act| min  | max  | limit pts
+-----------------------------------------------------------------
+-- inhibition areas
+--
+  IN1    |  Y | S0000 | S0120 | I1 I2 I3 I4
+  INH1   |  Y | S0000 | S0300 | INH1 INH2 INH3 INH4 INH5 INH6 INH7 
+
+  
+  
+  

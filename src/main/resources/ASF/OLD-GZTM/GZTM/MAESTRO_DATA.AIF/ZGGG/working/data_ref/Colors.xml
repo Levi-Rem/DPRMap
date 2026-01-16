@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE ColorDatabase [
+<!ELEMENT ColorDatabase (NamedColors, ColorPalettes)>
+<!ELEMENT NamedColors (NamedColor*)>
+<!ELEMENT NamedColor (Value*)>
+<!ELEMENT ColorPalettes (ColorPalette*)>
+<!ELEMENT ColorPalette (Color*)>
+<!ATTLIST NamedColor
+        name      CDATA #REQUIRED
+        localized CDATA #REQUIRED>
+<!ATTLIST Value
+        style CDATA #REQUIRED
+        value CDATA #REQUIRED>
+<!ATTLIST Color
+        name  CDATA #REQUIRED
+        value CDATA #REQUIRED>
+]>
+
+<!-- File generated on 2021/07/30 at 07:04:18 -->
+
+<ColorDatabase>
+ <NamedColors>
+  <NamedColor name="Default Background" localized="White" >
+   <Value style="Default" value="#FFFFFF" />
+  </NamedColor>
+  <NamedColor name="Default Foreground" localized="Black" >
+   <Value style="Default" value="#000000" />
+  </NamedColor>
+  <NamedColor name="Color 1" localized="Color 1" >
+   <Value style="Default" value="#4D565E" />
+  </NamedColor>
+  <NamedColor name="Color 2" localized="Color 2" >
+   <Value style="Default" value="#777F85" />
+  </NamedColor>
+  <NamedColor name="Color 3" localized="Color 3" >
+   <Value style="Default" value="#000060" />
+  </NamedColor>
+  <NamedColor name="Color 4" localized="Color 4" >
+   <Value style="Default" value="#1D598C" />
+  </NamedColor>
+  <NamedColor name="Color 6" localized="Color 6" >
+   <Value style="Default" value="#FFFACD" />
+  </NamedColor>
+  <NamedColor name="Color 7" localized="Color 7" >
+   <Value style="Default" value="#FFFF00" />
+  </NamedColor>
+  <NamedColor name="Color 12" localized="Color 8" >
+   <Value style="Default" value="#85CFFF" />
+  </NamedColor>
+  <NamedColor name="Color 14" localized="Color 9" >
+   <Value style="Default" value="#F39FD1" />
+  </NamedColor>
+  <NamedColor name="Color 15" localized="Color 10" >
+   <Value style="Default" value="#FF8B6C" />
+  </NamedColor>
+  <NamedColor name="Color 17" localized="Color 11" >
+   <Value style="Default" value="#B3B3B3" />
+  </NamedColor>
+  <NamedColor name="Color 18" localized="Color 12" >
+   <Value style="Default" value="#CCC052" />
+  </NamedColor>
+  <NamedColor name="Color 19" localized="Color 13" >
+   <Value style="Default" value="#00FF00" />
+  </NamedColor>
+  <NamedColor name="Color 21" localized="Color 14" >
+   <Value style="Default" value="#FFB000" />
+  </NamedColor>
+  <NamedColor name="Color 22" localized="Color 15" >
+   <Value style="Default" value="#FF2666" />
+  </NamedColor>
+  <NamedColor name="Color 23" localized="Color 16" >
+   <Value style="Default" value="#F39FD1" />
+  </NamedColor>
+  <NamedColor name="Colour 1" localized="Colour 5" >
+   <Value style="Default" value="#8C8C8C" />
+  </NamedColor>
+  <NamedColor name="Colour 2" localized="Background" >
+   <Value style="Default" value="#3D3941" />
+  </NamedColor>
+  <NamedColor name="Colour 3" localized="Foreground" >
+   <Value style="Default" value="#E2D9C7" />
+  </NamedColor>
+  <NamedColor name="Colour 4" localized="Red" >
+   <Value style="Default" value="#FB003E" />
+  </NamedColor>
+  <NamedColor name="Colour 6" localized="Orange" >
+   <Value style="Default" value="#FF9706" />
+  </NamedColor>
+  <NamedColor name="Colour 7" localized="Yellow" >
+   <Value style="Default" value="#D2FF29" />
+  </NamedColor>
+  <NamedColor name="Colour 8" localized="Green-Ly" >
+   <Value style="Default" value="#0DC65A" />
+  </NamedColor>
+  <NamedColor name="Colour 9" localized="Gray1" >
+   <Value style="Default" value="#857C8D" />
+  </NamedColor>
+  <NamedColor name="Colour 10" localized="Gray2" >
+   <Value style="Default" value="#B4A8BF" />
+  </NamedColor>
+  <NamedColor name="Colour 11" localized="Gray3" >
+   <Value style="Default" value="#E4D6F3" />
+  </NamedColor>
+  <NamedColor name="Colour 12" localized="Blue" >
+   <Value style="Default" value="#85A9FF" />
+  </NamedColor>
+  <NamedColor name="Colour 13" localized="Pink" >
+   <Value style="Default" value="#E79EF3" />
+  </NamedColor>
+  <NamedColor name="Colour 14" localized="GreenDark-LL" >
+   <Value style="Default" value="#009029" />
+  </NamedColor>
+  <NamedColor name="Colour 15" localized="ARR Nice" >
+   <Value style="Default" value="#91CCA2" />
+  </NamedColor>
+  <NamedColor name="Colour 16" localized="ARR TS" >
+   <Value style="Default" value="#00C225" />
+  </NamedColor>
+  <NamedColor name="Colour 17" localized="Colour 17" >
+   <Value style="Default" value="#CFB233" />
+  </NamedColor>
+ </NamedColors>
+ <ColorPalettes>
+  <ColorPalette name="Theme Base Colors" >
+   <Color name="STATE_NORMAL" value="Color 2" />
+   <Color name="STATE_ACTIVE" value="Color 2" />
+   <Color name="STATE_PRELIGHT" value="Color 2" />
+   <Color name="STATE_SELECTED" value="Color 4" />
+   <Color name="STATE_INSENSITIVE" value="Color 2" />
+  </ColorPalette>
+  <ColorPalette name="Theme Text Colors" >
+   <Color name="STATE_NORMAL" value="Colour 3" />
+   <Color name="STATE_ACTIVE" value="Colour 3" />
+   <Color name="STATE_PRELIGHT" value="Colour 3" />
+   <Color name="STATE_SELECTED" value="Colour 3" />
+   <Color name="STATE_INSENSITIVE" value="Colour 3" />
+  </ColorPalette>
+  <ColorPalette name="Theme Fg Colors" >
+   <Color name="STATE_NORMAL" value="Colour 3" />
+   <Color name="STATE_ACTIVE" value="Color 3" />
+   <Color name="STATE_PRELIGHT" value="Colour 3" />
+   <Color name="STATE_SELECTED" value="Colour 3" />
+   <Color name="STATE_INSENSITIVE" value="Colour 1" />
+  </ColorPalette>
+  <ColorPalette name="Theme Bg Colors" >
+   <Color name="STATE_NORMAL" value="Colour 2" />
+   <Color name="STATE_ACTIVE" value="Color 2" />
+   <Color name="STATE_PRELIGHT" value="Color 4" />
+   <Color name="STATE_SELECTED" value="Color 4" />
+   <Color name="STATE_INSENSITIVE" value="Colour 2" />
+  </ColorPalette>
+  <ColorPalette name="Symbolic Colors" >
+   <Color name="NORMAL_TEXT_FOREGROUND" value="Colour 3" />
+   <Color name="HIGHLIGHT_TEXT_FOREGROUND" value="Default Background" />
+   <Color name="ALARM_TEXT_FOREGROUND" value="Color 7" />
+   <Color name="INSENSITIVE_TEXT_FOREGROUND" value="Color 6" />
+   <Color name="NORMAL_BUTTON_FOREGROUND" value="Colour 2" />
+   <Color name="HIGHLIGHT_BUTTON_FOREGROUND" value="Default Background" />
+   <Color name="ALARM_BUTTON_FOREGROUND" value="Color 7" />
+   <Color name="INSENSITIVE_BUTTON_FOREGROUND" value="Color 6" />
+   <Color name="COORDINATION_MESSAGE_ACKNOWLEDGED_TEXT_FOREGROUND" value="Default Foreground" />
+   <Color name="COORDINATION_MESSAGE_REJECTED_TEXT_FOREGROUND" value="Default Foreground" />
+   <Color name="NORMAL_COUNTER_FOREGROUND" value="Default Foreground" />
+   <Color name="HIGHLIGHT_COUNTER_FOREGROUND" value="Default Foreground" />
+   <Color name="SEARCH_RESULT" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="WTC Colors" >
+   <Color name="L" value="Default Foreground" />
+   <Color name="J" value="Default Foreground" />
+   <Color name="M" value="Default Foreground" />
+   <Color name="C" value="Default Foreground" />
+   <Color name="B" value="Default Foreground" />
+   <Color name="W6" value="Default Foreground" />
+   <Color name="W7" value="Default Foreground" />
+   <Color name="W8" value="Default Foreground" />
+   <Color name="W9" value="Default Foreground" />
+   <Color name="W10" value="Default Foreground" />
+   <Color name="W11" value="Default Foreground" />
+   <Color name="W12" value="Default Foreground" />
+   <Color name="W13" value="Default Foreground" />
+   <Color name="W14" value="Default Foreground" />
+   <Color name="W15" value="Default Foreground" />
+   <Color name="W16" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Nitos Sid Rules Colors" >
+   <Color name="EAST" value="Default Foreground" />
+   <Color name="WEST" value="Default Foreground" />
+   <Color name="NONE" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Nitos Availability Colors" >
+   <Color name="OK" value="Default Background" />
+   <Color name="NOK" value="Color 22" />
+  </ColorPalette>
+  <ColorPalette name="Feeder-Fix Colors" >
+   <Color name="ATAGA" value="Default Foreground" />
+   <Color name="GYA" value="Default Foreground" />
+   <Color name="P71" value="Default Foreground" />
+   <Color name="P270" value="Default Foreground" />
+   <Color name="IDUMA" value="Default Foreground" />
+   <Color name="IGONO" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Runway Colors" >
+   <Color name="ZGGG/01" value="Default Foreground" />
+   <Color name="ZGGG/19" value="Default Foreground" />
+   <Color name="ZGGG/02L" value="Default Foreground" />
+   <Color name="ZGGG/20R" value="Default Foreground" />
+   <Color name="ZGGG/02R" value="Default Foreground" />
+   <Color name="ZGGG/20L" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Airport Colors" >
+   <Color name="ZGGG" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Sid Colors" >
+  </ColorPalette>
+  <ColorPalette name="Trajectory Class Colors" >
+   <Color name="XDQ_STAR" value="Default Foreground" />
+   <Color name="STAR_STAR" value="Default Foreground" />
+   <Color name="STARF_STAR" value="Default Foreground" />
+   <Color name="STARF_DDQ" value="Default Foreground" />
+   <Color name="STAR_DDQ" value="Default Foreground" />
+   <Color name="XDQ_DDQ" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Metering-Fix Colors" >
+   <Color name="ACCZ" value="Default Foreground" />
+   <Color name="GYA" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Transition-Fix Colors" >
+  </ColorPalette>
+  <ColorPalette name="Stand Group Colors" >
+   <Color name="G" value="Default Foreground" />
+   <Color name="A" value="Default Foreground" />
+   <Color name="E" value="Default Foreground" />
+   <Color name="C" value="Default Foreground" />
+   <Color name="GW" value="Default Foreground" />
+   <Color name="FX" value="Default Foreground" />
+   <Color name="D" value="Default Foreground" />
+   <Color name="F" value="Default Foreground" />
+   <Color name="B" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Dependency Colors" >
+   <Color name="INDEPENDENT" value="Default Foreground" />
+   <Color name="DEPENDENT" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="TMA Configuration Colors" >
+   <Color name="OLD_CONFIGURATION" value="Colour 17" />
+   <Color name="NEW_CONFIGURATION" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Flight Status Colors" >
+   <Color name="UNSTABLE" value="Default Foreground" />
+   <Color name="STABLE" value="Colour 9" />
+   <Color name="SUPER_STABLE" value="Default Background" />
+   <Color name="FROZEN" value="Colour 12" />
+   <Color name="DESEQUENCED" value="Default Foreground" />
+   <Color name="LANDED" value="Color 18" />
+   <Color name="REMOVED" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="APP Delay Colors" >
+   <Color name="EXPEDITE" value="Colour 8" />
+   <Color name="NOTHING" value="Colour 12" />
+   <Color name="RESUME" value="Colour 12" />
+   <Color name="SPEED_REDUCTION" value="Color 7" />
+   <Color name="PATH_STRETCHING" value="Color 21" />
+   <Color name="HOLDING_PATTERN" value="Color 22" />
+  </ColorPalette>
+  <ColorPalette name="ACC Delay Colors" >
+   <Color name="EXPEDITE" value="Color 12" />
+   <Color name="NOTHING" value="Colour 8" />
+   <Color name="RESUME" value="Colour 7" />
+   <Color name="SPEED_REDUCTION" value="Color 7" />
+   <Color name="PATH_STRETCHING" value="Colour 6" />
+   <Color name="HOLDING_PATTERN" value="Colour 4" />
+  </ColorPalette>
+  <ColorPalette name="Flight Ground Colors" >
+   <Color name="D_UNKNOWN" value="Default Foreground" />
+   <Color name="D_AT_GATE" value="Default Foreground" />
+   <Color name="D_PUSHED" value="Colour 9" />
+   <Color name="D_TAXIING" value="Colour 10" />
+   <Color name="D_AT_HOLDING_POINT" value="Colour 11" />
+   <Color name="D_LINED_UP" value="Color 6" />
+   <Color name="D_TAKING_OFF" value="Default Foreground" />
+   <Color name="D_AIRBORNE" value="Colour 8" />
+   <Color name="D_AT_DE_ICING_AREA" value="Color 4" />
+   <Color name="D_AT_WAITING_AREA" value="Color 4" />
+  </ColorPalette>
+  <ColorPalette name="Flight Plan Status Colors" >
+   <Color name="UNCONCERNED" value="Default Foreground" />
+   <Color name="UNPLANNED" value="Default Foreground" />
+   <Color name="CREATED" value="Color 7" />
+   <Color name="CANCELLED" value="Default Foreground" />
+   <Color name="TERMINATED" value="Default Foreground" />
+   <Color name="ACTIVATED" value="Color 12" />
+   <Color name="TRANSFERRED" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="Departure Status Colors" >
+   <Color name="NOT_CLEARED" value="Default Foreground" />
+   <Color name="CLEARED_FOR_DEPARTURE" value="Color 19" />
+   <Color name="ACTIVATED" value="Colour 8" />
+   <Color name="TAXIING" value="Colour 12" />
+   <Color name="AIRBORNE" value="Colour 10" />
+  </ColorPalette>
+  <ColorPalette name="CTOT vs Ref. TOT Colors" >
+   <Color name="UNSET" value="Default Foreground" />
+   <Color name="EARLY" value="Default Background" />
+   <Color name="IMMINENT" value="Color 12" />
+   <Color name="NOMINAL" value="Color 19" />
+   <Color name="CRITICAL" value="Colour 6" />
+   <Color name="LATE" value="Colour 4" />
+  </ColorPalette>
+  <ColorPalette name="Flight frozen Colors" >
+   <Color name="FALSE" value="Default Foreground" />
+   <Color name="TRUE" value="Color 12" />
+  </ColorPalette>
+  <ColorPalette name="Departure stability status Colors" >
+   <Color name="UNKNOWN" value="Default Foreground" />
+   <Color name="FROZEN" value="Colour 8" />
+   <Color name="SUPER_STABLE" value="Default Background" />
+   <Color name="STABLE" value="Colour 10" />
+   <Color name="UNSTABLE" value="Color 18" />
+  </ColorPalette>
+  <ColorPalette name="Departure OBT adherence Colors" >
+   <Color name="UNSET" value="Default Foreground" />
+   <Color name="EARLY" value="Default Background" />
+   <Color name="IMMINENT" value="Color 12" />
+   <Color name="NOMINAL" value="Color 19" />
+   <Color name="CRITICAL" value="Colour 6" />
+   <Color name="LATE" value="Colour 4" />
+  </ColorPalette>
+  <ColorPalette name="Departure priority Colors" >
+   <Color name="BLOCKED" value="Colour 4" />
+   <Color name="UNPLANNED" value="Color 7" />
+   <Color name="NOT_BLOCKED" value="Default Background" />
+   <Color name="REMOTE_AMAN_CONSTRAINED" value="Color 15" />
+   <Color name="ATFM_CONSTRAINED" value="Color 21" />
+   <Color name="HIGH" value="Default Foreground" />
+   <Color name="VERY_HIGH" value="Default Foreground" />
+   <Color name="FROZEN" value="Color 12" />
+  </ColorPalette>
+  <ColorPalette name="Movement Colors" >
+   <Color name="DEPARTURE" value="Color 23" />
+   <Color name="ARRIVAL" value="Colour 14" />
+  </ColorPalette>
+  <ColorPalette name="Delay Status Colors" >
+   <Color name="LOW" value="Color 7" />
+   <Color name="MEDIUM" value="Colour 6" />
+   <Color name="HIGH" value="Colour 4" />
+  </ColorPalette>
+  <ColorPalette name="Actual Times Validity Colors" >
+   <Color name="ASSIGNED" value="Default Foreground" />
+   <Color name="NOT_ASSIGNED" value="Default Foreground" />
+  </ColorPalette>
+  <ColorPalette name="CTA/EAT Status Fg Colors" >
+   <Color name="NONE" value="Default Foreground" />
+   <Color name="PROPOSED" value="Colour 2" />
+   <Color name="MODIFIED" value="Colour 2" />
+   <Color name="DELETED" value="Colour 2" />
+   <Color name="ACKNOWLEDGED" value="Default Background" />
+   <Color name="CONSISTENCY_WARNING" value="Default Background" />
+  </ColorPalette>
+  <ColorPalette name="CTA/EAT Status Bg Colors" >
+   <Color name="NONE" value="Default Foreground" />
+   <Color name="PROPOSED" value="Default Background" />
+   <Color name="MODIFIED" value="Color 7" />
+   <Color name="DELETED" value="Color 21" />
+   <Color name="ACKNOWLEDGED" value="Default Background" />
+   <Color name="CONSISTENCY_WARNING" value="Color 21" />
+  </ColorPalette>
+  <ColorPalette name="Presence Colors" >
+   <Color name="YES" value="Colour 16" />
+   <Color name="NO" value="Colour 4" />
+  </ColorPalette>
+  <ColorPalette name="Feedback Level Fg Colors" >
+   <Color name="ALARM" value="Colour 4" />
+   <Color name="WARNING" value="Colour 6" />
+   <Color name="ACK" value="Color 7" />
+   <Color name="INFO" value="Default Background" />
+  </ColorPalette>
+  <ColorPalette name="Departure Timeline Status Colors" >
+   <Color name="NOT_CLEARED_OR_CLEARED_FOR_DEPARTURE" value="Default Foreground" />
+   <Color name="CLEARED_FOR_STARTUP" value="Colour 15" />
+   <Color name="PUSHED" value="Colour 16" />
+   <Color name="PLACED_INTO_THE_SEQUENCE" value="Colour 8" />
+   <Color name="ACTIVATED" value="Colour 7" />
+   <Color name="AIRBORNE" value="Default Background" />
+  </ColorPalette>
+  <ColorPalette name="Delay Indicator Colors" >
+   <Color name="STATE_1" value="Default Foreground" />
+   <Color name="STATE_2" value="Color 7" />
+   <Color name="STATE_3" value="Colour 6" />
+   <Color name="STATE_4" value="Colour 4" />
+  </ColorPalette>
+  <ColorPalette name="Rate Deviation Colors" >
+   <Color name="NOT_SIGNIFICANT" value="Color 6" />
+   <Color name="NORMAL" value="Color 19" />
+   <Color name="HIGH_DEVIATION" value="Colour 6" />
+   <Color name="VERY_HIGH_DEVIATION" value="Color 22" />
+  </ColorPalette>
+ </ColorPalettes>
+</ColorDatabase>

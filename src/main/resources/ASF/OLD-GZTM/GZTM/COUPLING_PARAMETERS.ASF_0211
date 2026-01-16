@@ -1,0 +1,68 @@
+--
+--           FILE :  COUPLING_PARAMETERS.ASF
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+-- Modified by RF for FAT1 testing
+--
+ TFC_SPEED_THRESHOLD             | K0100
+ TFC_ALT_THRESHOLD               | F1
+ TFC_UPDATE_PERIOD               | 10
+ TFC_AIRPORT_RADIUS              | 20NM
+ TFC_POINT_RADIUS                | 30NM
+ TFC_FIRST_POINT_RADIUS          | 20NM
+ TFC_UNPUBLISHED_CORRIDOR_WIDTH  | 30NM
+ TFC_PUBLISHED_CORRIDOR_WIDTH    | 30NM
+ TFC_DECOUPLING_UPDATE_THRESHOLD | 3
+--
+--
+ SPECIAL_CODES                   | 1000
+ SPECIAL_CODES                   | 1111
+ SPECIAL_CODES                   | 7500
+ SPECIAL_CODES                   | 7600
+ SPECIAL_CODES                   | 7700
+--
+ APR_POINT_RADIUS                | 10NM
+ APR_UPDATE_CRUISE_PERIOD        | 5    --10 orig
+ APR_UPDATE_MANOEUVER_PERIOD     | 3    -- 3 orig
+--
+--
+ TFC_FEEDER_FIX_RADIUS           | 5NM
+ APR_UPDATE_FF_AREA              | 30
+ TFC_FF_AREA_CORRIDOR_WIDTH      | 5NM
+--
+ TFC_LONGITUDINAL_TIME_DELTA     | 30
+
+ TFC_MODE_A_MISMATCH_DELAY_WARNING | 5
+
+
+TFC_WARN_RESPONSIBLE_OF_DECOUPLING | FALSE
+TFC_MIN_CREDIBILITY_VALUE_FOR_COUPLING          | 1
+TFC_MIN_COUPLING_MAINTENANCE_VALUE_FOR_DECOUPLING | 0
+TFC_MAX_DUPE                                    | 4
+
+TFC_TARGET_ID_COEF                              | 5
+TFC_TARGET_AD_COED                              | 4
+TFC_ASSR_MODE3_A_COEF                           | 3
+TFC_PSSR_MODE3_A_COEF                           | 2
+
+TFC_VERT_TOLERANCE   | 30000FT
+TFC_DUPE_THRESHOLD              | 3
+TFC_DECOUPLE_PERIOD | 12
+INTENT_REPORTING_ENABLED | Y
+INHIB_TFC_VERT_TOLERANCE  | FALSE --TRUE
+GBS_PROC_ENABLE                 | N
+
+
+TFC_TARGET_ID_MISMATCH_DELAY_WARNING | 1
+TFC_TARGET_ADDRESS_MISMATCH_DELAY_WARNING | 1
+DUPE_MIN_DISTANCE_THRESHOLD  | 20NM

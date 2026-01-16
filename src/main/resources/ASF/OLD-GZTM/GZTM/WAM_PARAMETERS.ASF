@@ -1,0 +1,23 @@
+--
+--           File :  WAM_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  28 MAR 2011
+-- BY             :  KWANG WAN
+-- VERSION        :  INITIAL
+--
+--
+--
+--      Version | Date  | Responsible | Comment
+----------------|-------|-------------|---------
+--              |280311 | K WAN       | INITIAL
+--
+--
+WAM_DOP_XY_THRESHOLD           | 50
+WAM_SITE_GEO_RANGE             | 0.5NM
+WAM_SITE_PERIOD                | 5
+WAM_TST_PROC_ENABLE            | N
+WAM_SIM_PROC_ENABLE            | Y
+WAM_SITE_DOP_XY_THRESHOLD      | 3
+WAM_PACKING_PERIOD             | 0
+WAM_RADAR_POS_THRESHOLD        | 296

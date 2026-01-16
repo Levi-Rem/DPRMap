@@ -1,0 +1,128 @@
+------------------------------------------------------------------
+--           FILE :  MRT_PARAMETERS.ASF
+------------------------------------------------------------------
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--              | 6/11/03 | K WAN       | radars renamed 
+--
+--
+-- Credibility factor initialization value in position criterion
+OFL_CREDIBILITY_FACTOR_INIT | 30
+
+-- COEFFICIENT USED TO COMPUTE CREDIBILITY FACCOR IN POSITION CRITERION
+OFL_CREDIBILITY_FACTOR_COEF | 23
+
+-- VALUE THAT MUST REACH CREDIBILITY FACTGOR TO ALLOW ASSOCIATION 
+-- BETWEEN LOCAL AND SYSTEM TRACKS
+OFL_CREDIBILITY_LEVEL | 10
+
+-- VALUE THAT MUST REACH CREDIBILITY FACTOR TO ALLOW ASSOCIATION
+-- KEEPING OF TWO COMPAREDD LOCAL TRACKS
+OFL_CREDIBILITY_LEVEL_2 | 15
+
+-- Minimum value of MTQ used in choice of local tracks taken into 
+-- account for system track updating
+OFL_MTQ_THRESHOLD | 35
+
+-- Minimum speed to peform speed criteria
+OFL_SPEED_BASIS | N0301
+
+-- Offset to add to credibility factor when speed criterion is satisfied
+OFL_SATISFIED_SPEED_OFFSET | 8.0
+
+-- Offset to add to credibility factor when speed criterion is not
+-- satisfied
+OFL_NOT_SATISFIED_SPEED_OFFSET | 0.0
+
+-- Allowed error ratio between speeds
+OFL_ERROR_RATIO | 0.85
+
+-- Minimum value of Multiradar Track Quality used in computation of 
+-- System track SSR code
+OFL_MTQ_THRESHOLD_SSR | 12
+
+-- Credibility factor offset for compatible altitudes
+OFL_COMPATIBLE_ALT_OFFSET | 10
+
+-- Credibility factor offset for not compatible altitudes
+OFL_NOT_COMPATIBLE_ALT_OFFSET | -10.0
+
+-- Local tracks barycentering coefficient parameter
+OFL_DELTA_WEIGHT | 0.5
+
+-- Coefficient based on radar priority used to compute local tracks
+-- barycentring coefficient
+--  radar priority     | FHG| XLG | SHG  | SHZ  | ZHI | BJS  | STU   | HKU  | GLN  | CS1  | CS2  |
+OFL_COEF_OF_PRIO_TABLE | 2.0|1.75 | 1.5  | 1.5  | 1.5 | 1.75 | 1.75  | 1.75 | 1.75 | 1.75 | 1.75 |
+--
+-- System area coordinates
+-- OFL_SYSTEM_AREA_COORD.SUP.X | OFL_SYSTEM_AREA_COORD.SUP.Y
+OFL_SYSTEM_AREA_COORD_SUP | 2048.000NM | 512.000NM |
+-- OFL_SYSTEM_AREA_COORD.INF.X | OFL_SYSTEM_AREA_COORD.INF.Y
+OFL_SYSTEM_AREA_COORD_INF | 2048.00NM | -512.00NM |
+
+-- Controlled system area coordinates
+-- OFL_CONTROL_AREA_COORD.SUP.X | OFL_CONTROL_AREA_COORD.SUP.Y
+OFL_CONTROL_AREA_COORD_SUP | 2048.00NM | 500.00NM |
+-- OFL_CONTROL_AREA_COORD.INF.X | OFL_CONTROL_AREA_COORD.SUP.Y
+OFL_CONTROL_AREA_COORD_INF | 2048.00NM | -500.00NM |
+
+-- OFL_ALLOWED_ASSOCIATIONS_TBL_LINE
+-- Allowed associations between two tracks table
+OFL_ALLOWED_ASSOCIATIONS_TBL_LINE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | 
+
+-- Transmission delay
+-- Periods average allowed difference between current and theoritical
+-- periods for each radar
+-- Transmissino delay for each radar line.  Used North crossing
+-- time computation
+OFL_LINE_TRANSMISSION_DELAY_OF_RADAR | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 | 28 |
+
+-- OFL_RADAR_DISTANCE_AREA_TBL
+-- Position criterium range (in hundredth of NM : 0.0 to 25600.0)
+-- This table is used to determine the radar distance area where the
+-- local track is located
+-- Radar distance d1 | Radar distance d2 | Radar distance d3
+OFL_RADAR_DISTANCE_AREA_TBL | 50.00NM | 128.00NM | 255.00NM |
+
+-- OFL_POS_WINDOW_SIZE_TBL
+-- Window size for local track association processing (unit is 1NM)
+-- primary track window for distance < d1
+-- primary track window for d1 < distance < d2
+-- primary track window for d2 < distance < d3
+-- primary track window for distance > d3
+-- secondary track window for distance < d1
+-- secondary track window for d1 <distance < d2
+-- secondary track window for d2 < distance < d3
+-- secondary track window for distance > d3
+-- combined track window for distance < d1
+-- combined track window for d1 < distance < d2
+-- combined track window for d2 < distance < d3
+-- combined track window for distance > d3
+OFL_POS_WINDOW_SIZE_TBL | 2.00NM | 2.00NM| 4.0NM | 4.0NM | 2.0NM | 2.0NM | 4.0NM | 4.0NM | 2.0NM | 2.0NM | 4.0NM | 4.0NM | 
+
+-- Allowed Difference between two altitudes (in hundreds of feet)
+OFL_ALT_ALLOWED_DIFFERENCE | F100
+
+-- Monopulse radars declaration table
+OFL_MONOPULSE_RADAR | TRUE | TRUE | TRUE | FALSE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE | TRUE |
+
+-- Coefficient applied to the local tracks detected by monopulse
+-- radar at system track coordinates updating time
+OFL_MONOPULSE_RADAR_COEF | 1500.000
+
+BIAS_RANGE_THRESHOLD | 0.2NM
+
+RDF_BIAS_AZIMUT_THRESHOLD | 2.1
+
+OFL_SSR_CRITERION_OFFSET | 10.0 |-10.0 | 0.0 | -5.0 | 0.0 | 0.0 |
+                            0.0 | -5.0 | 8.0 | -8.0 | 0.0 | 0.0 | 
+                            0.0 |  0.0 | 0.0 | 0.0  | 8.0 | -8.0|

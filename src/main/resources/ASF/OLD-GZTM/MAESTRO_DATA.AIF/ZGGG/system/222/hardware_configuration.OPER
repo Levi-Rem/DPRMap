@@ -1,0 +1,27 @@
+#---------------------------------------------------------------------------------#
+#                                                                                 #
+#                                    MAESTRO                                      #
+#                                                                                 #
+#                            HARDWARE CONFIGURATION                               #
+#                                                                                 #
+#---------------------------------------------------------------------------------#
+#                                                                                 #
+#  This configuration files allows to specify the mapping of the various maestro  #
+#  servers in the differents sites, as well as the XTerminal which is associated  #
+#  to each server by default                                                      #
+#                                                                                 #
+#  The format of the file is composed of a line per server containing:            #
+#                                                                                 #
+#      <Server Name> <Default X Terminal> <SERVER LOCATION>                       #
+#                                                                                 #
+#  'Server Name' and 'Default X Terminal' must respect the casing with which they #
+#  are defined in the /etc/hosts file since host names are case sensitive on      #
+#  Digital                                                                        #
+#                                                                                 #
+#  'SERVER LOCATION' should always be in capitals                                 #
+#                                                                                 #
+#  Comment lines are allowed and should  begin with '#'                           #
+#                                                                                 #
+#---------------------------------------------------------------------------------#
+
+guercdp1ali	:0.0	ZGGG

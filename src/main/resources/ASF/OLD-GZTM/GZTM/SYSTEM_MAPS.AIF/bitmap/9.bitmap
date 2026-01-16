@@ -1,0 +1,6 @@
+#define 9_width 5
+#define 9_height 5
+#define 9_x_hot 2
+#define 9_y_hot 2
+static unsigned char 9_bits[] = {
+   0x1f, 0x1f, 0x1f, 0x1f, 0x1f};

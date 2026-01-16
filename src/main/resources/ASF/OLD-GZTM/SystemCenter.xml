@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemCenterRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SystemCenter.xsd"><SystemCenter hmiSegmentLengthInRadar="50.00" hmiSegmentLengthOutRadar="148.00" rdfHalfGreatAxis="6378137.00" rdfHalfSmallAxis="6356752.50"><systemCenter latitude="232329N" longitude="1131835E"/><extRadarSystemCenter latitude="232329N" longitude="1131835E"/></SystemCenter></SystemCenterRoot>

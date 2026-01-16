@@ -1,0 +1,41 @@
+#Protocol = {Tcp | Udp}
+RDPS.OPER.Protocol = Udp;
+
+#Connection_Mode = {Client | Server}
+#RDPS.OPER.Connection_Mode = Client;
+
+# if Protocol = Udp then this parameter is mandatory
+# hostname is the name of the host where RDPS runs.
+# OPER HOSTNAME
+RDPS.OPER.gztmamn1ali.Interface = 172.19.36.165;
+# ALTERNATE HOSTNAME
+RDPS.OPER.gztmamn1bli.Interface = 172.19.36.166;
+
+#Asterix_Track_Category = {Cat_30_Artas | Cat_30_App | Cat_30_Electra | Cat_30_Scansim | Cat_30_First_Plus | Cat_62_Artas}
+RDPS.OPER.Asterix_Track_Category = Cat_62_Artas;
+
+RDPS.OPER.Use_Time_Synchronization = False;
+#Asterix_Sync_Category = {Cat_252_Artas | Cat_252_Electra | Cat_252_Simu | Cat_255}
+##RDPS.OPER.Asterix_Sync_Category = Cat_255;
+
+##RDPS.OPER.Sac = 8;
+##RDPS.OPER.Sic = 135;
+
+RDPS.OPER.Port_Number = 60002;
+RDPS.OPER.Alternate_Port_Number = 60002;
+RDPS.OPER.Multicast_Group = 226.1.1.1;
+RDPS.OPER.Alternate_Multicast_Group = 226.1.1.1;
+
+# Timeout to wait between succesive connection attempts
+RDPS.OPER.Connection_Timeout    = 15;
+
+# Timeout after which the connection is broken if no data is received
+RDPS.OPER.Surveillance_Period   = 60;
+
+# ############################################################################## #
+
+IODE_TOWER.AIRPORT.OPER.Port_Number = 10204;
+IODE_TOWER.AIRPORT.OPER.Hostname = gztmamn1ali;
+IODE_TOWER.AIRPORT.OPER.Alternate_Port_Number = 10204;
+IODE_TOWER.AIRPORT.OPER.Alternate_Hostname = gztmamn1bli;
+IODE_TOWER.AIRPORT.OPER.Mode = FULL_DMAN;

@@ -1,0 +1,4011 @@
+--- 
+-- 
+--  FILE          :  AIRCRAFT_PERFORMANCE.ASF
+--
+-- 
+--
+--
+--
+--
+--
+--
+--
+--  A/C TYPE CAAC IS ADDED TO CATER FOR RTN & ALN MESSAGES
+--  
+--  UNIT INDICATOR MUST BE ADDED FOR SPEED AND ALTITUDE
+-- 
+--
+--
+--
+/RECAT/
+J|B|C|M|L|H|||||||||||
+
+/0/
+CONC/H/H T144/H/C SR71/M/M 
+*
+--Based on Embry Riddle data for concorde typical weight
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+       N0230 |   N0300      |   N0350      |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------- 
+          N0185   |        35       |        35FT     |    1.6NM    |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+          N0175         | 230 on approach
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          40            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+          N0900    |     F800    |     45      |    Y     |  Y      |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+       10        | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+     F20   |  F50  |   F100   |    F200   |   F270   |   F340   |   F410   |   F450  |  F480  |  F550  | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------------------- 
+  0500  |  1500  |  2600  |  3000  |  3000  |  2000  |  1100  | 0700 | 0300 | 0300 |climb rate ft/min
+  0700  |  0800  |  1100  |  2000  |  3500  |  4500  |  4400  | 2300 | 1500 | 1000 |descent rate ft/min
+  0060  |  0045  |  0035  |  0035  |  0045  |  0065  |  0100  | 0120 | 0140 | 0140 | acceleration kts/min
+  0080  |  0050  |  0080  |  0080  |  0080  |  0100  |  0100  | 0120 | 0150 | 0180 |deceleration kts/min
+  N0230 | N0330  | N0380  | N0420  | N0420  | N0460  | N0501  | M206 | M206 | M206 |cruising speed IAS
+  N0170 | N0190  | N0220  | N0220  | N0220  | N0250  | N0250  | N0250| N0250| N0250|stall speed 
+  N0230 | N0330  | N0380  | N0420  | N0420  | N0460  | N0501  | N0550| M202 | M202 | climbing speed IAS
+  N0200 | N0266  | N0316  | N0350  | N0330  | N0310  | N0290  | M104 | M121 | M180 |descent speed IAS
+-- 
+-- Performance Category
+   H
+
+/1/
+ACAR/L/L ADVE/L/L AIGT/L/L ALPI/L/L AUJ2/L/L AUJ4/L/L AUS9/L/L AVAM/L/L BALL/L/L C190/L/L CAMP/L/L CB1/L/L  CH70/L/L
+COM7/L/L COYO/L/L CRER/L/L D31/L/L  D4/L/L   D6/L/L   D9/L/L   DH60/L/L DH80/L/L DH82/L/L DR1/L/L  GLID/L/L G912/L/L 
+J1/L/L   J2/L/L   J3/L/L   J5/L/L   JA50/L/L RS12/L/L SPT1/L/L  PA2/L/L  PA3/L/L  PA5/L/L AUST/L/L ZZZZ/L/L
+KA32/L/L PC6/L/L
+*
+--old icao types etc: PA2/L PA3/L PA5/L AUST/L
+--Data based on DH82 data plus average of Janes data 
+---- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+      N0060  |     N0060    |     N0050    |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	 N0050    |       15        |        50FT     |     0.3NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	 N0055          | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  20            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0130    |     F510     |      60     |    N      |  N       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   130    |   200    |  to turn 
+     50   |   130    |   180    |  to accelerate 
+     50   |   130    |   180    |  to decelerate 
+     66   |   120    |   140    |  to climb 
+     66   |   140    |   200    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F20    |    F30   |    F50     |    F70    |   F90    |  F100   |  in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------------------- 
+  0400  |  0400  |  0350  |  0300  |  0200  |  0100  | climb rate 
+  0500  |  0500  |  0500  |  0500  |  0500  |  0500  | descent rate 
+  0015  |  0015  |  0015  |  0010  |  0010  |  0010  | acceleration 
+  0020  |  0020  |  0020  |  0020  |  0020  |  0020  | deceleration 
+  N0075 | N0075 | N0075 | N0073 | N0071 | N0070 | cruising speed 
+  N0030 | N0030 | N0030 | N0030 | N0030 | N0030 | stall speed 
+  N0060 | N0060 | N0060 | N0060 | N0060 | N0060 | climbing speed IAS 
+  N0070 | N0070 | N0080 | N0080 | N0080 | N0080 | descent speed IAS 
+-- 
+-- Performance Category
+   L 
+
+/2/
+CAPL/L/L FP40/L/L KL25/L/L KTOO/L/L MAJR/L/L MAME/L/L MCOU/L/L MINR/L/L MONI/L/L MRAI/L/L NIPR/L/L PA12/L/L PA17/L/L 
+PIXI/L/L RENE/L/L RLU1/L/L S1/L/L   SAKO/L/L SCAM/L/L SCTR/L/L SE5A/L/L SE5R/L/L SHIP/L/L SOLI/L/L SPAR/L/L VJ21/L/L 
+VJ22/L/L VP1/L/L  VP2/L/L  W62T/L/L WEST/L/L WOT/L/L  SLIN/L/L 
+*
+--old icao types etc: SLIN/L
+--Group 2 is a duplicate of group 1 for performance data to accommodate the overflow from group 1.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+     N0060   |    N0060     |     N0050    |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	 N0050    |       15        |        50FT    |     0.3NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	 N0055          | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  20            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0130    |     F160     |      60     |    N     |  N       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   130    |   200    |  to turn 
+     50   |   130    |   180    |  to accelerate 
+     50   |   130    |   180    |  to decelerate 
+     66   |   120    |   140    |  to climb 
+     66   |   140    |   200    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F20    |    F30   |    F50     |    F70    |   F90    |  F100   |  in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------------------- 
+  0400  |  0400  |  0350  |  0300  |  0200  |  0100  | climb rate 
+  0500  |  0500  |  0500  |  0500  |  0500  |  0500  | descent rate 
+  0015  |  0015  |  0015  |  0010  |  0010  |  0010  | acceleration 
+  0020  |  0020  |  0020  |  0020  |  0020  |  0020  | deceleration 
+  N0075 | N0075 | N0075 | N0073 | N0071 | N0070 | cruising speed 
+  N0030 | N0030 | N0030 | N0030 | N0030 | N0030 | stall speed 
+  N0060 | N0060 | N0060 | N0060 | N0060 | N0060 | climbing speed IAS 
+  N0070 | N0070 | N0080 | N0080 | N0080 | N0080 | descent speed IAS 
+-- 
+-- Performance Category
+   L 
+
+/3/
+AR11/L/L AR15/L/L ATL/L/L  AUS5/L/L AUS6/L/L BE77/L/L C120/L/L C140/L/L C150/L/L C152/L/L C170/L/L CA61/L/L D18/L/L  
+D5TU/L/L D6CP/L/L DH83/L/L DH87/L/L DH94/L/L DO27/L/L F120/L/L GY20/L/L JACE/L/L OPCA/L/L PA14/L/L PA38/L/L 
+PL1/L/L PORT/L/L QAIL/L/L S10/L/L  S108/L/L SA6/L/L  SASY/L/L SF2/L/L  TAYA/L/L TAYB/L/L W201/L/L AR50/L/L BT6/L/L  
+EA7/L/L  RA50/L/L TC65/L/L TC12/L/L 
+*
+--old icao types etc: AR50/L BT6/L EA7/L RA50/L TC65/L TC12/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+     N0075   |    N0075     |     N0065    |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	  N0065   |       15        |        50FT     |    0.3NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	 N0070          | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	   N0150   |     F200     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |in increasing order 
+--
+--     performance values 
+------------------------------------------------------------------------------- 
+   0500  |  0500  |  0450  |  0400  |  0250  |  0100  | climb rate ft/min
+   0300  |  0300  |  0500  |  0500  |  0500  |  0500  | descent rate ft/min
+   0015  |  0015  |  0015  |  0010  |  0010  |  0010  | acceleration 
+   0010  |  0020  |  0020  |  0020  |  0020  |  0020  | deceleration 
+  N0090 | N0090 | N0085 | N0082 | N0080 | N0078 | cruising speed IAS
+  N0035 | N0035 | N0035 | N0035 | N0035 | N0035 | stall speed 
+  N0070 | N0070 | N0070 | N0070 | N0070 | N0065 | climbing speed IAS 
+  N0090 | N0090 | N0090 | N0090 | N0090 | N0090 | descent speed IAS
+--
+-- Performance Category
+   L
+
+/4/
+AVID/L/L BACE/L/L BIPL/L/L BU31/L/L CA28/L/L CJ1/L/L D5/L/L   DH85/L/L FB1A/L/L FB1B/L/L FOX/L/L  GP3/L/L  
+IFUR/L/L JABI/L/L JT1/L/L  L8/L/L   LWIN/L/L M10/L/L  O1/L/L   PA11/L/L PA15/L/L PA18/L/L PL4/L/L PZ04/L/L 
+SB7/L/L  SHAD/L/L ST75/L/L SV4/L/L  SWAK/L/L TTWO/L/L W11/L/L  B75/L/L  BT18/L/L C131/L/L C305/L/L L19/L/L  
+MO10/L/L POW4/L/L SB5/L/L  SL8/L/L  SV4B/L/L
+*
+--old icao types etc: B75/L  BT18/L C131/L C305/L L19/L  MO10/L POW4/L SB5/L  SL8/L  SV4B/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0075    |   N0075      |    N0065     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0065    |       15        |        50FT      |    0.3NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0070           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0150    |     F200     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |in increasing order 
+--
+--     performance values 
+------------------------------------------------------------------------------- 
+   0650  |  0600  |  0500  |  0400  |  0300  |  0100  | climb rate ft/min
+   0500  |  0500  |  0500  |  0500  |  0400  |  0400  | descent rate ft/min
+   0015  |  0015  |  0015  |  0010  |  0010  |  0010  | acceleration 
+   0020  |  0020  |  0020  |  0020  |  0020  |  0020  | deceleration 
+  N0090 | N0090 | N0085 | N0082 | N0080 | N0078 | cruising speed IAS
+  N0035 | N0035 | N0035 | N0035 | N0035 | N0035 | stall speed 
+  N0070 | N0070 | N0070 | N0070 | N0070 | N0065 | climbing speed IAS 
+  N0090 | N0090 | N0090 | N0090 | N0090 | N0090 | descent speed IAS
+--
+-- Performance Category
+   L
+
+/5/
+A9/L/L  AA1/L/L  AIRD/L/L AKRO/L/L AN2/L/L Y5/L/L YUN5/L/L YU5/L/L  AN3/L/L  BE19/L/L CHAL/L/L CH60/L/L CLB1/L/L D11/L/L  DIMO/L/L 
+ERCO/L/L FALM/L/L FSRW/L/L GOTR/L/L H40/L/L  KL07/L/L L11/L/L  OSCR/L/L OZZ1/L/L PA16/L/L PA20/L/L PA25/L/L 
+PA36/L/L PL12/L/L RBEL/L/L SA11/L/L SA3/L/L  SA7/L/L  SACE/L/L SUBA/L/L TAMP/L/L T211/L/L VIX/L/L  AE11/L/L 
+AN2M/L/L BT10/L/L CH3/L/L  EBK1/L/L FH20/L/L TB09/L/L TN12/L/L TP21/L/L WA11/L/L WA12/L/L EC25/M/M 
+*
+--old icao types etc: AE11/L AN2M/L BT10/L CH3/L  EBK1/L FH20/L TB09/L TN12/L TP21/L WA11/L WA12/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0090    |   N0080      |    N0075     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0070    |       15        |        50FT      |    0.3NM    | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0075           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--maximum values
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0160    |     F200     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |in increasing order 
+--
+--     performance values 
+------------------------------------------------------------------------------- 
+   0500  |  0500  |  0450  |  0400  |  0250  |  0100  | climb rate ft/min
+   0500  |  0500  |  0500  |  0500  |  0400  |  0400  | descent rate ft/min
+   0020  |  0020  |  0020  |  0020  |  0015  |  0015  | acceleration kts/min
+   0020  |  0020  |  0020  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0100  | N0100  | N0099  | N0096  | N0093  | N0091  | cruising speed IAS
+  N0050  | N0050  | N0050  | N0050  | N0050  | N0050  | stall speed 
+  N0080  | N0080  | N0080  | N0080  | N0080  | N0075  | climbing speed IAS 
+  N0100  | N0100  | N0100  | N0110  | N0110  | N0110  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/6/
+ACR2/L/L AR7/L/L  BD6/L/L  BLKS/L/L C172/L/L C177/L/L CH30/L/L CP30/L/L  DA2/L/L  DH89/L/L PA22/L/L PC6P/L/L PL2/L/L
+DHC1/L/L EAGX/L/L FA24/L/L FU24/L/L GA20/L/L HR10/L/L L40/L/L  LA4/L/L   M18/L/L  MESS/L/L BT12/L/L RA72/L/L S2/L/L
+PUP/L/L  QIC2/L/L QUIC/L/L SPR2/L/L SS2P/L/L TF21/L/L TOUR/L/L VVIG/L/L  YK52/L/L Z42/L/L  TC21/L/L VT10/L/L     
+DH1/L/L  GA2/L/L  HS8/L/L  LA04/L/L M3A/L/L   PL6/L/L  PO18/L/L PR24/L/L VT11/L/L VT15/L/L
+Y11/L/L YN11/L/L 
+
+
+
+*
+--old icao types etc: BT12/L     DH1/L  GA2/L  HS8/L LA04/L M3A/L  
+-- 
+-- PL6/L  PO18/L PR24/L RA72/L S2/L   TC21/L VT10/L VT11/L VT15/L
+--Revised group based on C172 data fro ER climb 85 cruise 105 desc 110
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0090    |   N0080      |    N0075    |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0070    |       15        |        50FT      |    0.3NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0075           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0160    |     F200     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |in increasing order 
+--
+--     performance values 
+------------------------------------------------------------------------------- 
+  0650  |  0600  |  0500  |  0400  |  0300  |  0175  | climb rate ft/min
+  0500  |  0500  |  0500  |  0500  |  0400  |  0400  | descent rate ft/min
+  0020  |  0020  |  0020  |  0020  |  0015  |  0015  | acceleration kts/min
+  0020  |  0020  |  0020  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0100 | N0100  | N0099  | N0096  | N0093  | N0091  | cruising speed IAS
+  N0050 | N0050  | N0050  | N0050  | N0050  | N0050  | stall speed 
+  N0085 | N0085  | N0083  | N0082  | N0080  | N0076  | climbing speed IAS 
+  N0100 | N0105  | N0110  | N0110  | N0105  | N0100  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/7/
+AA5/L/L BX2/L/L C175/L/L C188/L/L CH20/L/L D140/L/L D150/L/L DHA3/L/L DV20/L/L G115/L/L G44/L/L JUNR/L/L LA60/L/L MJ5/L/L  
+N320/L/L PA28/L/L PROC/L/L R200/L/L RALL/L/L RF6/L/L SGL/L/L  S05F/L/L TOBA/L/L VO10/L/L WACC/L/L WACE/L/L WACF/L/L WFOC/L/L 
+AA5B/L/L AC10/L/L GR15/L/L  GROB/L/L HK3/L/L MC6/L/L  MC6F/L/L PERC/L/L RF6B/L/L SM5F/L/L 
+S235/L/L S880/L/L S885/L/L S892/L/L S893/L/L TB10/L/L A139/L/L S92/M/M
+*
+--old icao types etc AA5B/L AC10/L GR15/L G115/L GROB/L HK3/L MC6/L  MC6F/L O326/L 
+--PERC/L RF6B/L SM5F/L S235/L S880/L S885/L S892/L S893/L TB10/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0095    |   N0085      |    N0075     |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0075     |       15        |        50FT     |    0.3NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0070           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0190    |     F230     |      60    |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   | F140  |in increasing order 
+--
+--     performance values 
+------------------------------------------------------------------------------- 
+   0750  |  0690  |  0620  |  0550  |  0450  |  0250  | 0100 |climb rate ft/min
+   0475  |  0500  |  0500  |  0500  |  0500  |  0400  | 0300 |descent rate ft/min
+   0025  |  0025  |  0025  |  0020  |  0020  |  0015  | 0015 | acceleration kts/min
+   0025  |  0025  |  0025  |  0025  |  0025  |  0025  | 0025 | deceleration kts/min
+  N0110 | N0110 | N0110 | N0108 | N0106 | N0101 | N0097 | cruising speed IAS
+  N0050 | N0050 | N0050 | N0050 | N0050 | N0050 | N0050 |stall speed 
+  N0090 | N0090 | N0090 | N0088 | N0085 | N0082 | N0079 |climbing speed IAS 
+  N0104 | N0108 | N0115 | N0120 | N0120 | N0115 | N0110 |descent speed IAS
+--
+-- Performance Category
+   L
+
+/8/
+ACRO/L/L AT3P/L/L BDOG/L/L BL8/L/L BOLT/L/L CAT/M/M COUG/L/L COZY/L/L G164/L/L HUSK/L/L KIS/L/L MAGN/L/L MAMB/L/L 
+MC10/L/L P28R/L/L  P28T/L/L PTS2/L/L PULS/L/L RELI/L/L RYAN/L/L SA02/L/L SA30/L/L SS2T/L/L WICH/L/L YK50/L/L Z26/L/L
+AC2R/L/L BL28/L/L BL30/L/L CI2/L/L  CH10/L/L CV14/M/M O326/L/L O526/L/L PARO/L/L P151/L/L ST77/L/L S2R/L/L 
+*
+--old icao types etc: BL28/L BL30/L CI2/L  CH10/L CV14/M O526/L PARO/L P151/L ST77/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0095    |    N0085     |    N0080     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0075     |       15        |        50FT     |    0.3NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0080           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0190    |     F230     |      60     |   N     |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   | F150 | in increasing order 
+--
+--     performance values 
+------------------------------------------------------------------------------- 
+   1050  |  1000  |  0900  |  0700  |  0500  |  0300  |  0100 | climb rate ft/min
+   0475  |  0500  |  0500  |  0500  |  0500  |  0400  |  0300 | descent rate ft/min
+   0025  |  0025  |  0025  |  0020  |  0020  |  0015  |  0015 | acceleration kts/min
+   0025  |  0025  |  0025  |  0025  |  0025  |  0025  |  0025 | deceleration kts/min
+  N0110  | N0110  | N0110  | N0108  | N0106  | N0101  | N0097 | cruising speed IAS
+  N0050  | N0050  | N0050  | N0050  | N0050  | N0050  | N0050 |stall speed 
+  N0090  | N0090  | N0090  | N0088  | N0085  | N0082  | N0079 |climbing speed IAS 
+  N0110  | N0115  | N0120  | N0120  | N0120  | N0120  | N0115 |descent speed IAS
+--
+-- Performance Category
+   L
+
+/9/
+AE45/L/L AT3T/L/L AT5P/L/L AT5T/L/L B14A/L/L BD4/L/L BE23/L/L BE24/L/L C180/L/L C72R/L/L CA65/L/L CMAS/L/L COUR/L/L 
+CP10/L/L CT4/L/L  DFLY/L/L DH2T/L/L DHC2/L/L DHC3/L/L GC1/L/L  KR1/L/L 
+KR2/L/L LGEZ/L/L M200/L/L M6/L/L  M7/L/L   M7T/L/L  PC6T/L/L POLI/L/L RV3/L/L SB91/L/L SIDE/L/L SRAI/L/L VEZE/L/L 
+WACO/L/L YK18/L/L AT3/L/L AT5B/L/L C34/L/L  C37/L/L  C165/L/L  DH2/L/L DH3/L/L  
+ML6/L/L  ML7/L/L  MX7/L/L  O145/L/L  PR07/L/L U10/L/L
+*
+--old icao types etc: AT3/L AT5B/L C34/L  C37/L  C165/L  DH2/L DH3/L  
+-- ML6/L  ML7/L  MX7/L  O145/L  PR07/L U10/L
+
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0110    |   N0100      |    N0090     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0080     |       20        |        50FT       |    0.4NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0080           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0200    |     F300     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |   F150   |in increasing order 
+--
+--     performance values 
+------------------------------------------------------------------------------- 
+  0700  |  0650  |  0550  |  0480  |  0400  |  0300  |  0150  | climb rate ft/min
+  0500  |  0500  |  0500  |  0500  |  0500  |  0400  |  0400  | descent rate ft/min
+  0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | acceleration kts/min
+  0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | deceleration kts/min
+ N0130  | N0130  | N0125  | N0120  | N0115  | N0112  | N0108  | cruising speed IAS
+ N0050  | N0050  | N0050  | N0050  | N0050  | N0050  | N0050  | stall speed 
+ N0090  | N0090  | N0085  | N0085  | N0085  | N0082  | N0080 | climbing speed IAS 
+ N0120  | N0120  | N0120  | N0130  | N0130  | N0120  | N0110  |descent speed IAS
+--
+-- Performance Category
+   L
+
+/10/
+BN2P/L/L C182/L/L C185/L/L C195/L/L C205/L/L C206/L/L C207/L/L C336/L/L C77R/L/L CM11/L/L DOVE/L/L EAGL/L/L GLST/L/L 
+G64T/L/L GY80/L/L M4/L/L   M5/L/L   MUS2/L/L STLN/L/L TAIL/L/L AC12/L/L AC14/L/L AC2T/L/L BN2/L/L  BN2A/L/L BN2B/L/L 
+HE55/L/L HS04/L/L ML4/L/L  ML5/L/L   S80/L/L  UA24/L/L WR46/L/L
+*
+--old icao types etc AC12/L AC14/L AC2T/L BN2/L  BN2A/L BN2B/L HE55/L HS04/L ML4/L ML5/L 
+-- S80/L  UA24/L WR46/L
+
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0110    |   N0100      |    N0090     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0070     |       20        |        20FT     |    0.4NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0075           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0200    |     F300     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |   F150   |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   0750  |  0650  |  0550  |  0450  |  0400  |  0300  |  0170  | climb rate ft/min
+   0500  |  0500  |  0500  |  0500  |  0450  |  0400  |  0400  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | deceleration kts/min
+  N0120  | N0120  | N0120  | N0120  | N0117  | N0115  | N0105  | cruising speed IAS
+  N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | stall speed 
+  N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | climbing speed IAS 
+  N0120  | N0135  | N0135  | N0135  | N0130  | N0125  | N0115  |descent speed IAS
+--
+-- Performance Category
+   L
+
+/11/
+ANSN/L/L AT8T/L/L BE76/L/L C82R/L/L CA19/L/L DHC6/L/L F8L/L/L  GA7/L/L  G73/L/L  L200/L/L M20/L/L PA24/L/L P32R/L/L 
+P32T/L/L RANG/L/L RV4/L/L S05R/L/L T18/L/L  T6/L/L  TPIN/L/L TRIN/L/L TRIS/L/L AM8L/L/L AT80/L/L AVRO/L/L BN3/L/L DH6/L/L   
+MO2J/L/L MO2K/L/L MO20/L/L M20C/L/L  M20K/L/L M20J/L/L MO21/L/L NA1/L/L O200/L/L SC2/L/L  SM52/L/L NOT6/L/L TB20/L/L 
+C82/M/M
+*
+--old icao types etc: AM8L/L AT80/L AVRO/L BN3/L DH6/L MO2J/L MO2K/L MO20/L M20C/L M20K/L M20J/L 
+--MO21/L  NA1/L O200/L SC2/L SM52/L NOT6/L TB20/L 
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0120    |   N0110      |    N0100     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0080     |       20        |        20FT     |    0.4NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0090           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0220    |     F300     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |   F150   |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   0800  |  0750  |  0680  |  0600  |  0520  |  0400  |  0100  | climb rate ft/min
+   0500  |  0500  |  0600  |  0700  |  0760  |  0720  |  0600  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | deceleration kts/min
+  N0135  | N0135  | N0135  | N0135  | N0132  | N0129  | N0126  | cruising speed IAS
+  N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | stall speed 
+  N0100  | N0100  | N0100  | N0100  | N0100  | N0100  | N0100  | climbing speed IAS 
+  N0120  | N0140  | N0145  | N0145  | N0145  | N0135  | N0130  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/12/
+BARC/L/L BETA/L/L CA16/L/L CA25/L/L CJ6/L/L  FT6/L/L  CL2P/M/M 
+--CRES/L 
+DC3/M/M  DHC4/M/M E230/L/L F260/L/L  F26T/L/L LA25/L/L 
+-----MIMU/L NOMA/L 
+P68/L/L  PA32/L/L PA44/L/L 
+--PILL/L PPRO/L 
+
+PTS1/L/L S2P/M/M  SC7/L/L  T34P/L/L BE45/L/L  C47/M/M   CC08/M/M 
+CD22/L/L CD24/L/L CL21/M/M DH4/M/M  G89/M/M  LA27/L/L LA2T/L/L P56/L/L  P152/L/L PN68/L/L  SH7/L/L    SM20/L/L  SM26/L/L 
+CL2T/M/M CL44/M/M CL4G/M/M DC6/H/H  DC7/H/H  J6/M/M   MG19/M/M SM6T/L/L T34/L/L
+
+----------------------------------
+
+--K7/L K8/L A5/M Q5/M ----2005-9-6
+
+---------------------------------
+
+
+
+
+
+*
+--old icao types etc: BE45/L C47/M CC08/M CD22/L CD24/L CL21/M DH4/M G89/M P56/L P152/L PN68/L 
+--S2/M SH7/L SM20/L SM26/L SM6T/L T34/L  TB20/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0125    |   N0115      |    N0105     |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0090     |       18        |        20FT     |    0.4NM    | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0090           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0220    |     F300     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |   F150   |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   1000  |  0950  |  0900  |  0800  |  0650  |  0500  |  0300  | climb rate ft/min
+   0600  |  0580  |  0580  |  0580  |  0600  |  0600  |  0580  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  | deceleration kts/min
+  N0130  | N0135  | N0135  | N0135  | N0132  | N0129  | N0126  | cruising speed IAS
+  N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | stall speed 
+  N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | climbing speed IAS 
+  N0120  | N0140  | N0145  | N0145  | N0145  | N0135  | N0130  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/13/
+BN2T/L/L C208/L/L C210/L/L C337/L/L G21/L/L  HERN/L/L PA23/L/L RV6/L/L SEAW/L/L T28/L/L  VELO/L/L HS14/L/L YN12/L/L Y12/L/L YU12/L/L
+*
+--old icao types etc: HS14/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0125    |   N0115      |    N0105     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0090     |       18        |        50FT       |    0.4NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0090           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0230    |     F300     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10   |   F30   |    F50   |    F70   |   F100   |   F120   |   F150   |  F200   |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   0850  |  0800  |  0800  |  0700  |  0600  |  0500  |  0350  |  0200  | climb rate ft/min
+   0600  |  0600  |  0600  |  0600  |  0600  |  0590  |  0590  |  0590  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0135  | N0140  | N0140  | N0140  | N0140  | N0138  | N0133  | N0126  | cruising speed IAS
+  N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | stall speed 
+  N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | climbing speed IAS 
+  N0120  | N0140  | N0150  | N0150  | N0150  | N0150  | N0150  | N0150  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/14/
+AC56/L/L AN28/L/L BASS/L/L BE33/L/L BE35/L/L BE36/L/L BD5/L/L BD7/L/L BD8/L/L BE17/L/L BE18/L/L BE50/L/L BE95/L/L C335/L/L 
+CASS/L/L DEFI/L/L E300/L/L EXPR/L/L G15T/L/L G73T/L/L HAHU/L/L L12/L/L ME08/L/L NAVI/L/L P2/M/M   P66P/L/L PA27/L/L PA30/L/L 
+PA34/L/L TB30/L/L
+ A36/L/L BE8S/L/L BT20/L/L F33/L/L N145/L/L P166/L/L PASE/L/L PAZT/L/L PA39/L/L
+*
+--old icao types etc: A36/L BE8S/L BT20/L F33/L N145/L P166/L PASE/L PAZT/L PA39/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0135    |   N0120      |    N0110     |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0090     |       18        |        20FT     |    0.4NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0090           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0230    |     F300     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F10 |   F30  |    F50 |    F70 |   F100 |   F120 |   F150 |  F200  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+  0850  |  0850  |  0800  |  0650  |  0500  |  0400  |  0250  |  0100  | climb rate ft/min
+  0800  |  0800  |  0750  |  0650  |  0600  |  0500  |  0400  |  0300  | descent rate ft/min
+  0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | acceleration kts/min
+  0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | deceleration kts/min
+ N0150  | N0154  | N0150  | N0150  | N0148  | N0145  | N0140  | N0130  | cruising speed IAS
+ N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | stall speed 
+ N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | climbing speed IAS 
+ N0120  | N0140  | N0160  | N0160  | N0160  | N0160  | N0150  | N0140  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/15/
+AC50/L/L BE60/L/L BE65/L/L C303/L/L C310/L/L C320/L/L C402/L/L L18/M/M SH33/M/M 
+PAY1/L/L PAY2/L/L PAY3/L/L PAY4/L/L
+
+
+-------------------------
+
+--PAY1/L PAY2/L PAY3/L PAY4/L ----2005-9-6
+----------------------
+*
+--old icao types etc:NIL
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--Data based on general sample from actual flight plans.
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0145    |   N0130      |    N0120     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0110     |       16        |        20FT     |    0.4NM    | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0105           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0240    |     F300    |      60     |    N      |  N       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+ F30   |   F50   |   F70   |  F100   |  F120   |  F150   |  F200  | F250  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   0800  |  0800  |  0800  |  0700  |  0600 |  0500  |  0450  |  0200  | climb rate ft/min
+   0600  |  0600  |  0600  |  0600  |  0600  |  0590  |  0550  |  0550  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0170  | N0170  | N0165  | N0160  | N0155  | N0152  | N0148  | N0142  | cruising speed IAS
+  N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | stall speed 
+  N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | N0115  | climbing speed IAS 
+  N0130  | N0150  | N0170  | N0170  | N0165  | N0160  | N0160  | N0150  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/16/
+AC68/L/L AC6L/L/L BE55/L/L BE56/L/L BE58/L/L BE70/L/L BE80/L/L BE88/L/L C340/L/L C404/L/L C411/L/L C414/L/L GLAS/L/L 
+GP4/L/L LNC2/L/L P210/L/L P337/L/L P68T/L/L PA31/L/L  PA46/L/L PC7/L/L TWIN/L/L VTOR/L/L AC60/L/L AC85/L/L E820/L/L 
+GL20/L/L GL25/L/L  PL7/L/L
+*
+--old icao types etc: AC60/L AC85/L E820/L GL20/L GL25/L  PL7/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0145    |   N0130      |    N0120     |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0110     |       20        |        20FT     |    0.5NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0105           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0250    |    F300     |      60     |    N      |  N       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+ F30   |   F50   |   F70   |  F100   |  F120   |  F150   |  F200  | F250  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   0800  |  0800  |  0800  |  0750  |  0750  |  0750  |  0650  |  0300  | climb rate ft/min
+   0600  |  0650  |  0650  |  0650  |  0700  |  0700  |  0800  |  0300  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0173  | N0169  | N0165  | N0159  | N0155  | N0150  | N0142  | N0135  | cruising speed IAS
+  N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | stall speed 
+  N0130  | N0130  | N0130  | N0130  | N0130  | N0130  | N0120  | N0110  | climbing speed IAS 
+  N0170  | N0170  | N0175  | N0175  | N0175  | N0175  | N0190  | N0180  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/17/
+AEST/L/L C421/L/L D228/L/L E110/L/L F406/L/L L10/L/L L414/L/L P66T/L/L S51D/L/L T34T/L/L C95/L/L PA60/L/L RA06/L/L TS60/L/L
+*
+--old icao types etc:C95/L PA60/L RA06/L TS60/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0150    |   N0135      |    N0135     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0120     |       20        |        50FT     |    0.5NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0280    |    F300     |      60     |    N      |  N       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+ F30   |   F50   |   F70   |  F100   |  F120   |  F150   |  F200  | F250  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   0800  |  0800  |  0800  |  0900  |  0900  |  0850  |  0780  |  0400  | climb rate ft/min
+   0650  |  0700  |  0750  |  0600  |  0600  |  0600  |  0550  |  0550 | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020 | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020 | deceleration kts/min
+  N0193  | N0188  | N0183  | N0176  | N0172  | N0166  | N0157  | N0150  | cruising speed IAS
+  N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | stall speed 
+  N0140  | N0140  | N0140  | N0135  | N0130  | N0125  | N0120  | N0115  | climbing speed IAS 
+  N0130  | N0170  | N0180  | N0185  | N0185  | N0185  | N0170  | N0170  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/18/
+B25/M/M  C212/M/M C46/M/M CN35/M/M DC3S/M/M DC4/M/M DHC5/M/M L37/M/M N260/M/M N262/M/M SH36/M/M V1/M/M
+CS12/M/M CW20/M/M C117/M/M C54/M/M DH5/M/M PV1/M/M ND26/M/M G134/M/M 
+*
+--old icao types etc: CS12/M CW20/M C117/M C54/M DH5/M PV1/M ND26/M G134/M
+-- holding parameters: levels are defined in ATG_PARAMETERS
+-- Based on SH36 data from ER but modified as per FPL info.
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0150    |   N0135      |    N0135     |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0110     |       20        |        20FT     |    0.5NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0105           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0250    |    F300     |      60     |    N      |  N       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+ F30   |   F50   |   F70   |  F100   |  F120   |  F150   |  F200  | F250  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   0750  |  0700  |  0700  |  0700  |  0600  |  0550  |  0400  |  0200  | climb rate ft/min
+   0650  |  0700  |  0750  |  0600  |  0600  |  0550  |  0500  |  0400  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0183  | N0178  | N0174  | N0168  | N0164  | N0158  | N0150  | N0143  | cruising speed IAS
+  N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | N0065  | stall speed 
+  N0140  | N0140  | N0140  | N0135  | N0130  | N0125  | N0120  | N0115  | climbing speed IAS 
+  N0170  | N0175  | N0180  | N0175  | N0170  | N0160  | N0155  | N0150  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/19/
+A748/M/M AN24/M/M AN26/M/M AN30/M/M AT43/M/M AT44/M/M AT45/M/M AT72/M/M AN32/M/M AN38/M/M AN70/M/M ATP/M/M BD5J/L/L BE10/L/L 
+S2T/M/M WHIL/L/L BATP/M/M BE90/L/L C90/L/L DH7/M/M FAS6/L/L FA22/M/M FA27/M/M FK27/M/M Y7/M/M YU7/M/M YUN7/M/M YN7/M/M JS32/M/M JS41/M/M
+BE99/L/L BE9L/L/L DHC7/M/M E400/L/L F27/M/M FFLY/L/L BE32/M/M MA60/M/M 
+*
+--old icao types etc: BATP/M BE90/L C90/L DH7/M FAS6/L FA22/M FA27/M FK27/M
+-- holding parameters: levels are defined in ATG_PARAMETERS
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0160    |   N0140      |    N0135    |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0120     |       20        |        20FT     |    0.5NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0280    |    F300     |      60     |    N      |  N       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |   F50  |   F70  |  F100  |  F120  |  F150  |  F200 |  F250   | F280  | F300  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   1300  |  1200  |  1150  |  1100  |  1050  |  1000  |  0800  |  0600  | 0300  | 0200  | climb rate ft/min
+   0800  |  0900  |  1000  |  1000  |  1000  |  0900  |  0800  |  0750  | 0700  | 0650  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | 0020  | 0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | 0020  | 0020  | deceleration kts/min
+  N0212  | N0207  | N0201  | N0194  | N0189  | N0183  | N0173  | N0164  | M034| M034| cruising speed IAS
+  N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | stall speed 
+  N0150  | N0152  | N0153  | N0153  | N0151  | N0145  | N0140  | N0150  | M034 | M034 | climbing speed IAS 
+  N0160  | N0180  | N0200  | N0200  | N0200  | N0195 | N0190  | N0180  | M035 | M035| descent speed IAS
+--
+-- Performance Category
+   L
+
+/20/
+ATR/M/M BE9T/L/L C160/M/M DHC8/M/M G59/L/L  JSTA/M/M MU2/L/L P31T/L/L P40/L/L  P51/L/L  SF34/M/M SW2/L/L BA31/M/M BA32/M/M 
+BE9F/L/L CA18/L/L  FIAT/L/L MU24/L/L MU26/L/L ND16/M/M PAYE/L/L G222/M/M
+
+
+---------------------
+
+
+-------------------
+
+*
+--old icao types etc: BA31/M BA32/M BE9F/L CA18/L DH8/L FIAT/L MU24/L MU26/L ND16/M PAYE/L 
+
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0170    |   N0150      |    N0140     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0123     |       40        |        35FT     |    0.5NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0330    |    F350     |      60     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   |  F70   | F100   | F120   | F150   |  F200  |  F230  | F250  | F300  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   1200  |  1100  |  1050  |  0950  |  0850  |  0630  |  0550  |  0440  | 0400  | 0200  | climb rate ft/min
+   0650  |  0700  |  0800  |  0800  |  0800  |  0800  |  0800  |  0710  | 0400  | 0350  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | 0020  | 0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | 0020  | 0020  | deceleration kts/min
+  N0240  | N0235  | N0229  | N0220  | N0215  | N0207  | N0196  | N0190  | N0186  | M042  |cruising speed IAS
+  N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | stall speed 
+  N0165  | N0165  | N0165  | N0170  | N0170  | N0170  | N0163  | N0155  | N0144  | M036  | climbing speed IAS 
+  N0190  | N0210  | N0230  | N0240  | N0240  | N0230  | N0215  | N0206  | N0199  | M050  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/21/
+AC6T/L/L C2/M/M C425/L/L PC12/L/L AC69/L/L AC84/L/L AC95/L/L C2M/M/M GA84/L/L
+*
+--old icao types etc: AC69/L AC84/L AC95/L C2M/M GA84/L
+--Data based on average of actual data from operators of above aircraft. Same as Gp 20 but faster climb ft/min but slower IAS.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0180    |   N0180      |    N0180    |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0120     |       20        |        20FT     |    0.5NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0280    |    F330     |      60     |   N     |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   200    |  to turn 
+     50   |   150    |   170    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     50   |   150    |   170    |  to climb 
+     66   |   170    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10        |   
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   |  F70   | F100   | F120   | F150   |  F200  |  F230  | F250  | F300  |in increasing order 
+--
+--     performance values 
+---------------------------------------------------------------------------------- 
+   1800  |  1700  |  1600  |  1450  |  1100  |  0900  |  0750  |  0540  | 0400  | 0200  | climb rate ft/min
+   0650  |  0700  |  0800  |  1000  |  1000  |  1000  |  1000  |  0900  | 0500  | 0350  | descent rate ft/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | 0020  | 0020  | acceleration kts/min
+   0030  |  0030  |  0030  |  0030  |  0030  |  0020  |  0020  |  0020  | 0020  | 0020  | deceleration kts/min
+  N0240  | N0235  | N0229  | N0220  | N0215  | N0207  | N0196  | N0190  | N0186  | M042  |cruising speed IAS
+  N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | stall speed 
+  N0130  | N0130  | N0130  | N0130  | N0135  | N0140  | N0150  | N0155  | N0144  | M036  | climbing speed IAS 
+  N0190  | N0210  | N0230  | N0240  | N0240  | N0230  | N0215  | N0206  | N0199  | M050  | descent speed IAS
+--
+-- Performance Category
+   L
+
+/22/
+B190/M/M BE20/L/L B200/L/L C441/L/L F50/M/M G159/M/M I114/M/M LNC4/L/L PA42/L/L SW4/L/L TBM7/L/L TURB/L/L VTUR/L/L BE02/M/M 
+C12/L/L FA3/L/L FK50/M/M ILL4/M/M LC30/L/L MS23/L/L SW3/L/L TB70/L/L VC4/M/M IL28/M/M IL38/M/M
+*
+--old icao types etc: BE02/M C12/L FA3/L FK50/M ILL4/M LC30/L MS23/L SW3/L TB70/L VC4/M
+--data based on sample info from flight plans 
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0180    |   N0190      |    N0190     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	N0110     |       40        |       35FT      |     0.5NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  25            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0330    |    F350     |     28      |   N      |  N       | 
+--
+--      std turn     | comments 
+--------------------------------- 
+	   18        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   200    |  to turn 
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate 
+     66   |   140    |   180    |  to climb 
+     66   |   175    |   250    |  to descend 
+--      layer number |   comments 
+------------------------------------
+	10| 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+  F30   |  F50   | F100   | F150   | F200   | F250   | F270  | F290  | F310  |  F350 | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ -------------------------------------------
+  2000  |  1850  |  1700  |  1600  |  1450  |  1250  | 1000  | 0600  | 0300  | 0100  |climb rate 
+  0700  |  0800  |  0900  |  1250  |  1350  |  1450  | 1200  | 0900  | 0600  | 0400  | descent rate 
+  0050  |  0050  |  0050  |  0040  |  0025  |  0025  | 0025  | 0010  | 0010  | 0010  | acceleration kts/min
+   0030 |  0030  |  0030  |  0030  |  0030  |  0030  | 0030  | 0030  | 0030  | 0030  |  deceleration kts/min
+  N0260 | N0254 | N0238 | N0224 | N0211 | N0200 | N0197 | M045 | M046 | M046 |cruising speed IAS
+  N0089 | N0089 | N0089 | N0089 | N0089 | N0089 | N0089 | N0089 | N0089 | N0089 | stall speed 
+  N0165 | N0165 | N0161 | N0162 | N0168 | N0180 | N0165 | M042 | M043 | M043 | climbing speed IAS 
+  N0220 | N0230 | N0230 | N0230 | N0230 | N0220 | N0204 | M050 | M052 | M052 | descent speed IAS
+-- 
+-- Performance Category
+   L
+
+
+/23/
+B350/L/L BE30/L/L E120/M/M E2/M/M JSTB/M/M STAR/L/L BA41/M/M BE3B/L/L BEST/L/L 
+*
+--old icao types etc: BA41/M BE3B/L BE3L/L BEST/L
+-- Prime type this group is E120. Data based on FPL and pilot response to issued format.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0180    |   N0180      |    N0180     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------------- 
+	N0120     |       40        |       35FT      |     0.5NM  |
+-- 
+--      landing parameters 
+--     final speed      |  at avg ldg wt 16470lbs 
+------------------------------------------------ 
+	N0110           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  25            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0330    |    F350     |      28     |   N      |  N       | =30deg bank
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   18        | = 20deg bank
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   130    |   200    |  to turn 
+     50   |   140    |   180    |  to accelerate 
+     50   |   120    |   150    |  to decelerate 
+     66   |   135    |   150    |  to climb 
+     66   |   160    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   |  F70   | F100   | F120   | F150   | F200  | F250  | F280  | F330  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2000  |  2000  |  1800  |  1800  |  1600  |  1200  | 0950  | 0600  | 0500  | 0300  |climb rate 
+   0800  |  0800  |  1000  |  1200  |  1100  |  1100  | 0900  | 0650  | 0400  | 0300  | descent rate 
+   0050  |  0050  |  0050  |  0050  |  0050  |  0050  | 0050  | 0050  | 0050  | 0050  | acceleration 
+   0050  |  0050  |  0050  |  0050  |  0050  |  0050  | 0050  | 0050  | 0050  | 0050  | deceleration 
+  N0280  | N0282  | N0275  | N0264  | N0258  | N0249  | N0235 | N0222 | M051  | M052  |cruising speed 
+  N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | N0120 | N0120 | N0120 | N0120 | stall speed 
+  N0175  | N0175  | N0175  | N0175  | N0170  | N0170  | N0180 | N0175 | M048  | M048  | climbing speed IAS 
+  N0240  | N0240  | N0250  | N0250  | N0240  | N0240  | N0220 | N0200 | M050  | M050  | descent speed IAS 
+-- 
+-- Performance Category
+   L
+
+/24/ 
+PL9/L/L  PC9/L/L
+*
+--old icao types etc: PL9/L
+--Holding performance:
+--Data based on PC9 as operated by RAAF
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0230    |   N0230      |    N0220     |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------- 
+	N0085     |       15        |        50FT     |    0.3NM    | 
+-- 
+--      landing parameters
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0340    |    F350     |     120      |   N      |  N       | 20DEG/SEC
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 3DEG/SEC
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   200    |  to turn 
+     50   |   120    |   140    |  to accelerate 
+     50   |   120    |   140    |  to decelerate 
+     50   |   140    |   180    |  to climb 
+     50   |   175    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |   F50  |  F100  | F140   |  F200  | F250   |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   4100  |  3800  |  3100  |  2000  |  1500  |  1000  | climb rate 
+   2000  |  2000  |  2000  |  2000  |  2000  |  2000  | descent rate 
+   0100  |  0080  |  0040  |  0030  |  0015  |  0010  | acceleration 
+   0200  |  0160  |  0120  |  0100  |  0100  |  0100  | deceleration 
+  N0267  | N0262  | N0250  | N0235  | N0220  | N0200  |cruising speed 
+  N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | stall speed 
+  N0145  | N0145  | N0138  | N0133  | N0128  | N0118  | climbing speed IAS 
+  N0220  | N0220  | N0220  | N0220  | N0220  | N0220  | descent speed IAS 
+--
+-- Performance Category
+   L
+
+/25/
+BELF/M/M BRIT/M/M C130/M/M C30J/M/M CONI/M/M BR31/M/M C121/M/M L382/M/M L49/M/M  SH5/M/M  SC5/M/M 
+DH8A/M/M DH8B/M/M DH8C/M/M DH8D/M/M
+
+---------------------------
+L100/M/M DCH8/M/M DH8/M/M
+--------------------------
+
+
+*
+--old icao types etc: BR31/M C121/M L382/M L49/M  SH5/M  SC5/M
+-- Holding performance:
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0180    |   N0200      |    N0200     |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+------------------------------------------------------------------- 
+	N0115     |       25        |        35FT     |    0.6NM  | 
+-- 
+--      landing parameters
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+--   approach +30kts
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0340    |    F350     |     24      |   N      |  N       | =24deg bank
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   18        |  18deg bank
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   200    |  to turn 
+     50   |   120    |   140    |  to accelerate 
+     50   |   120    |   140    |  to decelerate 
+     50   |   140    |   180    |  to climb 
+     50   |   175    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   | F100   | F150   |  F190  |  F210  |  F250  |  F290  |  F310  |  F350  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1350  |  1350  |  1300  |  1250  |  1100  |  0900  |  0510  |  0500  |  0430  |  0240  | climb rate 
+   0800  |  0800  |  1300  |  1400  |  1400  |  1350  |  1250  |  1200  |  1200  |  1100  | descent rate 
+   0050  |  0050  |  0050  |  0050  |  0050  |  0040  |  0040  |  0040  |  0020  |  0020  | acceleration 
+   0050  |  0050  |  0050  |  0050  |  0050  |  0050  |  0040  |  0040  |  0040  |  0040  | deceleration 
+  N0185  | N0215  | N0230  | N0235  | N0225  | N0215  | N0210  | M045   |  M047  |  M047  | cruising speed 
+  N0094  | N0094  | N0094  | N0094  | N0094  | N0094  | N0094  | N0094  | N0094  | N0094  | stall speed 
+  N0170  | N0170  | N0180  | N0190  | N0190  | N0185  | N0180  | M044   | M045   | M045   | climbing speed IAS 
+  N0150  | N0180  | N0245  | N0245  | N0235  | N0230  | N0215  | M052   | M052   |  M053  | descent speed IAS 
+--
+-- Performance Category
+   L
+
+/26/
+S211/L/L
+*
+--old icao types etc: NIL
+-- Holding performance:
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0180    |   N0180      |    N0180     |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0100     |       20        |        35FT     |    0.5NM  | 
+-- 
+--      landing parameters
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0100           | 
+-- approach +30kts
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  20            | 
+-- 
+--      maximum values 
+--    max speed  |   max alt   |  max turn   |  MACH Cap | JET/NO-JET | comments 
+-------------------------------------------------------------- 
+	  N0400    |  F400     |     360     |   N      |  N       | 16 deg/sec
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   120        | 11 deg/sec 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   200    |  to turn 
+     50   |   120    |   140    |  to accelerate 
+     50   |   120    |   140    |  to decelerate 
+     50   |   140    |   180    |  to climb 
+     50   |   175    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   | F100   |  F150  |  F200  |  F250  |  F300  | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2500  |  2500  |  2500  |  1500  |  1500  |  1300  |  1300  |  climb rate 
+   2000  |  2000  |  2000  |  2000  |  2000  |  2000  |  2500  |  descent rate 
+   0109  |  0109  |  0109  |  0109  |  0109  |  0109  |  0109  |  acceleration 
+   0171  |  0171  |  0171  |  0171  |  0171  |  0171  |  0171  | deceleration 
+  N0200  | N0200  | N0200  | N0200  | M041   | M043   | M047   | cruising speed 
+  N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | stall speed 
+  N0195  | N0195  | N0180  | N0180  | N0165  | N0165  | N0150  | climbing speed IAS 
+  N0210  | N0200  | N0200  | N0200  | N0200  | N0200  | N0200  | descent speed IAS 
+--
+-- Performance Category
+   L
+
+
+/27/
+AN12/M/M AN22/H/B IL18/M/M L188/M/M P3/M/M   P3C/M/M  CP14/M/M YN8/M/M YUN8/M/M Y8/M/M Y9/M/M
+*
+--old icao types etc P3C/M  CP14/M
+--BASED ON P3 DATA OBTAINED BY PHONE GREG TOFFS
+-- Holding performance:
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0210    |   N0210      |    N0220     |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0130     |       30        |        35FT     |    0.9NM  | 
+-- 
+--      landing parameters
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0130           | 
+-- approach +30kts
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30            | 
+-- 
+--      maximum values 
+--    max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	N0350    |    F350     |     360     |   N      |  N       |  6 deg/sec
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   120        | 2 deg/sec 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   200    |  to turn 
+     50   |   120    |   140    |  to accelerate 
+     50   |   120    |   140    |  to decelerate 
+     50   |   140    |   180    |  to climb 
+     50   |   175    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F40   |  F60   | F100   | F140   | F180   |  F200  |  F250  |  F280  |  F310  |  F350  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1800  |  1800  |  1800  |  1500  |  1300  |  0800  |  0500  |  0500  |  0300  |  0100  | climb rate 
+   2000  |  2000  |  2000  |  2000  |  2000  |  2000  |  2500  |  3000  |  3000  |  3000  | descent rate 
+   0070  |  0070  |  0070  |  0070  |  0050  |  0050  |  0040  |  0040  |  0020  |  0020  | acceleration 
+   0070  |  0070  |  0070  |  0070  |  0070  |  0060  |  0060  |  0060  |  0040  |  0040  | deceleration 
+  N0250  | N0250  | N0250  | N0255  | N0260  | N0250  | N0245  | N0240  | N0230  | N0220  | cruising speed 
+  N0130  | N0130  | N0130  | N0130  | N0130  | N0130  | N0130  | N0130  | N0130  | N0130  | stall speed 
+  N0220  | N0220  | N0220  | N0220  | N0220  | N0210  | N0200  | N0190  | N0180  | N0170  | climbing speed IAS 
+  N0210  | N0250  | N0250  | N0250  | N0250  | N0250  | N0250  | N0250  | N0250  | N0250  | descent speed IAS 
+--
+-- Performance Category
+   L
+
+
+/28/
+AN72/M/M C101/L/L C500/L/L JPRO/L/L TS11/L/L YK40/M/M AN74/M/M  C501/L/L POI1/L/L STRK/L/L
+*
+--old icao types etc AN74/M  C501/L POI1/L STRK/L
+-- Holding performance:
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0200    |   N0200    |   N0200    |     
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0100     |       16        |        35FT     |    0.4NM  | 
+-- 
+--      landing parameters
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0095           | 
+-- approach +30kts
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0360    |    F450     |     60      |   N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   45        |
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   200    |  to turn 
+     50   |   120    |   140    |  to accelerate 
+     50   |   120    |   140    |  to decelerate 
+     50   |   140    |   180    |  to climb 
+     50   |   175    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   |  F70   | F100   |  F150  |  F200  |  F250  |  F280  |  F310  |  F330  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2500  |  2300  |  2200  |  2100  |  1950  |  1700  |  1400  |  1100  |  1000  |  0800  | climb rate 
+   0700  |  0800  |  1200  |  1500  |  1500  |  1500  |  1500  |  1100  |  1000  |  1000  | descent rate 
+   0050  |  0050  |  0050  |  0050  |  0050  |  0040  |  0040  |  0020  |  0020  |  0020  | acceleration 
+   0060  |  0060  |  0060  |  0050  |  0050  |  0050  |  0050  |  0030  |  0030  |  0030  | deceleration 
+  N0230  | N0235  | N0240  | N0245  | N0250  | N0270  | N0260  | M055   |  M059  |  M060  | cruising speed 
+  N0074  | N0074  | N0074  | N0074  | N0074  | N0074  | N0074  | N0074  | N0074  | N0074  | stall speed 
+  N0200  | N0210  | N0210  | N0200  | N0200  | N0200  | N0200  | M050   |  M050  |  M050  | climbing speed IAS 
+  N0200  | N0200  | N0210  | N0220  | N0250  | N0250  | N0250  | M059   |   M060 |  M060  | descent speed IAS 
+--
+-- Performance Category
+   L
+
+
+
+/29/
+C525/L/L C526/L/L C550/L/L C551/L/L
+*
+--old icao types etc: C551/L
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0200    |   N0200    |   N0200    |     
+-- 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0125     |       25        |        35FT     |     0.5NM  | 
+-- 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	 30             | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+         N0360     |    F450     |      60     |   N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           30        |
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   |  F100  |  F140  |  F200  |  F250  |  F280  |  F310  | F350   | F410   | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2500  |  2200  |  2100  |  2000  |  1700  |  1400  |  1100  |  0900  |  0600  |  0200  | climb rate ft/min
+   0700  |  0700  |  1400  |  1500  |  1500  |  1500  |  1100  |  1000  |  0900  |  0600  | descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0030  |  0030  |  0030  |  0030  |  0030  | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0040  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0250  | N0260  | N0260  | N0270  | N0280  | N0280  |  M060  |  M062  |  M062  |  M060  | cruising speed IAS
+  N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | stall speed 
+  N0200 | N0200  | N0200  | N0200  | N0200  | N0200   |  M050  |  M055  |  M055  |  M055  | climbing speed IAS 
+  N0210  | N0250  | N0250  | N0250  | N0250  | M065   |  M066  |  M066  |  M066  |  M065  | descent speed IAS
+--
+-- Performance Category
+   H
+
+/30/
+AVK4/L/L FURY/L/L SPIT/L/L SEAF/L/L
+*
+--old icao types etc:SEAF/L
+--Holding performance:
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0230    | N0230        |  N0250       |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0085     |       15        |        50FT     |    0.3NM    | 
+-- 
+--      landing parameters
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0110           | 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	 N0340     |    F450     |     120      |   N      |  N       | 20DEG/SEC
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 3DEG/SEC
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   200    |  to turn 
+     50   |   120    |   140    |  to accelerate 
+     50   |   120    |   140    |  to decelerate 
+     50   |   140    |   180    |  to climb 
+     50   |   175    |   250    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |   F50   | F100  | F150   |  F200  | F250   | F290  | F330  | F390  | F410  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   4100  |  3800  |  3100  |  2000  |  1800  |  1500  | 1000  | 0700  | 0400  | 0100  | climb rate 
+   2000  |  2000  |  2000  |  2000  |  2000  |  2000  | 1000  | 0700  | 0400  | 0400  | descent rate 
+   0080  |  0080  |  0060  |  0040  |  0040  |  0040  |  0040  |  0040  |  0040  |  0040  |  acceleration 
+   0200  |  0160  |  0120  |  0100  |  0100  |  0100  | 0100  | 0100  | 0100  | 0100  | deceleration 
+  N0300  | N0310  | N0291  | N0273  | N0258  | N0244  | M056  | M057  | M057  | M057  |cruising speed 
+  N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | N0090  | stall speed 
+ N0170  | N0170  | N0180  | N0190  | N0190  | N0195  | N0200  | M054 | M055  | M055 || climbing speed IAS 
+  N0210  | N0210  | N0220  | N0220  | N0250  | N0250  | N0250  | M059  | M060  | M060  | descent speed IAS 
+--
+-- Performance Category
+   L
+
+
+/31/ 
+B74B/H/H  B74S/H/B B74F/H/H
+*
+--old icao types etc:   B74F/H
+--Data based on Embry_Riddle figures.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0250      |    N0250     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0160     |       30        |        35FT     |    1.3NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0140           | 170 on approach
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          50            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+          N0380    |    F510     |     60      |    N      |  Y       |Limiting Mach = M092
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	  10        | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F50  |  F100  | F150   |  F200  |  F250  |  F280  |  F320  |  F340  | F380  | F420 | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1800  |  2100  |  2200  |  2100  |  1700  |  1450  |  1200  |  1100  |  1000 | 0800 |climb rate ft/min
+   0900  |  1100  |  1400  |  2100  |  2500  |  2300  |  1800  |  1700  |  1500 | 1200 |descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0060  |  0040  |  0040  |  0040 | 0040 | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0040  |  0040  |  0040 | 0040 | deceleration kts/min
+  N0260  | N0260  | N0315  | N0340  |  M078  |   M082 |  M085  |  M085  |  M086 | M085 |cruising speed IAS
+  N0130  | N0190  | N0220  | N0220  | N0220  |  N0240 | N0240  | N0240  | N0240 | N0240|  stall speed 
+  N0220  | N0260  | N0312  | N0336  |  M076  |   M081 |  M084  |  M085  |  M086 | M086 | climbing speed IAS
+  N0175  | N0240  | N0270  | N0305  |  M071  |   M076 |  M083  |  M084  |  M086 | M086 |descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+/32/ 
+DC10/H/C L101/H/C MD11/H/C DC11/H/H KC10/H/H
+*
+--old icao types : KC10/H
+-- Data based on Embry_Riddle figures
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0250      |    N0250     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0145     |       30        |        35FT     |    1.0NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0136           | 160 on approach
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          50            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+          N0380    |    F510     |     60      |    N      |  Y       |Limiting Mach = M092
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	  10        | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F50  | F100   |  F150  | F200   | F250   | F300   | F340   | F360  | F380  | F420  | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1700  |  2100  |  1800  |  1900  |  1400  |  1040  |  0850  | 0750  | 0700  | 0500  | climb rate ft/min
+   0800  |  1100  |  1200  |  2000  |  2400  |  1350  |  1300  | 1100  | 1000  | 1000  |descent rate ft/min
+   0050  |  0050  |  0050  |  0060  |  0060  |  0060  |  0040  | 0030  | 0030  | 0030  |acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0040  | 0040  | 0040  | 0040  |deceleration kts/min
+  N0250  | N0250  | N0300  | N0315  |  M077  |  M082  |  M083  | M083 | M083 | M084 |cruising speed IAS
+  N0130  | N0190  | N0220  | N0220  | N0220  | N0200  | N0200 | N0200 |N0200 |N0200 |stall speed 
+  N0220  | N0260  | N0306  | N0330  |  M076  |  M081  |  M084  | M083  | M081 | M080 |climbing speed IAS
+  N0180  | N0230  | N0290  | N0310  |  M070  |  M082  |  M084  | M084  |M084  | M084 |descent speed IAS 
+-- 
+-- Performance Category
+   H
+ 
+/33/ 
+B777/H/H B772/H/B B773/H/B B787/H/H B748/H/B B77L/H/B B788/H/B B789/H/B B78X/H/B B77F/H/H A35K/H/B B77W/H/B
+B778/H/B B779/H/B
+*
+--old icao types : nil
+--Data based on Embry_Riddle figures ( some doubt on the cruising figures for F200 to F300.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+-------------------------------------------
+    N0250    |   N0260      |    N0260     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0165     |       30        |        35FT     |    1.3NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0130           | 170 on approach
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          50            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+           N0380   |    F450     |     60      |    N      |  Y       |Limiting Mach = M086
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	  10      | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F50  |  F100  | F150   |  F200  |  F270  |  F300  |  F340  |  F380  | F400  | F440  | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1900  |  1850  |  1825  |  1725  |  1430  |  1345  |  1050  |  0850  |  0700 |  0300 |climb rate ft/min
+   1200  |  1250  |  1400  |  1750  |  2100  |  1800  |  1100  |  1000  |  0800 |  0500 |descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0060  |  0040  |  0040  |  0040 |  0040 |acceleration kts/min
+   0040  |  0040  |  0040  |  0040  |  0030  |  0030  |  0030  |  0030  |  0030 |  0030 |deceleration kts/min
+  N0250  | N0250  | N0283  | N0281  |  N0276 |  M075  |  M083  |  M084  |  M085 |  M085 | cruising speed IAS
+  N0130  | N0190  | N0220  | N0220  |  N0220 | N0200  | N0200  | N0200  | N0200 | N0200 |stall speed 
+  N0244  | N0250  | N0286  | N0312  |  N0330 |  M083  |  M083  |  M080  |  M076 |  M072 |climbing speed IAS
+  N0180  | N0220  | N0250  | N0265  |  N0275 |  M071  |  M073  |  M081  |  M084 |  M085 |descent speed IAS 
+-- 
+-- Performance Category
+   H
+ 
+
+/34/ 
+B74A/H/H IL86/H/C B747/H/H E4A/H/H B744/H/B B741/H/B B742/H/B B743/H/B B74R/H/B B74D/H/H A380/J/J A388/J/J BSCA/H/H
+*
+--old icao types etc: B747/H E4A/H
+--Based on B747-200 data from Embry_Riddle
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0260     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0158     |       30        |        35FT     |    1.3NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0150           | 165 on approach
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          50            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+          N0390    |     F450    |     60      |    N      |  Y       |Limiting Mach = M092
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	  10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F50  | F100   | F150   | F200   | F250   | F280   |  F300  |  F340  | F360 | F420 | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+--  2000  |  2000  |  2200  |  2200  |  2100  |  1800  |  1650  |  1400  |  1000  |  0500  | climb rate ft/min
+  1400  |  2000  |  2100  |  1900  |  1500  |  1100  |  0950  |  0750  | 0600 | 0500 |climb rate ft/min
+--   1000  |  1150  |  1300  |  2000  |  2300  |  2100  |  2000  |  1800  | 1700 | 1500 |descent rate ft/min
+  1200  |  1250  |  1400  |  1750  |  2000  |  2100  |  2000  |  1800  | 1700 | 1500 |descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0060  |  0040  |  0040  | 0040  | 0040  | acceleration kts/min
+  0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0040  |  0040  | 0040  | 0040  | deceleration kts/min
+  N0250  | N0260  | N0310  | N0325  |  M078  |  M083  |  M083  |  M084  | M085 | M085 | cruising speed IAS
+  N0130  | N0190  | N0200  | N0220  | N0220  | N0240  | N0240  | N0240  | N0240  | N0240  | stall speed 
+  N0230  | N0270  | N0320  | N0336  |  M076  |  M081  |  M082  |  M085  | M085 | M085 | climbing speed IAS
+  N0175  | N0235  | N0280  | N0315  |  M069  |  M075  |  M077  |  M082  | M083 | M085 |descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+/35/
+A320/M/M E320/M/M ES32/M/M B757/M/M B752/M/M B767/H/H EA32/M/M A321/M/M A319/M/M A318/M/M B753/M/M B762/H/C B763/H/C B764/H/C C32/M/M E190/M/M
+A19N/M/M BCS1/M/M BCS3/M/M
+*
+--old icao types etc: EA32/M
+--DATA BASED ON ANSETT B767/200
+--Climb rates reduced on initial climb out based on ER data.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0260     |
+-- 
+--      takeoff parameters BASED ON TKOF WT 120,000LBS
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0145     |       35        |        35FT      |    1.0NM  |
+-- 
+--      landing parameters 
+--     final speed      |  at avg ldg wt 106000lbs 
+------------------------------------------------ 
+	N0130           | APP SPEED 155
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          50            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+          N0380    |    F510     |     60      |   N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8 | This figure only applies below 3000ft
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F30  |  F50   | F100   | F140   | F200   | F250   |  F270  | F310   | F370   | F410   | in increasing order 
+-- 
+--     performance values based on tkof wt 120,000lbs and ldgwt 100,000lbs
+------------------------------------------------------------------ 
+   2000  |  2000  |  2200  |  2200  |  2100  |  1800  |  1650  |  1400  |  1000  |  0500  | climb rate ft/min
+   1000  |  1000  |  1200  |  1500  |  2100  |  2200  |  2200  |  1600  |  1200  |  0700  | descent rate ft/min
+ 
+ 
+ 
+   0060  |  0060  |  0060  |  0060  |  0060  |  0060  |  0060  |  0030  |  0030  |  0030  | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0040  |  0020  | deceleration kts/min
+  N0250  | N0250  | N0250  | N0300  | N0300  | N0300  |  M080  |  M080  |  M080  |  M080  | cruising speed IAS
+  N0130  | N0190  | N0220  | N0220  | N0220  | N0250  | N0250  | N0200  | N0200  | N0200  | stall speed 
+  N0220  | N0250  | N0250  | N0300  | N0300  | N0300  |  M080  |  M080  |  M080  |  M080  | climbing speed IAS 
+  N0210  | N0250  | N0250  | N0260  | N0300  | N0300  |  M080  |  M080  |  M080  |  M080  | descent speed IAS
+--
+-- Performance Category
+   H
+
+
+/36/
+A340/H/H A343/H/B B707/H/H C137/H/H B701/H/H DC8/H/H IL62/H/C NIM/M/M VC10/H/H DC85/H/C DC86/H/C DC87/H/C DC8S/H/H 
+EA34/H/H E6/H/C HS06/M/M VC15/H/H A342/H/B A345/H/B A346/H/B B703/H/C COMT/M/M A350/H/H A359/H/B
+*
+--old icao types :: DC86/H DC87/H DC8S/H EA34/H E6/H HS06/M VC15/H
+--Based on DC8 super 60 series with JT3D-7 engines provided by Embry_Riddle
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0260     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+         N0152    |       30        |        35FT     |    1.4NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0140           | 150 on approach
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          50            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+        N0400      |    F510     |     60      |   N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	  10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F50  | F100   | F150   | F200   | F270   | F300   | F320   |  F340  | F380 | F410 |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1800  |  2300  |  2000  |  1800  |  1500  |  1250  |  1050  |  0980  | 0700 | 0500 |climb rate ft/min
+   0700  |  1000  |  1300  |  2000  |  2300  |  1600  |  1300  |  1300  | 1300 | 1300 |descent rate ft/min
+   0065  |  0065  |  0065  |  0065  |  0065  |  0065  |  0040  |  0040  | 0040  | 0040  | acceleration kts/min
+   0070  |  0070  |  0070  |  0070  |  0070  |  0040  |  0040  |  0040  | 0040  | 0040  | deceleration kts/min
+  N0250 | N0250 | N0320 | N0320 | N0310 | M078 |  M080 |  M081 | M080 | M080 |cruising speed IAS
+  N0130 | N0190 | N0220 | N0220 | N0220 | N0200 | N0200 | N0200 | N0200 | N0200 | stall speed 
+  N0185 | N0250 | N0315 | N0315 | N0315 | M079 | M079 |  M081 | M081 | M081 |climbing speed IAS
+  N0160  | N0240 | N0270 | N0300 | N0305 | M077| M077 |  M078 | M077 | M074 | descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+/37/
+C750/M/M
+*
+--old icao types : nil
+-- Based on data supplied by ER
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0280     |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0127     |       20        |        35FT     |    0.6NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0115           | approach 130
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          15             |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+        N0520      |    F510     |     60      |   N      |  N       |Limiting M092
+-- 
+--      std turn     | comments
+--------------------------------- 
+           24        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10        | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F50   |  F100  |  F150  | F200   | F240   |  F280  |  F340  | F360   | F420  | F510  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1600  |  1650  |  1750  |  2000  |  2100  |  1850  |  1450  |  1300  |  0800 |  0200 |climb rate ft/min
+   1200  |  2600  |  3100  |  3200  |  3200  |  3200  |  3200  |  3200  |  3200 |  1200 |descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0030  |  0030  |  0030  |  0030 |  0030 | acceleration kts/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0040  |  0040  |  0040  |  0030 |  0030 | deceleration kts/min
+  N0248  | N0250  | N0315  | N0320  | N0330  |  M073  |  M079  |  M086  |  M086 |  M078 | cruising speed IAS
+  N0170  | N0170  | N0170  | N0170  | N0170  | N0170  | N0170  | N0170  | N0170 | N0170 |stall speed 
+  N0225  | N0230  | N0261  | N0281  | N0290  |  M072  |  M078  |  M082  |  M082 |  M089 |climbing speed IAS
+  N0210  | N0220  | N0350  | N0350  | N0350  |  M078  |  M078  |  M090  |  M092 |  M090 | descent speed IAS
+--
+-- Performance Category
+   H
+
+
+/38/
+XW10/H/H
+*
+--NON ACTIVE DATA 
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0260     |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+         N0151    |       25        |        35FT     |    1.2NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0135           | approach 160
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          35             |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+        N0380      |    F510     |     60      |   N      |  Y      | 
+-- 
+--      std turn     | comments
+--------------------------------- 
+           24        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10        | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F50   | F100   | F150   | F200   | F270   |  F300  |  F320  | F360   | F380  | F410  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2000  |  2500  |  2700  |  2600  |  2100  |  1800  |  1600  |  1500  |  1300 |  1200 |climb rate ft/min
+   1000  |  1000  |  1300  |  2000  |  2300  |  1600  |  1300  |  1300  |  1300 |  1300 |descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0030  |  0030  |  0030  |  0030 |  0030 | acceleration kts/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0040  |  0040  |  0040  |  0030 |  0030 | deceleration kts/min
+  N0244  | N0250  | N0303  | N0320  | N0330  |  M079  |  M080  |  M081  |  M081 |  M081 | cruising speed IAS
+  N0170  | N0170  | N0170  | N0170  | N0170  | N0170  | N0170  | N0170  | N0170 | N0170 |stall speed 
+  N0244  | N0250  | N0303  | N0320  | N0330  |  M079  |  M081  |  M080  |  M079 |  M079 |climbing speed IAS
+  N0210  | N0250  | N0300  | N0320  | N0320  |  M075  |  M078  |  M081  |  M081 |  M080 | descent speed IAS
+--
+-- Performance Category
+   H
+
+
+
+/39/
+A300/H/H A310/H/C A330/H/H EA30/H/H EA31/H/H EA33/H/H A306/H/C A30B/H/C A332/H/B A333/H/B A3ST/H/C ZZZZ/H/H ES33/H/H A339/H/B 
+A337/H/B A338/H/B
+*
+--old icao types etc: EA30/H EA31/H EA33/H
+--Based on A300-600R data provided by Embry_Riddle.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0280     |
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+         N0151    |       25        |        35FT     |    1.2NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	  N0135         | approach 160
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          35             |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+        N0380      |    F510     |     60      |   N      |  Y       |Limiting M086
+-- 
+--      std turn     | comments
+--------------------------------- 
+           24        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10        | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F50   | F100   | F150   | F200   | F270   | F300  | F320  | F360   | F380  | F410  |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2000  |  2500  |  2700  |  2600  |  2100  |  1800 |  1600 |  1500  |  1300 |  1200 |climb rate ft/min
+   1000  |  1000  |  1300  |  2000  |  2300  |  1600 |  1300 |  1300  |  1300 |  1300 |descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0030 |  0030 |  0030  |  0030 |  0030 | acceleration kts/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0040 |  0040 |  0040  |  0030 |  0030 | deceleration kts/min
+  N0244  | N0250  | N0303  | N0320  | N0330  |  M079 |  M080 |  M081  |  M081 |  M081 | cruising speed IAS
+  N0170  | N0170  | N0170  | N0170  | N0170  | N0170 | N0170 | N0170  | N0170 | N0170 |stall speed 
+  N0244  | N0250  | N0303  | N0320  | N0330  |  M079 |  M081 |  M080  |  M079 |  M079 |climbing speed IAS
+  N0210  | N0250  | N0300  | N0320  | N0320  |  M075 |  M078 |  M081  |  M081 |  M080 | descent speed IAS
+--
+-- Performance Category
+   H
+
+/40/
+B720/M/M B727/M/M R721/M/M R722/M/M  T154/M/M TRID/M/M B72S/M/M TU54/M/M B721/M/M B722/M/M
+*
+--old icao types etc: B72S/M TU54/M
+--data based on B727 from Ansett.mtow 89358lbs	max ldg wt 72574lbs 
+-- T154 moved from group 36
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0230    |   N0250      |    N0260     |
+--
+--      takeoff parameters at 80,000lbs
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0158     |       30        |        35FT     |    1.2NM  | 
+-- 
+--      landing parameters  at 70,000lbs
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0125           | 
+-- APPROACH  150KTS
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0380    |    F510     |      60     |   N     |  Y      |  Not normally operated above F370 Limiting M086
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   24        | only applies at 3000ft
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn 
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   200    |  to decelerate 
+     66   |   130    |   150    |  to climb 
+     66   |   190    |   300    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   | F100   | F140   | F200   |  F250  | F310   | F370   | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2500  |  2250  |  2250  |  1500  |  1500  |  0800  |  0670  |  0600  | climb rate ft/min
+   1000  |  2700  |  2100  |  2100  |  2100  |  3000  |  2800  |  2500  | descent rate ft/min
+   0050  |  0050  |  0050  |  0050  |  0050  |  0050  |  0025  |  0025  | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0020  | deceleration kts/min
+  N0230  | N0250  | N0300  | N0300  | N0300  | N0300  |  M080  |  M080  | cruising speed IAS
+  N0168  | N0168  | N0168  | N0168  | N0168  | N0168  | N0168  | N0168  | stall speed 
+  N0230  | N0250  | N0300  | N0300  | N0300  | N0300  |  M080  |  M080  | climbing speed IAS 
+  N0250  | N0250  | N0250  | N0300  | N0300  | N0300  |  M080  |  M080  | descent speed IAS 
+--
+-- Performance Category
+   H
+
+/41/
+B73C/M/M MD80/M/M T334/M/M T204/M/M MD82/M/M MD83/M/M MD87/M/M MD88/M/M B717/M/M MD90/M/M TUP4/M/M MD81/M/M
+*
+--old icao types etc: MD82/M MD83/M MD87/M MD88/M MD90/M TUP4/M
+-- Based on MD80-series data from Embry_Riddle
+-- Additional MD 80 series types added.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0240    |   N0250      |    N0260     |
+--
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+         N0139    |       30        |        35FT     |    1.3NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0130           | 170 on approach
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+          50            |
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   |   MACH Cap | JET/NO-JET | comments 
+-------------------------------------------------------------- 
+          N0380    |    F510     |     60      |   N      |  Y       | Limiting M086
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           24        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	  10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F50  |  F100  |  F150  |  F200  | F250   | F280   |  F320  |  F360  | F380 | F410 | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1800  |  2400  |  2000  |  2000  |  1650  |  1400  |  1150  |  0900  |  650 |  500 |climb rate ft/min
+   1100  |  1100  |  1300  |  2000  |  2500  |  1550  |  1200  |  1000  | 1000 | 1000 |descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0060  |  0040  |  0040  | 0040 | 0040 | acceleration kts/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0040  |  0040  |  0040  | 0040 | 0040 | deceleration kts/min
+  N0250  | N0250  | N0310  | N0320  |  M070  |  M074  |  M075  |  M076  | M077 | M077 |cruising speed IAS
+  N0130  | N0190  | N0220  | N0220  | N0220  | N0200  | N0200  | N0200  | N0200| N0200| stall speed 
+  N0215  | N0250  | N0314  | N0334  | M076   | M078   | M080   | M080   | M080 | M080 | climbing speed IAS
+  N0210  | N0240  | N0280  | N0320  | M073   | M076   | M077   | M078   | M078 | M078 | descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+/42/
+B73B/M/M  JET/M/M  B73F/M/M  B73S/M/M  B73V/M/M ZZZZ/M/M
+*
+--old icao types etc: B73F/M  B73S/M  B73V/M
+--Based on B737/300 data from Ansett MTOW 134700lbs
+-- Climb rate to A100 reduced from 4000ft/min to 2300ft/min based on ER and Boeing data
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0240    |   N0250      |    N0260     |
+-- 
+--      takeoff parameters AT 121,000LBS  ISA
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0150     |       30        |        35FT     |    1.1NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+        N0135           |
+--  Approach +10kts
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  35            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   |  MACH Cap | JET/NO-JET | comments 
+-------------------------------------------------------------- 
+          N0380    |    F510     |      60     |   N       |  Y       |
+-- 
+--      std turn     | comments
+--------------------------------- 
+           24        | rate 0.8 only applies at 3000ft
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+--
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F30  |  F50   | F100   | F150   |  F200  | F270   |  F300  | F340   | F380 | F410 |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2300  |  2300  |  2450  |  2500  |  2300  |  1900  |  1700  |  1300  | 0600 | 0300 |climb rate ft/min
+   1000  |  1000  |  1250  |  1750  |  2300  |  2200  |  1500  |  1000  | 1000 | 1000 |descent rate ft/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0060  |  0060  |  0060  | 0060 | 0060 | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0060  |  0050  |  0050  | 0050 | 0050 | deceleration kts/min
+   N0240 | N0250  | N0250  | N0300  | N0300  | N0300  |  M075  |  M075  | M075 | M075 | cruising speed IAS
+   N0150 | N0150  | N0150  | N0150  | N0150  | N0150  |  N0150 |  N0150 | N0150| N0150| stall speed 
+   N0250 | N0250  | N0250  | N0300  | N0300  | N0300  |  M076  |  M076  | M076 | M076 |climbing speed IAS 
+   N0175 | N0200  | N0220  | N0265  | N0300  | N0300  |  M072  |  M072  | M072 | M072 |descent speed IAS 
+--
+-- Performance Category
+   H
+
+/43/
+B73A/M/M DC9/M/M B712/M/M B737/M/M C9/M/M CAAC/M/M B733/M/M B734/M/M B735/M/M B736/M/M B738/M/M E145/M/M B731/M/M B730/M/M B732/M/M B739/M/M C40C/H/H
+DC91/M/M DC92/M/M DC93/H/H DC95/M/M E170/M/M E45X/M/M BBJ/M/M C40/M/M ERJ/M/M CL85/M/M E35L/M/M B38M/M/M C919/M/M G280/M/M G450/M/M GL6T/M/M B39M/M/M
+B37M/M/M B3XM/M/M
+*
+--old icao types etc: B737/M C9/M
+--Based on Boeing data for B737/200 series typical weight 122000lbs
+-- DC9 moved to this group, performance data modified to average ER data .
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0240    |   N0250      |    N0260     |
+-- 
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0139     |       30        |        35FT     |    1.1NM  |
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+        N0130           | approach 170
+--
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  35            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   |  MACH Cap | JET/NO-JET | comments 
+-------------------------------------------------------------- 
+          N0380    |    F450     |      60     |   N      |  Y       |
+-- 
+--      std turn     | comments
+--------------------------------- 
+           24        | rate 0.8 only applies at 3000ft
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+--
+--      layer number |   comments 
+---------------------------------- 
+	   8         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F50  | F100   | F200   | F270   | F310   | F350   |  F410  | F450   | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2300  |  2300  |  2200  |  2100  |  2000  |  1700  |  1400  |  1100  |  0800 |  0500 |climb rate ft/min
+   0800  |  1000  |  1300  |  1700  |  2250  |  2000  |  1600  |  1200  |  1000 |  1000 |descent rate ft/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0060  |  0060  |  0060  |  0060 |  0060 | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0060  |  0050  |  0050  |  0050 |  0050 | deceleration kts/min
+   N0240 | N0250  | N0250  | N0300  | N0300  | N0300  |  M073  |  M073  |  M074 |  M074 | cruising speed IAS
+   N0150 | N0150  | N0150  | N0150  | N0150  | N0150  | N0150  | N0150  | N0150 | N0150 | stall speed
+   N0220 | N0230  | N0250  | N0300  | N0300  | N0300  |  M074  |  M074  |  M074 |  M074 |climbing speed IAS
+   N0190 | N0220  | N0250  | N0276  | N0300  | N0300  |  M074  |  M074  |  M074 |  M074 | descent speed IAS
+--
+-- Performance Category
+   H
+
+/44/
+FA50/M/M LJ28/L/L MU30/M/M U2/M/M BJ40/M/M DA50/M/M LR28/L/L LR29/L/L MU3/M/M DA42/L/L
+*
+--old icao types etc: BJ40/M DA50/M LR28/L LR29/L MU3/M
+
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0210    |   N0250      |    N0260     |
+--
+-- 
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+        N0119     |       35        |        35FT      |   0.8NM   |	[4050FT]
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0122           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+        N0380      |    F510     |     45      |   N      |  Y       |	NORMAL MAX ALT 41000FT 370KTS/M0.87
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           25        | rate 0.8
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+--
+--      layer number |   comments
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+    F30  |  F50   |  F100  |  F140  | F200   |  F250  |  F280  |  F310  | F350   |  F390  | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   3000  |  3000  |  2500  |  2500  |  2200  |  2100  |  1900  |  1600  |  1500  |  1200  | climb rate ft/min
+   1800  |  1900  |  2000  |  2100  |  2300  |  2400  |  2500  |  2600  |  2800  |  2800  | descent rate ft/min
+   0090  |  0070  |  0040  |  0040  |  0040  |  0025  |  0025  |  0025  |  0025  |  0025  | acceleration kts/min
+   0050  |  0050  |  0040  |  0040  |  0035  |  0035  |  0025  |  0020  | 0025   |  0025  | deceleration kts/min
+  N0210  | N0250  | N0250  | N0320  | N0320  |  M080  |  M080  |  M080  |  M080  |  M080  | cruising speed IAS
+  N0119  | N0119  | N0119  | N0119  | N0119  | N0119  | N0119  | N0119  | N0119  | N0119  | stall speed 
+  N0250  | N0250  | N0250  | N0260  | N0260  |  M072  |  M072  |  M072  |  M072  |  M072  | climbing speed IAS
+  N0300  | N0300  | N0300  | N0300  | N0300  |  M080  |  M080  |  M080  |   M080 |  M080  |descent speed IAS
+--
+-- Performance Category
+   H
+
+/45/
+BA11/M/M C560/M/M F100/M/M F28/M/M  H25A/M/M H25B/M/M H25C/M/M JCOM/M/M S210/M/M T134/M/M WW24/M/M YK42/M/M AC21/M/M BA10/M/M 
+FK10/M/M FK28/M/M HS25/M/M TU34/M/M C56X/M/M FK42/M/M
+--------------------
+--F70/M FK70/M S601/L S210/L--2005-9-6
+------------------
+
+
+*
+--old icao types etc: AC21/M BA10/M FK10/M FK28/M HS25/M TU34/M
+--BASED ON INFO FROM ANSETT FOR FK28/4000 MTOW 33100LBS
+--PLUS averaged data from ER
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0230    |   N0230      |    N0240     |
+-- 
+--      takeoff parameters AT 30,000LBS TEMP 20C
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0145     |       25        |        35FT     |   0.9NM  | 
+-- 
+--      landing parameters  at 28,000lbs
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0119           | 
+-- APPROACH +10KTS
+--      cross section   |  comments 
+--------------------------------------------------- 
+	 30             | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+           N0380   |    F510     |      60     |   N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+           23        | rate 0.8  only applies at 3000ft
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   120    |   250    |  to turn
+     50   |   150    |   200    |  to accelerate 
+     50   |   125    |   150    |  to decelerate
+     66   |   120    |   150    |  to climb
+     66   |   150    |   300    |  to descend
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   9         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   |  F100  |  F140  |  F200  |  F250  |  F280  |  F310  | F350   | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   4000  |  4200  |  2000  |  2000  |  1500  |  1000  |  1000  |  0670  |  0200  | climb rate ft/min
+   1000  |  2000  |  2600  |  2600  |  2000  |  1500  |  1500  |  1000  |  1000  | descent rate ft/min
+   0060  |  0060  |  0060  |  0060  |  0060  |  0030  |  0030  |  0030  |  0030  | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0040  |  0020  |  0020  | deceleration kts/min
+  N0250  | N0250  | N0250  | N0300  | N0300  |  M070  |  M070  |  M070  |  M070  | cruising speed IAS
+  N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | N0123  | N0123  |stall speed 
+  N0230  | N0250  | N0250  | N0270  | N0270  |  M065  |  M065  |  M065  |  M065  |climbing speed IAS 
+  N0210  | N0250  | N0250  | N0270  | N0270  |  M070  |  M070  |  M070  |  M070  |descent speed IAS
+--
+-- Performance Category
+   H
+
+/46/
+BA46/M/M B146/M/M D328/M/M RJ1H/M/M RJ70/M/M RJ85/M/M
+--------------------------
+--B461/M B462/M B463/M   ----2005-9-5 
+----------------------
+
+*
+--old icao types etc: B146/M
+--THIS DATA BASED ON BA46 FROM NATIONAL JET SYSTEMS
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0260     |
+--  
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0120     |       25        |      35FT       |   0.9NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0115           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	 30             | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+--	  N0300    |    F310     |     30      |   N      |  Y       | 
+	  N0300    |    F325     |     30      |   N      |  Y       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   25        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   125    |   250    |  to turn 
+     50   |   140    |   180    |  to accelerate 
+     50   |   125    |   180    |  to decelerate 
+     66   |   150    |   175    |  to climb 
+     66   |   175    |   300    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   | F100   | F140   | F200   | F250   |  F280  |  F310  | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2000  |  2000  |  2000  |  1500  |  1500  |  0800  |  0600  |  0200  | climb rate ft/min
+   2000  |  2000  |  2000  |  2000  |  2000  |  2000  |  2000  |  2000  | descent rate ft/min
+   0020  |  0020  |  0020  |  0020  |  0020  |  0020  |  0010  |  0010  | acceleration kts/min
+   0020  |  0020  |  0020  |  0020  |  0020  |  0020  |  0020  |  0020  | deceleration kts/min
+  N0250  | N0250  | N0250  | N0250  | N0250  |  M062  |  M062  |  M062  | cruising speed IAS
+  N0110  | N0110  | N0110  | N0110  | N0110  | N0110  | N0100  | N0110  | stall speed 
+  N0250  | N0250  | N0250  | N0250  | N0250  |  M060  |  M060  |  M060  | climbing speed IAS 
+  N0250  | N0250  | N0250  | N0250  | N0250  |  M062  |  M062  |  M062  | descent speed IAS 
+--
+--Performance category
+   H
+
+/47/
+ASTR/M/M G100/M/M LJ31/M/M LJ35/M/M LJ55/M/M LJ60/M/M AJ25/M/M LR31/M/M LR35/M/M LR36/M/M LR55/M/M LR60/M/M LJ40/M/M LJ45/M/M
+AJ27/M/M A21N/M/M FA8X/M/M HDJT/L/L CRJX/M/M E50P/L/L E550/M/M E55P/M/M
+* 
+--old icao types etc: AJ25/M LR31/M LR35/M LR36/M LR55/M LR60/M
+--BASED ON WW24 DATA PROVIDED BY A NEWMAN OF NATIONAL JET SYSTEMS
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0280     |
+--  
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0138     |       25        |        35FT     |   0.9NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0131           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  20            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0360    |    F510     |     45      |   N      |  Y       | Limiting Mach 0.8
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   25        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   150    |   250    |  to turn 
+     50   |   140    |   200    |  to accelerate 
+     50   |   125    |   200    |  to decelerate 
+     66   |   150    |   180    |  to climb 
+     66   |   180    |   300    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50   | F100   | F140   |  F200  | F250   | F280   |  F310  | F350   | F390   |in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   3000  |  3000  |  3000  |  2500  |  1500  |  1500  |  1500  |  1000  |  1000  |  1000  | climb rate ft/min
+   3000  |  3000  |  3000  |  3000  |  3000  |  3000  |  3000  |  3000  |  3000  |  3000  | descent rate ft/min
+   0070  |  0070  |  0070  |  0070  |  0070  |  0070  |  0035  |  0035  |  0035  |  0035  | acceleration kts/min
+   0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0020  | deceleration kts/min
+  N0250  | N0300  | N0300  | N0350  | N0350  |  M074  |  M074  |  M074  |  M074  |  M072  | cruising speed IAS
+  N0138  | N0138  | N0138  | N0138  | N0138  | N0138  | N0144  | N0148  | N0158  | N0162  | stall speed 
+  N0250  | N0250  | N0250  | N0250  | N0300  |  M065  |  M065  |  M065  |  M065  |  M065  | climbing speed IAS 
+  N0330  | N0330  | N0330  | N0330  | N0330  | N0330  |  M074  |  M074  |  M074  |  M074  | descent speed IAS
+--
+-- Performance Category
+   H
+
+/48/
+C650/M/M CL60/M/M CL65/M/M F900/M/M FA10/M/M FA20/M/M GULF/M/M G2/M/M G3/M/M G4/M/M G5/M/M LJ23/L/L LJ24/L/L LJ25/L/L 
+C20/M/M C20A/M/M DA10/M/M DA20/M/M DA21/M/M DA90/M/M LR24/L/L LR25/L/L BE40/M/M BER2/M/M BER4/M/M C680/M/M CL30/M/M
+CRJ1/M/M CRJ2/M/M CARJ/M/M CRJ7/M/M CRJ9/M/M E135/M/M G150/M/M GALX/M/M G200/M/M GL5T/M/M GLEX/M/M GLF2/M/M 
+GLF3/M/M GLF4/M/M G300/M/M GLF5/M/M G550/M/M CVLT/M/M FA90/M/M FA7X/M/M GLF6/M/M F2TH/M/M A20N/M/M
+--H111/M J328/M J728/M 
+--------------------------
+--F70/M ----205-9-6
+----------------------------
+
+
+*
+--old icao types etc: C20/M C20A/M DA10/M DA20/M DA21/M DA90/M LR24/L LR25/L VC11/M
+--note the designators G2 and G4 have been assigned to SOKO Galeb and 
+--Super Galeb, but we are unlikely to see either of these in Australia.
+-- uses revised ER data based on GULF.
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0280     |
+--  
+--      takeoff parameters
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+----------------------------------------------------------------- 
+	N0135     |       25        |        35FT     |   0.8NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0140           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  30             | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0380    |    F510     |     30      |   N      |  Y       | Limiting M095
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   25        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   125    |   250    |  to turn 
+     50   |   140    |   180    |  to accelerate 
+     50   |   125    |   180    |  to decelerate 
+     66   |   150    |   175    |  to climb 
+     66   |   175    |   300    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10         | 
+
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F30   |  F50  | F100   | F150   | F200   | F270   |  F320  |  F360  |  F400  |  F450  | in increasing order 
+--     performance values 
+------------------------------------------------------------------ 
+  2000  |  2500  |  2500  |  2500  |  2500  |  2400  |  2100  |  1750  |  1200  |  0750  | climb rate ft/min
+  1000  |  1000  |  1250  |  1600  |  2000  |  2400  |  2200  |  2000  |  1800  |  1500  | descent rate ft/min
+  0070  |  0070  |  0070  |  0070  |  0070  |  0070  |  0035  |  0035  |  0035  |  0035  | acceleration kts/min
+  0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0080  |  0040  |  0020  | deceleration kts/min
+ N0250  | N0250  | N0280  | N0350  | N0365  | N0317  |  M078  |  M080  |  M080  |  M080  | cruising speed IAS
+ N0138  | N0138  | N0138  | N0138  | N0138  | N0138  | N0144  | N0148  | N0158  | N0162  |stall speed 
+ N0180  | N0210  | N0240  | N0275  | N0300  | N0288  |  M075  |  M077  |  M078  |  M078  | climbing speed IAS 
+ N0220  | N0240  | N0250  | N0265  | N0288  | N0310  |  M080  |  M084  |  M084  |  M084  | descent speed IAS 
+--
+-- Performance Category
+   H
+
+/49/
+A37/L/L ARES/L/L CNBR/M/M F86/M/M  HAR/M/M  HAWK/M/M HAWR/M/M HUNT/M/M M326/L/L MG15/L/L MG17/L/L 
+VAMP/L/L VNOM/M/M AT26/L/L CA27/M/M DHT/L/L MC32/L/L MIG/L/L  SHAR/M/M
+*
+--old icao types etc: AT26/L CA27/M DHT/L MC32/L MIG/L  SHAR/M
+-- Military jet combat aircraft
+--Data based on MC32 from RAAF
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0280    |   N0280      |    N0280     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0100     |       20        |        50FT     |   0.5NM    | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0120		|
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  10            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0650    |    F600     |     360     |   N      |  Y       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   120       | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   200    |   400    |  to accelerate 
+     50   |   200    |   400    |  to decelerate 
+     50   |   200    |   400    |  to climb 
+     50   |   200    |   400    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10        | 
+-- 
+--      altitude layers                   |  comments 
+------------------------------------------------------------------- 
+   F30   |  F50   |  F70   | F100   | F140   | F200   |  F250  |  F310  | F350   | F410   | in increasing order 
+-- 
+--     performance values
+---------------------------------------------------------------------------------- 
+   3000  |  3000  |  2800  |  2500  |  2000  |  1500  |  1000  |  0800  |  0600  |  0300  | climb rate ft/min
+   1500  |  4000  |  4000  |  4000  |  4000  |  4000  |  4000  |  4000  |  4000  |  3500  | descent rate ft/min
+   0050  |  0050  |  0050  |  0100  |  0100  |  0100  |  0110  |  0110  |  0110  |  0110  | acceleration kts/min
+   0050  |  0050  |  0050  |  0100  |  0100  |  0100  |  0110  |  0130  |  0130  |  0130  | deceleration kts/min
+  N0300  | N0250  | N0250  | N0250  | N0210  |  M055  |  M055  |  M055  |  M055  |  M055  | cruising speed IAS
+  N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | N0095  | stall speed 
+  N0200  | N0200  | N0200  | N0200  | N0200  |  M050  |  M050  |  M050  |  M050  |  M050  | climbing speed IAS 
+  N0250  | N0250  | N0250  | N0240  | N0240  |  M060  |  M060  |  M060  |  M060  |  M060  | descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+
+/50/
+A6/M/M F18/M/M F4/M/M   F5/M/M   MILJ/M/M EA6B/M/M FA18/M/M RF4/M/M RF5/M/M
+*
+--old icao types etc: EA6B/M FA18/M RF4/M RF5/M
+--Data based on F111 info from RAAF??
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0280    |   N0300      |    N0300     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+---------------------------------------------------------------------
+	N0155     |       30        |        35FT     |    0.7NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0130           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  20            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0800    |    F750     |     360     |   Y      |  Y       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   120       | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   200    |   400    |  to accelerate 
+     50   |   200    |   400    |  to decelerate CVLT/M FA90/M FA7X/M 
+
+     50   |   200    |   400    |  to climb 
+     50   |   200    |   400    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   10        | 
+-- 
+--      altitude layers                   |  comments 
+------------------------------------------------------------------- 
+   F30   |  F50   |  F70   | F100   | F140   | F200   |  F250  |  F310  | F370   | F410   | in increasing order 
+-- 
+--     performance values 
+---------------------------------------------------------------------------------- 
+   3500  |  2500  |  2500  |  2000  |  1500  |  1000  |  0500  |  0500  |  0500  |  0500  | climb rate ft/min
+   3000  |  3000  |  3000  |  3000  |  3000  |  3000  |  2500  |  2000  |  1500  |  1500  | descent rate ft/min
+   0400  |  0400  |  0400  |  0400  |  0400  |  0400  |  0400  |  0400  |  0400  |  0400  | acceleration kts/min
+   0500  |  0500  |  0500  |  0500  |  0500  |  0500  |  0500  |  0500  |  0500  |  0500  | deceleration kts/min
+  N0300  | N0350  | N0350  | N0350  |  M075  |  M075  |  M075  |  M075  |  M075  |  M075  | cruising speed IAS
+  N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | N0120  | stall speed 
+  N0300  | N0350  | N0350  | N0350  |  M075  |  M075  |  M075  |  M075  |  M075  |  M075  | climbing speed IAS 
+  N0300  | N0350  | N0350  | N0350  |  M075  |  M075  |  M075  |  M075  |  M075  |  M075  | descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+/51/ 
+A4/M/M F111/M/M F117/M/M L29A/M/M L29B/M/M L329/M/M
+*
+--old icao types etc :L329/M
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0350    |    N0350     |    N0380     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0170     |       15        |        50FT    |    1.0NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0135		|
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  20            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0900    |    F700     |     360     |   Y      |  Y       | 6 deg/sec
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   180       | 3 deg/sec
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   200    |   400    |  to accelerate 
+     50   |   200    |   400    |  to decelerate 
+     50   |   200    |   400    |  to climb 
+     50   |   200    |   400    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   9        | 
+-- 
+--      altitude layers                   |  comments 
+------------------------------------------------------------------- 
+   F30  |  F50   |  F70  |  F100 |  F140 |  F200 |  F250 | F300  | F350   | in increasing order 
+-- 
+--     performance values 
+---------------------------------------------------------------------------------- 
+
+   3300  | 3300  | 3600  | 3600  |  3200 |  3000 |  2800 |  2500 |  2000  |  climb rate ft/min
+   1000  | 1000  |  1500 |  2000 |  2200 |  2200 |  2300 |  1800 |  1600  | descent rate ft/min
+   0100  |  0100 |  0100 |  0100 |  0100 |  0100 |  0100 |  0100 |  0100  | acceleration kts/min
+   0100  |  0100 |  0100 |  0100 |  0100 |  0100 |  0110 |  0100 |  0100  | deceleration kts/min
+  N0400 | N0400 | N0400 | N0400 | N0400 |  M085 |  M085 |  M085 |  M085  | cruising speed IAS
+  N0130 | N0130 | N0130 | N0130 | N0130 | N0130 | N0130 | N0130 | N0130  |  stall speed 
+  N0400 | N0400 | N0400 | N0400 | N0400 |  M085 |  M085 |  M085 |  M085  | climbing speed IAS 
+  N0350 | N0350 | N0350 | N0350 | N0350 |  M085 |  M085 |  M085 |  M085  | descent speed IAS 
+--  
+-- Performance Category
+   H
+
+/52/
+A7/M/M  BD10/L/L F14/M/M F15/M/M F16/M/M JAGR/M/M MG21/M/M MIR2/M/M TOR/M/M JAG/M/M 
+
+-------------------
+--F8/M J8A/M J8B/M  J7/M MG23/M M23/M MG29/H MG31/H SU27/H SU30/H ---2005-9-6
+
+-------------   
+*
+--old icao types etc : JAG/M MIG/M
+-- Based on Embry_Riddle data
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0230    |   N0250      |    N0270     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0220     |       15        |        20FT    |    0.7NM  | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0148           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  100            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0450    |    F510     |     60     |    Y      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   024       | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   200    |   400    |  to accelerate 
+     50   |   200    |   400    |  to decelerate 
+     20   |   200    |   400    |  to climb 
+     20   |   200    |   400    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   8         | 
+-- 
+--      altitude layers                   |  comments 
+------------------------------------------------------------------- 
+   F50   | F100   | F200   | F250   | F290   | F330   | F380   | F420 |  in increasing order 
+-- 
+--     performance values 
+---------------------------------------------------------------------------------- 
+   2500  |  3000  |  2800  |  2500  |  2000  |  1400  |  1100  | 0500 |climb rate ft/min 
+   0800  |  1400  |  1800  |  1700  |  1500  |  1200  |  1100  | 1000 |descent rate ft/min 
+   0120  |  0120  |  0120  |  0100  |  0100  |  0100  | 0100  | 0100  | acceleration 
+   0120  |  0120  |  0120  |  0120  |  0120  |  0120  | 0100  | 0100  | deceleration 
+  N0210  | N0250  |  N0290  |  N0300  | N0270 |  M071  | M075 | M077 |cruising speed 
+  N0185  | N0200  | N0200  | N0200  | N0200  | N0200  | N0200  | N0200  | stall speed 
+  N0190  | N0250  | N0280  |  N0275  | N0270  |  M071  | M073 | M075 |climbing speed 
+  N0210  | N0250  | N0295  | N0325  |  M075  |  M075  | M075 | M075 |descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+/53/
+B1/H/C  B2/H/C  C135/H/C C141/H/C  C17/H/C  E3/H/H  IL76/H/C E3A/H/H KC35/H/H KR35/H/H K135/H/H KE35/H/H A124/H/B Y20/H/H
+
+------------------------
+--IL74/H IL78/H IL82/H ---2005-9-6
+------------------------
+
+
+
+ 
+*
+--old icao types etc:E3A/H KC35/H KR35/H K135/H KE35/H
+-- Based on Embry_Riddle data
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0250    |   N0260      |    N0280     |
+--  
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+--------------------------------------------------------------------
+	N0130     |       40        |        35FT     |    1.5NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0140           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  100            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0450    |    F510     |     45     |    N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   024       | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   200    |   400    |  to accelerate 
+     50   |   200    |   400    |  to decelerate 
+     20   |   200    |   400    |  to climb 
+     20   |   200    |   400    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   9         | 
+-- 
+--      altitude layers                   |  comments 
+------------------------------------------------------------------- 
+   F50   |  F100   | F150  | F200   | F270   | F300   | F340   | F380 | F450 |  in increasing order 
+-- 
+--     performance values 
+---------------------------------------------------------------------------------- 
+   2000  |  2000  |  1800  |  1650  |  1475  |  1250  |  0900  | 0600 | 0300 |climb rate ft/min 
+   0750  |  1200  |  1600  |  2000  |  2200  |  2000  |  1600  | 1400 | 1000 |descent rate ft/min 
+   0080  |  0080  |  0080  |  0080  |  0060  |  0040  |  0040  |  0020  |  0020  |  acceleration 
+   0080  | 0080  |  0080  |  0080  |  0080  |  0060  |  0040  |  0040  |  0040  |  deceleration 
+  N0235 | N0235 | N0250 | N0300 | N0250 | M073  | M075  | M074 | M074 |cruising speed 
+  N0185  | N0200 | N0200 | N0200 | N0200 | N0200 | N0200 | N0200 | N0200 | stall speed 
+  N0210  | N0235|  N0255 | N0275 | N0275 |  M069 | M070  | M068  | M065  |climbing speed 
+  N0180  | N0240 | N0265 | N0280 | N0270 |  M069 | M073  | M075  | M074  |descent speed IAS 
+-- 
+-- Performance Category
+   H
+
+/54/
+A225/H/J AN4/H/H B52/H/B  AN4R/H/H AN5M/H/H
+*
+--old icao types etc: AN4R/H AN5M/H
+--From Embry_Riddle data
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0210    |   N0250      |    N0300     |
+--   
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	N0165    |       35        |        35FT     |    1.4NM    | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0145           |  appch 170
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0400    |    F450     |     60     |    N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   130    |   150    |  to accelerate 
+     50   |   140    |   160    |  to decelerate 
+     50   |   125    |   140    |  to climb 
+     66   |   140    |   500    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F50   | F100   | F200   | F250   | F290  | F330 | F390 |  in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   2000  |  2500  |  1500  |  1500  |  1500 | 1200 | 0800 | climb rate ft/min 
+   0700  |  2000  |  2300  |  2100  |  1800 | 1200 | 1000 | descent rate ft/min 
+   0030  |  0030  |  0030  |  0030  | 0030 | 0030 | 0030 | acceleration 
+   0030  |  0030  |  0030  | 0030  | 0030 | 0030 | 0030 | deceleration 
+ N0210  | N0250  |  N0300  |  N0300  |  M069  | M070 | M069 | cruising speed 
+ N0130  | N0190  |  N0220  |  N0220  | N0220  | N0240 | N0240 || stall speed 
+ N0210  | N0250  |  N0280  |  N0290  |  M071  | M072 | M071 | climbing speed IAS 
+ N0190  | N0240  |  N0245  |  N0250  |  M065  | M068 | M069 | descending speed IAS 
+-- 
+-- Performance Category
+   L
+
+/55/
+C5/H/B   IL96/H/B C5A/H/H
+*
+--old icao types : C5A/H
+--From Embry Riddle data
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0230    |   N0250      |    N0280     |
+--   
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	N0158     |       30        |        35FT     |    1.3NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0130           | appch 145
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  50            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0380    |    F450     |     60     |    N      |  Y       |
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   130    |   150    |  to accelerate 
+     50   |   140    |   160    |  to decelerate 
+     50   |   125    |   140    |  to climb 
+     66   |   140    |   500    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   9         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F050  | F100   |  F150   |  F200   |  F270  |  F300  | F340  | F380  |  F420 | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   1100  |  1500  |   1600  |   1550  |  1000  |  0800  |  0550 |  0500 |  0350 |climb rate ft/min 
+   0650  |  1100  |   1650  |   1800  |  1700  |  1350  |  0650 |  0600 |  0500 |descent rate ft/min 
+   0060  |  0060  |   0060  |   0060  |  0060  |  0060  |  0040 |  0040 |  0040 |acceleration kts/min
+   0080  |  0080  |   0080  |   0080  |  0080  |  0040  |  0040 |  0040 |  0040 |deceleration kts/min
+  N0227  | N0230  |  N0290  |  N0304  | N0288  |  M076  |  M077 |  M077 |  M077 |  cruising speed 
+  N0130  | N0190  |  N0220  |  N0220  | N0220  | N0240  | N0240 | N0240 | N0240 |stall speed 
+  N0225  | N0240  |  N0265  |  N0270  | N0270  |  M069  |  M069 |  M066 |  M065 |climbing speed IAS 
+  N0168  | N0227  |  N0265  |  N0300  | N0288  |  M076  |  M079 |  M080 |  M081 | descending speed IAS 
+--
+-- Performance Category
+   L
+
+/56/
+ALO2/L/L B47G/L/L B47J/L/L BRB2/L/L EN28/L/L EXEC/L/L H269/L/L H12T/L/L KH4/L/L  M500/L/L RH22/L/L S55P/L/L S55T/L/L S62/L/L  
+SCOR/L/L UH12/L/L A47G/L/L A47J/L/L AI02/L/L AIOU/L/L BH47/L/L EH28/L/L EH80/L/L H19/L/L H23/L/L H300/L/L H52/L/L HB42/L/L HH12/L/L 
+HH3/L/L HH4/L/L HL12/L/L HU30/L/L R22/L/L  S313/L/L S318/L/L SK55/L/L SK62/L/L WLW1/L/L WLW2/L/L
+*
+--old icao types etc: A47G/L A47J/L AI02/L AIOU/L BH47/L EH28/L EH80/L H19/L H23/L H300/L H52/L HB42/L 
+--HH12/L HH3/L HH4/L HL12/L HU30/L R22/L  S313/L S318/L SK55/L SK62/L WLW1/L WLW2/L
+--      aircraft list  :   helicopter, low helio performance
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0050    |   N0050     |     N0050     |
+--  
+--      takeoff parameters 
+--     T/O speed |  T/O  duration  |  T/O  altitude  | T/O distance 
+---------------------------------------------------------------------- 
+	N0020    |       10        |        0FT       |    0.1NM     | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0020           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  5            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0090    |    F150     |     120     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   130    |   150    |  to accelerate 
+     50   |   140    |   160    |  to decelerate 
+     50   |   125    |   140    |  to climb 
+     66   |   140    |   500    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F020  | F040   | F060   | F080   | F100   | F120   |  in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   0700  |  0600  |  0600  |  0500  |  0400  |  0200  |  climb rate ft/min 
+   0500  |  0500  |  0500  |  0500  |  0500  |  0500  |  descent speed IAS 
+   0020  |  0015  |  0015  |  0010  |  0010  |  0010  |  acceleration 
+   0030  |  0030  |  0020  |  0010  |  0010  |  0010  |  deceleration 
+  N0073  | N0071  |  N0069  |  N0068  | N0066  | N0064  |  cruising speed 
+  N0006  | N0006  |  N0006  |  N0006  | N0006  | N0006  |  stall speed 
+  N0050  | N0050  | N0050  | N0050  | N0050  | N0050  | climbing speed IAS 
+  N0070  | N0070  |  N0070  |  N0070  | N0070  | N0070  |  descending speed IAS 
+--
+-- Performance Category
+   L
+
+ 
+/57/ 
+ALO3/L/L LAMA/L/L HEL/L/L AIO3/L/L H315/L/L HN15/L/L HN32/L/L IC16/L/L S315/L/L S316/L/L S319/L/L MD60/L/L
+*
+--old icao types etc: AIO3/L H315/L HN15/L HN32/L IC16/L S315/L S316/L S319/L
+
+--      aircraft list  :  HELICOPTERS, low-medium helio performance 
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+     N0060   |   N0060      |    N0060     |
+--   
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	N0020    |       10        |        0FT     |    0.1NM     | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0020           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	   8          | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0110    |    F190     |     120     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   130    |   150    |  to accelerate 
+     50   |   140    |   160    |  to decelerate 
+     50   |   125    |   140    |  to climb 
+     66   |   140    |   500    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F020  |  F040  | F060   | F080   | F100   | F120   | F150   | in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   0800  |  0800  |  0700  |  0600  |  0500  |  0300  |  0100  |  climb rate ft/min 
+   0500  |  0500  |  0500  |  0500  |  0500  |  0400  |  0400  |  descent speed IAS 
+   0020  |  0020  |  0020  |  0020  |  0020  |  0010  |  0010  |  acceleration 
+   0030  |  0030  |  0030  |  0025  |  0025  |  0020  |  0020  |  deceleration 
+  N0088  | N0086  |  N0084  |  N0082  | N0080  | N0078  | N0073  |  cruising speed 
+  N0006  | N0006  |  N0006  |  N0006  | N0006  | N0006  | N0006  |  stall speed 
+  N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | N0060  | climbing speed IAS 
+  N0090  | N0095  |  N0095  |  N0095  | N0090  | N0090  | N0080  |  descending speed IAS 
+-- 
+-- Performance Category
+   L
+
+/58/ 
+AS50/L/L Z11/L/L AS55/L/L B06/L/L  B105/L/L H500/L/L R44/L/L  S61/M/M  UH1/L/L  WESX/L/L A204/L/L A205/L/L A206/L/L AS35/L/L 
+BH04/L/L BH05/L/L BH06/L/L FH04/L/L H3/M/M H58/L/L HU1B/L/L HU50/L/L KH6D/L/L MBH5/L/L MDH5/L/L OH6D/L/L RH44/L/L S350/L/L 
+S355/L/L SK61/M/M WLSK/M/M WLX1/L/L WLX2/L/L
+*
+--old icao types etc: A204/L A205/L A206/L AS35/L BH04/L BH05/L BH06/L FH04/L H3/M H58/L HU1B/L 
+--HU50/L KH6D/L MBH5/L MDH5/L OH6D/L RH44/L S321/L S350/L S355/L SK61/M WLSK/M WLX1/L WLX2/L
+--      aircraft list  :  HELICOPTERS , medium-hi helio performance 
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0060    |   N0060      |    N0060     |
+--   
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	N0020     |       20        |        0FT      |    0.1NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0010           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  12            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0150    |    F200     |     120     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   130    |   150    |  to accelerate 
+     50   |   140    |   160    |  to decelerate 
+     50   |   125    |   140    |  to climb 
+     66   |   140    |   500    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   6         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F020  | F040   |  F060  | F080   | F100   | F120   |  in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   0700  |  0800  |  0650  |  0350  |  0300  |  0200  |  climb rate ft/min 
+   0400  |  0500  |  0500  |  0500  | 0500  |  0500  |   descent rate ft/min 
+   0045  |  0045  |  0040  |  0040  |  0040  |  0040  |  acceleration 
+   0025  |  0025  |  0025  |  0020  | 0020  |  0020  |   deceleration 
+  N0107  | N0105  |  N0102  |  N0100  | N0097  | N0095  |  cruising speed 
+  N0006  | N0006  |  N0006  |  N0006  | N0006  | N0006  |  stall speed 
+  N0060  | N0060  |  N0060  |  N0060  | N0060  | N0060 | climbing speed IAS 
+  N0100  | N0110  |  N0110  |  N0110  | N0110  | N0105  |  descending speed IAS 
+--     
+-- Performance Category
+   L
+    
+
+/59/ 
+A109/L/L AS32/M/M AS65/L/L B12/L/L  B222/L/L BK17/L/L BSTP/M/M Z8/L/L ZHI8/L/L Z9/L/L ZHI9/L/L FREL/L/L GAZL/L/L H46/L/L H47/H/H  H53/M/M  H60/L/L S70/L/L PUMA/M/M 
+S65C/L/L S76/L/L S76C/L/L A212/L/L A412/L/L BH12/L/L BH22/L/L BH41/L/L BHST/M/M CH46/L/L CH47/H/H HVO7/L/L HV34/L/L KH17/L/L MBK7/L/L 
+MDK7/L/L NB12/L/L S321/L/L S330/M/M S332/M/M S342/L/L S365/L/L S366/L/L SK65/M/M SK70/L/L SK76/L/L S76D/L/L
+*
+--old icao types etc: A212/L A412/L BH12/L BH22/L BH41/L BHST/M CH46/L CH47/H HVO7/L HV34/L KH17/L 
+--MBK7/L MDK7/L NB12/L S321/L S330/M S332/M S342/L S365/L S366/L SK65/M SK70/LSK76/L
+
+--      aircraft list  :  HELICOPTERS  hi helio performance 
+--
+-- holding parameters: levels are defined in ATG_PARAMETERS
+--
+-- 0-low lvl | low-uppr lvl | above uppr lvl
+--------------------------------------------
+    N0080    |   N0080      |    N0080     |
+--   
+--      takeoff parameters 
+--     T/O speed  |  T/O  duration  |  T/O  altitude  | T/O distance 
+-------------------------------------------------------------------- 
+	N0030     |       05        |        0FT      |    0.0NM   | 
+-- 
+--      landing parameters 
+--     final speed      |  comments 
+------------------------------------------------ 
+	N0060           | 
+-- 
+--      cross section   |  comments 
+--------------------------------------------------- 
+	  15            | 
+-- 
+--      maximum values 
+--      max speed  |   max alt   |  max turn   | MACH Cap | JET/NO-JET |  comments 
+-------------------------------------------------------------- 
+	  N0160    |    F200     |     120     |   N      |  N       | 
+-- 
+--      std turn     | comments 
+--------------------------------- 
+	   30        | 
+-- 
+--      rates                   |    comments 
+---------------------------------------------------- 
+     50   |   200    |   400    |  to turn 
+     50   |   130    |   150    |  to accelerate 
+     50   |   140    |   160    |  to decelerate 
+     50   |   125    |   140    |  to climb 
+     66   |   140    |   500    |  to descend 
+-- 
+--      layer number |   comments 
+---------------------------------- 
+	   7         | 
+-- 
+--      altitude layers                   |  comments 
+----------------------------------------------------------------- 
+   F020  | F040   |  F060  |  F080  |  F100  | F130   | F170   |  in increasing order 
+-- 
+--     performance values 
+------------------------------------------------------------------ 
+   0640  |  0850  |  0850  |  0600  |  0400  |  0400  |  0100  |  climb rate ft/min 
+   0690  |  0610  |  0600  |  0600  | 0600  |  0600  |  0400  |   descent rate ft/min 
+   0020  |  0030  |  0030  |  0030  |  0030  |  0030  |  0010  |  acceleration 
+   0040  |  0040  |  0040  |  0040  |  0040  |  0040  |  0040  |  deceleration 
+  N0134  | N0131  |  N0129  |  N0123 | N0119 | N0114 | N0110 |  cruising speed 
+  N0006  | N0006  |  N0006  |  N0006  | N0006  | N0006  | N0006  |  stall speed 
+  N0100  | N0097  |  N0094  |  N0091  | N0088  | N0085  | N0078  |  climbing speed IAS 
+  N0130  | N0140  |  N0135  |  N0130  | N0124  | N0118  | N0110  |  descending speed IAS 
+-- 
+-- Performance Category
+   L
+
+ --

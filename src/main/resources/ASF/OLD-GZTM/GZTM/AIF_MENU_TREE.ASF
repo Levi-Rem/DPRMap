@@ -1,0 +1,189 @@
+--
+--           FILE :  AIF_MENU_TREE.ASF
+--
+--
+-- CREATION DATE  : 
+-- BY		  :  lee
+-- VERSION	  : 
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | Data not applicable to NESACC
+--
+--
+--
+-- max number of levels = ??
+--
+-- level | type | name (PIC=8 CH;OTHER=40 CH)                 | comments
+------------------*------**------**------**------**------*--------------------------------------
+--     0   | MENU | IFER_CHECKLISTS                             | 
+--     1   | DOC  |  GENERAL                                    |
+--     1   | PIC  |  E_GENER1                                   |
+--   1   | PIC  |  E_GENER2                                   |
+--   1   | PIC  |  E_GENER3                                   |
+--   1   | DOC  |  AERODROME_EMERGENCY_LANDING                |
+--   1   | PIC  |  E_ADEMER                                   |
+--   1   | DOC  |  AIRCRAFT_COMMUNICATIONS_FAILURE            |     
+--   1   | PIC  |  E_COMFL1                                   |
+--   1   | PIC  |  E_COMFL2                                   |
+--   1   | PIC  |  E_COMFL3                                   |
+--   1   | DOC  |  AIRCRAFT_MALFUNCTION                       |     
+--   1   | PIC  |  E_ACMAL1                                   |
+--   1   | PIC  |  E_ACMAL2                                   |
+--   1   | PIC  |  E_ACMAL3                                   |
+--   1   | PIC  |  E_ACMAL4                                   |
+--   1   | DOC  |  BOMB_WARNING                               |
+--   1   | PIC  |  E_BMBWA1                                   |
+--   1   | PIC  |  E_BMBWA2                                   |
+--   1   | DOC  |  DAY_VFR_AT_NIGHT                           |     
+--   1   | PIC  |  E_VFNGT1                                   |
+--   1   | PIC  |  E_VFNGT2                                   |
+--   1   | PIC  |  E_VFNGT3                                   |
+--   1   | DOC  |  ELT_SIGNAL_HEARD                           |     
+--   1   | PIC  |  E_ELTHEA                                   |     
+--   1   | DOC  |  FORCED_LANDING_OR_DITCHING                 |     
+--   1   | PIC  |  E_DITCH1                                   |
+--   1   | PIC  |  E_DITCH2                                   |
+--   1   | DOC  |  FUEL_SHORTAGE                              |     
+--   1   | PIC  |  E_LOFUL1                                   |
+--   1   | PIC  |  E_LOFUL2                                   |
+--   1   | DOC  |  HIJACK                                     |     
+--   1   | PIC  |  E_HIJCK1                                   |
+--   1   | PIC  |  E_HIJCK2                                   |
+--   1   | DOC  |  VFR_IN_IMC                                 |     
+--   1   | PIC  |  E_VFRIM1                                   |
+--   1   | PIC  |  E_VFRIM2                                   |
+--   1   | PIC  |  E_VFRIM3                                   |
+--   1   | DOC  |  VFR_ON_TOP_OF_CLOUD                        |     
+--   1   | PIC  |  E_VFTOP1                                   |
+--   1   | PIC  |  E_VFTOP2                                   |
+--   1   | PIC  |  E_VFTOP3                                   |
+--   1   | DOC  |  VFR_UNCERTAIN_OF_POSITION                  |     
+--   1   | PIC  |  E_VFRLO1                                   |
+--   1   | PIC  |  E_VFRLO2                                   |
+--   1   | PIC  |  E_VFRLO3                                   |
+--   1   | DOC  |  SCANNED IFER PAGE DEMONSTRATION            |     
+--   1   | PIC  |  IFERSCAN                                   |
+--   0   | MENU | EMERGENCY_PROCEDURES                        |      
+--   1   | DOC  |  ATC RESPONSE TO MAYDAY CALL                |
+--   1   | PIC  |  E_MAYDAY                                   |
+--   1   | DOC  |  BOMB_THREAT_CHECKLIST                      |
+--   1   | PIC  |  BMBCKLST                                   |
+--   1   | DOC  |  COMMUNICATIONS_FAILURE_SCANNED PAGE        |     
+--   1   | PIC  |  COMSFAIL                                   |
+--   0   | MENU | RESTRICTED_AND_DANGER_AREAS                 |      
+--   1   | DOC  |  RESTRICTED_AND_DANGER_AREAS LISTING        |     
+--   1   | PIC  |  PRD01                                      |
+--   1   | PIC  |  PRD02                                      |
+--   1   | PIC  |  PRD03                                      |
+--   1   | PIC  |  PRD04                                      |
+--   1   | PIC  |  PRD05                                      |
+--   1   | PIC  |  PRD06                                      |
+--   1   | PIC  |  PRD07                                      |
+--   1   | PIC  |  PRD08                                      |
+--   1   | PIC  |  PRD09                                      |
+--   1   | PIC  |  PRD10                                      |
+--   1   | PIC  |  PRD11                                      |
+--   1   | PIC  |  PRD12                                      |
+--   1   | PIC  |  PRD13                                      |
+--   1   | PIC  |  PRD14                                      |
+--   0   | MENU |  AIRCRAFT_PERFORMANCE_AND_PARAMETERS       |
+--   1   | DOC  |  AIRCRAFT_SPEEDS_FAST                       |
+--   1   | PIC  |  ACPERFT1                                   |
+--   1   | PIC  |  ACPERFT2                                   |
+--   1   | DOC  |  AIRCRAFT_SPEEDS_SLOW                       |
+--   1   | PIC  |  ACPERSW1                                   |
+--   1   | DOC  |  AIRCRAFT_SPEEDS_SCANNED_PAGE               |
+--   1   | PIC  |  SPEEDSCN                                   |
+--   1   | DOC  |  AIRCRAFT_MINIMUM_SPEEDS                    |
+--   1   | PIC  |  MINSPEED                                   |
+--   1   | DOC  |  WIND_EFFECTS_ON_FLOW_TIMES                 |
+--   1   | PIC  |  WINDEFF                                    |
+--   1   | DOC  |  MAXIMUM_TAKE_OFF_WEIGHTS                   |
+--   1   | PIC  |  MTOW                                       |
+--   1   | DOC  |  NAVIGATION_&_SSR_EQUIPMENT_CODES           |
+--   1   | PIC  |  NAV_SSR                                    |
+--   1   | DOC  |  AIRCRAFT_CRUISING_LEVELS_TABLE_(WHITE)     |
+--   1   | PIC  |  CRZLVSCN                                   |
+--   1   | DOC  |  AIRCRAFT_CRUISING_LEVELS_TABLE_(GRAY)      |
+--   1   | PIC  |  CRZLVSC2                                   |
+--   0   | MENU | METEOROLOGY                                 |
+--   1   | DOC  |  AREA_FORECAST_ZONES_TEST_IMAGES            |
+--   1   | PIC  |  ARFORSCN                                   |
+--   1   | PIC  |  ARFORSC2                                   |
+--   1   | DOC  |  SCANNED_MET_CODES_PAGES                    |
+--   1   | PIC  |  METSCAN1                                   |
+--   1   | PIC  |  METSCAN2                                   |
+--   1   | PIC  |  METSCAN3                                   |
+--   1   | PIC  |  METSCAN4                                   |
+--   1   | DOC  |  MET_CODES                                  |
+--   1   | PIC  |  MAT_MET                                    |
+--   0   | MENU | SCANNED_MATS_PAGES_TESTS                    |
+--   1   | DOC  |  FLIGHTWATCH_MAP                            |
+--   1   | PIC  |  FLTWATCH                                   |
+--   1   | DOC  |  ABBREVIATIONS_TEST_PAGE                    |
+--   1   | PIC  |  ABBREV                                     |
+--   1   | DOC  |  AIRCRAFT_DESIGNATORS                       |
+--   1   | PIC  |  ACENCODE                                   |
+--   0   | MENU | RADAR_COVERAGE_DIAGRAMS_TESTS               |
+--   1   | DOC  |  MCD_RADAR_AS_EXTRACTED FROM EDDS           |
+--   1   | PIC  |  MCDRAD69                                   |
+--   1   | DOC  |  MCD_RADAR_MODIFIED_LAYOUT                  |
+--   1   | PIC  |  MCDRD269                                   |
+--   0   | MENU | ERSA_DERIVED_AERODROME_DIAGRAMS_TEST        |
+--   1   | DOC  |  CB_AD_LAYOUT_EXTRACTED FROM EDDS           |
+--   1   | PIC  |  NADCB                                      |
+--   0   | MENU | MELBOURNE_AIRPORT_DAP_PLATES_TEST           |
+--   1   | DOC  |  MELBOURNE_AIRPORT_LAYOUT_CHART             |
+--   1   | PIC  |  MLADCHT                                    |
+--   1   | DOC  |  MELBOURNE_AIRPORT_LIGHTING                 |
+--   1   | PIC  |  MLADLTNG                                   |
+--   1   | DOC  |  MELBOURNE_AIRPORT_APRON_CHART              |
+--   1   | PIC  |  MLADAPRN                                   |
+--   1   | DOC  |  MELBOURNE_AIRPORT_NOISE_ABATEMENT_PAGE_1   |
+--   1   | PIC  |  MLADNSE1                                   |
+--   1   | DOC  |  MELBOURNE_AIRPORT_NOISE_ABATEMENT_PAGE_2   |
+--   1   | PIC  |  MLADNSE2                                   |
+--   1   | DOC  |  MELBOURNE_AIRPORT_STANDARD_RADAR_DEPS      |
+--   1   | PIC  |  MLADSRD                                    |
+--   1   | DOC  |  ML_SIDS_JETS_NORTHEAST                     |
+--   1   | PIC  |  MLSIDNE                                    |
+--   1   | DOC  |  ML_SIDS_NON_JETS_NORTHEAST                 |
+--   1   | PIC  |  MLSIPNE                                    |
+--   1   | DOC  |  ML_SIDS_NORTHWEST                          |
+--   1   | PIC  |  MLSIDNW                                    |
+--   1   | DOC  |  ML_SIDS_JETS_SOUTH                         |
+--   1   | PIC  |  MLSIDS                                     |
+--   1   | DOC  |  ML_SIDS_NON_JETS_SOUTH                     |
+--   1   | PIC  |  MLSIPS                                     |
+--   1   | DOC  |  ML_SIDS_WEST                               |
+--   1   | PIC  |  MLSIDW                                     |
+--   1   | DOC  |  ARBEY_4_STAR                               |
+--   1   | PIC  |  MLARB4                                     |
+--   1   | DOC  |  BADGR_2_STAR                               |
+--   1   | PIC  |  MLBAD2                                     |
+--   1   | DOC  |  BAYSI_2_STAR                               |
+--   1   | PIC  |  MLBAY2                                     |
+--   1   | DOC  |  LAMAX_3_STAR                               |
+--   1   | PIC  |  MLLMX3                                     |
+--   1   | DOC  |  LIZZY_3_STAR                               |
+--   1   | PIC  |  MLLZY3                                     |
+--   1   | DOC  |  PLENTY_3_STAR                              |
+--   1   | PIC  |  MLPLE3                                     |
+--   1   | DOC  |  WNDY_1_STAR                                |
+--   1   | PIC  |  MLWDY1                                     |
+--   1   | DOC  |  09_VOR/DME APPROACH                        |
+--   1   | PIC  |  ML09VD                                     |
+--   1   | DOC  |  16_ILS_APPROACH                            |
+--   1   | PIC  |  ML16ILS                                    |
+--   1   | DOC  |  16_TWIN_LOCATOR_APPROACH                   |
+--   1   | PIC  |  ML16TWL                                    |
+--   1   | DOC  |  27_ILS_APPROACH                            |
+--   1   | PIC  |  ML27ILS                                    |
+--   1   | DOC  |  27_VOR/DME APPROACH                        |
+--   1   | PIC  |  ML27VD                                     |
+--   1   | DOC  |  34_VOR/DME APPROACH                        |
+--   1   | PIC  |  ML34VD                                     |
+-----------------------------------------------------------------------------------------------

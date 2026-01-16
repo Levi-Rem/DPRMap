@@ -1,0 +1,168 @@
+--
+--  CREATION DATE :  20,Oct 2004
+--  BY            :  Han Jun Jie & Sun Hao
+--  VERSION       :  HS 1.0
+--
+--
+--		
+--      Version | Date        | Responsible  | Comment 
+----------------|-------------|------------- |----------------------------------
+--     HS 1.0   | 20,Oct 2004 | H.J.J & S.H  | After SAT2
+
+
+
+
+--
+-- PARAMS COMMON TO BOTH ACC AND APP
+----------------------------------------------------------
+--
+-- period of STCA processing
+-- in number of system track update
+
+RDF_STCA_UPDATE_PERIOD             	| 2
+--
+-- Threshold of climb/descent rate used in limitation of predicted flight 
+-- level by CFL
+-- given in feet/mn
+RDF_STCA_RATE_THRESHOLD              	| 3000FTM 
+--
+-- Threshold of difference between tracked flight level and CFL,
+-- used in limitation of predicted flight level by CFL
+-- given in feet
+RDF_STCA_LEVEL_THRESHOLD              	| 1000.0FT
+--
+-- Lower speed used for track eligibility for STCA
+-- given in kt
+RDF_STCA_LOWER_SPEED        		| N0030
+--
+-- Maximum speed used for determination of the number of adjacent cells
+-- given in kt
+RDF_RAC_MAX_SPEED        		| N0990
+--
+-- Lower altitude used for track eligibility for STCA
+-- given in feet
+--RRDF_STCA_LOWER_ALT          		| -250FT
+RDF_STCA_LOWER_ALT          		| 10FT
+--
+-- Maximum overshoot/undershoot value used in altitude limitation by CFL 
+-- given in feet
+RDF_MAX_LEVEL_OVERSHOOT     		| 200FT
+--
+-- default value of ROC used for an uncoupled track in STCA processing
+-- when computed rate is not valid 
+-- given in feet/s 
+RDF_STCA_UNCOUPLED_TRACK_ROC            | 30FTS
+--
+-- default value of ROD used for an uncoupled track in STCA processing
+-- when computed rate is not valid 
+-- given in feet/s 
+RDF_STCA_UNCOUPLED_TRACK_ROD            | -30.0FTS
+--
+-- Warning time used in STCA
+-- given in sec 
+RDF_STCA_WARNING_TIME                	| 60
+--
+-- Imminent time used in STCA
+-- given in sec
+RDF_STCA_IMMINENT_TIME               	| 60
+--
+-- Threshold of conflict quality used to consider an
+-- STCA conflict as actual
+RDF_STCA_CONFLICT_QUALITY_THRESHOLD     | 0.7
+--
+-- Threshold of conflict counter used to consider an STCA conflict as actual
+RDF_STCA_COUNTER_THRESHOLD 	     	| 2
+--
+-- Maximum value of STCA conflict misses used to consider 
+-- the conflict as solved
+RDF_STCA_SOLVED_COUNTER_THRESHOLD       | 2
+--
+-- Severe minimum separation distance
+-- given in Nm
+RDF_STCA_SEVERE_SEPARATION_DISTANCE     | 5NM
+--
+------------------
+-- ACC parameters 
+------------------
+--
+-- predefined flight level used to determine the vertical separation to 
+-- use in STCA 
+-- given in 100 ft 
+RDF_STCA_ALT_SEP_THRESHOLD_ACC         	| F290
+--
+-- Vertical separation used in STCA below the RDF_STCA_ALT_SEP_THRESHOLD_ACC
+-- flight level 
+-- given in 100 feet or 10 metres
+RDF_STCA_ALT_SEP_LOW_ACC                | S0027
+--
+--
+-- Vertical separation used in STCA above the RDF_STCA_ALT_SEP_THRESHOLD_ACC
+-- flight level
+-- given in 100 feet or 10 metres
+
+--following the parameters Modified by HJJ 2004/10/18 to Decrease the STCA Alerts 
+RDF_STCA_ALT_SEP_HIGH_ACC               | S0055  
+  
+-- Horizontal separation used in STCA pprocessing
+-- given in Nm 
+RDF_STCA_FINE_PLANAR_SEP_ACC            | 9NM
+--
+-- Look ahead time for STCA
+-- given in sec
+RDF_STCA_LOOK_AHEAD_TIME_ACC            | 90
+--
+----------------------------------------------------------
+-- APP parameters:
+----------------------------------------------------------
+--
+-- predefined flight level used to determine the vertical separation 
+-- to use in STCA 
+-- given in 100 ft 
+RDF_STCA_ALT_SEP_THRESHOLD_APP          | S0360
+--
+-- Vertical separation used in STCA below the RDF_STCA_ALT_SEP_THRESHOLD_APP
+-- flight level 
+-- given in 100 feet or 10 metres
+--
+RDF_STCA_ALT_SEP_LOW_APP                | S0027
+--
+--
+-- Vertical separation used in STCA above the RDF_STCA_ALT_SEP_THRESHOLD_APP
+-- flight level
+-- given in 100 feet or 10 metres
+--
+RDF_STCA_ALT_SEP_HIGH_APP               | S0027
+--
+-- Horizontal separation used in STCA pprocessing
+-- given in Nm 
+
+--Start: From 5NM to 4.5NM , Test for decreasing the Alerts In the App. Area
+--the Seperation in App, normally 8.5KM same direction. 
+--RDF_STCA_FINE_PLANAR_SEP_APP            | 5.0NM
+
+RDF_STCA_FINE_PLANAR_SEP_APP            | 4.5NM
+
+--
+--end;
+
+-- Look ahead time for STCA
+-- given in sec
+RDF_STCA_LOOK_AHEAD_TIME_APP            | 90
+--
+--
+-- Maximum FL at which reduced vertical separation
+-- will apply for STCA, default 390.0
+--
+RDF_STCA_RVSM_VERTICAL_LIMIT_ACC        | S1500
+--
+-- Maximum FL at which reduced vertical separation
+-- will apply for STCA, default 390.0
+--
+RDF_STCA_RVSM_VERTICAL_LIMIT_APP        | S1500
+--
+-- FPDATA_ALL = coupled tracks only
+-- FPDATA_HOLD_ONLY = coupled & unoupled tracks
+--
+
+STCA_ELIGIBILITY | FPDATA_ALL
+--

@@ -1,0 +1,35 @@
+--*
+--*
+--* MAP GENERATOR 	THOMSON-CSF/SDC/BCM
+--*
+--*
+--*       begin of file
+--*
+--*
+--*
+--*  PROJECT MTCD LIST OF EXTERNAL POINTS 
+--*
+ CA1        GEO      32 26 12.0  114 04  2.0
+--
+ CA10       GEO      34 30 56.0  109 05 44.0
+--
+ CA2        GEO      33 35 26.0  117 36 15.0
+--
+ CA3        GEO      27 17  0.0  115 16 11.0
+--
+ CA4        GEO      22 57 29.0  118 30  0.0
+--
+ CA5        GEO      22 18  5.0  115 40 49.0
+--
+ CA6        GEO      22 16 18.0  114 36 10.0
+--
+ CA7        GEO      22 32 45.0  114 12 58.0
+--
+ CA8        GEO      20 22 30.0  111 19 46.0
+--
+ CA9        GEO      25 41 43.0  107 25 53.0
+--
+--*
+--*        end of file
+--*
+--*

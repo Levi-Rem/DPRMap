@@ -1,0 +1,348 @@
+--  
+--
+--
+--  CREATION DATE :  APRIL 01, 2003
+--  BY            :  YAN ZHONG
+--  VERSION       :  ISIM_01
+--
+--
+--
+--      Version | Date    | Responsible  | Comment 
+----------------|---------|------------- |----------------------------------
+--     ISIM_01  | 01/04/03| ZHONG  YAN   | NESACC SHANGHAI FAT
+--
+--
+--
+-- Radar name
+--
+/PNX/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+PRIMARY_ALT_MAX    | 99900FT
+SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+PRIMARY_MIN_COVER   |000.0NM|000.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+PRIMARY_MAX_COVER   |011.0NM|050.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|
+SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|210.0NM|210.0NM|210.0NM|210.0NM|210.0NM|210.0NM|210.0NM|210.0NM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+/XLN/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+PRIMARY_ALT_MAX    | 99900FT
+SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+PRIMARY_MIN_COVER   |000.0NM|000.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+PRIMARY_MAX_COVER   |011.0NM|050.0NM|060.0NM|060.0NM|060.0NM|060.0NM|060.0NM|060.0NM|060.0NM|060.0NM|060.0NM|
+SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+/DHZ/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+PRIMARY_ALT_MAX    | 99900FT
+SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+PRIMARY_MIN_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+PRIMARY_MAX_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+/SHG/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+PRIMARY_ALT_MAX    | 99900FT
+SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+PRIMARY_MIN_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+PRIMARY_MAX_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+/GLT/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+PRIMARY_ALT_MAX    | 99900FT
+SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+PRIMARY_MIN_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+PRIMARY_MAX_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|300.0KM|300.0KM|300.0KM|300.0KM|300.0KM|300.0KM|300.0KM|300.0KM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+/ZUH/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+PRIMARY_ALT_MAX    | 99900FT
+SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+PRIMARY_MIN_COVER   |000.0NM|000.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+PRIMARY_MAX_COVER   |011.0NM|050.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|
+SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+/HKG/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+PRIMARY_ALT_MAX    | 99900FT
+SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+PRIMARY_MIN_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+PRIMARY_MAX_COVER   |000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|000.0NM|
+SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|250.0NM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+
+--/MAC/
+--
+--
+-- Altitude of the high point that can be detected by the radar
+--PRIMARY_ALT_MAX    | 99900FT
+--SECONDARY_ALT_MAX  | 99900FT
+
+-- Minimum range of radar detection for the specific altitude
+-- The percentage is in reference to the maximum altitude listed above;
+-- The distance figure means a target's minimum distance from the radar in that altitude band for it to be detected
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------  
+--PRIMARY_MIN_COVER   |000.0NM|000.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--SECONDARY_MIN_COVER |000.0NM|001.0NM|002.0NM|003.0NM|004.0NM|005.0NM|006.0NM|007.0NM|008.0NM|009.0NM|010.0NM|
+--
+-- Maximum range of radar detection for the specific altitude
+--
+--       	    |  0%   | 10%   | 20%   | 30%   | 40%   | 50%   | 60%   | 70%   | 80%   | 90%   | 100%  |
+---------------------------------------------------------------------------------------
+--PRIMARY_MAX_COVER   |011.0NM|050.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|080.0NM|
+--SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|200.0NM|200.0NM|200.0NM|200.0NM|200.0NM|200.0NM|200.0NM|200.0NM|
+--SECONDARY_MAX_COVER |050.0NM|100.0NM|150.0NM|170.0NM|170.0NM|170.0NM|170.0NM|170.0NM|170.0NM|170.0NM|170.0NM|
+
+
+--	              | P11 | P12 | P21 | P22 | P31 | P32 | P41 | P42 | P51 | P52 |
+-----------------------------------------------------------------------------------
+--PRIMARY_DETECT_PROB   | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+--SECONDARY_DETECT_PROB | 95  | 90  | 95  | 95  | 95  | 95  | 90  | 95  | 90  | 90  |
+
+-- Mode of the radar (only for secondary radar)
+-- Possible values: A, B, C, 1, 2 
+--SECONDARY_MODE	| AC
+--
+-- DEAD AREA  |  RANGE (NM)  |  MIN AZIM 1/10d  |  MAX AZIM 1/10d  |  MAX ALTITUDE (FEET)
+------------------------------------------------------------------------------------------
+--DEAD_AREA_1   |     110      |     0550         |       1300       |        005000       |
+--DEAD_AREA_2   |     145      |     0550         |       1300       |        010000       |
+--DEAD_AREA_3   |     190      |     0550         |       1300       |        020000       |
+--
+--
+--
+--

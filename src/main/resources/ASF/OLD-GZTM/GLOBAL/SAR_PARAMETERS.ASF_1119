@@ -1,0 +1,51 @@
+-- 
+--           FILE :  SAR_PARAMETERS 
+--
+--
+-- CREATION DATE  :  Sep, 2003
+-- BY		  :  lee FOR GUANGZHOU
+-- VERSION	  :  v5_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | Data not applicable to NESACC
+--      V2.3.1  |30/09/04 | K WAN       | Data not applicable to NESACC
+--
+--
+--
+--
+-----------------------------------------------
+-- Functional | SAR Coordination | SAR Arrival
+-- Sector     |    Timeout       |   Timeout 
+-----------------------------------------------
+-- 
+--
+--
+   AP01       | 12               | 12
+   AP02       | 12               | 12
+   AP03       | 12               | 12
+   AP04       | 12               | 12
+   AP05       | 12               | 12
+   AP06       | 12               | 12
+   AP07       | 12               | 12
+   AM         | 12               | 12
+   GYATM      | 12               | 12
+   SALIV      | 12               | 12
+   AMAN       | 12               | 12
+
+   CTR1       | 12               | 12
+   AST1       | 12               | 12
+   CTR2       | 12               | 12
+   AST2       | 12               | 12
+   CTR3       | 12               | 12
+   AST3       | 12               | 12
+
+--
+--
+--
+--
+--
+--
+--

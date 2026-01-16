@@ -1,0 +1,172 @@
+-- 
+--           FILE :  AIRPORT_RUNWAY.ASF 
+-- 
+
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+----
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--
+--
+--
+--
+-- NAME      : designated runway name
+-- DFAUT     : default runway used by the airport
+-- LOCATION  : lat/long of the runway threshold ( or touch down) point
+-- HEADING   : true heading of the runway
+-- ROLLOUT   : Not used, but has to be here
+-- WID       : width on either side of the runway center line
+-- APM D     : radius of the half circle from the LOCATION
+-- DPM D     : not used, but has to be here
+-- GLIDE     : glide path angle in degrees
+-- LAT       : lateral tolerance in degrees from the edge of the WID starting from the threshold line
+-- CLMB      : not used, but has to be here
+-- GLDET     : tolerance in degrees added to the downside of the glide path 
+-- DPM       : not used, but has to be here
+-- INHIBIT   : radius of the cylinder within which APM is inhibited. It is centred at LOCATION.
+-- AVRAD     : Arrival message sending volume, which is centred at LOCATION. This field can be blank;
+-- AVHT      : Height of the Arrival Volume. This field can be blank;
+--
+--
+AUTO_RUNWAY_IN_USE | 5
+
+/ZGGG/ 
+--
+ALTITUDE| 15M |
+--
+WARNING | R/W CLOSED         |
+WARNING | R/W CLOSED : SNOW  |
+WARNING | R/W CLOSED : X WIND|
+WARNING | R/W CLOSED : WET   |
+WARNING | R/W CLOSED : WORK  |
+WARNING | R/W CLOSED : OTHER |
+-- 
+--
+-- NAME |DFAUT?|LOCATION       |HEADING|ROLLOUT| WID  | APM D  |DPM D|GLIDE|LAT |CLMB|GLDET|DPM|INHIBIT | AVRAD | AVHT | COMMENTS
+--------|------|---------------|-------|---------------------------------------------------------------------------------
+   01  | YES  |232237N1131701E| 014   | 0,0M  |150.0M|18000.0M|1.0M |3.0  |15.0| 3.0| 0.48|1.0| 1000.0M| 3800M | 200M | 
+   19  | NO   |232430N1131731E| 194   | 0,0M  |150.0M|18000.0M|1.0M |3.0  |15.0| 3.0| 0.48|1.0| 1000.0M| 3800M | 200M | 
+   02L | NO   |232232N1131819E| 014   | 0,0M  |150.0M|18000.0M|1.0M |3.0  |15.0| 3.0| 0.48|1.0| 2000.0M| 3800M | 200M |
+   20R | NO   |232426N1131850E| 194   | 0,0M  |150.0M|18000.0M|1.0M |3.0  |15.0| 3.0| 0.48|1.0| 2000.0M| 3800M | 200M |
+   02R | NO   |232210N1131828E| 014   | 0,0M  |150.0M|18000.0M|1.0M |3.0  |15.0| 3.0| 0.48|1.0| 2000.0M| 3800M | 200M |
+   20L | NO   |232410N1131900E| 194   | 0,0M  |150.0M|18000.0M|1.0M |3.0  |15.0| 3.0| 0.48|1.0| 2000.0M| 3800M | 200M |
+
+/RUNWAY_CONFLICTS/ 
+01  | 19 20L 20R
+19  | 01 02L 02R
+02L | 19 20L 20R
+02R | 19 20L 20R
+20L | 01 02L 02R
+20R | 01 02L 02R
+
+#ARRIVAL_RUNWAY_MANDATORY_CRITERIA#
+/WAKE_TURBULENCE_CRITERIA/
+01  |   H M L
+02L | J H M L
+02R | J H M L
+20L | J H M L
+20R | J H M L
+19  |   H M L
+
+/AIRCRAFT_TYPE_CRITERIA/
+
+#ARRIVAL_RUNWAY_NON_MANDATORY_CRITERIA#
+/ROUTE_CRITERIA/
+01  | GYA 
+19  | GYA
+01  | ENVIP
+19  | ENVIP
+01  | IKAVO
+19  | IKAVO
+01  | OLPAB  
+19  | OLPAB 
+01  | P270 
+19  | P270 
+01  | IDUMA  
+19  | IDUMA 
+01  | SHL
+19  | SHL
+
+/AIRLINE_CRITERIA/
+
+/BAY_CRITERIA/
+
+#DEPARTURE_RUNWAY_MANDATORY_CRITERIA#
+/WAKE_TURBULENCE_CRITERIA/
+02L | J H M L
+02R | J H M L
+20L | J H M L
+20R | J H M L
+01  |   H M L
+19  |   H M L
+
+#DEPARTURE_RUNWAY_NON_MANDATORY_CRITERIA#
+/AIRCRAFT_TYPE_CRITERIA/
+02L | A380 A388
+02R | A380 A388
+20L | A380 A388
+20R | A380 A388
+
+/ROUTE_CRITERIA/
+02L | LMN 
+02L | P270 
+02R | LMN 
+02R | P270
+20L | LMN 
+20L | P270
+20R | LMN
+20R | P270
+01  | MIKIP 
+01  | P118 
+01  | AGVIL 
+01  | VIBOS
+01  | P50
+01  | SAREX 
+19  | MIKIP 
+19  | P118 
+19  | AGVIL 
+19  | VIBOS
+19  | P50 
+19  | SAREX
+
+/BAY_CRITERIA/
+
+/AIRLINE_CRITERIA/
+
+--
+--
+--
+/VHHH/
+
+ALTITUDE| 20M |
+
+  WARNING | R/W CLOSED         |
+
+-- NAME |DFAUT?|LOCATION       |HEADING|ROLLOUT| WID  | APM D  |DPM D|GLIDE|LAT |CLMB|GLDET|DPM|INHIBIT | AVRAD | AVHT | COMMENTS
+----|------|---------------|-------|-------------------------------------------------------------------------------------- 
+  07L |  NO  |221842N1135354E| 071   | 0,0M  |150.0M|20000.0M|1.0M |3.0  |15.0| 3.0| 0.24|1.0| 1000.0M|       |      | 
+  07R |  NO  |221748N1135400E| 071   | 0,0M  |150.0M|20000.0M|1.0M |3.0  |15.0| 3.0| 0.24|1.0| 1000.0M|       |      | 
+  25L |  YES |221830N1135600E| 251   | 0,0M  |150.0M|20000.0M|1.0M |3.0  |15.0| 3.0| 0.24|1.0| 1000.0M|       |      | 
+  25R |  NO  |221918N1135548E| 251   | 0,0M  |150.0M|20000.0M|1.0M |3.0  |15.0| 3.0| 0.24|1.0| 1000.0M|       |      | 
+
+#ARRIVAL_RUNWAY_MANDATORY_CRITERIA#
+#ARRIVAL_RUNWAY_NON_MANDATORY_CRITERIA#
+/AIRCRAFT_TYPE_CRITERIA/
+/ROUTE_CRITERIA/
+/BAY_CRITERIA/
+/WAKE_TURBULENCE_CRITERIA/
+/AIRLINE_CRITERIA/
+
+#DEPARTURE_RUNWAY_MANDATORY_CRITERIA#
+#DEPARTURE_RUNWAY_NON_MANDATORY_CRITERIA#
+/AIRCRAFT_TYPE_CRITERIA/
+/ROUTE_CRITERIA/
+/BAY_CRITERIA/
+/WAKE_TURBULENCE_CRITERIA/
+/AIRLINE_CRITERIA/
+

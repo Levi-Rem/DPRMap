@@ -1,0 +1,110 @@
+--
+--           FILE : CONFIG_PLANS.ASF 
+-- CREATION DATE  : 2021.08
+-- BY		  :  Liusq
+-- VERSION	  :  V10
+--
+--
+--
+--
+--
+--
+DEFAULT_PLAN_NBR | 1
+--
+--
+--                       |       Plan 1      |        Plan 2     |       Plan 3      |       Plan 4     |
+----------------------------------------------------------------------------------------------------------      
+--Name | Categ.| Log Sys | Phy Pos | Ass Pos | Phy Pos | Ass Pos | Phy Pos | Ass Pos | Phy Pos | Ass Pos|
+----------------------------------------------------------------------------------------------------------
+--
+--TMA
+--
+HE01  | EC    | TMA | POS01  | HP01  | POS01  | HP01   | POS01  | HP01   | POS01  | HP01   |
+HP01  | PLC   | TMA | POS02  | HE01  | POS02  | HE01   | POS02  | HE01   | POS02  | HE01   |
+HE02  | EC    | TMA | POS03  | HP02  | POS03  | HP02   | POS03  | HP02   | POS03  | HP02   |
+HP02  | PLC   | TMA | POS04  | HE02  | POS04  | HE02   | POS04  | HE02   | POS04  | HE02   |
+HE03  | EC    | TMA | POS05  | HP03  | POS05  | HP03   | POS05  | HP03   | POS05  | HP03   |
+HP03  | PLC   | TMA | POS06  | HE03  | POS06  | HE03   | POS06  | HE03   | POS06  | HE03   |
+HE04  | EC    | TMA | POS07  | HP04  | POS07  | HP04   | POS07  | HP04   | POS07  | HP04   |
+HP04  | PLC   | TMA | POS08  | HE04  | POS08  | HE04   | POS08  | HE04   | POS08  | HE04   |
+HE05  | EC    | TMA | POS09  | HP05  | POS09  | HP05   | POS09  | HP05   | POS09  | HP05   |
+HP05  | PLC   | TMA | POS10  | HE05  | POS10  | HE05   | POS10  | HE05   | POS10  | HE05   |
+HE06  | EC    | TMA | POS11  | HP06  | POS11  | HP06   | POS11  | HP06   | POS11  | HP06   |
+HP06  | PLC   | TMA | POS12  | HE06  | POS12  | HE06   | POS12  | HE06   | POS12  | HE06   |
+HE07  | EC    | TMA | POS13  | HP07  | POS13  | HP07   | POS13  | HP07   | POS13  | HP07   |
+HP07  | PLC   | TMA | POS14  | HE07  | POS14  | HE07   | POS14  | HE07   | POS14  | HE07   |
+HE08  | EC    | TMA | POS15  | HP08  | POS15  | HP08   | POS15  | HP08   | POS15  | HP08   |
+HP08  | PLC   | TMA | POS16  | HE08  | POS16  | HE08   | POS16  | HE08   | POS16  | HE08   |
+HE09  | EC    | TMA | POS17  | HP09  | POS17  | HP09   | POS17  | HP09   | POS17  | HP09   |
+HP09  | PLC   | TMA | POS18  | HE09  | POS18  | HE09   | POS18  | HE09   | POS18  | HE09   |
+HE10  | EC    | TMA | POS19  | HP10  | POS19  | HP10   | POS19  | HP10   | POS19  | HP10   |
+HP10  | PLC   | TMA | POS20  | HE10  | POS20  | HE10   | POS20  | HE10   | POS20  | HE10   |
+HE11  | EC    | TMA | POS21  | HP11  | POS21  | HP11   | POS21  | HP11   | POS21  | HP11   |
+HP11  | PLC   | TMA | POS22  | HE11  | POS22  | HE11   | POS22  | HE11   | POS22  | HE11   |
+HE12  | ASUP  | TMC | POS23  |       | POS23  |        | POS23  |        | POS23  |        |
+HP12  | ASUP  | TMD | POS24  |       | POS24  |        | POS24  |        | POS24  |        |
+HE13  | EC    | TMA | POS25  | HP13  | POS25  | HP13   | POS25  | HP13   | POS25  | HP13   |
+HP13  | PLC   | TMA | POS26  | HE13  | POS26  | HE13   | POS26  | HE13   | POS26  | HE13   |
+HE14  | EC    | TMA | POS27  | HP14  | POS27  | HP14   | POS27  | HP14   | POS27  | HP14   |
+HP14  | PLC   | TMA | POS28  | HE14  | POS28  | HE14   | POS28  | HE14   | POS28  | HE14   |
+HE15  | EC    | TMA | POS29  | HP15  | POS29  | HP15   | POS29  | HP15   | POS29  | HP15   |
+HP15  | PLC   | TMA | POS30  | HE15  | POS30  | HE15   | POS30  | HE15   | POS30  | HE15   |
+HE16  | EC    | TMA | POS31  | HP16  | POS31  | HP16   | POS31  | HP16   | POS31  | HP16   |
+HP16  | PLC   | TMA | POS32  | HE16  | POS32  | HE16   | POS32  | HE16   | POS32  | HE16   |
+HE17  | EC    | TMA | POS33  | HP17  | POS33  | HP17   | POS33  | HP17   | POS33  | HP17   |
+HP17  | PLC   | TMA | POS34  | HE17  | POS34  | HE17   | POS34  | HE17   | POS34  | HE17   |
+AMAN2 | EC    | TMA | POS35  | HP01  | POS35  | HP01   | POS35  | HP01   | POS35  | HP01   |
+AMAN1 | EC    | TMA | POS36  | HP01  | POS36  | HP01   | POS36  | HP01   | POS36  | HP01   |
+--
+--
+SUP1  | ASUP  | TMA | POS37  |       | POS37  |        | POS37  |        | POS37  |        |
+SUP2  | EC    | TMA | POS38  | HP11  | POS38  | HP11   | POS38  | HP11   | POS38  | HP11   |
+GAC1  | EC    | TMB | POS39  | GAC2  | POS39  | GAC2   | POS39  | GAC2   | POS39  | GAC2   |
+GAC2  | PLC   | TMB | POS40  | GAC1  | POS40  | GAC1   | POS40  | GAC1   | POS40  | GAC1   |
+MCUC1 | EC    | TMB | POS41  | MCUC2 | POS41  | MCUC2  | POS41  | MCUC2  | POS41  | MCUC2  |
+MCUC2 | PLC   | TMB | POS42  | MCUC1 | POS42  | MCUC1  | POS42  | MCUC1  | POS42  | MCUC1  |
+CSUP1 | OPSUP | TMC | POS43  |       | POS43  |        | POS43  |        | POS43  |        |
+CSUP2 | ASUP  | TMB | POS44  |       | POS44  |        | POS44  |        | POS44  |        |
+TFM1  | TMP   | TMC | POS45  |       | POS45  |        | POS45  |        | POS45  |        |
+TFM2  | TMP   | TMC | POS46  |       | POS46  |        | POS46  |        | POS46  |        |
+ATC1  | TMP   | TMC | POS47  |       | POS47  |        | POS47  |        | POS47  |        |
+FPM1  | FDO   | TMC | POS48  |       | POS48  |        | POS48  |        | POS48  |        |
+FPM2  | FDO   | TMC | POS49  |       | POS49  |        | POS49  |        | POS49  |        |
+TMP1  | TMP   | TMC | POS50  |       | POS50  |        | POS50  |        | POS50  |        |
+TMP2  | TMP   | TMC | POS51  |       | POS51  |        | POS51  |        | POS51  |        |
+--
+-- END OF TMA PARTITION 
+-- ******************************************************************************************************
+--
+--Remote Tower
+--
+BYC1  | TOWER | TWR | POS61  |       | POS61  |        | POS61  |        | POS61  |        |
+BYA1  | TOWER | TWR | POS62  |       | POS62  |        | POS62  |        | POS62  |        |
+BYC2  | TOWER | TWR | POS63  |       | POS63  |        | POS63  |        | POS63  |        |
+BYA2  | TOWER | TWR | POS64  |       | POS64  |        | POS64  |        | POS64  |        |
+BYC3  | TOWER | TWR | POS67  |       | POS67  |        | POS67  |        | POS67  |        |
+BYA3  | TOWER | TWR | POS66  |       | POS66  |        | POS66  |        | POS66  |        |
+SUPTW | ASUP  | TWR | POS65  |       | POS65  |        | POS65  |        | POS65  |        |
+
+--
+-- END OF RT PARTITION
+-- ******************************************************************************************************
+--
+
+/ASUP_PARTITIONS/
+--Name | Logical Systems
+---------------------------------
+CSUP2 | TMA TMC TWR
+HE12  | TWR
+HP12  | TWR
+
+-- 
+--
+--
+-- Modified on Nov 1: restriction on the SUP capability is put
+--
+/USER_AUTHORITY/
+-- USERNAME | Logical Systems
+-----------------------------   
+
+OPSUP | TMA TMB TMC TMD TWR

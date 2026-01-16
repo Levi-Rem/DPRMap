@@ -1,0 +1,28 @@
+--
+--           FILE :  DOD_PARAMETERS 
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+-- actual values to be used
+--
+DOD_SURVEILLANCE_UPDATE_FACTOR | 12
+
+DOD_FDP_UPDATE_FACTOR | 10
+DOD_FDP_UPDATE_PERIOD | 30
+
+DOD_ADS_UPDATE_PERIOD | 6
+DOD_ADS_UPDATE_FACTOR | 6
+
+DOD_PRIMARY_RADAR_ON  | N
+DOD_CONTROL_ON        | Y
+

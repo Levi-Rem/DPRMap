@@ -1,0 +1,6 @@
+NTZ_LOOK_AHEAD_TIME         |    20
+--NO_OF_NTZ_UPDATES           |    1
+NO_OF_COASTED_UPDATES       |    1
+CSTD_MIN_ALTITUDE_ABOVE_RWY | 50FT
+
+

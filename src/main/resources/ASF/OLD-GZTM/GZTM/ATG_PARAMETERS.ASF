@@ -1,0 +1,103 @@
+--
+--           FILE :  ATG_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+--
+-- send strip to pilot for manual start aircraft
+--
+TAKE_OFF_ANTICIPATION_DELAY         | 5
+--
+-- send strip to pilot for automatic start aircraft
+--
+AIRBORNE_ANTICIPATION_DELAY         | 3
+--
+-- send flight plan to FDP
+--
+FLIGHT_PLAN_SENDING_DELAY           | 10
+--
+-- send AOC message
+AOC_SENDING_DELAY                   | 1
+--
+-- send LAM
+LAM_SENDING_DELAY                   | 1
+--
+--
+-- default holding pattern parameters
+--
+HOLDING_OUTBOUND_LEG_TIME           | 60
+LOWER_HOLDING_LEVEL                 | F60
+UPPER_HOLDING_LEVEL                 | F140
+--
+-- qnh/ta initialisation values for atg
+--
+QNH_VALUE                           | 1013
+TRANSITION                          | F140
+--
+--new parameters
+--
+--ATG_TAKE_OFF_KFDR_CREATION_ANTICIPATION_PERIOD  | ?
+--
+--ATG_AIRBORNE_START_KFDR_CREATION_ANTICIPATION_PERIOD   | ?
+--
+
+--
+SEND_AUTO_AIREP_POS                 | POS
+SEND_AUTO_CPDLC_POS                 | CPDLC
+FIR_UNIT                            | METRIC
+
+
+-- new for EXV5
+
+DAP_FMS_SELECTED_ALTITUDE           | N
+DAP_ROLL_ANGLE                      | N
+DAP_TRUE_TRACK_ANGLE                | N
+DAP_GROUND_SPEED                    | N
+DAP_TRUE_ANGLE_RATE                 | N
+DAP_TRUE_AIRSPEED                   | N
+DAP_BAROMETRIC_PRESSURE_SETTING     | N
+DAP_BAROMETRIC_ALTITUDE_RATE        | N
+DAP_MAGNETIC_HEADING                | N
+DAP_INDICATED_AIRSPEED              | N
+DAP_MACH                            | N
+DAP_GEOMETRIC_VERTICAL_RATE         | N
+DAP_GEOMETRIC_ALTITUDE              | N
+DAP_VELOCITY_ACCURACY               | N
+DAP_POSITION_ACCURACY               | Y
+DAP_TRAJECTORY_INTENT               | N
+DAP_MET                             | N
+DAP_EMITTER_CATEGORY                | N
+/DAP_UNCERTAINTY_VALUES/
+-- --------------------+-----------------+
+-- Value               | Range           |
+-- --------------------+-----------------+
+-- PILOT_VALUE (FOM)   | 0 -> 9          |
+-- ADSB_POS_VALUE      | 0 -> 9          |
+-- WAM_POS_VALUE       | 0 -> 30000      |
+-- ADSC_POS_VALUE      | 0 -> 9          |
+-- ADSB_VELOCITY_VALUE | 0 -> 30000      |
+-- --------------------+-----------------+
+--
+-- PILOT_VALUE | ADSB_POS_VALUE | WAM_POS_VALUE | ADSC_POS_VALUE | ADSB_VELOCITY_VALUE
+    0          | 0              | 1             | 0              | 1000
+    1          | 1              | 1             | 1              | 2000
+    2          | 2              | 5             | 2              | 3000
+    3          | 3              | 10            | 3              | 4000
+    4          | 4              | 11            | 4              | 5000
+    5          | 5              | 15            | 5              | 6000
+    6          | 6              | 20            | 6              | 7000
+    7          | 7              | 10            | 7              | 8000
+    8          | 8              | 25            | 8              | 9000
+    9          | 9              | 30            | 9              | 10000
+

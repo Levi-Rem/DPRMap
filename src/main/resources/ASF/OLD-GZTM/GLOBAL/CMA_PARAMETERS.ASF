@@ -1,0 +1,44 @@
+--  
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+----
+--
+--
+--      Version | Date    | Responsible  | Comment 
+----------------|---------|------------- |----------------------------------
+--     ISIM_01  | 01/04/03| ZHONG  YAN   | NESACC SHANGHAI FAT
+-- OPS_SAT2_01  | 25/05/04| KWANG  WAN   | updated for OPS SAT2
+-- V2..2        | 12/10/04| KWANG  WAN   | CMA_OWN_ADDRESS changed to CANGWYA
+--
+--
+--
+--
+-- Parameter Identifier | Value
+-----------------------------------
+CMA_CONTACT_TIME	| 20
+CMA_EXIT_COORD_TIME	| 20
+--
+--CMA_OWN_ADDRESS         | CANXMCZ
+CMA_OWN_ADDRESS         | CANGWYA
+CMA_OWN_FIR_NAME        | ZGGG
+--
+--
+-- CMA_CAD_AFTER_NDA_TIME   | 5
+CMA_INBOUND_LOGON_DELTA  | 5
+CMA_OUTBOUND_LOGON_DELTA | 5
+--
+--
+/AUTO_CMA_CONTACT/
+--
+--
+--
+-- Adjacent FIRSs  |  Auto CM contact  | ACARS address  |
+-------------------|-------------------|----------------|
+--        YBBB       |       TRUE        |    OOLCAYA     |
+--
+--
+--
+--
+--

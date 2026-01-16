@@ -1,0 +1,74 @@
+---------------------
+--           FILE :  AIF_PARAMETERS.ASF
+---------------------
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+----
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|----------------------------------
+--
+--
+-- PARAMETER              | VALUE
+---------------------------------
+-- 
+AIREP_DELTA_VALIDITY_TIME | 10
+NOTMET_UPDATE_DELAY_TIME  | 60
+
+-- new for EXV5
+--
+AIF_AUTO_DELETE_TIME      | 03
+AIF_COLOUR_TIME_OUT       | 03
+AWOS_RUNWAY_AGE           | 180
+
+/WINDOWS_MAPPING/
+NOTAM_DANGER_AREA_ALERT_WINDOW | CSUP1 |
+NOTAM_DAIW_QUALIFIER | RT | RD | RP | WB |WL|WC|WE|WV|WM|WP|
+
+--20151020
+--/METAR_SPECI/
+--LOCATION       | ZGGG |ZGSZ |
+----------------------------
+-- Name        | Func sector
+----------------------------
+--ALLPOS         | EC PLC
+
+/ATIS_AIRPORT_LIST/
+ZGGG
+
+/ATIS_POSITION/
+HE01 | ZGGG D | ZGGG 
+HP01 | ZGGG D | ZGGG 
+HE02 | ZGGG D | ZGGG 
+HP02 | ZGGG D | ZGGG 
+HE03 | ZGGG D | ZGGG 
+HP03 | ZGGG D | ZGGG 
+HE04 | ZGGG D | ZGGG 
+HP04 | ZGGG D | ZGGG 
+HE05 | ZGGG D | ZGGG 
+HP05 | ZGGG D | ZGGG 
+HE06 | ZGGG D | ZGGG 
+HP06 | ZGGG D | ZGGG 
+HE07 | ZGGG D | ZGGG 
+HP07 | ZGGG D | ZGGG 
+HE08 | ZGGG D | ZGGG 
+HP08 | ZGGG D | ZGGG 
+HE09 | ZGGG D | ZGGG 
+HP09 | ZGGG D | ZGGG 
+HE10 | ZGGG D | ZGGG 
+HP10 | ZGGG D | ZGGG 
+HE11 | ZGGG D | ZGGG 
+HP11 | ZGGG D | ZGGG 
+OR1  | ZGGG D | ZGGG 
+HP12 | ZGGG D | ZGGG 
+HE13 | ZGGG D | ZGGG 
+HP13 | ZGGG D | ZGGG 
+HE14 | ZGGG D | ZGGG 
+HP14 | ZGGG D | ZGGG 
+HE15 | ZGGG D | ZGGG 
+HP15 | ZGGG D | ZGGG 
+HE16 | ZGGG D | ZGGG 
+HP16 | ZGGG D | ZGGG 
+HE17 | ZGGG D | ZGGG 
+HP17 | ZGGG D | ZGGG 

@@ -1,0 +1,371 @@
+--
+--           FILE :  AUTOMATIC_TRANSFER_CONDITIONS.ASF 
+--
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      V2.3.5  |7/01/05  | GZ ATMB     | updated Guangzhou OPS
+--
+
+/VTMA/
+
+ if DEP is ZGGG,SRE 0 IS MIKIP,,,,,,
+           JUMP ZAN
+
+ if DEP is ZGGG,SRE 0 IS P118,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGGG,SRE 0 IS AGVIL,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGGG,SRE 0 IS P50,,,,,,
+           JUMP TAS
+       
+ if DEP is ZGGG,SRE 0 IS SAREX,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGGG,SRE 0 IS VIBOS,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGGG,SRE 0 IS LMN,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGGG,SRE 0 IS BOVMA,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGGG,SRE 0 IS P270,,,,,,
+           JUMP CAS
+       
+-------------ZGFS-------------------------------------------
+
+
+ if DEP is ZGFS,SRE 0 IS MIKIP,,,,,,
+           JUMP ZAN
+
+ if DEP is ZGFS,SRE 0 IS P118,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGFS,SRE 0 IS AGVIL,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGFS,SRE 0 IS P50,,,,,,
+           JUMP TAS
+       
+ if DEP is ZGFS,SRE 0 IS SAREX,,,,,,
+           JUMP TAS
+   
+ if DEP is ZGFS,SRE 0 IS VIBOS,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGFS,SRE 0 IS LMN,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGFS,SRE 0 IS BOVMA,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGFS,SRE 0 IS P270,,,,,,
+           JUMP CAS
+       
+
+-------------ZGCC-------------------------------------------
+
+
+ if DEP is ZGCC,SRE 0 IS MIKIP,,,,,,
+           JUMP ZAN
+
+ if DEP is ZGCC,SRE 0 IS P118,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGCC,SRE 0 IS AGVIL,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGCC,SRE 0 IS P50,,,,,,
+           JUMP TAS
+       
+ if DEP is ZGCC,SRE 0 IS SAREX,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGCC,SRE 0 IS VIBOS,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGCC,SRE 0 IS LMN,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGCC,SRE 0 IS BOVMA,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGCC,SRE 0 IS P270,,,,,,
+           JUMP CAS
+       
+
+--------------------------------------------------------
+
+  if DEP is  ZGSZ,,,,,,,
+           JUMP XAS
+
+ if DEP is  ZGSD,,,,,,,
+           JUMP XAS
+
+ if DEP is  VMMC,,,,,,,
+           JUMP XAS               
+
+ 
+ if DEP is  ZGHZ,,,,,,,
+ 
+           JUMP CAS               
+
+ 
+------------------DES ZGGG TRANSFER----------------------------------
+
+    if ,DES is ZGGG,,,,,,
+        JUMP TGG
+ 
+------------------DES ZGFS TRANSFER----------------------------------
+    if ,DES is ZGFS,,,,,,
+        JUMP TFC
+ 
+------------------DES ZGCC TRANSFER----------------------------------
+    if ,DES is ZGCC,,,,,,
+        JUMP TFC
+ 
+------------------DES ZGHZ TRANSFER----------------------------------
+    if ,DES is ZGHZ,,,,,,
+        JUMP THZ
+ 
+------------------DES ZGSZ TRANSFER----------------------------------
+    if ,DES is ZGSZ,,,,,,
+        JUMP TZM
+ 
+------------------DES ZGSD TRANSFER----------------------------------
+    if ,DES is ZGSD,,,,,,
+        JUMP TZM
+ 
+------------------DES VMMC TRANSFER----------------------------------
+    if ,DES is VMMC,,,,,,
+        JUMP TZM
+ 
+
+    if ,DES NOT  ZGGG,,,,,,	
+        JUMP NON
+      
+-------------CAS AP04----------------------------------
+CAS if ,,,,,,,	   
+        NO_HAND_RAM AP04
+	   
+    if ,,,,,,, 
+        JUMP NON
+          
+-------------TAS AP05----------------------------------
+TAS if ,,,,,,,	   
+        NO_HAND_RAM AP05
+	   
+    if ,,,,,,, 
+        JUMP NON
+   
+-------------XAS IDUMA ShenZhuAo AP04------------------
+XAS if ,SRE 0 IS MIPAG,,,,,,
+        NO_HAND_RAM AM
+
+    if PRE 0 IS MIPAG,,,,,,,
+        NO_HAND_RAM AM
+
+    if PRE 0 IS IDUMA,,,,,,,	   
+        NO_HAND_RAM AP04
+
+    if ,,,,,,, 
+        JUMP NON  
+	
+-------------ZAN AP03----------------------------------
+ZAN if ,,,,,,,	   
+        NO_HAND_RAM AP03
+	   
+    if ,,,,,,, 
+	JUMP NON
+  
+------------------TGG DES ZGGG TRANSFER----------------
+  
+TGG if PRE 0 IS IDUMA,,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if ,SRE 0 IS IDUMA,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if PRE 0 IS P270,,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if ,SRE 0 IS P270,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if PRE 0 IS GYA,,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if ,SRE 0 IS GYA,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if PRE 0 IS IKAVO,,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if ,SRE 0 IS IKAVO,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if PRE 0 IS ENVIP,,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if ,SRE 0 IS ENVIP,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if PRE 0 IS OLPAB,,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if ,SRE 0 IS OLPAB,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if PRE 0 IS TAMOT,,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if PRE 0 IS BEKOL,,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if ,,,,,,, 
+        NO_HAND_RAM AP03
+ 
+------------------TFC DES ZGFS ZGCC TRANSFER-----------
+  
+TFC if PRE 0 IS P270,,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if ,SRE 0 IS P270,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if PRE 0 IS GYA,,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if ,SRE 0 IS GYA,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if PRE 0 IS IKAVO,,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if ,SRE 0 IS IKAVO,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if PRE 0 IS ENVIP,,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if ,SRE 0 IS ENVIP,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if PRE 0 IS OLPAB,,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if ,SRE 0 IS OLPAB,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if PRE 0 IS NOLON,,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if ,SRE 0 IS NOLON,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if PRE 0 IS TAMOT,,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if PRE 0 IS BEKOL,,,,,,,
+        NO_HAND_RAM AP04
+ 
+    if ,,,,,,, 
+        NO_HAND_RAM AP03
+ 
+------------------THZ DES ZGHZ TRANSFER----------------
+  
+THZ if PRE 0 IS GYA,,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if ,SRE 0 IS GYA,,,,,,
+        NO_HAND_RAM AP03
+ 
+    if PRE 0 IS NOLON,,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if ,SRE 0 IS NOLON,,,,,,
+        NO_HAND_RAM AP07
+ 
+    if ,,,,,,, 
+        NO_HAND_RAM AP03
+ 
+------------------TZM DES ZGSZ ZGSD VMMC TRANSFER------
+  
+TZM if PRE 0 IS NOLON,,,,,,,
+        NO_HAND_RAM AP08
+ 
+    if ,SRE 0 IS NOLON,,,,,,
+        NO_HAND_RAM AP08
+ 
+    if ,,,,,,, 
+        NO_HAND_RAM AP05
+ 
+  
+	NON if ,,,,,,,
+	    NULL
+	      
+	    
+ 
+---------------------------------
+
+
+/VAD/
+
+
+-----added  fir MHT_TWR -------
+
+    --if DEP IS ZGGG, , , , , , ,
+    --    ASS AP02
+    
+    if PRE 0 IS GYA,DES is ZGGG,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS ENVIP,DES is ZGGG,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS IKAVO,DES is ZGGG,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS GYA,DES is ZGFS,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS ENVIP,DES is ZGFS,,,,,,
+           NO_HAND_RAM AP01
+     
+    if PRE 0 IS IKAVO,DES is ZGFS,,,,,,
+           NO_HAND_RAM AP01
+     
+    if PRE 0 IS GYA,DES is ZGCC,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS ENVIP,DES is ZGCC,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS IKAVO,DES is ZGCC,,,,,,
+           NO_HAND_RAM AP01
+
+    
+    if ,DES IS ZGGG, , , , , ,
+	   NO_HAND_RAM AP06
+	   
+    if ,DES IS ZGFS, , , , , ,
+	   NO_HAND_RAM AP06
+    if ,DES IS ZGCC, , , , , ,
+	   NO_HAND_RAM AP06
+
+      
+     
+      if ,,,,,,,
+	    NULL
+	      
+----------------------------------------------

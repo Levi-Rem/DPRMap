@@ -1,0 +1,56 @@
+--
+-- FILE: NAIPS_LIBRARY.ASF
+--
+--
+--
+--
+-- CREATION DATE  : 
+-- BY		  : 
+-- VERSION	  : 
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | Data not applicable to NESACC
+--
+--
+--
+--
+--
+/001/
+ATIS         | ZUUU | DUMMY MESSAGE WEATHER IN BEIJING IS FINE
+/002/
+ATIS         | ZUCK | DUMMY MESSAGE WEATHER IN SHANGHAI IS FINE
+--
+-- Start of MET Messages
+--
+/003/
+AREA_QNH     | ZUUU | QNH 1011.2
+--
+/004/
+METAR_SPECI  | ZUUU | DUMMY MESSAGE NO SIGNIFICANT WEATHER CHANGE FOR BEIJING FOR THE NEXT 24 HRS
+--
+/005/
+ARFOR        | ZUUU | DUMMY MESSAGE AREA FORECAST IS OKAY
+--
+/006/
+AIRMET       | ZUCK | DUMMY SIGNIFICANT METEOROLOGICAL INFORMATION BELOW FL210 MESSAGE
+--
+/007/
+NAV          | ZUCK | DUMMY NAVIGATIONAL AIDS MESSAGE
+--
+/008/
+ATS          | ZUUU | DUMMY AIR TRAFFIC SERVICES MESSAGE
+--
+/009/
+ARS          | ZUUU | DUMMY AIRCRAFT IN-FLIGHT SPECIAL REPORT
+--
+/010/
+PROC         | ZUUU | DUMMY PROCEDURES MESSAGE
+--
+/011/
+MAA          | ZUUU | DUMMY MILITARY AVIATION ACTIVITY MESSAGE
+--
+/012/
+SPA          | ZUUU | DUMMY SPORTS AVIATION MESSAGE

@@ -1,0 +1,210 @@
+-- 
+--           FILE : CONFIGURATION.ASF 
+--
+-- CREATION DATE  : 2021.08
+-- BY		  : Liusq
+-- VERSION	  : V10
+--
+--
+--
+--
+/LOGICAL_SYSTEM_NAMES/
+--
+-- LOGICAL SYSTEM NAME | PARTITION NAME | RADAR PARTITION | COMMENTS
+
+    TMA   |     GZTM       |  GZTM            | GUANGZHOU TMA
+    TMB   |     GZTM       |  GZTM            | GUANGZHOU TMB
+    TMC   |     GZTM       |  GZTM            | GUANGZHOU TMC
+    TMD   |     GZTM       |  GZTM            | GUANGZHOU TMD
+    TWR   |     GZRT       |  GZRT            | GUANGZHOU BAIYUN TOWER
+                
+    DM1   |     GZTM       |  GZTM            | DUMMY
+
+--
+--
+/POSITION/ 
+-------------------------------------------
+--PP  | DEVICE NAME  | TYPE   | # OF SCN|
+-------------------------------------------
+--
+-- GUANGZHOU TMA PARTITION NODES
+--
+POS01  | gztmod001li | TWO_K | 1 | HE01 
+POS02  | gztmod002li | TWO_K | 1 | HP01 
+POS03  | gztmod003li | TWO_K | 1 | HE02 
+POS04  | gztmod004li | TWO_K | 1 | HP02 
+POS05  | gztmod005li | TWO_K | 1 | HE03 
+POS06  | gztmod006li | TWO_K | 1 | HP03 
+POS07  | gztmod007li | TWO_K | 1 | HE04 
+POS08  | gztmod008li | TWO_K | 1 | HP04 
+POS09  | gztmod009li | TWO_K | 1 | HE05 
+POS10  | gztmod010li | TWO_K | 1 | HP05 
+POS11  | gztmod011li | TWO_K | 1 | HE06 
+POS12  | gztmod012li | TWO_K | 1 | HP06 
+POS13  | gztmod013li | TWO_K | 1 | HE07 
+POS14  | gztmod014li | TWO_K | 1 | HP07 
+POS15  | gztmod015li | TWO_K | 1 | HE08 
+POS16  | gztmod016li | TWO_K | 1 | HP08 
+POS17  | gztmod017li | TWO_K | 1 | HE09 
+POS18  | gztmod018li | TWO_K | 1 | HP09 
+POS19  | gztmod019li | TWO_K | 1 | HE10 
+POS20  | gztmod020li | TWO_K | 1 | HP10 
+POS21  | gztmod021li | TWO_K | 1 | HE11 
+POS22  | gztmod022li | TWO_K | 1 | HP11 
+POS23  | gztmod023li | TWO_K | 1 | OR1 
+POS24  | gztmod024li | TWO_K | 1 | HP12 
+POS25  | gztmod025li | TWO_K | 1 | HE13 
+POS26  | gztmod026li | TWO_K | 1 | HP13 
+POS27  | gztmod027li | TWO_K | 1 | HE14 
+POS28  | gztmod028li | TWO_K | 1 | HP14 
+POS29  | gztmod029li | TWO_K | 1 | HE15 
+POS30  | gztmod030li | TWO_K | 1 | HP15 
+POS31  | gztmod031li | TWO_K | 1 | HE16 
+POS32  | gztmod032li | TWO_K | 1 | HP16 
+POS33  | gztmod033li | TWO_K | 1 | HE17 
+POS34  | gztmod034li | TWO_K | 1 | HP17 
+POS35  | gztmod035li | TWO_K | 1 | AMAN2 
+POS36  | gztmod036li | TWO_K | 1 | AMAN1 
+POS37  | gztmod037li | TWO_K | 1 | SUP3 
+POS38  | gztmod038li | TWO_K | 1 | SUP1 
+POS39  | gztmod039li | TWO_K | 1 | GAC1 
+POS40  | gztmod040li | ONE_K | 1 | GAC2 
+POS41  | gztmod041li | TWO_K | 1 | MCUC1
+POS42  | gztmod042li | ONE_K | 1 | MCUC2
+POS43  | gztmod043li | TWO_K | 1 | CSUP1
+POS44  | gztmod044li | TWO_K | 1 | CSUP2 
+POS45  | gztmflm01li | TWO_K | 1 | TFM1 
+POS46  | gztmflm02li | ONE_K | 1 | TFM2 
+POS47  | gztmatc01li | ONE_K | 1 | ATC1 
+POS48  | gztmfdo01li | TX    | 1 | FPM1 
+POS49  | gztmfdo02li | TX    | 1 | FPM2 
+POS50  | gztmtmp01li | ONE_K | 1 | TMP1 
+POS51  | gztmtmp02li | TWO_K | 1 | TMP2 
+POS52  | UNUSED      | TWO_K | 1 | Dummy 
+POS53  | UNUSED      | TWO_K | 1 | Dummy 
+POS54  | UNUSED      | TWO_K | 1 | Dummy 
+POS55  | UNUSED      | TWO_K | 1 | Dummy 
+POS56  | UNUSED      | TWO_K | 1 | Dummy 
+POS57  | UNUSED      | TWO_K | 1 | Dummy 
+POS58  | UNUSED      | TWO_K | 1 | Dummy 
+POS59  | UNUSED      | TWO_K | 1 | Dummy 
+POS60  | UNUSED      | TWO_K | 1 | Dummy 
+--
+-- END OF GUANGZHOU TMA PARTITION
+-- *******************************************
+
+--
+-- GUANGZHOU BAIYUN TWR NODES
+--
+POS61  | gzrtod001li | ONE_K | 1 | BYC1
+POS62  | gzrtod002li | ONE_K | 1 | BYA1
+POS63  | gzrtod003li | ONE_K | 1 | BYC2
+POS64  | gzrtod004li | ONE_K | 1 | BYA2
+POS65  | gzrtod005li | ONE_K | 1 | SUPTW
+POS66  | gzrtod006li | ONE_K | 1 | BYA3
+POS67  | gzrtod007li | ONE_K | 1 | BYC3
+POS68  | gzrtod008li | ONE_K | 1 | BYA4
+POS69  | gzrtod009li | ONE_K | 1 | BYC4
+
+--
+-- END OF BAIYUN TWR PARTITION
+-- *******************************************
+--
+--
+/NODE/
+--  NOTE: STPP numbers correspond to the MMI group number of the associated strip printer
+--        ie 2 corresponds to MMI002 (must have a DEVICE STPRINT002 IOC_STP entry in conf
+--        file)
+--
+-----------------------------------------------------------------------------------------
+-- Name | Log Syst| Partition|First STPP|Second STPP| MSP |Pos 1 |Pos 2 |Pos 3|Pos 4|
+-----------------------------------------------------------------------------------------
+--
+-- TMA
+--
+MMI001 | TMA | TMA      | 2   |     |     | POS01  |   |   |   |IER|
+MMI002 | TMA | TMA      | 2   |     |     | POS02  |   |   |   |IER|
+MMI003 | TMA | TMA      | 4   |     |     | POS03  |   |   |   |IER|
+MMI004 | TMA | TMA      | 4   |     |     | POS04  |   |   |   |IER|
+MMI005 | TMA | TMA      | 6   |     |     | POS05  |   |   |   |IER|
+MMI006 | TMA | TMA      | 6   |     |     | POS06  |   |   |   |IER|
+MMI007 | TMA | TMA      | 8   |     |     | POS07  |   |   |   |IER|
+MMI008 | TMA | TMA      | 8   |     |     | POS08  |   |   |   |IER|
+MMI009 | TMA | TMA      | 10  |     |     | POS09  |   |   |   |IER|
+MMI010 | TMA | TMA      | 10  |     |     | POS10  |   |   |   |IER|
+MMI011 | TMA | TMA      | 12  |     |     | POS11  |   |   |   |IER|
+MMI012 | TMA | TMA      | 12  |     |     | POS12  |   |   |   |IER|
+MMI013 | TMA | TMA      | 14  |     |     | POS13  |   |   |   |IER|
+MMI014 | TMA | TMA      | 14  |     |     | POS14  |   |   |   |IER|
+MMI015 | TMA | TMA      | 16  |     |     | POS15  |   |   |   |IER|
+MMI016 | TMA | TMA      | 16  |     |     | POS16  |   |   |   |IER|
+MMI017 | TMA | TMA      | 18  |     |     | POS17  |   |   |   |IER|
+MMI018 | TMA | TMA      | 18  |     |     | POS18  |   |   |   |IER|
+MMI019 | TMA | TMA      | 20  |     |     | POS19  |   |   |   |IER|
+MMI020 | TMA | TMA      | 20  |     |     | POS20  |   |   |   |IER|
+MMI021 | TMA | TMA      | 22  |     |     | POS21  |   |   |   |IER|
+MMI022 | TMA | TMA      | 22  |     |     | POS22  |   |   |   |IER|
+MMI023 | TMA | TMA      | 24  |     |     | POS23  |   |   |   |IER|
+MMI024 | TMD | TMA      | 24  |     |     | POS24  |   |   |   |IER|
+MMI025 | TMA | TMA      | 26  |     |     | POS25  |   |   |   |IER|
+MMI026 | TMA | TMA      | 26  |     |     | POS26  |   |   |   |IER|
+MMI027 | TMA | TMA      | 28  |     |     | POS27  |   |   |   |IER|
+MMI028 | TMA | TMA      | 28  |     |     | POS28  |   |   |   |IER|
+MMI029 | TMA | TMA      | 30  |     |     | POS29  |   |   |   |IER|
+MMI030 | TMA | TMA      | 30  |     |     | POS30  |   |   |   |IER|
+MMI031 | TMA | TMA      | 32  |     |     | POS31  |   |   |   |IER|
+MMI032 | TMA | TMA      | 32  |     |     | POS32  |   |   |   |IER|
+MMI033 | TMA | TMA      | 34  |     |     | POS33  |   |   |   |IER|
+MMI034 | TMA | TMA      | 34  |     |     | POS34  |   |   |   |IER|
+MMI035 | TMA | TMA      | 36  |     |     | POS35  |   |   |   |IER|
+MMI036 | TMA | TMA      | 36  |     |     | POS36  |   |   |   |IER|
+MMI037 | TMA | TMA      | 38  |     |     | POS37  |   |   |   |IER|
+MMI038 | TMA | TMA      | 38  |     |     | POS38  |   |   |   |IER|
+MMI039 | TMB | TMA      | 38  |     |     | POS39  |   |   |   |IER|
+MMI040 | TMB | TMA      | 40  |     |     | POS40  |   |   |   |IER|
+MMI041 | TMB | TMA      | 38  |     |     | POS41  |   |   |   |IER|
+MMI042 | TMB | TMA      | 42  |     |     | POS42  |   |   |   |IER|
+MMI043 | TMC | TMA      | 38  |     |     | POS43  |   |   |   |IER|
+MMI044 | TMB | TMA      | 38  |     |     | POS44  |   |   |   |IER|
+MMI045 | TMC | TMA      | 38  |     |     | POS45  |   |   |   |IER|
+MMI046 | TMC | TMA      | 38  |     |     | POS46  |   |   |   |IER|
+MMI047 | TMC | TMA      | 38  |     |     | POS47  |   |   |   |IER|
+MMI048 | TMC | TMA      | 38  |     |     | POS48  |   |   |   |IER|
+MMI049 | TMC | TMA      | 38  |     |     | POS49  |   |   |   |IER|
+MMI050 | TMC | TMA      | 38  |     |     | POS50  |   |   |   |IER|
+MMI051 | TMC | TMA      | 38  |     |     | POS51  |   |   |   |IER|
+MMI052 | DM1 | TMA      | 38  |     |     | POS52  |   |   |   |IER|
+MMI053 | DM1 | TMA      | 43  |     |     | POS53  |   |   |   |IER|
+MMI054 | DM1 | TMA      | 44  |     |     | POS54  |   |   |   |IER|
+MMI055 | DM1 | TMA      | 45  |     |     | POS55  |   |   |   |IER|
+MMI056 | DM1 | TMA      | 46  |     |     | POS56  |   |   |   |IER|
+MMI057 | DM1 | TMA      | 47  |     |     | POS57  |   |   |   |IER|
+MMI058 | DM1 | TMA      | 58  |     |     | POS58  |   |   |   |IER|
+MMI059 | DM1 | TMA      | 59  |     |     | POS59  |   |   |   |IER|
+MMI060 | DM1 | TMA      | 48  |     |     | POS60  |   |   |   |IER|
+
+--
+-- END OF TMA PARTITION
+-- **********************************************************************************
+--
+--
+--
+-- BAIYUN TOWER
+--
+MMI061 | TWR | TOWER    |  61 |     |     | POS61  |   |   |   |IER|
+MMI062 | TWR | TOWER    |  62 |     |     | POS62  |   |   |   |IER|
+MMI063 | TWR | TOWER    |  63 |     |     | POS63  |   |   |   |IER|
+MMI064 | TWR | TOWER    |  64 |     |     | POS64  |   |   |   |IER|
+MMI065 | TWR | TOWER    |  65 |     |     | POS65  |   |   |   |IER|
+MMI066 | TWR | TOWER    |  66 |     |     | POS66  |   |   |   |IER|
+MMI067 | TWR | TOWER    |  67 |     |     | POS67  |   |   |   |IER|
+MMI068 | TWR | TOWER    |  68 |     |     | POS68  |   |   |   |IER|
+MMI069 | TWR | TOWER    |  69 |     |     | POS69  |   |   |   |IER|
+
+
+--
+-- END OF BAIYUN TOWER
+-- **********************************************************************************
+-- 
+--All nodes must have a strip printer assigned
+--

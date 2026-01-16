@@ -1,0 +1,13 @@
+MAP "DTZ_N" CREATION " " RELEASE " "
+TYPE "CLASSIC"
+PRIORITY 15
+#
+POLY : DTZ_N     
+       POINT "D01_1" POINT "D01_4" POINT "D02L_3" 
+       POINT "D02L_2" 
+        7; 9; 0; BORDER_YES; SURFACE_YES; 
+       GC_PREC_NONE ; FINE_DASH ;NORMAL ; EXP_YES;
+       ""
+#
+   END.
+#

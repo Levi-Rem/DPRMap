@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tp_configuration [
+<!ELEMENT tp_configuration (navigation_point*, route*, acc_area*, app_area*, descent_segment+, descent_profile+, climb_profile+, climb_threshold+, acceleration+, actual_altitude+, cruise_altitude+, options?)>
+<!ELEMENT acc_area        (geometry, airport*, routing*, floor?, ceiling?)>
+<!ELEMENT app_area        (geometry, runway*)>
+<!ELEMENT geometry        (point+)>
+<!ELEMENT descent_segment (descent_segment_element*)>
+<!ELEMENT descent_profile (profile_element*)>
+<!ELEMENT climb_profile   (profile_element*)>
+<!ELEMENT options         (canvas_coordinates)>
+<!ELEMENT navigation_point EMPTY>
+<!ELEMENT route            EMPTY>
+<!ELEMENT point            EMPTY>
+<!ELEMENT airport          EMPTY>
+<!ELEMENT routing          EMPTY>
+<!ELEMENT floor            (#PCDATA)>
+<!ELEMENT ceiling          (#PCDATA)>
+<!ELEMENT runway           EMPTY>
+<!ELEMENT descent_segment_element EMPTY>
+<!ELEMENT profile_element  EMPTY>
+<!ELEMENT climb_threshold  EMPTY>
+<!ELEMENT acceleration     EMPTY>
+<!ELEMENT actual_altitude  EMPTY>
+<!ELEMENT cruise_altitude  EMPTY>
+<!ELEMENT actual_profile   EMPTY>
+<!ELEMENT canvas_coordinates EMPTY>
+<!ATTLIST navigation_point
+        name CDATA #REQUIRED
+        x    CDATA #IMPLIED
+        y    CDATA #IMPLIED
+        lat  CDATA #IMPLIED
+        long CDATA #IMPLIED>
+<!ATTLIST route
+        name  CDATA #REQUIRED
+        multi CDATA #REQUIRED
+        path  CDATA #REQUIRED>
+<!ATTLIST acc_area
+        name        CDATA #REQUIRED
+        feeder      CDATA #REQUIRED
+        entry_point CDATA #IMPLIED>
+<!ATTLIST app_area
+        name     CDATA #REQUIRED
+        altitude CDATA #IMPLIED>
+<!ATTLIST point
+        x    CDATA #IMPLIED
+        y    CDATA #IMPLIED
+        lat  CDATA #IMPLIED
+        long CDATA #IMPLIED>
+<!ATTLIST routing
+        feeder CDATA #REQUIRED
+        route  CDATA #REQUIRED>
+<!ATTLIST airport
+        ades  CDATA #REQUIRED>
+<!ATTLIST runway
+        qfu      CDATA #REQUIRED
+        airport  CDATA #REQUIRED>
+<!ATTLIST descent_segment
+        inbound CDATA #REQUIRED>
+<!ATTLIST descent_segment_element
+        min_speed CDATA #REQUIRED
+        max_speed CDATA #REQUIRED
+        length    CDATA #REQUIRED>
+<!ATTLIST descent_profile
+        ac_speed CDATA #REQUIRED
+        inbound  CDATA #REQUIRED>
+<!ATTLIST profile_element
+        ground  CDATA #REQUIRED
+        average CDATA #REQUIRED>
+<!ATTLIST climb_profile
+        ac_speed CDATA #REQUIRED>
+<!ATTLIST climb_threshold
+        ac_speed  CDATA #REQUIRED
+        delta_alt CDATA #REQUIRED>
+<!ATTLIST acceleration
+        ac_speed CDATA #REQUIRED
+        duration CDATA #REQUIRED>
+<!ATTLIST actual_altitude
+        ac_speed CDATA #REQUIRED
+        altitude CDATA #REQUIRED>
+<!ATTLIST cruise_altitude
+        ac_speed CDATA #REQUIRED
+        altitude CDATA #REQUIRED>
+<!ATTLIST canvas_coordinates
+        min_x CDATA #IMPLIED
+        max_x CDATA #IMPLIED
+        min_y CDATA #IMPLIED
+        max_y CDATA #IMPLIED>
+]>
+
+<!-- File generated on 2021-12-01 at 08:56:40 -->
+
+<tp_configuration>
+
+
+
+
+
+
+   <descent_segment inbound="FALSE" >
+   </descent_segment>
+   <descent_segment inbound="TRUE" >
+   </descent_segment>
+
+   <descent_profile ac_speed="CLASS_0" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_0" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_1" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_1" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_2" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_2" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_3" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_3" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_4" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_4" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_5" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_5" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_6" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_6" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_7" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_7" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_8" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_8" inbound="TRUE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_9" inbound="FALSE" >
+   </descent_profile>
+   <descent_profile ac_speed="CLASS_9" inbound="TRUE" >
+   </descent_profile>
+
+   <climb_profile ac_speed="CLASS_0" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_1" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_2" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_3" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_4" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_5" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_6" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_7" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_8" >
+   </climb_profile>
+   <climb_profile ac_speed="CLASS_9" >
+   </climb_profile>
+
+   <climb_threshold ac_speed="CLASS_0" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_1" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_2" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_3" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_4" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_5" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_6" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_7" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_8" delta_alt=" 0" />
+   <climb_threshold ac_speed="CLASS_9" delta_alt=" 0" />
+
+   <acceleration ac_speed="CLASS_0" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_1" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_2" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_3" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_4" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_5" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_6" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_7" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_8" duration=" 0.000000000" />
+   <acceleration ac_speed="CLASS_9" duration=" 0.000000000" />
+
+   <actual_altitude ac_speed="CLASS_0" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_1" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_2" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_3" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_4" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_5" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_6" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_7" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_8" altitude=" 0" />
+   <actual_altitude ac_speed="CLASS_9" altitude=" 0" />
+
+   <cruise_altitude ac_speed="CLASS_0" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_1" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_2" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_3" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_4" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_5" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_6" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_7" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_8" altitude=" 0" />
+   <cruise_altitude ac_speed="CLASS_9" altitude=" 0" />
+
+   <options>
+      <canvas_coordinates min_x="-5.12000E+02" max_x=" 5.12000E+02" min_y="-5.12000E+02" max_y=" 5.12000E+02" />
+   </options>
+
+</tp_configuration>

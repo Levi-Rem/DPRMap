@@ -1,0 +1,2190 @@
+--
+--            FILE: MRTS_PARAMETERS.ASF 
+-- ========================
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for FAT
+--              | 6/11/03 | K WAN       | radars renamed 
+--
+--
+--
+----- OFL_CREDIBILITY_FACTOR_INIT
+---- Credibility factor initialization value in position criterion
+20.0000            
+------
+---- OFL_CREDIBILITY_FACTOR_COEF
+-- Coefficient used to compute credibility factor in position criterion
+2.0000             
+---- 
+---- OFL_CREDIBILITY_LEVEL
+---- Value that must reach credibility factor to allow association
+---- between local and system tracks
+20.0000             
+----
+---- OFL_CREDIBILITY_LEVEL_2
+---- Value that must reach credibility factor to allow association
+---- keeping of two compared local tracks
+16.0000             
+----
+---- OFL_MTQ_THRESHOLD
+---- Minimum value of MTQ used in choice of local tracks taken into
+---- account for system track updating
+16
+----
+---- OFL_SPEED_BASIS
+---- Minimum speed to perform speed criteria check in NM in 10s
+0.3000             
+----
+---- OFL_SATISFIED_SPEED_OFFSET
+-- Offset add to credibility factor when speed criterion is satisfied
+8.0000             
+----
+---- OFL_NOT_SATISFIED_SPEED_OFFSET
+---- Offset to add to credibility factor when speed criterion is not
+---- satisfied
+-8.0000           
+----
+---- OFL_ERROR_RATIO
+---- Allowed error ratio between speeds
+0.85            
+----
+---- OFL_SSR_CRITERION_OFFSET
+---- Offset value to be added to credibility factor in SSR criterion
+---- processing, depends on the SSR code type of the two compared tracks
+---- and the matching or mismatching of these two codes
+----C1 Discrete - discrete (MATCH)
+10.0000             
+----C2 Discrete - discrete (NO MATCH) (-10)
+-10.000             
+----C3 Discrete - non discrete (NA)
+0.0000             
+----C4 Discrete - discrete (-5)
+-5.0000            
+----C5 Discrete - special (NA)
+0.0000             
+----C6 Discrete - special (0)
+0.0000             
+----C7 Non Discrete - discrete (NA)
+0.0000             
+----C8 Non Discrete - discrete (-5)
+-5.0000             
+----C9 Non Discrete - non discrete (match)
+8.0000             
+----C10 Non Discrete - non discrete (NO MATCH) (-8) 
+-8.0000             
+----C11 Non Discrete - special (NA)
+0.0000             
+----C12 Non Discrete - special (0)
+0.0000             
+----C13 Special - Discrete (NA)
+0.0000             
+----C14 Special - Discrete (NO MATCH)
+0.0000             
+----C15 Special - non Discrete (NA)
+0.0000             
+----C16 Special - non Discrete (NO MATCH)
+0.0000             
+----C17 Special - Special (MATCH)
+8.0000             
+----C18 Special - Special (NO MATCH) (-8)
+-8.0000 
+--------            
+---- OFL_MTQ_THRESHOLD_SSR
+-- Minimum value of Multiradar Track Quality used in computation of
+-- System track SSR code
+16
+----
+---- OFL_COMPATIBLE_ALT_OFFSET
+---- Credibility factor offset for compatible altitudes
+10.0000             
+----
+---- OFL_NOT_COMPATIBLE_ALT_OFFSET
+---- Credibility factor offset for not compatible altitudes
+-10.000             
+----
+---- OFL_RADAR_PERIOD_ALLOWED_BOUNDS_PERCENTAGE
+-- Percentage used in North signal processing.
+-- Used to determine wether a given time or delay is in its expected
+-- position
+0.2000             
+----
+---- OFL_RADAR_PERIODS_AVERAGE_COEF1
+---- Coefficient used in radar periods average computation
+3
+----
+---- OFL_RADAR_PERIODS_AVERAGE_COEF2
+---- COEF 2
+7
+----
+---- OFL_DELTA_WEIGHT
+---- Local tracks barycentring coefficient parameter
+0.5000             
+----
+---- OFL_COEF_OF_PRIO
+---- 
+---- radar 1 : FHG
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+2.0000             
+----
+---- radar 2 : XLG
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.7500             
+----
+---- radar 3 : SHG
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.5000             
+----
+---- radar 4 : SHZ
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.5000
+----             
+---- radar 5 : ZHI
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.5000             
+----
+---- radar 6 : BJS
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.7500             
+----
+---- radar 7 : STU
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.7500             
+----
+---- radar 8 : HKU
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.7500             
+----
+---- radar 9 : GLN
+----
+---- Coefficient based on radar priority used to compute local tracks
+---- barycentring coefficient
+1.7500             
+----
+---- radar10 : CS1
+----
+-- Coefficient based on radar priority  to compute local tracks
+---- barycentring coefficient
+1.7500             
+----
+---- radar11 : CS2
+----
+-- Coefficient based on radar priority to compute local tracks
+---- barycentring coefficient
+1.7500             
+----
+---- radar12 : ZZ1
+----
+-- Coefficient based on radar priority to compute local tracks
+---- barycentring coefficient
+--1.7500             
+----
+---- radar13 : ZZ2
+----
+-- Coefficient based on radar priority to compute local tracks
+---- barycentring coefficient
+--1.7500             
+----
+---- radar14 : XIA
+----
+-- Coefficient based on radar priority to compute local tracks
+---- barycentring coefficient
+--1.7500             
+----
+---- radar15 : QD
+----
+-- Coefficient based on radar priority to compute local tracks
+---- barycentring coefficient
+--1.7500             
+----
+---- radar16 : JN
+----
+-- Coefficient based on radar priority  to compute local tracks
+---- barycentring coefficient
+--1.7500             
+----
+---- radar17 : AA
+----
+-- Coefficient based on radar priority  to compute local tracks
+---- barycentring coefficient
+--1.7500             
+----
+----
+----
+----
+---- OFL_SYSTEM_AREA_COORD.SUP.X
+---- OFL_SYSTEM_AREA_COORD.SUP.Y
+---- OFL_SYSTEM_AREA_COORD.INF.X
+---- OFL_SYSTEM_AREA_COORD.INF.Y
+---- System area coordinates
+1024.000             
+----
+1024.000             
+----
+-1024.0
+----
+-1024.0          
+----
+---- OFL_CONTROL_AREA_COORD.SUP.X
+---- OFL_CONTROL_AREA_COORD.SUP.Y
+---- OFL_CONTROL_AREA_COORD.INF.X
+---- OFL_CONTROL_AREA_COORD.INF.Y
+---- Controlled system area coordinates
+1024.000             
+----
+1024.000             
+----
+-1024.00             
+----
+-1024.00             
+----
+---- OFL_ALLOWED_ASSOCIATIONS_TBL
+---- Allowed associations between two tracks table
+-- following value group is one group for all radar
+--
+1
+----
+1
+----
+1
+----
+1
+----
+1
+----
+1
+----
+1
+----
+1
+----
+1
+----
+--  End 
+--
+---- OFL_LINE_TRANSMISSION_DELAY_OF_RADAR
+---- Transmission delay
+---- Periods average allowed difference between current and theoritical
+---- periods for each radar
+---- Transmission delay for each radar line. Used in North crossing
+---- time computation
+--
+-- Must be one value for each radar : 16 values for Beijing's 16 radar
+--
+14
+----
+28
+----
+28
+---- 
+28
+----
+28
+---- 
+28
+----
+14
+----
+28
+----
+28
+---- 
+28
+----
+28
+---- 
+--28
+----
+--14
+----
+--28
+----
+--28
+---- 
+--28
+----End Line transmission delay
+----
+---- OFL_RADAR_DISTANCE_AREA_TBL
+---- Position criterium range (in hundredth of Nm : 0.0 to 25600.0)
+---- This table is used to determine the radar distance area where the
+---- local track is located
+---- Radar distance d1
+6400.00             
+---- Radar distance d2
+12800.0             
+---- Radar distance d3
+25500.0                 
+----
+---- OFL_POS_WINDOW_SIZE_TBL
+---- Window size for local track association processing (unit is 1NM)
+---- primary track window for distance < d1
+2.0000         
+---- primary track window for d1 < distance < d2
+2.0000
+---- primary track window for d2 < distance < d3
+4.0000
+---- primary track window for distance > d3
+4.0000
+---- secondary track window for distance < d1
+2.0000
+---- secondary track window for d1 < distance < d2
+2.0000
+---- secondary track window for d2 < distance < d3
+4.0000
+---- secondary track window for distance > d3
+4.0000
+---- combined track window for distance < d1
+2.0000
+---- combined track window for d1 < distance < d2
+2.0000
+---- combined track window for d2 < distance < d3
+4.0000
+---- combined track window for distance > d3
+4.0000
+----
+---- OFL_TRANSITION_LEVEL
+---- Transition level (in hundred of feet)
+100
+---- OFL_AVERAGE_ALT / AVERAGE_ALTITUDE 
+---- Average altitude value in hundreds of feet associated with local
+---- tracks without mode C, or garbled mode C altitude.
+300
+---- OFL_ALT_ALLOWED_DIFFERENCE
+---- Allowed difference between two altitudes (in hundreds of feet)
+25
+---- OFL_MAGNETIC_DECLINATION
+---- Magnetic declination in degrees
+-5.5
+----
+---- OFL_ALT_A_COEF
+---- SPEED_MIN : used to calculate Coeff "a" used in the computation of 
+---- an average altitude for tracks
+---- without altitude, in the formula: ALT = a * speed + b is 
+---- a = (AVERAGE_ALTITUDE) / (SPEED_MAX - SPEED_MIN)
+----    
+---- 40 => a = (300 / (600-40)) = 0.535 
+40.0      
+----
+---- OFL_ALT_B_COEF
+---- SPEED_MAX : used to calculate Coeff "b" used in the computation of 
+---- an average altitude for tracks
+---- without altitude, in the formula: ALT = a * speed + b
+---- b = - (SPEED_MIN * a)
+---- 600 => b = - (40 * 0.535) = -21.428
+600.0            
+----
+---- OFL_MONOPULSE_RADAR
+---- Monopulse radars declaration table
+--  Value below indicates if the radar is a MONOPULSE SSR or not; Boolean
+--  Must be declared for each radar
+1
+----
+1
+----
+1
+---- 
+0
+---- 
+1
+---- 
+1
+----
+1
+----
+1
+----
+1
+---- 
+1
+---- 
+1
+---- 
+--0
+----
+--1
+--
+--0
+--
+--1
+-- 
+--1
+---- 
+----
+---- OFL_MONOPULSE_RADAR_COEF
+---- Coefficient applied to the local tracks detected by a monopulse
+---- radar at system track coordinates updating time
+500.000             
+----
+----
+----
+---- ECP_RFP_MUST
+----
+----
+---- OFL_RADAR_BIAS_PARAM_TBL
+----    RANGE_PRIMARY_BIAS
+----    AZIMUTH_PRIMARY_BIAS
+----	ELEVATION_PRIMARY_BIAS
+----    RANGE_SECONDARY_BIAS
+----    AZIMUTH_SECONDARY_BIAS
+----    RO_PRI_BIAS_STANDARD_DEVIATION
+----	AZ_PRI_BIAS_STANDARD_DEVIATION
+----    EL_PRI_BIAS_STANDARD_DEVIATION
+----    RO_SEC_BIAS_STANDARD_DEVIATION
+----    AZ_SEC_BIAS_STANDARD_DEVIATION
+----
+---- Radar bias param table / Radar 1
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 2
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 3
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 4
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 5
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 6 
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 7
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 8
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 9
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 10
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 11
+0
+0
+0
+0
+0
+300
+100
+100
+300
+100
+---- Radar bias param table / Radar 12
+--0
+--0
+--0
+--0
+--0
+--300
+--100
+--100
+--300
+--100
+-- Radar bias param table / Radar 13
+--0
+--0
+--0
+--0
+--0
+--300
+--100
+--100
+--300
+--100
+-- Radar bias param table / Radar 14
+--0
+--0
+--0
+--0
+--0
+--300
+--100
+--100
+--300
+--100
+-- Radar bias param table / Radar 15
+--0
+--0
+--0
+--0
+--0
+--300
+--100
+--100
+--300
+--100
+-- Radar bias param table / Radar 16
+--0
+--0
+--0
+--0
+--0
+--300
+--100
+--100
+--300
+--100
+----
+---- OFL_RADAR_NOISE_PARAM_TBL
+----	RO_SEC_NOISE_STANDARD_DEVIATION (meter)
+----	AZ_SEC_NOISE_STANDARD_DEVIATION (0.1 mrd)
+----    RO_PRI_NOISE_STANDARD_DEVIATION
+----	AZ_PRI_NOISE_STANDARD_DEVIATION
+----	EL_PRI_NOISE_STANDARD_DEVIATION
+----
+---- Radar noise param data / Radar 1
+---- 
+20
+6
+60
+20
+80
+---- Radar noise param data / Radar 2
+---- 
+20
+6
+60
+20
+80
+---- Radar noise param data / Radar 3
+90
+10
+150 
+70
+80
+---- Radar noise param data / Radar 4 
+90
+10
+150
+70
+80
+---- Radar noise param data / Radar 5 
+90
+10
+150
+70
+80
+---- Radar noise param data / Radar 6 
+90
+120
+90
+120
+80
+---- Radar noise param data / Radar7
+20
+6
+60
+20
+80
+---- Radar noise param data / Radar 8
+20
+6
+60
+20
+80
+---- Radar noise param data / Radar 9
+90
+10
+150 
+70
+80
+---- Radar noise param data / Radar 10 
+90
+10
+150
+70
+80
+---- Radar noise param data / Radar 11
+90
+10
+150
+70
+80
+---- Radar noise param data / Radar 12 
+--90
+--120
+--90
+--120
+--80
+-- Radar noise param data / Radar 13
+--20
+--6
+--60
+--20
+--80
+-- Radar noise param data / Radar 14
+--20
+--6
+--60
+--20
+--80
+-- Radar noise param data / Radar 15
+--90
+--10
+--150 
+--70
+--80
+-- Radar noise param data / Radar 16 
+--90
+--10
+--150
+--70
+--80
+----
+---- OFL_RADAR_CHARACTERSITICS_PARAM_TBL
+----	MINIMAL_RANGE
+----	MINIMAL_SITE
+----	MAXIMAL_SITE
+----    DISCRIMINATION_POWER_PRI_RANGE
+----    DISCRIMINATION_POWER_PRI_AZ
+----    DISCRIMINATION_POWER_SEC_RANGE
+----    DISCRIMINATION_POWER_SEC_AZ
+---- 
+---- Radar characteristics data / Radar 1
+0
+-52
+8726
+115
+244
+25
+105
+---- Radar characteristics data / Radar 2
+---- 
+0
+-52
+8726
+115
+244
+25
+105
+---- Radar characteristics data / Radar 3
+0
+-52
+6920
+300
+259
+97
+35
+---- Radar characteristics data / Radar 4
+0
+-52
+6920
+300
+259
+97
+35
+---- Radar characteristics data / Radar 5
+0
+-52
+6920
+300
+259
+97
+35
+---- Radar characteristics data / Radar 6 
+0
+-523
+15700
+120
+523
+220
+523
+---- Radar characteristics data / Radar 7
+0
+-52
+8726
+115
+244
+25
+105
+---- Radar characteristics data / Radar 8
+0
+-52
+8726
+115
+244
+25
+105
+---- Radar characteristics data / Radar 9
+0
+-52
+6920
+300
+259
+97
+35
+---- Radar characteristics data / Radar 10
+0
+-52
+6920
+300
+259
+97
+35
+---- Radar characteristics data / Radar 11
+0
+-52
+6920
+300
+259
+97
+35
+---- Radar characteristics data / Radar 12
+--0
+---523
+--15700
+--120
+--523
+--220
+--523
+-- 
+-- Radar characteristics data / Radar 13
+--0
+---52
+--8726
+--115
+--244
+--25
+--105
+-- Radar characteristics data / Radar 14
+-- 
+--0
+---52
+--8726
+--115
+--244
+--25
+--105
+-- Radar characteristics data / Radar 15
+--0
+---52
+--6920
+--300
+--259
+--97
+--35
+-- Radar characteristics data / Radar 16
+--0
+---52
+--6920
+--300
+--259
+--97
+--35
+----
+----
+---- Radar geographic Filters
+----
+---- Radar 1 geographic filter
+0
+0
+0
+0
+---- Radar 2 geographic filter
+0
+0
+0
+0
+---- Radar 3 geographic filter
+0
+0
+0
+0
+---- Radar 4 geographic filter
+0
+0
+0
+0
+---- Radar 5 geographic filter 
+0
+0
+0
+0
+---- Radar 6 geographic filter
+0
+0
+0
+0
+---- Radar 7 geographic filter
+0
+0
+0
+0
+---- Radar 8 geographic filter
+0
+0
+0
+0
+---- Radar 9 geographic filter
+0
+0
+0
+0
+---- Radar 10 geographic filter
+0
+0
+0
+0
+---- Radar 11 geographic filter 
+0
+0
+0
+0
+---- Radar 12 geographic filter
+--0
+--0
+--0
+--0
+-- Radar 13 geographic filter
+--0
+--0
+--0
+--0
+-- Radar 14 geographic filter
+--0
+--0
+--0
+--0
+-- Radar 15 geographic filter
+--0
+--0
+--0
+--0
+-- Radar 16 geographic filter
+--0
+--0
+--0
+--0
+----
+----
+---- DATA_COUNTING_INFO_TYPE
+----    COUNT_TARGET_INFO
+----        COUNT_RO_NR
+----        COUNT_PLOT_MAX
+----        COUNT_TRACK_MAX
+----    INVALID_3A_INFO
+----        PLOT_SAMPLE
+----        TRACK_SAMPLE
+----        PLOT_CODE_MAX
+----        TRACK_CODE_MAX
+----    STATUS_MESSAGE_INFO (ms)
+----        STATUS_PERIOD_MIN
+----        STATUS_PERIOD_MAX
+----    TPLOW_WINDOW_INFO
+----	    TPLOT_DRHO (10 m)
+----        TPLOT_DTETA (0.1 mrd)
+----    PRIMARY_TEST_TARGET_INFO
+----        PRESENCE
+----        TPLOT_PSR_POS.X
+----        TPLOT_PSR_POS.Y
+----    PERMANENT_PSR_INFO
+----        PRESENCE
+----        PSR_PERM_POS.X
+----        PSR_PERM_POS.Y
+----        PSR_PERM_DRHO
+----        PSR_PERM_DTETA
+----    PRIMARY_TEST_TARGET_INFO
+----        TPLOT_PSR_OCCUR_PERIOD (s)
+----        TPLOT_PSR_OCCUR_MIN
+----        TPLOT_PSR_OCCUR_MAX
+----    SECONDARY_BEACON or TEST_TARGET as defined in RADAR_PARAMETERS.ASF
+----        TPLOT_SSR_OCCUR_PERIOD (s)
+----        TPLOT_SSR_OCCUR_MIN
+----        TPLOT_SSR_OCCUR_MAX
+----    PERMANENT_PSR_INFO
+----        TPLOT_PSR_OCCUR_PERIOD (s)
+----        TPLOT_PSR_OCCUR_MIN
+----        TPLOT_PSR_OCCUR_MAX
+----    MAIN_BEACON as defined in RADAR_PARAMETERS.ASF
+----        TPLOT_SSR_OCCUR_PERIOD (s)
+----        TPLOT_SSR_OCCUR_MIN
+----        TPLOT_SSR_OCCUR_MAX
+----  
+---- data counting table / Radar 1
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0 
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--0
+--0
+--0
+---- data counting table / Radar 2
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--1
+--1300
+---214.45 
+--14.256
+---- data counting table / Radar 3
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--7777
+---58.88
+--100.76
+---- data counting table / Radar 4 
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--7777
+---58.88
+--100.76
+----  
+---- data counting table / Radar 5
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0 
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--0
+--0
+--0
+---- data counting table / Radar 6
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--1
+--1300
+---214.45 
+--14.256
+---- data counting table / Radar 7
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--7777
+---58.88
+--100.76
+---- data counting table / Radar 8
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--7777
+---58.88
+--100.76
+----  
+---- data counting table / Radar 9
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0 
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--0
+--0
+--0
+---- data counting table / Radar 10
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--1
+--1300
+---214.45 
+--14.256
+---- data counting table / Radar 11
+0
+0
+0
+--
+1
+1
+1
+1
+--
+0
+0
+--
+6000
+4500
+--
+0
+0.0
+0.0
+--
+0
+0.0
+0.0
+0
+0
+--
+0
+0
+0
+--
+60
+10
+20
+--
+0
+0
+0
+--
+60
+10
+20
+--
+--0
+--7777
+---58.88
+--100.76
+---- data counting table / Radar 12
+--0
+--0
+--0
+--
+--1
+--1
+--1
+--1
+--
+--0
+--0
+--
+--6000
+--4500
+--
+--0
+--0.0
+--0.0
+--
+--0
+--0.0
+--0.0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--7777
+---58.88
+--100.76
+----  
+---- data counting table / Radar 13
+--0
+--0
+--0
+--
+--1
+--1
+--1
+--1
+--
+--0
+--0
+--
+--6000
+--4500
+--
+--0
+--0.0
+--0.0
+--
+--0
+--0.0
+--0.0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--7777
+---58.88
+--100.76
+---- data counting table / Radar 14
+--0
+--0
+--0
+--
+--1
+--1
+--1
+--1
+--
+--0
+--0
+--
+--6000
+--4500
+--
+--0
+--0.0
+--0.0
+--
+--0
+--0.0
+--0.0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--7777
+---58.88
+--100.76
+--
+---- data counting table / Radar 15
+--0
+--0
+--0
+--
+--1
+--1
+--1
+--1
+--
+--0
+--0
+--
+--6000
+--4500
+--
+--0
+--0.0
+--0.0
+--
+--0
+--0.0
+--0.0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--7777
+---58.88
+--100.76
+---- data counting table / Radar 16
+--0
+--0
+--0
+--
+--1
+--1
+--1
+--1
+--
+--0
+--0
+--
+--6000
+--4500
+--
+--0
+--0.0
+--0.0
+--
+--0
+--0.0
+--0.0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--0
+--0
+--
+--0
+--7777
+---58.88
+--100.76
+--
+--
+--
+-- Bias_range_threshold (in NM) std=0.7
+0.7
+-- Bias_azimut_threshold (in degree) std=2.1
+2.1
+----
+-- SIC/SAC Radar 1 for PLOT
+--1
+--10
+-- SIC/SAC 2 Radar 1 for TRACKED_PLOT
+--1
+--11
+-- SIC/SAC Radar 2
+--2
+--22
+-- SIC/SAC 2 Radar 2
+--2
+--23
+-- SIC/SAC Radar 3
+--3
+--33
+-- SIC/SAC 2 Radar 3
+--3
+--34
+-- SIC/SAC Radar 4
+--4
+--44
+-- SIC/SAC 2 Radar 4
+--4
+--45
+-- SIC/SAC System tracks
+15
+123
+-- MRT Update period (s)
+5
+-- Default radar for APP diffusion
+2
+------------------------- 
+-- 
+-- Begin Weather Radar Informations:
+--
+--    Weather Radar    : 1 or 0 
+--    station number 
+--    Activation delay : 
+--    High map first   : 1 or 0
+--
+-- Radar 1
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 2
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 3
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 4 
+--3--2
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+--
+-- Radar 5
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 6
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 7
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 8 
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+--
+-- Radar 9
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 10
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 11
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 12
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+--
+-- Radar 13
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 14
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 15
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 16
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+--
+-- End of Weather Radar Informations
+--
+-------------------------------------
+-- new data valid on V22 from 9/03/99
+---------------------------------------
+
+---- Begin Sectors Radar Informations:
+--
+--    Number of input sectors  (I_SECTORS_NB) : 16 or 32
+--    Number of output sectors (O_SECTORS_NB) : 16 or 32 with O_SECTORS_NB>=I_SECTORS_NB
+--    Geographic filtering  (GEO_FILTERING)   : 1 or 0
+--    Xmin (POS_MIN.X)
+--    Ymin (POS_MIN.Y)
+--    Xmax (POS_MAX.X)
+--    Ymax (POS_MAX.Y)
+--
+-- Radar 1
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+--- Radar 2
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+-- Radar 3
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+-- Radar 4
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+--
+-- Radar 5
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+--- Radar 6
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+-- Radar 7
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+-- Radar 8
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+--
+-- Radar 9
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+--- Radar 10
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+-- Radar 11
+32
+32
+1
+0.0
+0.0
+10.0
+10.0
+-- Radar 12
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 13
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 14
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 15
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+-- Radar 16
+--32
+--32
+--1
+--0.0
+--0.0
+--10.0
+--10.0
+----
+----
+-- RDF_MRT_PRE_OVERLOAD
+--
+360
+-- RDF_MRT_END_PRE_OVERLOAD
+--
+340
+-- RDF_HNDL_NB_MISSES
+--
+5
+-- RDF_MRT_END_OVERLOAD
+--
+380
+-- RDF_WEIGHT_BAR_MANOEUVER
+--
+0.5
+-- RDF_WEIGHT_BAR_DETECTION
+--
+20.0
+-- RDF_MRT_SUBPERIOD_NUMBER
+--
+16
+-- RDF_MRT_DEASSOCIATION_UPDATE_NUMBER
+--
+3
+-- RDF_MRT_CREDIBILITY_THRESHOLD
+--
+20.0
+--DISTANCE ARRAY
+-- PRM D0 D1 D2 D3
+1.0
+1.54
+2.18
+4.26
+-- SEC D0 D1 D2 D3
+1.0
+1.54
+2.18
+4.26
+-- ASS D0 D1 D2 D3
+1.0
+1.54
+2.18
+4.26
+-- RDF_MRT_POS_CREDIBILITY_FACTOR
+--
+30.0
+-- RDF_MRT_POS_MISSES_FACTOR
+--
+0.0
+-- RDF_MRT_POS_BONUS_FACTOR
+--
+20.0
+-- RDF_MRT_MINIMUM_SPEED
+--
+0.075
+-- RDF_MRT_SPEED_DELTA
+--
+0.85
+-- RDF_MRT_SPEED_CREDIBILITY_FACTOR
+--
+10.0
+--(SSR_CRED)
+-- |   DISCRETE    | NON-DISCRETE |   SPECIAL      |
+-- -------------------------------------------------
+-- | MATCH |  MIS  | MATCH |  MIS  | MATCH |  MIS  |
+---------------------------------------------------------------------------------
+-- DISCRETE_CREDIBILITY_FACTOR
+40.0
+-100.0
+-100.0
+-100.0
+0.0
+0.0
+-- NON_DISCRETE_CREDIBILITY_FACTOR
+-100.0
+-100.0
+20.0
+-100.0
+0.0
+0.0
+--SPECIAL_CREDIBILITY_FACTOR
+0.0
+0.0
+0.0
+0.0
+40.0
+-100.0
+-- RDF_MRT_ALTITUDE_THRESHOLD
+--
+2000
+-- RDF_MRT_ALTITUDE_CREDIBILITY_FACTOR
+--
+10.0
+-- RDF_MRT_NEGATIVE_ALTITUDE_CREDIBILITY_FACTOR
+--
+-100.0
+-- RDF_MRT_CREDIBILITY_LEVEL
+--
+40.0
+-- RDF_MRT_RADAR_DIST
+--
+256.0
+-- RDF_MRT_LOW_SPEED
+--
+40.0
+-- RDF_MRT_UPPER_SPEED
+--
+600.0
+-- RDF_MRT_UPPER_ALTITUDE
+--
+300.0
+----
+---- End of automatically generated file

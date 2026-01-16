@@ -1,0 +1,24 @@
+--
+--           FILE :  RPL_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--      <parameter name>         |   HHMM
+--  -------------------------------------
+    DB_RECORDING_TIME            |   0230
+    EXTRACTION_ADVANCE           |   02400
+    EXTRACTION_BACKWARD_AT_START |   0010
+    EXTRACTION_MIN_PERIOD        |     01
+--
+--
+--

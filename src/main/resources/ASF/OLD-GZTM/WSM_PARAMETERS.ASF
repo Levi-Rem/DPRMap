@@ -1,0 +1,62 @@
+--M
+--n AIRCRAFT_PERFORMANCES
+
+-- [2.0, 10.0]NM or [3, 18]KM
+-- Radar separation between aircrafts
+RADAR_SEPARATION      | 6KM
+
+-- [0.1, 10.0]
+-- Used to determine the safety separation for a special flight and other flight
+VIP_SEP_FACTOR        | 2
+
+-- Enum{"ICAO" | "RECAT"}
+DEFAULT_WTC           | RECAT
+
+-- Boolean{"TRUE" | "FALSE"}
+-- Used for determining if VFR flights are considered for pre-WTIW/WTIW warning. A value of "TRUE" will result in VFR flights being excluded from pre-WTIW/WTIW warning
+WTIW_EXCLUDE_VFR      | FALSE
+
+-- [F1.0, F20.0] or [S3.0, S61.0]
+-- Vertical separation used in pre-WTIW/WTIW computation.
+VERTICAL_SEPARATION   | S030
+
+-- [0.0, 10.0]
+-- Multiplication factor to apply to the safety separation for the display of Final Target Distance (FTD) indicator and Initial Target Distance (ITD) indicato
+MIN_SEP_DISP_FACTOR   | 1.5
+
+-- [N0.0 ,N300.0] or [K0.0, K555.6]
+-- Default speed of separation indicators after the leading aircraft is removed from the sequence.
+WSM_DEFAULT_SPD       | K150
+
+-- [0, 30]
+-- Extra time for separation indicators to display after the leading aircraft is removed from the sequence.
+WSM_DISP_TIME         | 15
+
+
+/ICAO_SEP/
+--            Leader,               follower         | WTC separation
+--    <Wake_Turb_Id>,         <Wake_Turb_Id>         | <WAKE_SEP>
+--    <J   H  M  L >,         <Wake_Turb_Id>         | < [2.0,10.0]NM or [3, 18]KM >
+                   J,                     H          |        12KM
+                   J,                     M          |        13KM
+                   J,                     L          |        15KM
+                   H,                     M          |        10KM
+                   H,                     L          |        14KM
+                   M,                     L          |        10KM
+
+/RECAT_SEP/
+--            Leader,               follower         | WTC separation
+-- <Wake_Turb_Recat_Id>, <Wake_Turb_Recat_Id>        | <WAKE_SEP>
+--    <alphabetic 1>,    <Wake_Turb_Recat_Id>        | < [2.0,10.0]NM or [3, 18]KM >
+                   J,                      B         |        9.3KM
+                   J,                      C         |       11.1KM
+                   J,                      M         |       13.0KM
+                   J,                      L         |       14.8KM
+                   B,                      B         |        5.6KM
+                   B,                      C         |        7.4KM
+                   B,                      M         |        9.3KM
+                   B,                      L         |       13.0KM
+                   C,                      M         |        6.5KM
+                   C,                      L         |       11.1KM
+
+

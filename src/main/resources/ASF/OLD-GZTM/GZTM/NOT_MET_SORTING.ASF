@@ -1,0 +1,24 @@
+--
+--           FILE :  NOT_MET_SORTING 
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | Data Not applicable to NESACC
+--
+--
+--
+NOTAM_ORDER       | 2
+TAF_ORDER         | 4
+METAR_SPECI_ORDER | 6
+AIREP_ORDER       | 1
+ARFOR_ORDER       | 3
+SIGMET_ORDER      | 5
+AIRMET_ORDER      | 7
+MET_REPORT_SPECIAL_ORDER  | 8

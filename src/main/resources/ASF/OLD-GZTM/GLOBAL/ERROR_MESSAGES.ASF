@@ -1,0 +1,4349 @@
+--
+--  FILE          :  ERROR_MESSAGES.ASF
+--  FIRST EDITING :  JUNE 1, 2004
+--  BY            :  DATA GROUP, BEIJING
+--  VERSION       :  BJ_OPS_1.0
+--
+--
+--  Mod Date   | Responsible | Brief Comments on Mod Contents 
+---------------|-------------|----------------------------------
+--
+--
+--
+/FUNCTION_REPORTS/                                                      
+--
+** OK							-- not ok 
+OK							-- not ok
+--                                                                      
+** UNDEFINED						-- not ok
+UNDEFINED						-- not ok
+--
+** FLEXTRACK_UNKNOWN_STATUS				-- to be suppressed
+FLEXTRACK UNKNOWN STATUS				-- to be suppressed
+--
+** FLEXTRACK_GENERATION_TIME_INVALID			-- reviewed
+Flextrack generation time is invalid			-- reviewed
+--
+** FLEXTRACK_ACTIVATION_TIME_INVALID			-- reviewed
+Flextrack activation time is invalid			-- reviewed
+--
+** FLEXTRACK_TERMINATION_TIME_INVALID			-- reviewed
+Flextrack deactivation time is invalid			-- reviewed
+--
+** PBN_ITEM_IS_MORE_THAN_LIMIT
+PBN_EXCEEDS_MAX_#1$_ENTRIE(#2$_CHARS)
+
+** TOO_MANY_FLEXTRACKS_IN_ROUTE				-- reviewed
+Too many flextracks in route field			-- reviewed
+--
+** MESSAGE_SENT_ON_WRONG_TRANSMISSION                   -- reviewed (SR)
+--Message type not allowed on transmission used         -- new   P.W. too long
+Msg type not allowed on transmission                    -- reviewed (SR)
+--
+** FPL_STATUS_INCOMPATIBLE_WITH_MESSAGE			-- reviewed
+Message not compatible with FP state			-- reviewed
+--                                                                      
+** NO_FPL_IN_COMPATIBLE_STATUS     			-- reviewed (SR)
+FDR not found or not in compatible state		-- reviewed (SR)
+--                                                                
+** FPL_MESSAGE_NOT_PROCESSED				-- reviewed
+This type of message is not processed			-- reviewed
+--
+** FPL_STATUS_IS_HALT					-- not ok
+Message rejected. FPL has been stopped.			-- not ok
+--		 
+** FPL_STATUS_IS_SHUTDOWN				-- not ok	
+Message rejected. FPl is shutdown.			-- not ok	
+--                                                                      
+** FPL_STATUS_IS_UNDEFINED				-- not ok
+Message rejected. Fpl is not started			-- not ok
+--
+** FPL_CALLSIGN_ALREADY_ACTIVE				-- reviewed
+This ACID already coordinated or active			-- reviewed
+--
+** FPL_IS_NOT_A_DEPARTURE_FLIGHT			-- reviewed
+Call TSM : FPL_IS_NOT_A_DEPARTURE_FLIGHT		-- reviewed
+--
+** DEP_REFUSED_ON_AFIL_FLIGHT			        -- new      (PW)
+DEP refused : This is an AFIL flight			-- new
+--
+** FPL_IS_NOT_AN_INBOUND_FLIGHT				-- reviewed
+Call TSM : FPL_IS_NOT_AN_INBOUND_FLIGHT			-- reviewed
+--
+** TOC_ON_COORD_DEPARTURE_FLIGHT_REFUSED		-- reviewed (SR)
+TOC rejected : FDR is coord. departure			-- reviewed (SR)
+--
+** FPL_IS_NOT_AN_OUTBOUND_FLIGHT			-- reviewed (SR)
+HND rejected : Flight not leaving FDRG			-- reviewed (SR)
+--
+** FPL_ETO_ON_OVERFLOWN_FIX_IS_INVALID			-- reviewed
+Can't change time on an overflown point			-- reviewed
+--
+** FPL_ARR_RECEIVED_AND_STILL_ASSOCIATED		-- to be suppressed
+WARNING ! Flight is still associated			-- to be suppressed
+--
+** FPL_BASE_DATA_BASE_FULL				-- reviewed
+FDR creation rejected. Database full			-- reviewed
+--
+** FPL_BASE_DISK_ERROR					-- reviewed
+Call TSM : FPL_BASE_DISK_ERROR				-- reviewed
+--
+** FPL_BASE_UNKNOWN_FPL					-- reviewed
+The requested FDR is not stored				-- reviewed
+--
+** FPL_BASE_FPL_ALREADY_EXISTS				-- reviewed
+FDR already exists					-- reviewed
+--
+** FPL_BASE_AMBIGUOUS_REQUEST				-- reviewed (SR)
+Can't link msg to FDR, multi FDR's exist		-- reviewed (SR)
+--
+** FPL_BASE_NO_ACTIVE_FPL				-- reviewed
+Call TSM : FPL_BASE_NO_ACTIVE_FPL			-- reviewed
+--
+** FPL_BASE_INVALID_DATA				-- reviewed
+Call TSM : FPL_BASE_NO_ACTIVE_FPL			-- reviewed
+--
+** FPL_BASE_NO_MORE_FPL					-- reviewed
+Call TSM : FPL_BASE_NO_MORE_FPL				-- reviewed
+--
+** FPL_BASE_OBSOLETE_DATA				-- reviewed
+Displayed data not current-repeat action		-- reviewed
+--
+** CDC_IO_ERROR						-- reviewed (SR)
+Call TSM : CDC_IO_ERROR					-- reviewed (SR)
+--
+** ROUTE_IS_EMPTY					-- not ok
+Cannot determine flight plan trajectory			-- not ok
+--
+** FPSA_EXIT_POINT_IS_NOT_KNOWN				-- reviewed
+Unable to calculate FPSA exit point			-- reviewed
+--
+** FPSA_ENTRY_POINT_NOT_FOUND				-- reviewed
+Cannot determine entry point to FPSA			-- reviewed
+--
+** NO_POINTS_IN_FDRG_AIRSPACE				-- reviewed
+Route field must contain a known point			-- reviewed
+--
+** NO_POINTS_IN_FPEA					-- reviewed
+No points found in FP extended area			-- reviewed
+--
+** NO_POINTS_IN_FPSA					-- reviewed
+No points found in FP system area			-- reviewed
+--
+** ROUTE_USES_POINT_OUTSIDE_FPEA                        -- new
+Route uses point located outside FPEA                   -- new
+--
+** ILLEGAL_MODIFICATION_OF_FIELD_15                     -- new
+Change to F15 not allowed with FP state                 -- new
+--
+** CPL_MODIFICATION_OF_ROUTE_REJECTED                   -- new
+$ CPL route mod refused with FP state                   -- new
+--
+** ILLEGAL_CPL_ABI_ROUTE_MODIFICATION                   -- new
+Illegal route received in CPL/ABI msg.                  -- new
+--
+** FPL_TIME_IS_IN_THE_PAST				-- reviewed
+$ is too far in the past				-- reviewed
+--
+** FPL_TIME_IS_IN_THE_FUTURE				-- new
+$ is too far in the future				-- new
+--
+** FPL_AMENDMENT_POINT_MUST_BE_IN_FIELD15		-- reviewed
+Point #1$ is not in route field				-- reviewed (SR)
+--
+** NOT_ALLOWED_INDICATOR				-- reviewed
+$ not allowed after $					-- reviewed
+--
+** INDICATOR_IS_NOT_COMPATIBLE_WITH_FLIGHT_RULE		-- reviewed
+FRUL must be Y or Z for a change enroute		-- reviewed
+--
+** FRULE_Y_Z_NOT_ALLOWED_WITHOUT_ENROUTE_INDICATOR      -- reviewed (SR)
+Change of FRUL not indicated in route                   -- reviewed (SR)
+--
+** ROUTE_DIRECTION_IS_AMBIGUOUS				-- reviewed
+Cannot determine direction on $				-- reviewed
+--
+--** ADEP_NOT_FIRST_ITEM_OF_ROUTE				-- reviewed
+--$ does not start from ADEP				-- reviewed
+--
+--** ADES_NOT_LAST_ITEM_OF_ROUTE				-- reviewed
+--$ does not end at ADES					-- reviewed
+--
+** EET_IN_FDRG_EXCEED_MAX_ALLOWED			-- reviewed
+EET in FDRG exceeds the allowed maximum			-- reviewed
+--
+** TOTAL_EET_EXCEED_MAX_ALLOWED				-- reviewed
+Total EET exceeds the allowed maximum			-- reviewed
+--
+** FUNCTIONAL_SECTOR_NOT_FOUND				-- reviewed (SR)
+CSEC for flight can't be determined       		-- reviewed (SR)
+--
+** INVALID_FORECAST_SUMMARY_REQUEST                     -- new
+Invalid #1$ entered                                     -- new
+--
+** SOFT_ERROR_INVALID_INDEX				-- reviewed
+Call TSM : SOFT_ERROR_INVALID_INDEX			-- reviewed
+--
+** POINT_DOES_NOT_BELONG_TO_THE_ROUTE			-- reviewed
+#1$ is not defined on #2$				-- reviewed
+--
+** POINT_OUT_OF_LATERAL_TOLERANCE			-- reviewed
+Designated point outside route tolerance		-- reviewed
+--
+** POINT_IS_NOT_A_TRANSITION_WITH_SID			-- reviewed
+$ is not last point of $				-- PCR 792   -- reviewed (SR)
+--
+** ADEP_IS_NOT_COMPATIBLE_WITH_SID			-- reviewed
+SID $ is not defined for ADEP				-- reviewed
+--
+** RWY_IS_NOT_COMPATIBLE_WITH_SID			-- reviewed
+SID $ is not defined for runway				-- reviewed
+--
+** STAR_IS_NOT_THE_LAST_ROUTE_ELEMENT			-- reviewed
+$ must be the last route element			-- reviewed
+--
+** IDENTICAL_ITEM					-- reviewed
+$ is entered twice in a row				-- reviewed
+--
+**  EET_MUST_BE_PRESENT_IN_OTHER_INFO			-- reviewed
+An EET in other info field is required			-- reviewed
+--
+** EET_REQUIRED_FOR_COMPUTATION_OF_ETOS                 -- new
+EET is required for computation of ETOs                 -- new
+--
+** SOFTWARE_ERROR_ITEM_MUST_BE_IDENTIFIED		-- reviewed
+Call TSM: SOFTWARE_ERROR_ITEM_MUST_BE...		-- reviewed
+--
+** SID_IS_NOT_THE_FIRST_ROUTE_ELEMENT			-- reviewed
+$ must be the first route element			-- reviewed
+--
+** POINT_IS_NOT_A_TRANSITION_WITH_STAR			-- reviewed
+$ is not first point of $				-- reviewed
+--
+** ADES_IS_NOT_COMPATIBLE_WITH_STAR			-- reviewed
+STAR $ not defined for ADES				-- reviewed
+--
+** RWY_IS_NOT_COMPATIBLE_WITH_STAR			-- reviewed
+STAR $ is not defined for runway			-- reviewed
+--
+** ROUTE_AND_ROUTE_DO_NOT_INTERSECT			-- reviewed
+Intersection of $ & $ ambiguous				-- reviewed
+--
+** FIX_LIST_IS_TOO_LONG					-- reviewed
+Number of points exceeds allowed maximum		-- reviewed
+--
+** STAR_IS_THE_FIRST_KNOWN_ELEMENT			-- reviewed
+A known route item must preceed $			-- reviewed
+--
+** KNOWN_ELEMENT_EXPECTED_AFTER_ROUTE                   -- new
+A known route item must follow $                        -- new
+--
+** THE_ROUTE_IS_USED_IN_INVALID_DIRECTION		-- reviewed
+$ cannot be flown in this direction			-- reviewed
+--
+** AIRCRAFT_TYPE_IS_NOT_KNOWN				-- reviewed
+Aircraft type not defined				-- reviewed
+--
+** WAKE_TURBULENCE_IS_NOT_COMPATIBLE			-- reviewed
+Incorrect WAKE TURB category for type			-- reviewed
+--
+** ROUTE_IS_TRUNCATED					-- not ok
+Route is truncated					-- not ok
+--
+** ROUTE_IS_TRUNCATED_BEFORE_REENTRY                    -- new
+Route is truncated. Create reentry path.                -- new
+--
+** FPSA_ROUTE_IS_TRUNCATED                              -- new
+Exit reentry FPSA route is truncated                    -- new
+--
+** ENTER_MODE_NOT_DETERMINED				-- reviewed
+Call TSM : ENTER_MODE_NOT_DETERMINED			-- reviewed
+--
+** UNKNOWN_TOC_SENDER					-- reviewed (SR)
+TOC sent by an unknown centre				-- reviewed (SR)
+--
+** UNKNOWN_AOC_SENDER					-- reviewed (SR)
+AOC sent by an unknown centre				-- reviewed (SR)
+--       
+** AOC_SENDER_NOT_COMPATIBLE_WITH_TOC_ADDRESSEE		-- reviewed (SR)
+TOC sent to $ -AOC received from $			-- reviewed (SR) 
+--
+** CENTER_CANNOT_HANDLE_AIDC				-- reviewed (SR)
+TOC sent to a non AIDC center				-- reviewed (SR)
+--
+** EXIT_POINT_IS_NOT_KNOWN				-- reviewed
+Unable to calculate FDRG exit point			-- reviewed
+--
+** LEAVE_MODE_NOT_DETERMINED				-- reviewed
+Call TSM : LEAVE_MODE_NOT_DETERMINED			-- reviewed
+--
+** ROUTE_IS_NOT_CONTINOUS				-- reviewed
+Route element #2$ is unknown				-- reviewed
+--
+** ONLY_AIRPORT_IN_EXIT_REENTRY_TRUNC_ROUTE             -- new
+Airport alone in trunc. route                           -- new
+--
+** FPL_CANNOT_ENTER_PILOT_ETO_ON_ADEP                   -- new
+Cannot enter a pilot ETO on the ADEP                    -- new
+--
+** ROUTE_CONTAINS_CONSECUTIVE_IDENTICAL_FIXES		-- reviewed
+Colocated code/coord used consecutively			-- reviewed
+--
+** ROUTE_CONTAINS_TOO_MANY_AIRWAYS                      -- new
+Route contains too many airways                         -- new
+--
+** SOFTWARE_ERROR_IN_EXTRACT_ROUTE			-- reviewed
+Call TSM:SOFTWARE_ERROR_IN_EXTRACT_ROUTE		-- reviewed
+--
+** SPEED_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE		-- reviewed
+$ not appropriate for type				-- reviewed
+--
+** SPEED_15C_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE	-- reviewed (SR)
+$ not appropriate for type				-- reviewed (SR)
+--
+** LEVEL_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE		-- reviewed
+$ is too high for type					-- reviewed
+--
+** LEVEL_15C_IS_NOT_COMPATIBLE_WITH_AIRCRAFT_TYPE	-- reviewed (SR)
+$ is too high for type					-- reviewed (SR)
+--
+** ALL_POINTS_OVERFLOWN_MOD_REFUSED			-- new
+Mod. refused: all points are overflown			-- new
+--
+** ESTIMATED_ELAPSED_TIME_IS_TOO_LARGE			-- reviewed
+EET exceeds maximum allowed				-- reviewed
+--
+** ROUTE_IS_NOT_A_TRANSITION_WITH_STAR			-- reviewed
+Transition from $ to $ ambiguous			-- reviewed
+--
+** STAR_CANNOT_FOLLOW_SID				-- reviewed
+STAR #2$ cannot follow SID #1$				-- reviewed
+--
+** ELEMENT_IS_NOT_A_TRANSITION_WITH_STAR		-- reviewed
+Call TSM : ELEMENT_IS_NOT_..._WITH_STAR			-- reviewed
+--
+** ROUTE_IS_NOT_A_TRANSITION_WITH_SID			-- reviewed
+Transition from #2$ to #1$ ambiguous			-- reviewed
+--
+** SSR_MODE_AND_CODE_ARE_INCOMPATIBLE			-- reviewed
+SSR code not compatible with equip			-- reviewed
+--
+** POINT_INCOMPATIBLE_WITH_LEVEL			-- reviewed
+RFL not appropriate for point $				-- reviewed
+--
+--** ROUTE_INCOMPATIBLE_WITH_LEVEL			-- reviewed
+--RFL not allowed for route $				-- reviewed
+--
+** ROUTE_IS_TOO_LONG					-- reviewed
+Route contains too many points				-- reviewed
+--
+** SECTOR_LIST_IS_TOO_LONG				-- reviewed
+Too many sectors are crossed				-- reviewed
+--
+** ROUTE_ALTERNATIVE_CHANGE				-- to be suppressed
+Alternative change in #1$ 				-- to be suppressed
+--
+** ROUTE_ALTERNATIVE_INVALID				-- to be suppressed
+The alternative route is not compatible			-- to be suppressed
+--
+** NO_POSTING_FOR_FDT					-- not ok
+No posting for fdt #1$ 					-- not ok
+--
+** SOFTWARE_ERROR_IN_PROFILE				-- reviewed
+Call TSM : SOFTWARE_ERROR_IN_PROFILE			-- reviewed
+--
+** POSTING_LIST_TOO_LONG				-- reviewed
+Call TSM : POSTING_LIST_TOO_LONG			-- reviewed
+--
+** HANDOFF_LIST_TOO_LONG				-- reviewed (SR)
+Call TSM : HANDOFF_LIST_TOO_LONG			-- reviewed (SR)
+--
+** FPL_INVALID_ROUTE_AMENDMENT				-- reviewed
+Can't amend before overflown points			-- reviewed
+--
+** FPL_AMENDMENT_POINT_MUST_BE_AFTER_POINT		-- reviewed
+Can't reroute flight backwards				-- reviewed
+--
+** SID_IS_NOT_FEASIBLE					-- not ok
+Sid $ is not feasible					-- not ok
+--
+** CANNOT_ENTER_SID_WHEN_ACTIVE				-- reviewed
+Cannot enter SID. FDR already active			-- reviewed
+--
+** CANNOT_MODIFY_OVERFLOWN_STAR				-- reviewed
+Too late to modify system STAR. Use RER			-- reviewed
+--
+** STAR_IS_NOT_FEASIBLE					-- not ok
+Star $ is not feasible					-- not ok
+--
+** INVALID_CURRENT_POINTER				-- reviewed
+Call TSM : INVALID_CURRENT_POINTER		 	-- reviewed						
+--
+** INVALID_YEAR						-- reviewed
+Invalid year						-- reviewed
+-- Note: 1970 (2038) corresponds to 
+-- the minimum (maximum) of the UBSS time
+--
+** INVALID_MONTH					-- reviewed
+Invalid month						-- reviewed
+--
+** INVALID_DAY						-- reviewed
+Invalid day	 					-- reviewed
+--
+** SSR_CODE_INVALID					-- reviewed				
+SSR code is not available				-- reviewed
+--
+** AIRPORT_INVALID					-- reviewed
+ADES cannot be AFIL					-- reviewed
+--
+** ASS_LEVEL_MUST_BE_FILLED_IN				-- reviewed
+Call TSM : ASS_LEVEL_MUST_BE_FILLED_IN			-- reviewed
+--
+** ROUTE_INVALID					-- new
+Skipped points not allowed for AFIL		        -- new
+--
+** OTHERINF_MUST_BE_FILLED_IN				-- reviewed
+A "0" or valid iindicator is required			-- reviewed
+--
+** ETD_MUST_BE_FILLED_IN				-- reviewed
+ETD is required						-- reviewed
+--
+** ETD_MUST_NOT_BE_FILLED_IN				-- reviewed
+ETD must not be specified				-- reviewed
+--
+** INVALID_ETD_ON_DELAY                                 -- reviewed (SR)
+ETD must not be earlier than present ETD                -- reviewed (SR)
+--
+** ENTRY_TIME_MUST_BE_FILLED_IN				-- reviewed
+Time at coordination point is missing			-- reviewed
+--
+** DOF_AND_F18_INCONSISTENCY
+Field A and DOF/ are inconsistent
+--
+** FPL_DOF_INVALID_DATE
+DOF is invalid
+--
+** FPL_DOF_MISSING_DATE
+No DOF received in this message
+--
+--** FPL_DOF_MODIFIED_VIA_AFTN
+--DOF cannot be modified from AFTN
+--
+** INVALID_HOUR						-- reviewed
+Invalid time in message					-- reviewed
+--
+** ENTRY_POINT_INVALID					-- reviewed
+Coordination point is not on the route			-- reviewed
+--
+** ENTRY_POINT_NOT_FOUND				-- reviewed
+Cannot determine entry point to FDRG			-- reviewed
+--
+** AFTN_LINE_FAILURE					-- reviewed (SR)
+AFTN connection has failed 				-- reviewed (SR)
+--
+** AFTN_PRIORITY_MUST_BE_FILLED_IN			-- reviewed
+Call TSM: AFTN_PRIORITY_MUST_BE_FILLED..		-- reviewed	
+--
+** AFTN_PRIORITY_INVALID				-- reviewed
+Call TSM : AFTN_PRIORITY_INVALID			-- reviewed	
+--
+** AFTN_DEST_MUST_BE_FILLED_IN				-- reviewed
+Call TSM : AFTN_DEST_MUST_BE_FILLED_IN			-- reviewed	
+--
+** AFTN_DEST_INVALID					-- reviewed
+Invalid AFTN address					-- reviewed
+--
+** AFTN_TEXT_MUST_BE_FILLED_IN				-- reviewed
+Call TSM : AFTN_TEXT_MUST_BE_FILLED_IN			-- reviewed	
+--
+** AIDC_REFERENCE_INFORMATION_INVALID			-- reviewed (SR) 
+Call TSM: AIDC_REFERENCE_INFO.._INVALID			-- reviewed (SR)
+--
+** AFTN_TOO_MANY_ADDRESSEES				-- reviewed (SR)
+Call TSM : AFTN_TOO_MANY_ADDR				-- reviewed (SR)
+
+** INVALID_MMI_POSITION
+Invalid MMI position for replay
+
+
+--below added by wangxx
+** INVALID_ARCADDR
+NVALID_ARCADDR
+ 
+** INVALID_RUNWAY
+INVALID_ARCADDR
+ 
+** INVALID_FPCTST
+INVALID_FPCTST
+ 
+** INVALID_HRSP
+INVALID_HRSP
+ 
+** INVALID_ISCOUPLE
+INVALID_ISCOUPLE
+
+** INVALID_GATE
+INVALID_GATE
+
+** SECTOR_NOT_IN_LOGICAL_POSITION
+SECTOR_NOT_IN_LOGICAL_POSITION
+ 
+** RUNWAY_NOT_ASSOCIATE_WITH_AIRPORT
+RUNWAY_NOT_ASSOCIATE_WITH_AIRPORT
+ 
+** INVALID_AIRPORT_WITH_RUNWAY_MSG
+INVALID_AIRPORT_WITH_RUNWAY_MSG
+ 
+** INVALID_SECTOR_ASSIGNMENT_MSG
+INVALID_SECTOR_ASSIGNMENT_MSG
+ 
+** MISSING_FIELD_AIRPORT
+MISSING_FIELD_AIRPORT
+
+** MISSING_FIELD_ARCADDR
+MISSING_FIELD_ARCADDR
+
+** MISSING_FIELD_ARWY
+MISSING_FIELD_ARWY
+
+** MISSING_FIELD_DRWY
+MISSING_FIELD_DRWY
+
+** MISSING_FIELD_ETA
+MISSING_FIELD_ETA
+
+** MISSING_FIELD_FPCTST
+MISSING_FIELD_FPCTST
+
+** MISSING_FIELD_HRSP
+MISSING_FIELD_HRSP
+
+** MISSING_FIELD_ISCOUPLE
+MISSING_FIELD_ISCOUPLE
+
+** MISSING_FIELD_PBN
+MISSING_FIELD_PBN
+
+** MISSING_FIELD_PKC
+MISSING_FIELD_PKC
+
+** MISSING_FIELD_RWYLIST
+MISSING_FIELD_RWYLIST
+
+** MISSING_FIELD_SECDEST
+MISSING_FIELD_SECDEST
+
+** MISSING_FIELD_SECLIST
+MISSING_FIELD_SECLIST
+ 
+** MISSING_FIELD_SPLD
+MISSING_FIELD_SPLD
+
+** MISSING_FIELD_TXT
+MISSING_FIELD_TXT
+
+** MISSING_FIELD_XFL
+MISSING_FIELD_XFL
+
+** ERROR_IN_CONVERT_INTO_FDEXM
+ERROR_IN_CONVERT_INTO_FDEXM
+                                     
+
+--
+
+
+
+
+--
+** ONLY_ONE_AIDC_ADDRESSEE_ALLOWED			-- not ok
+Too many AIDC addr: $ / $                               -- not ok
+--
+** EXTRA_CHARACTER_DETECTED				-- reviewed
+Syntax error in EET/					-- reviewed
+--
+** POINT_FIR_TIME_EXPECTED				-- reviewed
+Location after EET/ not known				-- reviewed
+--
+** CLOSING_BRACKET_EXPECTED				-- reviewed (SR)
+")" missing or error in previous field			-- reviewed (SR)
+--
+** MESSAGE_DISCARDED					-- reviewed (SR)
+Message discarded (QTA QTA<VT><ETX>)			-- reviewed (SR)
+--
+**SWITCH_ALREADY_DEFINED 				-- reviewed
+An indicator occurs twice in field 18			-- reviewed
+--
+** NO_PREVIOUS_POSSIBLE					-- reviewed
+Previous SSR code is not available			-- reviewed
+--
+** WAITING_MESSAGE					-- reviewed
+Please wait. Processing in progress			-- reviewed
+--
+** INVALID_FLOAT_32_VALUE				-- to be suppressed
+Invalid float value					-- to be suppressed
+--
+** INVALID_INTEGER_32_VALUE				-- to be suppressed
+Invalid integer value					-- to be suppressed
+--
+** INVALID_FIX_NAME					-- reviewed
+Profile Calculation Fix $ is not known			-- reviewed
+--
+** ILLEGAL_TIME						-- not ok
+Illegal time $						-- not ok
+--
+** MAX_ELAPSE_TIME_EXCEEDED                             -- reviewed
+ETI #1$ to #2$ too long                                 -- reviewed
+--
+** MESSAGE_NOT_TRANSMITTED                              -- reviewed (SR)
+Call TSM : MESSAGE_NOT_TRANSMITTED                      -- reviewed (SR)
+--
+** MESSAGE_NOT_PROCESSED_USE_TRS                        -- reviewed (SR)
+Msg not processed. Send via TRS window                  -- reviewed (SR)
+--
+** DATA_ADDRESS_ERROR					-- reviewed (SR)
+Msg type cannot be sent to this address			-- reviewed (SR)
+--
+** INCORRECT_ADDRESSEE_TYPE                             -- new
+Msg type cannot be sent to $                            -- new
+--
+** MODIFICATION_REFUSED					-- new
+Modification refused					-- new
+--
+** ILLEGAL_CPL_MODIFICATION                             -- new
+Only fields 7c, 14, 15 can be modified                  -- new
+--
+** MODIFICATION_COMMAND_NOT_ALLOWED			-- new
+Modification for #1$ not allowed			-- new
+--
+** FPL_CAN_NOT_SET_OVERFLOWN_FIX_TO_COMPULSORY		-- reviewed
+Can't make an overflown point compulsory		-- reviewed
+--
+** FPL_CAN_NOT_MAKE_PT_OUTSIDE_FDRG_COMPULSORY          -- new
+Compulsory pts not allowed outside fdrg                 -- new
+--
+** FPL_CAN_NOT_REPORT_ON_OVERFLOWN_FIX			-- reviewed
+Can't report before an overflown point			-- new
+--
+** FPL_ENTERED_DELAY_OVERTAKES_LIMIT			-- reviewed
+Delay time exceeds the defined limit			-- reviewed
+--
+** FPL_WRONG_POINT_OCCURENCE				-- reviewed
+Call TSM : FPL_WRONG_POINT_OCCURENCE			-- reviewed
+--
+** UPR_NOT_ALLOWED_ON_FLIGHT_IN_HOLD			-- reviewed
+UPR not allowed when in holding state			-- reviewed
+--
+** UPR_AFTER_HOLDING_POINT_REFUSED_ON_FLIGHT_IN_INIT_HOLD	-- reviewed
+Can't UPR past the holding point				-- reviewed
+--
+** INHIBITION_NOT_ALLOWED_ON_FLIGHT_IN_HOLD		-- reviewed
+Can't inhibit when in holding state			-- reviewed
+--
+** HOLD_EXIT_TIME_BEFORE_SYSTEM_ETO                     -- new
+Hold exit-time #1$ is before eto #2$                    -- new
+--
+** ILLEGAL_ETO_DELAY_ON_HOLD_FIX                        -- new
+ETO DELAY and HOLD cannot be on same pt.                -- new
+--
+** FPL_TOO_LATE_TO_CANCEL_SHUTDOWN			-- to be suppressed
+FPL too late to cancel shutdown				-- to be suppressed
+--
+** FPL_SHUTDOWN_ALREADY_INITIATED			-- to be suppressed
+FPL shutdown already initiated				-- to be suppressed
+--
+** FPL_SHUTDOWN_FAILURE                                 -- reviewed (SR)
+FDP shutdown process failed                             -- reviewed (SR)
+--
+** SVC_INVALID_UID					-- reviewed
+SVC invalid UID						-- reviewed
+--
+** SVC_INVALID_CSN					-- reviewed
+SVC invalid CSN						-- reviewed
+--
+** SVC_MIDNIGHT_INVALID_CSN				-- new
+Midnight msg with CSN different from 1			-- new
+--
+** SVC_LR_EXP_MESSAGE_NOT_PROCESSED			-- new
+Service msg LR EXP not auto processed			-- new
+-- 		
+** SVC_REPEAT_MESSAGE_EXPECTED				-- reviewed
+Call TSM : SVC_REPEAT_MESSAGE_EXPECTED			-- reviewed
+--
+** SVC_MIDNIGHT_MESSAGE_EXPECTED			-- reviewed (SR)
+Call TSM : SVC_MIDNIGHT_MESSAGE_EXPECTED		-- reviewed (SR)
+--
+** SVC_MISSING_CIRCUIT_IDENTIFICATION			-- reviewed
+Call TSM : SVC_MISSING_CIRCUIT_IDENT...			-- reviewed
+--
+** SVC_MISSING_CSN					-- reviewed
+Call TSM : SVC_MISSING_CSN				-- reviewed
+--
+** RUNWAY_DOES_NOT_BELONG_TO_ADES			-- reviewed
+Runway #1$ is not defined for #2$			-- reviewed
+--
+** RUNWAY_DOES_NOT_BELONG_TO_ADEP			-- reviewed
+Runway #1$ is not defined for #2$			-- reviewed
+--
+** NO_RUNWAY_DEFINED_FOR_ADEP				-- reviewed
+Runways are not defined at $ 				-- reviewed
+--
+** NO_RUNWAY_DEFINED_FOR_ADES				-- reviewed
+Runways are not defined at $ 				-- reviewed
+--                                                                                                                            
+** FPL_SSR_NO_MORE_CODE					-- reviewed
+All auto assigned SSR codes used		        -- reviewed
+--
+** FPL_SSR_CODE_IS_ALLOCATED_WARNING			-- reviewed
+Entered code rejected-New code allocated		-- reviewed
+--
+** FPL_SSR_CODE_IS_ALLOCATED_FATAL			-- reviewed
+SSR code is already allocated				-- reviewed
+--
+** FPL_SSR_INVALID_EQUIPMENT				-- reviewed
+Code rejected. No SSR equipment in FDR			-- reviewed
+--
+** FPL_PSSR_INVALID_EQUIPMENT                           -- new
+Code rejected. No PSSR equipment in FDR                 -- new
+--
+** FPL_CONTROL_SSR_INHIBITED				-- to be suppressed
+FPL control SSR inhibited 				-- to be suppressed
+--
+** STRIP_BASE_IS_FULL					-- not ok
+Strip data base is full					-- not ok
+--
+** STRIP_DSCR_NOT_EXIST					-- not ok
+The strip format doesn't exist				-- not ok
+--
+** STRIP_ALREADY_DISPLAYED				-- reviewed
+Strip already displayed at DEST position		-- reviewed
+--
+
+**SYNTAX_COORDATA_OR_ETD_MUST_BE_PRESENT
+SYNTAX_COORDATA_OR_ETD_MUST_BE_PRESENT
+
+** SYNTAX_LATITUDE_IN_DEGRE_MINUTE_EXPECTED		-- reviewed (SR)
+Syntax error: Lat in deg & min expected			-- reviewed (SR)
+--
+** SYNTAX_LONGITUDE_IN_DEGRE_EXPECTED			-- reviewed
+Syntax error: Long in degrees expected			-- reviewed
+--
+** SYNTAX_LONGITUDE_IN_DEGRE_MINUTE_EXPECTED		-- reviewed
+Syntax error: Long in deg & min expected		-- reviewed
+--
+** SYNTAX_LEVEL_EXPECTED				-- reviewed
+Level cannot be determined				-- not ok
+--		
+** SYNTAX_CROSS_MODE_EXPECTED				-- reviewed (SR)
+Crossing mode cannot be determined			-- reviewed (SR)
+--		
+** SYNTAX_SPEED_EXPECTED				-- reviewed
+Cruising speed cannot be determined			-- reviewed
+--
+** SYNTAX_SPEED_LEVEL_EXPECTED				-- reviewed
+Call TSM : SYNTAX_SPEED_LEVEL_EXPECTED			-- reviewed
+--
+** SYNTAX_ROUTE_ITEM_EXPECTED				-- reviewed
+Syntax error in route					-- reviewed
+--
+** SYNTAX_COP_EXPECTED                                  -- reviewed (SR)
+Syntax error in COP field                               -- reviewed (SR)
+--
+** SYNTAX_ROUTE_ELEMENT_EXPECTED			-- reviewed
+Syntax error in route field				-- reviewed          
+--                                                                      
+** SYNTAX_ROUTE_TOO_LONG				-- reviewed
+Route field exceeds 250 characters			-- reviewed                  
+--                                                                      
+** SYNTAX_TEXT_TOO_LONG					-- reviewed
+Too many characters in the message			-- reviewed                   
+--                                                                      
+** SYNTAX_OPENING_BRACKET_EXPECTED			-- to be suppressed
+SYNTAX : Opening Bracket Expected   			-- to be suppressed      
+--                                                                      
+** SYNTAX_DASH_EXPECTED					-- reviewed
+Call TSM : SYNTAX_DASH_EXPECTED				-- reviewed
+--
+** SYNTAX_DASH_FIELD_A_EXPECTED
+Error in field A or end of msg ref
+--
+** SYNTAX_DASH_FIELD5_EXPECTED				-- to be suppressed
+Error in field 3 or no "-" before EMERG			-- to be suppressed
+--
+** SYNTAX_DASH_FIELD7_EXPECTED				-- reviewed
+No "-" before ACID or error in prev fld			-- reviewed
+--
+** SYNTAX_DASH_FIELD8_EXPECTED				-- reviewed
+Error in ACID or no "-" before FRUL			-- reviewed
+--
+** SYNTAX_DASH_FIELD9_EXPECTED				-- reviewed
+Error in FRUL or no "-" before TYPE			-- reviewed
+--
+** SYNTAX_DASH_FIELD10_EXPECTED				-- reviewed
+Error in TYPE or no "-" before EQUIP			-- reviewed
+--
+** SYNTAX_DASH_FIELD13_EXPECTED				-- reviewed
+No "-" before ADEP or error in prev fld			-- reviewed
+--
+** SYNTAX_DASH_FIELD14_EXPECTED				-- reviewed
+Error in ADEP or no "-" before COP			-- reviewed
+--
+** SYNTAX_DASH_FIELD15_EXPECTED				-- reviewed
+No "-" before TAS / error in prev field			-- reviewed
+--
+** SYNTAX_DASH_FIELD16_EXPECTED				-- reviewed
+No "-" before ADES or error in prev fld			-- reviewed
+--
+** SYNTAX_DASH_FIELD17_EXPECTED				-- reviewed
+No "-" before AARR / error in prev field		-- reviewed
+--
+** SYNTAX_DASH_FIELD18_EXPECTED				-- reviewed
+Error in field 16 or no "-" before OTHER		-- reviewed
+--
+** SYNTAX_DASH_FIELD19_EXPECTED				-- reviewed
+Error in OTHER or no "-" before SUP INFO		-- reviewed
+--
+** SYNTAX_DASH_FIELD20_EXPECTED				-- reviewed
+No "-" before F20 or error in prev field		-- reviewed
+--
+** SYNTAX_DASH_FIELD21_EXPECTED				-- reviewed
+No "-" before F21 or error in prev field		-- reviewed
+--
+** SYNTAX_DASH_FIELD22_EXPECTED				-- reviewed
+No "-" before AMDT or error in prev fld			-- reviewed
+--
+** SYNTAX_SLASH_EXPECTED				-- reviewed
+"/" missing or field syntax error			-- reviewed
+--
+** SYNTAX_SPACE_EXPECTED				-- reviewed
+Space is missing or field syntax error			-- reviewed
+--
+** SYNTAX_MESSAGE_TYPE_EXPECTED				-- reviewed
+Message type cannot be determined			-- reviewed
+--
+** SYNTAX_MESSAGE_REF_INVALID                           -- reviewed (SR)
+No "-" before ACID or error in MSG REF                  -- reviewed (SR)
+--
+** SYNTAX_TIME_EXPECTED					-- reviewed
+Syntax error : Cannot determine time			-- reviewed
+--
+** SYNTAX_EET_TIME_EXPECTED                             -- new
+Syntax error : Cannot determine time                    -- new
+--
+** SYNTAX_AIRPORT_EXPECTED				-- reviewed
+Arrival airport cannot be determined			-- reviewed
+--
+** SYNTAX_EMERGENCY_OR_OACI_ID_EXPECTED			-- reviewed
+SAR Phase cannot be determined				-- reviewed
+--
+** SYNTAX_F5_ADDRESS_EXPECTED				-- reviewed (SR)
+Originator address cannot be determined			-- reviewed (SR)
+--
+** SYNTAX_EMERGENCY_NATURE_EXPECTED			-- reviewed (SR)
+Nature of emergency cannot be determined		-- reviewed (SR)
+--
+** SYNTAX_CALLSIGN_EXPECTED				-- reviewed
+Syntax error : ACID cannot be determined		-- reviewed
+--
+** SYNTAX_SSR_CODE_EXPECTED				-- reviewed
+SSR code syntax error in field 7			-- reviewed
+--
+** SYNTAX_SSR_MODE_EXPECTED				-- reviewed
+SSR mode syntax error in field 7			-- reviewed
+--
+** SYNTAX_FLIGHT_TYPE_EXPECTED				-- reviewed
+Type of flight cannot be determined			-- reviewed
+--
+** SYNTAX_FLIGHT_RULE_EXPECTED				-- reviewed
+Flight rule cannot be determined			-- reviewed
+--
+** SYNTAX_AIRCRAFT_TYPE_EXPECTED			-- reviewed
+Aircraft type cannot be determined			-- reviewed
+--
+** SYNTAX_WAKE_TURBULENCE_EXPECTED			-- reviewed
+Wake Turb Cat cannot be determined			-- reviewed
+--
+** SYNTAX_SSR_EQUIPMENT_EXPECTED			-- reviewed
+SSR equipment cannot be determined			-- reviewed
+--
+** SYNTAX_COM_NAV_APP_EXPECTED				-- reviewed
+Com/Nav equipment cannot be determined			-- reviewed
+--
+** SYNTAX_ROUTE_EXPECTED				-- reviewed
+Route cannot be determined				-- reviewed
+--
+** SYNTAX_FIELD17C_REFUSED				-- reviewed (SR)
+Free text refused. AARR not "ZZZZ"			-- reviewed (SR)
+--
+** SYNTAX_FIELD17C_EXPECTED				-- reviewed (SR)
+Free text expected. AARR is "ZZZZ"			-- reviewed (SR)
+--
+** SYNTAX_OTHER_INFO_SWITCH_EXPECTED			-- reviewed
+A "0" or valid text is required				-- reviewed
+--
+** SYNTAX_SUP_INFO_SWITCH_EXPECTED			-- reviewed
+Supplementary Info indicator expected			-- reviewed
+--
+** SYNTAX_OTHER_INFO_SWITCH_ARGUMENT_EXPECTED		-- reviewed
+Text required after indicator				-- reviewed
+--
+** SYNTAX_SUP_INFO_SWITCH_ARGUMENT_EXPECTED		-- reviewed
+Text required after indicator				-- reviewed
+--
+** SYNTAX_FIELD_NUMBER_EXPECTED				-- reviewed
+Field number cannot be determined			-- reviewed
+--
+** SYNTAX_ARGUMENTS_EXPECTED				-- to be suppressed
+SYNTAX : Arguments Expected $				-- to be suppressed
+--
+** SYNTAX_GATE_SWITCH_EXPECTED				-- to be suppressed
+SYNTAX : Gate Switch Expected				-- to be suppressed
+--
+** SYNTAX_GATE_EXPECTED					-- to be suppressed
+SYNTAX : Gate Name Expected				-- to be suppressed
+--
+** SYNTAX_REG_SWITCH_EXPECTED				-- to be suppressed
+SYNTAX : Registratino Switch Expected			-- to be suppressed
+--
+** SYNTAX_REGISTRATION_EXPECTED				-- reviewed
+Aircraft REG cannot be determined			-- reviewed
+--
+** SYNTAX_BRIDGE_SWITCH_EXPECTED			-- to be suppressed			
+SYNTAX : Bridge Switch Expected				-- to be suppressed		
+--
+** SYNTAX_BRIDGE_EXPECTED				-- to be suppressed
+SYNTAX : Bridge Expected				-- to be suppressed
+--
+** SYNTAX_B_TIME_SWITCH_EXPECTED			-- to be suppressed
+SYNTAX : Block Time Switch Expected			-- to be suppressed
+--
+** SYNTAX_BLOCK_TIME_EXPECTED				-- to be suppressed
+SYNTAX : Block Time Expected				-- to be suppressed
+--
+** SYNTAX_OLD_REG_EXPECTED				-- to be suppressed
+SYNTAX : Old Registration Expected			-- to be suppressed
+--
+** SYNTAX_TEXT_TRUNCATED				-- to be suppressed
+SYNTAX : Text Truncated					-- to be suppressed
+--
+** SYNTAX_ROUTE_TRUNCATED				-- to be suppressed
+SYNTAX : Route Truncated				-- to be suppressed
+--
+** SYNTAX_OTHER_INFO_SWITCH_UNHANDLED			-- reviewed
+Unknown indicator in Other Info field			-- reviewed
+--
+** SYNTAX_AIRCRAFT_ADS_CODE_EXPECTED			-- reviewed (SR)
+Syntax error : Invalid datalink CODE			-- reviewed (SR)
+--
+** SYNTAX_SUP_INFO_SWITCH_UNHANDLED			-- reviewed
+Unknown indicator in Sup Info field			-- reviewed
+--                                                                      
+** SYNTAX_OTHER_INFO_TRUNCATED				-- reviewed
+Other Info field exceeds 250 characters			-- reviewed
+--                                                                      
+** SYNTAX_SUP_INFO_TRUNCATED				-- reviewed
+Sup Info field exceeds 100 characters			-- reviewed
+--                                                                      
+** SYNTAX_LRM_FIELD18_INCORRECT  			-- reviewed (SR)
+Syntax error in field 18 of LRM				-- reviewed (SR)
+--  
+** SYNTAX_ATS_FPL_MESSAGE_EXPECTED			-- reviewed
+Call TSM:SYNTAX_ATS_FPL_MESSAGE_EXPECTED 		-- reviewed
+--                                                                      
+** SYNTAX_AIS_MESSAGE_STARTING_WITH_BS			-- reviewed
+Call TSM: SYNTAX_AIS_MESSAGE_STARTING_..		-- reviewed
+--                                                                      
+** SYNTAX_CRCRLF_SEQUENCE_INVALID			-- to be suppressed
+SYNTAX : CRCRLF Sequence Invalid     			-- to be suppressed     
+--                                                                      
+** SYNTAX_ILLEGAL_CHARACTER				-- reviewed
+Invalid control character found in text 		-- reviewed               
+--                                                                      
+** SYNTAX_ATS_FPL_TYPE_UNKNOWN				-- not ok
+SYNTAX : ATS FPL Type Unknown				-- not ok
+--
+** SYNTAX_MESSAGE_NUMBER_EXPECTED			-- reviewed
+Message number cannot be determined			-- reviewed
+--
+** SYNTAX_TOO_MANY_LINES				-- reviewed
+Message exceeds 40 lines				-- reviewed
+--
+** SYNTAX_UNHANDLED_FIELD				-- reviewed
+Call TSM : SYNTAX_UNHANDLED_FIELD            		-- reviewed
+--
+** SYNTAX_MESSAGE_REFERENCE_EXPECTED                    -- reviewed (SR)
+Syntax error in message reference field                 -- reviewed (SR)
+--
+** SYNTAX_CIRCUIT_IDENTIFICATION_EXPECTED               -- reviewed (SR)
+Circuit ident. cannot be determined	                -- reviewed (SR)
+--
+** SYNTAX_CHANNEL_SEQUENCE_NUMBER_EXPECTED              -- reviewed (SR)
+CSN cannot be determined                                -- reviewed (SR)
+--
+** SYNTAX_TRANSMISSION_TIME_EXPECTED                    -- reviewed (SR)
+Transmission cannot be determined                       -- reviewed (SR)
+--
+** SYNTAX_PRIORITY_EXPECTED                             -- reviewed (SR)
+Message priority cannot be determined                   -- reviewed (SR)
+--
+** SYNTAX_ADDRESSEE_EXPECTED                            -- reviewed (SR)
+Message addressee missing                               -- reviewed (SR)
+--
+** SYNTAX_FILLING_TIME_EXPECTED                         -- new
+SYNTAX : Filling time expected                          -- new
+--
+** SYNTAX_ORIGINATOR_EXPECTED                           -- reviewed (SR)
+Originator of msg cannot be determined                  -- reviewed (SR)
+--
+** SYNTAX_AIDC_MESSAGE_DATA_ID_EXPECTED                 -- reviewed (SR)
+Message data ident. cannot be determined                -- reviewed (SR)
+--
+** SYNTAX_AIDC_TIME_STAMP_EXPECTED                      -- reviewed (SR)
+Message time stamp cannot be determined                 -- reviewed (SR)
+--
+** SYNTAX_AIDC_REFERENCE_INFO_EXPECTED                  -- reviewed (SR)
+Message reference data not found	                -- reviewed (SR)
+--
+** SYNTAX_INVALID_CRC                                   -- reviewed (SR)
+Call TSM : SYNTAX_INVALID_CRC                           -- reviewed (SR)
+--
+** SYNTAX_CRC_EXPECTED                                  -- reviewed (SR)
+Call TSM : SYNTAX_CRC_EXPECTED                          -- reviewed (SR)
+--
+--error message used for GRIB or METAR/SPEC meteo messages
+--received and the header does not contain SOH for GRIB or 
+--STX for METAR / SPEC
+--
+** SYNTAX_SOH_CHARACTER_EXPECTED			-- reviewed				
+Call TSM : SYNTAX SOH/STX CHAR EXPECTED	                -- reviewed
+--
+** SYNTAX_STX_CHARACTER_EXPECTED			-- reviewed	
+Call TSM : SYNTAX_STX_CHARACTER_EXPECTED		-- reviewed
+--
+** SYNTAX_ETX_CHARACTER_EXPECTED			-- reviewed
+Call TSM : SYNTAX_ETX_CHARACTER_EXPECTED		-- reviewed
+--
+** SYNTAX_AIS_MESSAGE_EXPECTED				-- reviewed
+Call TSM : SYNTAX_AIS_MESSAGE_EXPECTED			-- reviewed
+--
+** SYNTAX_AIS_MESSAGE_ENDING_SEQUENCE_EXPECTED		-- reviewed
+Call TSM : SYNTAX_AIS_MESSAGE_ENDING....		-- reviewed
+--
+** SYNTAX_INVALID_TRANSMISSION_IDENTIFICATION		-- reviewed
+Call TSM : SYNTAX_INVALID_TRANSMISSION..		-- reviewed
+--
+** SYNTAX_MISSING_SEPARATOR				-- reviewed
+Call TSM : SYNTAX_MISSING_SEPARATOR			-- reviewed
+--
+** SYNTAX_INVALID_PRIORITY				-- reviewed
+Message priority cannot be determined			-- reviewed
+--
+** SYNTAX_INVALID_ADDRESSEE				-- reviewed
+Addressee cannot be determined				-- reviewed
+--
+** ORIGINATOR_NOT_ALLOWED				-- reviewed
+Unauthorised originator of the message			-- reviewed
+--
+** SYNTAX_INVALID_ORIGINATOR				-- reviewed
+Originator cannot be determined				-- reviewed
+--
+** SYNTAX_ERROR						-- not ok
+Syntax error $						-- not ok
+
+** SYNTAX_ERROR_IN_ADDR_FIELD
+SYNTAX_ERROR_IN_ADDR_FIELD
+
+** SYNTAX_ERROR_IN_CASSADDR_FIELD
+SYNTAX_ERROR_IN_CASSADDR_FIELD
+
+** SYNTAX_ERROR_IN_FMPLIST_FIELD
+SYNTAX_ERROR_IN_FMPLIST_FIELD
+
+** SYNTAX_ERROR_IN_IFPDLIST_FIELD
+SYNTAX_ERROR_IN_IFPDLIST_FIELD
+
+** SYNTAX_ERROR_IN_IFPDSLIST_FIELD
+SYNTAX_ERROR_IN_IFPDSLIST_FIELD
+
+** SYNTAX_ERROR_IN_IGNORE_FIELD
+SYNTAX_ERROR_IN_IGNORE_FIELD
+
+** SYNTAX_ERROR_IN_LACDR_FIELD
+SYNTAX_ERROR_IN_LACDR_FIELD
+
+** SYNTAX_ERROR_IN_LATSA_FIELD
+SYNTAX_ERROR_IN_LATSA_FIELD
+
+** SYNTAX_ERROR_IN_LCATSRTE_FIELD
+SYNTAX_ERROR_IN_LCATSRTE_FIELD
+
+** SYNTAX_ERROR_IN_LFIR_FIELD
+SYNTAX_ERROR_IN_LFIR_FIELD
+
+** SYNTAX_ERROR_IN_LRAR_FIELD
+SYNTAX_ERROR_IN_LRAR_FIELD
+
+** SYNTAX_ERROR_IN_LRCA_FIELD
+SYNTAX_ERROR_IN_LRCA_FIELD
+
+** SYNTAX_ERROR_IN_RATEPDLST_FIELD
+SYNTAX_ERROR_IN_RATEPDLST_FIELD
+
+** SYNTAX_ERROR_IN_RFPDLIST_FIELD
+SYNTAX_ERROR_IN_RFPDLIST_FIELD
+
+** SYNTAX_ERROR_IN_RFPDSLIST_FIELD
+SYNTAX_ERROR_IN_RFPDSLIST_FIELD
+
+** SYNTAX_ERROR_IN_RTEPTS_FIELD
+SYNTAX_ERROR_IN_RTEPTS_FIELD
+
+** SYNTAX_ERROR_IN_RVRCOND_FIELD
+SYNTAX_ERROR_IN_RVRCOND_FIELD
+
+** SYNTAX_ERROR_IN_SENDTO_FIELD
+SYNTAX_ERROR_IN_SENDTO_FIELD
+
+** SYNTAX_ERROR_IN_SPLADDR_FIELD
+SYNTAX_ERROR_IN_SPLADDR_FIELD
+--
+
+** SYNTAX_INVALID_TITLE
+SYNTAX_INVALID_TITLE
+
+**SYNTAX_INVALID_RCT_FIELD
+SYNTAX_INVALID_RCT_FIELD
+
+**SYNTAX_INVALID_RFX_FIELD
+SYNTAX_INVALID_RFX_FIELD
+
+**FPL_DPE_INSERT_OF_LOGICAL_POSITION_FAILED
+FPL_DPE_INSERT_OF_LOGICAL_POS_FAILED
+ 
+**FPL_DPE_POINT_MAX_NB_DPE_POINTS_DEFINED
+FPL_DPE_POINT_MAX_NB_DPE_POINTS_DEFINED
+ 
+**FPL_DPE_POINT_ALREADY_INSERTED_BY_LOGICAL_POSITION
+FPL_DPE_PT_ALREADY_INSERTED_BY_LOG_POS
+ 
+**FPL_DPE_POINT_MAX_NB_LOGICAL_POS_FOR_DPE_POINT_DEFINED
+FPL_DPE_PT_MAX_NB_LOG_POS_FOR_DPE_PT_DEF
+ 
+**FPL_DPE_POINT_INVALID_DPE_POINT_MESSAGE_RECEIVED
+FPL_DPE_PT_INV_DPE_POINT_MESS_RECEIVED
+ 
+**FPL_DPE_POINT_ERROR_INSERTING_DPE_POINT
+FPL_DPE_POINT_ERROR_INSERTING_DPE_POINT
+ 
+**FPL_DPE_POINT_ERROR_REMOVING_DPE_POINT
+FPL_DPE_POINT_ERROR_REMOVING_DPE_POINT
+ 
+**FPL_DPE_POINT_ROUTE_NOT_UP_TO_DATE
+FPL_DPE_POINT_ROUTE_NOT_UP_TO_DATE
+ 
+**FPL_DPE_POINT_LOG_POS_NOT_ASSOC_TO_DPE_POINT
+FPL_DPE_PT_LOG_POS_NOT_ASSOC_TO_DPE_PT
+
+**FPL_DPE_POINT_RECEIVED_WHILST_IN_RAM
+FPL_DPE_POINT_RECEIVED_WHILST_IN_RAM
+
+**FPL_DPE_POINT_INCORRECT_FPL_STATE
+FPL_DPE_POINT_INCORRECT_FPL_STATE
+
+**MEDIA_IS_LOCKED
+The Media is locked
+
+**MEDIA_ERROR
+Media ERROR
+
+**INCORRECT_DVD
+INCORRECT_DVD
+
+** SYNTAX_SWITCH_FI_MUST_BE_IN_FIRST_POSITION		-- reviewed (SR)
+"FI" must be first indicator in report			-- reviewed (SR)
+--
+** SYNTAX_ANOTHER_SWITCH_IS_EXPECTED			-- reviewed (SR)
+Syntax error : An indicator is missing			-- reviewed (SR)
+--
+**SYNTAX_OV_SWITCH_MISSING				-- reviewed (SR)
+Syntax error : "OV" indicator not found			-- reviewed (SR)
+--
+** SYNTAX_EO_SWITCH_MISSING				-- reviewed (SR)
+Syntax error : "EO" indicator not found			-- reviewed (SR)
+--
+** SYNTAX_NP_SWITCH_MISSING				-- reviewed (SR)
+Syntax error : "NP" indicator not found			-- reviewed (SR)
+--
+** SYNTAX_ABM_NOT_PROCESSED				-- reviewed (SR)
+Syntax error : "ABM" not processed			-- reviewed (SR)
+--
+** MESSAGE_FOR_CONSULTATION				-- reviewed (SR)
+Queued for information / manual handling		-- reviewed (SR)
+--
+** TRACK_DEFINITION_MSG_FOR_CONSULTATION		-- reviewed (SR)
+TDM queued for information				-- reviewed (SR)
+--
+** POSITION_REPORT_MSG_FOR_CONSULTATION			-- reviewed (SR)
+Position report queued for information			-- reviewed (SR)
+--
+** AEP_POS_SWITCH_EXPECTED				-- reviewed (SR)
+Syntax error : Indicator not found			-- reviewed (SR)
+--
+** AIREP_MESSAGE_EXPECTED				-- new
+POS report category expected				-- new
+--
+** AIDC_LAM_RECEIVED_FOR_UNKNOWN_MSG			-- reviewed (SR)
+Call TSM : AIDC_LAM_RECEIVED_FOR_UNK...			-- reviewed (SR)
+--
+** EMERG_MESSAGE_NOT_PROCESSED				-- reviewed (SR)
+ALR and RCF msgs require manual handling		-- reviewed (SR)
+--
+** MSG_TYP_NOT_PROCESSED				-- reviewed (SR)
+This msg requires manual handling			-- reviewed (SR)
+--
+** COORD_MESSAGE_NOT_AUTO_PROCESSED_FROM_ICAO		-- reviewed (SR)
+Non-AIDC msg : Must be handled manually			-- reviewed (SR)
+--
+** ACP_LAM_NOT_PROCESSED_FROM_ICAO			-- reviewed (SR)
+Non-AIDC ACP or LAM : Handle manually			-- reviewed (SR)
+--
+** ACP_NOT_PROCESSED					-- new
+ACP not processed: unknown $				-- new
+--
+** REJ_NOT_PROCESSED                                    -- new
+REJ not processed: unknown $                            -- new
+--
+** LRM_NOT_PROCESSED                                    -- new
+LRM not processed: unknown ref. message                 -- new
+--
+** EST_OR_PAC_ALREADY_AUTO_PROCESSED                    -- new
+Est or PAC already auto processed                       -- new
+--
+** COP_NOT_FOUND_ON_XFL_MODIFICATION                    -- new
+No corresponding COP                                    -- new
+--
+** AIREP_TYPE_UNKNOWN					-- new
+Position report message unknown				-- new
+--
+** POSITION_REPORT_TIME_OUTSIDE_WINDOW			-- reviewed (SR)
+Reported time outside allowed tollerance		-- reviewed (SR)
+--
+** LEVEL_NOT_COMPATIBLE_WITH_PCFL			-- reviewed (SR)
+Report level does not match CFL				-- reviewed (SR)
+--
+** AIREP_MSG_NOT_ALLOWED_ON_COUPLED_FLIGHT		-- reviewed (SR)
+Report rejected : FDR coupled to a track		-- reviewed (SR)
+--
+** TIME_ON_POINT_CANNOT_BE_IN_THE_PAST                  -- reviewed (SR)
+ETO on $ can't be in the past                           --  reviewed (SR)
+--
+** TIME_ON_POINT_MUST_ME_IN_THE_PAST                    -- new 
+ATO on $ must be in the past                            -- new 
+--
+--$PCR VV4.4_2440 begin 
+** FPL_LUKEWARM_CMD_NOT_PROCESSED                       -- new  
+Request refused : $                                     -- new 
+--
+** FPL_LUKEWARM_SAVE_STATUS                             -- new 
+FPL Save $                                              -- new  
+--
+** FPL_LUKEWARM_RESTORE_STATUS                          -- new 
+FPL Restore $                                           -- new 
+--
+--$PCR VV4.4_2440 end
+--
+** FPL_LUKEWARM_RESTORE_UPR_IN_FUTURE			-- new
+UPR refused: time in the future				-- new
+--
+** OP_QUEUE_BASE_MCQ_FULL				-- reviewed
+Flight data queue database full				-- reviewed
+--
+** OP_QUEUE_BASE_MCQ_EMPTY				-- reviewed
+No messages are in the queue				-- reviewed
+--
+** OP_QUEUE_BASE_MCQ_BUSY_FULL				-- reviewed (SR)
+Call TSM : OP_QUEUE_BASE_MCQ_BUSY_FULL			-- reviewed (SR)
+--
+** OP_QUEUE_ITEM_NOT_FOUND_IN_MCQ_BASE			-- reviewed (SR)
+Call TSM : OP_QUEUE_ITEM_NOT_FOUND_IN...		-- reviewed (SR)
+--
+** OP_QUEUE_ITEM_ALREADY_BUSY_IN_MCQ_BASE		-- reviewed
+Call TSM : OP_QUEUE_ITEM_ALREADY_BUSY..			-- reviewed			
+--
+** OP_QUEUE_BASE_MSG_IN_FULL				-- reviewed (SR)
+Call TSM : OP_QUEUE_BASE_MSG_IN_FULL			-- reviewed (SR)
+--
+** OP_QUEUE_BASE_MSG_IN_EMPTY				-- not ok
+Message in base is empty.					-- not ok
+--
+** OP_QUEUE_BASE_MSG_IN_BUSY_FULL				-- not ok
+Too many dequeued messages that queue			-- not ok
+--
+** OP_QUEUE_ITEM_NOT_FOUND_IN_MSG_IN_BASE			-- reviewed (SR)
+Call TSM : OP_QUEUE_ITEM_NOT_FOUND_IN_..		-- reviewed (SR)
+--
+** OP_QUEUE_ITEM_ALREADY_BUSY_IN_MSG_IN_BASE		-- reviewed (SR)
+CQ message already dequeued.				-- reviewed (SR)
+--
+** FPL_NO_SSR_CODE_FOUND_IN_FAMILY_WITH_GIVEN_DIGITS	-- reviewed (SR)
+SSR code does not belong to family			-- reviewed (SR)
+--
+** ROUTE_IS_DEACTIVATED					-- to be suppressed
+Route #1$ is not activated 				-- to be suppressed
+--
+** RPL_SUCCESS						-- reviewed
+Action completed					-- reviewed
+--
+** RPL_INVALID_KEY					-- reviewed
+Invalid function key pressed				-- reviewed
+--
+** RPL_INVALID_CHOICE					-- reviewed
+Invalid choice						-- reviewed
+--
+** RPL_DB_EMPTY						-- reviewed
+RPL database is empty					-- reviewed
+--
+** RPL_DB_FULL						-- reviewed
+RPL database is full					-- reviewed
+--				
+** RPL_DB_LOCKED					-- reviewed
+RPL database locked. Use escape to quit			-- reviewed
+--
+** RPL_DB_CANNOT_BE_LOCKED				-- reviewed
+RPL database lock impossible   				-- reviewed	 
+--
+** RPL_NULL_CLS						-- reviewed
+ACID is required					-- reviewed
+--
+** RPL_INVALID_CLS					-- reviewed
+Invalid ACID						-- reviewed
+--
+** RPL_INVALID_DAY					-- reviewed
+Invalid day						-- reviewed
+--
+** RPL_DAY_NOT_IN_PERIOD				-- reviewed
+Day not within validity period				-- reviewed
+--
+** RPL_INVALID_DATE					-- reviewed
+Invalid date format					-- reviewed
+--
+** RPL_INVALID_TIME					-- reviewed
+Invalid time 						-- reviewed
+--
+** RPL_FROM_GREATER_THAN_UNTIL				-- reviewed
+Beginning date is after end date			-- reviewed
+--
+** RPL_NULL_PERIOD					-- reviewed
+Time period is required					-- reviewed
+--
+** RPL_OBSOLETE_PERIOD					-- reviewed
+Time period has expired					-- reviewed
+--
+** RPL_TMP_PERIOD_NOT_IN_VALID_PERIOD			-- reviewed
+Temp period not within validity period			-- reviewed
+--
+** RPL_INVALID_PERIOD_NOT_IN_VALID_PERIOD		-- reviewed
+Invalid period outside validity period			-- reviewed
+--
+** RPL_INVALID_AC_TYPE					-- reviewed
+Aircraft type not defined				-- reviewed
+--
+** RPL_INVALID_WTUR					-- reviewed
+Invalid Wake Turbulence Category			-- reviewed
+--
+** RPL_INVALID_TAS					-- reviewed
+Invalid True Air Speed					-- reviewed
+--
+** RPL_INVALID_RFL					-- reviewed
+Invalid RFL						-- reviewed
+--
+** RPL_INVALID_ROUTE					-- reviewed
+Error in route field					-- reviewed
+--
+** RPL_INVALID_FLIGHT_LEVEL_RANGE			-- reviewed
+Invalid flight level range				-- reviewed
+--
+** RPL_INVALID_AIRPORT					-- reviewed
+Airport code is not known				-- reviewed
+--
+** RPL_NO_SUCH_RPL					-- reviewed
+No RPL's with this criterion				-- reviewed
+--
+** RPL_NO_RPL_WITH_CLS					-- reviewed
+No RPL's for this ACID					-- reviewed
+--
+** RPL_NO_NXT_RPL_WITH_CLS				-- reviewed
+No next RPL for this ACID				-- reviewed
+--
+** RPL_NO_PRV_RPL_WITH_CLS				-- reviewed
+No previous RPL with this ACID				-- reviewed
+--
+** RPL_NO_OBSOLETE_RPL					-- reviewed
+No obsolete RPL's were found				-- reviewed
+--
+** RPL_NO_NXT_OBSOLETE_RPL				-- reviewed
+No next obsolete RPL					-- reviewed
+--
+** RPL_NO_PRV_OBSOLETE_RPL				-- reviewed
+No previous obsolete RPL				-- reviewed
+--
+** RPL_NO_INCOHERENT_RPL				-- reviewed
+No incoherent RPL's were found				-- reviewed
+--
+** RPL_NO_PRV_INCOHERENT_RPL				-- reviewed
+No previous incoherent RPL				-- reviewed
+--
+** RPL_NO_NXT_INCOHERENT_RPL				-- reviewed
+No next incoherent RPL					-- reviewed
+--
+** RPL_MODIFIED_RPL					-- reviewed
+RPL has been modified since your request		-- reviewed
+--
+** RPL_MODIFIED_OR_DELETED_RPL				-- reviewed
+RPL has been deleted					-- reviewed
+--
+** RPL_ACCESSIBLE_RPL					-- reviewed
+This RPL is now accessible				-- reviewed
+--
+** RPL_WAIT_RPL						-- reviewed
+Another user is modifying this RPL			-- reviewed
+--
+** RPL_SIMILAR_RPL					-- not ok
+Similar RPL : ~~~~~~ ~~~~~~ ~~~~~~~			-- not ok
+--
+** RPL_PRINTING_FAILED					-- reviewed
+Call TSM : RPL_PRINTING_FAILED				-- reviewed
+--
+** RPL_WRITING_FAILED					-- reviewed (SR)
+Call TSM : RPL_WRITING_FAILED				-- reviewed (SR)
+--
+** RPL_TAPE_NOT_MOUNTED					-- reviewed
+Call TSM : RPL_TAPE_NOT_MOUNTED 			-- reviewed
+--
+** RPL_TAPE_SECTOR_ERROR				-- reviewed (SR)
+Call TSM : RPL_TAPE_SECTOR_ERROR			-- reviewed (SR)
+--
+** RPL_TAPE_READ_ERROR					-- reviewed
+Call TSM : RPL_TAPE_READ_ERROR				-- reviewed
+--
+** RPL_TAPE_WRITE_ERROR					-- reviewed
+Call TSM : RPL_TAPE_WRITE_ERROR				-- reviewed
+--
+** RPL_RFPF_UNEXPECTED_EOF				-- reviewed (SR)
+Call TSM : RPL_RFPF_UNEXPECTED_EOF			-- reviewed (SR)
+--
+** RPL_RFPF_SENDER_SYNTAX_ERROR				-- reviewed (SR)
+Call TSM : RPL_RFPF_SENDER_SYNTAX_ERROR			-- reviewed (SR)
+--
+** RPL_RFPF_DEST_SYNTAX_ERROR				-- reviewed (SR)
+Call TSM : RPL_RFPF_DEST_SYNTAX_ERROR			-- reviewed (SR)
+--
+** RPL_RFPF_HEADER_SYNTAX_ERROR				-- reviewed (SR)
+Call TSM : RPL_RFPF_HEADER_SYNTAX_ERROR			-- reviewed (SR)
+--
+** RPL_RFPF_RPL_SYNTAX_ERROR				-- reviewed (SR)
+Call TSM : RPL_RFPF_RPL_SYNTAX_ERROR			-- reviewed (SR)
+--
+** RPL_RESTORE_NOT_NOW					-- reviewed
+Cannot restore. Database locked				-- reviewed
+--
+** RPL_UNKNOWN_RPL					-- not ok
+There is no similar RPL in the Database			-- not ok
+--
+** RPL_MISSING_DISTRIBUTED_FILE				-- reviewed
+Call TSM : RPL_MISSING_DISTRIBUTED_FILE			-- reviewed
+--
+** RPL_ERROR_COPYING_FILES				-- reviewed
+Call TSM : RPL_ERROR_COPYING_FILES			-- reviewed
+--
+** RPL_ERROR_IMPORT_DIRECTORY				-- reviewed
+Call TSM : RPL_ERROR_IMPORT_DIRECTORY			-- reviewed
+--
+** RPL_ERROR_IMPORT_FILES				-- reviewed
+Call TSM : RPL_ERROR_IMPORT_FILES			-- reviewed
+--
+** RPL_NO_NEXT_POSSIBLE					-- reviewed
+No next page						-- reviewed
+--
+** RPL_NO_PREVIOUS_POSSIBLE				-- reviewed
+No previous page					-- reviewed
+--
+** RPL_MISSING_PASSIVE_FILE				-- reviewed (SR)
+Call TSM : RPL_MISSING_PASSIVE_FILE			-- reviewed (SR)
+--
+** RPL_MANUAL_SWITCH_NOT_ALLOWED
+Manual switch not allowed in this state
+--
+** RPL_INVALID_PASSIVE_DATES
+Invalid passive file validity dates
+--
+** RPL_ERROR_IN_DB_SWITCH
+Call TSM : RPL_ERROR_IN_DB_SWITCH
+--
+** STE_DB_EMPTY
+STE database empty
+--
+** STE_DB_FULL
+STE database full
+--
+** STE_DB_LOCKED
+STE database locked, use <ESC> to quit
+--
+** STE_NO_SUCH_STE
+No STE with this criterion
+--
+** STE_NO_SUCH_STE_WITH_CLS			-- reviewed (SR)
+No STE with this ACID				-- reviewed (SR)
+--
+** STE_NO_NXT_STE_WITH_CLS			-- reviewed (SR)
+No next STE with this ACID			-- reviewed (SR)
+--
+** STE_NO_PRV_STE_WITH_CLS			-- reviewed (SR)
+No previous STE with this ACID			-- reviewed (SR)
+--
+** STE_NO_OBSOLETE_STE				-- reviewed (SR)
+There is no obsolete STE			-- reviewed (SR)
+--
+** STE_NO_NXT_OBSOLETE_STE			-- reviewed (SR)
+No next obsolete STE				-- reviewed (SR)
+--
+** STE_NO_PRV_OBSOLETE_STE			-- reviewed (SR)
+No previous obsolete STE			-- reviewed (SR)
+--
+** STE_NO_INCOHERENT_STE			-- reviewed (SR)
+There is no incoherent STE			-- reviewed (SR)
+--
+** STE_NO_NXT_INCOHERENT_STE			-- reviewed (SR)
+No next incoherent STE				-- reviewed (SR)
+--	
+** STE_NO_PRV_INCOHERENT_STE			-- reviewed (SR)
+No previous incoherent STE			-- reviewed (SR)
+--
+** STE_MODIFIED_STE				-- reviewed (SR)
+This STE has been modified			-- reviewed (SR)
+--
+** STE_MODIFIED_OR_DELETED_STE			-- reviewed (SR)
+This STE has been modified or deleted		-- reviewed (SR)
+--
+** STE_ACCESSIBLE_STE				-- reviewed (SR)
+This STE is now accessible			-- reviewed (SR)
+--
+** STE_WAIT_STE					-- reviewed (SR)
+Another user is modifying this STE		-- reviewed (SR)
+--
+** STE_SIMILAR_STE
+Similar STE : ~~~~~~ ~~~~~~ ~~~~~~~
+--
+** STE_TAPE_NOT_MOUNTED				-- reviewed (SR)
+Call TSM : STE_TAPE_NOT_MOUNTED			-- reviewed (SR)
+--
+** STE_UNKNOWN_STE				-- reviewed (SR)
+There is no similar STE in the database		-- reviewed (SR)
+--
+** STE_MISSING_DISTRIBUTED_FILE			-- reviewed (SR)
+Call TSM : STE_MISSING_DISTRIBUTED_FILE		-- reviewed (SR)
+--
+** STE_RFPF_SENDER_SYNTAX_ERROR			-- reviewed (SR)
+Call TSM : STE_RFPF_SENDER_SYNTAX_ERROR		-- reviewed (SR)
+--
+** STE_MISSING_PASSIVE_FILE			-- reviewed (SR)
+Call TSM : STE_MISSING_PASSIVE_FILE		-- reviewed (SR)
+--
+** FPL_HAS_NO_FLIGHT_DATA_TYPE			-- reviewed
+Call TSM : FPL_HAS_NO_FLIGHT_DATA_TYPE		-- reviewed (SR)
+--
+** FPL_ACT_ENTRY_TIME_OUTSIDE_WINDOW		-- not ok
+ACT entry time outside window			-- not ok
+--
+** FPL_FLIGHT_NOT_OUTSIDE_TAAATS                -- new
+Flight is currently not outside FDRG            -- new
+--
+** FPL_MILITARY_CENTERS_DO_NOT_MATCH            -- new
+Military center mismatch with entry fix         -- new
+--
+** AFTN_TRANSMISSION_BASE_IS_FULL		-- reviewed (SR)
+Call TSM: AFTN_TRANSMISSION_BASE_IS_FULL	-- reviewed (SR)
+--
+** FPL_HOLDING_FIX_NOT_IN_CONVERTED_ROUTE	-- not ok
+Holding fix has been skipped from route		-- not ok
+--
+** FPL_FLIGHT_NOT_IN_HOLD_STATE			-- reviewed
+Call TSM : FPL_FLIGHT_NOT_IN_HOLD_STATE		-- reviewed
+--
+** FPL_STATUS_DELAY_INVALID			-- reviewed
+Delay time format incorrect			-- reviewed
+--
+** TOO_MANY_FIXES_IN_DLA			-- reviewed
+Number of delay points exceeds 10		-- reviewed
+--
+** DELAY_TWICE_ON_SAME_POINT			-- new
+Same point appears twice in switch DLA/		-- new
+--
+** EXT_TO_FPL_FIFO_FULL				-- reviewed (SR)
+Call TSM : EXT_TO_FPL_FIFO_FULL			-- reviewed (SR)
+--
+** NOK						-- reviewed (SR)
+Call TSM : NOK					-- reviewed (SR)
+--
+** CMD_NOT_ALLOWED				-- not ok
+Command not allowed				-- not ok
+--
+** COPY_IN_PROGRESS				-- reviewed (SR)
+Request rejected : Copy in progress		-- reviewed (SR)
+--
+** NO_CONNECTION_WITH_TAPE_HANDLER		-- reviewed (SR)
+Call TSM:NO_CONNECTION_WITH_TAPE_HANDLER	-- reviewed (SR)
+--
+** UNABLE_TO_COMPOSE_DATA			-- reviewed (SR)
+Call TSM : UNABLE_TO_COMPOSE_DATA		-- reviewed (SR)
+--
+** TAPE_REQUEST					-- reviewed (SR)
+End of replay tape : Replace tape
+--
+** TAPE_NOT_WRITE_PROTECTED			-- reviewed (SR)
+Call TSM : TAPE_NOT_WRITE_PROTECTED		-- reviewed (SR)
+--
+--** TAPE_IS_LOCKED				-- reviewed (SR)
+--Request navbl : Tape is in use			-- reviewed (SR)
+--
+--** TAPE_ERROR					-- reviewed (SR)
+--Call TSM : TAPE_ERROR				-- reviewed (SR)
+--
+** NO_TAPE_ACCESS				-- reviewed (SR)
+Call TSM : NO_TAPE_ACCESS			-- reviewed (SR
+--
+** INCORRECT_VERSION				-- reviewed (SR)
+Call TSM : INCORRECT_VERSION			-- reviewed (SR)
+--
+** INCORRECT_TAPE				-- reviewed (SR)
+Call TSM : INCORRECT_TAPE inserted		-- reviewed (SR)
+--
+** TIME_IN_FUTURE				-- reviewed (SR)
+Replay time must be in the past			-- reviewed (SR)
+--
+** UNKNOWN_MESSAGE				-- reviewed (SR)
+Call TSM : UNKNOWN_MESSAGE(IPC)			-- reviewed (SR)
+--
+** ALREADY_ACTIVE				-- reviewed (SR)
+Immediate replay navbl: REC is busy		-- reviewed (SR)
+--
+** RDP_TRACK_AND_FPL_INV_COUPLING_CRITERIA	-- reviewed
+Coupling failed. Track or FDR cancelled		-- reviewed
+--
+** RDP_TRACK_AND_FPL_DIFFERENT_SSR_CODES	-- reviewed
+Coupling failed. SSR codes do not match		-- reviewed
+--
+** RDP_TRACK_AND_FPL_COUPLING_NOT_ESTABLISHED	-- reviewed
+Coupling failed. Track and FDR coupled		-- reviewed
+--
+** RDP_TRACK_NOT_COUPLED			-- reviewed
+Decoupling refused : Track not coupled		-- reviewed
+
+** RDP_DATA_PAGE_NOT_UPDATED	
+Data page update refused
+--
+** FPL_NO_LAM_RECEIVED_ON_EST			-- reviewed (SR)
+LAM not received for EST			-- reviewed (SR)
+--
+** FPL_NO_LAM_RECEIVED_ON_PAC			-- not ok
+LAM not received for PAC			-- not ok
+--
+--GM 04/06/97 PCR 879
+** FPL_NO_LAM_RECEIVED_ON_EMG                   -- reviewed (SR)
+LAM not received for EMG                        -- reviewed (SR)
+--
+** FPL_NO_LAM_RECEIVED_ON_MIS                   -- reviewed (SR)
+LAM not received for MIS                        -- reviewed (SR)
+--GM end
+--
+** FPL_NO_ACP_RECEIVED_ON_PAC			-- reviewed (SR)
+ACP not received for PAC			-- reviewed (SR)
+--
+** FPL_NO_ACP_RECEIVED_ON_EST			-- reviewed (SR)
+ACP not received for EST			-- reviewed (SR)
+--
+** FPL_ACP_SENT_ON_PAC                          -- reviewed (SR)
+ACP sent for PAC                                -- reviewed (SR)
+--
+** FPL_ACP_SENT_ON_EST                          -- reviewed (SR)
+ACP sent for EST                                -- reviewed (SR)
+--
+** FPL_ACP_NOT_ON_EST_OR_PAC                    -- reviewed (SR)
+ACP does not correspond to an EST or PAC        -- reviewed (SR)
+--
+** FPL_ACT_ALREADY_RECEIVED			-- to be suppressed
+FPL_ACT_ALREADY_RECEIVED			-- to be suppressed
+--
+** DATAPAGE_MESSAGE_NOT_PROCESSED		-- to be suppressed
+DATAPAGE_MESSAGE_NOT_PROCESSED			-- to be suppressed
+--
+** DATAPAGE_RECEIVED_IS_NOT_THE_LATEST_VERSION	-- reviewed
+Displayed data not current-Repeat action	-- reviewed
+--
+** RPL_INVALID_EXPORT_FILENAME			-- reviewed
+Export file name invalid			-- reviewed
+--
+** RPL_INVALID_IMPORT_FILENAME		        -- reviewed (SR)
+Import file name invalid	           	-- reviewed (SR)
+--
+** RPL_UNKNOWN_IMPORT_FILENAME           	-- reviewed (SR)
+Import file name unknown    			-- reviewed (SR)
+--           
+** RPL_EXISTING_EXPORT_FILENAME			-- reviewed
+File exists: <filename>/DEL to overwrite        -- reviewed (SR)
+--
+** INDICATOR_SECTION_ERROR			-- reviewed
+Call TSM: INDICATOR_SECTION_ERROR (GRIB) 	-- reviewed
+--
+**PRODUCT_DEFINITION_SECTION_ERROR		-- reviewed
+Call TSM: PRODUCT_DEFINITION_SECTION_...	-- reviewed
+--
+--** NOT_TAAATS_SECTOR				-- reviewed
+--Call TSM : INCORRECT GRIB SECTOR (not J)	-- reviewed
+--
+** NOT_TAAATS_DATA_TYPE				-- reviewed
+Call TSM : INCORRECT GRIB DATA TYPE             -- reviewed
+--
+** INCORRECT_NO_OF_FLIGHT_LEVELS		-- reviewed (SR)
+Call TSM : INCORRECT_NO_OF_FLIGHT_LEVELS	-- reviewed (SR)
+--
+** INVALID_WIND_DIRECTION			-- reviewed (SR)
+Call TSM : INVALID_WIND_DIRECTION (GRIB)	-- reviewed (SR)
+--
+** INVALID_WIND_SPEED				-- reviewed (SR)
+Call TSM : INVALID_WIND_SPEED (GRIB)		-- reviewed (SR)
+--
+** INVALID_TEMPERATURE				-- reviewed (SR)
+Call TSM : INVALID_TEMPERATURE			-- reviewed (SR)
+--
+** NOT_TAAATS_PRESSURE_ALT			-- reviewed
+Call TSM: INCORRECT PRESSURE ALTITUDE           -- reviewed
+--
+** NOT_TAAATS_FORECAST_PERIOD			-- reviewed
+Call TSM : INCORRECT FORECAST PERIOD            -- reviewed
+--
+** SECTION_UNIT_RESERVED_ERROR			-- reviewed
+Call TSM : SECTION_UNIT_RESERVED_ERROR		-- reviewed
+--
+** SECTION_OR_NOT_1ST_ORDER_PACKING		-- reviewed
+Call TSM : SECTION_OR_NOT_1ST_ORDER_...		-- reviewed
+--
+** BINARY_SECTION_ERROR				-- reviewed
+Call TSM : BINARY_SECTION_ERROR (GRIB)		-- reviewed
+--
+--The next error message can be used for a GRIB or METAR/SPEC
+--received meteo message
+--
+** ETX_NOT_FOUND				-- reviewed
+Call TSM : ETX_NOT_FOUND (METEO MESSAGE)        -- reviewed
+-- 
+--The next error message can be used for a GRIB or METAR/SPEC
+--received meteo message
+--
+** END_SECTION_ERROR				-- reviewed
+Call TSM : END_SECTION_ERROR (METEO)            -- reviewed
+--
+** STRING_7777_EXPECTED				-- reviewed
+Call TSM : STRING_7777_EXPECTED (GRIB)		-- reviewed
+--
+** UNEXPECTED_GRIB_MESSAGE_DELIVERY		-- reviewed
+Call TSM : UNEXPECTED_GRIB_MESSAGE_....		-- reviewed
+--
+** ILLEGAL_NUMBER_OF_PACKING_BITS		-- reviewed
+Call TSM: ILLEGAL_NUMBER_OF_PACKING_BITS	-- reviewed
+--
+** WMO_HEADER_ERROR				-- reviewed
+Call TSM : WMO_HEADER_ERROR (GRIB)		-- reviewed
+--
+** ASCII_H_EXPECTED_IN_WMO_HEADER		-- reviewed
+Call TSM: ASCII_H_EXPECTED_IN_WMO_HEADER	-- reviewed
+--
+** INCOMPATIBLE_PACKING_BITS			-- reviewed (SR)
+Call TSM: INCOMPATIBLE_PACKING_BITS		-- reviewed (SR)
+--
+** PROCESSING_OF_PREVIOUS_SECTO_NOT_FINISHED	-- to be suppressed
+PROCESSING OF PREV SECTOR NOT FINISHED		-- to be suppressed
+--
+** FLEX_IDENT_EXPECTED				-- reviewed
+Call TSM : FLEX_IDENT_EXPECTED			-- reviewed
+--
+** FLEXTRACK_NAME_ERR				-- reviewed
+Syntax error in flextrack name field		-- reviewed
+--
+** FLEXTRACK_GENERATION_TIME_NOT_FOUND		-- reviewed
+TDM generation time cannot be determined	-- reviewed
+--
+** FLEXTRACK_NUMBER_NOT_FOUND			-- reviewed
+Flextrack number cannot be determined		-- reviewed
+--
+** TERMINATION_TIME_ELAPSED			-- reviewed
+TDM invalid : Deactivation			-- reviewed
+--
+** UNKNOWN_FLEX_POINT_ROUTE			-- to be suppressed
+UNKNOWN FLEXTRACK ROUTE OR WAYPOINT		-- to be suppressed
+--
+** ILLEGAL_FLEX_TRACK_ROUTE			-- reviewed
+TDM rejected: FDRG entry point not found	-- reviewed
+--
+** FLEX_TRACK_NOT_CROSSING_FPSA			-- new
+TDM rejected: FPSA entry point not found	-- new
+--
+** REMARK_FIELD_EXPECTED			-- reviewed
+RMK field in TDM is required			-- reviewed
+--
+** FLEXTRACK_BASE_FULL				-- reviewed
+TDM rejected. Flextrack table is full		-- reviewed
+--
+** AMDT_TRACK_NOT_FOUND				-- reviewed
+AMDT rejected. Original TDM not found		-- reviewed
+--
+** AMDT_EXPECTED				-- reviewed
+Number indicates msg should be TDM AMDT		-- reviewed
+--
+** ACTIVATION_TIME_INTERVAL_SYNTAX_ERR		-- reviewed
+Syntax error in activation time field		-- reviewed
+--
+** ACTIVATION_TIME_NOT_FOUND			-- reviewed
+Flextrack activation time not found		-- reviewed
+--
+** TERMINATION_TIME_NOT_FOUND			-- reviewed
+Flextrack deactivation time not found		-- reviewed
+--
+** TRACK_WAYPOINT_NOT_FOUND			-- reviewed
+Flextrack route details not found		-- reviewed
+--
+** TRACK_ALT_NOT_FOUND				-- reviewed
+Flextrack altitude not found			-- reviewed
+--
+** TRACK_DIR_NOT_FOUND				-- to be suppressed
+FLEXTRACK ROUTE DIRECTION EXPECTED		-- to be suppressed
+--
+** TRACK_NO_ERR					-- reviewed
+Track number less than previous TDM		-- reviewed
+--
+** VALIDITY_PERIOD_TOO_LONG			-- reviewed
+Validity period exceeds 24 hours		-- reviewed
+--
+** FLEXTRACK_NOT_VALID				-- reviewed
+Flextrack in route is no longer valid		-- reviewed
+--
+** TRACKNAME_NOT_UNIQUE				-- reviewed
+Flextrack name already exists			-- reviewed
+--
+** POSITION_NOT_SECTORIZED			-- reviewed
+Position has not been allocated a sector	-- reviewed
+--
+** PROCESSING_OF_PREVIOUS_CONFIG_NOT_FINISHED	-- to be suppressed
+PROCESSING OF PREV CONFIG NOT FINISHED		-- to be suppressed
+--
+** FPCP_BASE_UNKNOWN_FPCP			-- not ok
+FPCP BASE UNKNOWN FPCP				-- not ok
+--
+** FPCP_BASE_DISK_ERROR				-- reviewed
+Call TSM : FPCP_BASE_DISK_ERROR			-- reviewed
+--
+** TAP_PROCESSING_FAILED			-- not ok
+TAP PROCESSING FAILED				-- not ok
+--
+** FPCP_INHIBITED				-- reviewed
+FPCP navbl: FPCP is inhibited			-- reviewed
+--
+** NOT_AN_FPCR_FLIGHT_PLAN			-- reviewed
+FPCP navbl: FDR is not in FPCP region		-- reviewed
+--
+** FPL_NOT_IN_COORDINATED_OR_ACTIVE_STATE	-- reviewed
+FPCP navbl: FDR is not coord or active		-- reviewed
+--
+** MANUAL_PROBE_ON_AUTOMATIC_FPCP_IS_NOT_ALLOWED -- reviewed (SR)
+FPCP navbl: Auto FPCP in progress		 -- reviewed (SR)
+--
+** FPCP_DOES_NOT_EXIST_IN_FPCP_DATABASE		-- not ok
+FPCP failed: not existing in database		-- not ok
+--
+** FPCP_DOES_ALREADY_EXISTS_IN_FPCP_DATABASE	-- reviewed (SR)
+FPCP failed: already in FPCF database		-- reviewed (SR)
+--
+** FPCP_TAP_ERRONEOUS_SPEED			-- reviewed (SR)
+FPCP rejected: Speed not appropriate		-- reviewed (SR)
+--
+** FPCP_TAP_ERRONEOUS_LEVEL			-- reviewed (SR)
+FPCP rejected: Level not appropriate		-- reviewed (SR)
+--
+** FPCP_TAP_ERRONEOUS_ROUTE			-- reviewed (SR)
+FPCP rejected: Error in route			-- reviewed (SR)
+--
+** FPCP_TAP_UNKNOWN_FLIGHT_PLAN			-- reviewed (SR)
+FPCP rejected: FDR not stored	 		-- reviewed (SR)
+--
+** MANUAL_CANCELLATION_NOT_ALLOWED_ON_AUTOMATIC_FPCP	-- reviewed (SR)
+FPCP rejected: manual cancel not allowed		-- reviewed (SR)
+--
+** STAR_ALONE_NOT_ALLOWED			-- reviewed
+Route must contain more than STAR		-- reviewed
+--
+** SID_ALONE_NOT_ALLOWED			-- reviewed
+Route must contain more than SID		-- reviewed
+--
+** CANNOT_ALLOCATE_A_STAR			-- reviewed
+Can't allocate a STAR due to DCT routing	-- reviewed
+--
+** CANNOT_ALLOCATE_A_SID			-- reviewed
+Can't allocate a SID due to DCT routing		-- reviewed
+--
+** PILOT_ATO_WHEN_COORDINATED_NOT_ALLOWED	-- reviewed
+Can't enter ETO until the FDR is active		-- reviewed
+--
+**PILOT_ETO_EARLIER_THAN_SYSTEM_ETO_ON_CURRENT	-- reviewed
+Time earlier than ATO on overflown point	-- reviewed
+--      
+**PILOT_ETO_EARLIER_THAN_PILOT_ETO_ON_CURRENT	-- reviewed
+Time earlier than ATO on overflown point	-- reviewed
+--     
+**PILOT_ETO_EARLIER_THAN_PREVIOUS_PILOT_ETO	-- reviewed
+Time earlier than preceeding pilot ETO		-- reviewed
+--      
+**PILOT_ETO_LATER_THAN_FOLLOWING_PILOT_ETO	-- reviewed
+Time later than subsequent pilot ETO		-- reviewed
+--      
+**PILOT_ETO_ON_CURRENT_CAN_NOT_BE_IN_FUTURE	-- reviewed
+Can't change ATO to a time in the future	-- reviewed
+-- 
+**DELAY_INCOMPATIBLE_WITH_PILOT_ESTIMATES	-- reviewed
+DLA too long. Can't meet next pilot ETO		-- reviewed
+--      
+**NO_SSR_CODE_ALLOCATED_TO_THE_FLIGHT		-- reviewed
+No SSR code was allocated. Code required  	-- reviewed
+--    
+**SYNTAX_INVALID_INDICATOR_POSITION		-- reviewed
+--Indicator used incorrectly in route field	-- reviewed
+Indicator used incorrectly in route		-- reviewed (SR)
+--    
+**SYNTAX_TWO_CONSECUTIVE_INDICATORS_DETECTED	-- reviewed
+Indicators cannot be used consecutively		-- reviewed
+-- 
+**TRUNCATION_NOT_ALLOWED_INSIDE_FDRG            -- reviewed (SR)
+Truncation not allowed inside FDRG              -- reviewed (SR)
+--   
+**INVALID_QNH_UPDATE_TIME_FROM_MMI		-- reviewed
+--DISPLAYED DATA IS NOT CURRENT- REPEAT ACTION	-- reviewed
+Displayed data is not current- REPEAT		-- Too Long P.W.
+--    
+**QNH_VALUE_OUT_OF_RANGE_FROM_MMI		-- reviewed
+QNH value is not valid ( 900-1080 )		-- reviewed 
+--    
+**INVALID_QNH_INDEX_FROM_MMI			-- reviewed
+Call TSM : INVALID_QNH_INDEX_FROM_MMI		-- reviewed
+--    
+**INVALID_QNH_SENSOR_NAME_FROM_MMI		-- reviewed
+Call TSM : INVALID_QNH_SENSOR_NAME (MMI)	-- reviewed
+--    
+**QNH_VALUE_OUT_OF_RANGE_FROM_SENSOR		-- reviewed
+QNH value is not valid ( 900-1080 ) 		-- reviewed
+--    
+**INVALID_QNH_SENSOR_NAME_FROM_SENSOR		-- reviewed
+Call TSM:INVALID_QNH_SENSOR_NAME (SENS) 	-- reviewed
+--    
+**INVALID_MSG_IDENT_FROM_SENSOR			-- reviewed
+Call TSM: INVALID_MSG_IDENT_FROM_SENSOR		-- reviewed
+--    
+**INVALID_QNH_MSG_LENGTH_FROM_FP		-- reviewed
+Call TSM: INVALID_QNH_MSG_LENGTH_FROM_FP	-- reviewed
+--    
+**AIP_INVALID_INCOMING_MESSAGE_TYPE		-- reviewed
+Call TSM: AIP_INVALID_INCOMING_MESSAGE..	-- reviewed
+--
+** AIP_INVALID_REDUNDANCY_DATA_ACTION		-- reviewed
+Call TSM: AIP_INVALID_REDUNDANCY_DATA_..	-- reviewed
+--
+** AIP_INVALID_REDUNDANCY_REPORT_ACTION		-- reviewed
+Call TSM: AIP_INVALID_REDUNDANCY_REPORT.	-- reviewed
+--
+**AIP_REQUEST_FROM_INVALID_LOGICAL_POSITION	-- reviewed
+Call TSM: AIP_REQUEST_FROM_INVALID_...		-- reviewed
+--
+**AIP_SENDING_MESSAGE_TO_OP_QUEUE_FAILED	-- reviewed (SR)
+Call TSM: AIP_SENDING_MESSAGE_TO_OP_Q..		-- reviewed (SR)
+--
+**AIP_SENDING_MESSAGE_TO_DAI_FAILED		-- reviewed (SR)
+Call TSM:AIP_SENDING_MESSAGE_TO_DAI_FAIL 	-- reviewed (SR)
+--
+**AIP_SENDING_REPORT_TO_FD_EX_FAILED		-- reviewed (SR)
+Call TSM:AIP_SENDING_REPORT_TO_FD_EX..		-- reviewed (SR)
+--
+**AIP_INVALID_DATABASE_UPDATE_TYPE		-- reviewed
+Call TSM: AIP_INVALID_DATABASE_UPDATE_TY	-- reviewed
+--
+**AIP_PRODUCT_REQUESTS_DBA_UNKNOWN_ITEM		-- reviewed
+Call TSM: AIP_PRODUCT_REQUESTS_DBA_UNK..	-- reviewed
+--
+**AIP_PRODUCT_REQUESTS_DBA_INSERT_DENIED	-- reviewed
+Call TSM: AIP_PRODUCT_REQUESTS_DBA_INS..	-- reviewed
+--
+**AIP_DAI_ATIS_DBA_IS_FULL			-- reviewed
+Message rejected. ATIS database full.		-- reviewed
+--
+**AIP_DAI_ATIS_DBA_DISK_IO_ERROR		-- reviewed
+Call TSM:AIP_DAI_ATIS_DBA_DISK_IO_ERROR		-- reviewed
+--
+**AIP_DAI_ATIS_DBA_UNKNOWN_ITEM			-- reviewed
+Call TSM:AIP_DAI_ATIS_DBA_UNKNOWN_ITEM		-- reviewed
+--
+**AIP_DAI_ATIS_DBA_INSERT_DENIED		-- reviewed
+Call TSM:AIP_DAI_ATIS_DBA_INSERT_DENIED		-- reviewed
+--
+**AIP_ATIS_PRODUCT_NOT_FOUND			-- reviewed
+ATIS product not defined			-- reviewed
+--
+**AIP_ATIS_MESSAGE_KEY_NOT_FOUND		-- reviewed
+Can't delete: Invalid ATIS message key		-- reviewed
+--
+**AIP_DAI_MET_DBA_IS_FULL			-- reviewed
+Message rejected. MET database full.		-- reviewed
+--
+**AIP_DAI_MET_DBA_DISK_IO_ERROR			-- reviewed
+Call TSM: AIP_DAI_MET_DBA_DISK_IO_ERROR		-- reviewed
+--
+**AIP_DAI_MET_DBA_UNKNOWN_ITEM			-- reviewed
+Call TSM: AIP_DAI_MET_DBA_UNKNOWN_ITEM		-- reviewed
+--
+**AIP_DAI_MET_DBA_INSERT_DENIED			-- reviewed
+Call TSM: AIP_DAI_MET_DBA_INSERT_DENIED		-- reviewed
+--
+**AIP_MET_PRODUCT_NOT_FOUND			-- reviewed
+MET product not defined				-- reviewed
+--
+**AIP_MET_MESSAGE_KEY_NOT_FOUND			-- reviewed
+Can't delete: Invalid MET message key		-- reviewed
+--
+**AIP_DAI_NOTAM_DBA_IS_FULL			-- reviewed
+Message rejected. NOTAM database full.		-- reviewed
+--
+**AIP_DAI_NOTAM_DBA_DISK_IO_ERROR		-- reviewed
+Call TSM:AIP_DAI_NOTAM_DBA_DISK_IO_ERROR	-- reviewed
+--
+**AIP_DAI_NOTAM_DBA_UNKNOWN_ITEM		-- reviewed
+Call TSM: AIP_DAI_NOTAM_DBA_UNKNOWN_ITEM	-- reviewed
+--
+**AIP_DAI_NOTAM_DBA_INSERT_DENIED		-- reviewed
+Call TSM:AIP_DAI_NOTAM_DBA_INSERT_DENIED	-- reviewed
+--
+**AIP_NOTAM_PRODUCT_NOT_FOUND			-- reviewed
+NOTAM product not defined 			-- reviewed
+--
+**AIP_NOTAM_MESSAGE_KEY_NOT_FOUND		-- reviewed
+Can't delete: Invalid NOTAM message key		-- reviewed
+--
+**AIP_INVALID_IMBEDED_MESSAGE_TYPE		-- reviewed
+Call TSM: AIP_INVALID_IMBEDED_MESSAGE...	-- reviewed
+--
+**AIP_CORRESPONDING_REQUEST_NOT_FOUND		-- reviewed
+Call TSM: AIP_CORRESPONDING_REQUEST_....	-- reviewed
+--
+**AIP_INVALID_LOAD_ACTION			-- reviewed
+Call TSM: AIP_INVALID_LOAD_ACTION		-- reviewed
+--
+**AIP_DAI_ATIS_DBA_INIT_FAILED			-- reviewed
+Call TSM: AIP_DAI_ATIS_DBA_INIT_FAILED		-- reviewed
+--
+**AIP_DAI_MET_DBA_INIT_FAILED			-- reviewed
+Call TSM: AIP_DAI_MET_DBA_INIT_FAILED		-- reviewed
+--
+**AIP_DAI_NOTAM_DBA_INIT_FAILED			-- reviewed
+Call TSM: AIP_DAI_NOTAM_DBA_INIT_FAILED		-- reviewed
+--
+**AIP_PRODUCT_REQUESTS_DBA_INIT_FAILED		-- reviewed
+Call TSM:AIP_PRODUCT_REQUESTS_DBA_INIT..	-- reviewed
+--
+**AIP_SENDING_DOWNLOAD_TO_OP_QUEUE_FAILED	-- reviewed
+Call TSM: AIP_SENDING_DOWNLOAD_TO_OP_Q..	-- reviewed
+--
+**AIP_SENDING_DOWNLOAD_ACK_TO_DAI_FAILED	-- reviewed (SR)
+Call TSM: AIP_SENDING_DOWNLOAD_ACK_TO...	-- reviewed (SR)
+--
+**AIP_PRODUCT_REQUESTS_DBA_IS_FULL		-- reviewed
+Request function busy, try again later		-- reviewed
+--
+**AIP_PRODUCT_REQUESTS_DBA_DISK_IO_ERROR	-- reviewed
+Call TSM:AIP_PRODUCT_REQUESTS_DBA_DISK..	-- reviewed
+--
+**AIP_REQUESTED_MET_PRODUCT_NOT_FOUND		-- reviewed
+MET product not held:Request in progress	-- reviewed
+--
+**AIP_REQUESTED_NOTAM_PRODUCT_NOT_FOUND		-- reviewed
+NOTAM not held: Request in progress		-- reviewed
+--
+**AIP_PRODUCT_REQUEST_REJECTED_DOWNLOAD_IN_PROGRESS	-- reviewed
+AIF request navbl: Download in progress.		-- reviewed
+--
+**AIP_SENDING_PRODUCT_REQUEST_TO_FD_EX_FAILED	-- reviewed
+Call TSM: AIP_SENDING_PRODUCT_REQUEST...	-- reviewed
+--
+**AIP_NAIPS_REQUEST_FAILED			-- reviewed
+Call TSM: AIP_NAIPS_REQUEST_FAILED		-- reviewed
+--
+**AIP_NAIPS_REQUEST_FAILED_NAIPS_LINE_NOT_OK	-- reviewed
+Link to NAIPS not available			-- reviewed
+--
+**AIP_SENDING_REQUEST_REPORT_TO_DAI_FAILED	-- reviewed (SR)
+Call TSM: AIP_SENDING_REQUEST_REPORT...		-- reviewed (SR)
+--
+**AIP_DAI_ATIS_DBA_MESSAGE_TO_BE_COPIED_NOT_FOUND	-- reviewed
+ATIS message no longer exists.				-- reviewed
+--
+**AIP_DAI_MET_DBA_MESSAGE_TO_BE_COPIED_NOT_FOUND	-- reviewed
+MET message no longer exists.				-- reviewed
+--
+**AIP_DAI_NOTAM_DBA_MESSAGE_TO_BE_COPIED_NOT_FOUND	-- reviewed
+NOTAM message no longer exists.				-- reviewed
+--
+**AIP_COPY_REQUEST_REJECTED_DOWNLOAD_IN_PROGRESS	-- reviewed
+AIF copy navbl: Download in progress.			-- reviewed
+--
+**AIP_SENDING_DOWNLOAD_REQUEST_TO_FD_EX_FAILED		-- reviewed
+Call TSM: AIP_SENDING_DOWNLOAD_REQUEST..		-- reviewed
+--
+**AIP_INVALID_DOWNLOAD_REQUEST				-- reviewed
+Call TSM: AIP_INVALID_DOWNLOAD_REQUEST			-- reviewed
+--
+**AIP_LIST_REINIT_REQUEST_REJECTED_DOWNLOAD_IN_PROGRESS	-- reviewed
+Call TSM: AIP_LIST_REINIT_REQUEST_REJ...		-- reviewed
+--
+** AIP_RAZ_LIST_MESSAGE_NOT_CORRECTLY_SENT		-- reviewed
+Call TSM: AIP_RAZ_LIST_MESSAGE_NOT_COR..		-- reviewed
+--
+**SYNTAX_INVALID_MESSAGE_TYPE				-- reviewed
+Call TSM: SYNTAX_INVALID_MESSAGE_TYPE			-- reviewed
+--
+**SYNTAX_INVALID_DATABASE_UPDATE_TYPE			-- reviewed
+Call TSM: SYNTAX_INVALID_DATABASE_UPD..			-- reviewed
+--
+**SYNTAX_INVALID_MESSAGE_KEY				-- reviewed
+Call TSM:SYNTAX_INVALID_MESSAGE_KEY			-- reviewed
+--
+**SYNTAX_INVALID_LOCATION				-- reviewed
+Call TSM: SYNTAX_INVALID_LOCATION			-- reviewed
+--
+**SYNTAX_INVALID_MESSAGE_TEXT_COUNT			-- reviewed
+Call TSM: SYNTAX_INVALID_MESSAGE_TEXT...		-- reviewed
+--
+**SYNTAX_INVALID_NOTAM_CATEGORY				-- reviewed
+Call TSM: SYNTAX_INVALID_NOTAM_CATEGORY			-- reviewed
+--
+**SYNTAX_INVALID_MET_CATEGORY				-- reviewed
+Call TSM: SYNTAX_INVALID_MET_CATEGORY			-- reviewed
+--
+**SYNTAX_INVALID_SEQUENCE_NUMBER			-- reviewed
+Call TSM: SYNTAX_INVALID_SEQUENCE_NUMBER		-- reviewed
+--
+**SYNTAX_INVALID_MORE_FLAG				-- reviewed
+Call TSM: SYNTAX_INVALID_MORE_FLAG			-- reviewed
+--
+**SYNTAX_INVALID_IMBEDED_MESSAGE_TYPE			-- reviewed
+Call TSM: SYNTAX_INVALID_IMBEDED_MESS... 		-- reviewed
+--
+**SYNTAX_INVALID_LOAD_ACTION				-- reviewed
+Call TSM: SYNTAX_INVALID_LOAD_ACTION			-- reviewed
+--
+**INVALID_DATE						-- reviewed
+Call TSM: INVALID_DATE					-- reviewed
+--
+**INVALID_TIME						-- reviewed
+Call TSM:INVALID_TIME					-- reviewed
+--
+** AIP_OP_QUEUE_BASE_MCQ_FULL				-- reviewed (SR)
+Warning : "AIQ" database full.				-- reviewed (SR)
+--
+** AIP_OP_QUEUE_BASE_MCQ_EMPTY				-- reviewed (SR)
+No messages are in the "AIQ".				-- reviewed (SR)
+--
+** AIP_OP_QUEUE_BASE_MCQ_BUSY_FULL			-- reviewed (SR)
+Call TSM:AIP_OP_QUEUE_BASE_MCQ_BUSY_FULL		-- reviewed (SR)	
+--
+** AIP_OP_QUEUE_ITEM_NOT_FOUND_IN_MCQ_BASE		-- reviewed (SR)
+Call TSM: AIP_OP_QUEUE_ITEM_NOT_FOUND...		-- reviewed (SR)			
+--
+** AIP_OP_QUEUE_ITEM_ALREADY_BUSY_IN_MCQ_BASE		-- reviewed (SR)
+Call TSM:AIP_OP_QUEUE_ITEM_ALREADY_BUSY			-- reviewed (SR)	
+--      
+**EMPTY_ROUTE_NOT_ALLOWED				-- reviewed
+Can't reroute ADEP DCT ADES via strip			-- reviewed     
+--
+**SYNTAX_ADES_EXPECTED					-- reviewed
+ADES cannot be determined				-- reviewed
+--
+**SYNTAX_ADEP_EXPECTED					-- reviewed
+ADEP cannot be determined				-- reviewed
+--
+**SWITCH_ALTN_REFUSED					-- reviewed
+ALTN/ refused. Alternate not "ZZZZ" 			-- reviewed   
+--
+**SWITCH_TYP_REFUSED					-- reviewed
+TYP/ refused. Aircaft type not "ZZZZ"  			-- reviewed 
+--
+**SWITCH_DEP_REFUSED					-- reviewed
+DEP/ refused. ADEP not "ZZZZ"	  			-- reviewed 
+--
+**SWITCH_DEST_REFUSED					-- reviewed
+DEST/ refused. ADES not "ZZZZ"	  			-- reviewed 
+--
+**SWITCH_DEP_EXPECTED					-- reviewed
+DEP/ not found in other info field 			-- reviewed     
+--
+**SWITCH_DEST_EXPECTED					-- reviewed						-- reviewed
+DEST/ not found in other info field 			-- reviewed     
+--
+**SWITCH_ALTN_EXPECTED					-- reviewed
+ALTN/ not found in other info field 			-- reviewed     
+--
+**SWITCH_TYP_EXPECTED					-- reviewed
+TYP/ not found in other info field 			-- reviewed     
+--
+**SPACE_EXPECTED_AFTER					-- reviewed
+Space expected after $					-- reviewed
+--
+**ERROR_IN_EXTRACTING					-- reviewed
+Error in field $					-- reviewed
+--
+**HOLDING_POINT_NOT_FOUND				-- reviewed
+Holding point not found					-- reviewed
+--
+**FPL_STATE_MUST_BE_FUTURE_TO_REPLACE
+FPL/PLN for FDR not in FUTURE state
+--
+**FPL_ROUTES_MUST_MATCH_TO_REPLACE
+FPL/PLN for FDR with different route
+--
+**RTN_ALN_RECEIVED_FOR_EXISTING_FDR
+RTN or ALN received for an existing FDR
+--
+**AIRPORT_MUST_BELONG_TO_FDRG
+Airport does not belong to the FDRG
+--
+**NO_PREFERENTIAL_ROUTE_DEFINED
+No pref. route between $ and $
+--
+**SYNTAX_DASH_SWITCH_EXPECTED				-- reviewed
+Call TSM : SYNTAX_DASH_SWITCH_EXPECTED			-- reviewed
+--
+**SYNTAX_DASH_SWITCH_UNEXPECTED				-- reviewed
+Call TSM : SYNTAX_DASH_SWITCH_UNEXPECTED		-- reviewed
+--
+**SYNTAX_COMPULSORY_SWITCH_MISSING			-- reviewed
+Call TSM: SYNTAX_COMPULSORY_SWITCH_MIS..		-- reviewed
+--
+**SYNTAX_UNEXPECTED_SWITCH				-- reviewed
+Call TSM: SYNTAX_UNEXPECTED_SWITCH			-- reviewed
+--
+**SYNTAX_SID_EXPECTED					-- reviewed
+SID is not defined					-- reviewed
+--
+**SYNTAX_STAR_EXPECTED					-- reviewed
+STAR is not defined					-- reviewed
+--
+**SYNTAX_DEPARTURE_RUNWAY_NAME_EXPECTED			-- reviewed
+Departure runway is not defined				-- reviewed
+--
+**SYNTAX_ARRIVAL_RUNWAY_NAME_EXPECTED			-- reviewed
+Arrival runway is not defined				-- reviewed
+--
+**SYNTAX_GATE_NAME_EXPECTED				-- reviewed
+Syntax error in Gate field				-- reviewed
+--
+**SYNTAX_PHYSICAL_CSU_NAME_EXPECTED			-- reviewed
+Call TSM: SYNTAX_PHYSICAL_CSU_NAME_EXP..		-- reviewed
+--
+**SYNTAX_UNKNOWN_PHYSICAL_CSU_NAME			-- reviewed
+Call TSM: SYNTAX_UNKNOWN_PHYSICAL_CSU.. 		-- reviewed
+--
+**SYNTAX_LOGICAL_POSITION_NAME_EXPECTED			-- reviewed
+Call TSM: SYNTAX_LOGICAL_POSITION_NAME..		-- reviewed
+--
+**SYNTAX_UNKNOWN_LOGICAL_POSITION_NAME			-- reviewed
+Call TSM: SYNTAX_UNKNOWN_LOGICAL_POS...			-- reviewed
+--
+**SYNTAX_INVALID_MMI_MESSAGE_TYP			-- reviewed
+Call TSM: SYNTAX_INVALID_MMI_MESSAGE_TYP		-- reviewed
+--
+**SYNTAX_INVALID_REFERENCE_FIX				-- reviewed
+Call TSM: SYNTAX_INVALID_REFERENCE_FIX			-- reviewed
+--
+**SYNTAX_INVALID_OPDATA					-- reviewed
+Too many or invalid chars in label data			-- reviewed
+--
+**SYNTAX_INVALID_GLOBAL_OPS_INFO			-- reviewed
+Too many or invalid chars in global data		-- reviewed
+--
+**SYNTAX_INVALID_ALERT_INHIBITION			-- reviewed
+Call TSM:SYNTAX_INVALID_ALERT_INHIBITION		-- reviewed
+--
+**SYNTAX_INVALID_STRIP_VERSION				-- reviewed
+Call TSM: SYNTAX_INVALID_STRIP_VERSION			-- reviewed
+--
+**FPL_CDEP_NOT_ALLOWED_FOR_RADAR_COUPLED_FLIGHT_PLAN	-- not ok
+CDEP refused for radar / ADS coupled FDR		-- not ok  
+--
+**FPL_CDEP_NOT_ALLOWED_FOR_INBOUND_FLIGHT_PLAN          -- new
+CDEP refused for inbound FDR                            -- new
+--
+**PDC_CPDLC_CONNECTION_IS_PENDING			-- reviewed (SR)
+PDC refused: CPDLC connection in progres		-- reviewed (SR)
+--
+**PDC_CPDLC_CONNECTION_NOT_ESTABLISHED			-- reviewed (SR)
+PDC refused: Flight not CPDLC connected 		-- reviewed (SR)
+--
+**PDC_INVALID_AIRCRAFT_STATE				-- new
+PDC refused: not preactive/ coordinated			-- new
+--
+**PDC_INVALID_AIRCRAFT_TYPE				-- reviewed (SR)
+PDC refused: Aircraft type is not valid			-- reviewed (SR)
+--
+**PDC_INVALID_CALLSIGN					-- reviewed (SR)
+PDC refused: ACID is invalid				-- reviewed (SR)
+--
+**PDC_INVALID_ADEP					-- reviewed (SR)
+PDC refused: ADEP is invalid				-- reviewed (SR)
+--
+**PDC_INVALID_ADES					-- reviewed (SR)
+PDC refused: ADES is invalid				-- reviewed (SR)
+--
+**PDC_INVALID_ETD					-- reviewed (SR)
+PDC refused: ETD is invalid				-- reviewed (SR)
+--
+**PDC_INVALID_RFL					-- reviewed (SR)
+PDC refused: RFL is invalid				-- reviewed (SR)
+--
+**PDC_INVALID_SID					-- reviewed (SR)
+PDC refused: SID designator is invalid			-- reviewed (SR)
+--
+**PDC_INVALID_FREQ					-- reviewed (SR)
+PDC refused: Dep freq is invalid			-- reviewed (SR)
+--
+**PDC_INVALID_ALT					-- reviewed (SR)
+PDC refused:Level restriction is invalid		-- reviewed (SR)
+--
+**PDC_UNKNOWN_ERROR					-- reviewed (SR)
+Call TSM : PDC_UNKNOWN_ERROR				-- reviewed (SR)
+--
+**CPD_CPDLC_CONNECTION_IS_NOT_ESTABLISHED		-- reviewed (SR)
+CPDLC navbl: A/craft not CPDLC connected		-- reviewed (SR)
+--
+**CPD_AIRCRAFT_IS_NOT_LOGGED_ON				-- reviewed (SR)
+CPDLC navbl: Aircraft is not logged on			-- reviewed (SR)
+--
+**CPD_CANNOT_SEND_CR_IN_THIS_STATE			-- reviewed (SR)
+CR refused: Connection pending or exists		-- reviewed (SR)
+--
+**CPD_MANUAL_ACK_NOT_ALLOWED_FOR_THIS_MESSAGE		-- reviewed (SR)
+Manual ACK navbl for this message			-- reviewed (SR)
+--
+**CPD_FDP_WILL_REFUSE_THIS_NEW_CLEARANCE		-- reviewed (SR)
+Clearance can't be sent: rejected by FDP		-- reviewed (SR)
+
+**CPD_UNABLE_TO_SEND_MESSAGE                            -- reviewed (SR)
+Call TSM: CPD_UNABLE_TO_SEND_MESSAGE			-- reviewed (SR)
+--
+-- new messages for V5.3
+--
+**SYNTAX_FLEX_ROUTE_TOO_LONG
+SYNTAX_FLEX_ROUTE_TOO_LONG
+
+**REPLAY_COMPOSITION_FAILED
+#1$
+
+**VR_TAPE_REQUEST
+R_TAPE_REQUEST
+
+**VR_ERROR
+VR_ERROR
+
+**INCORRECT_GAME_NR
+NCORRECT_GAME_NR
+
+**INCORRECT_EXERCISE_NR
+NCORRECT_EXERCISE_NR
+
+**INCORRECT_GROUP_NR
+INCORRECT_GROUP_N
+--
+**ILLEGAL_INTERSECTS_ON_FLEXTRACK                       -- NEW
+Flextrack cannot start & end at same pt                 -- NEW
+
+--
+** INVALID_CHANNEL_NR
+Invalid channel number                                  -- NEW
+--
+**METEO_DATA_OUTSIDE_FPSA                               -- NEW
+Metro data outside FPSA
+-- 
+--
+-- The following are added for CHENGDU dpr, BL 04/09/00
+--
+**FPL_NO_OLDI_LAM_RECEIVED_ON_ACT                       -- new
+No LAM received for ACT                                 -- new
+--
+**FPL_NO_OLDI_LAM_RECEIVED_ON_PAC                       -- new
+No LAM received for PAC                                 -- new
+--
+** FPL_NO_OLDI_LAM_RECEIVED                             -- new
+No LAM received for OLDI message                        -- new
+--
+--
+--
+** OLDI_LINE_FAILURE                                    -- new
+OLDI connection has failed                              -- new
+--
+** CANNOT_ENTER_FIR_AND_AFTN_ADDRESS                    -- new
+AFTN add. & FIR id cannot both be filled                -- new
+--
+--
+** FIR_NOT_CONNECTED_TO_OLDI_LINE                       -- new
+Cannot send message to non OLDI FIR                     -- new
+--
+** FIR_NAME_DEST_INVALID                                -- new
+Syntax error in FIR name                                -- new
+--
+--
+** SYNTAX_INVALID_VIP                                   -- new
+Invalid chars in VIP data                               -- new
+--
+--
+** UNABLE_TO_RESTORE_DATA                               -- reviewed (SR)
+Call TSM : Unable To Restore Data                       -- reviewed (SR)
+--
+--
+** UNABLE_TO_STOP_REPLAY                                -- reviewed (SR)
+Call TSM : Unable To Stop Replay                        -- reviewed (SR)
+--
+--
+** VR_ERROR_2                                           -- new
+Call TSM : Voice recorder TAPE ERROR                    -- NEW
+--
+** NO_VR_RESOURCE                                       -- new
+Call TSM : NO VR resource. local replay?                -- new
+--
+** VR_CONNECT_FAIL                                      -- new
+Call TSM : Unable to connect to VR                      -- new
+--
+--
+** VR_SET_TIME_FAIL                                     -- new
+Unable to find timestamp on VR                          -- new
+--
+--
+** TIME_IN_PAST                                         -- reviewed (SR)
+Replay time no longer available                         -- reviewed (SR)
+--
+** RECORDING_DISABLED                                   -- reviewed (SR)
+Recording disabled : Call TSM                           -- reviewed (SR)
+-- AIF ERROR MESSAGES
+--
+**NOT_MET_UNDEFINED_MESSAGE_TYPE
+NOT_MET_UNDEFINED_MESSAGE_TYPE
+--
+**NOT_MET_MESSAGE_IDENTIFIER_EXPECTED
+NOT_MET_MESSAGE_IDENTIFIER_EXPECTED
+--
+--
+**NOT_MET_INVALID_VALIDITY_PERIOD
+NOT_MET_INVALID_VALIDITY_PERIOD
+--
+--
+**NOT_MET_INVALID_OBSERVATION_TIME
+NOT_MET_INVALID_OBSERVATION_TIME
+--
+**NOT_MET_SEMANTIC_ERROR_IN_VALIDITY_PERIOD
+NOT_MET_SEMANTIC_ERR_VALIDITY_PERIOD
+--
+**NOT_MET_VALIDITY_PERIOD_EXPECTED
+NOT_MET_VALIDITY_PERIOD_EXPECTED
+--
+--
+**NOT_MET_OBSERVATION_TIME_EXPECTED
+NOT_MET_OBSERVATION_TIME_EXPECTED
+--
+--
+**NOT_MET_INVALID_DATE_SYNTAX
+NOT_MET_INVALID_DATE_SYNTAX
+--
+--
+**NOT_MET_UNEXPECTED_END_OF_MESSAGE
+NOT_MET_UNEXPECTED_END_OF_MESSAGE
+--
+--
+**NOT_MET_INVALID_MESSAGE_LENGTH
+NOT_MET_INVALID_MESSAGE_LENGTH
+--
+--
+**NOT_MET_AIRCRAFT_IDENTIFICATION_EXPECTED
+NOT_MET_AIRCRAFT_IDENTIFICATION_EXPECTED
+--
+**NOT_MET_AREA_DESIGNATOR_EXPECTED
+NOT_MET_AREA_DESIGNATOR_EXPECTED
+--
+--
+**NOT_MET_QNH_VALUE_NOT_FOUND
+NOT_MET_QNH_VALUE_NOT_FOUND
+--
+--
+**NOT_MET_INVALID_QNH_FORMAT
+NOT_MET_INVALID_QNH_FORMAT
+--
+--
+**NOT_MET_AERODROME_NAME_EXPECTED
+NOT_MET_AERODROME_NAME_EXPECTED
+--
+--
+**NOT_MET_AERODROME_NOT_FOUND
+NOT_MET_AERODROME_NOT_FOUND
+--
+--
+**NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_TAF
+NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_TAF
+--
+--
+**NOT_MET_METAR_BUNDLED_MISSING_BUNDLE_END
+NOT_MET_METAR_BUNDLED_MISSING_BUNDLE_END
+--
+--
+**MMI_NOT_MET_CREATE_REQUEST_INVALID_NOTAM_TYPE
+MMI_NOT_MET_CREATE_INVALID_NOTAM_TYPE
+--
+--
+**NOT_MET_INVALID_NOTAM_TYPE
+NOT_MET_INVALID_NOTAM_TYPE
+--
+--
+**NOT_MET_INVALID_NOTAM_NEW
+NOT_MET_INVALID_NOTAM_NEW
+--
+--
+**NOT_MET_SYNTAX_ERROR_IN_NOTAM_TYPE
+NOT_MET_SYNTAX_ERROR_IN_NOTAM_TYPE
+--
+--
+**NOT_MET_INVALID_ALTITUDES
+NOT_MET_INVALID_ALTITUDES
+--
+--
+**NOT_MET_INVALID_SERIES_NUMBER
+NOT_MET_INVALID_SERIES_NUMBER
+--
+--
+**NOT_MET_INVALID_LONGITUDE
+NOT_MET_INVALID_LONGITUDE
+--
+--
+**NOT_MET_INVALID_LATITUDE
+NOT_MET_INVALID_LATITUDE
+--
+--
+**NOT_MET_INVALID_QUALIFIER_FIELDS
+NOT_MET_INVALID_QUALIFIER_FIELDS
+--
+--
+**NOT_MET_INVALID_NOTAM_TEXT
+NOT_MET_INVALID_NOTAM_TEXT
+--
+--
+**NOT_MET_INVALID_FIR_SYNTAX
+NOT_MET_INVALID_FIR_SYNTAX
+--
+--
+**NOT_MET_INVALID_ICAO_LOCATION_INDICATOR_SYNTAX
+NOT_MET_INVALID_ICAO_LOCATION_IND_SYNTAX
+--
+--
+**NOT_MET_INVALID_FIELD
+NOT_MET_INVALID_FIELD
+--
+--
+**NOT_MET_INVALID_METEO_WATCH_OFFICE
+NOT_MET_INVALID_METEO_WATCH_OFFICE
+--
+--
+**NOT_MET_INVALID_SIGMET_SEQUENCE
+NOT_MET_INVALID_SIGMET_SEQUENCE
+--
+--
+**MMI_NOT_MET_INVALID_UPDATE_COMMAND_SYNTAX
+MMI_NOT_MET_INV_UPDATE_CMD_SYNTAX
+--
+--
+--
+**MMI_NOT_MET_UNKNOWN_UPDATE_COMMAND
+MMI_NOT_MET_UNKNOWN_UPDATE_COMMAND
+--
+--
+**NOT_MET_DATA_BASE_FULL
+NOT_MET_DATA_BASE_FULL
+--
+--
+**MMI_NOT_MET_MULTIPLE_MESSAGES_NOT_ALLOWED
+MMI_NOT_MET_MULTIPLE_MSGS_NOT_ALLOWED
+--
+--
+**MMI_NOT_MET_RECORD_IS_OUTDATED
+MMI_NOT_MET_RECORD_IS_OUTDATED
+--
+--
+**MMI_NOT_MET_DELETE_REQUEST_OF_EMPTY_RECORD
+MMI_NOT_MET_DELETE_OF_EMPTY_RECORD
+--
+--
+**MMI_NOT_MET_DELETE_REQUEST_OF_UNEXISTING_RECORD
+MMI_NOT_MET_DELETE_OF_UNEXISTING_RECORD
+--
+--
+**MMI_NOT_MET_UPDATE_REQUEST_OF_EMPTY_RECORD
+MMI_NOT_MET_UPDATE_OF_EMPTY_RECORD
+--
+--
+**MMI_NOT_MET_UPDATE_REQUEST_OF_UNEXISTING_RECORD
+MMI_NOT_MET_UPDATE_OF_UNEXISTING_RECORD
+--
+--
+**MMI_NOT_MET_UPDATE_REQUEST_DUPLICATES_AN_EXISTING_RECORD
+MMI_NOT_MET_UPDATE_DUPES_EXISTING_REC
+--
+--
+**MMI_NOT_MET_CREATE_REQUEST_OF_EXISTING_RECORD
+MMI_NOT_MET_CREATE_OF_EXISTING_RECORD
+--
+--
+**MMI_NOT_MET_CREATE_REQUEST_FOR_EXISTING_AREA_DESIGNATOR
+MMI_NOT_MET_CREATE_EXISTING_AREA_DESIG
+--
+--
+**MMI_NOT_MET_UPDATE_REQUEST_DUPLICATES_EXISTING_AREA_DESIGNATOR
+MMI_NOT_MET_UPDATE_DUPES_AREA_DESIG
+--
+**MMI_NOT_MET_UPDATE_REQUEST_CAN_NOT_CHANGE_NOTAM_TYPE
+MMI_NOT_MET_UPDATE_CANT_CHG_NOTAM_TYPE
+--
+--
+**MMI_NOT_MET_UPDATE_REQUEST_CAN_NOT_CHANGE_NOTAM_ID
+MMI_NOT_MET_UPDATE_CANT_CHANGE_NOTAM_ID
+--
+--
+**MMI_NOT_MET_UPDATE_REQUEST_CAN_NOT_CHANGE_PARENT_NOTAM_ID
+MMI_NOT_MET_UPD_CANT_CHG_PARENT_NOTAM_ID
+--
+--
+**MMI_NOT_MET_MESSAGE_NOT_FOUND
+MMI_NOT_MET_MESSAGE_NOT_FOUND
+--
+--
+**MTP_RECEIVED_EMPTY_STRING_FROM_MMI
+MTP_RECEIVED_EMPTY_STRING_FROM_MMI
+
+**INVALID_CLEARED_BLOCK_LEVEL
+INVALID_CLEARED_BLOCK_LEVEL
+
+**LAM_NOT_PROCESSED
+LAM_NOT_PROCESSED
+
+**REPLAY_PERIOD_UNAVAILABLE
+REPLAY_PERIOD_UNAVAILABLE
+
+**MMI_NOT_MET_INVALID_UPDATE_COMMAND
+MMI_NOT_MET_INVALID_UPDATE_COMMAND
+
+**MSG_RECEIVED_FOR_PREAC_FDR
+MSG_RECEIVED_FOR_PREAC_FDR
+
+**CHG_WITH_F18_MODIF
+CHG_WITH_F18_MODIF
+
+**SYNTAX_INVALID_FMF_FIELD
+SYNTAX_INVALID_FMF_FIELD
+--
+
+**PAST_FPL_BASE_DATA_BASE_FULL
+PAST_FPL_BASE_DATA_BASE_FULL
+--
+
+**PAST_FPL_BASE_DISK_ERROR
+PAST_FPL_BASE_DISK_ERROR
+--
+
+**PAST_FPL_BASE_UNKNOWN_FPL
+No History Record of FPL With This ACID
+--
+
+**PAST_FPL_BASE_INVALID_DATA
+PAST_FPL_BASE_INVALID_DATA
+--
+
+**PAST_FPL_BASE_NO_MORE_FPL
+PAST_FPL_BASE_NO_MORE_FPL
+--
+
+**PAST_FPL_BASE_OBSOLETE_DATA
+PAST_FPL_BASE_OBSOLETE_DATA
+--
+
+**DOF_DIFFERENT_FROM_FIELD_A
+DOF_DIFFERENT_FROM_FIELD_A
+--
+
+**FPL_NO_ICAO_LAM_RECEIVED_ON_EST
+LAM NOT RECEIVED FOR EST SENT
+--
+
+**FPL_NO_ICAO_LAM_RECEIVED_ON_CPL
+LAM NOT RECEIVED FOR CPL SENT
+--
+
+--**FPL_NOT_IN_PREACTIVE_COORD_ACTIVE_SUSPENDED_STATE
+--FPL NOT IN PRE COOR ACT OR SUSP STATE
+--
+
+**FPCF_FLIGHT_PLAN_DATABASE_FULL
+FPCF DATABASE FULL
+--
+
+--**QNH_UPDATED_FROM_INCORRECT_INTERFACE
+--QNH UPDATEED FROM INCORRECT INTERFACE
+
+**FPL_CDC_STORE_FULL
+Live FPL Stores Full
+--
+**FPL_CDC_NOT_FULL_BUT_NO_SPACES_AVAIL
+No records currently avail in FPL CDC
+--
+**AIDC_LINE_FAILURE
+AIDC_LINE_FAILURE
+--
+**RPL_MANUAL_SWITCH_REJECTED
+RPL_MANUAL_SWITCH_REJECTED
+--
+**SYNTAX_ALL_FIELD_14_ELEMENTS_EXPECTED
+SYNTAX_ALL_FIELD_14_ELEMENTS_EXPECTED
+--
+**ONLY_ONE_ICAO_L_ADDRESSEE_ALLOWED
+ONLY_ONE_ICAO_L_ADDRESSEE_ALLOWED
+--
+--**TIME_TOO_RECENT
+--TIME_TOO_RECENT
+--
+**INVALID_SERVER
+INVALID_SERVER
+--
+**BAD_AUDIO_TRACK
+BAD_AUDIO_TRACK
+
+--new add
+** FPL_CAN_NOT_INSERT_HLD_FIX_RETRY
+Could not insert Hold Fix-Retry
+-- Controller tries to insert a holding point right on top of a another point in the route (like a profile ie end-of-climb) point. Controller needs to try again
+
+**PILOT_ATO_WHEN_IN_HOLDING_NOT_ALLOWED
+PILOT_ATO_WHEN_IN_HOLDING_NOT_ALLOWED
+
+**FPL_NO_ICAO_LAM_RECEIVED
+FPL_NO_ICAO_LAM_RECEIVED
+
+**FPL_NO_AIDC_LAM_RECEIVED
+FPL_NO_AIDC_LAM_RECEIVED
+
+**FPL_NO_AIDC_LAM_RECEIVED_ON_CPL
+FPL_NO_AIDC_LAM_RECEIVED_ON_CPL
+
+**UNKNOWN_POINT_USED_AS_INTERSECTION
+UNKNOWN_POINT_USED_AS_INTERSECTION
+
+**FIRST_DEFINED_POINT_IS_WITHIN_FDRG
+FIRST_DEFINED_POINT_IS_WITHIN_FDRG
+
+**LEVEL_INCOMPATIBLE_WITH_ROUTE
+LEVEL_INCOMPATIBLE_WITH_ROUTE
+
+**ADEP_NOT_BELONGING_TO_ROUTE
+ADEP_NOT_BELONGING_TO_ROUTE
+
+**ADES_NOT_BELONGING_TO_ROUTE
+ADES_NOT_BELONGING_TO_ROUTE
+
+**AMHS_LINE_FAILURE
+AMHS_LINE_FAILURE
+
+**AMHS_ADDRESS_NOT_FOUND
+AMHS_ADDRESS_NOT_FOUND
+
+**ET_CONNECTION_FAILURE
+Eurocat-T connection failure
+
+**EXTS_CONNECTION_FAILURE
+EXTS_CONNECTION_FAILURE
+
+** FPL_PAPER_STRIPS_PRINTING_IN_PROGRESS
+FPL_PAPER_STRIPS_PRINTING_IN_PROGRESS
+
+** SYNTAX_CROSS_MODE_INVALID
+Crossing mode invalid
+
+**SYNTAX_DASH_FIELD23_EXPECTED
+SYNTAX_DASH_FIELD23_EXPECTED
+
+**CFMU_MSG_REJECTED_CTOT_INVALID
+CFMU_MSG_REJECTED_CTOT_INVALID
+
+**CFMU_MSG_PROC_NOT_FULL_OR_PARTIAL
+ CFMU_MSG_PROC_NOT_FULL_OR_PARTIAL
+
+**ONLY_ONE_ICAO_LAM_ADDRESS_ALLOWED
+ONLY_ONE_ICAO_LAM_ADDRESS_ALLOWED
+
+  Integration LI-01
+**ONLY_ADEXP_ADDRESSES_ALLOWED
+ONLY_ADEXP_ADDRESSES_ALLOWED
+
+**CPL_AND_EST_NOT_SENT_TO_ADEXP_CENTERS
+CPL_AND_EST_NOT_SENT_TO_ADEXP_CENTERS
+
+
+**SYNTAX_ADEXP_FPL_MESSAGE_EXPECTED
+SYNTAX_ADEXP_FPL_MESSAGE_EXPECTED
+
+**SYNTAX_INVALID_SENDING_UNIT
+SYNTAX_INVALID_SENDING_UNIT
+
+**SYNTAX_INVALID_ARCID
+SYNTAX_INVALID_ARCID
+
+**SYNTAX_DUPLICATE_ARCID
+SYNTAX_DUPLICATE_ARCID
+
+**SYNTAX_UNKNOWN_ADDRESS
+SYNTAX_UNKNOWN_ADDRESS
+
+**SYNTAX_INVALID_SSR_MODE
+SYNTAX_INVALID_SSR_MODE
+
+**SYNTAX_INVALID_SSR_CODE
+SYNTAX_INVALID_SSR_CODE
+
+**SYNTAX_INVALID_FLIGHT_RULES
+SYNTAX_INVALID_FLIGHT_RULES
+
+**SYNTAX_INVALID_FLIGHT_TYPE
+SYNTAX_INVALID_FLIGHT_TYPE
+
+**SYNTAX_INVALID_AIRCRAFT_MODEL
+SYNTAX_INVALID_AIRCRAFT_MODEL
+
+**SYNTAX_INVALID_WAKE_TURBULENCE_CATEGORY
+SYNTAX_INVALID_WAKE_TURBULENCE_CATEGORY
+
+**SYNTAX_INVALID_CNA_EQUIPMENT_DESIGNATOR
+SYNTAX_INVALID_CNA_EQUIPMENT_DESIGNATOR
+
+**SYNTAX_INVALID_SSR_EQUIPMENT_DESIGNATOR
+SYNTAX_INVALID_SSR_EQUIPMENT_DESIGNATOR
+
+**SYNTAX_INVALID_AERODROME_DESIGNATOR
+SYNTAX_INVALID_AERODROME_DESIGNATOR
+
+**SYNTAX_INVALID_DEPARTURE_AERODROME
+SYNTAX_INVALID_DEPARTURE_AERODROME
+
+**SYNTAX_INVALID_DESTINATION_AERODROME
+SYNTAX_INVALID_DESTINATION_AERODROME
+
+**SYNTAX_INVALID_ARRIVAL_AERODROME
+SYNTAX_INVALID_ARRIVAL_AERODROME
+
+**SYNTAX_EXPECTED_TIME_DESIGNATOR_NOT_FOUND
+SYNTAX_EXPECTED_TIME_DESIGNATOR
+
+**SYNTAX_TIME_DESIGNATOR_FOUND_WHEN_NOT_EXPECTED
+SYNTAX_TIME_DESIGNATOR_FOUND
+
+**SYNTAX_INVALID_TIME_DESIGNATOR
+SYNTAX_INVALID_TIME_DESIGNATOR
+
+**SYNTAX_MISSING_TIME_DESGNATOR
+SYNTAX_MISSING_TIME_DESGNATOR
+
+**SYNTAX_INVALID_BOUNDARY_POINT_DESIGNATOR
+SYNTAX_INVALID_BOUNDARY_POINT_DESIGNATOR
+
+**SYNTAX_INVALID_ENROUTE_POINT
+SYNTAX_INVALID_ENROUTE_POINT
+
+**SYNTAX_INVALID_LAT_LON_DESIGNATOR
+SYNTAX_INVALID_LAT_LON_DESIGNATOR
+
+**SYNTAX_INVALID_NAVAID_FIX
+SYNTAX_INVALID_NAVAID_FIX
+
+**SYNTAX_INVALID_LEVEL_DESIGNATOR
+SYNTAX_INVALID_LEVEL_DESIGNATOR
+
+**SYNTAX_MISSING_LEVEL_DESIGNATOR
+SYNTAX_MISSING_LEVEL_DESIGNATOR
+
+**SYNTAX_INVALID_SUPPLEMENTARY_CROSSING_DATA
+SYNTAX_INVALID_SUPPLEMENTARY
+
+**SYNTAX_INVALID_SUPPLEMENTARY_CROSSING_LEVEL
+SYNTAX_INVALID_SUPPLEMENTARY
+
+**SYNTAX_MISSING_SUPPLEMENTARY_CROSSING_LEVEL
+SYNTAX_MISSING_SUPPLEMENTAR
+
+**SYNTAX_INVALID_CROSSING_CONDITION
+SYNTAX_INVALID_CROSSING_CONDITION
+
+**SYNTAX_MISSING_CROSSING_CONDITION
+SYNTAX_MISSING_CROSSING_CONDITION
+
+**SYNTAX_INVALID_SPEED_LEVEL_DESIGNATOR
+SYNTAX_INVALID_SPEED_LEVEL_DESIGNATOR
+
+**SYNTAX_MISSING_SPEED_LEVEL_DESIGNATOR
+SYNTAX_MISSING_SPEED_LEVEL_DESIGNATOR
+
+**SYNTAX_INVALID_SPEED_DESIGNATOR
+SYNTAX_INVALID_SPEED_DESIGNATOR
+
+**SYNTAX_MISSING_SPEED_DESIGNATOR
+-SYNTAX_MISSING_SPEED_DESIGNATOR
+
+**SYNTAX_INVALID_ROUTE_ELEMENT_DESIGNATOR
+SYNTAX_INVALID_ROUTE_ELEMENT_DESIGNATOR
+
+**SYNTAX_INVALID_ATS_ROUTE_SIGNIFICANT_POINT_DESIGNATOR
+SYNTAX_INVALID_ATS_ROUTE_SIGNIFICANT
+
+**SYNTAX_INVALID_ATS_ROUTE_DESIGNATOR
+SYNTAX_INVALID_ATS_ROUTE_DESIGNATOR
+
+**SYNTAX_INVALID_SIGNIFICANT_POINT_DESIGNATOR
+SYNTAX_INVALID_SIGNIFICANT_POINT
+
+**SYNTAX_FLIGHT_RULES_INDICATOR_DOES_NOT_FOLLOW_SIGNIFICANT_POINT
+SYNTAX_FLIGHT_RULES_INDICATOR_DOES
+
+**SYNTAX_ADDITIONAL_DATA_FOLLOWS_TRUNCATION_INDICATOR
+SYNTAX_ADDITIONAL_DATA_FOLLOWS
+
+**SYNTAX_INCORRECT_CRUISE_CLIMB_FORMAT
+SYNTAX_INCORRECT_CRUISE_CLIMB_FORMAT
+
+**SYNTAX_CONFLICTING_DIRECTION
+SYNTAX_CONFLICTING_DIRECTION
+
+**SYNTAX_INVALID_OTHER_INFORMATION_ELEMENT
+SYNTAX_INVALID_OTHER_INFORMATION_ELEMENT
+
+**SYNTAX_INVALID_SUPPLEMENTARY_INFORMATION_ELEMENT
+SYNTAX_INVALID_SUPPLEMENTARY_INFORMATION
+
+**SYNTAX_INVALID_AMENDMENT_FIELD_DATA
+SYNTAX_INVALID_AMENDMENT_FIELD_DATA
+
+**SYNTAX_MISSING_FIELD
+SYNTAX_MISSING_FIELD
+
+**SYNTAX_MISSING_FIELD_AD
+SYNTAX_MISSING_FIELD_AD
+
+**SYNTAX_MISSING_FIELD_ADA
+SYNTAX_MISSING_FIELD_ADA
+
+**SYNTAX_MISSING_FIELD_ADARR
+SYNTAX_MISSING_FIELD_ADARR
+
+**SYNTAX_MISSING_FIELD_ADARRZ
+SYNTAX_MISSING_FIELD_ADARRZ
+
+**SYNTAX_MISSING_FIELD_ADD
+SYNTAX_MISSING_FIELD_ADD
+
+**SYNTAX_MISSING_FIELD_ADDR
+SYNTAX_MISSING_FIELD_ADDR
+
+**SYNTAX_MISSING_FIELD_ADEP
+SYNTAX_MISSING_FIELD_ADEP
+
+**SYNTAX_MISSING_FIELD_ADEPK
+SYNTAX_MISSING_FIELD_ADEPK
+
+**SYNTAX_MISSING_FIELD_ADEPOLD
+SYNTAX_MISSING_FIELD_ADEPOLD
+
+**SYNTAX_MISSING_FIELD_ADES
+SYNTAX_MISSING_FIELD_ADES
+
+**SYNTAX_MISSING_FIELD_ADESK
+SYNTAX_MISSING_FIELD_ADESK
+
+**SYNTAX_MISSING_FIELD_ADESOLD
+SYNTAX_MISSING_FIELD_ADESOLD
+
+**SYNTAX_MISSING_FIELD_ADEXPTXT
+SYNTAX_MISSING_FIELD_ADEXPTXT
+
+**SYNTAX_MISSING_FIELD_AFILDATA
+SYNTAX_MISSING_FIELD_AFILDATA
+
+**SYNTAX_MISSING_FIELD_AHEAD
+SYNTAX_MISSING_FIELD_AHEAD
+
+**SYNTAX_MISSING_FIELD_ALTNZ
+SYNTAX_MISSING_FIELD_ALTNZ
+
+**SYNTAX_MISSING_FIELD_ALTRNT1
+SYNTAX_MISSING_FIELD_ALTRNT1
+
+**SYNTAX_MISSING_FIELD_ALTRNT2
+SYNTAX_MISSING_FIELD_ALTRNT2
+
+**SYNTAX_MISSING_FIELD_AOBD
+SYNTAX_MISSING_FIELD_AOBD
+
+**SYNTAX_MISSING_FIELD_AOBT
+SYNTAX_MISSING_FIELD_AOBT
+
+**SYNTAX_MISSING_FIELD_ARCID
+SYNTAX_MISSING_FIELD_ARCID
+
+**SYNTAX_MISSING_FIELD_ARCIDK
+SYNTAX_MISSING_FIELD_ARCIDK
+
+**SYNTAX_MISSING_FIELD_ARCIDOLD
+SYNTAX_MISSING_FIELD_ARCIDOLD
+
+**SYNTAX_MISSING_FIELD_ARCTYP
+SYNTAX_MISSING_FIELD_ARCTYP
+
+**SYNTAX_MISSING_FIELD_ARPLNB
+SYNTAX_MISSING_FIELD_ARPLNB
+
+ **SYNTAX_MISSING_FIELD_ASPEED
+ SYNTAX_MISSING_FIELD_ASPEED
+
+ **SYNTAX_MISSING_FIELD_ATA
+ SYNTAX_MISSING_FIELD_ATA
+
+ **SYNTAX_MISSING_FIELD_ATD
+ SYNTAX_MISSING_FIELD_ATD
+
+ **SYNTAX_MISSING_FIELD_ATOT
+ SYNTAX_MISSING_FIELD_ATOT
+
+ **SYNTAX_MISSING_FIELD_ATSRT
+ SYNTAX_MISSING_FIELD_ATSRT
+
+ **SYNTAX_MISSING_FIELD_AWR
+ SYNTAX_MISSING_FIELD_AWR
+
+ **SYNTAX_MISSING_FIELD_CASSADDR
+ SYNTAX_MISSING_FIELD_CASSADDR
+
+ **SYNTAX_MISSING_FIELD_CEQPT
+ SYNTAX_MISSING_FIELD_CEQPT
+
+ **SYNTAX_MISSING_FIELD_CFL
+ SYNTAX_MISSING_FIELD_CFL
+
+ **SYNTAX_MISSING_FIELD_CHGRUL
+ SYNTAX_MISSING_FIELD_CHGRUL
+
+ **SYNTAX_MISSING_FIELD_COBD
+ SYNTAX_MISSING_FIELD_COBD
+
+ **SYNTAX_MISSING_FIELD_COBT
+ SYNTAX_MISSING_FIELD_COBT
+
+ **SYNTAX_MISSING_FIELD_COM
+ SYNTAX_MISSING_FIELD_COM
+
+ **SYNTAX_MISSING_FIELD_COMMENT
+ SYNTAX_MISSING_FIELD_COMMENT
+
+ **SYNTAX_MISSING_FIELD_CONDID
+ SYNTAX_MISSING_FIELD_CONDID
+
+ **SYNTAX_MISSING_FIELD_COORDATA
+ SYNTAX_MISSING_FIELD_COORDATA
+
+ **SYNTAX_MISSING_FIELD_COP
+ SYNTAX_MISSING_FIELD_COP
+
+ **SYNTAX_MISSING_FIELD_CRSCLIMB
+ SYNTAX_MISSING_FIELD_CRSCLIMB
+
+ **SYNTAX_MISSING_FIELD_CSTAT
+ SYNTAX_MISSING_FIELD_CSTAT
+
+ **SYNTAX_MISSING_FIELD_CTOD
+ SYNTAX_MISSING_FIELD_CTOD
+
+ **SYNTAX_MISSING_FIELD_CTOT
+ SYNTAX_MISSING_FIELD_CTOT
+
+ **SYNTAX_MISSING_FIELD_DAT
+ SYNTAX_MISSING_FIELD_DAT
+
+ **SYNTAX_MISSING_FIELD_DAYS
+ SYNTAX_MISSING_FIELD_DAYS
+
+ **SYNTAX_MISSING_FIELD_DAYSK
+ SYNTAX_MISSING_FIELD_DAYSK
+
+**SYNTAX_MISSING_FIELD_DAYSOLD
+ SYNTAX_MISSING_FIELD_DAYSOLD
+
+ **SYNTAX_MISSING_FIELD_DCT
+ SYNTAX_MISSING_FIELD_DCT
+
+ **SYNTAX_MISSING_FIELD_DELAYS
+ SYNTAX_MISSING_FIELD_DELAYS
+
+ **SYNTAX_MISSING_FIELD_DEPZ
+ SYNTAX_MISSING_FIELD_DEPZ
+
+ **SYNTAX_MISSING_FIELD_DESC
+ SYNTAX_MISSING_FIELD_DESC
+
+ **SYNTAX_MISSING_FIELD_DESTZ
+ SYNTAX_MISSING_FIELD_DESTZ
+
+ **SYNTAX_MISSING_FIELD_EETFIR
+ SYNTAX_MISSING_FIELD_EETFIR
+
+ **SYNTAX_MISSING_FIELD_EETLAT
+ SYNTAX_MISSING_FIELD_EETLAT
+
+ **SYNTAX_MISSING_FIELD_EETLONG
+ SYNTAX_MISSING_FIELD_EETLONG
+
+ **SYNTAX_MISSING_FIELD_EETPT
+ SYNTAX_MISSING_FIELD_EETPT
+
+ **SYNTAX_MISSING_FIELD_ENDTIME
+ SYNTAX_MISSING_FIELD_ENDTIME
+
+ **SYNTAX_MISSING_FIELD_ENTRYDATA
+ SYNTAX_MISSING_FIELD_ENTRYDATA
+
+ **SYNTAX_MISSING_FIELD_EOBD
+ SYNTAX_MISSING_FIELD_EOBD
+
+ **SYNTAX_MISSING_FIELD_EOBDK
+ SYNTAX_MISSING_FIELD_EOBDK
+
+ **SYNTAX_MISSING_FIELD_EOBDOLD
+ SYNTAX_MISSING_FIELD_EOBDOLD
+
+ **SYNTAX_MISSING_FIELD_EOBT
+ SYNTAX_MISSING_FIELD_EOBT
+
+ **SYNTAX_MISSING_FIELD_EOBTK
+ SYNTAX_MISSING_FIELD_EOBTK
+
+ **SYNTAX_MISSING_FIELD_EOBTOLD
+ SYNTAX_MISSING_FIELD_EOBTOLD
+
+ **SYNTAX_MISSING_FIELD_ERRFIELD
+ SYNTAX_MISSING_FIELD_ERRFIELD
+
+ **SYNTAX_MISSING_FIELD_ERROR
+ SYNTAX_MISSING_FIELD_ERROR
+
+**SYNTAX_MISSING_FIELD_ESTDATA
+ SYNTAX_MISSING_FIELD_ESTDATA
+
+ **SYNTAX_MISSING_FIELD_ETOD
+ SYNTAX_MISSING_FIELD_ETOD
+
+ **SYNTAX_MISSING_FIELD_ETOT
+ SYNTAX_MISSING_FIELD_ETOT
+
+ **SYNTAX_MISSING_FIELD_EXTADDR
+ SYNTAX_MISSING_FIELD_EXTADDR
+
+ **SYNTAX_MISSING_FIELD_FILENB
+ SYNTAX_MISSING_FIELD_FILENB
+
+ **SYNTAX_MISSING_FIELD_FILTIM
+ SYNTAX_MISSING_FIELD_FILTIM
+
+ **SYNTAX_MISSING_FIELD_FILRTE
+ SYNTAX_MISSING_FIELD_FILRTE
+
+ **SYNTAX_MISSING_FIELD_FLBAND
+ SYNTAX_MISSING_FIELD_FLBAND
+
+ **SYNTAX_MISSING_FIELD_FLTRUL
+ SYNTAX_MISSING_FIELD_FLTRUL
+
+ **SYNTAX_MISSING_FIELD_FLTTYP
+ SYNTAX_MISSING_FIELD_FLTTYP
+
+ **SYNTAX_MISSING_FIELD_FMP
+ SYNTAX_MISSING_FIELD_FMP
+
+ **SYNTAX_MISSING_FIELD_FMPLIST
+ SYNTAX_MISSING_FIELD_FMPLIST
+
+ **SYNTAX_MISSING_FIELD_FPLSTAT
+ SYNTAX_MISSING_FIELD_FPLSTAT
+
+ **SYNTAX_MISSING_FIELD_FREQ
+ SYNTAX_MISSING_FIELD_FREQ
+
+ **SYNTAX_MISSING_FIELD_FSTDAY
+ SYNTAX_MISSING_FIELD_FSTDAY
+
+ **SYNTAX_MISSING_FIELD_FURTHRTE
+ SYNTAX_MISSING_FIELD_FURTHRTE
+
+ **SYNTAX_MISSING_FIELD_GEO
+ SYNTAX_MISSING_FIELD_GEO
+
+ **SYNTAX_MISSING_FIELD_IFP
+ SYNTAX_MISSING_FIELD_IFP
+
+ **SYNTAX_MISSING_FIELD_IFPDLIST
+ SYNTAX_MISSING_FIELD_IFPDLIST
+
+ **SYNTAX_MISSING_FIELD_IFPDSLIST
+ SYNTAX_MISSING_FIELD_IFPDSLIST
+
+
+ **SYNTAX_MISSING_FIELD_IFPLID
+ SYNTAX_MISSING_FIELD_IFPLID
+
+ **SYNTAX_MISSING_FIELD_IFPSMOD
+ SYNTAX_MISSING_FIELD_IFPSMOD
+
+ **SYNTAX_MISSING_FIELD_IFPURESP
+ SYNTAX_MISSING_FIELD_IFPURESP
+
+ **SYNTAX_MISSING_FIELD_IGNORE
+ SYNTAX_MISSING_FIELD_IGNORE
+
+ **SYNTAX_MISSING_FIELD_IOBD
+ SYNTAX_MISSING_FIELD_IOBD
+
+ **SYNTAX_MISSING_FIELD_IOBT
+ SYNTAX_MISSING_FIELD_IOBT
+
+ **SYNTAX_MISSING_FIELD_LACDR
+ SYNTAX_MISSING_FIELD_LACDR
+
+ **SYNTAX_MISSING_FIELD_LATSA
+ SYNTAX_MISSING_FIELD_LATSA
+
+  **SYNTAX_MISSING_FIELD_LCATSRTE
+ SYNTAX_MISSING_FIELD_LCATSRTE
+
+ **SYNTAX_MISSING_FIELD_LFIR
+ SYNTAX_MISSING_FIELD_LFIR
+
+ **SYNTAX_MISSING_FIELD_LRAR
+ SYNTAX_MISSING_FIELD_LRAR
+
+ **SYNTAX_MISSING_FIELD_LRCA
+ SYNTAX_MISSING_FIELD_LRCA
+
+ **SYNTAX_MISSING_FIELD_LSTDAY
+ SYNTAX_MISSING_FIELD_LSTDAY
+
+ **SYNTAX_MISSING_FIELD_MACH
+ SYNTAX_MISSING_FIELD_MACH
+
+ **SYNTAX_MISSING_FIELD_MESVALPERIOD
+ SYNTAX_MISSING_FIELD_MESVALPERIOD
+
+ **SYNTAX_MISSING_FIELD_MINLINEUP
+ SYNTAX_MISSING_FIELD_MINLINEUP
+
+ **SYNTAX_MISSING_FIELD_MODIFNB
+ SYNTAX_MISSING_FIELD_MODIFNB
+
+ **SYNTAX_MISSING_FIELD_MSGREF
+ SYNTAX_MISSING_FIELD_MSGREF
+
+ **SYNTAX_MISSING_FIELD_MSGSUM
+ SYNTAX_MISSING_FIELD_MSGSUM
+
+ **SYNTAX_MISSING_FIELD_MSGTXT
+ SYNTAX_MISSING_FIELD_MSGTXT
+
+ **SYNTAX_MISSING_FIELD_MSGTYP
+ SYNTAX_MISSING_FIELD_MSGTYP
+
+ **SYNTAX_MISSING_FIELD_NAV
+ SYNTAX_MISSING_FIELD_NAV
+
+ **SYNTAX_MISSING_FIELD_NBARC
+ SYNTAX_MISSING_FIELD_NBARC
+
+ **SYNTAX_MISSING_FIELD_NBRFPD
+ SYNTAX_MISSING_FIELD_NBRFPD
+
+ **SYNTAX_MISSING_FIELD_NEWCTOT
+ SYNTAX_MISSING_FIELD_NEWCTOT
+
+ **SYNTAX_MISSING_FIELD_NEWENDTIME
+ SYNTAX_MISSING_FIELD_NEWENDTIME
+
+ **SYNTAX_MISSING_FIELD_NEWEOBD
+ SYNTAX_MISSING_FIELD_NEWEOBD
+
+ **SYNTAX_MISSING_FIELD_NEWEOBT
+ SYNTAX_MISSING_FIELD_NEWEOBT
+
+ **SYNTAX_MISSING_FIELD_NEWPTOT
+  SYNTAX_MISSING_FIELD_NEWPTOT
+
+ **SYNTAX_MISSING_FIELD_NEWRTE
+ SYNTAX_MISSING_FIELD_NEWRTE
+
+ **SYNTAX_MISSING_FIELD_NEWSTARTTIME
+ SYNTAX_MISSING_FIELD_NEWSTARTTIME
+
+ **SYNTAX_MISSING_FIELD_OLDMSG
+ SYNTAX_MISSING_FIELD_OLDMSG
+
+ **SYNTAX_MISSING_FIELD_OPADDR
+ SYNTAX_MISSING_FIELD_OPADDR
+
+ **SYNTAX_MISSING_FIELD_OPR
+ SYNTAX_MISSING_FIELD_OPR
+
+ **SYNTAX_MISSING_FIELD_ORGMSG
+ SYNTAX_MISSING_FIELD_ORGMSG
+
+ **SYNTAX_MISSING_FIELD_ORGN
+ SYNTAX_MISSING_FIELD_ORGN
+
+ **SYNTAX_MISSING_FIELD_ORGNID
+ SYNTAX_MISSING_FIELD_ORGNID
+
+  **SYNTAX_MISSING_FIELD_ORGRTE
+ SYNTAX_MISSING_FIELD_ORGRTE
+
+ **SYNTAX_MISSING_FIELD_ORIGIN
+ SYNTAX_MISSING_FIELD_ORIGIN
+
+ **SYNTAX_MISSING_FIELD_ORIGINDT
+ SYNTAX_MISSING_FIELD_ORIGINDT
+
+ **SYNTAX_MISSING_FIELD_PART
+ SYNTAX_MISSING_FIELD_PART
+
+ **SYNTAX_MISSING_FIELD_PER
+ SYNTAX_MISSING_FIELD_PER
+
+ **SYNTAX_MISSING_FIELD_POSITION
+ SYNTAX_MISSING_FIELD_POSITION
+
+ **SYNTAX_MISSING_FIELD_PREVARCID
+ SYNTAX_MISSING_FIELD_PREVARCID
+
+ **SYNTAX_MISSING_FIELD_PREVSSRCODE
+ SYNTAX_MISSING_FIELD_PREVSSRCODE
+
+ **SYNTAX_MISSING_FIELD_PROPFL
+ SYNTAX_MISSING_FIELD_PROPFL
+
+ **SYNTAX_MISSING_FIELD_PTOT
+ SYNTAX_MISSING_FIELD_PTOT
+
+ **SYNTAX_MISSING_FIELD_QRORGN
+ SYNTAX_MISSING_FIELD_QRORGN
+
+ **SYNTAX_MISSING_FIELD_RALT
+ SYNTAX_MISSING_FIELD_RALT
+
+ **SYNTAX_MISSING_FIELD_RATE
+ SYNTAX_MISSING_FIELD_RATE
+
+ **SYNTAX_MISSING_FIELD_RATEPDLST
+ SYNTAX_MISSING_FIELD_RATEPDLST
+
+ **SYNTAX_MISSING_FIELD_REASON
+ SYNTAX_MISSING_FIELD_REASON
+
+ **SYNTAX_MISSING_FIELD_REF
+ SYNTAX_MISSING_FIELD_REF
+
+ **SYNTAX_MISSING_FIELD_REFDATA
+ SYNTAX_MISSING_FIELD_REFDATA
+
+ **SYNTAX_MISSING_FIELD_REG
+ SYNTAX_MISSING_FIELD_REG
+
+ **SYNTAX_MISSING_FIELD_REGCAUSE
+ SYNTAX_MISSING_FIELD_REGCAUSE
+
+ **SYNTAX_MISSING_FIELD_REGLOC
+ SYNTAX_MISSING_FIELD_REGLOC
+
+ **SYNTAX_MISSING_FIELD_REGUL
+ SYNTAX_MISSING_FIELD_REGUL
+
+ **SYNTAX_MISSING_FIELD_REJCTOT
+ SYNTAX_MISSING_FIELD_REJCTOT
+
+ **SYNTAX_MISSING_FIELD_RELEASE
+ SYNTAX_MISSING_FIELD_RELEASE
+
+**SYNTAX_MISSING_FIELD_RENAME
+ SYNTAX_MISSING_FIELD_RENAME
+
+ **SYNTAX_MISSING_FIELD_RESPBY
+ SYNTAX_MISSING_FIELD_RESPBY
+
+ **SYNTAX_MISSING_FIELD_RFL
+ SYNTAX_MISSING_FIELD_RFL
+
+ **SYNTAX_MISSING_FIELD_RFP
+ SYNTAX_MISSING_FIELD_RFP
+
+ **SYNTAX_MISSING_FIELD_RFPDLIST
+ SYNTAX_MISSING_FIELD_RFPDLIST
+
+ **SYNTAX_MISSING_FIELD_RFPDSLIST
+ SYNTAX_MISSING_FIELD_RFPDSLIST
+
+ **SYNTAX_MISSING_FIELD_RIF
+ SYNTAX_MISSING_FIELD_RIF
+
+ **SYNTAX_MISSING_FIELD_RMK
+  SYNTAX_MISSING_FIELD_RMK
+
+  **SYNTAX_MISSING_FIELD_ROUTE
+  SYNTAX_MISSING_FIELD_ROUTE
+
+  **SYNTAX_MISSING_FIELD_RRTEFROM
+  SYNTAX_MISSING_FIELD_RRTEFROM
+
+  **SYNTAX_MISSING_FIELD_RRTEREF
+  SYNTAX_MISSING_FIELD_RRTEREF
+
+  **SYNTAX_MISSING_FIELD_RRTETO
+ SYNTAX_MISSING_FIELD_RRTETO
+
+ **SYNTAX_MISSING_FIELD_RTEPTS
+ SYNTAX_MISSING_FIELD_RTEPTS
+
+ **SYNTAX_MISSING_FIELD_RVR
+ SYNTAX_MISSING_FIELD_RVR
+
+ **SYNTAX_MISSING_FIELD_RVRCOND
+ SYNTAX_MISSING_FIELD_RVRCOND
+
+ **SYNTAX_MISSING_FIELD_RVRPERIOD
+ SYNTAX_MISSING_FIELD_RVRPERIOD
+
+ **SYNTAX_MISSING_FIELD_SECTOR
+ SYNTAX_MISSING_FIELD_SECTOR
+
+ **SYNTAX_MISSING_FIELD_SEL
+ SYNTAX_MISSING_FIELD_SEL
+
+ **SYNTAX_MISSING_FIELD_SENDTO
+ SYNTAX_MISSING_FIELD_SENDTO
+
+ **SYNTAX_MISSING_FIELD_SEQPT
+ SYNTAX_MISSING_FIELD_SEQPT
+
+**SYNTAX_MISSING_FIELD_SID
+ SYNTAX_MISSING_FIELD_SID
+
+ **SYNTAX_MISSING_FIELD_SPEED
+ SYNTAX_MISSING_FIELD_SPEED
+
+ **SYNTAX_MISSING_FIELD_SPLA
+ SYNTAX_MISSING_FIELD_SPLA
+
+ **SYNTAX_MISSING_FIELD_SPLADDR
+ SYNTAX_MISSING_FIELD_SPLADDR
+
+ **SYNTAX_MISSING_FIELD_SPLC
+ SYNTAX_MISSING_FIELD_SPLC
+
+ **SYNTAX_MISSING_FIELD_SPLDCAP
+ SYNTAX_MISSING_FIELD_SPLDCAP
+
+ **SYNTAX_MISSING_FIELD_SPLDCOL
+ SYNTAX_MISSING_FIELD_SPLDCOL
+
+ **SYNTAX_MISSING_FIELD_SPLDCOV
+ SYNTAX_MISSING_FIELD_SPLDCOV
+
+ **SYNTAX_MISSING_FIELD_SPLDNB
+ SYNTAX_MISSING_FIELD_SPLDNB
+
+ **SYNTAX_MISSING_FIELD_SPLE
+ SYNTAX_MISSING_FIELD_SPLE
+
+ **SYNTAX_MISSING_FIELD_SPLJ
+ SYNTAX_MISSING_FIELD_SPLJ
+
+ **SYNTAX_MISSING_FIELD_SPLN
+ SYNTAX_MISSING_FIELD_SPLN
+
+ **SYNTAX_MISSING_FIELD_SPLP
+ SYNTAX_MISSING_FIELD_SPLP
+
+ **SYNTAX_MISSING_FIELD_SPLR
+ SYNTAX_MISSING_FIELD_SPLR
+
+ **SYNTAX_MISSING_FIELD_SPLS
+ SYNTAX_MISSING_FIELD_SPLS
+
+ **SYNTAX_MISSING_FIELD_SRC
+ SYNTAX_MISSING_FIELD_SRC
+
+ **SYNTAX_MISSING_FIELD_SSRCODE
+ SYNTAX_MISSING_FIELD_SSRCODE
+
+ **SYNTAX_MISSING_FIELD_STAR
+ SYNTAX_MISSING_FIELD_STAR
+
+ **SYNTAX_MISSING_FIELD_STARTTIME
+ SYNTAX_MISSING_FIELD_STARTTIME
+
+ **SYNTAX_MISSING_FIELD_STAY
+ SYNTAX_MISSING_FIELD_STAY
+
+ **SYNTAX_MISSING_FIELD_STAYINFO
+ SYNTAX_MISSING_FIELD_STAYINFO
+
+ **SYNTAX_MISSING_FIELD_STS
+ SYNTAX_MISSING_FIELD_STS
+
+ **SYNTAX_MISSING_FIELD_SUBMTYPE
+ SYNTAX_MISSING_FIELD_SUBMTYPE
+
+ **SYNTAX_MISSING_FIELD_TAXITIME
+ SYNTAX_MISSING_FIELD_TAXITIME
+
+ **SYNTAX_MISSING_FIELD_TFCVOL
+ SYNTAX_MISSING_FIELD_TFCVOL
+
+ **SYNTAX_MISSING_FIELD_TFV
+ SYNTAX_MISSING_FIELD_TFV
+
+ **SYNTAX_MISSING_FIELD_TITLE
+ SYNTAX_MISSING_FIELD_TITLE
+
+ **SYNTAX_MISSING_FIELD_TITLE2
+ SYNTAX_MISSING_FIELD_TITLE2
+
+ **SYNTAX_MISSING_FIELD_TTLEET
+ SYNTAX_MISSING_FIELD_TTLEET
+
+ **SYNTAX_MISSING_FIELD_TYPZ
+ SYNTAX_MISSING_FIELD_TYPZ
+
+ **SYNTAX_MISSING_FIELD_UNIT
+ SYNTAX_MISSING_FIELD_UNIT
+
+ **SYNTAX_MISSING_FIELD_VALFROM
+ SYNTAX_MISSING_FIELD_VALFROM
+
+ **SYNTAX_MISSING_FIELD_VALFROMK
+ SYNTAX_MISSING_FIELD_VALFROMK
+
+ **SYNTAX_MISSING_FIELD_VALFROMOLD
+ SYNTAX_MISSING_FIELD_VALFROMOLD
+
+ **SYNTAX_MISSING_FIELD_VALIDITYDATE
+ SYNTAX_MISSING_FIELD_VALIDITYDATE
+
+ **SYNTAX_MISSING_FIELD_VALUNTIL
+ SYNTAX_MISSING_FIELD_VALUNTIL
+
+ **SYNTAX_MISSING_FIELD_VALUNTILK
+ SYNTAX_MISSING_FIELD_VALUNTILK
+
+ **SYNTAX_MISSING_FIELD_VALUNTILOLD
+ SYNTAX_MISSING_FIELD_VALUNTILOLD
+
+ **SYNTAX_MISSING_FIELD_WKTRC
+ SYNTAX_MISSING_FIELD_WKTRC
+
+ **SYNTAX_INVALID_TXT_FIELD
+ SYNTAX_INVALID_TXT_FIELD
+
+ **SYNTAX_INVALID_ESTIMATE_DATA
+ SYNTAX_INVALID_ESTIMATE_DATA
+
+ **SYNTAX_INVALID_HEADING
+ SYNTAX_INVALID_HEADING
+
+ **SYNTAX_INVALID_FLIGHT_PLAN_INDICATOR
+ SYNTAX_INVALID_FLIGHT_PLAN_INDICATOR
+
+ **SYNTAX_STATUS_EXPECTED
+ SYNTAX_STATUS_EXPECTED
+
+ **SYNTAX_INVALID_DAYS_OF_OPERATION
+ SYNTAX_INVALID_DAYS_OF_OPERATION
+
+ **SYNTAX_INVALID_CONDITION_DESCRIPTION
+ SYNTAX_INVALID_CONDITION_DESCRIPTION
+
+ **SYNTAX_INVALID_FLOW_DATA
+ SYNTAX_INVALID_FLOW_DATA
+
+ **SYNTAX_INVALID_FIRST_DAY_OF_OPERATION
+ SYNTAX_INVALID_FIRST_DAY_OF_OPERATION
+
+ **SYNTAX_INVALID_GEO_POINT_DESCRIPTION
+ SYNTAX_INVALID_GEO_POINT_DESCRIPTION
+
+ **SYNTAX_INVALID_FIELD_IFP
+ SYNTAX_INVALID_FIELD_IFP
+
+ **SYNTAX_INVALID_IFPS_DATA
+ SYNTAX_INVALID_IFPS_DATA
+
+ **SYNTAX_INVALID_IGNORE_DATA
+ SYNTAX_INVALID_IGNORE_DATA
+
+ **SYNTAX_INVALID_ATS_ROUTE_DESCRIPTION
+ SYNTAX_INVALID_ATS_ROUTE_DESCRIPTION
+
+ **SYNTAX_INVALID_AIRSPACE_DESCRIPTION
+ SYNTAX_INVALID_AIRSPACE_DESCRIPTION
+
+ **SYNTAX_INVALID_FIR_DESCRIPTION
+ SYNTAX_INVALID_FIR_DESCRIPTION
+
+ **SYNTAX_INVALID_VALPERIOD
+ SYNTAX_INVALID_VALPERIOD
+
+ **SYNTAX_INVALID_MODIF_NUMBER
+ SYNTAX_INVALID_MODIF_NUMBER
+
+ **SYNTAX_INVALID_MSG_SUMMARY
+ SYNTAX_INVALID_MSG_SUMMARY
+
+ **SYNTAX_INVALID_FPD_NUMBER
+ SYNTAX_INVALID_FPD_NUMBER
+
+ **SYNTAX_INVALID_DATE_OR_TIME
+ SYNTAX_INVALID_DATE_OR_TIME
+
+**SYNTAX_INVALID_PART_NUMBER
+ SYNTAX_INVALID_PART_NUMBER
+
+ **SYNTAX_INVALID_RATE
+ SYNTAX_INVALID_RATE
+
+ **SYNTAX_INVALID_REASON
+ SYNTAX_INVALID_REASON
+
+ **SYNTAX_INVALID_REGULATION_LOCATION
+ SYNTAX_INVALID_REGULATION_LOCATION
+
+ **SYNTAX_INVALID_REGULATION
+ SYNTAX_INVALID_REGULATION
+
+ **SYNTAX_INVALID_RELEASE
+ SYNTAX_INVALID_RELEASE
+
+ **SYNTAX_INVALID_REQUESTED_FLIGHT_PLAN_DATA
+ SYNTAX_INVALID_REQUESTED_FLIGHT
+
+ **SYNTAX_INVALID_REROUTE_REFERENCE
+ SYNTAX_INVALID_REROUTE_REFERENCE
+
+ **SYNTAX_INVALID_RVR_DATA
+ SYNTAX_INVALID_RVR_DATA
+
+ **SYNTAX_INVALID_ROUTE_POINTS
+ SYNTAX_INVALID_ROUTE_POINTS
+
+ **SYNTAX_INVALID_SECTOR
+ SYNTAX_INVALID_SECTOR
+
+ **SYNTAX_INVALID_UNIT
+ SYNTAX_INVALID_UNIT
+
+ **SYNTAX_FIELD_TEXT_TOO_LONG
+ SYNTAX_FIELD_TEXT_TOO_LONG
+
+ **SYNTAX_INVALID_LAST_DAY_OF_OPERATION
+ SYNTAX_INVALID_LAST_DAY_OF_OPERATION
+
+ **SYNTAX_INVALID_SID
+ SYNTAX_INVALID_SID
+
+**SYNTAX_INVALID_STAR
+SYNTAX_INVALID_STAR
+
+**SYNTAX_INVALID_FLIGHT_PLAN_SOURCE
+SYNTAX_INVALID_FLIGHT_PLAN_SOURCE
+
+**SYNTAX_INVALID_STAY_DATA
+SYNTAX_INVALID_STAY_DATA
+
+**SYNTAX_ERROR_IN_FIELD
+SYNTAX_ERROR_IN_FIELD
+
+**SYNTAX_UNKNOWN_OR_UNEXPECTED_FIELD
+SYNTAX_UNKNOWN_OR_UNEXPECTED_FIELD
+
+**SYNTAX_INVALID_DATE
+SYNTAX_INVALID_DATE
+
+**SYNTAX_AIRCRAFT_NB_INVALID
+SYNTAX_AIRCRAFT_NB_INVALID
+
+**SYNTAX_FREQUENCY_EXPECTED
+SYNTAX_FREQUENCY_EXPECTED
+
+**ITA2_SPACING_SIGNAL_EXPECTED
+ITA2_SPACING_SIGNAL_EXPECTED
+
+**SYNTAX_FIELD_23_SWITCH_UNHANDLED
+SYNTAX_FIELD_23_SWITCH_UNHANDLED
+
+**SYNTAX_ERROR_FIELD_23_CALLSIGN
+SYNTAX_ERROR_FIELD_23_CALLSIGN
+
+**SYNTAX_ERROR_FIELD_23_ADEP
+SYNTAX_ERROR_FIELD_23_ADEP
+
+**SYNTAX_ERROR_FIELD_23_EOBT
+SYNTAX_ERROR_FIELD_23_EOBT
+
+**SYNTAX_ERROR_FIELD_23_ADES
+SYNTAX_ERROR_FIELD_23_ADES
+
+**SYNTAX_ERROR_FIELD_23_ARW
+SYNTAX_ERROR_FIELD_23_ARW
+
+--**SYNTAX_ERROR_FIELD_23_EET
+--SYNTAX_ERROR_FIELD_23_EET
+
+**SYNTAX_ERROR_FIELD_23_DRW
+SYNTAX_ERROR_FIELD_23_DRW
+
+**SYNTAX_ERROR_FIELD_23_RRQ
+SYNTAX_ERROR_FIELD_23_RRQ
+
+**SYNTAX_ERROR_FIELD_23_MISSING
+SYNTAX_ERROR_FIELD_23_MISSING
+
+**SYNTAX_ERROR_FIELD_23_ETT_MISSING
+SYNTAX_ERROR_FIELD_23_ETT_MISSING
+
+--**SYNTAX_ERROR_INVALID_TECOS_MESSAGE
+--SYNTAX_ERROR_INVALID_TECOS_MESSAGE
+
+**SYNTAX_ERROR_FIELD_23_CALLSIGN_TOO_LONG
+SYNTAX_ERROR_FIELD_23_CALLSIGN_TOO_LONG
+
+**SYNTAX_ERROR_FIELD_23_ETT
+SYNTAX_ERROR_FIELD_23_ETT
+
+**SYNTAX_FIELD23_ETA_SWITCH_NOT_ALLOWED
+SYNTAX_FIELD23_ETA_SWITCH_NOT_ALLOWED
+
+**SYNTAX_FIELD23_ARW_SWITCH_NOT_ALLOWED
+SYNTAX_FIELD23_ARW_SWITCH_NOT_ALLOWED
+
+**SYNTAX_FIELD23_ETT_SWITCH_NOT_ALLOWED
+SYNTAX_FIELD23_ETT_SWITCH_NOT_ALLOWED
+
+**SYNTAX_FIELD23_DRW_SWITCH_NOT_ALLOWED
+SYNTAX_FIELD23_DRW_SWITCH_NOT_ALLOWED
+
+**SYNTAX_FIELD23_RRQ_SWITCH_NOT_ALLOWED
+SYNTAX_FIELD23_RRQ_SWITCH_NOT_ALLOWED
+
+**FIELD23AF_MUST_BE_FILLED_IN
+FIELD23AF_MUST_BE_FILLED_IN
+
+**FIELD23_KEY_SWITCH_ERROR
+FIELD23_KEY_SWITCH_ERROR
+
+**UNHANDLED_FIELD
+UNHANDLED_FIELD
+
+**FIELD_23_RECEIVED_FROM_NON_TECOS_AREA
+FIELD_23_RECEIVED_FROM_NON_TECOS_AREA
+
+**SYNTAX_ERROR_IN_RRQ_FIELD
+SYNTAX_ERROR_IN_RRQ_FIELD
+
+**RRQ_SWITCH_NOT_ALLOWED_IN_MSG
+RRQ_SWITCH_NOT_ALLOWED_IN_MSG
+
+**SYNTAX_ERROR_IN_ITA2_AFTN_FOOTER
+SYNTAX_ERROR_IN_ITA2_AFTN_FOOTER
+
+**RPL_INVALID_EQPT_SWITCH_IN_FIELD_18
+RPL_INVALID_EQPT_SWITCH_IN_FIELD_18
+
+**STE_INVALID_EQPT_SWITCH_IN_FIELD_18
+STE_INVALID_EQPT_SWITCH_IN_FIELD_18
+
+**DOF_CANNOT_BE_DETERMINED
+DOF_CANNOT_BE_DETERMINED
+
+**FMF_TOO_LONG_IN_F18
+FMF_TOO_LONG_IN_F18
+
+**FMF_NOT_ALLOWED_IN_F18
+FMF_NOT_ALLOWED_IN_F18
+
+**RPL_INVALID_ETB_ETD
+RPL_INVALID_ETB_ETD
+
+**METEO_PREVIOUS_DATA_EMPTY
+No data available
+
+**RNAV_INCOMPATIBLE_WITH_ROUTE
+RNAV_INCOMPATIBLE_WITH_ROUTE
+
+**RVSM_INCOMPATIBLE_WITH_ROUTE
+RVSM_INCOMPATIBLE_WITH_ROUTE
+
+**LEVEL_NOT_AUTHORISED_WITH_ROUTE
+LEVEL_NOT_AUTHORISED_WITH_ROUTE
+
+**LEVEL_BELOW_ROUTE_MINIMUM_LEVEL
+LEVEL_BELOW_ROUTE_MINIMUM_LEVEL
+
+**MULTIPLE_WARNINGS
+MULTIPLE_WARNINGS
+
+**SYNTAX_INVALID_ENT_FIELD
+SYNTAX_INVALID_ENT_FIELD
+
+** FPL_RVSM_STATE_INCOMPATIBLE
+FPL_RVSM_STATE_INCOMPATIBLE
+
+**BUSY_STEPPING
+Busy stepping
+
+**MAX_AUDIO_OUTPUTS_EXCEEDED
+Max audio outputs exceeded
+
+**MAX_MIXED_REC_CHAN_EXCEEDED
+MAX_MIXED_REC_CHAN_EXCEEDED
+
+**INVALID_AUDIO_OUTPUT_NR
+INVALID_AUDIO_OUTPUT_NR
+
+**COMPOSE_WAS_NOT_AUDIO
+COMPOSE_WAS_NOT_AUDIO
+
+**AUDIO_OUTPUT_ALREADY_USED
+AUDIO_OUTPUT_ALREADY_USED
+
+**TIME_SPAN_TOO_LONG
+TIME_SPAN_TOO_LONG
+
+**FPCF_TOO_MANY_SAVED_TRIALS
+FPCF_TOO_MANY_SAVED_TRIALS
+
+** NOT_FPSA_METEO_AREA
+Call TSM : NOT_FPSA_METEO_AREA (not N/O)
+
+** FPCP_FPL_NO_MORE_ACTIVE              
+FPCP FPL NO MORE ACTIVE
+ 
+**SAP_BASE_UNKNOWN_SAP
+SAP_BASE_UNKNOWN_SAP
+ 
+**SAP_BASE_DISK_ERROR
+SAP_BASE_DISK_ERROR
+ 
+**SAP_INHIBITED
+SAP_INHIBITED
+ 
+**NOT_AN_SAP_FLIGHT_PLAN                
+NOT_AN_SAP_FLIGHT_PLAN
+ 
+**MANUAL_PROBE_ON_AUTOMATIC_SAP_IS_NOT_ALLOWED
+MAN_PROBE_ON_AUTO_SAP_IS_NOT_ALLOWED
+ 
+**SAP_DOES_NOT_EXIST_IN_SAP_DATABASE
+SAP_DOES_NOT_EXIST_IN_SAP_DATABASE
+ 
+**SAP_ALREADY_EXISTS_IN_SAP_DATABASE
+SAP_ALREADY_EXISTS_IN_SAP_DATABASE
+ 
+**SAP_TAP_ERRONEOUS_SPEED
+SAP_TAP_ERRONEOUS_SPEED 
+ 
+**SAP_TAP_ERRONEOUS_LEVEL
+SAP_TAP_ERRONEOUS_LEVEL 
+ 
+**SAP_TAP_ERRONEOUS_ROUTE
+SAP_TAP_ERRONEOUS_ROUTE
+ 
+**SAP_TAP_UNKNOWN_FLIGHT_PLAN         
+SAP_TAP_UNKNOWN_FLIGHT_PLAN
+
+**MANUAL_CANCELLATION_NOT_ALLOWED_ON_AUTOMATIC_SAP
+MAN_CANCEL_NOT_ALLOWED_ON_AUTO_SAP
+
+**NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_ARFOR
+NOT_MET_UPDATE_REQUEST_IS_NOT_AMD_ARFOR
+ 
+
+-----------------------------------------
+-- DCC Error Messages
+-----------------------------------------
+**DCC_OBSOLETE_MODIFICATION_TIME
+DCC_OBSOLETE_MODIFICATION_TIME
+
+**DCC_DUPLICATE_FDRS_EXIST
+DCC_DUPLICATE_FDRS_EXIST
+
+**DCC_INVALID_COMMAND
+DCC_INVALID_COMMAND
+
+**DCC_INVALID_CALLSIGN
+DCC_INVALID_CALLSIGN
+
+**DCC_INVALID_START_DATE
+DCC_INVALID_START_DATE
+
+**DCC_INVALID_END_DATE
+DCC_INVALID_END_DATE
+
+**DCC_INVALID_OPERATION_DAYS
+DCC_INVALID_OPERATION_DAYS
+
+**DCC_INVALID_ADES
+DCC_INVALID_ADES
+
+**DCC_INVALID_ADEP
+DCC_INVALID_ADEP
+
+**DCC_INVALID_DEP_TIME
+DCC_INVALID_DEP_TIME
+
+**DCC_INVALID_AIRCRAFT_TYPE
+DCC_INVALID_AIRCRAFT_TYPE
+
+**DCC_INVALID_FLIGHT_TYPE
+DCC_INVALID_FLIGHT_TYPE
+
+**DCC_INVALID_REGISTRATION_NUMBER
+DCC_INVALID_REGISTRATION_NUMBER
+
+**DCC_INVALID_DCC_STATUS
+DCC_INVALID_DCC_STATUS
+
+**DCC_INVALID_REMARKS
+DCC_INVALID_REMARKS
+
+**DCC_CLEARANCE_DATABASE_IS_FULL
+Diplomatic Cleared DB Full
+
+**DCC_END_DATE_BEFORE_TODAY
+DCC_END_DATE_BEFORE_TODAY
+
+**DCC_END_DATE_BEFORE_START_DATE
+DCC_END_DATE_BEFORE_START_DATE
+
+**DCC_REQUEST_ALREADY_IN_PROGRESS
+DCC_REQUEST_ALREADY_IN_PROGRESS
+
+
+**DCC_REMOTE_FILE_REQUEST_NOT_AVAILABLE
+External DCC Interface not available
+
+**DCC_LOCAL_FILE_REQUEST_NOT_AVAILABLE
+Unable to read the specified file
+
+**DCC_LOCAL_FILE_DOES_NOT_EXIST
+DCC file does not exist
+
+**DCC_EXEMPTION_DATABASE_IS_FULL
+Diplomatic Exemption DB Full
+
+**DCC_BANNED_DATABASE_IS_FULL
+Diplomatic Banned DB Full
+
+**INVALID_EXEMPTION_LIST_DATAPAGE
+INVALID_EXEMPTION_LIST_DATAPAGE
+
+**DCC_FILE_START
+DCC_FILE_START
+
+**DCC_FILE_END
+DCC_FILE_END
+
+**DCC_RECORD_DOES_NOT_EXIST
+DCC_RECORD_DOES_NOT_EXIST
+
+**DCC_CDC_WRITE_ERROR
+DCC_CDC_WRITE_ERROR
+
+**DCC_FILE_WRITE_ERROR
+DCC_FILE_WRITE_ERROR
+
+**DCC_DATABASE_APPROACHING_CAPACITY
+DCC_DATABASE_APPROACHING_CAPACITY
+
+**DCC_LOCAL_FILE_TRANSFER_CANCELLED
+DCC_LOCAL_FILE_TRANSFER_CANCELLED
+
+**DCC_REQUEST_REJECTED_FILE_PROCESSING
+Invalid Clearance File received
+
+**DCC_MAXIMUM_NUMBER_OF_RECORDS_PROCESSED
+DCC_MAXIMUM_NUMBER_OF_RECORDS_PROCESSED
+
+**DCC_INVALID_DCC_IDENTIFICATION
+DCC_INVALID_DCC_IDENTIFICATION
+
+**DCC_DCC_IDENTIFICATION_ALREADY_EXISTS
+DCC_DCC_IDENTIFICATION_ALREADY_EXISTS
+
+**DCC_CANNOT_MODIFY_DCC_IDENTIFICATION
+DCC_CANNOT_MODIFY_DCC_IDENTIFICATION
+
+**DCC_DCC_IDENTIFICATION_DOES_NOT_EXIST
+DCC_DCC_IDENTIFICATION_DOES_NOT_EXIST
+
+**DCC_EXPORT_ALREADY_IN_PROGRESS
+Export already in progress
+
+**DCC_EXPORT_FILE_REQUEST_NOT_AVAILABLE
+Unable to write the specified file
+
+**ADS_SWITCH_ARGUMENT_EXPECTED
+ADS_SWITCH_ARGUMENT_EXPECTED
+
+**DUPLICATE_SWITCH
+DUPLICATE_SWITCH
+
+**TRU_INVALID_SWITCH_ORDER
+TRU_INVALID_SWITCH_ORDER
+
+**TRU_SWITCH_ALREADY_DEFINED
+TRU_SWITCH_ALREADY_DEFINED
+
+**ADS_TRACK_NOT_COUPLED
+ADS_TRACK_NOT_COUPLED
+
+**ADS_TRACK_COUPLED
+ADS_TRACK_COUPLED
+
+**SYNTAX_PRIORITY_PROMPT_EXPECTED
+SYNTAX_PRIORITY_PROMPT_EXPECTED
+
+**SYNTAX_OPT_HEADING_INFO_PROMPT_EXPECTED
+SYNTAX_OPT_HEADING_INFO_PROMPT_EXPECTED
+
+**SYNTAX_FILLING_TIME_PROMPT_EXPECTED
+SYNTAX_FILLING_TIME_PROMPT_EXPECTED
+
+**DCC_INVALID_DATABASE_IS_FULL
+DCC_INVALID_DATABASE_IS_FULL
+
+**ATOW_INCOMPATIBLE_WITH_AC_TYPE
+ATOW_INCOMPATIBLE_WITH_AC_TYPE
+
+**DASH_FIELD30_EXPECTED
+DASH_FIELD30_EXPECTED
+
+**SYNTAX_ERROR_FIELD_30_TRU
+SYNTAX_ERROR_FIELD_30_TRU
+
+**SYNTAX_ERROR_FIELD_31_ADS
+SYNTAX_ERROR_FIELD_31_ADS
+
+**DASH_FIELD31_EXPECTED
+DASH_FIELD31_EXPECTED
+
+**HDG_SWITCH_ARGUMENT_EXPECTED
+HDG_SWITCH_ARGUMENT_EXPECTED
+
+**OTD_SWITCH_ARGUMENT_EXPECTED
+OTD_SWITCH_ARGUMENT_EXPECTED
+
+**DCT_SWITCH_ARGUMENT_EXPECTED
+DCT_SWITCH_ARGUMENT_EXPECTED
+
+-----------------------------------------
+-- END of DCC Error Messages
+-----------------------------------------
+
+**ATOW_INPUT_IS_NOT_ELIGIBLE
+ATOW_INPUT_IS_NOT_ELIGIBLE
+
+**ATOW_OUT_OF_RANGE
+ATOW_OUT_OF_RANGE
+
+**CONSECUTIVE_DUPLICATE_POINTS
+CONSECUTIVE_DUPLICATE_POINTS
+
+**WARNING_DUPLICATE_POINT_IS_UNKNOWN
+WARNING_DUPLICATE_POINT_IS_UNKNOWN
+
+**FLEXTRACK_BEGINNING_DUPLICATE_POINT
+FLEXTRACK_BEGINNING_DUPLICATE_POINT
+
+**NOT_MET_INVALID_AIRMET_SEQUENCE
+NOT_MET_INVALID_AIRMET_SEQUENCE
+
+**NOT_MET_INVALID_MET_REPORT_SPECIAL_SEQUENCE
+NOT_MET_INVALID_MET_REPORT_SPECIAL_SEQ
+
+**OVERLAPPING_VALIDITY_PERIOD
+OVERLAPPING_VALIDITY_PERIOD
+
+**AMHS_ORIGINATOR_CONVERSION_ERROR
+AMHS_ORIGINATOR_CONVERSION_ERROR
+
+**SYNTAX_ERROR_INVALID_EUROCAT_T_MESSAGE
+SYNTAX_ERROR_INVALID_EUROCAT_T_MESSAGE
+
+**SYNTAX_ERROR_FIELD_23_DOF
+SYNTAX_ERROR_FIELD_23_DOF
+
+**SYNTAX_ERROR_FIELD_23_GAT
+SYNTAX_ERROR_FIELD_23_GAT
+
+**SYNTAX_FIELD23_GAT_SWITCH_NOT_ALLOWED
+SYNTAX_FIELD23_GAT_SWITCH_NOT_ALLOWED
+
+**SYNTAX_FIELD23_DCL_SWITCH_NOT_ALLOWED
+SYNTAX_FIELD23_DCL_SWITCH_NOT_ALLOWED
+
+**DCL_MESSAGE_ALREADY_SENT
+DCL_MESSAGE_ALREADY_SENT
+
+**FLIGHT_PLAN_NOT_DEPARTING_FROM_EUROCAT_T
+FLIGHT_PLAN_NOT_DEPARTING_FROM_EUROCAT_T
+
+**SYNTAX_FIELD_18_ILLEGAL_DLA_SWITCH
+SYNTAX_FIELD_18_ILLEGAL_DLA_SWITCH
+
+**SYNTAX_FIELD_18_PBN_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_PBN_SWITCH_NOT_VALID
+--**PBN_ITEM_IS_MORE_THAN_LIMIT
+--PBN/ EXCEED MAXIMAL #1$ ENTRIE(#2$ CHAR)
+
+**SYNTAX_FIELD_18_SUR_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_SUR_SWITCH_NOT_VALID
+
+**SYNTAX_FIELD_18_STS_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_STS_SWITCH_NOT_VALID
+
+**SYNTAX_FIELD_18_TALT_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_TALT_SWITCH_NOT_VALID
+
+**SYNTAX_FIELD_18_DLE_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_DLE_SWITCH_NOT_VALID
+
+**SYNTAX_FIELD_18_ORGN_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_ORGN_SWITCH_NOT_VALID
+
+**SYNTAX_FIELD_18_NAV_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_NAV_SWITCH_NOT_VALID
+
+**FLIGHT_PLAN_FORMAT_INCOMPATIBLE
+FLIGHT_PLAN_FORMAT_INCOMPATIBLE
+
+**RNP_INCOMPATIBLE_WITH_ROUTE
+RNP_INCOMPATIBLE_WITH_ROUTE
+
+**FIELD_10_AND_F18_INCONSISTENT
+$
+
+**SEMANTIC_SSR_EQUIPMENT_INVALID
+SEMANTIC_SSR_EQUIPMENT_INVALID
+
+**SYNTAX_FIELD_18_PER_SWITCH_NOT_VALID
+SYNTAX_FIELD_18_PER_SWITCH_NOT_VALID
+
+**AMBIGUOUS_FORMAT_MESSAGE
+AMBIGUOUS_FORMAT_MESSAGE
+
+**TIME_TOO_RECENT
+TIME_TOO_RECENT
+
+**QNH_VALUE_OUT_OF_RANGE
+QNH_VALUE_OUT_OF_RANGE
+
+**SYNTAX_RVSM_SWITCH_CONFLICT
+STS/NONRVSM and W shouldn't coexist
+
+**EET_IS_TOO_SHORT
+EET_IS_TOO_SHORT
+
+
+--added by zxn 2022-06-13
+
+**INVALID_FREQ
+**
+**INVALID_HRSQ
+**
+**INVALID_TIME_DELAY
+**
+**INVALID_ACM
+**
+**INVALID_ARRNO
+**
+**INVALID_COORTYPE
+**
+**INVALID_CLAM_KIND
+**
+**INVALID_SUPINFO
+**
+**MISSING_FIELD_MSGID
+**
+**MISSING_FIELD_REFMSGID
+**
+**MISSING_FIELD_RSP
+**
+**MISSING_FIELD_SUPINFO
+**
+**MISSING_FIELD_ACCTTL
+**
+**MISSING_FIELD_ACCTTG
+**
+**MISSING_FIELD_ACM
+**
+**MISSING_FIELD_AMANTIME
+**
+**MISSING_FIELD_ARRNO
+**
+**MISSING_FIELD_COORTYPE
+**
+**MISSING_FIELD_HRSQ
+**
+**MISSING_FIELD_ORGAD
+**
+**MISSING_FIELD_SOURCE
+**
+**INSUFFICIENT_COORD_DATA
+** 
+**CHND_FOR_DEPARTURE_FLIGHT_RECEIVED
+**      
+**INVALID_HRSQ_KIND
+**     
+**NO_CHND_RECEIVED_FROM_THE_CENTER
+**    
+**CENTER_CANNOT_HANDLE_FDECM
+**    
+**UNKONWN_ADJACENT_CENTER
+**    
+**INVALID_HRSP_KIND
+**
+**AMAN_ARWY_NOT_ELIGIBLE
+ARWY doesn't meet mandatory criteria
+
+**ADES_NOT_MANAGED_BY_AMAN
+ADES isn't managed by AMAN
+
+**NOT_AN_ARRIVAL_FLIGHT
+Not an arrival flight
+--**MISSING_FIELD_TMATTL
+--aaaa
+--**MISSING_FIELD_TMATTG
+--bbbbbb
+**INVALID_FF
+**
+**INVALID_FFSTO
+**
+**MISSING_FIELD_UPTTG
+**
+**MISSING_FIELD_FF
+**
+**MISSING_FIELD_FFSTO
+**
+**MISSING_FIELD_UPTTL
+**
+--**EET_IS_TOO_SHORT
+--**
+
+**RECEIVING_CTMA_WHILE_MAE_PRESENT
+Receiving CTMA while Maestro present.
+
+**INVALID_HANDOFF_CENTER
+INVALID_HANDOFF_CENTER
+
+**COOR_INFO_IS_STORED
+COOR_INFO_IS_STORED
+
+**AC_PERFORMANCE_IS_NOT_COMPATIBLE_WITH_SID
+AC_PER_IS_NOT_COMPATIBLE_WITH_SID
+
+**SYNTAX_INVALID_STYPE
+SYNTAX_INVALID_STYPE
+
+**SYNTAX_INVALID_CSTAT_INFO
+SYNTAX_INVALID_CSTAT_INFO
+
+**SYNTAX_DUPLICATED_FIELD
+**
+**MISSING_FIELD_SEQLIST
+**
+**INVALID_AIRPORT
+**
+**INVALID_SEQLIST
+**
+**INVALID_REFDATA
+**
+**INVALID_MSGREF
+**
+**INVALID_RSP
+**
+**SYNTAX_ERROR_IN_SEQLIST_FIELD
+**
+
+**SYNTAX_INVALID_MHT_TWR_BSIP
+SYNTAX_INVALID_MHT_TWR_BSIP
+
+**MISSING_FIELD_MAT
+MISSING_FIELD_MAT$
+
+**MISSING_FIELD_RWYSCHEDLIST
+MISSING_FIELD_RWYSCHEDLIST
+
+**INVALID_RWYSCHEDLIST
+INVALID_RWYSCHEDLIST
+
+**SEQ_ASN_ALLOCATION_IN_PROGRESS
+**
+
+**SYNTAX_ARRIVAL_ASI_EXPECTED
+**
+
+**SYNTAX_ARRIVAL_ASN_EXPECTED
+**
+**FPL_NOT_IN_ACTIVE_STATE
+**
+**FLIGHT_PLAN_NOT_COUPLED
+**$
+
+**FPL_CANNOT_BE_REPLACED
+FPL for FDR not in correct state
+
+**INVALID_TWRFREETXT
+INVALID_TWRFREETXT
+
+**MISSING_FIELD_TWRFREETXT
+MISSING_FIELD_TWRFREETXT
+
+**MISSING_FIELD_FOR
+MISSING_FIELD_FOR
+
+**INVALID_FOR_FLAG
+INVALID_FOR_FLAG
+
+**RUNNING_EHMIR_IS_FULL
+RUNNING_EHMIR_IS_FULL
+
+**INVALID_SOURCE
+INVALID_SOURCE
+

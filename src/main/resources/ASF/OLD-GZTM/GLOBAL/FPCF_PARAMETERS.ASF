@@ -1,0 +1,45 @@
+--
+--           FILE :  FPCF_PARAMETERS.ASF 
+--
+--  CREATION DATE :  August 4, 2003
+--  BY            :  YAN ZHONG
+--  VERSION       :  ISIM_01
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|----------------------------------
+--     ISIM_01  | 4/08/03 | Z. YAN      | NESACC GUANGZHOU SIM PLATFORM
+--              |29/08/04 | K. Wan      | FPCF_CONFLICT_POINT_DELTA - MET or IMP
+--     V2.3.4   |17/11/04 | K. Wan      | updated for SAT3
+--
+FPCF_4D_PROFILE_USE               | TRUE
+FPCF_SAME_TRACK_ANGLE             | 45
+FPCF_AUTOMATIC_ENTRY_DELTA        | 5   -- MINUTES
+FPCF_ETO_UPDATE_DELTA             | 60  -- SECONDS
+FPCF_FULL_DATABASE                | 80  --%
+FPCF_FULL_DATABASE_REARM          | 60  --%
+MAX_CONFLICT_PER_FP_REARM_PERCENT | 50  --%
+FPCF_AUTOMATIC_CANCELLATION       | 5   -- MINUTES
+FPCF_LOOK_AHEADTIME               | 30  -- MINUTES
+FPCF_CONFLICTS_PERIODIC_CHECK     | 5   -- MINUTES
+FPCF_COORD_AUTO_ENTRY             | TRUE
+FPCF_ATO_UPDATE_DELTA             | 60  -- SECONDS 
+FPCF_CONFLICT_TIME_DELTA          | 60  -- SECONDS
+FPCF_CONFLICT_POINT_DELTA         | 1NM -- NM or KM
+FPCF_CONFLICT_MERGE_DELTA         | 2   -- MINUTES
+FPCF_ATO_TOLERANCE                | 20  -- MINUTES
+FPCF_EXTRAP_FACTOR                | 100  --%
+FPCF_LAT_DISTANCE_BUFFER          | 1NM --NM or KM 
+FPCF_LAT_TIME_BUFFER              | 100   -- %ge of LONG' TIME STANDARD!!
+ 
+-- new for EXV5
+--
+FPCF_DETECT_POTENTIAL_CONFLICTS         | FALSE
+FPCF_POTENTIAL_LEVEL_RANGE              | F000
+FPCF_AFL_LEVEL_TOLERANCE                | F1
+SAP_EXCLUDE_VFR                         | FALSE
+SAP_EXCLUDE_IFR                         | FALSE
+MTCA_CARD_MIN_TIME_THRESHOLD            | 5
+FPCF_EXCLUDE_VFR                        | FALSE
+FPCF_EXCLUDE_IFR                        | FALSE

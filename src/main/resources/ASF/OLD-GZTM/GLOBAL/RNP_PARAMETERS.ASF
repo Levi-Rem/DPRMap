@@ -1,0 +1,129 @@
+--
+--           FILE :  RNP_PARAMETERS.ASF
+--
+-
+--
+--      Version | Date  | Responsible | Comment 
+----------------|-------|-------------|----------------
+--              |280311 | K WAN       | INITIAL
+--
+--
+---------------------------------------------------------------------------------- 
+--  CREATION DATE :  17,SEP 2014
+--  BY            :  Sun Hao
+--  VERSION       :  NEUP 1.0
+--
+--
+--		
+--      Version | Date        | Responsible  | Comment 
+----------------|-------------|------------- |----------------------------------
+--    NEUP 1.0  | 17,SEP 2014 |      S.H     | FOR  NEUP  SAT
+--
+
+/FIR/
+--
+-- ---------------------------------------------------------------------------------
+-- Mandatory sensor identification for the FIR.
+-- (1)=TAG="SENSORS",
+-- (2)=DISTANCE_UNIT,
+-- (3)=RNP_ENABLED,
+-- (4)=RADAR_PRESENT,
+-- (5)=ADS_C_PRESENT,
+-- (6)=ADS_B_PRESENT,
+-- ---------------------------------------------------------------------------------
+-- (1)  | (2) | (3) | (4) | (5) | (6) |
+-- ---------------------------------------------------------------------------------
+SENSORS | NM  | Y  |  Y  |  Y | Y |
+--
+-- ---------------------------------------------------------------------------------
+-- Mandatory/default GENERAL parameters for the entire FIR.
+-- (1)=PUBLISHED_STATUS (=GEN)
+-- (2)=RAM_AIRPORT_RADIUS_FIR,
+-- (3)=RAM_BOUNDARY_POINT_RADIUS_FIR,
+-- (4)=RNP_RAM_AIRPORT_RADIUS_FIR,
+-- (5)=RNP_RAM_BOUNDARY_POINT_RADIUS_FIR,
+-- ---------------------------------------------------------------------------------
+-- (1) | (2)         | (3)         | (4)         | (5)         |         |
+--     | Radar ADS-B | Radar ADS-B | Radar ADS-B | Radar ADS-B |         |
+-- ---------------------------------------------------------------------------------
+
+--GEN    | 30 | 30 | 30 | 30 |
+
+GEN    | 20 | 20 | 20 | 20 |
+-- ---------------------------------------------------------------------------------
+-- Mandatory/default PUBLISHED & UNPUBLISHED parameters for the entire FIR.
+-- (1)=PUBLISHED_STATUS (=PUB or UNPUB or BOTH)
+-- (2)=RAM_CORRIDOR_WIDTH_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (3)=RAM_POINT_RADIUS_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (4)=RAM_UPDATE_PERIOD_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (5)=RNP_RAM_CORRIDOR_WIDTH_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (6)=RNP_RAM_POINT_RADIUS_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (7)=RNP_RAM_UPDATE_PERIOD_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (8)=ADS_C_RAM_CORRIDOR_WIDTH_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (9)=ADS_C_RAM_POINT_RADIUS_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (10)=ADS_C_RNP_RAM_CORRIDOR_WIDTH_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (11)=ADS_C_RNP_RAM_POINT_RADIUS_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (12)=ADS_C_ARCW_CORRIDOR_WIDTH_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (13)=ADS_C_ARCW_POINT_RADIUS_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (14)=ADS_C_RNP_ARCW_CORRIDOR_WIDTH_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- (15)=ADS_C_RNP_ARCW_POINT_RADIUS_PUBLISHED_FIR, ..._UNPUBLISHED_FIR,
+-- -----------------------------------------------------------------------------------------------------------------
+-- (1) | (2)   | (3)   | (4) | (5)   | (6)   | (7) | (8)   | (9)   | (10)  | (11)  | (12)  | (13)  | (14)  | (15)  |
+-- -----------------------------------------------------------------------------------------------------------------
+--BOTH   | 20 20 | 10 10 | 5 5 | 15 15 | 10 10 | 3 3 | 20    | 20    | 20    | 20    | 20    | 20    | 20    | 20    |
+--BOTH   | 10 | 10 | 5 | 10 | 10 | 5 | 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10 |
+ BOTH   | 20 | 10 | 20 | 20 | 10 | 20 | 20 | 10 | 20 | 10 | 20 | 10 | 20 | 10 |
+
+-- -----------------------------------------------------------------------------------------------------------------
+--
+/VOLUME/
+--
+-- ---------------------------------------------------------------------------------
+-- Optional PUBLISHED & UNPUBLISHED parameters for named volumetric sectors in the FIR.
+-- (1)=VOLUMETRIC_SECTOR_NAME,
+-- (2)=PUBLISHED_STATUS (=PUB or UNPUB or BOTH),
+-- (3)=RAM_CORRIDOR_WIDTH_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (4)=RAM_POINT_RADIUS_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (5)=RAM_UPDATE_PERIOD_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (6)=RNP_RAM_CORRIDOR_WIDTH_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (7)=RNP_RAM_POINT_RADIUS_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (8)=RNP_RAM_UPDATE_PERIOD_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (9)=ADS_C_RAM_CORRIDOR_WIDTH_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (10)=ADS_C_RAM_POINT_RADIUS_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (11)=ADS_C_RNP_RAM_CORRIDOR_WIDTH_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (12)=ADS_C_RNP_RAM_POINT_RADIUS_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (13)=ADS_C_ARCW_CORRIDOR_WIDTH_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (14)=ADS_C_ARCW_POINT_RADIUS_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (15)=ADS_C_RNP_ARCW_CORRIDOR_WIDTH_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- (16)=ADS_C_RNP_ARCW_POINT_RADIUS_PUBLISHED_VOLUME, ..._UNPUBLISHED_VOLUME,
+-- --------------------------------------------------------------------------------------------
+-- 1 	| 2   |3    |4    |5    | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |  16 |
+-- ---------------------------------------------------------------------------------------------
+--WS   |BOTH |20 23|10 22|30 21|20 19|10 18|30 17| 7   |8    | 9   | 10  | 11  | 12  | 13  | 14  |
+--VTMA   |BOTH |20   |20	 |30   |20   |10   |30   | 7   |8    | 9   | 10  | 11  | 12  | 13  | 14  |
+--VACC19 |BOTH |12   |20	 |30   |12   |10   |30   | 7   |8    | 9   | 10  | 11  | 12  | 13  | 14  | 
+--
+/ROUTE/
+-- ---------------------------------------------------------------------------------
+-- Optional parameters for named routes and identified route segments.
+-- (1)=CODED_ROUTE_NAME,
+-- (2)=START_WAYPOINT,
+-- (3)=END_WAYPOINT,
+-- (4)=RAM_CORRIDOR_WIDTH_ROUTE, ..._ROUTE_SEGMENT,
+-- (5)=RAM_POINT_RADIUS_ROUTE, ..._ROUTE_SEGMENT,
+-- (6)=RAM_UPDATE_PERIOD_ROUTE, ..._ROUTE_SEGMENT,
+-- (7)=RNP_RAM_CORRIDOR_WIDTH_ROUTE, ..._ROUTE_SEGMENT,
+-- (8)=RNP_RAM_POINT_RADIUS_ROUTE, ..._ROUTE_SEGMENT,
+-- (9)=RNP_RAM_UPDATE_PERIOD_ROUTE, ..._ROUTE_SEGMENT,
+-- (10)=ADS_C_RAM_CORRIDOR_WIDTH_ROUTE, ..._ROUTE_SEGMENT,
+-- (11)=ADS_C_ARCW_CORRIDOR_WIDTH_ROUTE, ..._ROUTE_SEGMENT,
+-- (12)=ADS_C_RAM_ARCW_POINT_RADIUS_ROUTE, ..._ROUTE_SEGMENT,
+-- (13)=ADS_C_RNP_RAM_CORRIDOR_WIDTH_ROUTE, ..._ROUTE_SEGMENT,
+-- (14)=ADS_C_RNP_ARCW_CORRIDOR_WIDTH_ROUTE, ..._ROUTE_SEGMENT,
+-- (15)=ADS_C_RNP_RAM_ARCW_POINT_RADIUS_ROUTE, ..._ROUTE_SEGMENT,
+-- --------------------------------------------------------------------------------------------
+-- 1 | 2   |3    |4    |5    | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  |  16 |
+-- ---------------------------------------------------------------------------------------------
+--WS   |BOTH |20 23|10 22|30 21|20 19|10 18|30 17| 7   |8    | 9   | 10  | 11  | 12  | 13  | 14  |
+--A461T | WXI | LKO |15 |15 |5 |10 |10| 5  |8    | 9   | 10  | 11  | 12  | 13  | 
+--A461T | LKO | MONIC |15 |15 |5 |4 |4| 5  |8    | 9   | 10  | 11  | 12  | 13  | 

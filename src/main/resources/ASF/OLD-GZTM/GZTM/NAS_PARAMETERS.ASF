@@ -1,0 +1,40 @@
+--------------------------------------------------------
+--           FILE :  NAS_PARAMETERS.ASF
+--------------------------------------------------------
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | Data not applicable to NESACC 
+--
+--
+--
+
+/COM_NAV/
+
+--
+-- ICAO 10a     | ICAO 10b      | NAS 3e
+---------------------------------------------
+        W       |       C       |       W 
+        R       |       C       |       C
+        M       |       C       |       R
+        D       |       P       |       A
+        T       |       X       |       N
+
+
+
+/CENTER_DESCRIPTOR/
+--
+-- CENTER | FIR  | NAS | RETRY | RETRY | TR    | DT    | AM LATEST
+--        | NAME | ID  | NO    | TIME  | TIMER | TIMER | TIME
+-------------------------------------------------------------------
+--  NAS_1   | KNYD |  AAA   | 3       |        |      |       |
+--  NAS_2   | KMIO |  BBB    |   4     |        |      |       |
+--  NAS_3   | OJAC | CCC    |  4      |        |      |       |
+--  NAS_4   | BIDO |  DDD    |   4     |        |      |       |
+

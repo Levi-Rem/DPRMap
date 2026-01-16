@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StrategiesExitPoints xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="View.xsd">
+
+	<StrategyExitPoints airport="ZGGG" rows="0" columns="0">
+	</StrategyExitPoints>
+
+	
+</StrategiesExitPoints>

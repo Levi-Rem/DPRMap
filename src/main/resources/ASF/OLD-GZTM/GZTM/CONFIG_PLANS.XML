@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE config_plans SYSTEM "config_plans.dtd">
+<config_plans>
+
+  <parameters>
+    <parameter name="default_plan_nbr" value="1"/>
+  </parameters>
+
+  <config_plan>
+    <config EC_PLC1="PLC01" EC_PLC2="PLC01" EC_PLC3="PLC01" EC_PLC4="PLC01" logical_system_name="TMA" name="EC01" physical_position_name1="POS1" physical_position_name2="POS1" physical_position_name3="POS1" physical_position_name4="POS1" position_category="EC"/>
+    <config EC_PLC1="PLC04" EC_PLC2="PLC04" EC_PLC3="PLC04" EC_PLC4="PLC04" logical_system_name="TMA" name="EC04" physical_position_name1="POS4" physical_position_name2="POS4" physical_position_name3="POS4" physical_position_name4="POS4" position_category="EC"/>
+    <config EC_PLC1="" EC_PLC2="" EC_PLC3="" EC_PLC4="" logical_system_name="TMA" name="FDOT" physical_position_name1="POS3" physical_position_name2="POS3" physical_position_name3="POS3" physical_position_name4="POS3" position_category="FDO"/>
+    <config EC_PLC1="" EC_PLC2="" EC_PLC3="" EC_PLC4="" logical_system_name="TMA" name="OPSUP" physical_position_name1="POS6" physical_position_name2="POS6" physical_position_name3="POS6" physical_position_name4="POS6" position_category="OPSUP"/>
+    <config EC_PLC1="EC01" EC_PLC2="EC01" EC_PLC3="EC01" EC_PLC4="EC01" logical_system_name="TMA" name="PLC01" physical_position_name1="POS5" physical_position_name2="POS5" physical_position_name3="POS5" physical_position_name4="POS5" position_category="PLC"/>
+    <config EC_PLC1="EC04" EC_PLC2="EC04" EC_PLC3="EC04" EC_PLC4="EC04" logical_system_name="TMA" name="PLC04" physical_position_name1="POS8" physical_position_name2="POS8" physical_position_name3="POS8" physical_position_name4="POS8" position_category="PLC"/>
+    <config EC_PLC1="" EC_PLC2="" EC_PLC3="" EC_PLC4="" logical_system_name="TMA" name="SUPT" physical_position_name1="POS2" physical_position_name2="POS2" physical_position_name3="POS2" physical_position_name4="POS2" position_category="ASUP"/>
+    <config EC_PLC1="" EC_PLC2="" EC_PLC3="" EC_PLC4="" logical_system_name="TMA" name="TMPT" physical_position_name1="POS7" physical_position_name2="POS7" physical_position_name3="POS7" physical_position_name4="POS7" position_category="TMP"/>
+  </config_plan>
+
+  <asup_partitions_data/>
+
+  <user_authority_data>
+    <user_authority id="OPSUP">
+      <user_log_sys_id>1</user_log_sys_id>
+    </user_authority>
+  </user_authority_data>
+
+</config_plans>

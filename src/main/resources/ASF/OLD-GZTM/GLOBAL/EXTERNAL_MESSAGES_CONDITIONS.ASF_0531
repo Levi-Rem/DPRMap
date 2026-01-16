@@ -1,0 +1,192 @@
+--
+--           FILE : EXTERNAL_MESSAGES_CONDITIONS.ASF 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--     v2.3.7   |30/03/05 | gz atmb     |
+--
+
+
+------------------------------------------
+
+/TZGAC/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/MIKIP/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/ENVIP/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/NOLON/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/OLPAB/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/LMN/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/P270/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/IDUMA/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/MIPAG/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/VIBOS/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/P50/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/GYA/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/P118/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+/AGVIL/
+if
+FIR ZGAC CFPL_SYN CFPL_COOR 
+
+-----------------------------------------
+
+/TZGJD/
+  if
+    NULL
+
+/SAREX/
+  if DES IS ZGSZ 
+    FIR ZGJD EST
+  if DES IS ZGSD 
+    FIR ZGJD EST
+  if DES IS VMMC 
+    FIR ZGJD EST
+  if 
+    NULL
+
+--/P50/
+--  if DES IS ZGSZ 
+--    FIR ZGJD EST
+--  if DES IS ZGSD 
+--    FIR ZGJD EST
+--  if DES IS VMMC 
+--    FIR ZGJD EST
+--  if 
+--    NULL
+
+----------------------------------------------
+
+/TGZTW/
+  if
+    CITY_PAIR DEP
+
+----------------------------------------------
+
+/TZHCC/
+  if 
+    NULL
+
+------------------------------------------
+
+/TZLXY/
+  if 
+    NULL
+
+------------------------------------------
+
+/TZGHA/
+  if 
+    NULL
+
+------------------------------------------
+
+/TZUGY/
+  if 
+    NULL
+
+------------------------------------------
+
+/TZUUU/
+  if 
+    NULL
+
+------------------------------------------
+
+/TZHHH/
+  if 
+    NULL
+
+------------------------------------------
+
+/TZSHA/
+  if 
+    NULL
+
+--------------------------------------------
+
+/TZSCN/
+  if 
+    NULL
+ 
+--------------------------------------------
+
+/TZBAA/
+  if 
+    NULL
+
+--------------------------------------------
+ 
+/TZSAM/
+  if 
+    NULL
+
+-------------------------------------------
+
+/TZJSY/
+  if 
+    NULL
+
+-------------------------------------------
+
+/TVHHH/
+  if 
+    NULL
+
+-------------------------------------------
+
+/TZGNN/
+  if 
+    NULL
+
+-------------------------------------------
+
+/TZGOW/
+  if 
+    NULL
+
+-------------------------------------------
+
+/TRCTP/
+  if 
+    NULL
+
+---------------------------------
+

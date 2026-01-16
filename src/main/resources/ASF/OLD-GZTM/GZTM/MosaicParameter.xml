@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParameterRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MosaicParameter.xsd"><Parameter adsMaxNbContractDef="4" adsProjTimeDelta="900" mosaicCellLatSize="1.00000E+00" mosaicCellLongSize="1.00000E+00"/></ParameterRoot>

@@ -1,0 +1,91 @@
+--
+--
+-- 
+--  FILE: ADJACENT_FIR.ASF 
+--
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--
+----
+--
+
+/OWN_FIR_NAME/
+--
+ZGZU |  GUANGZHOU TMA FIR NAME
+--
+-- add at 0408  for  MHT_TWR
+/EUROCAT_T_AREA/
+ZGTW | MHT_TWR|
+
+-- add at 0408  for  MHT_TWR
+/AIDC_FUNCTION/
+AIDC_ALL_OPEN | Y
+
+
+/FIR/
+--Name |PROTOCOL |TOC-AOC|OLDI? |NAS?|UNIT SETTING | Comments
+--------------------------------------------------
+ZGJD | AIDC | Y | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| N | N | N |ZHUHAI APP
+ZGAC | FDECM| Y | N | N | N | NOBLOCK | METRIC  | N | N | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N |  | S0580|   GUANG ZHOU ACC
+ZGNN | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| NANNING FDRG
+ZGZJ | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| ZANJIANG FDRG
+ZGOW | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| SHANTOU FDRG
+ZSAM | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| XIAMEN FDRG
+ZSCN | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| NANCHANG FDRG
+ZUUU | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| CHENGDU FDRG
+ZHHH | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| WUHAN FDRG
+ZUGY | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| GUIYANG FDRG
+ZGHA | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| CHANGSHA FDRG
+ZLXY | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| XI'AN FDRG
+ZHCC | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| ZHENGZHOU FDRG
+ZSHA | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| SHANGHAI FDRG
+ZBAA | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| BEIJING FDRG
+VHHH | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| HONGKONG FDRG
+RCTP | ICAO | N | N | N | N | NOBLOCK | IMPERIAL| Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| TAIPEI FDRG
+ZJSY | ICAO | N | N | N | N | NOBLOCK | METRIC  | Y | Y | N | TRUE | BCDEIJRWZAFGHKLMOPQTUVXY | N | Y| Y | N | N| SANYA FDRG
+
+-- 
+--
+--/NON_SURVEILLANCE_TOWER/
+--  GZTW   | N | N |
+
+--
+--/MIL_CENTRE/
+--Name | AIDC/ICAO | TOC_AOC_flag       | Comments
+------------------------------------------------
+--MILA | AIDC      | 	Y		|Military area occupying AC1
+
+--/MIL_AREA/
+--name | centre  | act per 1   | act per 2   | act per 3   | act per 4   | comments
+--------------------------------------------------------------------------------------------------
+--
+--MILA  | MILA   | 00:00*23:59 |             |             |             |
+--
+
+/CENTRE_2012_4444_COMPLIANT/
+ZGNN | Y
+ZGZJ | Y
+ZGOW | Y
+ZSAM | Y
+ZSCN | Y
+ZGJD | Y
+ZUUU | Y
+ZHHH | Y
+ZUGY | Y
+ZGHA | Y
+ZLXY | Y
+ZHCC | Y
+ZSHA | Y
+ZBAA | Y
+VHHH | Y
+RCTP | Y
+ZJSY | Y
+ZGAC | Y
+--ZTW | Y
+-- add at 0408  for  MHT_TWR
+ZGTW | Y
+
+

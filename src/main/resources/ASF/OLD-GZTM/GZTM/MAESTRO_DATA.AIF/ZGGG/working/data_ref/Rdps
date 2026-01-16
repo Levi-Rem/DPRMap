@@ -1,0 +1,35 @@
+#Protocol = {Tcp | Udp}
+RDPS.OPER.Protocol = Udp;
+
+#Connection_Mode = {Client | Server}
+#RDPS.OPER.Connection_Mode = Client;
+
+#if Protocol = Udp then this parameter is mandatory
+#hostname is the name of the host where RDPS runs.
+RDPS.OPER.hostname.Interface = gztmmst1ali;
+# replace the hostname with the name of MSTS server
+
+#Asterix_Track_Category = {Cat_30_Artas | Cat_30_App | Cat_30_Electra | Cat_30_Scansim | Cat_30_First_Plus | Cat_62_Artas}
+RDPS.OPER.Asterix_Track_Category = Cat_62_Artas;
+
+RDPS.OPER.Use_Time_Synchronization = False;
+#Asterix_Sync_Category = {Cat_252_Artas | Cat_252_Electra | Cat_252_Simu | Cat_255}
+RDPS.OPER.Asterix_Sync_Category = Cat_252_Artas;
+
+RDPS.OPER.Sac = 8;
+RDPS.OPER.Sic = 135;
+
+RDPS.OPER.Port_Number = 60002;
+RDPS.OPER.Alternate_Port_Number = 60002;
+RDPS.OPER.Multicast_Group = 226.1.1.1;
+RDPS.OPER.Alternate_Multicast_Group = 226.1.1.1;
+
+# Timeout to wait between succesive connection attempts
+RDPS.OPER.Connection_Timeout    = 15;
+
+# Timeout after which the connection is broken if no data is received
+RDPS.OPER.Surveillance_Period   = 60;
+
+# parameter to get the Radar plots used in dpr, stored in a traffic file (loadable in the Prep_Tp)
+*.Generate_Traffic_File : TRUE
+

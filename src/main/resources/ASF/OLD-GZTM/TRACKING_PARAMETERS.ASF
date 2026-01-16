@@ -1,0 +1,19 @@
+----------------------------------------------------------
+--	                                                --
+--               TRACKING_PARAMETERS.ASF                --
+--	                                                --
+----------------------------------------------------------
+  
+RDF_HANDLE_NORTH_DELAY        | 0.125
+RDF_HANDLE_NORTH_MISSES       | 3
+RDF_HANDLE_NUMBER_OF_SCANS    | 3
+RDF_HANDLE_NUMBER_OF_MISSES   | 5
+RDF_MRT_LOW_SPEED	      | N0040
+RDF_MRT_UPPER_SPEED	      | N0600
+RDF_MRT_UPPER_ALTITUDE        | F300
+RDF_MRT_SUBPERIOD_NUMBER      | 16
+RDF_MRT_END_OVERLOAD	      | 380
+RDF_MRT_PRE_OVERLOAD	      | 360
+RDF_MRT_END_PRE_OVERLOAD      | 340
+
+

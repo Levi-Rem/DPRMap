@@ -1,0 +1,2740 @@
+--
+--
+--  CREATION DATE :  2021-08-15
+--  BY            :  Liusq
+--  VERSION       :  V1.0.0
+--
+--
+---------------+------------+--------------+---------------------------------------------
+--     Version | Date       | Responsible  | Comment
+---------------+------------+--------------+---------------------------------------------
+--     V1.0.0  | 2021-08-15 | Liusq        | Initial created
+---------------+------------+--------------+---------------------------------------------
+--
+--
+--   
+-- Start of general parameters : need to be defined only once
+--
+--- Average altitude value in hundreds of feet associated with local
+--- tracks without mode C, or garbled mode C altitude
+--OFL_AVERAGE_ALTITUDE | F300.0
+--
+--- SPEED MIN : used to calculate Coeff "a" used in the computation of
+--- an average altitude for tracks
+OFL_SPEED_MIN | N0100
+--
+--
+--- SPEED MAX : used to calculate Coeff "b" used in the computation of
+--- an average altitude for tracks
+OFL_SPEED_MAX | N0600
+--
+--
+--- System information code and system area code of the system track source.
+--SIC_SAC_SYSTEM_TRACKS | 10 | 10 |
+--
+--
+--
+MRT_UPDATE_PERIOD | 5
+--
+
+--ADDED FOR  GZE TEST
+
+--- Default radar for APP diffusion
+RADAR_FOR_APP_DIFFUSION               |    1   |    2   |    3   |   4   |   5    |    6   |   7   |   8   | 
+--- 
+DISTRIBUTION_RANGE_FOR_APP_DIFFUSION  | 250NM  | 250NM  | 250NM  | 250NM | 250NM  | 250NM  | 250NM | 250NM |
+--GZE TEST END
+
+
+-- DEFAULT_RADAR_WEATHER: default radar ID for radar weather info
+--
+DEFAULT_RADAR_WEATHER | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 10 | 14 | 18 |
+--
+--- Percentage used in North signal processing.
+--- Used to determine whether a given time or delay is in its expected
+--- position
+OFL_RADAR_PERIOD_ALLOWED_BOUNDS_PERCENTAGE | 0.2000
+---
+--- Coefficient used in radar periods average computation
+OFL_RADAR_PERIODS_AVERAGE_COEF1 | 7
+OFL_RADAR_PERIODS_AVERAGE_COEF2 | 12
+--
+--
+OFL_TRANSITION_LEVEL | F40.0
+--
+--
+--                           +------------------+
+RDF_MRT_SUBPERIOD_NUMBER     | 15
+--                           +------------------+
+BIAS_RANGE_THRESHOLD         | 0.5NM
+BIAS_AZIMUTH_THRESHOLD       | 1.0
+--
+SMON_NBOUT | 10
+--
+AREA_MAXIMUM_ALTITUDE        | F1400
+--                           +------------------+
+--- System information code and system area code of the system track source.
+SIC_SURVEILLANCE_TRACKS               | 1 |
+SAC_SURVEILLANCE_TRACKS               | 1 |
+SIC_SURVEILLANCE_MULTI_RADAR_TRACKS   | 3 |
+SIC_SURVEILLANCE_WAM_TRACKS           | 5 |
+SIC_BYPASS_SURVEILLANCE_TRACKS        | 2 |
+--
+--
+MAX_SEC_PLANE_SPEED          | N1600 |
+MAX_PRIM_PLANE_SPEED         | N899 |
+MIN_SEC_PLANE_SPEED          | N0 |
+MIN_PRIM_PLANE_SPEED         | N30 |
+--
+MINI_FPL_SERVICE_USER_NUMBER | 5000 |
+
+
+--
+-- End of general parameters
+--
+
+-- From the next line starts the parameter definition for each radar
+-- The whole section has to be repeated for each radar
+--
+--
+--
+--******************************************************************************
+--                                                                            **
+--     radar_01   Guangzhou Fenghuangshan Radar : SELEX PSR/SSR               **
+--                                                                            **
+--******************************************************************************
+--
+/PNX/
+--                                      +-------+
+PRIMARY_RADAR_RANGE			|  80NM |
+SECONDARY_RADAR_RANGE			| 256NM |
+SECTOR_PROCESSING_DELAY                 | 3     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 1.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    1   |    1    | 230.0M |  15.8    |    15.8     | +0.0008700 | 23144721N113191392E |
+--   +---------------------------------------------------------------------------------------+
+--
+--      +-----------+
+SECTORS |                                   
+--      +-----------+     
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL | 160|  0 |  0 |160 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL | 90   |     30      | 80   |    15       | 90 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+--OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+--                                   1.5|0.01|1.5|1.5|1.5|0.01|
+--                                   0.75|3.0|3.0|TRUE|
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |2.0|2.0|2.0|0.01|2.0|2.0|
+                                   2.0|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT| 500M| 259|297FT| 35 |
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 1 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                           0 | 0 |900|TRACKED_PLOT|  FALSE   |   FALSE   |   TRUE    |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |     NORTH_NOT_PRESENT |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION |  TRUE |  25 |    FALSE     | 2 | 4 | 6 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax | 
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 193 | 22  |
+SIC_SAC_2_TABLE            | 193 | 22  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE	     | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    50     |        0        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+--TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|7777|253137N1125849E|50.0| 5KM|100.0|10KM |MINOR|
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+--
+TRACKING_AREA_ID  | |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+----
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--******************************************************************************
+--                                                                            **
+--    radar_02   Guangzhou Xilin Radar : Raytheon PSR/SSR                   **
+--                                                                            **
+--******************************************************************************
+--
+/XLN/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     |  80NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 5     |
+--                                      +-------+
+--
+RADAR_TYPE | COMBINED
+RADAR_PRIORITY   | 1.0  |
+MSTP_RADAR_TRUST | TRUSTED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    2   |   2     | 98.06M |   12.019 |    12.019   | +0.0001    | 23244862N113161885E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |160 |  0 |  0 |160 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL | 100  |     18      | 100  |   18        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000| 40000FT| 80M | 244|425FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 2 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |L1 |L2 |PRO| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          900|900| 0 |TRACKED_PLOT|   FALSE  |   FALSE   |   TRUE    |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION |  TRUE |  65 |    FALSE     | 4 | 4 | 8 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 194 | 22  |
+SIC_SAC_2_TABLE            | 195 | 22  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    50     |        0        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |     |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |     |
+--                         +------------|---------|----|---------------|----|----|----|-----|-----|
+--TEST_TRACK_OR_BEACON_TABLE | TEST_TRACK |SECONDARY|1030|243150N1135933E|50.0| 5KM|100.0|10KM |MINOR|
+--                           | TEST_TRACK |SECONDARY|7722|212743N1154643E|50.0| 5KM|100.0|10KM |MINOR|
+--                         +----------------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.50 |
+MONOPULSE_RADAR                    |FALSE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  | NAI1 | NAI2 | NAI3 |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+
+--
+--******************************************************************************
+--                                                                            **
+--    radar_03     Laiwu Radar : Nriet PSR/SSR                              **
+--                                                                            **
+--******************************************************************************
+--
+/STL/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 080NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 6     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 2.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |   3    |   3     |  57M   |  15.0    |    15.0     | 0.00419    | 23252102N116512490E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |210 |  0 |  0 | 0  |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0| 15000|40000FT|300FT| 259|397FT| 35 |
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 3 | 0 | 0 |  ASTERIX      |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |L1 |L2 |PRO| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          625|625| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    FALSE  |
+--                       |-----------------------------------------------------------|
+                              NOT_UNIVERSAL_TIME_STAMPING    |  NORTH_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | TRUE  |  30 |    FALSE     | 2   |  4  |   6   |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 209 | 22  |
+SIC_SAC_2_TABLE            | 209 | 22  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    50     |        0        |
+--                               +---------------------------------------+
+--
+--
+-- --                         +----------------------------------------------------------------+
+-- --                         |            |         |    |               |S Window | L Window |
+-- --                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+-- --                         +------------|---------|----|---------------|----|----|----|-----|
+--TEST_TRACK_OR_BEACON_TABLE    |SITE_MONITOR|SECONDARY|7722|202018N1144607E|50.0| 5KM|100.0|10KM|MINOR| --pas vu
+-- --                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--
+--******************************************************************************
+--                                                                            **
+--   radar_04          Zhuliantang Radar : SELEX SSR                        **
+--                                                                            **
+--******************************************************************************
+--
+/GLZ/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 010NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 3     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 1.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    4   |    4    | 548M   |  15.789  |    15.789   | -0.001836 | 25033771N110040538E     |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |150 |  0 |  0 |150 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 4 | 0 | 0 |  ASTERIX      |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |L1 |L2 |PRO| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          475|475| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                                 UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |    FALSE     | 8 | 1 | 5 | 6 | 8 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +---------------+
+--RADAR_GEOGRAPHIC_FILTERS_TBL | 0 | 0 | 0 | 0 |
+--                           +---------------+
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 118 |  22 |
+SIC_SAC_2_TABLE            | 118 | 22  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    90     |        0        |
+--                               +---------------------------------------+
+--
+--
+-- --                         +----------------------------------------------------------------+
+-- --                         |            |         |    |               |S Window | L Window |
+-- --                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+-- --                         +------------|---------|----|---------------|----|----|----|-----|
+--TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|6666|283656N1100250E|50.0| 5KM|100.0|10KM |
+-- --                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--
+--******************************************************************************
+--                                                                            **
+--   radar_05      Qiuyutan Radar : Indra  SSR                                **
+--                                                                            **
+--******************************************************************************
+--
+/SZQ/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 080NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+--                                      +-------+
+SECTOR_PROCESSING_DELAY                 | 3     |
+--                                      +-------+
+--
+RADAR_TYPE | COMBINED
+RADAR_PRIORITY   | 3.0  |
+MSTP_RADAR_TRUST | TRUSTED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    5   |    5    | 322M   |  15.118  |    15.118   | +0.0040    | 22384900N113504400E     |
+--   +---------------------------------------------------------------------------------------+
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |116 |  0 |  0 |116 |  0 |   0|   0|   0| 60 |  10|
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL | 150  |     60      | 150  |   60        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 5 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          325|325| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |     FALSE    | 8 | 1 | 5 | 6 | 8 |
+--                        +------------------------------------------------+
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 203 | 70  |
+SIC_SAC_2_TABLE            | 203 | 70  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    90     |        1        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|7777|22342200N112562300E|50.0| 5KM|100.0|10KM |MINOR| --pas vu
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+
+--******************************************************************************
+--                                                                            **
+--   radar_06      Lanlangshan Radar : EnRuiTe SSR                          **
+--                                                                            **
+--******************************************************************************
+--
+/ZHL/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 080NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+--                                      +-------+
+SECTOR_PROCESSING_DELAY                 | 7     |
+--                                      +-------+
+--
+RADAR_TYPE | COMBINED
+RADAR_PRIORITY   | 5.0  |
+MSTP_RADAR_TRUST | TRUSTED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    6   |    6    | 291M   |  15.17   |    15.17    | +0.002     | 22012400N113214000E |
+--   +---------------------------------------------------------------------------------------+
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL | 60 |  0 |  0 |60  |  0 |   0|   0|   0| 60 |  10|
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |300.0|15000|12800FT |315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 6 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          500|500| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                              UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |     FALSE    | 8 | 1 | 5 | 6 | 8 |
+--                        +------------------------------------------------+
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 116 | 22  |
+SIC_SAC_2_TABLE            | 116 | 22  |
+--                         +-----------+
+--old 208 ee
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    70     |        1        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |TEST_TRACK  |SECONDARY|7777|231315N1164359E|50.0| 5KM|100.0|10KM |MINOR|
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--
+--
+--******************************************************************************
+--                                                                            **
+--   radar_07        HaiKouJiuzhou Radar : S Mode SSR                         **
+--                                                                            **
+--******************************************************************************
+/HKJ/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 010NM |
+SECONDARY_RADAR_RANGE                   | 216NM |
+SECTOR_PROCESSING_DELAY                 | 3     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 2.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    7   |   7     |  209M  |   15.0   |    15.0     | +0.0022    | 19432512N110244048E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |200 |  0 |  0 |200 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0| 15000|40000FT|300FT| 259|397FT| 35 |
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 7 | 0 | 0 |  ASTERIX      |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |L1 |L2 |PRO| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          625|625| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  30 |    FALSE     | 2   |  4  |   6   |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 113 |  22 |
+SIC_SAC_2_TABLE            | 113 |  22 |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    50     |        1        |
+--                               +---------------------------------------+
+--
+--
+-- --                         +----------------------------------------------------------------+
+-- --                         |            |         |    |               |S Window | L Window |
+-- --                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+-- --                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE    |SITE_MONITOR|SECONDARY|6600|223347N1110149E|50.0| 5KM|100.0|10KM|MINOR|
+-- --                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--
+--
+--******************************************************************************
+--                                                                            **
+--   radar_08  Changsha EnRuiTe Radar : SSR                                   **
+--                                                                            **
+--******************************************************************************
+/CSE/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 10NM  |
+SECONDARY_RADAR_RANGE                   | 450KM |
+SECTOR_PROCESSING_DELAY                 | 7     |
+--                                      +-------+
+RADAR_TYPE | COMBINED
+RADAR_PRIORITY   | 1.0  |
+MSTP_RADAR_TRUST | TRUSTED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    8   |   8     |  87M   |  15      |    15       | +0.0162    | 28124340N113105993E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |330 |  0 |  0 |330 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  80  |     18      |  80  |   18        | 50 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 8 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          500|500| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |   FALSE   |
+--                       |-----------------------------------------------------------|
+                              NOT_UNIVERSAL_TIME_STAMPING    |  NORTH_PRESENT        |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |     FALSE    | 8 | 2 | 7 | 8 | 8 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 28  | 20  |
+SIC_SAC_2_TABLE            | 28  | 20  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    50     |        1        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|7777|261333N1161344E|50.0| 5KM|100.0|10KM |MINOR|
+--                         |TEST_TRACK  |SECONDARY|1030|303128N1132543E|50.0| 5KM|100.0|10KM |
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+
+--******************************************************************************
+--                                                                            **
+--    radar_09   Guangzhou Dahezhang Radar : Raytheon SSR                    **
+--                                                                            **
+--******************************************************************************
+--
+/DHZ/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     |  10NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 3     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 1.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    9   |    9    | 408M   |  11.92388|    11.92388 | -0.0002909 | 23135095N113220091E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL | 0 |  0 |  0 |  0 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  90  |     15      |  90  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 9 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |L1 |L2 |PRO| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          625|625| 0 |    PLOT    |  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                             NOT_UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |     FALSE    | 3 |   |   | 2 | 3 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 127 | 22  |
+SIC_SAC_2_TABLE            | 127 | 22  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    90     |        1        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|7777|252419N1122600E|50.0| 5KM|100.0|10KM |MINOR|    
+--                           | TEST_TRACK |SECONDARY|1030|240120N1135231E|50.0| 5KM|100.0|10KM |MINOR|  --pas vu en MMI
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+
+--
+--******************************************************************************
+--                                                                            **
+--    radar_10           Wangzishan Radar : Thales PSR/SSR                    **
+--                                                                            **
+--******************************************************************************
+--
+/WZS/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 080NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 5     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 1.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |   10   |   10    | 432M   |  15.0    |    15.0     | 0.0000000  | 23324458N113132324E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |80  |  0 |  0 |80  |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0| 15000|40000FT|300FT| 259|397FT| 35 |
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 10| 0 | 0 |  ASTERIX      |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |L1 |L2 |PRO| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          625|625| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | TRUE  |  30 |    FALSE     | 2   |  4  |   6   |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 111 | 70  |
+SIC_SAC_2_TABLE            | 111 | 70  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    50     |        1        |
+--                               +---------------------------------------+
+--
+--
+-- --                         +----------------------------------------------------------------+
+-- --                         |            |         |    |               |S Window | L Window |
+-- --                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+-- --                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE    |SITE_MONITOR|SECONDARY|7722|203900N1143727E|50.0| 5KM|100.0|10KM|MINOR|
+-- --                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--
+--******************************************************************************
+--                                                                            **
+--   radar_11           shantou meigangshan Radar : Thales SSR              **
+--                                                                            **
+--******************************************************************************
+/STM/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 080NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 4     |
+--                                      +-------+
+RADAR_TYPE | COMBINED
+RADAR_PRIORITY   | 1.0  |
+MSTP_RADAR_TRUST | TRUSTED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    11  |   11    | 124.0M |  15.0    |    15.0     | +0.00273   | 23345556N116293840E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |-42 |  0 |  0 |-42 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  80  |     15      |  80  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL |11 | 0 | 0 |   ASTERIX     |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          800|800| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |   TRUE    |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |   NORTH_NOT_PRESENT   |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |    FALSE     | 8 | 1 | 5 | 6 | 8 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 114 |  22 |
+SIC_SAC_2_TABLE            | 114 |  22 |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    90     |        1        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|3335|220813N1165653E|50.0| 5KM|100.0|10KM |MINOR |
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+
+
+--******************************************************************************
+--                                                                            **
+--   radar_12   Nanning Chongzuo Radar : Asterix SSR S Mode                **
+--                                                                            **
+--******************************************************************************
+--
+/NNC/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     |  10NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 4     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 1.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    12  |    12   | 428M   |  15.118  |    15.118   | -0.0029670 | 22192100N107293500E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL | 193|  0 |  0 | 193|  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 12| 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          500|500| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |   TRUE    |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |    NORTH_NOT_PRESENT      |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |     FALSE    | 5 | 1 | 2 | 3 | 5 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 122 | 22  |
+SIC_SAC_2_TABLE            | 122 | 22  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    90     |        0        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+--TEST_TRACK_OR_BEACON_TABLE |TEST_TRACK  |SECONDARY|1030|200929N1074350E|50.0| 5KM|100.0|10KM |MINOR|
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+
+--
+--******************************************************************************
+--                                                                            **
+--   radar_13      Aomen Radar : SIEMENS  SSR                                **
+--                                                                            **
+--******************************************************************************
+--
+/AOM/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 080NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+--                                      +-------+
+SECTOR_PROCESSING_DELAY                 | 3     |
+--                                      +-------+
+--
+RADAR_TYPE | COMBINED
+RADAR_PRIORITY   | 1.0  |
+MSTP_RADAR_TRUST | TRUSTED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    13  |    13   | 170M   |  15.00   |    15.00    | +0.0174500 | 22073000N113334400E |
+--   +---------------------------------------------------------------------------------------+
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL | 40 |  0 |  0 |40  |  0 |   0|   0|   0| 60 |  10|
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 13| 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          525|525| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                                  UNIVERSAL_TIME_STAMPING    |  NORTH_NOT_PRESENT    |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |     FALSE    | 8 | 1 | 5 | 6 | 8 |
+--                        +------------------------------------------------+
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 01  | 64  |
+SIC_SAC_2_TABLE            | 01  | 64  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    90     |        1        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|7777|23244000N114092100E|50.0| 5KM|100.0|10KM |MINOR|
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--
+--
+--
+--******************************************************************************
+--                                                                            **
+--   radar_14  Xianggang Baijiashan (Hong Kong) Radar : Raytheon SSR         **
+--                                                                            **
+--******************************************************************************
+--
+/HKG/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 010NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 4     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 1.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |   14   |   14    |   538M |  10.1112 |    10.1112  | +0.0013700 | 22160564N114132449E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL | 23 |  0 |  0 | 23 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     15      |  60  |   15        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL |14 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          750|750| 0 |TRACKED_PLOT|  FALSE   |   FALSE   |    TRUE   |
+--                       |-----------------------------------------------------------|
+                              NOT_UNIVERSAL_TIME_STAMPING    |     NORTH_NOT_PRESENT |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |     FALSE    | 3 |   |   | 2 | 3 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--
+--                           +---------------+
+--RADAR_GEOGRAPHIC_FILTERS_TBL | 0 | 0 | 0 | 0 |
+--                           +---------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 122 | 115 |
+SIC_SAC_2_TABLE            | 121 | 115 |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    90     |        2        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |TEST_TRACK|SECONDARY|7776|225857N1134429E|50.0| 5KM|100.0|10KM |MINOR|
+                           |TEST_TRACK|SECONDARY|7777|221240N1141305E|50.0| 5KM|100.0|10KM |MINOR|    --non plus
+--                           |SITE_MONITOR|SECONDARY|7773|250608N1121620E|50.0| 5KM|100.0|10KM |MINOR|    --pas vu
+--                           |TEST_TRACK  |SECONDARY|1030|221233N1141307E|50.0| 5KM|100.0|10KM |MINOR|    --non plus
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |1000FT|
+--                          +---+----+-----+
+--
+--
+                                                          
+--
+--******************************************************************************
+--                                                                            **
+--   radar_15  Zhanjiang Xincunling Radar : Indra SSR S Mode                  **
+--                                                                            **
+--******************************************************************************
+/ZJG/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     | 010NM |
+SECONDARY_RADAR_RANGE                   | 420KM |
+SECTOR_PROCESSING_DELAY                 | 4     |
+--                                      +-------+
+--
+RADAR_TYPE | COMBINED
+RADAR_PRIORITY   | 1.0  |
+MSTP_RADAR_TRUST | TRUSTED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+SITE |    15  |   15    |   79M  |   15.000 |    15.000   | 0.00000000 | 21294071N110342012E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL | 312|  0 |  0 | 312|  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL |  60  |     20      |  60  |   20        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|315FT| 244|325FT| 105|
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL | 15| 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |L1 |L2 |PRO| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          500|500| 0 |TRACKED_PLOT|  FALSE   |  FALSE    |  TRUE     |
+--                       |-----------------------------------------------------------|
+                                UNIVERSAL_TIME_STAMPING      |     NORTH_NOT_PRESENT     |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |    FALSE     | 5 |   |   | 3 | 5 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            | 207 | 70  |
+SIC_SAC_2_TABLE            | 207 | 70  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    80     |        0        |
+--                               +---------------------------------------+
+--
+--
+--                         +-----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window  |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim | Rng |
+--                         +------------|---------|----|---------------|----|----|-----|-----|
+--TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|7777|224715N1064458E|50.0| 5KM|100.0|10KM |MINOR|
+--                         |SITE_MONITOR|SECONDARY|7777|215940N1083344E|50.0| 5KM|100.0|10KM |MINOR|    --used in bypass
+--                         +-----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+--
+--
+--
+--******************************************************************************
+--                                                                            **
+--   radar_16           Shaoguan Radar : Raytheon SSR                       **
+--                                                                            **
+--******************************************************************************
+--
+/SHG/
+--                                      +-------+
+PRIMARY_RADAR_RANGE                     |  10NM |
+SECONDARY_RADAR_RANGE                   | 256NM |
+SECTOR_PROCESSING_DELAY                 | 5     |
+--                                      +-------+
+--
+RADAR_PRIORITY   | 1.0   |
+MSTP_RADAR_TRUST | TRUSTED |
+RADAR_TYPE       | COMBINED |
+--
+--   +---------------------------------------------------------------------------------------+
+--   |Radar Nb| Raspp Id|Altitude|Rot Speed | Rot Speed 2 | Grid North | Coordinates         |
+--   |--------|---------|--------|--------- |-------------|------------|----------------------
+--SITE |   16   |   16    | 460.6M |  12.085  |    12.085   | -0.0002909 | 24515367N113345255E |
+SITE |   16   |   16    | 460.6M |  12.085  |    12.085   | -0.0027    | 24515367N113345255E |
+--   +---------------------------------------------------------------------------------------+
+--
+--
+--      +-----------+
+SECTORS |
+--      +-----------+
+--
+--                       +-------------------------------------------------+
+--                       |           Bias         |   Standard Deviation   |
+--                       |   Primary    | Second  |   Primary    | Second  |
+--                       |Rng |Azim|Elev|Rng |Azim|Rng |Azim|Elev|Rng |Azim|
+--                       |----|----|----|----|----|----|----|----|----|----|
+OFL_RADAR_BIAS_PARAM_TBL |119 |  0 |  0 |119 |  0 |  0 |  0 |  0 | 60 | 10 |
+--                       +-------------------------------------------------+
+--
+--                        +--------------------------------------------------------+
+--                        |        Standard Deviation               |              |
+--                        |-----------------------------------------|--------------|
+--                        |      Second        |       Associated   |    Primary   |
+--                        |--------------------|--------------------|--------------|
+--                        |Rng(m)|Azim(0.1mrad)|Rng(m)|Azim(0.1mrad)|Rng |Azim|Elev|
+--                        |------|-------------|--------------------|----|----|----|
+OFL_RADAR_NOISE_PARAM_TBL | 120  |     13      | 120  |   13        | 45 | 35 | 80 |
+--                        +--------------------------------------------------------+
+--
+OFL_OUTLIER_RADAR_NOISE_PARAM_TBL |1.5|1.5|1.5|0.01|1.5|1.5|
+                                   1.5|0.01|1.5|1.5|1.5|0.01|
+                                   0.75|3.0|3.0|TRUE|
+
+--                                  +------------------------------------------------+
+--                                  |     |           |        |Discrimination Power |
+--                                  | Rng |    Site   |    ?   | Primary  |  Second  |
+--                                  | Min | Min | Max |    ?   | Rng |Azim| Rng |Azim|
+--                                  |-----|-----|-----|--------|-----|----|-----|----|
+OFL_RADAR_CHARACTERISTICS_PARAM_TBL | 0NM |-52.0|15000|128000FT|300FT| 259|397FT| 35 |
+--                                  +------------------------------------------------+
+--
+--
+--                       +-----------------------------------------------------------+
+--                       | V Line Nb |                  Input Format                 |
+--                       |EOB|PSR|SSR|      EOB      |      PSR      |      SSR      |
+--                       |---|---|---|---------------|---------------|---------------|
+OFL_RADAR_LINE_PARAM_TBL |16 | 0 | 0 |    ASTERIX    |   UNDEFINED   |   UNDEFINED   |
+--                       |-----------------------------------------------------------|
+--                       |Date Delay |            |          |           |           |
+--                       |EOB|PSR|SSR| Input Data |Q Init Flg|Ass To Make|EOB Present|
+--                       |---|---|---|------------|----------|-----------|-----------|
+                          625|625| 0 |    PLOT    |  FALSE   |   FALSE   |   TRUE    |
+--                       |-----------------------------------------------------------|
+                                 UNIVERSAL_TIME_STAMPING |    NORTH_NOT_PRESENT      |
+--                       +-----------------------------------------------------------+
+--
+--
+--                      +------------------------------------------------------------+
+DATA_COUNTING_INFO_TYPE |  0  |  0  | 0   |   1   |   1   |  1  |  1 |   0   |   0   |
+                          10  |  10 |FALSE|-1024.0|-1024.0|FALSE|0000|-1024.0|-1024.0|
+                         FALSE| 0.0 | 0.0 |   0   |   0   |  4  |  1 |   1   |   0   |
+                          0   |  0  |  0  |   0   |   0   |  0  |  0 |   0   |   0   |
+                               7777       |       -58.88        |       100.76       |
+--                      +------------------------------------------------------------+
+--
+--
+--                        +------------------------------------------------+
+--                        |Weather|Delay|High Map First| Intensity Levels  |
+--                        |-------|-----|--------------|-------------------|
+WEATHER_RADAR_INFORMATION | FALSE |  10 |    FALSE     | 8 | 1 | 5 | 6 | 8 |
+--                        +------------------------------------------------+
+--
+--
+--                           +------------------------------------------------+
+--                           | Sectors |          |      |      |      |      |
+--                           | In |Out | Geo Filt | Xmin | Ymin | Xmax | Ymax |
+--                           |---------|----------|------|------|------|------+
+SECTOR_RADAR_INFORMATION_TBL | 32 | 32 |  FALSE   |  0.0 |  0.0 | 10.0 | 10.0 |
+--                           +------------------------------------------------+
+--
+--                           +-----------------------+
+RADAR_GEOGRAPHIC_FILTERS_TBL | FALSE | 0 | 0 | 0 | 0 |
+--                           +-----------------------+
+--
+--                         +-----------+
+--                         | SIC | SAC |
+--                         |-----|-----|
+SIC_SAC_1_TABLE            |  34 | 22  |
+SIC_SAC_2_TABLE            |  34 | 22  |
+--                         +-----------+
+--
+--
+--                           +---------------------------+
+MODE_3A_VALIDITY_CHECK_TABLE | FALSE |  40  | 400  | 150 |
+MAX_PLOT_CHECK_TABLE         | FALSE | 3500 |    1200    |
+--                           +---------------------------+
+--
+--
+--                               +---------------------------------------+
+--                               |Period(s)|Hit rate(%)|Nb Entries(0..10)|
+--                               +---------|-----------|-----------------+
+TEST_TRACK_OR_BEACON_CHECK_TABLE |   300   |    50     |        1        |
+--                               +---------------------------------------+
+--
+--
+--                         +----------------------------------------------------------------+
+--                         |            |         |    |               |S Window | L Window |
+--                         |    Type    |Mode(P/S)|Code|   Position    |Azim|Rng |Azim| Rng |
+--                         +------------|---------|----|---------------|----|----|----|-----|
+TEST_TRACK_OR_BEACON_TABLE |SITE_MONITOR|SECONDARY|7733|272236N1140010E|50.0| 5KM|100.0|10KM |MINOR|
+--                           | TEST_TRACK |SECONDARY|1030|252717N1125545E|50.0| 5KM|100.0|10KM |MINOR|
+--                         +----------------------------------------------------------------+
+--
+--
+--                                 +------+
+COEF_OF_PRIORITY                   | 1.00 |
+MONOPULSE_RADAR                    | TRUE |
+PERIODS_AVERAGE_ALLOWED_DIFFERENCE | 10   |
+LINE_TRANSMISSION_DELAY_OF_RADAR   | 14   |
+--                                 +------+
+--
+TRACKING_AREA_ID  | BLK1 |
+--
+--              +----------------------------------------------------------------------------+
+--              |   Initial   |SPEED VECTOR CRITERION        |coef for weighted|   maximum   |
+--              | collimation |      |  Range  |             |average for coord| collimation |
+--              |    error    |      |   min   |Range|Heading|SSR Rng | SSR Az |    error    |
+--              |Azimuth|Range|Enable|threshold|delta|delta  |  rate  |  rate  |Azimuth|Range|
+--              | (deg) | (m) |(bool)|  (m/s)  |(m/s)| (deg) |  (%)   |  (%)   | (deg) | (m) |
+--              +-------------|------|---------|-----|-------|--------|--------|-------|-----+
+COLLIMATION_TBL | 0.0   | 0  | FALSE |   50    | 50  |  30   |   50   |   50   | 40.0  | 3000|
+--              +----------------------------------------------------------------------------+
+--
+--
+--
+--                          +------+
+REFLECTED_TRACKS_THRESHOLD  | 50.0 |
+--                          +------+
+-- Delta Az in degree
+-- Delta Range in NM
+-- Delta Mode C either in Feet or meters
+--                          +---+----+-----+
+REFLECTION_PARAMETERS       |180|  2 |600FT|
+--                          +---+----+-----+
+                                             
+

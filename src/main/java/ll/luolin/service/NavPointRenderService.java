@@ -4,7 +4,7 @@ package ll.luolin.service;
 import javafx.scene.canvas.GraphicsContext;
 import ll.luolin.model.MapModel;
 import ll.luolin.model.NavPointLayerModel;
-import ll.luolin.model.NavPointModel;
+import ll.luolin.model.ASFModel.NavPointModel;
 import ll.luolin.utils.LogUtils;
 import java.util.List;
 

@@ -1,0 +1,12 @@
+# AMAN/DMAN service support definition (AMAN|DMAN|AMAN_DMAN)
+*.Service_Active : AMAN
+
+# This parameter activates the display of the EUROCAT parameter menu
+*.Use_Eurocat_Parameters : TRUE
+
+# Do we use the trajectory predictor?
+*.Use_Tp: LIGHT
+
+# Did TMA configuration has to be checked at startup?
+*.Check_Tma_Configuration_At_Startup:   TRUE
+

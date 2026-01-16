@@ -1,0 +1,53 @@
+--
+--           FILE :  CPDLC_PARAMETERS.ASF 
+--
+--  CREATION DATE :  APRIL 3, 2002
+--  BY            :  YAN ZHONG FOR BEIJING
+--  VERSION       :  ISAT_01
+--  VERSION       :  ISAT_02
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|----------------------------------
+--     ISAT_02  | 4/02/03 | Z YAN       | NESACC Beijing OPS for Beijing FAT
+--
+--
+--
+--
+-- PARAMETER IDENTIFIER       | VALUE
+----------------------------------------------
+CPDLC_DATA_BASE_WARNING       | 85
+CPDLC_CONTROLLER_RESPONSE     | 30
+CPDLC_PILOT_RESPONSE          | 90
+CPDLC_HISTORY_TRANSFER        | 30
+CPDLC_AUTO_CONNECT_REQ        | TRUE
+--new parameters
+CPDLC_NDA_SEND_TIME           | 10
+CPDLC_NDA_RESEND_TIMEOUT      | 2
+--
+/CPDLC_FIR_CONFIGURATION/
+--
+-- adjacent FIR | auto NDA REQ | auto EOS REQ | 
+-------------------------------------------------------------
+--ZGHA            | FALSE        | FALSE | FALSE |  
+--ZGNN            | FALSE        | FALSE | FALSE |  
+--VHHH            | FALSE        | FALSE | FALSE |  
+--ZSAM            | FALSE        | FALSE | FALSE |  
+--ZGOW            | FALSE        | FALSE | FALSE |
+--ZGJD            | FALSE        | FALSE | FALSE |
+--ZGZJ            | FALSE        | FALSE | FALSE |
+----ZSCN            | FALSE        | FALSE | FALSE |
+--ZSHA            | FALSE        | FALSE | FALSE |
+--ZGKL            | FALSE        | FALSE | FALSE |
+ZGAC            | FALSE        | FALSE | FALSE |
+--
+--
+--
+--
+/SPECIAL_CPDLC_SELF_CLOSING_UPLINKS/
+
+-- Message Number |   Comments
+---------------------------------------------------------------
+135               |   CONFIRM ASSIGNED LEVEL
+181               |   REPORT DISTANCE {to/from} {position}

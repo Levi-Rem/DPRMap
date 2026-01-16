@@ -1,0 +1,85 @@
+--
+--           FILE :  MESSAGE_QUEUEING 
+--
+--
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      V2.3.5  | 4/1/05  | GZ ATMB     | updated for Guangzhou OPS
+--
+-- ICAO MESSAGES
+   
+/ICAO/
+----------------------------------
+-- Message Name | Valid  | Invalid 
+----------------------------------
+   ALR          | FDO    | FDO 
+   RCF		| FDO    | FDO
+   CHG		| NONE   | FDO
+   CNL		| NONE   | FDO
+   DLA		| NONE   | FDO
+   DEP		| NONE   | FDO
+   ARR		| NONE   | NONE
+   CPL		| NONE   | FDO
+   EST		| NONE   | NONE
+   CDN		| NONE   | FDO
+   ACP		| NONE   | NONE   
+   LAM		| NONE   | NONE
+   RQP		| NONE   | FDO 
+   RQS		| NONE   | FDO       
+   SPL		| FDO    | FDO
+   ARP          | FDO    | FDO
+   AEP          | FDO    | FDO
+   POS          | FDO    | FDO
+   ARS		| FDO	 | FDO	  
+   ACH          | NONE   | FDO
+--
+-- AIDC MESSAGES
+-------------------------------------------
+--
+
+/AIDC/
+----------------------------------
+-- Message Name | Valid  | Invalid 
+----------------------------------
+        EST 	| EC_PLC | NONE
+--        ACP     | EC_PLC | NONE
+	EMG 	| EC_PLC | NONE
+	MIS 	| EC_PLC | NONE
+	ABI	| EC_PLC | NONE
+	PAC	| EC_PLC | NONE
+	CDN	| EC_PLC | NONE
+	MAC	| EC_PLC | NONE
+	LAM	| NONE   | NONE
+--        LRM	| NONE   | NONE
+	TOC	| EC_PLC | NONE
+	AOC	| EC_PLC | NONE
+	THI	| NONE   | NONE
+        TRU     | EC_PLC | NONE
+
+/ADEXP/
+----------------|-------|--------
+-- Message name | Valid | Invalid
+----------------|----------------
+  ICHG          | NONE  | NONE
+  ICNL          | NONE  | NONE
+  IDLA          | NONE  | NONE
+  IDEP          | NONE  | NONE
+  IARR          | NONE  | NONE
+  IACH          | NONE  | NONE
+  SAM           | NONE  | NONE
+  SRM           | NONE  | NONE
+  SLC           | NONE  | NONE
+  FLS           | NONE  | NONE
+  DES           | NONE  | NONE
+
+/MESSAGE_FILTER_BEFORE_QUEUEING/
+DISCARD_SITA_MESSAGE | TRUE |
+DISCARD_CAAC_APPROVAL_MESSAGE | TRUE |
+
+/MESSAGE_WITH_ERROR_FILTER/
+
+
+

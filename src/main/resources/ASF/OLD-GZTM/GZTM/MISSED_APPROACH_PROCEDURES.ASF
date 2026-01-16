@@ -1,0 +1,29 @@
+--           FILE :  MISSED APPROACH PROCEDURE
+--  
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+--
+--
+--runway name | airport_1 |  points list
+--------------|-----------|-----------------------------------------------
+--36R            | ZBAA      | WF VM 
+--36            | HEAX      | LXR MB MKT NWB
+--14            | HEBA      | RSH RBC
+--05R           | HECA      | AEQ ALI ARH AST 
+--23R           | HECA      | LXR MB MKT NWB
+--34            | HECA      | RSH RBC
+02L            | ZGGG     | TAN 
+02R            | ZGGG     | CEN
+20L            | ZGGG     | CON 
+20R            | ZGGG     | TAN

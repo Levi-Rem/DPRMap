@@ -2,7 +2,8 @@
 package ll.luolin.service;
 
 import ll.luolin.model.NavPointLayerModel;
-import ll.luolin.model.NavPointModel;
+import ll.luolin.model.ASFModel.NavPointModel;
+import ll.luolin.service.parserService.CHARACTERISTIC_POINTS_Service;
 import ll.luolin.utils.LogUtils;
 import java.io.File;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 public class AutoLoadService {
     private static AutoLoadService instance;
-    private final AsfService asfService = AsfService.getInstance();
+    private final CHARACTERISTIC_POINTS_Service CHARACTERISTICPOINTSService = CHARACTERISTIC_POINTS_Service.getInstance();
 
     // 默认ASF文件路径
     private static final String DEFAULT_ASF_PATH = "ASF/OLD-GZTM/GLOBAL";
@@ -72,7 +73,7 @@ public class AutoLoadService {
             for (File file : asfFiles) {
                 try {
                     // 解析文件
-                    List<NavPointModel> points = asfService.parseAsfFile(file);
+                    List<NavPointModel> points = CHARACTERISTIC_POINTS_Service.getInstance().parserFile(file);
 
                     if (!points.isEmpty()) {
                         // 创建图层
@@ -132,7 +133,7 @@ public class AutoLoadService {
         LogUtils.info("AutoLoadService-reloadAllLayers-重新加载所有ASF文件");
 
         // 清除缓存
-        asfService.clearCache();
+        CHARACTERISTICPOINTSService.clearCache();
 
         // 重新加载
         return getAllAutoLoadedLayers();

@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feed_config min_warn_time="2" na_string="NA">
+<channels>
+<channel address="233.0.0.8" name="Channel1" nic="eth3" port="EFEED_01" ttl="3" type="udp"/>
+<channel address="233.0.0.8" name="Channel2" nic="eth3" port="EFEED_02" ttl="3" type="udp"/>
+<channel address="233.0.0.8" name="Channel3" nic="eth3" port="EFEED_03" ttl="3" type="udp"/>
+<channel address="233.0.0.8" name="Channel4" nic="eth3" port="EFEED_04" ttl="3" type="udp"/>
+<channel address="233.0.0.7" name="Channel9" nic="eth3" port="EFEED_09" ttl="3" type="udp"/>
+<channel address="233.0.0.7" name="Channel7" nic="eth3" port="EFEED_07" ttl="3" type="udp"/>
+<channel address="233.0.0.7" name="Channel8" nic="eth3" port="EFEED_08" ttl="3" type="udp"/>
+<channel address="233.0.0.7" name="Channel10" nic="eth3" port="EFEED_10" ttl="3" type="udp"/>
+<channel address="233.0.0.7" name="Channel6" nic="eth3" port="EFEED_06" ttl="3" type="udp"/>
+</channels>
+<messages>
+<message encoding="xml" name="IDENT">
+<sources>
+<source name="Identification"/>
+</sources>
+<triggers>
+<trigger event="field" path="Identification.COUPLING_MODE" test="changed"/>
+<trigger event="field" path="Identification.COUPLING_STATUS" test="changed"/>
+<trigger event="field" path="Identification.DUP_STATUS" test="changed"/>
+<trigger event="field" path="Identification.FLIGHT_PLAN_NUMBER" test="changed"/>
+<trigger event="field" path="Identification.NEXT_FIX" test="changed"/>
+<trigger event="field" path="Identification.SYSTEM_TRACK_NUMBER" test="changed"/>
+</triggers>
+<structure>
+<field path="Identification.rec_id" type="data"/>
+<field path="Identification.rec_time" type="data"/>
+<field path="Identification.CLAM_RESULT" type="data"/>
+<field path="Identification.COMPOSED_OF_INFO_VALID" type="data"/>
+<field path="Identification.CONFLICT_FLIGHT_PLANS" type="data"/>
+<field path="Identification.CONFLICT_TRACKS.0" type="data"/>
+<field path="Identification.CONFLICT_TRACKS.1" type="data"/>
+<field path="Identification.CONFLICT_TRACKS.2" type="data"/>
+<field path="Identification.CONFLICT_TRACKS.3" type="data"/>
+<field path="Identification.CONFLICT_TRACKS.4" type="data"/>
+<field path="Identification.COUPLING_MODE" type="data"/>
+<field path="Identification.COUPLING_STATUS" type="data"/>
+<field path="Identification.CSTD_RESULT" type="data"/>
+<field path="Identification.DUP_STATUS" type="data"/>
+<field path="Identification.FLIGHT_PLAN_NUMBER" type="data"/>
+<field path="Identification.NB_CONFLICT_FLIGHT_PLANS" type="data"/>
+<field path="Identification.NB_CONFLICT_TRACKS" type="data"/>
+<field path="Identification.NEXT_FIX" type="data"/>
+<field path="Identification.PROXIMITY_RESULT" type="data"/>
+<field path="Identification.RAM_RESULT" type="data"/>
+<field path="Identification.RECORD_UPDATE_TIME.TIME_BASE_ID" type="data"/>
+<field path="Identification.RECORD_UPDATE_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="Identification.RECORD_UPDATE_TIME.UNIVERSAL_USEC" type="data"/>
+<field path="Identification.SYSTEM_TRACK_NUMBER" type="data"/>
+</structure>
+<targets>
+<target channel="Channel1"/>
+</targets>
+</message>
+<message encoding="xml" name="CO_FPL">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers>
+<trigger event="field" path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ASSR_CODE" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.LAST_APR.FIX_NAME" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.FPL_STATUS" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_FIELD" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_UPDATE_COUNTER" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CFL" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.EOBT.DATE_IN_SECONDS" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.DOF" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ADEP" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ADES" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.SID" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CALLSIGN" test="changed"/>
+</triggers>
+<structure>
+<field path="FLIGHT_PLAN_T.rec_id" type="data"/>
+<field path="FLIGHT_PLAN_T.rec_time" type="data"/>
+<field path="FLIGHT_PLAN_T.CALLSIGN" type="data"/>
+<field path="FLIGHT_PLAN_T.ASSR_CODE" type="data"/>
+<field path="FLIGHT_PLAN_T.PSSR_CODE" type="data"/>
+<field path="FLIGHT_PLAN_T.CFL" type="data"/>
+<field path="FLIGHT_PLAN_T.CURRENT_FIX" type="data"/>
+<field path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.PREVIOUS_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.HAND_OFF_INFO.NEXT_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.HOLDING_INFO.HOLDING_ENTRY_TIME.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.HOLDING_INFO.HOLDING_EXIT_TIME.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.HOLDING_INFO.HOLDING_POINT" type="data"/>
+<field path="FLIGHT_PLAN_T.HOLDING_INFO.HOLDING_STATUS" type="data"/>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.NBR_OF_AIRCRAFT" type="data"/>
+<field path="FLIGHT_PLAN_T.ATA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ATD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.EOBT.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ETA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ETD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ETDB.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.CTOT" type="data"/>
+<field path="FLIGHT_PLAN_T.GATE_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.ARRIVAL_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.ASSIGNED_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.ROUTE_FIELD" type="data"/>
+<field path="FLIGHT_PLAN_T.FPL_STATUS" type="data"/>
+<field path="FLIGHT_PLAN_T.OP_DATA" type="data"/>
+<field path="FLIGHT_PLAN_T.REGISTRATION_NUMBER" type="data"/>
+</structure>
+<targets>
+<target channel="Channel2"/>
+</targets>
+</message>
+<message encoding="xml" name="QNH">
+<sources>
+<source name="QnhTL"/>
+</sources>
+<triggers>
+<trigger event="field" path="QnhTL.AIRPORT_NAME" test="changed"/>
+<trigger event="field" path="QnhTL.MODIF_TIME.TIME_BASE_ID" test="changed"/>
+<trigger event="field" path="QnhTL.MODIF_TIME.UNIVERSAL_SEC" test="changed"/>
+<trigger event="field" path="QnhTL.MODIF_TIME.UNIVERSAL_USEC" test="changed"/>
+<trigger event="field" path="QnhTL.QNH" test="changed"/>
+<trigger event="field" path="QnhTL.TA" test="changed"/>
+<trigger event="field" path="QnhTL.TL" test="changed"/>
+</triggers>
+<structure>
+<field path="QnhTL.rec_id" type="data"/>
+<field path="QnhTL.rec_time" type="data"/>
+<field path="QnhTL.AIRPORT_NAME" type="data"/>
+<field path="QnhTL.MODIF_TIME.TIME_BASE_ID" type="data"/>
+<field path="QnhTL.MODIF_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="QnhTL.MODIF_TIME.UNIVERSAL_USEC" type="data"/>
+<field path="QnhTL.QNH" type="data"/>
+<field path="QnhTL.TA" type="data"/>
+<field path="QnhTL.TL" type="data"/>
+</structure>
+<targets>
+<target channel="Channel3"/>
+</targets>
+</message>
+<message encoding="xml" name="FIXES1">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers>
+<trigger event="field" path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ASSR_CODE" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.LAST_APR.FIX_NAME" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.FPL_STATUS" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_FIELD" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_UPDATE_COUNTER" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CFL" test="changed"/>
+</triggers>
+<structure>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.0.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.0.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.0.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.0.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.1.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.1.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.1.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.1.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.2.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.2.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.2.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.2.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.3.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.3.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.3.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.3.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.4.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.4.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.4.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.4.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.5.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.5.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.5.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.5.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.6.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.6.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.6.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.6.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.7.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.7.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.7.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.7.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.8.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.8.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.8.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.8.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.9.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.9.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.9.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.9.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message>
+<message encoding="xml" name="FIXES2">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers>
+<trigger event="field" path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ASSR_CODE" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.LAST_APR.FIX_NAME" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.FPL_STATUS" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_FIELD" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_UPDATE_COUNTER" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CFL" test="changed"/>
+</triggers>
+<structure>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.10.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.10.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.10.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.10.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.11.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.11.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.11.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.11.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.12.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.12.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.12.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.12.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.13.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.13.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.13.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.13.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.14.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.14.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.14.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.14.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.15.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.15.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.15.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.15.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.16.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.16.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.16.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.16.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.17.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.17.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.17.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.17.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.18.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.18.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.18.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.18.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.19.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.19.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.19.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.19.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message>
+<message encoding="xml" name="FIXES3">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers>
+<trigger event="field" path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ASSR_CODE" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.LAST_APR.FIX_NAME" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.FPL_STATUS" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_FIELD" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_UPDATE_COUNTER" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CFL" test="changed"/>
+</triggers>
+<structure>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.20.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.20.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.20.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.20.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.21.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.21.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.21.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.21.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.22.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.22.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.22.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.22.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.23.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.23.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.23.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.23.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.24.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.24.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.24.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.24.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.25.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.25.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.25.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.25.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.26.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.26.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.26.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.26.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.27.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.27.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.27.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.27.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.28.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.28.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.28.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.28.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.29.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.29.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.29.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.29.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message>
+<message encoding="xml" name="FIXES4">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers>
+<trigger event="field" path="FLIGHT_PLAN_T.ASSR_CODE" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CFL" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.FPL_STATUS" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.LAST_APR.FIX_NAME" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_FIELD" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_UPDATE_COUNTER" test="changed"/>
+</triggers>
+<structure>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.30.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.30.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.30.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.30.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.31.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.31.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.31.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.31.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.32.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.32.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.32.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.32.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.33.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.33.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.33.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.33.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.34.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.34.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.34.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.34.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.35.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.35.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.35.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.35.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.36.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.36.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.36.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.36.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.37.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.37.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.37.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.37.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.38.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.38.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.38.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.38.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.39.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.39.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.39.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.39.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message>
+<message encoding="xml" name="FIXES5">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers>
+<trigger event="field" path="FLIGHT_PLAN_T.ASSR_CODE" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CFL" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.LAST_APR.FIX_NAME" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_FIELD" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_UPDATE_COUNTER" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.FPL_STATUS" test="changed"/>
+</triggers>
+<structure>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.40.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.40.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.40.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.40.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.41.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.41.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.41.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.41.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.42.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.42.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.42.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.42.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.43.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.43.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.43.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.43.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.44.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.44.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.44.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.44.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.45.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.45.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.45.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.45.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.46.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.46.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.46.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.46.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.47.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.47.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.47.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.47.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.48.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.48.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.48.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.48.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.49.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.49.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.49.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.49.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message>
+<message encoding="xml" name="FIXES6">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers>
+<trigger event="field" path="FLIGHT_PLAN_T.ASSR_CODE" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CFL" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.FPL_STATUS" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.LAST_APR.FIX_NAME" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_FIELD" test="changed"/>
+<trigger event="field" path="FLIGHT_PLAN_T.ROUTE_UPDATE_COUNTER" test="changed"/>
+</triggers>
+<structure>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.50.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.50.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.50.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.50.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.51.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.51.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.51.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.51.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.52.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.52.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.52.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.52.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.53.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.53.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.53.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.53.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.54.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.54.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.54.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.54.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.55.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.55.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.55.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.55.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.56.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.56.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.56.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.56.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.57.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.57.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.57.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.57.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.58.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.58.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.58.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.58.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.59.FIX_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.59.GEO_POSITION.LAT" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.59.GEO_POSITION.LONG" type="data"/>
+<field path="FLIGHT_PLAN_T.FIXES.59.DISPLAYED_ETO.DATE_IN_SECONDS" type="data"/>
+</structure>
+<targets>
+<target channel="Channel4"/>
+</targets>
+</message>
+<message encoding="xml" name="Qingsuan_FP">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers/>
+<structure>
+<field path="FLIGHT_PLAN_T.CREATION_TIME.TIME_BASE_ID" type="data"/>
+<field path="FLIGHT_PLAN_T.CREATION_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="FLIGHT_PLAN_T.CREATION_TIME.UNIVERSAL_USEC" type="data"/>
+<field path="FLIGHT_PLAN_T.MODIFICATION_TIME.TIME_BASE_ID" type="data"/>
+<field path="FLIGHT_PLAN_T.MODIFICATION_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="FLIGHT_PLAN_T.MODIFICATION_TIME.UNIVERSAL_USEC" type="data"/>
+<field path="FLIGHT_PLAN_T.CALLSIGN" type="data"/>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_CATEGORY" type="data"/>
+<field path="FLIGHT_PLAN_T.AIRCRAFT_TYPE" type="data"/>
+<field path="FLIGHT_PLAN_T.FPL_STATUS" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_TYPES" type="data"/>
+<field path="FLIGHT_PLAN_T.ADES" type="data"/>
+<field path="FLIGHT_PLAN_T.ADEP" type="data"/>
+<field path="FLIGHT_PLAN_T.ETD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ATD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ETDB.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ETA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.REGISTRATION_NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.EOBT.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.CTOT" type="data"/>
+<field path="FLIGHT_PLAN_T.ROUTE_FIELD" type="data"/>
+<field path="FLIGHT_PLAN_T.ATD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.DOF" type="data"/>
+<field path="FLIGHT_PLAN_T.ATA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.NBR_OF_AIRCRAFT" type="data"/>
+<field path="FLIGHT_PLAN_T.OP_DATA" type="data"/>
+<field path="FLIGHT_PLAN_T.ATA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ADAR" type="data"/>
+<field path="FLIGHT_PLAN_T.DESTINATION_FIR" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_DIRECTION" type="data"/>
+<field path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.PREVIOUS_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.FIRST_PROPOSAL_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.FPL_COUPLED_BY_RDP_EN_ROUTE" type="data"/>
+<field path="FLIGHT_PLAN_T.DEPARTURE_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.ARRIVAL_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.ASSIGNED_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.TAXI_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="FLIGHT_PLAN_T.CURRENT_FIX" type="data"/>
+<field path="FLIGHT_PLAN_T.ETO_MODIF_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="FLIGHT_PLAN_T.IFPLID" type="data"/>
+<field path="FLIGHT_PLAN_T.UID" type="data"/>
+<field path="FLIGHT_PLAN_T.INSIDE_FDRG" type="data"/>
+<field path="FLIGHT_PLAN_T.IS_FLIGHT_OUTSIDE_FDRG" type="data"/>
+<field path="FLIGHT_PLAN_T.FNC_SECTOR_ID_CONTROLLING" type="data"/>
+</structure>
+<targets>
+<target channel="Channel7"/>
+</targets>
+</message>
+<message encoding="binary" name="Qingsuan_62">
+<sources>
+<source name="AsterixAcc"/>
+</sources>
+<targets>
+<target channel="Channel8"/>
+</targets>
+</message>
+<message encoding="xml" name="Fenshan_output">
+<sources>
+<source name="FdpDatapage:SECTOC"/>
+</sources>
+<triggers/>
+<structure>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.0.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.0.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.1.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.1.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.2.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.2.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.3.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.3.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.4.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.4.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.5.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.5.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.6.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.6.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.7.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.7.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.8.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.8.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.9.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.9.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.10.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.10.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.11.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.11.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.12.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.12.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.13.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.13.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.14.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.14.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.15.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.15.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.16.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.16.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.17.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.17.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.18.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.18.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.19.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.19.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.20.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.20.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.21.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.21.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.22.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.22.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.23.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.23.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.24.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.24.LOGICAL_POSITION" type="data"/>
+</structure>
+<targets>
+<target channel="Channel9"/>
+</targets>
+</message>
+<message encoding="xml" name="Fenshan_output2">
+<sources>
+<source name="FdpDatapage:SECTOC"/>
+</sources>
+<triggers/>
+<structure>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.25.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.25.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.26.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.26.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.27.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.27.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.28.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.28.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.29.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.29.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.30.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.30.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.31.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.31.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.32.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.32.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.33.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.33.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.34.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.34.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.35.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.35.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.36.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.36.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.37.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.37.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.38.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.38.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.39.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.39.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.40.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.40.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.41.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.41.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.42.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.42.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.43.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.43.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.44.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.44.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.45.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.45.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.46.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.46.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.47.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.47.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.48.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.48.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.49.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.49.LOGICAL_POSITION" type="data"/>
+</structure>
+<targets>
+<target channel="Channel9"/>
+</targets>
+</message>
+<message encoding="xml" name="FDR_out_28">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers/>
+<structure>
+<field path="FLIGHT_PLAN_T.CALLSIGN" type="data"/>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.CFL_UNITY" type="data"/>
+<field path="FLIGHT_PLAN_T.PSSR_MODE" type="data"/>
+<field path="FLIGHT_PLAN_T.PSSR_CODE" type="data"/>
+<field path="FLIGHT_PLAN_T.WTC" type="data"/>
+<field path="FLIGHT_PLAN_T.CFL" type="data"/>
+<field path="FLIGHT_PLAN_T.ASSR_MODE" type="data"/>
+<field path="FLIGHT_PLAN_T.ASSR_CODE" type="data"/>
+<field path="FLIGHT_PLAN_T.AIRCRAFT_TYPE" type="data"/>
+<field path="FLIGHT_PLAN_T.ADES" type="data"/>
+<field path="FLIGHT_PLAN_T.ADEP" type="data"/>
+<field path="FLIGHT_PLAN_T.ATD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.SID" type="data"/>
+<field path="FLIGHT_PLAN_T.STAR" type="data"/>
+<field path="FLIGHT_PLAN_T.DEPARTURE_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.ATA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_RULES" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_TYPES" type="data"/>
+<field path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.ROUTE_FIELD" type="data"/>
+<field path="FLIGHT_PLAN_T.GATE_NAME" type="data"/>
+<field path="FLIGHT_PLAN_T.ARRIVAL_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.NBR_OF_AIRCRAFT" type="data"/>
+<field path="FLIGHT_PLAN_T.EOBT.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.CTOT" type="data"/>
+<field path="FLIGHT_PLAN_T.IFPLID" type="data"/>
+<field path="FLIGHT_PLAN_T.REGISTRATION_NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.DOF" type="data"/>
+<field path="FLIGHT_PLAN_T.FPL_STATUS" type="data"/>
+</structure>
+<targets>
+<target channel="Channel10"/>
+</targets>
+</message>
+<message encoding="xml" name="Fenshan_output3">
+<sources>
+<source name="FdpDatapage:SECTOC"/>
+</sources>
+<triggers/>
+<structure>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.50.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.50.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.51.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.51.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.52.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.52.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.53.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.53.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.54.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.54.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.55.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.55.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.56.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.56.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.57.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.57.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.58.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.58.LOGICAL_POSITION" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.59.FUNCTIONAL_SECTOR_NAME" type="data"/>
+<field path="FdpDatapage:SECTOC.SECTOC_DATA.DATA.59.LOGICAL_POSITION" type="data"/>
+</structure>
+<targets>
+<target channel="Channel9"/>
+</targets>
+</message>
+<message encoding="xml" name="tong_hua">
+<sources>
+<source name="FLIGHT_PLAN_T"/>
+</sources>
+<triggers/>
+<structure>
+<field path="FLIGHT_PLAN_T.CREATION_TIME.TIME_BASE_ID" type="data"/>
+<field path="FLIGHT_PLAN_T.CREATION_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="FLIGHT_PLAN_T.CREATION_TIME.UNIVERSAL_USEC" type="data"/>
+<field path="FLIGHT_PLAN_T.MODIFICATION_TIME.TIME_BASE_ID" type="data"/>
+<field path="FLIGHT_PLAN_T.MODIFICATION_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="FLIGHT_PLAN_T.MODIFICATION_TIME.UNIVERSAL_USEC" type="data"/>
+<field path="FLIGHT_PLAN_T.CALLSIGN" type="data"/>
+<field path="FLIGHT_PLAN_T.NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_CATEGORY" type="data"/>
+<field path="FLIGHT_PLAN_T.AIRCRAFT_TYPE" type="data"/>
+<field path="FLIGHT_PLAN_T.FPL_STATUS" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_TYPES" type="data"/>
+<field path="FLIGHT_PLAN_T.ADEP" type="data"/>
+<field path="FLIGHT_PLAN_T.ADES" type="data"/>
+<field path="FLIGHT_PLAN_T.ETD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ATD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ETDB.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.ETA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.REGISTRATION_NUMBER" type="data"/>
+<field path="FLIGHT_PLAN_T.EOBT.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.CTOT" type="data"/>
+<field path="FLIGHT_PLAN_T.ROUTE_FIELD" type="data"/>
+<field path="FLIGHT_PLAN_T.ATD.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.DOF" type="data"/>
+<field path="FLIGHT_PLAN_T.ATA.DATE_IN_SECONDS" type="data"/>
+<field path="FLIGHT_PLAN_T.NBR_OF_AIRCRAFT" type="data"/>
+<field path="FLIGHT_PLAN_T.OP_DATA" type="data"/>
+<field path="FLIGHT_PLAN_T.ADAR" type="data"/>
+<field path="FLIGHT_PLAN_T.DESTINATION_FIR" type="data"/>
+<field path="FLIGHT_PLAN_T.FLIGHT_DIRECTION" type="data"/>
+<field path="FLIGHT_PLAN_T.CONTROLLING_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.PREVIOUS_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.FIRST_PROPOSAL_SECTOR" type="data"/>
+<field path="FLIGHT_PLAN_T.FPL_COUPLED_BY_RDP_EN_ROUTE" type="data"/>
+<field path="FLIGHT_PLAN_T.DEPARTURE_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.ARRIVAL_RUNWAY" type="data"/>
+<field path="FLIGHT_PLAN_T.TAXI_TIME.UNIVERSAL_SEC" type="data"/>
+<field path="FLIGHT_PLAN_T.IFPLID" type="data"/>
+<field path="FLIGHT_PLAN_T.UID" type="data"/>
+<field path="FLIGHT_PLAN_T.CFL" type="data"/>
+<field path="FLIGHT_PLAN_T.CFL_UNITY" type="data"/>
+<field path="FLIGHT_PLAN_T.SID" type="data"/>
+<field path="FLIGHT_PLAN_T.STAR" type="data"/>
+<field path="FLIGHT_PLAN_T.RFL_VALUE" type="data"/>
+<field path="FLIGHT_PLAN_T.RFL_UNITY" type="data"/>
+</structure>
+<targets>
+<target channel="Channel6"/>
+</targets>
+</message>
+</messages>
+</feed_config>

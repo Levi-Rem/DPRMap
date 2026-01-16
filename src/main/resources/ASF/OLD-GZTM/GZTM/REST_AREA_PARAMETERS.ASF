@@ -1,0 +1,64 @@
+--
+--           FILE :  REST_AREA_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--     V2.3.1   |15/10/04 | KWAN        | updated for Guangzhou SIM SAT
+--     V2.3.2   |21/10/04 | KWAN        | activity periods modified
+--
+/REST/
+--
+RDF_REST_DISPLAY_TIME | 3
+--
+/REST_AREA/
+--
+-- name  | act_p1      | act_p2      | act_p3      | act_p4    |GCP|LINE|SFC|PTN| DASH    |comments
+---------|-------------|-------------|-------------|-----------|---|----|----------------
+--
+ --ZGR120  | 00:00*23:59 |           |             |           | HI|THIN | Y | 2 | COARSE |
+ --ZGR128  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR129  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR130  | 00:00*23:59 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR133  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR139  | 00:00*23:59 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR145  | 00:00*23:59 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+-- ZGR148  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR149  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR150  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR151  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR152  | 00:00*23:59 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+-- ZGR153  | 00:00*23:59 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+-- ZGR154  | 00:00*23:59 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ --ZGR114  | 00:00*23:59 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+-- ZGR124  | 22:00*16:00 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+-- ZGR160  | 00:00*23:59 |	     |		   |	       | HI|THIN | Y | 2 | COARSE |
+--
+-- name  | act_p1      | act_p2      | act_p3      | act_p4    |GCP|LINE|SFC|PTN| DASH    |comments
+---------|-------------|-------------|-------------|-----------|---|----|----------------
+--
+ ZGR120  | 00:00*00:01 |             |             |           | HI|THIN | Y | 2 | COARSE |
+ ZGR128  | 00:00*00:01 |	     |	           |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR129  | 00:00*00:01 |	     |             |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR130  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR133  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR139  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR145  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR148  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR149  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR150  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR151  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR152  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR153  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR154  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR114  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR124  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+ ZGR160  | 00:00*00:01 |	     |  	   |	       | HI|THIN | Y | 2 | COARSE |
+--

@@ -1,0 +1,69 @@
+/POINTS/
+--
+NTZ1 | 235508.0N1131436.0E
+NTZ2 | 235507.0N1133502.0E
+NTZ3 | 225111.0N1131926.0E
+NTZ4 | 225110.0N1125905.0E
+--
+/NTZ_ELIGIBILITY_AREA_DEFINITION/
+--
+ZGGG_ELIG |ZGGG | 3000M | NTZ1 NTZ2 NTZ3 NTZ4
+--
+/NTZ_AREA_DEFINITION/
+NTZ_MAP_PARAM | THIN | N | 30 | FINE |
+--NTZ_AREA | Airport | Left | Right | Width | Height | Height | NTZ    | NTZ Runway |
+--Name     | name    | RWY  | RWY   |       | inner  | outer  | length | offset     |
+NTZ1R1   | ZGGG    | 19   | 20L   | 610M  | 150M   | 1408M  | 24000M |     |
+NTZ1R2   | ZGGG    | 19   | 20L   | 610M  | 150M   | 1723M  | 30000M |     |
+NTZ1R3   | ZGGG    | 19   | 20L   | 610M  | 150M   | 2038M  | 36000M |     |
+
+NTZ2L1   | ZGGG    | 19   | 20R   | 610M  | 150M   | 1408M  | 24000M |     |
+NTZ2L2   | ZGGG    | 19   | 20R   | 610M  | 150M   | 1723M  | 30000M |     |
+NTZ2L3   | ZGGG    | 19   | 20R   | 610M  | 150M   | 2038M  | 36000M |     |
+
+NTZ3L1   | ZGGG    | 01   | 02R   | 610M  | 150M   | 1408M  | 24000M |	   |
+NTZ3L2   | ZGGG    | 01   | 02R   | 610M  | 150M   | 1723M  | 30000M |	   |
+NTZ3L3   | ZGGG    | 01   | 02R   | 610M  | 150M   | 2038M  | 36000M |	   |
+
+NTZ4R1   | ZGGG    | 01   | 02L   | 610M  | 150M   | 1408M  | 24000M |	   |
+NTZ4R2   | ZGGG    | 01   | 02L   | 610M  | 150M   | 1723M  | 30000M |	   |
+NTZ4R3   | ZGGG    | 01   | 02L   | 610M  | 150M   | 2038M  | 36000M |	   |
+
+
+/LMA_DEFINITION/
+
+LMA1L    | NTZ1R1 | 19  | 
+LMA1R    | NTZ1R1 | 20L | 
+
+LMA2L    | NTZ1R2 | 19  |
+LMA2R    | NTZ1R2 | 20L | 
+
+LMA3L    | NTZ1R3 | 19  | 
+LMA3R    | NTZ1R3 | 20L | 
+
+LMA4L    | NTZ3L1 | 01  | 
+LMA4R    | NTZ3L1 | 02R | 
+
+LMA5L    | NTZ3L2 | 01  | 
+LMA5R    | NTZ3L2 | 02R | 
+
+LMA6L    | NTZ3L3 | 01  | 
+LMA6R    | NTZ3L3 | 02R | 
+
+LMA7L    | NTZ2L1 | 19  | 
+LMA7R    | NTZ2L1 | 20R | 
+
+LMA8L    | NTZ2L2 | 19  | 
+LMA8R    | NTZ2L2 | 20R | 
+
+LMA9L    | NTZ2L3 | 19  | 
+LMA9R    | NTZ2L3 | 20R | 
+
+LMA10L   | NTZ4R1 | 01  | 
+LMA10R   | NTZ4R1 | 02L | 
+
+LMA11L   | NTZ4R2 | 01  | 
+LMA11R   | NTZ4R2 | 02L | 
+
+LMA12L   | NTZ4R3 | 01  | 
+LMA12R   | NTZ4R3 | 02L | 

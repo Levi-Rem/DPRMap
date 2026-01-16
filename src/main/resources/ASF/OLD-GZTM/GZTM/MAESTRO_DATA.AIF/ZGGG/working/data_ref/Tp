@@ -1,0 +1,3 @@
+#To defined_Radar_ETA { NO | ETA_ONLY | ETA_STA}
+*.Refine_Sequence_On_Final : ETA_ONLY
+

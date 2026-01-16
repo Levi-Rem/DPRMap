@@ -1,0 +1,113 @@
+--
+--           FILE :  PDC_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.1  | 1/10/04 | K WAN       | updated for Guangzhou SAT
+--
+--
+--
+--
+/ACARS/
+-- Company name | ACARS address | Comments
+-----------------------------------------------------------------
+       CAA      | SYDGFXS       | test FAX machine
+       SIA      | SIATSTX       | dummy address
+       DLH      | DLHTSTX       | dummy address
+       AFR      | AFRTSTX       | dummy address
+       SAS      | SASTSTX       | dummy address
+       NWA      | NWATSTX       | dummy address
+--
+------------------------------------------------------^50 CHAR PT.
+--
+
+/DCL/
+DCL_LATE_CDA_TIMER | 480
+-- DCL_ADT_TYPES     | Default    | List of ADT Types
+DCL_ADT_TYPES        | ADT_HHMM   | EOBT ADT_HHMM ADT_SLOT ADT_MSS ADT_MDI |
+--
+
+/BYC1/
+AIRPORT|ZGGG
+DEPA|ZGGG DEP : SID1X
+    |ZGGG DEP : SID1Y
+--ALTI|MAINTAIN : A030
+--@@@    |MAINTAIN : A040
+--@@@    |MAINTAIN : A030
+FREQ|DEPS FREQ : 118.9
+    |DEPS FREQ : 129.4
+    |APPROACH FREQ : 124.7
+    |APPROACH FREQ : 135.7
+FREE|FLIGHT PLAN HAS BEEN AMENDED BY ATC
+    |FOR TEST PURPOSES ONLY
+    |EXPECT RWY 02L FOR DEPARTURE
+    |EXPECT RWY 02R FOR DEPARTURE
+    |EXPECT RWY 20L FOR DEPARTURE
+    |EXPECT RWY 20R FOR DEPARTURE
+--
+--
+/BYC2/
+AIRPORT|ZGGG
+DEPA|ZGGG DEP : SID1X
+    |ZGGG DEP : SID1Y
+--ALTI|MAINTAIN : A030
+--@@@    |MAINTAIN : A040
+--@@@    |MAINTAIN : A030
+FREQ|DEPS FREQ : 118.9
+    |DEPS FREQ : 129.4
+    |APPROACH FREQ : 124.7
+    |APPROACH FREQ : 135.7
+FREE|FLIGHT PLAN HAS BEEN AMENDED BY ATC
+    |FOR TEST PURPOSES ONLY
+    |EXPECT RWY 02L FOR DEPARTURE
+    |EXPECT RWY 02R FOR DEPARTURE
+    |EXPECT RWY 20L FOR DEPARTURE
+    |EXPECT RWY 20R FOR DEPARTURE
+--
+--
+/BYA1/
+AIRPORT|ZGGG
+DEPA|ZGGG DEP : SID1X
+    |ZGGG DEP : SID1Y
+--ALTI|MAINTAIN : A030
+--@@@    |MAINTAIN : A040
+--@@@    |MAINTAIN : A030
+FREQ|DEPS FREQ : 118.9
+    |DEPS FREQ : 129.4
+    |APPROACH FREQ : 124.7
+    |APPROACH FREQ : 135.7
+FREE|FLIGHT PLAN HAS BEEN AMENDED BY ATC
+    |FOR TEST PURPOSES ONLY
+    |EXPECT RWY 02L FOR DEPARTURE
+    |EXPECT RWY 02R FOR DEPARTURE
+    |EXPECT RWY 20L FOR DEPARTURE
+    |EXPECT RWY 20R FOR DEPARTURE
+--
+--
+/BYA2/
+AIRPORT|ZGGG
+DEPA|ZGGG DEP : SID1X
+    |ZGGG DEP : SID1Y
+--ALTI|MAINTAIN : A030
+--@@@    |MAINTAIN : A040
+--@@@    |MAINTAIN : A030
+FREQ|DEPS FREQ : 118.9
+    |DEPS FREQ : 129.4
+    |APPROACH FREQ : 124.7
+    |APPROACH FREQ : 135.7
+FREE|FLIGHT PLAN HAS BEEN AMENDED BY ATC
+    |FOR TEST PURPOSES ONLY
+    |EXPECT RWY 02L FOR DEPARTURE
+    |EXPECT RWY 02R FOR DEPARTURE
+    |EXPECT RWY 20L FOR DEPARTURE
+    |EXPECT RWY 20R FOR DEPARTURE
+--
+--

@@ -1,0 +1,272 @@
+--*
+--*
+--*  MAP GENERATOR	  THOMSON-CSF/SDC/BCM
+--*
+--*
+--*		begin of file
+--*
+--*  SYMBOL FILE, DATE OF CREATION AND DATE OF LAST RELEASE
+--*
+--*  SYMBOL FILE : RESTRICTED
+--*  CREATION  Wed Apr 16 05:10:59 2025
+--*  RELEASE   Wed Apr 16 05:10:59 2025
+--*
+--*
+--*  PROJECT RESTRICTED LIST OF SYMBOLS 
+--*
+--# 001
+FONT 000
+1 ;
+--upright trialgle 11x11 
+--# 002
+FONT 000
+2 ;
+--asterisk 5x5    
+--# 003
+FONT 000
+3 ;
+--civil airport 11x11  
+--# 004
+FONT 000
+4 ;
+--ndb 13x13  
+--# 005
+FONT 000
+5 ;
+--vordme 11x11   
+--# 006
+FONT 000
+6 ;
+--other radio facility 11x11 
+--# 007
+FONT 000
+7 ;
+--comp rep w/met 11x11 
+--# 008
+FONT 000
+8 ;
+--circle w/dot 11x11 
+--# 009
+FONT 000
+9 ;
+--solid square 11x11 
+--# 010
+FONT 001
+0 ;
+--cross 7x7 
+--# 011
+FONT 001
+1 ;
+--triangle in square 11x11 
+--# 012
+FONT 001
+2 ;
+--airport 11x11 
+--# 013
+FONT 001
+3 ;
+--inverted triangle 11x11 
+--# 014
+FONT 001
+4 ;
+--inverted hill 11x11 
+--# 015
+FONT 001
+5 ;
+--upright hill 11x11  
+--# 016
+FONT 001
+6 ;
+--circle w/dot 11x11 
+--# 017
+FONT 001
+7 ;
+--MARK ON LOC EACH 2 NM 
+--# 018
+FONT 001
+8 ;
+--MARK ON LOC EACH 5 NM 
+--# 019
+FONT 001
+9 ;
+--TV STATION TOWER 
+--# 020
+FONT 002
+0 ;
+--mlitary airport 
+--# 021
+FONT 002
+1 ;
+--TMA VOR 11x11 
+--# 022
+FONT 002
+2 ;
+-- TMA cross11x11 
+--# 023
+FONT 002
+3 ;
+--airport(n/s) 
+--# 024
+FONT 002
+4 ;
+--airport(e/w) 
+--# 025
+FONT 002
+5 ;
+--airport(135degree) 
+--# 026
+FONT 002
+6 ;
+--airport(45degree) 
+--# 027
+FONT 002
+7 ;
+--TMA REPORT 
+--# 028
+FONT 002
+8 ;
+--COMPULSORY  REPORT POINT       
+--# 029
+FONT 002
+9 ;
+-- 
+--# 030
+FONT 003
+0 ;
+-- 
+--# 031
+FONT 003
+1 ;
+-- 
+--# 032
+FONT 003
+2 ;
+-- 
+--# 033
+FONT 003
+3 ;
+-- 
+--# 034
+FONT 003
+4 ;
+-- 
+--# 035
+FONT 003
+5 ;
+-- 
+--# 036
+FONT 003
+6 ;
+--cross tma 
+--# 037
+FONT 003
+7 ;
+-- 
+--# 038
+FONT 003
+8 ;
+-- 
+--# 039
+FONT 003
+9 ;
+-- 
+--# 040
+FONT 004
+0 ;
+-- 
+--# 041
+FONT 004
+1 ;
+-- 
+--# 042
+FONT 004
+2 ;
+-- 
+--# 043
+FONT 004
+3 ;
+-- 
+--# 044
+FONT 004
+4 ;
+--OBSTACLE 
+--# 045
+FONT 004
+5 ;
+--BUILDING 
+--# 046
+FONT 004
+6 ;
+-- 
+--# 047
+FONT 004
+7 ;
+-- 
+--# 048
+FONT 004
+8 ;
+-- 
+--# 049
+FONT 004
+9 ;
+-- 
+--# 050
+FONT 005
+0 ;
+-- 
+--# 051
+FONT 005
+1 ;
+-- 
+--# 052
+FONT 005
+2 ;
+-- 
+--# 053
+FONT 005
+3 ;
+-- 
+--# 054
+FONT 005
+4 ;
+-- 
+--# 055
+FONT 005
+5 ;
+-- 
+--# 056
+FONT 005
+6 ;
+-- 
+--# 057
+FONT 005
+7 ;
+-- 
+--# 058
+FONT 005
+8 ;
+-- 
+--# 059
+FONT 005
+9 ;
+-- 
+--# 060
+FONT 006
+0 ;
+-- 
+--# 061
+FONT 006
+1 ;
+-- 
+--# 062
+FONT 006
+2 ;
+-- 
+--# 063
+FONT 006
+3 ;
+-- 
+--*
+--*		end of file
+--*
+--*

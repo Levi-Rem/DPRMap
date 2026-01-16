@@ -1,0 +1,120 @@
+--
+--           FILE :  ILS.ASF 
+--
+--
+-- CREATION DATE  :  
+-- BY		  :  
+-- VERSION	  :  
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+--
+--ZGGG 
+
+--
+/ILS/
+01LIL       | ZGGG   | 01L |
+--
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232250N1131631E   | 014     | 30 | 7.1KM |  64M    |  0900M | 100  | 300 |  100 | 300 | 64 | 2500 | L | 
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+
+--
+--
+/ILS/
+01RIL       | ZGGG   | 01R |
+--
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232237N1131701E   | 014     | 30 | 7.1KM |  64M    | 1747M | 100  | 300 |  100 | 300 | 64 | 2500 | L | 
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+--
+--
+/ILS/
+02IBB       | ZGGG   | 02L  |
+--
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232232N1131819E   | 014     | 30 | 7.1KM |  64M    | 1747M | 100  | 300 |  100 | 300 | 64 | 2500 | L |
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+--
+--
+/ILS/
+02IDM       | ZGGG   | 02R  |
+--
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232210N1131828E   | 014     | 30 | 5.2KM |  64M    | 1747M | 100  | 300 |  100 | 300 | 64 | 2500 | L |
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+--
+--
+/ILS/
+19LIL       | ZGGG   | 19L |
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232430N1131731E   | 194     | 30 | 8.1KM |  64M    | 1747M | 100  | 300 |  100 | 300 | 64 | 2500 | L |
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+--
+--
+/ILS/
+19RIL       | ZGGG   | 19R |
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232438N1131700E   | 194     | 30 | 8.1KM |  64M    | 1747M | 100  | 300 |  100 | 300 | 64 | 2500 | L |
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+--
+--
+/ILS/
+20IXL       | ZGGG   | 20L  |
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232410N1131900E   | 194     | 30 | 4.2KM |  64M    | 1747M |  100  | 300 |  100 | 300 | 64 | 2500 | L |
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+--
+--
+/ILS/
+20IAA       | ZGGG   | 20R  |
+--
+--Geo Pos 	  | loc hdg | gp | OM	 | ILS Alt | INTERSECTING ALT
+------------------------------------------------------------------------
+232426N1131850E   | 194     | 30 | 8.0KM |  64M    | 1747M | 100  | 300 |  100 | 300 | 64 | 2500 | L |
+INTERSECTION_ALTITUDE_MET | 1000 | 1200 | 1400 | 1600 | 1800 |
+INTERSECTION_ALTITUDE_IMP | 3000 | 3600 | 4500 | 5200 | 5900 |
+INTERSECTION_DISTANCE_MET | 10   | 20   | 30   | 40   | 50   |
+INTERSECTION_DISTANCE_IMP | 32   | 64   | 96   | 128  | 169  |
+--

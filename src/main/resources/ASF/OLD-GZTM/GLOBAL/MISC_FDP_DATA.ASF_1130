@@ -1,0 +1,164 @@
+--
+--           FILE : MISC_FDP_DATA.ASF 
+--
+--
+
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--     V3.1.1   |         |             | updated for Guangzhou SAT
+--
+--
+--
+--
+/AIRPORTAPP/
+ZGGG   | A | 
+ZGGG   | D | 
+ZGSZ   | A | 
+ZGSZ   | D | 
+ZGSD   | A | 
+ZGSD   | D |
+ZGHZ   | A |
+ZGHZ   | D |
+ZGFS   | A |
+ZGFS   | D |
+VMMC   | A |
+VMMC   | D |
+
+/FIXAPP/
+LMN    | O |
+YIN    | O |
+GYA    | O |
+POU    | O |
+P270   | O |
+SUMIB  | O |
+LUPVU  | O |
+
+/SECTION1/
+-- name | type
+--
+--
+ATAGA  | O |
+BEKOL  | O |
+BEMAG  | O |
+BIGRO  | O |
+BIPOP  | O |
+ADBIN  | O |
+BUBDA  | O |
+EGEDA  | O |
+MABAG  | O |
+XEBUL  | O |
+OBLAN  | O |
+MIPAG  | O |
+TAN    | O |
+IDUMA  | O |
+IGONO  | O |
+PLT    | O |
+MUBEL  | O |
+NLG    | O |
+ALGAG  | O |
+NOLON  | O |
+NOMAR  | O |
+OSIKA  | O |
+OVGOT  | O |
+P101   | O |
+P154   | O |
+SUMDO  | O |
+ODOPI  | O |
+P268   | O |
+DABER  | O |
+P166   | O |
+SAREX  | O |
+SHL    | O |
+SIERA  | O |
+TEPID  | O |
+TAMOT  | O |
+VIBOS  | O |
+WYN    | O |
+ZUH    | O |
+IKATA  | O | 
+DOTMI  | O |
+SWA    | O |
+LKO    | O |
+LIG    | O |
+LIN    | O |
+HUY    | O |
+EXURI  | O |
+BIGVI  | O |
+ZHJ    | O |
+OVTAN  | O |
+LLC    | O |
+DYG    | O |
+P127   | O |
+ZGHA   | A |
+ZGHA   | D |
+ZHHH   | D |
+ZHHH   | A |
+VHHH   | A | 
+VHHH   | D | 
+DAPRO  | O |
+GOSMA  | O |
+WHA    | O |
+YIH    | O |
+VL     | O |
+P36    | O |
+MIDOX  | O |
+IKUBA  | O |
+OBLIK  | O |
+P50    | O |
+TULMU  | O |
+ELKAL  | O |
+ENKUS  | O |
+SJG    | O |
+QP     | O |
+LAGEX  | O |
+KALMU  | O |
+P567   | O |
+P62    | O |
+EMVIL  | O |
+DAKOR  | O |
+IGPAR  | O |
+IDU    | O |
+FMR    | O |
+A01    | O |
+A19    | O |
+T01    | O |
+T19    | O |
+T02L   | O |
+T02R   | O |
+T20L   | O |
+T20R   | O |
+EE     | O |
+EE2    | O |
+WW     | O |
+WW2    | O |
+
+--
+--
+/FIELD18/
+--
+--subfield|display|comments
+--
+ALTN |STRIP       |
+CODE |NONE        |
+COM  |LABEL_STRIP |
+DAT  |NONE        | 
+DEP  |STRIP       |
+DEST |LABEL       |
+DLA  |NONE        |
+EET  |NONE        |
+NAV  |LABEL_STRIP |
+PER  |LABEL       |
+RALT |NONE        | 
+RIF  |NONE        |
+REG  |NONE        |
+RMK  |LABEL_STRIP |
+SEL  |LABEL_STRIP |
+STS  |LABEL_STRIP |
+TYP  |STRIP       |
+OPR  |LABEL       |
+--
+--
+--
+--
+--

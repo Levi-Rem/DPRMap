@@ -6,7 +6,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.control.Label;
 import javafx.geometry.Insets;
 import ll.luolin.controller.NavPointController;
-import ll.luolin.model.NavPointModel;
+import ll.luolin.model.ASFModel.NavPointModel;
 import ll.luolin.utils.CoordinateFormatter;
 import ll.luolin.utils.LogUtils;
 

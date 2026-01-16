@@ -1,0 +1,13 @@
+# Airport managed through IodeTower Connection
+# *.<Tool_Name>.Managed_Airports_List : "LFPG, LFPO, ATHIS"
+#*.ZGGG.Subscribe.Airport_Slots.Managed_Airports_List : "ZGGG"
+
+*.AIRPORT.Peer_XSD : EFS.xsd
+
+*.AIRPORT.Subscribe.Flights.Status : FALSE
+*.AIRPORT.Subscribe.Flights.Managed_Airports_List : ""
+*.AIRPORT.Subscribe.Airport_Slots.Status : TRUE
+*.AIRPORT.Subscribe.Airport_Slots.Managed_Airports_List : " ZGGG"
+
+# Use/not use Opdata Field
+*.Decode_Opdata : FALSE

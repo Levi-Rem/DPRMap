@@ -1,0 +1,2913 @@
+--
+--           FILE :  ROUTES.ASF 
+--
+--
+-- CREATION DATE  :  SEP, 2015
+-- BY		  :  lee FOR GUANGZHOU
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.1  | 5/10/04 | K WAN       | updated for Guangzhou SAT
+--      V2.3.4  |17/11/04 | K WAN       | add SIDs & STARs
+--
+--
+/CODED_ROUTE/ 
+--
+--NAME | SENSE | CRUISE LEVEL | RAM CORRIDOR WIDTH | RAM POINT RADIUS | LIST OF POINTS
+-- 
+--SENSE              : N(ormal) : R(everse) : B(oth)
+--CRUISE LEVEL       : EVEN     : ODD       : NONE
+--RAM CORRIDOR WIDTH : a distance value followed by the unit (NM or KM)
+--RAM POINT RADIUS   : a distance value
+--
+--
+--
+--Comment for V5_20150311
+--NAME | direction | RNAV_capability | RNAV_capability_post_2012 | RNP_capability_post_2012 |RVSM_level | LIST OF POINTS
+
+FPL_PBN_MISMATCH_DISPLAY | 5 |
+
+A1      | B | NONE |  |  | N | BUNTA P97 LENKO IKELA
+A202    | B | NONE |  |  | N | SIKOU ISBIG SAMAS AGPOR DABUB NONEM ASSAD
+A326    | B | NONE |  |  | N | ANRAT UNSEK ALARA MAKNO NUNDU DOBGA POVAG SANKO OBDIS DONVO IKEKA OMLIB LUDVU DOPNO IVPIP
+        |   |      |  |  |   | IKADI SURAK AKARA TONIX MIGOL APITO
+A343    | B | NONE |  |  | N | POSOT GOBOK NLT P178 RULAD
+A345    | B | NONE |  |  | N | TELOK MANLI KAGAK HLD P153 ABVAX P155 ELPUN IKITI APUKO P311 DULEX UGRUP KYU EKVOK
+        |   |      |  |  |   | BIDIB VILIX ORAXU ANSUK DDG GOLOT
+A368    | B | NONE |  |  | N | FKG VARMI UGPEL IKARA OMKEN P221 SALMO OSUPO TCH SARIN
+A460    | B | NONE |  |  | N | XKC EXURU IDMOL RULAD
+A461    | B | NONE |  |  | N | WXI AKOMA IDULA ZHO P450 OBLIK P192 ESDOS HOK UBTAG LKO DAPRO AKUBA LUMKO PAVTU
+        |   |      |  |  |   | LIG MEXON P113 P291 P376 BUBDA P588 P285 MOLSO MIKIP YIN SHL IDUMA BEKOL
+A468    | B | NONE |  |  | N | KAMUD LIMDO XKC
+A470    | B | NONE |  |  | N | DPX MEXUP DALNU RUPUD OF DOGVI OLRIS SAPIN OROTU P564 TESIG IGRAT UDOLA AKDIM SAGNU
+        |   |      |  |  |   | DUBGO TOL UGAGO EMRID OSPAM AKEKO BZ DAGMO AKAVO PADRU LJG FQG ENVEN ATSAB AMURI
+        |   |      |  |  |   | XLN TEBON IKATA SWA BEBEM DOTMI MAGOG
+A575    | B | NONE |  |  | N | GOLOT DDG ANSUK ORAXU VILIX BIDIB PU DHN P446 OMDUS CHG IGIVU UKDUM ASILA UPREK
+        |   |      |  |  |   | VANVO UKBAD LHT ESMEP INTIK
+A581    | B | NONE |  |  | N | WHA IDPOG IDGAG GUGAM VIBUB LIN NOMUK P631 BODUV HUY EPGAL P378 TAXOR EKADI MEMAG
+        |   |      |  |  |   | AGTIS BIPIP QNX P417 LPS P490 XISLI XFA SGM ELASU BIDRU NOKET SAGAG
+A588    | B | NONE |  |  | N | SANKO UDETI VENOS CHI P388 NODAL TOSID ISKEM BIDIB NUBKI LEMOT LJB NULRA ISBOP PAGDO
+        |   |      |  |  |   | PABKI HRB BUBDI P46 HEK SIMLI
+A591    | B | NONE |  |  | N | IKEKA AGAVO
+A593    | B | NONE |  |  | N | EPGAM RAXEV P350 GOLAL DALIM ABTUB P635 P86 OVTIT AVPEP UDINO DPX SAGIP OMUDI LAGAL
+        |   |      |  |  |   | ATVAD SUBKU NIXEM XUTGU PIMOL VMB PK PUD IPRAG DUMET AKARA LAMEN SADLI
+A596    | B | NONE |  |  | N | DKO KASTI YBL
+A599    | B | NONE |  |  | N | PUD JTN OLGAP LURMA NXD KAKIS TOL ELNEX ERVOP TUPGA SHR P215 XUVGI NF LEKUV
+        |   |      |  |  |   | P120 P181 PLT NNX WYN SALIV NOLON CON POU GYA AVPAM AGRAV P93 BIPOP IGIVI
+        |   |      |  |  |   | ATLAT LBN DUDIT APUPA P372 BSE MEPAN ADBAG P128 LXI GODUL SGM GULOT MAKUL GMA
+        |   |      |  |  |   | LINSO
+B206    | B | NONE |  |  | N | ADPET NIRAV TAI GOPTO
+B208    | B | NONE |  |  | N | NIXAL LAXAG HET BAXOD NUTLO ISBAM DUBUB TODAM P252 P461 EKETA TYN EXORI ANPIG EGEBI
+        |   |      |  |  |   | SQ PADNO TAMIX NOPIN DUBAG CGO OBMEP ZHO GUTOV FYG BIPIM P343 GUXUV MAGLI HFE
+B213    | B | NONE |  |  | N | LXA IGELA KADSA OMGEV PARGU RG IVRUG DOBSO PEXUN KAMAX NONUG MUMGO CZH CTU LAXAT
+        |   |      |  |  |   | WFX UBRAB ESPEG ISMAB OSPAP VELPU UNSUV VINEX AKBEK BEGUK UPNIM IVSOL ALDEL EMSOV GUTVI
+        |   |      |  |  |   | P577 AKREB IGDUL KIGUM PONEP TOSIM IGITA ENSOX IDNUS OLPOV NIVUV UBKOX IGEDU WTM OBDON
+        |   |      |  |  |   | WHA
+B215    | B | NONE |  |  | N | VYK PEGSO IDGIS REVSI BONLU ADBES VAGBI SUGDO EKETA GODON OMKAK LEBOM APOGO LUVES MIMOK
+        |   |      |  |  |   | YHD NIRUV BELIP P203 JTA ANDIM LELUX LAXEV P434 NOGEX P407 OMGUP IGDON TODOD NIXUK
+        |   |      |  |  |   | IBANO P161 NUKTI HAM IRPEP DUBUV DUMAM FKG WUR KABDO AKVOV EPDAG POSOT BEBEP XKC
+        |   |      |  |  |   | P185 PAMLI LESVI P191 LEDEM MAGIV DSC PURPA
+B221    | B | NONE |  |  | N | LJG ANLUD RUPOX UBDIX DST P22 PAMVU REMIM SHZ SUPAR OKTUG AND GOVNI ELAGO NINAS
+        |   |      |  |  |   | PINOT ALDAP EKVUT IBEGI ODULO GORPI VEVED IDVEL AVLOK XDX
+B330    | B | NONE |  |  | N | MORIT GOBIN P435 YBL P92 AKMAT JTA MUDAP SUNUV XIXAN BESMI ELPAN OMBON OVRAL AKVEP
+        |   |      |  |  |   | PIMEL MEXAD UBKER VIMAM BUVUR IDBOR IGUNI LEVTO MEPER NIXID ALGAB SAMIV IDSEG P253 QNX
+        |   |      |  |  |   | P475 KWE P654 KAGRA ESNIB ELKAL AKNAV SJG MAMSI RUSES QP MUBEL UKMAX AVPAM GYA
+        |   |      |  |  |   | POU TAMOT
+B332    | B | NONE |  |  | N | SANKO BIGBU TOMUK
+B334    | B | NONE |  |  | N | HUR DOTRA MAVMI NIRUG KAKAT P300 LELOG TGO
+B339    | B | NONE |  |  | N | POLHO ERVEB UNTEN ASILA AVMOS IDKEX HUR SOTMU LADIX
+B345    | B | NONE |  |  | N | NONIM OLGUT P462 RKZ IKUBI LXA
+B451    | B | NONE |  |  | N | HLD P28 TEPOD P467 NDG P111 ONINA HRB KETOV UGABI IGDUT WQG P55 BISUN
+B458    | B | NONE |  |  | N | LHT P57 TMR EMVEM BIKUT TZH PUKOL VIGEK MUGUT IPLEV IDRUB VADKA SAKRI BONLU OC
+        |   |      |  |  |   | VERUX AVBER DADGA
+B591    | B | NONE |  |  | N | BOLEX MIGOL KASKA
+G204    | B | NONE |  |  | N | TXN IDBIN OREXA ABVIL ELNEX UGAGO MULOV SHZ VEXEX AND DADAT JTN
+G212    | B | NONE |  |  | N | ARGUK IJ P164 P394 JMU P26 IGADO HRB EKADO FYU RUSBO OTABO DULEX TGO P528
+        |   |      |  |  |   | UKDUM MUDAM BUMDU SOTMU VYK BELAX TEKIL POXUS PINAP AMVOG TONOV P522 ISLEP PARTU EXORI
+        |   |      |  |  |   | AVKES NITID UDIGU TUTNA VENBA WJC MIZ OD ZS NSH ONEBA P283 SUBUL IGLEX SAMOB
+        |   |      |  |  |   | P410 BUPMI UBKER JTG LAXAT BHS LUVEN BOPTU P371 IGEKA UGVES TUVKI NIXAS SGM
+G218    | B | NONE |  |  | N | POLHO UKBAD TMR OSRUR IGPAS SUROS HET
+G221    | B | NONE |  |  | N | BUNTA SAGSU KAGUK SYX WL GULUN UPRIS ANPIM NYB SAMAS GIVIV BIGRO
+G327    | B | NONE |  |  | N | JTN NINAS LASAN BONGI BOLEX TONIX LAMEN
+G330    | B | NONE |  |  | N | PK POMOK XIREM PIKAS UNTAN PIMOL
+G332    | B | NONE |  |  | N | CHG OPIMU DHC MUDAM
+G338    | B | NONE |  |  | N | SARUL IKARU KAGAK
+G341    | B | NONE |  |  | N | TGO UGRUP BUTET LJB APESI IDVOT UPNUX OMBAD KANVU WQG
+G343    | B | NONE |  |  | N | TMR ASURI NIXAL
+G345    | B | NONE |  |  | N | UNTAN ZJ PIMUS OBLAP OLRIS
+G455    | B | NONE |  |  | N | PK TOSAS HSH ALDAP MATNU EMSAN SURAK LAMEN
+G470    | B | NONE |  |  | N | QTV IRPEP ESBID TAMOX AKLAS BIKNO IBANO
+G471    | B | NONE |  |  | N | POU SHL ISLOM P414 LMN XEBUL VAVSO EGEDA PLT
+G586    | B | NONE |  |  | N | WYN MOLSO PUNIR OSNOV P284 ALGAG QP RUSES MAMSI SJG P168 LAGEX
+G588    | B | NONE |  |  | N | FKG MULOR REDUB NIRAV XFY TEBUS
+G597    | B | NONE |  |  | N | DONVO AGAVO
+GYA01   | B | NONE |  |  | N | UKMAX UKMA2 UKMA3 UKMA4 UKMA5 UKMA6 GYA
+GYA02   | B | NONE |  |  | N | P626 P627 P628 P629 GYA
+GYA03   | B | NONE |  |  | N | IGIVI OVLUG AVDOK UKMA3 UKMA4 UKMA5 UKMA6 GYA
+H1      | B | NONE |  |  | N | MDJ KETOV
+H101    | B | NONE |  |  | N | FZ P449 P323 FD
+H103    | B | NONE |  |  | N | LRU P52 P619 LIMGI
+H104    | B | NONE |  |  | N | TUMLO OLRED P431 P229 AR P198 P634 P64 P223 P636 P595 P556 TOS ATVIM
+H105    | B | NONE |  |  | N | KAKAT MUDAM
+H11     | B | NONE |  |  | N | UGSUT SHX P62 KIKIV P542 ML
+H114    | B | NONE |  |  | N | DDG AKLAT BIGBU ESNUN DONVO
+H115    | B | NONE |  |  | N | YNJ P08 CBS LUMKU P213 P593 NUBKI
+H117    | B | NONE |  |  | N | CEH P69 PAN
+H118    | B | NONE |  |  | N | PAN NIXAS
+H119    | B | NONE |  |  | N | BIGOR MYD
+H12     | B | NONE |  |  | N | MHN P272 P45 P28 P466 HLH APUKO TGO
+H120    | B | NONE |  |  | N | IGEKA ZAT HX
+H121    | B | NONE |  |  | N | P249 XISLI
+H122    | B | NONE |  |  | N | XSJ ELASU
+H123    | B | NONE |  |  | N | SGM DJT
+H125    | B | NONE |  |  | N | DWS SUKTO P278 P320
+H127    | B | NONE |  |  | N | SB P04 P570 NIXAS XFA
+H128    | B | NONE |  |  | N | TAO URBAD
+H13     | B | NONE |  |  | N | P304 HET SUROS IGPAS OSRUR TMR VERMI VANVO ERVEB HOT P110 P464 P465 IKITI HLH
+H130    | B | NONE |  |  | N | CHG LC
+H131    | B | NONE |  |  | N | P396 P404 P397 UGSUT P17 P62
+H132    | B | NONE |  |  | N | DOVOP ZS UGSUT P241 P234
+H133    | B | NONE |  |  | N | PIKEM P32 AKD GOKEB
+H138    | B | NONE |  |  | N | DOVOP P365 P404 ZNX ANRUG P370 ONEBA
+H139    | B | NONE |  |  | N | ANRUG DUBID
+H14     | B | NONE |  |  | N | HO P396 P365 P339 ZS SHX P63 P357 P541 P338 P320 LRU P256 P295 P129
+        |   |      |  |  |   | ZHO
+H144    | B | NONE |  |  | N | CGA P283 AGULU
+H145    | B | NONE |  |  | N | ENKUS JW
+H146    | B | NONE |  |  | N | UGUGU P89
+H148    | B | NONE |  |  | N | ZHJ EPGAL
+H149    | B | NONE |  |  | N | P153 P28
+H15     | B | NONE |  |  | N | DNC P15 XNN P303 CKA P243 DLH IRTOL GRM TEMOL P76 P114 OQ P622 LXA
+H152    | B | NONE |  |  | N | WEH P505 OBDIS
+H155    | B | NONE |  |  | N | REVKU P331
+H156    | B | NONE |  |  | N | SQ P439 HDH P102 P99 ELDUT
+H157    | B | NONE |  |  | N | GUY JIG
+H158    | B | NONE |  |  | N | P570 P259 P513 P30
+H160    | B | NONE |  |  | N | P645 P392 P473
+H161    | B | NONE |  |  | N | ISNIR P366
+H162    | B | NONE |  |  | N | P644 P395
+H163    | B | NONE |  |  | N | P424 KHN
+H164    | B | NONE |  |  | N | P646 AVDIP
+H165    | B | NONE |  |  | N | OREXA P366 P374 P392 P395 P424 AVDIP BIRIR DALEP OLTOL OBLUV MILOP OLTUS IPMUG PEDMU
+        |   |      |  |  |   | IRSAS P491 P493 P425 P494 P426 P512 OVPOR ESBAM P550 P641 P492 P428 P475 P489
+        |   |      |  |  |   | P640 P642 P490
+H166    | B | NONE |  |  | N | ELNEX P643 P644 P645 P646 P647 OMKOB GUTGO PATVO VAKDO UKBOL NIPIM RUKLI SEBMO ABTUD
+        |   |      |  |  |   | P648 P657 P656 P649 P653 P89 P661 P658 P655 P654 P660 P650 P651 P659 P664
+        |   |      |  |  |   | P663 P652
+H17     | B | NONE |  |  | N | XSH P36 P575 JDZ P392 P25 P644 SHR P214 P472 BZ
+H18     | B | NONE |  |  | N | PEXEK KHN P646 P574 XUVGI P47 P451 P553 P609 QO
+H19     | B | NONE |  |  | N | P477 P372 P108 P579 P335 P474 P650 KWE
+H2      | B | NONE |  |  | N | HFE VILID P37 P321 P206 P468 P179 P262 P599 JDZ P395 P263 P645 P215 P48
+        |   |      |  |  |   | P555 P453 P232 P610 QO P84 P380 P456 P21 XLN
+H21     | B | NONE |  |  | N | KAKAT VAGNU
+H22     | B | NONE |  |  | N | DST P607 P132 AKAVO P381 QO P176 P379 P452 PV P508 P605 ODOPI XEBUL
+H23     | B | NONE |  |  | N | CHG MSN P387 P592 BM DBL
+H24     | B | NONE |  |  | N | TOL ABVIL P604 ISNIR P49 P25 P263 P251 KHN PULES LEPMI ANISA OVTAN VIKEB PAVTU
+        |   |      |  |  |   | ISMED ESBIX ZK LLC P231 P294 P159 ZHJ P293 P665 UBGUP UBDID MASRO VIGAN KWE
+        |   |      |  |  |   | MEVUL ASH P664 P249 P652 IGDAS
+H25     | B | NONE |  |  | N | VETIB QU P150 P606 NUVGA XEBUL P247 MABAG WYN
+H26     | B | NONE |  |  | N | JDZ P473 P602 TXN
+H28     | B | NONE |  |  | N | URBAD XDX P583 P582 MABEB P09 P250 P74 P495 GURIL RUXEL
+H3      | B | NONE |  |  | N | IDVOT UGABI
+H30     | B | NONE |  |  | N | HCH P586 P585 GUTVO P584 WFG
+H31     | B | NONE |  |  | N | HDH WXI DADGA
+H32     | B | NONE |  |  | N | NNW P539 QIY
+H33     | B | NONE |  |  | N | OLPAB OGABI
+H34     | B | NONE |  |  | N | LYA P52 P612 P225 SHX
+H35     | B | NONE |  |  | N | DYG P448 P127 P613 SUDPI IGDUL
+H36     | B | NONE |  |  | N | NSH AKD P234 P361 P23 SNF P487 P497 OLPOV YIH
+H37     | B | NONE |  |  | N | ESMOL BONPI GAO OSPAP P65 P59 P61 DJY P11 NSH
+H38     | B | NONE |  |  | N | WZH P616 P239 IGITA ENH
+H39     | B | NONE |  |  | N | UGSUT P35 AKD P233 P43 DJY ORUKA UPNIM DS
+H40     | B | NONE |  |  | N | DALIM P292 P197 P182 P596 P240 TOS
+H42     | B | NONE |  |  | N | P403 P115 OVLAR
+H44     | B | NONE |  |  | N | SANUK DJY P53
+H45     | B | NONE |  |  | N | IGNAK HLC ZW OMKEG ISDUM CDX
+H46     | B | NONE |  |  | N | RUNEK P647 KHN NCH P34 P603 P262
+H47     | B | NONE |  |  | N | P468 P230 P573 P66 EMRAL
+H48     | B | NONE |  |  | N | ATVIM P559 FYG P123 P450 P242 REVKU
+H5      | B | NONE |  |  | N | HEK P316 NDG
+H51     | B | NONE |  |  | N | QJG SHC
+H53     | B | NONE |  |  | N | MAKIP P620 MULOB
+H56     | B | NONE |  |  | N | ESPEG GAO UNSUV
+H57     | B | NONE |  |  | N | XYO NIXID P617 MAVRA
+H59     | B | NONE |  |  | N | JIG P503 P29 CGA P370 NSH
+H6      | B | NONE |  |  | N | NDG P309 P105 P311 TGO
+H60     | B | NONE |  |  | N | XNN PANRA
+H62     | B | NONE |  |  | N | AKS P184 XKC
+H63     | B | NONE |  |  | N | KEL SADAN P44 DJQ
+H64     | B | NONE |  |  | N | KABDO P348 P138 KEL XKC
+H65     | B | NONE |  |  | N | HTN MAGIV
+H67     | B | NONE |  |  | N | HTN KANPI P190 LESVI
+H68     | B | NONE |  |  | N | P478 P540 P479
+H69     | B | NONE |  |  | N | KLM P165 NLT
+H70     | B | NONE |  |  | N | KABDO P135 DUGIB P515 P165 YNN
+H71     | B | NONE |  |  | N | OGEDI P260 YNN
+H72     | B | NONE |  |  | N | P457 P515 P260 NLT P267
+H73     | B | NONE |  |  | N | P221 KLM P39 TCH
+H74     | B | NONE |  |  | N | XNN NODID
+H75     | B | NONE |  |  | N | KLM SALMO TAI
+H76     | B | NONE |  |  | N | HG1 HOK VEXAN P393 OVLAR JO
+H77     | B | NONE |  |  | N | LBN LIU
+H79     | B | NONE |  |  | N | XKC P267 P572 P257 P178 YNN
+H8      | B | NONE |  |  | N | OC HG LOVTI P148 P149
+H80     | B | NONE |  |  | N | ESBIX POXIB LIG
+H81     | B | NONE |  |  | N | LH P469 P95 P549 P101 P333 P626 GYA
+H82     | B | NONE |  |  | N | LBN P20 P547 P125 BHY
+H83     | B | NONE |  |  | N | YQFL JW P158 LIU
+H84     | B | NONE |  |  | N | POU YIN
+H85     | B | NONE |  |  | N | CON SHL
+H86     | B | NONE |  |  | N | OQ P621 NOPIR DM
+H87     | B | NONE |  |  | N | PARGU DCH P618 VAMSI P117 P211 ZHD UKDAB P30 CEH
+H89     | B | NONE |  |  | N | LPS SARPO HX P334 TUVKI P570 PAN
+H90     | B | NONE |  |  | N | SGM P73 ALALA BUBSU BSD LUM
+H91     | B | NONE |  |  | N | BUBSU P14 YJ P336 JHG
+H92     | B | NONE |  |  | N | JZH PAVMO PIMEL GYN
+H93     | B | NONE |  |  | N | JZH IDVEM OVRAL
+H94     | B | NONE |  |  | N | BUPMI APEXO TOREG ISMAB GAO URGEG
+H95     | B | NONE |  |  | N | SHZ FK P22 BZ
+H96     | B | NONE |  |  | N | HFE P183 P318 PA1 P206 P107 TXN
+H98     | B | NONE |  |  | N | PLT P147 P509 P510 TEBON NUSPA
+J100    | B | NONE |  |  | N | GJC P96
+J101    | B | NONE |  |  | N | YBL P96
+J102    | B | NONE |  |  | N | BYD DKO
+J103    | B | NONE |  |  | N | BYD ATSAV RINBI
+J104    | B | NONE |  |  | N | P530 YLX
+J105    | B | NONE |  |  | N | GAZ P432 P434 NODID
+J106    | B | NONE |  |  | N | JGD P316 P46
+J107    | B | NONE |  |  | N | JGD MHN
+J108    | B | NONE |  |  | N | JGD P315 P45 HLD
+J109    | B | NONE |  |  | N | JCS P154 P317 P319
+J111    | B | NONE |  |  | N | DOTMI P317
+J112    | B | NONE |  |  | N | GZY P440 NIKUN
+J113    | B | NONE |  |  | N | GZY P441 AGTIS
+J114    | B | NONE |  |  | N | GZY TAXOR
+J115    | B | NONE |  |  | N | MYD KDJ
+J116    | B | NONE |  |  | N | MYD P186 ZHD
+J117    | B | NONE |  |  | N | MXZ P150
+J118    | B | NONE |  |  | N | MXZ QU
+J119    | B | NONE |  |  | N | JHS P37
+J120    | B | NONE |  |  | N | JHS P107 P277 P600 JDZ
+J121    | B | NONE |  |  | N | TUSLA TZH P520 HAR
+J122    | B | NONE |  |  | N | KHP UBDID
+J123    | B | NONE |  |  | N | KHP OKAKO P293
+J125    | B | NONE |  |  | N | JYC PATVO DALEP
+J126    | B | NONE |  |  | N | JYC P72 JGS
+J127    | B | NONE |  |  | N | GBJ P544 LPS
+J128    | B | NONE |  |  | N | GBJ QNX
+J129    | B | NONE |  |  | N | GBJ P253 P444 P445 P440
+J130    | B | NONE |  |  | N | XHE P269 P358 XNN
+J131    | B | NONE |  |  | N | P358 DNC
+J132    | B | NONE |  |  | N | XHE OMBON
+J133    | B | NONE |  |  | N | XHE P363 CKA
+J134    | B | NONE |  |  | N | FYJ P164
+J135    | B | NONE |  |  | N | SNJ EMVIL
+J136    | B | NONE |  |  | N | SNJ P486 P05 P202 IDNUS ENH
+J137    | B | NONE |  |  | N | SNJ P497
+J138    | B | NONE |  |  | N | AHY KAMAX
+J139    | B | NONE |  |  | N | AHY NONUG LADUP
+J140    | B | NONE |  |  | N | AHY P216 P217 JZH
+J141    | B | NONE |  |  | N | THY LUMKU
+J142    | B | NONE |  |  | N | SLL LEBOM
+J143    | B | NONE |  |  | N | SLL APOGO
+J144    | B | NONE |  |  | N | SLL UGOTU
+J145    | B | NONE |  |  | N | P243 P499 VIKUP NIXUK
+J146    | B | NONE |  |  | N | NNW VENBA
+J147    | B | NONE |  |  | N | HCC APUPA P540
+J148    | B | NONE |  |  | N | HCC GLB
+J149    | B | NONE |  |  | N | OMBEB P376
+J150    | B | NONE |  |  | N | HEN P375 LLC
+J151    | B | NONE |  |  | N | HEN CW P377 VAKVU P376 OPUNI
+J152    | B | NONE |  |  | N | P375 NUPTI
+J153    | B | NONE |  |  | N | YKO P387
+J154    | B | NONE |  |  | N | YKO P389 P388
+J155    | B | NONE |  |  | N | P389 NODAL
+J156    | B | NONE |  |  | N | HTG DUMIN P500 DNH
+J157    | B | NONE |  |  | N | DUMIN GRM
+J158    | B | NONE |  |  | N | DHZ P270 SHL
+J159    | B | NONE |  |  | N | P270 ISLOM
+J160    | B | NONE |  |  | N | DHZ VIPAP
+J162    | B | NONE |  |  | N | KHP UGUGU
+J163    | B | NONE |  |  | N | YCS P449
+J164    | B | NONE |  |  | N | DRZ P09
+J165    | B | NONE |  |  | N | DRZ P250
+J166    | B | NONE |  |  | N | DRZ P54 P116 WFG
+J167    | B | NONE |  |  | N | LQL TYN
+J168    | B | NONE |  |  | N | LQL PONAV
+J169    | B | NONE |  |  | N | DJS P460 P221
+J170    | B | NONE |  |  | N | DJS P458 P457
+J171    | B | NONE |  |  | N | GLB P580 P335
+J172    | B | NONE |  |  | N | P108 GLB
+J173    | B | NONE |  |  | N | HCC P108
+J174    | B | NONE |  |  | N | P513 LJA DAL
+J175    | B | NONE |  |  | N | P508 P509
+J176    | B | NONE |  |  | N | P510 DABER
+J177    | B | NONE |  |  | N | ASH P640 P417
+J179    | B | NONE |  |  | N | P522 DXC
+J180    | B | NONE |  |  | N | DXC P461
+J181    | B | NONE |  |  | N | ADBES P523 DXC
+J182    | B | NONE |  |  | N | DCB P524 SELGO
+J184    | B | NONE |  |  | N | DCB TMR
+J185    | B | NONE |  |  | N | DGE P463
+J186    | B | NONE |  |  | N | ZLT P28
+J187    | B | NONE |  |  | N | ZLT P466
+J188    | B | NONE |  |  | N | ZLT P467
+J189    | B | NONE |  |  | N | DSY EMVIL
+J190    | B | NONE |  |  | N | DSY P62
+J191    | B | NONE |  |  | N | DGL P464
+J192    | B | NONE |  |  | N | DGL P465
+J193    | B | NONE |  |  | N | XMN AMURI GORMU P306 QO
+J194    | B | NONE |  |  | N | XLN KADUG P305 P326 QO
+J195    | B | NONE |  |  | N | P177 P181 P476 DRJ
+J197    | B | NONE |  |  | N | DCY GMA
+J198    | B | NONE |  |  | N | DCY YJ
+J199    | B | NONE |  |  | N | DSA P97 SAGSU
+J20     | B | NONE |  |  | N | IPMIN P581 P582
+J200    | B | NONE |  |  | N | SAMAS P470 P469
+J201    | B | NONE |  |  | N | DZM MAVRA
+J202    | B | NONE |  |  | N | DZM APUKI
+J203    | B | NONE |  |  | N | DZM AGTIS
+J204    | B | NONE |  |  | N | VADMO HDH
+J209    | B | NONE |  |  | N | DHC AVMOS
+J21     | B | NONE |  |  | N | P583 JDW
+J210    | B | NONE |  |  | N | DWG P656 ZHJ
+J211    | B | NONE |  |  | N | DWG EXURI
+J212    | B | NONE |  |  | N | DYS OTABO
+J213    | B | NONE |  |  | N | DYS EKADO
+J214    | B | NONE |  |  | N | DWL P316
+J215    | B | NONE |  |  | N | DWL P46
+J216    | B | NONE |  |  | N | DJM JHG
+J217    | B | NONE |  |  | N | DJM YJ
+J218    | B | NONE |  |  | N | DJM P336 BIDRU
+J219    | B | NONE |  |  | N | GJC P433 P432 NOGEX RUSAT
+J220    | B | NONE |  |  | N | XNN AVBUD ANDIM
+J221    | B | NONE |  |  | N | DHJ P394
+J222    | B | NONE |  |  | N | DHJ XKH
+J223    | B | NONE |  |  | N | DCX TAS
+J224    | B | NONE |  |  | N | DCX P421 CGA
+J225    | B | NONE |  |  | N | DCX OMBON
+J228    | B | NONE |  |  | N | OLMIB DYY
+J229    | B | NONE |  |  | N | DRQ DJQ
+J230    | B | NONE |  |  | N | DRQ SADAN
+J231    | B | NONE |  |  | N | DQL P407
+J232    | B | NONE |  |  | N | DQL P434
+J233    | B | NONE |  |  | N | DQL P408
+J234    | B | NONE |  |  | N | BZF IGREL SAMOB P571 GYN
+J235    | B | NONE |  |  | N | BZF LOSTA
+J236    | B | NONE |  |  | N | BZF MAKVI P174
+J237    | B | NONE |  |  | N | DYY UPMAT
+J238    | B | NONE |  |  | N | DYY GUDRO DAPRO GUSIV
+J239    | B | NONE |  |  | N | DYY P273 P100 LIN
+J240    | B | NONE |  |  | N | DXM P536 P450 ENLAB
+J241    | B | NONE |  |  | N | DXM P537 P192 P281
+J242    | B | NONE |  |  | N | DXM P484 REVKU
+J243    | B | NONE |  |  | N | TMS LESVI
+J244    | B | NONE |  |  | N | TMS LEDEM
+J245    | B | NONE |  |  | N | GSR DOBSO
+J246    | B | NONE |  |  | N | GSR P359 PEXUN BIGOR
+J247    | B | NONE |  |  | N | SNF P362 EMVIL
+J248    | B | NONE |  |  | N | SNF P05
+J249    | B | NONE |  |  | N | P531 NNW
+J250    | B | NONE |  |  | N | UGOTU NNW
+J251    | B | NONE |  |  | N | BJZ PUKOL
+J252    | B | NONE |  |  | N | OMLIX LYA
+J254    | B | NONE |  |  | N | BJZ VIGEK
+J255    | B | NONE |  |  | N | AKD GUPKU
+J257    | B | NONE |  |  | N | WHX P564 P565
+J258    | B | NONE |  |  | N | WHX P566 JHS
+J259    | B | NONE |  |  | N | P566 TXN
+J260    | B | NONE |  |  | N | CWL P576 GUTVI
+J261    | B | NONE |  |  | N | CWL OPAMU
+J262    | B | NONE |  |  | N | CWL P578 P577
+J263    | B | NONE |  |  | N | HOK DHP MOU
+J264    | B | NONE |  |  | N | WTM DHB P279 P24
+J265    | B | NONE |  |  | N | XSH URGEB
+J266    | B | NONE |  |  | N | P254 XGD
+J267    | B | NONE |  |  | N | XGD DAMEG PAVPA NODIM HOK
+J268    | B | NONE |  |  | N | P75 P124 P106 BENBI
+J269    | B | NONE |  |  | N | DAMEG DHP
+J270    | B | NONE |  |  | N | DCD P346
+J271    | B | NONE |  |  | N | P130 P373
+J272    | B | NONE |  |  | N | P373 P134 GUGAM
+J273    | B | NONE |  |  | N | AVLEN DHP
+J276    | B | NONE |  |  | N | DNY P136
+J277    | B | NONE |  |  | N | DNY VADMO
+J278    | B | NONE |  |  | N | DNY P199 P222
+J279    | B | NONE |  |  | N | XAX P422 P330 P329
+J280    | B | NONE |  |  | N | P330 ELDUT
+J281    | B | NONE |  |  | N | XAX HDH
+J32     | B | NONE |  |  | N | TRN P494 ZHJ
+J34     | B | NONE |  |  | N | DYN P255 VIDEL
+J35     | B | NONE |  |  | N | JGS P121 IDAXI P113
+J350    | B | NONE |  |  | N | KLG DSC
+J351    | B | NONE |  |  | N | NLT YNN
+J352    | B | NONE |  |  | N | KNS TAI
+J353    | B | NONE |  |  | N | TAS P504 JIG
+J355    | B | NONE |  |  | N | ZWX P203
+J358    | B | NONE |  |  | N | BHT P137
+J359    | B | NONE |  |  | N | BHT P140 P139
+J360    | B | NONE |  |  | N | BDA YBL
+J361    | B | NONE |  |  | N | ETL P141
+J362    | B | NONE |  |  | N | XFY TAI
+J363    | B | NONE |  |  | N | LUA LESVI
+J364    | B | NONE |  |  | N | XFY ADPET
+J365    | B | NONE |  |  | N | LUA PAMLI
+J366    | B | NONE |  |  | N | ZSU P257
+J367    | B | NONE |  |  | N | ZSU P178
+J368    | B | NONE |  |  | N | WXJ IGIVI
+J369    | B | NONE |  |  | N | WXJ P93
+J37     | B | NONE |  |  | N | P290 LC
+J370    | B | NONE |  |  | N | WXJ MUBEL
+J371    | B | NONE |  |  | N | WXJ P345 P333 BIGRO
+J372    | B | NONE |  |  | N | BELIP ZWX
+J375    | B | NONE |  |  | N | DYL P20
+J376    | B | NONE |  |  | N | YUF HTN
+J377    | B | NONE |  |  | N | YUF DJQ
+J378    | B | NONE |  |  | N | CZA BUBDA BEMAG
+J379    | B | NONE |  |  | N | P588 CZA
+J38     | B | NONE |  |  | N | QHD LUX
+J380    | B | NONE |  |  | N | DXJ P630
+J381    | B | NONE |  |  | N | DXJ P631
+J382    | B | NONE |  |  | N | DXJ P632
+J383    | B | NONE |  |  | N | DXJ P633
+J384    | B | NONE |  |  | N | DXJ EPGAL
+J385    | B | NONE |  |  | N | BAY BEBEP
+J386    | B | NONE |  |  | N | BAY P267
+J387    | B | NONE |  |  | N | BAY GOBOK
+J388    | B | NONE |  |  | N | BAY NLT
+J389    | B | NONE |  |  | N | IKAVO P415 P480 NOLON OGABI P414 P488 P270
+J390    | B | NONE |  |  | N | ISLOM TEPID
+J391    | B | NONE |  |  | N | PADRU P232 P553
+J415    | B | NONE |  |  | N | SIKOU AIWD BIGEX
+J43     | B | NONE |  |  | N | YLX LUVES
+J451    | B | NONE |  |  | N | ELKAL LIP
+J452    | B | NONE |  |  | N | ZHJ P493 P167 P491 P159 P657
+J453    | B | NONE |  |  | N | ZHJ P653 P162 P168
+J454    | B | NONE |  |  | N | LIP P162
+J455    | B | NONE |  |  | N | GLB AKNAV LIP
+J48     | B | NONE |  |  | N | LJG P382 P454 QO
+J50     | B | NONE |  |  | N | P21 JNJ
+J501    | B | NONE |  |  | N | DRD P482 P447
+J502    | B | NONE |  |  | N | DRD P483 P462
+J503    | B | NONE |  |  | N | RG DCH
+J504    | B | NONE |  |  | N | YUS MUMAN
+J505    | B | NONE |  |  | N | YUS LUVAR
+J506    | B | NONE |  |  | N | LZP P529 UGOVA
+J51     | B | NONE |  |  | N | P250 P337 P429 LNY
+J511    | B | NONE |  |  | N | DJY ANBEP WZH
+J512    | B | NONE |  |  | N | LGH ZHD
+J513    | B | NONE |  |  | N | LGH P513 CEH
+J514    | B | NONE |  |  | N | LGH P259 PAN
+J515    | B | NONE |  |  | N | LAZ P411 P410 P571
+J516    | B | NONE |  |  | N | BIDRU JHG
+J517    | B | NONE |  |  | N | LAZ APEXO
+J518    | B | NONE |  |  | N | LAZ TOREG
+J523    | B | NONE |  |  | N | SB P210 ZHD
+J530    | B | NONE |  |  | N | JZH OMBON
+J531    | B | NONE |  |  | N | PUN OLP P245
+J532    | B | NONE |  |  | N | OLP P349
+J550    | B | NONE |  |  | N | PUNIR P285
+J551    | B | NONE |  |  | N | WSH P128
+J552    | B | NONE |  |  | N | WSH MEPAN
+J553    | B | NONE |  |  | N | MIL DUMIX
+J554    | B | NONE |  |  | N | GMM ELNUN
+J555    | B | NONE |  |  | N | KDJ KAMAX
+J556    | B | NONE |  |  | N | TEC BSD
+J557    | B | NONE |  |  | N | TEC LUM
+J558    | B | NONE |  |  | N | UQN BUBDA
+J559    | B | NONE |  |  | N | UQN NNX
+J56     | B | NONE |  |  | N | XYI P481 LPS
+J560    | B | NONE |  |  | N | UQN WYN
+J561    | B | NONE |  |  | N | YIN MOLSO P285 UQN
+J563    | B | NONE |  |  | N | P95 P104 P119 BIGRO
+J564    | B | NONE |  |  | N | P104 P101
+J565    | B | NONE |  |  | N | BIGRO P151 WUQ
+J566    | B | NONE |  |  | N | P209 AGTEL
+J567    | B | NONE |  |  | N | BHY P224 P226 P235
+J568    | B | NONE |  |  | N | P209 P220 LH BHY
+J57     | B | NONE |  |  | N | XYI P128
+J58     | B | NONE |  |  | N | XYI MEPAN
+J59     | B | NONE |  |  | N | WUH DKO
+J60     | B | NONE |  |  | N | WUH P406 ENBOP DOXED
+J600    | B | NONE |  |  | N | GFK P160 P74
+J603    | B | NONE |  |  | N | BK FK
+J612    | B | NONE |  |  | N | JDZ P34 P66 JIU
+J623    | B | NONE |  |  | N | TOL ELNEX P67 SR BZ
+J624    | B | NONE |  |  | N | QO WYS P215
+J625    | B | NONE |  |  | N | PA1 P230 P601 JDZ
+J627    | B | NONE |  |  | N | SR SHR
+J64     | B | NONE |  |  | N | LRU VENUT DZY
+J646    | B | NONE |  |  | N | JGS PANBO P120
+J647    | B | NONE |  |  | N | JGS PLT
+J65     | B | NONE |  |  | N | DBC P309 P310 EKADO
+J66     | B | NONE |  |  | N | YCU HRB
+J67     | B | NONE |  |  | N | YCU P26
+J68     | B | NONE |  |  | N | SRT P111 P310 P105
+J69     | B | NONE |  |  | N | XKH P06 P10
+J70     | B | NONE |  |  | N | XKH P26
+J71     | B | NONE |  |  | N | MDJ P10 FSD
+J710    | B | NONE |  |  | N | AKLAT P68 DF
+J72     | B | NONE |  |  | N | FSD P12 P55
+J722    | B | NONE |  |  | N | MSN OMDUS
+J723    | B | NONE |  |  | N | MSN P446
+J74     | B | NONE |  |  | N | BMS SUDPI KIGUM
+J75     | B | NONE |  |  | N | BMS P127
+J752    | B | NONE |  |  | N | MHN HEK
+J753    | B | NONE |  |  | N | MHN P271 HLD
+J755    | B | NONE |  |  | N | IDVOT P594 CBS
+J756    | B | NONE |  |  | N | SWG P252
+J757    | B | NONE |  |  | N | SWG TODAM
+J758    | B | NONE |  |  | N | ZDQ ADPET
+J759    | B | NONE |  |  | N | ZDQ QTV
+J76     | B | NONE |  |  | N | LHT HOT
+J760    | B | NONE |  |  | N | DYL P125
+J761    | B | NONE |  |  | N | DYL OSIKA
+J78     | B | NONE |  |  | N | LHT P57
+J79     | B | NONE |  |  | N | FY P543 P446
+J81     | B | NONE |  |  | N | TSH P516 LUX
+J82     | B | NONE |  |  | N | P516 P517 P518 IGMOR
+J83     | B | NONE |  |  | N | DLZ LEVTO OLVAT WLY
+J84     | B | NONE |  |  | N | GUY RURAV MULIV
+J85     | B | NONE |  |  | N | IGUNI SUPUM DLZ P567 P369 NIXID
+J856    | B | NONE |  |  | N | YQG METOG P351 P200 P64
+J857    | B | NONE |  |  | N | KDB P634 P635
+J858    | B | NONE |  |  | N | KDB P637 HZG
+J859    | B | NONE |  |  | N | HZG P142 P143 P122 P40
+J86     | B | NONE |  |  | N | RIRKI XYO DLZ
+J860    | B | NONE |  |  | N | P171 P172 P146 P173 HZG
+J87     | B | NONE |  |  | N | BOL P165
+J88     | B | NONE |  |  | N | BOL YNN
+J89     | B | NONE |  |  | N | ANLAM IGUNI WLY VEDPO
+J902    | B | NONE |  |  | N | P648 VIMEN
+J903    | B | NONE |  |  | N | ZHJ P426
+J904    | B | NONE |  |  | N | P89 ZHJ
+J905    | B | NONE |  |  | N | KHP P550
+J906    | B | NONE |  |  | N | P655 KHP
+J907    | B | NONE |  |  | N | KHP UBGUP P661
+J908    | B | NONE |  |  | N | P512 KHP
+J909    | B | NONE |  |  | N | P664 ASH
+J91     | B | NONE |  |  | N | ALS P153
+J910    | B | NONE |  |  | N | P489 P659 ASH
+J92     | B | NONE |  |  | N | ALS P155
+J93     | B | NONE |  |  | N | PTG KEXAB DUBUV QTV
+J99     | B | NONE |  |  | N | GJC P92
+L181    | B | NONE |  |  | N | AGVUT DSC
+L642    | B | NONE |  |  | N | EPKAL EGEMU EXOTO
+L888    | B | NONE |  |  | N | BIDRU MAKUL URGAV DONEN UPGED NIVUX UKDAB LEVBA BIGOR PEXUN P359 SANLI LUVAR KADKI P193
+        |   |      |  |  |   | MUMAN TEMOL LEBAK TONAX BEVTA NOLEP SADAN KAGSO P367 XKC
+M503    | B | NONE |  |  | N | LELIM LAPUG TOLAK APAKA OBKEL PONEN NUDPO NUNVO OKATO BEGMO
+M771    | B | NONE |  |  | N | DONDA DOSUT DULOP DUMOL BIGEX
+N892    | B | NONE |  |  | N | MIGUG MONBO
+P901    | B | NONE |  |  | N | BIGEX IDOSI IKELA
+R200    | B | NONE |  |  | N | OLDID LAPUG BEBEM AVBEP SUMDO P319 OVGOT VIPAP GUBLO ZUH KIBAS BOKAT ADBIN TOMUD BIGRO
+        |   |      |  |  |   | P470 LH
+R213    | B | NONE |  |  | N | JMU MAGIT
+R224    | B | NONE |  |  | N | YNJ VASRO
+R339    | B | NONE |  |  | N | SIKOU GIVIV LH BHY ALEKI NIKUK WUY UVUNO P479 P477 BSE
+R343    | B | NONE |  |  | N | PK EKIMU SASAN ESBAG ATLIX P282 LUPVI OLRIS UPLEL MADUK HFE UXALO P344 MIDOX URGEB
+        |   |      |  |  |   | BIVIP DAMEG SAGUD DUBAS WHA OSREK LKO GOSMA P169 OLTUS LLC ABTUD REKSO AVNEL VIGIS
+        |   |      |  |  |   | NUPTI EXURI P471 ONEMI VQ EMVUT MAMSI ENKUS LBN SARUG WUY
+R471    | B | NONE |  |  | N | KATBO ADBAG
+R473    | B | NONE |  |  | N | LIG OMBEB IDAXI OPUNI BEMAG NNX WYN SALIV NOLON CON POU VIBOS ZUH SIERA
+R474    | B | NONE |  |  | N | GYA IKULI PAKPU OSIKA P548 P20 VAPNA WUY XEREN LON TEBAK
+R596    | B | NONE |  |  | N | BZ DST OKATO SULEM
+V1      | B | NONE |  |  | N | PIDOX LUX P364 UPSAT PAMDA
+V10     | B | NONE |  |  | N | TONIL PAMRU PANKI
+V100    | B | NONE |  |  | N | EMVIL IGLOK
+V101    | B | NONE |  |  | N | KIKIV P63
+V102    | B | NONE |  |  | N | PIKEM BOLEV DUBID
+V103    | B | NONE |  |  | N | P62 EGUVA P386
+V104    | B | NONE |  |  | N | ISNEB AVNOD VETIP LENPO KILUD
+V105    | B | NONE |  |  | N | CGO PUBOV IGPIL PADNO
+V106    | B | NONE |  |  | N | IKUBA ESKAM GUGAM
+V107    | B | NONE |  |  | N | LLC IPMUG DUBNA VIBUB
+V108    | B | NONE |  |  | N | HG1 TULMU
+V109    | B | NONE |  |  | N | KAMDA LKO
+V11     | B | NONE |  |  | N | VMB PIMUS DOGVI
+V110    | B | NONE |  |  | N | XSH HOK
+V111    | B | NONE |  |  | N | DSY TOGOG
+V112    | B | NONE |  |  | N | IKEKA GUSEV NOBOB LATUX
+V113    | B | NONE |  |  | N | VETIP GUTUS
+V114    | B | NONE |  |  | N | LENPO OGOVI
+V115    | B | NONE |  |  | N | BESMI DNC
+V116    | B | NONE |  |  | N | LUPRO ESDEX
+V12     | B | NONE |  |  | N | NYB AGPOR
+V13     | B | NONE |  |  | N | MLT AGPOR LAKES LOGAN SOUSA AROXA NUSTO LELIM
+V14     | B | NONE |  |  | N | PIMOL AGPUX NOBEM
+V140    | B | NONE |  |  | N | GOVNI IDNIK JTN
+V141    | B | NONE |  |  | N | IDNIK ALDAP
+V142    | B | NONE |  |  | N | ATVAD VEGDA MABOS
+V143    | B | NONE |  |  | N | OLRIS SAPIN EMRID DST
+V144    | B | NONE |  |  | N | MUBEL OPENU LENAD AVPAM
+V145    | B | NONE |  |  | N | IGIVI OVLUG AVDOK UKMA3 GYA
+V146    | B | NONE |  |  | N | BJZ TODAM
+V147    | B | NONE |  |  | N | MOLSO OPIXU UGRIG MAMSI
+V148    | B | NONE |  |  | N | OSNOV OPIXU
+V15     | B | NONE |  |  | N | LADIX PANKI
+V16     | B | NONE |  |  | N | SUF TEPAG UPKEK
+V17     | B | NONE |  |  | N | GUBLO SULAS IGAGA UBDOB NUVGA ODOPI
+V18     | B | NONE |  |  | N | UBDOB XEBUL
+V19     | B | NONE |  |  | N | LH UDUTI NLG
+V2      | B | NONE |  |  | N | HSH UDOXI ODULO
+V20     | B | NONE |  |  | N | UDUTI BIGRO
+V21     | B | NONE |  |  | N | AVPAM UDUTI TOMUD UJ
+V25     | B | NONE |  |  | N | AVPAM UJ
+V27     | B | NONE |  |  | N | POMOK VEBNI
+V3      | B | NONE |  |  | N | POMOK EKVUT MATNU OCEAN RASSE CONGA ENVAR
+V30     | B | NONE |  |  | N | YQG KAMOM PAMRU
+V31     | B | NONE |  |  | N | LADIX GOTVA YQG
+V33     | B | NONE |  |  | N | DUBAG LEKUB WXI
+V34     | B | NONE |  |  | N | ZNX NSH
+V35     | B | NONE |  |  | N | JCS DOTMI
+V36     | B | NONE |  |  | N | JCS SAPUT TEBON
+V37     | B | NONE |  |  | N | JCS SWA
+V38     | B | NONE |  |  | N | URGEG VINEX OTLOS TOSIM ENH
+V39     | B | NONE |  |  | N | GUXUV P558 SEGPI
+V41     | B | NONE |  |  | N | RUNEG DABUB WL
+V42     | B | NONE |  |  | N | REPOL GUMED
+V43     | B | NONE |  |  | N | DBL VABRA REDEM POVAG
+V44     | B | NONE |  |  | N | DBL VABRA KARPI
+V45     | B | NONE |  |  | N | ALARA REDEM DBL
+V46     | B | NONE |  |  | N | UNSEK RANBO DBL
+V47     | B | NONE |  |  | N | DBL VIDUX SARUD ANRAT
+V48     | B | NONE |  |  | N | PAMRU BIMEG
+V49     | B | NONE |  |  | N | HUN NIXEM
+V5      | B | NONE |  |  | N | BEMAG OVTIX IRTAT ENVIP ATAGA CON SABNO GRUPA SKATE OCEAN
+V50     | B | NONE |  |  | N | UGUGU OTLEK SEBGU UNRIX
+V51     | B | NONE |  |  | N | RUNEG UBSIR NYB
+V52     | B | NONE |  |  | N | GUSIV OPUNI
+V53     | B | NONE |  |  | N | GFK YCH PIKAS
+V54     | B | NONE |  |  | N | WXI DOSKU GUKNA PUBOV
+V55     | B | NONE |  |  | N | ENVEN LAMIM GORMU KADUG
+V56     | B | NONE |  |  | N | PU TX405 TX401 OMDUS
+V57     | B | NONE |  |  | N | OMDUS TX404 TX408 GUMOD
+V58     | B | NONE |  |  | N | TX410 PU
+V59     | B | NONE |  |  | N | PU TX661 ISKEM
+V60     | B | NONE |  |  | N | PU TOSID
+V61     | B | NONE |  |  | N | TX557 TX560
+V62     | B | NONE |  |  | N | SEY TX603 TX557 TX611 TX415
+V63     | B | NONE |  |  | N | CHG KYU
+V64     | B | NONE |  |  | N | NOBEM LEBIK TUTKI AVLOG MAGLI
+V65     | B | NONE |  |  | N | LEBIK VILID IKUBA
+V66     | B | NONE |  |  | N | VIKEB LIG REBIS VESUX
+V67     | B | NONE |  |  | N | NUKTI ONENA P27 CHW BIPOM P312 YBL
+V68     | B | NONE |  |  | N | TEKAM ORIXA DOBGA
+V69     | B | NONE |  |  | N | KDJ ATPOG ABVIR MUDEL HLC BHS WFX
+V7      | B | NONE |  |  | N | ATLIX UPKEK OROTU
+V70     | B | NONE |  |  | N | POMOK UNTAN
+V72     | B | NONE |  |  | N | OVNEV ISPUR ELAGO
+V73     | B | NONE |  |  | N | MULOV SUPAR JTN
+V74     | B | NONE |  |  | N | PAMVU SUSMU BK
+V76     | B | NONE |  |  | N | TXN DUBVU OSPAM
+V77     | B | NONE |  |  | N | ADBAS LURMA
+V78     | B | NONE |  |  | N | TUTKI AKNAX ISNEB FYG
+V79     | B | NONE |  |  | N | SJW VEMOT ATKEV HG
+V8      | B | NONE |  |  | N | HSH VEBNI NTG
+V80     | B | NONE |  |  | N | ATKEV DOVSU
+V81     | B | NONE |  |  | N | BUBDI SULTI GUXEN HRB
+V82     | B | NONE |  |  | N | IGADO TOGEP GUXEN
+V83     | B | NONE |  |  | N | VETEX SAREV IGADO
+V84     | B | NONE |  |  | N | HRB VETEX NOKUV KETOV
+V85     | B | NONE |  |  | N | HRB ATVOM IDIMO UKDIN KETOV
+V86     | B | NONE |  |  | N | QNX MEVUL TESIL BSE
+V87     | B | NONE |  |  | N | YIH OMGIB EXURI
+V88     | B | NONE |  |  | N | YIH GUKVO ONEMI
+V89     | B | NONE |  |  | N | JDW GUTVO UPDAD DOVIV
+V9      | B | NONE |  |  | N | AMVIK LULTA TONIL BIMEG UPSAT ANRAT
+V90     | B | NONE |  |  | N | BISAL LEBOM
+V91     | B | NONE |  |  | N | TODAM MAPMU
+V92     | B | NONE |  |  | N | HAR PIDOX
+V93     | B | NONE |  |  | N | EXUMI EGEBI
+V94     | B | NONE |  |  | N | WXI TYN
+V95     | B | NONE |  |  | N | NSH TOGOG IGLOK P62
+V96     | B | NONE |  |  | N | IGLOK IGADA
+V97     | B | NONE |  |  | N | UGSUT TOGOG
+V98     | B | NONE |  |  | N | P397 TOGOG
+V99     | B | NONE |  |  | N | AKD TOGOG
+W100    | B | NONE |  |  | N | VAPGU MUDOT ORAVA
+W101    | B | NONE |  |  | N | ALGOV VALNI DUDIL
+W102    | B | NONE |  |  | N | SHX EMVIL P23 ENSOX ENH DELEG DAKOR P448 P630 BODUV P632 MAKLA P425 ZHJ P649
+        |   |      |  |  |   | BIGVI SJG
+W103    | B | NONE |  |  | N | MUMUN P229 YQG OKALI WFG YO OVLEM JDW JDE TAO
+W104    | B | NONE |  |  | N | HDS VEXEB OMDIS LEBOM
+W105    | B | NONE |  |  | N | NCH EMRAL PEXEK LAPEN TULMU XSH
+W106    | B | NONE |  |  | N | MAKNO UDETI
+W107    | B | NONE |  |  | N | CHI SANKO
+W108    | B | NONE |  |  | N | LATUX IGPOX SOSMA RUMIB MATNU DUMET
+W109    | B | NONE |  |  | N | NTG PIKAS
+W11     | B | NONE |  |  | N | PINOT PUD
+W111    | B | NONE |  |  | N | XNN UPVOP XIXAN
+W112    | B | NONE |  |  | N | BILDA IKAGA TODOD VIKUP TUSLI ADMUX SUNPU NOLEP DJQ TEPUT VIDUT HTN PURPA
+W113    | B | NONE |  |  | N | YCH GORPI SOSMA AKBEP IKADI
+W114    | B | NONE |  |  | N | DUMET LASAN
+W115    | B | NONE |  |  | N | PINOT MATNU
+W116    | B | NONE |  |  | N | PK JTN
+W117    | B | NONE |  |  | N | DST BEGMO
+W118    | B | NONE |  |  | N | ML P403 REVKU BENBI
+W119    | B | NONE |  |  | N | KABDO BIVEX NIXER MENOD OGEDI GOBOK P267 EXURU LIMDO AKS LESVI
+W12     | B | NONE |  |  | N | IBVUL PARGU
+W121    | B | NONE |  |  | N | DST NUDPO
+W122    | B | NONE |  |  | N | AVMAM PONEN
+W123    | B | NONE |  |  | N | XLN ALADU APAKA
+W125    | B | NONE |  |  | N | XUZ DO MEXUP OMUDI
+W126    | B | NONE |  |  | N | DO DPX
+W127    | B | NONE |  |  | N | XUZ ATVIM P42 KAGVO SEGPI AKNAX AVLOG HFE
+W128    | B | NONE |  |  | N | FYG EPGOS DUDBI IGMIG KAMDA MILOM SUKTO
+W129    | B | NONE |  |  | N | CGO P295 KAMDA OBLIK
+W13     | B | NONE |  |  | N | PINOT IPRAG LASAN PONAB RULMU HSN TOGUG BEGMO OKATO
+W130    | B | NONE |  |  | N | UJ LANDA
+W131    | B | NONE |  |  | N | NXD AKDIM
+W132    | B | NONE |  |  | N | SAGNU GUMAL P207 OREXA MOMGO ISNIR
+W133    | B | NONE |  |  | N | DUBGO ABVIL
+W134    | B | NONE |  |  | N | DUBGO ELNEX
+W135    | B | NONE |  |  | N | NOBEM DOGVI OBLAP LUPVI GOSRO UPKEK P565 TAPEN NIVIK KAKIS ADBAS UPVOM EMRID EGEKI P67
+        |   |      |  |  |   | TUPGA
+W136    | B | NONE |  |  | N | QNX P544 URGIX SARPO XISLI
+W137    | B | NONE |  |  | N | DJT NODIB IGDAS LPS
+W138    | B | NONE |  |  | N | DYG DOPNI XOPEK BIVAV PEDMU LLC RUKLI
+W139    | B | NONE |  |  | N | DYG IGPAR ENH
+W140    | B | NONE |  |  | N | HUY DYG
+W141    | B | NONE |  |  | N | DYG KALMU LIN
+W142    | B | NONE |  |  | N | YQG DALIM
+W143    | B | NONE |  |  | N | ATOLO DJT
+W144    | B | NONE |  |  | N | SGM DADOL P334 ZAT OTBIM ATPAV VEDPO KAKMI IGNAK
+W145    | B | NONE |  |  | N | ZAT KABNO IDSID
+W146    | B | NONE |  |  | N | BUBSU GULOT IDPUG XSJ
+W147    | B | NONE |  |  | N | ELASU IDPUG
+W148    | B | NONE |  |  | N | LXI IGRID XSJ
+W149    | B | NONE |  |  | N | XFA DADOL
+W15     | B | NONE |  |  | N | DADAT XSY
+W150    | B | NONE |  |  | N | ATOLO LXI
+W151    | B | NONE |  |  | N | DZY AGSOS OKTOX
+W152    | B | NONE |  |  | N | KLX P327 UGSUT PIKEM NSH
+W153    | B | NONE |  |  | N | ZS PIKEM
+W154    | B | NONE |  |  | N | HO XODAS
+W155    | B | NONE |  |  | N | VETIB DABER TEBON
+W156    | B | NONE |  |  | N | YIH UPGUR DJZ GUGAM
+W157    | B | NONE |  |  | N | DALIM TUMLO P148 AGOGU BUVMA BEKDO AVBOX VYK
+W158    | B | NONE |  |  | N | PANKI AR
+W16     | B | NONE |  |  | N | KADSA LEDIM ELNUN
+W160    | B | NONE |  |  | N | YQG TUMLO
+W161    | B | NONE |  |  | N | VMB SASAN
+W162    | B | NONE |  |  | N | WLY KAKMI BOPTU P368 IPNAG SB MUBOP P259 NUKSU CEH OGAVA DAL UPGED BUBSU
+W163    | B | NONE |  |  | N | HFE SUNBO VEMEX
+W164    | B | NONE |  |  | N | ADGOL P560 VILID LEGIV OREVO
+W165    | B | NONE |  |  | N | THA LEGIV
+W166    | B | NONE |  |  | N | ZJ RIBVI OSIKI DALNU
+W167    | B | NONE |  |  | N | ZJ SASAN SUF
+W168    | B | NONE |  |  | N | CKG SHC XOLAL FLG GUTVI
+W169    | B | NONE |  |  | N | WUY ISGEG RIKMO RUNEG ENSIX XELOV ADKUN URDIN IDLUS KAGUK ATALA
+W17     | B | NONE |  |  | N | VIPIB KAMAX
+W170    | B | NONE |  |  | N | VEGDO ATALA SAVNO
+W171    | B | NONE |  |  | N | LENKO SAVNO SAGSU
+W172    | B | NONE |  |  | N | LATUX LAROP IPMIN URBAD VEPGI AVBIK FD TEKAM IGDEG
+W173    | B | NONE |  |  | N | MAKNO TANIB NIXEP IGDEG HCH
+W174    | B | NONE |  |  | N | FD XIVID TAO XDX
+W175    | B | NONE |  |  | N | LIMGI PATVU PONAV IBUDO BIVAT BISAL AVKES TYN
+W176    | B | NONE |  |  | N | AKS P204 PUBUR KHG MAGIV
+W177    | B | NONE |  |  | N | YCH HUN P496 IDKOT OMUDI
+W178    | B | NONE |  |  | N | RUXEL IDKOT LAGAL OSIKI OF
+W179    | B | NONE |  |  | N | ELKAL MASRO P492 SUMUN BIPIP P444 IRVED SAMIV RIRKI UDOXO OTGIN WLY IGNAK IPLOL WFX
+        |   |      |  |  |   | JTG CDX BOKIR PAVMO OBMIG IDVEM OMBON
+W18     | B | NONE |  |  | N | WYN SANIP NOMAR UBLIM NLG TAMOT
+W180    | B | NONE |  |  | N | SANUK P59 BOKIX TAMUS OTLOS AKBEK DS PUDUG OS XOLAL MEKEP P551 UNRIX BONSA UPKUS
+        |   |      |  |  |   | P440 P441 MEMAG LIDMA LIKRI VIGAN KAGRA ELBAV
+W181    | B | NONE |  |  | N | KWE P660 ELBAV P347 IDEPO GLB XOLON P478 DUDIT
+W182    | B | NONE |  |  | N | AGTIS LIDMA P641 UBDID P655 UGUGU LAGEX
+W183    | B | NONE |  |  | N | UGUGU P658 P665 OKAKO TRN P633 HUY
+W184    | B | NONE |  |  | N | PIMOL ZJ
+W185    | B | NONE |  |  | N | OF RIBVI NIXEM YCH
+W186    | B | NONE |  |  | N | KAMUD AKS PAMLI ISBEB SADAN
+W187    | B | NONE |  |  | N | MAGIV KANPI SADAN OBDEG TUSLI KARVI DNH IBANO
+W188    | B | NONE |  |  | N | FKG ADPET ESGIV DAKPA RIMDU BATUS LIKMI GOVSA
+W189    | B | NONE |  |  | N | AKLAS IPMUN IDOPU DAKPA
+W19     | B | NONE |  |  | N | NCH OLDAX AVDIP PULES RUNEK OSONO ELRER IRNOL PANBO P177 PLT MASGU MABAG UPMIP ATKAV
+        |   |      |  |  |   | OLPAB NOMAR
+W190    | B | NONE |  |  | N | WUR VARMI OMDAX MULOR VESED PUBAM ADPET QTV
+W191    | B | NONE |  |  | N | ESDEX MOVBI KARVI TOSAP VIKUP ATNOK MULRU P408 RUSAT NODID ESMEX AVBUD PANRA DNC
+W192    | B | NONE |  |  | N | FKG KEXAB UPKOT LUPRO AKLAS AVLIM ESDEX RUSDI TUSLI KIDIV DUMIN
+W193    | B | NONE |  |  | N | EGILO BAV OMGEL ALGOV HDS TESAN MUDPO YLX ATERI NNW WJC
+W194    | B | NONE |  |  | N | DYG NOMUK CD AVKOK LLC
+W197    | B | NONE |  |  | N | SUNUV BUKPU ANDIM
+W198    | B | NONE |  |  | N | PANRA BUKPU JTA
+W199    | B | NONE |  |  | N | YHD NIRUV P137 OPULI P139 YBL
+W2      | B | NONE |  |  | N | SJG PA JW MOTOM LBN
+W20     | B | NONE |  |  | N | ATKAV SALIV
+W200    | B | NONE |  |  | N | DOVIV HCH
+W201    | B | NONE |  |  | N | UKDUM OPIMU ANOBI LC ISGAP ORAVA UNSEK GOTSU OSVEN HCH
+W202    | B | NONE |  |  | N | DOBGA UDETI
+W203    | B | NONE |  |  | N | RUSBO LUVMO PIGAM
+W204    | B | NONE |  |  | N | RUSBO IGPUP LEGAG
+W205    | B | NONE |  |  | N | NIMEM NULRA
+W206    | B | NONE |  |  | N | NULRA MAGBI
+W207    | B | NONE |  |  | N | LIN TIKME
+W208    | B | NONE |  |  | N | LIN DJZ TIKME WTM
+W209    | B | NONE |  |  | N | XDX LATUX UGOMO OMLIB LILMO AGAVO
+W21     | B | NONE |  |  | N | GUBLO MIPAG CEN NUSLA
+W210    | B | NONE |  |  | N | PADNO URBIL RIDMI MEXOS BIVAT
+W211    | B | NONE |  |  | N | DNC MUDAP LEVGI ZWX
+W212    | B | NONE |  |  | N | PANRA MUDAP
+W213    | B | NONE |  |  | N | QIY ODISA URBEB P03 GUY OVTIB SUNUV DNC
+W214    | B | NONE |  |  | N | XIXAN IRSUM JIG XOGAB SADBU HO
+W215    | B | NONE |  |  | N | YHD DWZ IVTEV DOMVA RURAV MOPMA VIRIK ODISA SADBU
+W216    | B | NONE |  |  | N | QIY ALGAK MULIV IDGOB YHD
+W217    | B | NONE |  |  | N | YHD GOTBO DOXED UPKUN OLTIT VIKON
+W218    | B | NONE |  |  | N | TUTGO UPKUN OLDAB VEDLU YLX APOGO
+W219    | B | NONE |  |  | N | ZWX LUVKO YHD
+W22     | B | NONE |  |  | N | GUBLO IDUMA SHL NUSLA TEPID YIN
+W220    | B | NONE |  |  | N | NIRUV P219 AGVEN ENBOP TUTGO MULOB AVNOT SANID BAV
+W222    | B | NONE |  |  | N | SYX DOSTA IDUPU PORAP DOBVI NUMKU SAMAS
+W223    | B | NONE |  |  | N | NUMKU AGTEL
+W224    | B | NONE |  |  | N | OMKOB PULES
+W225    | B | NONE |  |  | N | IDPUG GODUL DJT
+W226    | B | NONE |  |  | N | AVDIP BIRIR DALEP OLTOL OBLUV MILOP OLTUS IPMUG PEDMU IRSAS
+W227    | B | NONE |  |  | N | OMKOB GUTGO PATVO VAKDO UKBOL NIPIM RUKLI SEBMO ABTUD
+W23     | B | NONE |  |  | N | NLG ZUH
+W230    | B | NONE |  |  | N | SUBUL ONOKU P571 ATLAD AKDIK MYG CDX
+W231    | B | NONE |  |  | N | URGEG BONPI EKOKA WFX
+W232    | B | NONE |  |  | N | RIRKI PAMLO OLVAT ELDUD WFX
+W233    | B | NONE |  |  | N | WFX VIMAM GURET APEXO P411 IGREL AGULU
+W234    | B | NONE |  |  | N | WFX ATVAX ANLAM SUPUM NIXID
+W235    | B | NONE |  |  | N | JTG VIMAM UBRAB
+W236    | B | NONE |  |  | N | JTG OMKEG CTU
+W237    | B | NONE |  |  | N | CTU BHS IPLOL IDBOR
+W238    | B | NONE |  |  | N | OPAMU MEKEP SHC
+W239    | B | NONE |  |  | N | POVUN ENH TEPOT
+W24     | B | NONE |  |  | N | TEPID TAN LIPNO SUMIB AGVIL OSNOV
+W240    | B | NONE |  |  | N | KIGUM ENH
+W241    | B | NONE |  |  | N | YIH ATSUD
+W242    | B | NONE |  |  | N | OVRAL OLBAS GYN IGLEX AGULU P174 P438 SANUK
+W243    | B | NONE |  |  | N | ENVAV OTBUL
+W244    | B | NONE |  |  | N | PAMRU IGMOR
+W246    | B | NONE |  |  | N | YIH KAKSU KALMU CD
+W247    | B | NONE |  |  | N | SELGO AKNUX BJZ MUGUT
+W25     | B | NONE |  |  | N | XYO PAMLO WLY
+W26     | B | NONE |  |  | N | SHL UPRIK 
+W260    | B | NONE |  |  | N | BIGOR VAMSI P246 ENPAT GOMON
+W261    | B | NONE |  |  | N | OMGEV GOMON GMM DUMIX
+W262    | B | NONE |  |  | N | IBVUL ENPAT
+W27     | B | NONE |  |  | N | IKITI TGO
+W28     | B | NONE |  |  | N | KAKAT OSNEV AGRIV UNTEN UPREK VERMI RURNU LAXAG ISBOS KEVOB ATBUG
+W3      | B | NONE |  |  | N | QJG ENLIL APUKI NIKUN P445 AGTIS SUMUN KWE
+W30     | B | NONE |  |  | N | NSH DUBID SANUK P61 SULEP BEGUK DS UGOPO CKG QJG SABED NIXID UKEGO RIRKI IDSID
+        |   |      |  |  |   | UDETU HX MEBNA XFA
+W31     | B | NONE |  |  | N | CHG UPNAT P528 CHF KAKAT
+W32     | B | NONE |  |  | N | INTIK ASURI PADSA HET
+W33     | B | NONE |  |  | N | POLHO HOT NUVPU AKPAD VALVA UKDUM
+W34     | B | NONE |  |  | N | VYK LADIX PAMRU MUGLO P517 OTBUL VAPGU ANRAT
+W35     | B | NONE |  |  | N | TEMAD OTBUL LUX P290 ANOBI CHG
+W36     | B | NONE |  |  | N | IGMOR P518 ENVAV OLROB UGASA LOTGO
+W37     | B | NONE |  |  | N | VYK OMDEK ATPIR IGMUD OTKAB LOVTI P329 ELDUT EKORO DADGA P222 P122 P172 KILUD PAKMA
+        |   |      |  |  |   | UNTEL GUTOV RUMGU DUDBI ATMEM P123 ENLAB P281 NODIM AVLEN HG1 DUBAS OSIRU UDUMI IGNIK
+        |   |      |  |  |   | P412 OLMIB GUSIV PEXID IGNEG OLTOL VIKEB VAKDO APESO OMBEB
+W38     | B | NONE |  |  | N | HSH PINOT
+W39     | B | NONE |  |  | N | MDJ UGABI OBLOV KANVU YNJ
+W4      | B | NONE |  |  | N | DS IVSOL SOSLI P53 ANBEP GOKEB GUPKU SHX IGADA LIMGI P355 OMLIX NUNGA TAMIX P136
+        |   |      |  |  |   | P384 VADMO WXI EKORO UPNEM GULEK MUMUN OLRED RAXEV GUSIR NOBUP BASOV DYN BUGPA UPDAD
+        |   |      |  |  |   | REPOL HCH TEKAM FZ WEH SEBLI IKEKA
+W40     | B | NONE |  |  | N | VYK ELKUR DOXAB OVNUG P149 PANKI GUSIR YQG
+W41     | B | NONE |  |  | N | IDUMA ISLOM UPRIK BOVMA DOPKU 
+W42     | B | NONE |  |  | N | YNJ WQG
+W43     | B | NONE |  |  | N | GODON GUINS SAVPA UGOTU ATERI GUTRU
+W44     | B | NONE |  |  | N | OLPAB IGONO CON
+W45     | B | NONE |  |  | N | OSUBA ASAVA RUSDO ADPUM IPLEV NOMOV APEXU P523 VAGBI P522 SQ URBIL UBDUN NUNGA GU
+        |   |      |  |  |   | LYA P320 URGIN ML VARDU OVLAR RUXIL IGEDU LIN CD XOPEK IRSAS P294 P648 NUPTI
+        |   |      |  |  |   | VESUX PUNIR IKAVO LUPVU TAN
+W46     | B | NONE |  |  | N | PULES LEPMI ANISA OVTAN VIKEB PAVTU ISMED ESBIX ZK LLC
+W47     | B | NONE |  |  | N | BUMDU ASAVA AVLAP BOTPU VIGEK OGEDO IGPET IBARO UGPOR VEXEB IDSOT IPNON KIBIP P530 PABNI
+        |   |      |  |  |   | P531 GUTRU P539 LOVRA
+W48     | B | NONE |  |  | N | HDS IDSOT LAVOM MAKIP DKO
+W49     | B | NONE |  |  | N | UKDUM VAGNU OSUBA HUR
+W5      | B | NONE |  |  | N | DBL EKULI MAKNO KARPI GUMED HCH ATLED TAO
+W50     | B | NONE |  |  | N | REPUV HG1 SAGUD XSH OTBUG IKUBA ADGOL KIKEG HFE
+W500    | B | NONE |  |  | N | LXA DM OPUNO TAPUN
+W501    | B | NONE |  |  | N | KEVAR IDUMA
+W502    | B | NONE |  |  | N | BK AVGOM VAVSA GOVNI
+W503    | B | NONE |  |  | N | GUMAL DUBGO
+W504    | B | NONE |  |  | N | GUMAL ABVIL
+W505    | B | NONE |  |  | N | DSH SUPAR
+W506    | B | NONE |  |  | N | HGH OKTUG
+W507    | B | NONE |  |  | N | DSH MOLGU UGAGO
+W508    | B | NONE |  |  | N | WY DUBGO
+W509    | B | NONE |  |  | N | NLG KEVAR GUBLO
+W51     | B | NONE |  |  | N | HFE LEGIV MADUK
+W510    | B | NONE |  |  | N | IGDAG TAPUN ELNUN
+W511    | B | NONE |  |  | N | SEY PU
+W512    | B | NONE |  |  | N | SEY KY BIDIB
+W514    | B | NONE |  |  | N | WJC MIZ OD
+W515    | B | NONE |  |  | N | WHA REPUV
+W516    | B | NONE |  |  | N | WHA UDUMI
+W52     | B | NONE |  |  | N | NUVPU AGRIV URGOM VALVA MUDAM
+W521    | B | NONE |  |  | N | SV ESBIX POXIB LIG
+W522    | B | NONE |  |  | N | IGELA NINAP IGDAG NOPIR IDBON LXA
+W523    | B | NONE |  |  | N | YQFL QP
+W524    | B | NONE |  |  | N | YQFL PA SJG
+W525    | B | NONE |  |  | N | HUN LAGAL
+W526    | B | NONE |  |  | N | DUMIX TAPUN
+W527    | B | NONE |  |  | N | DBA IDUPU GULUN
+W528    | B | NONE |  |  | N | DBA DOBVI ANPIM
+W529    | B | NONE |  |  | N | GFK KAPGU RUXEL SAGIP DO
+W53     | B | NONE |  |  | N | RUXIL VL UBKOX YIH
+W530    | B | NONE |  |  | N | EMRAL ANONU BIRIR LEPMI GUTGO
+W531    | B | NONE |  |  | N | OSONO BIRIR
+W532    | B | NONE |  |  | N | NCH PUGIN PEXEK
+W533    | B | NONE |  |  | N | CON BOVMA 
+W534    | B | NONE |  |  | N | CON LMN 
+W535    | B | NONE |  |  | N | LJA CEH
+W536    | B | NONE |  |  | N | OSPAM YEU SHZ
+W537    | B | NONE |  |  | N | YEU UPVOM UGAGO
+W538    | B | NONE |  |  | N | MZL KAGAK
+W539    | B | NONE |  |  | N | MZL MANLI
+W54     | B | NONE |  |  | N | URGOM VAGNU
+W540    | B | NONE |  |  | N | LCZ DOVOP LOVRA NNW
+W541    | B | NONE |  |  | N | DOVOP TEBIB ADNEN
+W543    | B | NONE |  |  | N | OF AKSIG MABOS XOGAX XDY
+W545    | B | NONE |  |  | N | ESBAG DOGVI MLJ VEMEX
+W546    | B | NONE |  |  | N | OREVO XDY SNQ GOSRO
+W547    | B | NONE |  |  | N | JNJ XLN
+W548    | B | NONE |  |  | N | JNJ ATSAB
+W55     | B | NONE |  |  | N | UNSEK OVTUP DOVIV VIDEL TEMAD DUMAP PAMRU
+W550    | B | NONE |  |  | N | ALDEL SOSLI ORUKA SULEP OTLOS VELPU
+W552    | B | NONE |  |  | N | BIGRO LOVTA OBLAN GURIN UJ ROMEO
+W553    | B | NONE |  |  | N | UJ ZUH
+W558    | B | NONE |  |  | N | SUROS URDOG
+W559    | B | NONE |  |  | N | TODAM IGPET EGANA UBSEV HET
+W56     | B | NONE |  |  | N | BUBDA VAKVU REBIS UKLUK VANPI POXIB UKBOL ISMED OBLUV LUMLU OPORU P332 GUDRO UPMAT IDPOG
+        |   |      |  |  |   | DHB OBDON REPUV VEXAN P331 BENBI ESMEB P537 P242 P536 TULRA IGMIG VINIG P129 OBMEP
+        |   |      |  |  |   | OKTOX P171 P40 P261 P199 DOSKU VADMO ORODO P99 P330 LEBUN IGMES AVLUV NUDKU GUVRI
+        |   |      |  |  |   | DUGEB VYK
+W560    | B | NONE |  |  | N | TODAM AKVOD LAXIB IRVAG HET
+W561    | B | NONE |  |  | N | TMR BUTPO PADSA
+W562    | B | NONE |  |  | N | UKMIS AVLUV IGMUD BUVMA OVNUG
+W563    | B | NONE |  |  | N | JCS VETIB
+W564    | B | NONE |  |  | N | DNC JTA
+W565    | B | NONE |  |  | N | DNC XIXAN
+W567    | B | NONE |  |  | N | YQG OLRED
+W568    | B | NONE |  |  | N | YQG LEDOV ABTUB
+W569    | B | NONE |  |  | N | YQG NOBUP
+W57     | B | NONE |  |  | N | LEBUN BEKDO
+W570    | B | NONE |  |  | N | GUXUV HFC UXALO KIKEG P183 P37
+W571    | B | NONE |  |  | N | SEGPI AKAMI NOKUL HFC
+W573    | B | NONE |  |  | N | VENOS DBL
+W574    | B | NONE |  |  | N | DOBGA OGIPO
+W575    | B | NONE |  |  | N | ANRAT LOTGO GOTSU INTIV TANIB NUNDU PATRI
+W576    | B | NONE |  |  | N | EKULI BUBLO ORAVA OVTUP
+W577    | B | NONE |  |  | N | DBL POVAG
+W578    | B | NONE |  |  | N | DBL EKULI KARPI
+W579    | B | NONE |  |  | N | SANKO RUPID UDETI OGIPO DBL
+W58     | B | NONE |  |  | N | SHZ BK SAMKI ATRIP XSY
+W581    | B | NONE |  |  | N | SNQ ESBAG
+W582    | B | NONE |  |  | N | XUTGU ZJ
+W583    | B | NONE |  |  | N | SUF JTN
+W584    | B | NONE |  |  | N | KHP ESBAM LIKRI P428 KWE
+W585    | B | NONE |  |  | N | KWE UGUGU
+W586    | B | NONE |  |  | N | TRN OVPOR KHP
+W587    | B | NONE |  |  | N | YCS IGDEG
+W588    | B | NONE |  |  | N | YCS GUMED OSVEN
+W589    | B | NONE |  |  | N | YCS HCH
+W590    | B | NONE |  |  | N | YCS FZ
+W591    | B | NONE |  |  | N | NTG XIREM
+W592    | B | NONE |  |  | N | SJD NIXEM
+W593    | B | NONE |  |  | N | SJD PIMOL
+W594    | B | NONE |  |  | N | MILOM RUMGU EPGOS
+W595    | B | NONE |  |  | N | DUBAG DZY
+W596    | B | NONE |  |  | N | FYG AVNOD UNTEL GUTUS OGOVI SUPEV DWS
+W597    | B | NONE |  |  | N | XMN ELGIT NUSPA BINUS IKATA
+W598    | B | NONE |  |  | N | NUSPA DABER
+W599    | B | NONE |  |  | N | PU LOVKA TX402 OMDUS
+W6      | B | NONE |  |  | N | CON SAREX NLG LATOP
+W600    | B | NONE |  |  | N | OMDUS TX403 GUMOD PU
+W601    | B | NONE |  |  | N | PU TX654 TX510 NUTVA
+W602    | B | NONE |  |  | N | TOSID TX410 VILIX TX412 OSUTU TX414 TX560 TX416 LEMOT
+W603    | B | NONE |  |  | N | LEMOT TX415 TX413 IVPUV TX562 TX411 NUTVA TX661 TX409 TOSID
+W604    | B | NONE |  |  | N | OSUTU LUXUK LUMKU
+W605    | B | NONE |  |  | N | GIVIV ISBIG DOMGO WCF
+W606    | B | NONE |  |  | N | MZL IKARU
+W607    | B | NONE |  |  | N | CSX AVGUT LUMKO
+W608    | B | NONE |  |  | N | LYH LUMLU
+W609    | B | NONE |  |  | N | DALEP IGNEG
+W61     | B | NONE |  |  | N | AMVOG NUDKU BEKDO
+W610    | B | NONE |  |  | N | CSX MILOP
+W611    | B | NONE |  |  | N | IPMUG BIVAV IRSAS
+W613    | B | NONE |  |  | N | LYH AVGUT
+W615    | B | NONE |  |  | N | AVMAD VAKDO APESO PUBIK UBMOG IDAXI
+W616    | B | NONE |  |  | N | MEXON XINUL UKLUK VANPI CSX
+W617    | B | NONE |  |  | N | IPMUG AVKOK
+W618    | B | NONE |  |  | N | AVNEL VIMEN SEBMO
+W619    | B | NONE |  |  | N | CHW BILDA BOKIV OMGUP MULRU
+W62     | B | NONE |  |  | N | ORODO P102 KARVU P422 AVLIS IGDID ALBOD TEKIL
+W620    | B | NONE |  |  | N | BIKNO DNH TOSAP
+W621    | B | NONE |  |  | N | MOVBI DNH NIXUK
+W622    | B | NONE |  |  | N | DNC BUKPU
+W623    | B | NONE |  |  | N | LOVTI LIKTI ALBOD URKED DALUP SJW OC
+W624    | B | NONE |  |  | N | UKMIS IGMES OTKAB
+W625    | B | NONE |  |  | N | LEGAG DUBIK EMVIG LS HRB
+W626    | B | NONE |  |  | N | PIGAM BIKOB HRB
+W627    | B | NONE |  |  | N | ONINA MIBAG IGDOS LS
+W628    | B | NONE |  |  | N | BUBDI MIBAG
+W629    | B | NONE |  |  | N | ISLUK LARUN ONOLO UPKED LS
+W630    | B | NONE |  |  | N | EMVIG DUBAM PUMUP DUKIR
+W631    | B | NONE |  |  | N | PINAP OSVUL REVSI SAKRI
+W632    | B | NONE |  |  | N | LUM TOSEM P14 URGAV GULOT
+W633    | B | NONE |  |  | N | TOSEM GMA
+W634    | B | NONE |  |  | N | RURNU BUTPO OSRUR
+W635    | B | NONE |  |  | N | UKBET LUGVU
+W638    | B | NONE |  |  | N | IDVUK PASGU KAMDA
+W639    | B | NONE |  |  | N | DWS VINIG DUDBI
+W64     | B | NONE |  |  | N | DKO RINBI OMGEL VALNI RUSER UBRAG LAXIB NUTLO UKBET LUNSU TUSLA AKNUX PUKOL ELAPU AVLAP
+        |   |      |  |  |   | HUR BUMDU
+W640    | B | NONE |  |  | N | TONOV OC OSVUL UNROD AREKU BELAX
+W643    | B | NONE |  |  | N | FOC AVKUX BUPDU DOVPU ATSAB
+W644    | B | NONE |  |  | N | FOC IDMUV ANLUD LEVGU AKAVO
+W645    | B | NONE |  |  | N | FOC OBGAK BUPDU
+W65     | B | NONE |  |  | N | TMR ESNUK SELGO TUSLA
+W650    | B | NONE |  |  | N | LATUX AVLOK
+W651    | B | NONE |  |  | N | HCH NOKUD JDG
+W652    | B | NONE |  |  | N | JDE LUPSA TEKAM
+W653    | B | NONE |  |  | N | BUTET CC451 AVMUT CC518 BEPGU
+W654    | B | NONE |  |  | N | ENPEN DUKAG CC452 CC401 BUTET
+W655    | B | NONE |  |  | N | PABKI DUKIR CC512 NIMEM ENPEN
+W656    | B | NONE |  |  | N | APESI MAGBI BIXEG ISLUK PABKI
+W657    | B | NONE |  |  | N | LEMOT CC455 BEPGU APESI
+W658    | B | NONE |  |  | N | ENPEN CC564 GUPUL CC454 LEMOT
+W659    | B | NONE |  |  | N | DUKAG GUPUL
+W66     | B | NONE |  |  | N | NUKTI GOVSA JNQ P141 GOBIN ATBUG DKO
+W660    | B | NONE |  |  | N | AVMUT CC452 CC411 CC512 BIXEG
+W661    | B | NONE |  |  | N | LNY OVTIT
+W662    | B | NONE |  |  | N | LNY AVPEP
+W663    | B | NONE |  |  | N | YCE PATVU
+W664    | B | NONE |  |  | N | YCE IBUDO
+W665    | B | NONE |  |  | N | YCE PONAV OMLIX
+W667    | B | NONE |  |  | N | HOK DHP MOU
+W668    | B | NONE |  |  | N | WTM DHB VIMAK AGUXI
+W669    | B | NONE |  |  | N | XSH URGEB
+W67     | B | NONE |  |  | N | SUPAR VEXEX BK OVNEV HSN
+W670    | B | NONE |  |  | N | OTBUG XGD
+W671    | B | NONE |  |  | N | VADBU PAVPA ONUDU BENBI
+W672    | B | NONE |  |  | N | DCD IGNIK
+W673    | B | NONE |  |  | N | SALUG OSIRU
+W674    | B | NONE |  |  | N | OSIRU UNTIN GUGAM
+W675    | B | NONE |  |  | N | AVLEN DHP
+W676    | B | NONE |  |  | N | DHP VIMAK DCD GUGAM
+W679    | B | NONE |  |  | N | MYD KDJ
+W68     | B | NONE |  |  | N | TAMOT IDUMA
+W69     | B | NONE |  |  | N | DKO ATSAV EGILO DUDIL MOSPA P304 TOREL BAXOD UBSEV URDOG UXODI LUGVU UPSUR P524 BIKUT
+        |   |      |  |  |   | P520 GUVBA HUR
+W7      | B | NONE |  |  | N | POU SAREX ZUH
+W70     | B | NONE |  |  | N | BHY PEGDU LIDLU NYB
+W71     | B | NONE |  |  | N | AGPOR AGTEL P226 LH
+W72     | B | NONE |  |  | N | VIKON OMGEL DUDIL
+W73     | B | NONE |  |  | N | NOBEM MABOS VEMEX MADUK
+W8      | B | NONE |  |  | N | NIXEP DOBGA PATRI DBL
+W80     | B | NONE |  |  | N | XSH ESKAM UDUMI OSREK UBTAG IDGAG MEGOB TIKME UPGUR KAKSU ATSUD POVUN DELEG GUKEX P568
+        |   |      |  |  |   | MUGNU TEPOT SUDPI VABKU P578 P576 OPAMU FLG OLKOB PUDUG UGOPO PINAB URGEG ESMOL BEVNU
+        |   |      |  |  |   | AKOPI BUVUR WFX
+W81     | B | NONE |  |  | N | WFX SAGPI TOREG ATNIK LOSTA MAKVI AGULU IGNOL NSH
+W82     | B | NONE |  |  | N | GOSMA UPMAT
+W83     | B | NONE |  |  | N | OLMIB GOSMA
+W84     | B | NONE |  |  | N | HET TOREL UBRAG IBARO
+W85     | B | NONE |  |  | N | TEKIL GUVRI OMDEK
+W86     | B | NONE |  |  | N | RURNU TMR POKOR URGOM KAKAT
+W87     | B | NONE |  |  | N | GODON TYN PARTU
+W89     | B | NONE |  |  | N | NUBKI IVPUV EKVOK KY PU
+W9      | B | NONE |  |  | N | CZH NONOV LADUP UGILO KDJ VIPIB ENVIS BIGOR DOLGU DCH IBVUL GOMON ELNUN LUPMI DUMIX
+        |   |      |  |  |   | UGOVA DM
+W90     | B | NONE |  |  | N | NOLON TEPID POU
+W91     | B | NONE |  |  | N | BONSA APUKI MAVRA SAMIV IDSID
+W93     | B | NONE |  |  | N | JIG ESGIG URKIB QIY
+W94     | B | NONE |  |  | N | HO ADNEN QIY
+W95     | B | NONE |  |  | N | OF VEGDA NOBEM MLJ NJL SNQ UPLEL SAPIN
+W96     | B | NONE |  |  | N | VIGEK ANOLO MEGUS SELGO UPSUR
+W97     | B | NONE |  |  | N | MUGLO ENVAV
+W98     | B | NONE |  |  | N | SOTMU ELKUR
+W99     | B | NONE |  |  | N | HAM IDLAL ODURI IDOPU DUDUR QTV AGOXA FKG
+X1      | B | NONE |  |  | N | TMR JB
+X10     | B | NONE |  |  | N | WHX P37
+X100    | B | NONE |  |  | N | NOKAK P144 DOGAR
+X101    | B | NONE |  |  | N | P144 PAMRU
+X104    | B | NONE |  |  | N | HDS VIKON
+X105    | B | NONE |  |  | N | HDS P299
+X107    | B | NONE |  |  | N | ANDIN TONIL
+X108    | B | NONE |  |  | N | ANDIN PAMRU
+X109    | B | NONE |  |  | N | P86 P182
+X11     | B | NONE |  |  | N | DST FK HSN
+X110    | B | NONE |  |  | N | AVPEP P197 P64
+X111    | B | NONE |  |  | N | HTG GRM
+X112    | B | NONE |  |  | N | JCS QU
+X113    | B | NONE |  |  | N | WTM OVLAR
+X114    | B | NONE |  |  | N | ML P340 P278
+X115    | B | NONE |  |  | N | DRJ P181
+X116    | B | NONE |  |  | N | DRJ P147
+X117    | B | NONE |  |  | N | ZNX P397
+X118    | B | NONE |  |  | N | ZNX PIKEM
+X119    | B | NONE |  |  | N | MXZ DABER
+X12     | B | NONE |  |  | N | DHZ MABAG NNX
+X120    | B | NONE |  |  | N | MXZ XEBUL
+X121    | B | NONE |  |  | N | JHS TXN
+X122    | B | NONE |  |  | N | YCU P46
+X123    | B | NONE |  |  | N | P06 MDJ
+X124    | B | NONE |  |  | N | JYC LIG
+X125    | B | NONE |  |  | N | XHE P301 DNC
+X126    | B | NONE |  |  | N | P567 P405 QJG
+X127    | B | NONE |  |  | N | SNJ YIH
+X128    | B | NONE |  |  | N | THY P212 P213
+X129    | B | NONE |  |  | N | BHT BDA
+X13     | B | NONE |  |  | N | DHZ P437 UBDOB
+X130    | B | NONE |  |  | N | BHT ETL
+X131    | B | NONE |  |  | N | BHT GOBIN
+X132    | B | NONE |  |  | N | BDA ETL
+X133    | B | NONE |  |  | N | BDA GOBIN
+X134    | B | NONE |  |  | N | BDA P96
+X136    | B | NONE |  |  | N | CHI DBL
+X138    | B | NONE |  |  | N | KAKAT IKITI
+X139    | B | NONE |  |  | N | GRM AKAGI CKA
+X14     | B | NONE |  |  | N | ZS P427 P409 P342 TYN
+X140    | B | NONE |  |  | N | HCC BSE
+X141    | B | NONE |  |  | N | HCC XOLON LBN
+X142    | B | NONE |  |  | N | HEN LLC
+X143    | B | NONE |  |  | N | HEN LIG
+X144    | B | NONE |  |  | N | BUBDA HEN
+X145    | B | NONE |  |  | N | HEN BEMAG
+X146    | B | NONE |  |  | N | DYN P86
+X147    | B | NONE |  |  | N | WFG P86
+X148    | B | NONE |  |  | N | P278 P386 P63
+X149    | B | NONE |  |  | N | P509 VETIB
+X15     | B | NONE |  |  | N | YQG P54
+X150    | B | NONE |  |  | N | BEGRI GODON
+X151    | B | NONE |  |  | N | PIGAN TODAM
+X152    | B | NONE |  |  | N | P390 P391
+X153    | B | NONE |  |  | N | YKO MSN
+X154    | B | NONE |  |  | N | YKO BM
+X155    | B | NONE |  |  | N | QHD P290
+X156    | B | NONE |  |  | N | QHD P364
+X157    | B | NONE |  |  | N | HAM TAMOX LUPRO P80 PTG
+X158    | B | NONE |  |  | N | HDH TYN
+X159    | B | NONE |  |  | N | P155 P111
+X16     | B | NONE |  |  | N | P09 LATUX
+X160    | B | NONE |  |  | N | DSY ML
+X161    | B | NONE |  |  | N | DSY JO
+X162    | B | NONE |  |  | N | DCB TZH
+X163    | B | NONE |  |  | N | DBA WCF
+X164    | B | NONE |  |  | N | NYB WCF
+X165    | B | NONE |  |  | N | AGTEL WCF
+X166    | B | NONE |  |  | N | DSA DBA
+X168    | B | NONE |  |  | N | LLC CSX
+X169    | B | NONE |  |  | N | DWG P471
+X17     | B | NONE |  |  | N | ZS EMVIL
+X172    | B | NONE |  |  | N | LMN P608 P615 QU
+X173    | B | NONE |  |  | N | GAZ P312
+X174    | B | NONE |  |  | N | CGO LYA
+X175    | B | NONE |  |  | N | KLX P398 IGADA
+X176    | B | NONE |  |  | N | ZS P398
+X177    | B | NONE |  |  | N | WEH VIKOK P19 SANKO
+X178    | B | NONE |  |  | N | SHR UPSAG EMRID
+X179    | B | NONE |  |  | N | PK NTG
+X18     | B | NONE |  |  | N | XNN P298 OMBON
+X180    | B | NONE |  |  | N | ADBAS IDBIN
+X181    | B | NONE |  |  | N | DRQ KEL
+X182    | B | NONE |  |  | N | BZF SANUK
+X184    | B | NONE |  |  | N | DYY LIN
+X185    | B | NONE |  |  | N | DYY P169
+X186    | B | NONE |  |  | N | DXM P485 ML
+X187    | B | NONE |  |  | N | IVPIP SOSMA
+X19     | B | NONE |  |  | N | HZG YQG
+X190    | B | NONE |  |  | N | TMS AKS
+X191    | B | NONE |  |  | N | TMS KHG
+X192    | B | NONE |  |  | N | SNF P360 ANBEP
+X193    | B | NONE |  |  | N | RUPUD IDKOT
+X194    | B | NONE |  |  | N | OF ATVAD IDKOT
+X195    | B | NONE |  |  | N | RUPUD GURIL
+X196    | B | NONE |  |  | N | ATVAD P496 P495
+X198    | B | NONE |  |  | N | DYL P549 BIGRO
+X2      | B | NONE |  |  | N | HUR LUX ANRAT
+X20     | B | NONE |  |  | N | BMS P568 ENH
+X200    | B | NONE |  |  | N | P584 P586
+X201    | B | NONE |  |  | N | CZA VAKVU P291 OMBEB
+X202    | B | NONE |  |  | N | CZA ONEMI
+X203    | B | NONE |  |  | N | CZA OPIXU P284
+X204    | B | NONE |  |  | N | BHY P498 LH
+X205    | B | NONE |  |  | N | P152 BHY
+X206    | B | NONE |  |  | N | DNY P261
+X207    | B | NONE |  |  | N | XAX P439
+X22     | B | NONE |  |  | N | PAN P413 SB P569 CTU
+X23     | B | NONE |  |  | N | LUVEN IPNAG IGEKA
+X24     | B | NONE |  |  | N | ELKAL JW MUBEL POU
+X250    | B | NONE |  |  | N | UPMAT P412 KGF
+X251    | B | NONE |  |  | N | KGF GUGAM
+X252    | B | NONE |  |  | N | P175 DCD
+X253    | B | NONE |  |  | N | DHB MOU
+X254    | B | NONE |  |  | N | P180 TULMU
+X255    | B | NONE |  |  | N | KGF OLMIB
+X256    | B | NONE |  |  | N | HZG P636 AVPEP
+X257    | B | NONE |  |  | N | HZG P639 PAKMA ZHO VINIG
+X258    | B | NONE |  |  | N | DYL BHY
+X259    | B | NONE |  |  | N | DYL P548
+X26     | B | NONE |  |  | N | LLC CW P419 YIN
+X261    | B | NONE |  |  | N | OLGAP P87 P322
+X262    | B | NONE |  |  | N | NXD P322 P207
+X263    | B | NONE |  |  | N | P602 P33 P374 P645
+X27     | B | NONE |  |  | N | LLC BEMAG
+X28     | B | NONE |  |  | N | ENKUS P416 LH
+X3      | B | NONE |  |  | N | HG P400 P431 P350 YQG
+X31     | B | NONE |  |  | N | GMA MEPAN
+X32     | B | NONE |  |  | N | GMA P73 DADOL
+X33     | B | NONE |  |  | N | CEH P82 P423 SGM
+X35     | B | NONE |  |  | N | P326 P554 P563 P176 P553 P555
+X36     | B | NONE |  |  | N | P563 P47
+X37     | B | NONE |  |  | N | P132 P22
+X38     | B | NONE |  |  | N | AVDIP KHN SHR
+X39     | B | NONE |  |  | N | P262 P277 P206
+X4      | B | NONE |  |  | N | PAMRU BIMEG LUX
+X40     | B | NONE |  |  | N | P25 P277
+X41     | B | NONE |  |  | N | P263 P277
+X42     | B | NONE |  |  | N | YCH P74
+X43     | B | NONE |  |  | N | P240 P556 P557 P559 P561 P558 MAGLI KIKEG P560 P562 PA1 P230 P601 JDZ
+X44     | B | NONE |  |  | N | QO WYS P215
+X51     | B | NONE |  |  | N | P27 P352 UY P435 DKO
+X52     | B | NONE |  |  | N | DYN WFG
+X53     | B | NONE |  |  | N | DUDIT WUY
+X54     | B | NONE |  |  | N | WUR CWB PTG P205 ESDEX
+X55     | B | NONE |  |  | N | CHW P91 P94 P90 JTA
+X56     | B | NONE |  |  | N | HTB P457 P165
+X57     | B | NONE |  |  | N | WUR HTB P460 KLM
+X59     | B | NONE |  |  | N | AKS P258 P257
+X6      | B | NONE |  |  | N | CGO P638 HZG KDB WFG
+X61     | B | NONE |  |  | N | WUH P227 YHD
+X62     | B | NONE |  |  | N | KDB P188 WXI
+X63     | B | NONE |  |  | N | SWA P154 P437 IGAGA P270 SHL
+X64     | B | NONE |  |  | N | LIPNO P268 P118 P166 QP
+X65     | B | NONE |  |  | N | GYA P275 ZUH
+X66     | B | NONE |  |  | N | POU P50 BIGRO
+X67     | B | NONE |  |  | N | GYA P50 UJ
+X69     | B | NONE |  |  | N | CWL P551 QJG
+X71     | B | NONE |  |  | N | SHZ SUSMU P237 FK
+X72     | B | NONE |  |  | N | PV P510
+X73     | B | NONE |  |  | N | DJS HTB
+X74     | B | NONE |  |  | N | SUF TEPAG NIVIK
+X76     | B | NONE |  |  | N | ZAO SHK VIPAP
+X77     | B | NONE |  |  | N | KDB AR
+X78     | B | NONE |  |  | N | ZUH KK SHL
+X79     | B | NONE |  |  | N | DJS P459 KLM
+X81     | B | NONE |  |  | N | CWB P83 P85 KEL
+X82     | B | NONE |  |  | N | TAS P81 HO
+X83     | B | NONE |  |  | N | ZWX MULIV
+X84     | B | NONE |  |  | N | P165 P109 YNN
+X85     | B | NONE |  |  | N | SWA OLDID
+X86     | B | NONE |  |  | N | JTN P276 OLRIS
+X89     | B | NONE |  |  | N | TSH PAMRU
+X90     | B | NONE |  |  | N | HUN GURIL P02 P429 P54
+X91     | B | NONE |  |  | N | NODIB P662 P651
+X92     | B | NONE |  |  | N | HLH P155
+X93     | B | NONE |  |  | N | PTG P83 P85 KEL
+X94     | B | NONE |  |  | N | P481 ASH
+X95     | B | NONE |  |  | N | GURIL DO
+X96     | B | NONE |  |  | N | DPX LNY
+X97     | B | NONE |  |  | N | JZH CZH
+X98     | B | NONE |  |  | N | ENKUS P125
+XXX01   | B | NONE |  |  | N | ZAO PEXEL URBOR KEVAR
+XXX02   | B | NONE |  |  | N | URBOR LAXUS LKC
+XXX03   | B | NONE |  |  | N | WL LINS WANN WENC BAHJ SAMAS LH
+Y1      | B | NONE |  |  | N | SADAN SUNPU MAGOD DUMIN LUSMA IRTOL AKAGI MEPEP P195 NUPNI OMBON
+Y2      | B | NONE |  |  | N | LUVAR P194 MEPEP
+Y3      | B | NONE |  |  | N | MYD P117 P156 ENPAT LZP ISMUL OLGUT UBGEM P157 KUS
+Z1      | B | NONE |  |  | N | YUS P193 P194 P463 P195 P196 P363 P302 XNN
+Z10     | B | NONE |  |  | N | DGE P195
+Z11     | B | NONE |  |  | N | DGE P194
+Z3      | B | NONE |  |  | N | YUS P341 IGELA TAPUN
+Z5      | B | NONE |  |  | N | SQH P244 HTN
+Z6      | B | NONE |  |  | N | SQH P349 P245 LEKEP P447 RKZ
+Z7      | B | NONE |  |  | N | MYD VAMSI
+Z8      | B | NONE |  |  | N | LXA IDBON P13 TAPUN
+Z9      | B | NONE |  |  | N | MYD SB
+
+/CODED_ROUTE_SEGMENTS/
+A1      |      |      | NONE | F0   |      |  C2  |  O1  |
+A202    |      |      | NONE | F0   |      |  C2  |  O1  |
+A326    |      |      | NONE | F0   |      |  C2  |  O1  |
+A343    |      |      | NONE | F0   |      |  C2  |  O1  |
+A345    |      |      | NONE | F0   |      |  C2  |  O1  |
+A368    |      |      | NONE | F0   |      |  C2  |  O1  |
+A460    |      |      | NONE | F0   |      |  C2  |  O1  |
+A461    |      |      | NONE | F0   |      |  C2  |  O1  |
+A468    |      |      | NONE | F0   |      |  C2  |  O1  |
+A470    |      |      | NONE | F0   |      |  C2  |  O1  |
+A575    |      |      | NONE | F0   |      |  C2  |  O1  |
+A581    |      |      | NONE | F0   |      |  C2  |  O1  |
+A588    |      |      | NONE | F0   |      |  C2  |  O1  |
+A591    |      |      | NONE | F0   |      |  C2  |  O1  |
+A593    |      |      | NONE | F0   |      |  C2  |  O1  |
+A596    |      |      | NONE | F0   |      |  C2  |  O1  |
+A599    |      |      | NONE | F0   |      |  C2  |  O1  |
+B206    |      |      | NONE | F0   |      |  C2  |  O1  |
+B208    |      |      | NONE | F0   |      |  C2  |  O1  |
+B213    |      |      | NONE | F0   |      |  C2  |  O1  |
+B215    |      |      | NONE | F0   |      |  C2  |  O1  |
+B221    |      |      | NONE | F0   |      |  C2  |  O1  |
+B330    |      |      | NONE | F0   |      |  C2  |  O1  |
+B332    |      |      | NONE | F0   |      |  C2  |  O1  |
+B334    |      |      | NONE | F0   |      |  C2  |  O1  |
+B339    |      |      | NONE | F0   |      |  C2  |  O1  |
+B345    |      |      | NONE | F0   |      |  C2  |  O1  |
+B451    |      |      | NONE | F0   |      |  C2  |  O1  |
+B458    |      |      | NONE | F0   |      |  C2  |  O1  |
+B591    |      |      | NONE | F0   |      |  C2  |  O1  |
+G204    |      |      | NONE | F0   |      |  C2  |  O1  |
+G212    |      |      | NONE | F0   |      |  C2  |  O1  |
+G218    |      |      | NONE | F0   |      |  C2  |  O1  |
+G221    |      |      | NONE | F0   |      |  C2  |  O1  |
+G327    |      |      | NONE | F0   |      |  C2  |  O1  |
+G330    |      |      | NONE | F0   |      |  C2  |  O1  |
+G332    |      |      | NONE | F0   |      |  C2  |  O1  |
+G338    |      |      | NONE | F0   |      |  C2  |  O1  |
+G341    |      |      | NONE | F0   |      |  C2  |  O1  |
+G343    |      |      | NONE | F0   |      |  C2  |  O1  |
+G345    |      |      | NONE | F0   |      |  C2  |  O1  |
+G455    |      |      | NONE | F0   |      |  C2  |  O1  |
+G470    |      |      | NONE | F0   |      |  C2  |  O1  |
+G471    |      |      | NONE | F0   |      |  C2  |  O1  |
+G586    |      |      | NONE | F0   |      |  C2  |  O1  |
+G588    |      |      | NONE | F0   |      |  C2  |  O1  |
+G597    |      |      | NONE | F0   |      |  C2  |  O1  |
+GYA01   |      |      | NONE | F0   |      |  C2  |  O1  |
+GYA02   |      |      | NONE | F0   |      |  C2  |  O1  |
+GYA03   |      |      | NONE | F0   |      |  C2  |  O1  |
+H1      |      |      | NONE | F0   |      |  C2  |  O1  |
+H101    |      |      | NONE | F0   |      |  C2  |  O1  |
+H103    |      |      | NONE | F0   |      |  C2  |  O1  |
+H104    |      |      | NONE | F0   |      |  C2  |  O1  |
+H105    |      |      | NONE | F0   |      |  C2  |  O1  |
+H11     |      |      | NONE | F0   |      |  C2  |  O1  |
+H114    |      |      | NONE | F0   |      |  C2  |  O1  |
+H115    |      |      | NONE | F0   |      |  C2  |  O1  |
+H117    |      |      | NONE | F0   |      |  C2  |  O1  |
+H118    |      |      | NONE | F0   |      |  C2  |  O1  |
+H119    |      |      | NONE | F0   |      |  C2  |  O1  |
+H12     |      |      | NONE | F0   |      |  C2  |  O1  |
+H120    |      |      | NONE | F0   |      |  C2  |  O1  |
+H121    |      |      | NONE | F0   |      |  C2  |  O1  |
+H122    |      |      | NONE | F0   |      |  C2  |  O1  |
+H123    |      |      | NONE | F0   |      |  C2  |  O1  |
+H125    |      |      | NONE | F0   |      |  C2  |  O1  |
+H127    |      |      | NONE | F0   |      |  C2  |  O1  |
+H128    |      |      | NONE | F0   |      |  C2  |  O1  |
+H13     |      |      | NONE | F0   |      |  C2  |  O1  |
+H130    |      |      | NONE | F0   |      |  C2  |  O1  |
+H131    |      |      | NONE | F0   |      |  C2  |  O1  |
+H132    |      |      | NONE | F0   |      |  C2  |  O1  |
+H133    |      |      | NONE | F0   |      |  C2  |  O1  |
+H138    |      |      | NONE | F0   |      |  C2  |  O1  |
+H139    |      |      | NONE | F0   |      |  C2  |  O1  |
+H14     |      |      | NONE | F0   |      |  C2  |  O1  |
+H144    |      |      | NONE | F0   |      |  C2  |  O1  |
+H145    |      |      | NONE | F0   |      |  C2  |  O1  |
+H146    |      |      | NONE | F0   |      |  C2  |  O1  |
+H148    |      |      | NONE | F0   |      |  C2  |  O1  |
+H149    |      |      | NONE | F0   |      |  C2  |  O1  |
+H15     |      |      | NONE | F0   |      |  C2  |  O1  |
+H152    |      |      | NONE | F0   |      |  C2  |  O1  |
+H155    |      |      | NONE | F0   |      |  C2  |  O1  |
+H156    |      |      | NONE | F0   |      |  C2  |  O1  |
+H157    |      |      | NONE | F0   |      |  C2  |  O1  |
+H158    |      |      | NONE | F0   |      |  C2  |  O1  |
+H160    |      |      | NONE | F0   |      |  C2  |  O1  |
+H161    |      |      | NONE | F0   |      |  C2  |  O1  |
+H162    |      |      | NONE | F0   |      |  C2  |  O1  |
+H163    |      |      | NONE | F0   |      |  C2  |  O1  |
+H164    |      |      | NONE | F0   |      |  C2  |  O1  |
+H165    |      |      | NONE | F0   |      |  C2  |  O1  |
+H166    |      |      | NONE | F0   |      |  C2  |  O1  |
+H17     |      |      | NONE | F0   |      |  C2  |  O1  |
+H18     |      |      | NONE | F0   |      |  C2  |  O1  |
+H19     |      |      | NONE | F0   |      |  C2  |  O1  |
+H2      |      |      | NONE | F0   |      |  C2  |  O1  |
+H21     |      |      | NONE | F0   |      |  C2  |  O1  |
+H22     |      |      | NONE | F0   |      |  C2  |  O1  |
+H23     |      |      | NONE | F0   |      |  C2  |  O1  |
+H24     |      |      | NONE | F0   |      |  C2  |  O1  |
+H25     |      |      | NONE | F0   |      |  C2  |  O1  |
+H26     |      |      | NONE | F0   |      |  C2  |  O1  |
+H28     |      |      | NONE | F0   |      |  C2  |  O1  |
+H3      |      |      | NONE | F0   |      |  C2  |  O1  |
+H30     |      |      | NONE | F0   |      |  C2  |  O1  |
+H31     |      |      | NONE | F0   |      |  C2  |  O1  |
+H32     |      |      | NONE | F0   |      |  C2  |  O1  |
+H33     |      |      | NONE | F0   |      |  C2  |  O1  |
+H34     |      |      | NONE | F0   |      |  C2  |  O1  |
+H35     |      |      | NONE | F0   |      |  C2  |  O1  |
+H36     |      |      | NONE | F0   |      |  C2  |  O1  |
+H37     |      |      | NONE | F0   |      |  C2  |  O1  |
+H38     |      |      | NONE | F0   |      |  C2  |  O1  |
+H39     |      |      | NONE | F0   |      |  C2  |  O1  |
+H40     |      |      | NONE | F0   |      |  C2  |  O1  |
+H42     |      |      | NONE | F0   |      |  C2  |  O1  |
+H44     |      |      | NONE | F0   |      |  C2  |  O1  |
+H45     |      |      | NONE | F0   |      |  C2  |  O1  |
+H46     |      |      | NONE | F0   |      |  C2  |  O1  |
+H47     |      |      | NONE | F0   |      |  C2  |  O1  |
+H48     |      |      | NONE | F0   |      |  C2  |  O1  |
+H5      |      |      | NONE | F0   |      |  C2  |  O1  |
+H51     |      |      | NONE | F0   |      |  C2  |  O1  |
+H53     |      |      | NONE | F0   |      |  C2  |  O1  |
+H56     |      |      | NONE | F0   |      |  C2  |  O1  |
+H57     |      |      | NONE | F0   |      |  C2  |  O1  |
+H59     |      |      | NONE | F0   |      |  C2  |  O1  |
+H6      |      |      | NONE | F0   |      |  C2  |  O1  |
+H60     |      |      | NONE | F0   |      |  C2  |  O1  |
+H62     |      |      | NONE | F0   |      |  C2  |  O1  |
+H63     |      |      | NONE | F0   |      |  C2  |  O1  |
+H64     |      |      | NONE | F0   |      |  C2  |  O1  |
+H65     |      |      | NONE | F0   |      |  C2  |  O1  |
+H67     |      |      | NONE | F0   |      |  C2  |  O1  |
+H68     |      |      | NONE | F0   |      |  C2  |  O1  |
+H69     |      |      | NONE | F0   |      |  C2  |  O1  |
+H70     |      |      | NONE | F0   |      |  C2  |  O1  |
+H71     |      |      | NONE | F0   |      |  C2  |  O1  |
+H72     |      |      | NONE | F0   |      |  C2  |  O1  |
+H73     |      |      | NONE | F0   |      |  C2  |  O1  |
+H74     |      |      | NONE | F0   |      |  C2  |  O1  |
+H75     |      |      | NONE | F0   |      |  C2  |  O1  |
+H76     |      |      | NONE | F0   |      |  C2  |  O1  |
+H77     |      |      | NONE | F0   |      |  C2  |  O1  |
+H79     |      |      | NONE | F0   |      |  C2  |  O1  |
+H8      |      |      | NONE | F0   |      |  C2  |  O1  |
+H80     |      |      | NONE | F0   |      |  C2  |  O1  |
+H81     |      |      | NONE | F0   |      |  C2  |  O1  |
+H82     |      |      | NONE | F0   |      |  C2  |  O1  |
+H83     |      |      | NONE | F0   |      |  C2  |  O1  |
+H84     |      |      | NONE | F0   |      |  C2  |  O1  |
+H85     |      |      | NONE | F0   |      |  C2  |  O1  |
+H86     |      |      | NONE | F0   |      |  C2  |  O1  |
+H87     |      |      | NONE | F0   |      |  C2  |  O1  |
+H89     |      |      | NONE | F0   |      |  C2  |  O1  |
+H90     |      |      | NONE | F0   |      |  C2  |  O1  |
+H91     |      |      | NONE | F0   |      |  C2  |  O1  |
+H92     |      |      | NONE | F0   |      |  C2  |  O1  |
+H93     |      |      | NONE | F0   |      |  C2  |  O1  |
+H94     |      |      | NONE | F0   |      |  C2  |  O1  |
+H95     |      |      | NONE | F0   |      |  C2  |  O1  |
+H96     |      |      | NONE | F0   |      |  C2  |  O1  |
+H98     |      |      | NONE | F0   |      |  C2  |  O1  |
+J100    |      |      | NONE | F0   |      |  C2  |  O1  |
+J101    |      |      | NONE | F0   |      |  C2  |  O1  |
+J102    |      |      | NONE | F0   |      |  C2  |  O1  |
+J103    |      |      | NONE | F0   |      |  C2  |  O1  |
+J104    |      |      | NONE | F0   |      |  C2  |  O1  |
+J105    |      |      | NONE | F0   |      |  C2  |  O1  |
+J106    |      |      | NONE | F0   |      |  C2  |  O1  |
+J107    |      |      | NONE | F0   |      |  C2  |  O1  |
+J108    |      |      | NONE | F0   |      |  C2  |  O1  |
+J109    |      |      | NONE | F0   |      |  C2  |  O1  |
+J111    |      |      | NONE | F0   |      |  C2  |  O1  |
+J112    |      |      | NONE | F0   |      |  C2  |  O1  |
+J113    |      |      | NONE | F0   |      |  C2  |  O1  |
+J114    |      |      | NONE | F0   |      |  C2  |  O1  |
+J115    |      |      | NONE | F0   |      |  C2  |  O1  |
+J116    |      |      | NONE | F0   |      |  C2  |  O1  |
+J117    |      |      | NONE | F0   |      |  C2  |  O1  |
+J118    |      |      | NONE | F0   |      |  C2  |  O1  |
+J119    |      |      | NONE | F0   |      |  C2  |  O1  |
+J120    |      |      | NONE | F0   |      |  C2  |  O1  |
+J121    |      |      | NONE | F0   |      |  C2  |  O1  |
+J122    |      |      | NONE | F0   |      |  C2  |  O1  |
+J123    |      |      | NONE | F0   |      |  C2  |  O1  |
+J125    |      |      | NONE | F0   |      |  C2  |  O1  |
+J126    |      |      | NONE | F0   |      |  C2  |  O1  |
+J127    |      |      | NONE | F0   |      |  C2  |  O1  |
+J128    |      |      | NONE | F0   |      |  C2  |  O1  |
+J129    |      |      | NONE | F0   |      |  C2  |  O1  |
+J130    |      |      | NONE | F0   |      |  C2  |  O1  |
+J131    |      |      | NONE | F0   |      |  C2  |  O1  |
+J132    |      |      | NONE | F0   |      |  C2  |  O1  |
+J133    |      |      | NONE | F0   |      |  C2  |  O1  |
+J134    |      |      | NONE | F0   |      |  C2  |  O1  |
+J135    |      |      | NONE | F0   |      |  C2  |  O1  |
+J136    |      |      | NONE | F0   |      |  C2  |  O1  |
+J137    |      |      | NONE | F0   |      |  C2  |  O1  |
+J138    |      |      | NONE | F0   |      |  C2  |  O1  |
+J139    |      |      | NONE | F0   |      |  C2  |  O1  |
+J140    |      |      | NONE | F0   |      |  C2  |  O1  |
+J141    |      |      | NONE | F0   |      |  C2  |  O1  |
+J142    |      |      | NONE | F0   |      |  C2  |  O1  |
+J143    |      |      | NONE | F0   |      |  C2  |  O1  |
+J144    |      |      | NONE | F0   |      |  C2  |  O1  |
+J145    |      |      | NONE | F0   |      |  C2  |  O1  |
+J146    |      |      | NONE | F0   |      |  C2  |  O1  |
+J147    |      |      | NONE | F0   |      |  C2  |  O1  |
+J148    |      |      | NONE | F0   |      |  C2  |  O1  |
+J149    |      |      | NONE | F0   |      |  C2  |  O1  |
+J150    |      |      | NONE | F0   |      |  C2  |  O1  |
+J151    |      |      | NONE | F0   |      |  C2  |  O1  |
+J152    |      |      | NONE | F0   |      |  C2  |  O1  |
+J153    |      |      | NONE | F0   |      |  C2  |  O1  |
+J154    |      |      | NONE | F0   |      |  C2  |  O1  |
+J155    |      |      | NONE | F0   |      |  C2  |  O1  |
+J156    |      |      | NONE | F0   |      |  C2  |  O1  |
+J157    |      |      | NONE | F0   |      |  C2  |  O1  |
+J158    |      |      | NONE | F0   |      |  C2  |  O1  |
+J159    |      |      | NONE | F0   |      |  C2  |  O1  |
+J160    |      |      | NONE | F0   |      |  C2  |  O1  |
+J162    |      |      | NONE | F0   |      |  C2  |  O1  |
+J163    |      |      | NONE | F0   |      |  C2  |  O1  |
+J164    |      |      | NONE | F0   |      |  C2  |  O1  |
+J165    |      |      | NONE | F0   |      |  C2  |  O1  |
+J166    |      |      | NONE | F0   |      |  C2  |  O1  |
+J167    |      |      | NONE | F0   |      |  C2  |  O1  |
+J168    |      |      | NONE | F0   |      |  C2  |  O1  |
+J169    |      |      | NONE | F0   |      |  C2  |  O1  |
+J170    |      |      | NONE | F0   |      |  C2  |  O1  |
+J171    |      |      | NONE | F0   |      |  C2  |  O1  |
+J172    |      |      | NONE | F0   |      |  C2  |  O1  |
+J173    |      |      | NONE | F0   |      |  C2  |  O1  |
+J174    |      |      | NONE | F0   |      |  C2  |  O1  |
+J175    |      |      | NONE | F0   |      |  C2  |  O1  |
+J176    |      |      | NONE | F0   |      |  C2  |  O1  |
+J177    |      |      | NONE | F0   |      |  C2  |  O1  |
+J179    |      |      | NONE | F0   |      |  C2  |  O1  |
+J180    |      |      | NONE | F0   |      |  C2  |  O1  |
+J181    |      |      | NONE | F0   |      |  C2  |  O1  |
+J182    |      |      | NONE | F0   |      |  C2  |  O1  |
+J184    |      |      | NONE | F0   |      |  C2  |  O1  |
+J185    |      |      | NONE | F0   |      |  C2  |  O1  |
+J186    |      |      | NONE | F0   |      |  C2  |  O1  |
+J187    |      |      | NONE | F0   |      |  C2  |  O1  |
+J188    |      |      | NONE | F0   |      |  C2  |  O1  |
+J189    |      |      | NONE | F0   |      |  C2  |  O1  |
+J190    |      |      | NONE | F0   |      |  C2  |  O1  |
+J191    |      |      | NONE | F0   |      |  C2  |  O1  |
+J192    |      |      | NONE | F0   |      |  C2  |  O1  |
+J193    |      |      | NONE | F0   |      |  C2  |  O1  |
+J194    |      |      | NONE | F0   |      |  C2  |  O1  |
+J195    |      |      | NONE | F0   |      |  C2  |  O1  |
+J197    |      |      | NONE | F0   |      |  C2  |  O1  |
+J198    |      |      | NONE | F0   |      |  C2  |  O1  |
+J199    |      |      | NONE | F0   |      |  C2  |  O1  |
+J20     |      |      | NONE | F0   |      |  C2  |  O1  |
+J200    |      |      | NONE | F0   |      |  C2  |  O1  |
+J201    |      |      | NONE | F0   |      |  C2  |  O1  |
+J202    |      |      | NONE | F0   |      |  C2  |  O1  |
+J203    |      |      | NONE | F0   |      |  C2  |  O1  |
+J204    |      |      | NONE | F0   |      |  C2  |  O1  |
+J209    |      |      | NONE | F0   |      |  C2  |  O1  |
+J21     |      |      | NONE | F0   |      |  C2  |  O1  |
+J210    |      |      | NONE | F0   |      |  C2  |  O1  |
+J211    |      |      | NONE | F0   |      |  C2  |  O1  |
+J212    |      |      | NONE | F0   |      |  C2  |  O1  |
+J213    |      |      | NONE | F0   |      |  C2  |  O1  |
+J214    |      |      | NONE | F0   |      |  C2  |  O1  |
+J215    |      |      | NONE | F0   |      |  C2  |  O1  |
+J216    |      |      | NONE | F0   |      |  C2  |  O1  |
+J217    |      |      | NONE | F0   |      |  C2  |  O1  |
+J218    |      |      | NONE | F0   |      |  C2  |  O1  |
+J219    |      |      | NONE | F0   |      |  C2  |  O1  |
+J220    |      |      | NONE | F0   |      |  C2  |  O1  |
+J221    |      |      | NONE | F0   |      |  C2  |  O1  |
+J222    |      |      | NONE | F0   |      |  C2  |  O1  |
+J223    |      |      | NONE | F0   |      |  C2  |  O1  |
+J224    |      |      | NONE | F0   |      |  C2  |  O1  |
+J225    |      |      | NONE | F0   |      |  C2  |  O1  |
+J228    |      |      | NONE | F0   |      |  C2  |  O1  |
+J229    |      |      | NONE | F0   |      |  C2  |  O1  |
+J230    |      |      | NONE | F0   |      |  C2  |  O1  |
+J231    |      |      | NONE | F0   |      |  C2  |  O1  |
+J232    |      |      | NONE | F0   |      |  C2  |  O1  |
+J233    |      |      | NONE | F0   |      |  C2  |  O1  |
+J234    |      |      | NONE | F0   |      |  C2  |  O1  |
+J235    |      |      | NONE | F0   |      |  C2  |  O1  |
+J236    |      |      | NONE | F0   |      |  C2  |  O1  |
+J237    |      |      | NONE | F0   |      |  C2  |  O1  |
+J238    |      |      | NONE | F0   |      |  C2  |  O1  |
+J239    |      |      | NONE | F0   |      |  C2  |  O1  |
+J240    |      |      | NONE | F0   |      |  C2  |  O1  |
+J241    |      |      | NONE | F0   |      |  C2  |  O1  |
+J242    |      |      | NONE | F0   |      |  C2  |  O1  |
+J243    |      |      | NONE | F0   |      |  C2  |  O1  |
+J244    |      |      | NONE | F0   |      |  C2  |  O1  |
+J245    |      |      | NONE | F0   |      |  C2  |  O1  |
+J246    |      |      | NONE | F0   |      |  C2  |  O1  |
+J247    |      |      | NONE | F0   |      |  C2  |  O1  |
+J248    |      |      | NONE | F0   |      |  C2  |  O1  |
+J249    |      |      | NONE | F0   |      |  C2  |  O1  |
+J250    |      |      | NONE | F0   |      |  C2  |  O1  |
+J251    |      |      | NONE | F0   |      |  C2  |  O1  |
+J252    |      |      | NONE | F0   |      |  C2  |  O1  |
+J254    |      |      | NONE | F0   |      |  C2  |  O1  |
+J255    |      |      | NONE | F0   |      |  C2  |  O1  |
+J257    |      |      | NONE | F0   |      |  C2  |  O1  |
+J258    |      |      | NONE | F0   |      |  C2  |  O1  |
+J259    |      |      | NONE | F0   |      |  C2  |  O1  |
+J260    |      |      | NONE | F0   |      |  C2  |  O1  |
+J261    |      |      | NONE | F0   |      |  C2  |  O1  |
+J262    |      |      | NONE | F0   |      |  C2  |  O1  |
+J263    |      |      | NONE | F0   |      |  C2  |  O1  |
+J264    |      |      | NONE | F0   |      |  C2  |  O1  |
+J265    |      |      | NONE | F0   |      |  C2  |  O1  |
+J266    |      |      | NONE | F0   |      |  C2  |  O1  |
+J267    |      |      | NONE | F0   |      |  C2  |  O1  |
+J268    |      |      | NONE | F0   |      |  C2  |  O1  |
+J269    |      |      | NONE | F0   |      |  C2  |  O1  |
+J270    |      |      | NONE | F0   |      |  C2  |  O1  |
+J271    |      |      | NONE | F0   |      |  C2  |  O1  |
+J272    |      |      | NONE | F0   |      |  C2  |  O1  |
+J273    |      |      | NONE | F0   |      |  C2  |  O1  |
+J276    |      |      | NONE | F0   |      |  C2  |  O1  |
+J277    |      |      | NONE | F0   |      |  C2  |  O1  |
+J278    |      |      | NONE | F0   |      |  C2  |  O1  |
+J279    |      |      | NONE | F0   |      |  C2  |  O1  |
+J280    |      |      | NONE | F0   |      |  C2  |  O1  |
+J281    |      |      | NONE | F0   |      |  C2  |  O1  |
+J32     |      |      | NONE | F0   |      |  C2  |  O1  |
+J34     |      |      | NONE | F0   |      |  C2  |  O1  |
+J35     |      |      | NONE | F0   |      |  C2  |  O1  |
+J350    |      |      | NONE | F0   |      |  C2  |  O1  |
+J351    |      |      | NONE | F0   |      |  C2  |  O1  |
+J352    |      |      | NONE | F0   |      |  C2  |  O1  |
+J353    |      |      | NONE | F0   |      |  C2  |  O1  |
+J355    |      |      | NONE | F0   |      |  C2  |  O1  |
+J358    |      |      | NONE | F0   |      |  C2  |  O1  |
+J359    |      |      | NONE | F0   |      |  C2  |  O1  |
+J360    |      |      | NONE | F0   |      |  C2  |  O1  |
+J361    |      |      | NONE | F0   |      |  C2  |  O1  |
+J362    |      |      | NONE | F0   |      |  C2  |  O1  |
+J363    |      |      | NONE | F0   |      |  C2  |  O1  |
+J364    |      |      | NONE | F0   |      |  C2  |  O1  |
+J365    |      |      | NONE | F0   |      |  C2  |  O1  |
+J366    |      |      | NONE | F0   |      |  C2  |  O1  |
+J367    |      |      | NONE | F0   |      |  C2  |  O1  |
+J368    |      |      | NONE | F0   |      |  C2  |  O1  |
+J369    |      |      | NONE | F0   |      |  C2  |  O1  |
+J37     |      |      | NONE | F0   |      |  C2  |  O1  |
+J370    |      |      | NONE | F0   |      |  C2  |  O1  |
+J371    |      |      | NONE | F0   |      |  C2  |  O1  |
+J372    |      |      | NONE | F0   |      |  C2  |  O1  |
+J375    |      |      | NONE | F0   |      |  C2  |  O1  |
+J376    |      |      | NONE | F0   |      |  C2  |  O1  |
+J377    |      |      | NONE | F0   |      |  C2  |  O1  |
+J378    |      |      | NONE | F0   |      |  C2  |  O1  |
+J379    |      |      | NONE | F0   |      |  C2  |  O1  |
+J38     |      |      | NONE | F0   |      |  C2  |  O1  |
+J380    |      |      | NONE | F0   |      |  C2  |  O1  |
+J381    |      |      | NONE | F0   |      |  C2  |  O1  |
+J382    |      |      | NONE | F0   |      |  C2  |  O1  |
+J383    |      |      | NONE | F0   |      |  C2  |  O1  |
+J384    |      |      | NONE | F0   |      |  C2  |  O1  |
+J385    |      |      | NONE | F0   |      |  C2  |  O1  |
+J386    |      |      | NONE | F0   |      |  C2  |  O1  |
+J387    |      |      | NONE | F0   |      |  C2  |  O1  |
+J388    |      |      | NONE | F0   |      |  C2  |  O1  |
+J389    |      |      | NONE | F0   |      |  C2  |  O1  |
+J390    |      |      | NONE | F0   |      |  C2  |  O1  |
+J391    |      |      | NONE | F0   |      |  C2  |  O1  |
+J415    |      |      | NONE | F0   |      |  C2  |  O1  |
+J43     |      |      | NONE | F0   |      |  C2  |  O1  |
+J451    |      |      | NONE | F0   |      |  C2  |  O1  |
+J452    |      |      | NONE | F0   |      |  C2  |  O1  |
+J453    |      |      | NONE | F0   |      |  C2  |  O1  |
+J454    |      |      | NONE | F0   |      |  C2  |  O1  |
+J455    |      |      | NONE | F0   |      |  C2  |  O1  |
+J48     |      |      | NONE | F0   |      |  C2  |  O1  |
+J50     |      |      | NONE | F0   |      |  C2  |  O1  |
+J501    |      |      | NONE | F0   |      |  C2  |  O1  |
+J502    |      |      | NONE | F0   |      |  C2  |  O1  |
+J503    |      |      | NONE | F0   |      |  C2  |  O1  |
+J504    |      |      | NONE | F0   |      |  C2  |  O1  |
+J505    |      |      | NONE | F0   |      |  C2  |  O1  |
+J506    |      |      | NONE | F0   |      |  C2  |  O1  |
+J51     |      |      | NONE | F0   |      |  C2  |  O1  |
+J511    |      |      | NONE | F0   |      |  C2  |  O1  |
+J512    |      |      | NONE | F0   |      |  C2  |  O1  |
+J513    |      |      | NONE | F0   |      |  C2  |  O1  |
+J514    |      |      | NONE | F0   |      |  C2  |  O1  |
+J515    |      |      | NONE | F0   |      |  C2  |  O1  |
+J516    |      |      | NONE | F0   |      |  C2  |  O1  |
+J517    |      |      | NONE | F0   |      |  C2  |  O1  |
+J518    |      |      | NONE | F0   |      |  C2  |  O1  |
+J523    |      |      | NONE | F0   |      |  C2  |  O1  |
+J530    |      |      | NONE | F0   |      |  C2  |  O1  |
+J531    |      |      | NONE | F0   |      |  C2  |  O1  |
+J532    |      |      | NONE | F0   |      |  C2  |  O1  |
+J550    |      |      | NONE | F0   |      |  C2  |  O1  |
+J551    |      |      | NONE | F0   |      |  C2  |  O1  |
+J552    |      |      | NONE | F0   |      |  C2  |  O1  |
+J553    |      |      | NONE | F0   |      |  C2  |  O1  |
+J554    |      |      | NONE | F0   |      |  C2  |  O1  |
+J555    |      |      | NONE | F0   |      |  C2  |  O1  |
+J556    |      |      | NONE | F0   |      |  C2  |  O1  |
+J557    |      |      | NONE | F0   |      |  C2  |  O1  |
+J558    |      |      | NONE | F0   |      |  C2  |  O1  |
+J559    |      |      | NONE | F0   |      |  C2  |  O1  |
+J56     |      |      | NONE | F0   |      |  C2  |  O1  |
+J560    |      |      | NONE | F0   |      |  C2  |  O1  |
+J561    |      |      | NONE | F0   |      |  C2  |  O1  |
+J563    |      |      | NONE | F0   |      |  C2  |  O1  |
+J564    |      |      | NONE | F0   |      |  C2  |  O1  |
+J565    |      |      | NONE | F0   |      |  C2  |  O1  |
+J566    |      |      | NONE | F0   |      |  C2  |  O1  |
+J567    |      |      | NONE | F0   |      |  C2  |  O1  |
+J568    |      |      | NONE | F0   |      |  C2  |  O1  |
+J57     |      |      | NONE | F0   |      |  C2  |  O1  |
+J58     |      |      | NONE | F0   |      |  C2  |  O1  |
+J59     |      |      | NONE | F0   |      |  C2  |  O1  |
+J60     |      |      | NONE | F0   |      |  C2  |  O1  |
+J600    |      |      | NONE | F0   |      |  C2  |  O1  |
+J603    |      |      | NONE | F0   |      |  C2  |  O1  |
+J612    |      |      | NONE | F0   |      |  C2  |  O1  |
+J623    |      |      | NONE | F0   |      |  C2  |  O1  |
+J624    |      |      | NONE | F0   |      |  C2  |  O1  |
+J625    |      |      | NONE | F0   |      |  C2  |  O1  |
+J627    |      |      | NONE | F0   |      |  C2  |  O1  |
+J64     |      |      | NONE | F0   |      |  C2  |  O1  |
+J646    |      |      | NONE | F0   |      |  C2  |  O1  |
+J647    |      |      | NONE | F0   |      |  C2  |  O1  |
+J65     |      |      | NONE | F0   |      |  C2  |  O1  |
+J66     |      |      | NONE | F0   |      |  C2  |  O1  |
+J67     |      |      | NONE | F0   |      |  C2  |  O1  |
+J68     |      |      | NONE | F0   |      |  C2  |  O1  |
+J69     |      |      | NONE | F0   |      |  C2  |  O1  |
+J70     |      |      | NONE | F0   |      |  C2  |  O1  |
+J71     |      |      | NONE | F0   |      |  C2  |  O1  |
+J710    |      |      | NONE | F0   |      |  C2  |  O1  |
+J72     |      |      | NONE | F0   |      |  C2  |  O1  |
+J722    |      |      | NONE | F0   |      |  C2  |  O1  |
+J723    |      |      | NONE | F0   |      |  C2  |  O1  |
+J74     |      |      | NONE | F0   |      |  C2  |  O1  |
+J75     |      |      | NONE | F0   |      |  C2  |  O1  |
+J752    |      |      | NONE | F0   |      |  C2  |  O1  |
+J753    |      |      | NONE | F0   |      |  C2  |  O1  |
+J755    |      |      | NONE | F0   |      |  C2  |  O1  |
+J756    |      |      | NONE | F0   |      |  C2  |  O1  |
+J757    |      |      | NONE | F0   |      |  C2  |  O1  |
+J758    |      |      | NONE | F0   |      |  C2  |  O1  |
+J759    |      |      | NONE | F0   |      |  C2  |  O1  |
+J76     |      |      | NONE | F0   |      |  C2  |  O1  |
+J760    |      |      | NONE | F0   |      |  C2  |  O1  |
+J761    |      |      | NONE | F0   |      |  C2  |  O1  |
+J78     |      |      | NONE | F0   |      |  C2  |  O1  |
+J79     |      |      | NONE | F0   |      |  C2  |  O1  |
+J81     |      |      | NONE | F0   |      |  C2  |  O1  |
+J82     |      |      | NONE | F0   |      |  C2  |  O1  |
+J83     |      |      | NONE | F0   |      |  C2  |  O1  |
+J84     |      |      | NONE | F0   |      |  C2  |  O1  |
+J85     |      |      | NONE | F0   |      |  C2  |  O1  |
+J856    |      |      | NONE | F0   |      |  C2  |  O1  |
+J857    |      |      | NONE | F0   |      |  C2  |  O1  |
+J858    |      |      | NONE | F0   |      |  C2  |  O1  |
+J859    |      |      | NONE | F0   |      |  C2  |  O1  |
+J86     |      |      | NONE | F0   |      |  C2  |  O1  |
+J860    |      |      | NONE | F0   |      |  C2  |  O1  |
+J87     |      |      | NONE | F0   |      |  C2  |  O1  |
+J88     |      |      | NONE | F0   |      |  C2  |  O1  |
+J89     |      |      | NONE | F0   |      |  C2  |  O1  |
+J902    |      |      | NONE | F0   |      |  C2  |  O1  |
+J903    |      |      | NONE | F0   |      |  C2  |  O1  |
+J904    |      |      | NONE | F0   |      |  C2  |  O1  |
+J905    |      |      | NONE | F0   |      |  C2  |  O1  |
+J906    |      |      | NONE | F0   |      |  C2  |  O1  |
+J907    |      |      | NONE | F0   |      |  C2  |  O1  |
+J908    |      |      | NONE | F0   |      |  C2  |  O1  |
+J909    |      |      | NONE | F0   |      |  C2  |  O1  |
+J91     |      |      | NONE | F0   |      |  C2  |  O1  |
+J910    |      |      | NONE | F0   |      |  C2  |  O1  |
+J92     |      |      | NONE | F0   |      |  C2  |  O1  |
+J93     |      |      | NONE | F0   |      |  C2  |  O1  |
+J99     |      |      | NONE | F0   |      |  C2  |  O1  |
+L181    |      |      | NONE | F0   |      |  C2  |  O1  |
+L642    |      |      | NONE | F0   |      |  C2  |  O1  |
+L888    |      |      | NONE | F0   |      |  C2  |  O1  |
+M503    |      |      | NONE | F0   |      |  C2  |  O1  |
+M771    |      |      | NONE | F0   |      |  C2  |  O1  |
+N892    |      |      | NONE | F0   |      |  C2  |  O1  |
+P901    |      |      | NONE | F0   |      |  C2  |  O1  |
+R200    |      |      | NONE | F0   |      |  C2  |  O1  |
+R213    |      |      | NONE | F0   |      |  C2  |  O1  |
+R224    |      |      | NONE | F0   |      |  C2  |  O1  |
+R339    |      |      | NONE | F0   |      |  C2  |  O1  |
+R343    |      |      | NONE | F0   |      |  C2  |  O1  |
+R471    |      |      | NONE | F0   |      |  C2  |  O1  |
+R473    |      |      | NONE | F0   |      |  C2  |  O1  |
+R474    |      |      | NONE | F0   |      |  C2  |  O1  |
+R596    |      |      | NONE | F0   |      |  C2  |  O1  |
+V1      |      |      | NONE | F0   |      |  C2  |  O1  |
+V10     |      |      | NONE | F0   |      |  C2  |  O1  |
+V100    |      |      | NONE | F0   |      |  C2  |  O1  |
+V101    |      |      | NONE | F0   |      |  C2  |  O1  |
+V102    |      |      | NONE | F0   |      |  C2  |  O1  |
+V103    |      |      | NONE | F0   |      |  C2  |  O1  |
+V104    |      |      | NONE | F0   |      |  C2  |  O1  |
+V105    |      |      | NONE | F0   |      |  C2  |  O1  |
+V106    |      |      | NONE | F0   |      |  C2  |  O1  |
+V107    |      |      | NONE | F0   |      |  C2  |  O1  |
+V108    |      |      | NONE | F0   |      |  C2  |  O1  |
+V109    |      |      | NONE | F0   |      |  C2  |  O1  |
+V11     |      |      | NONE | F0   |      |  C2  |  O1  |
+V110    |      |      | NONE | F0   |      |  C2  |  O1  |
+V111    |      |      | NONE | F0   |      |  C2  |  O1  |
+V112    |      |      | NONE | F0   |      |  C2  |  O1  |
+V113    |      |      | NONE | F0   |      |  C2  |  O1  |
+V114    |      |      | NONE | F0   |      |  C2  |  O1  |
+V115    |      |      | NONE | F0   |      |  C2  |  O1  |
+V116    |      |      | NONE | F0   |      |  C2  |  O1  |
+V12     |      |      | NONE | F0   |      |  C2  |  O1  |
+V13     |      |      | NONE | F0   |      |  C2  |  O1  |
+V14     |      |      | NONE | F0   |      |  C2  |  O1  |
+V140    |      |      | NONE | F0   |      |  C2  |  O1  |
+V141    |      |      | NONE | F0   |      |  C2  |  O1  |
+V142    |      |      | NONE | F0   |      |  C2  |  O1  |
+V143    |      |      | NONE | F0   |      |  C2  |  O1  |
+V144    |      |      | NONE | F0   |      |  C2  |  O1  |
+V145    |      |      | NONE | F0   |      |  C2  |  O1  |
+V146    |      |      | NONE | F0   |      |  C2  |  O1  |
+V147    |      |      | NONE | F0   |      |  C2  |  O1  |
+V148    |      |      | NONE | F0   |      |  C2  |  O1  |
+V15     |      |      | NONE | F0   |      |  C2  |  O1  |
+V16     |      |      | NONE | F0   |      |  C2  |  O1  |
+V17     |      |      | NONE | F0   |      |  C2  |  O1  |
+V18     |      |      | NONE | F0   |      |  C2  |  O1  |
+V19     |      |      | NONE | F0   |      |  C2  |  O1  |
+V2      |      |      | NONE | F0   |      |  C2  |  O1  |
+V20     |      |      | NONE | F0   |      |  C2  |  O1  |
+V21     |      |      | NONE | F0   |      |  C2  |  O1  |
+V25     |      |      | NONE | F0   |      |  C2  |  O1  |
+V27     |      |      | NONE | F0   |      |  C2  |  O1  |
+V3      |      |      | NONE | F0   |      |  C2  |  O1  |
+V30     |      |      | NONE | F0   |      |  C2  |  O1  |
+V31     |      |      | NONE | F0   |      |  C2  |  O1  |
+V33     |      |      | NONE | F0   |      |  C2  |  O1  |
+V34     |      |      | NONE | F0   |      |  C2  |  O1  |
+V35     |      |      | NONE | F0   |      |  C2  |  O1  |
+V36     |      |      | NONE | F0   |      |  C2  |  O1  |
+V37     |      |      | NONE | F0   |      |  C2  |  O1  |
+V38     |      |      | NONE | F0   |      |  C2  |  O1  |
+V39     |      |      | NONE | F0   |      |  C2  |  O1  |
+V41     |      |      | NONE | F0   |      |  C2  |  O1  |
+V42     |      |      | NONE | F0   |      |  C2  |  O1  |
+V43     |      |      | NONE | F0   |      |  C2  |  O1  |
+V44     |      |      | NONE | F0   |      |  C2  |  O1  |
+V45     |      |      | NONE | F0   |      |  C2  |  O1  |
+V46     |      |      | NONE | F0   |      |  C2  |  O1  |
+V47     |      |      | NONE | F0   |      |  C2  |  O1  |
+V48     |      |      | NONE | F0   |      |  C2  |  O1  |
+V49     |      |      | NONE | F0   |      |  C2  |  O1  |
+V5      |      |      | NONE | F0   |      |  C2  |  O1  |
+V50     |      |      | NONE | F0   |      |  C2  |  O1  |
+V51     |      |      | NONE | F0   |      |  C2  |  O1  |
+V52     |      |      | NONE | F0   |      |  C2  |  O1  |
+V53     |      |      | NONE | F0   |      |  C2  |  O1  |
+V54     |      |      | NONE | F0   |      |  C2  |  O1  |
+V55     |      |      | NONE | F0   |      |  C2  |  O1  |
+V56     |      |      | NONE | F0   |      |  C2  |  O1  |
+V57     |      |      | NONE | F0   |      |  C2  |  O1  |
+V58     |      |      | NONE | F0   |      |  C2  |  O1  |
+V59     |      |      | NONE | F0   |      |  C2  |  O1  |
+V60     |      |      | NONE | F0   |      |  C2  |  O1  |
+V61     |      |      | NONE | F0   |      |  C2  |  O1  |
+V62     |      |      | NONE | F0   |      |  C2  |  O1  |
+V63     |      |      | NONE | F0   |      |  C2  |  O1  |
+V64     |      |      | NONE | F0   |      |  C2  |  O1  |
+V65     |      |      | NONE | F0   |      |  C2  |  O1  |
+V66     |      |      | NONE | F0   |      |  C2  |  O1  |
+V67     |      |      | NONE | F0   |      |  C2  |  O1  |
+V68     |      |      | NONE | F0   |      |  C2  |  O1  |
+V69     |      |      | NONE | F0   |      |  C2  |  O1  |
+V7      |      |      | NONE | F0   |      |  C2  |  O1  |
+V70     |      |      | NONE | F0   |      |  C2  |  O1  |
+V72     |      |      | NONE | F0   |      |  C2  |  O1  |
+V73     |      |      | NONE | F0   |      |  C2  |  O1  |
+V74     |      |      | NONE | F0   |      |  C2  |  O1  |
+V76     |      |      | NONE | F0   |      |  C2  |  O1  |
+V77     |      |      | NONE | F0   |      |  C2  |  O1  |
+V78     |      |      | NONE | F0   |      |  C2  |  O1  |
+V79     |      |      | NONE | F0   |      |  C2  |  O1  |
+V8      |      |      | NONE | F0   |      |  C2  |  O1  |
+V80     |      |      | NONE | F0   |      |  C2  |  O1  |
+V81     |      |      | NONE | F0   |      |  C2  |  O1  |
+V82     |      |      | NONE | F0   |      |  C2  |  O1  |
+V83     |      |      | NONE | F0   |      |  C2  |  O1  |
+V84     |      |      | NONE | F0   |      |  C2  |  O1  |
+V85     |      |      | NONE | F0   |      |  C2  |  O1  |
+V86     |      |      | NONE | F0   |      |  C2  |  O1  |
+V87     |      |      | NONE | F0   |      |  C2  |  O1  |
+V88     |      |      | NONE | F0   |      |  C2  |  O1  |
+V89     |      |      | NONE | F0   |      |  C2  |  O1  |
+V9      |      |      | NONE | F0   |      |  C2  |  O1  |
+V90     |      |      | NONE | F0   |      |  C2  |  O1  |
+V91     |      |      | NONE | F0   |      |  C2  |  O1  |
+V92     |      |      | NONE | F0   |      |  C2  |  O1  |
+V93     |      |      | NONE | F0   |      |  C2  |  O1  |
+V94     |      |      | NONE | F0   |      |  C2  |  O1  |
+V95     |      |      | NONE | F0   |      |  C2  |  O1  |
+V96     |      |      | NONE | F0   |      |  C2  |  O1  |
+V97     |      |      | NONE | F0   |      |  C2  |  O1  |
+V98     |      |      | NONE | F0   |      |  C2  |  O1  |
+V99     |      |      | NONE | F0   |      |  C2  |  O1  |
+W100    |      |      | NONE | F0   |      |  C2  |  O1  |
+W101    |      |      | NONE | F0   |      |  C2  |  O1  |
+W102    |      |      | NONE | F0   |      |  C2  |  O1  |
+W103    |      |      | NONE | F0   |      |  C2  |  O1  |
+W104    |      |      | NONE | F0   |      |  C2  |  O1  |
+W105    |      |      | NONE | F0   |      |  C2  |  O1  |
+W106    |      |      | NONE | F0   |      |  C2  |  O1  |
+W107    |      |      | NONE | F0   |      |  C2  |  O1  |
+W108    |      |      | NONE | F0   |      |  C2  |  O1  |
+W109    |      |      | NONE | F0   |      |  C2  |  O1  |
+W11     |      |      | NONE | F0   |      |  C2  |  O1  |
+W111    |      |      | NONE | F0   |      |  C2  |  O1  |
+W112    |      |      | NONE | F0   |      |  C2  |  O1  |
+W113    |      |      | NONE | F0   |      |  C2  |  O1  |
+W114    |      |      | NONE | F0   |      |  C2  |  O1  |
+W115    |      |      | NONE | F0   |      |  C2  |  O1  |
+W116    |      |      | NONE | F0   |      |  C2  |  O1  |
+W117    |      |      | NONE | F0   |      |  C2  |  O1  |
+W118    |      |      | NONE | F0   |      |  C2  |  O1  |
+W119    |      |      | NONE | F0   |      |  C2  |  O1  |
+W12     |      |      | NONE | F0   |      |  C2  |  O1  |
+W121    |      |      | NONE | F0   |      |  C2  |  O1  |
+W122    |      |      | NONE | F0   |      |  C2  |  O1  |
+W123    |      |      | NONE | F0   |      |  C2  |  O1  |
+W125    |      |      | NONE | F0   |      |  C2  |  O1  |
+W126    |      |      | NONE | F0   |      |  C2  |  O1  |
+W127    |      |      | NONE | F0   |      |  C2  |  O1  |
+W128    |      |      | NONE | F0   |      |  C2  |  O1  |
+W129    |      |      | NONE | F0   |      |  C2  |  O1  |
+W13     |      |      | NONE | F0   |      |  C2  |  O1  |
+W130    |      |      | NONE | F0   |      |  C2  |  O1  |
+W131    |      |      | NONE | F0   |      |  C2  |  O1  |
+W132    |      |      | NONE | F0   |      |  C2  |  O1  |
+W133    |      |      | NONE | F0   |      |  C2  |  O1  |
+W134    |      |      | NONE | F0   |      |  C2  |  O1  |
+W135    |      |      | NONE | F0   |      |  C2  |  O1  |
+W136    |      |      | NONE | F0   |      |  C2  |  O1  |
+W137    |      |      | NONE | F0   |      |  C2  |  O1  |
+W138    |      |      | NONE | F0   |      |  C2  |  O1  |
+W139    |      |      | NONE | F0   |      |  C2  |  O1  |
+W140    |      |      | NONE | F0   |      |  C2  |  O1  |
+W141    |      |      | NONE | F0   |      |  C2  |  O1  |
+W142    |      |      | NONE | F0   |      |  C2  |  O1  |
+W143    |      |      | NONE | F0   |      |  C2  |  O1  |
+W144    |      |      | NONE | F0   |      |  C2  |  O1  |
+W145    |      |      | NONE | F0   |      |  C2  |  O1  |
+W146    |      |      | NONE | F0   |      |  C2  |  O1  |
+W147    |      |      | NONE | F0   |      |  C2  |  O1  |
+W148    |      |      | NONE | F0   |      |  C2  |  O1  |
+W149    |      |      | NONE | F0   |      |  C2  |  O1  |
+W15     |      |      | NONE | F0   |      |  C2  |  O1  |
+W150    |      |      | NONE | F0   |      |  C2  |  O1  |
+W151    |      |      | NONE | F0   |      |  C2  |  O1  |
+W152    |      |      | NONE | F0   |      |  C2  |  O1  |
+W153    |      |      | NONE | F0   |      |  C2  |  O1  |
+W154    |      |      | NONE | F0   |      |  C2  |  O1  |
+W155    |      |      | NONE | F0   |      |  C2  |  O1  |
+W156    |      |      | NONE | F0   |      |  C2  |  O1  |
+W157    |      |      | NONE | F0   |      |  C2  |  O1  |
+W158    |      |      | NONE | F0   |      |  C2  |  O1  |
+W16     |      |      | NONE | F0   |      |  C2  |  O1  |
+W160    |      |      | NONE | F0   |      |  C2  |  O1  |
+W161    |      |      | NONE | F0   |      |  C2  |  O1  |
+W162    |      |      | NONE | F0   |      |  C2  |  O1  |
+W163    |      |      | NONE | F0   |      |  C2  |  O1  |
+W164    |      |      | NONE | F0   |      |  C2  |  O1  |
+W165    |      |      | NONE | F0   |      |  C2  |  O1  |
+W166    |      |      | NONE | F0   |      |  C2  |  O1  |
+W167    |      |      | NONE | F0   |      |  C2  |  O1  |
+W168    |      |      | NONE | F0   |      |  C2  |  O1  |
+W169    |      |      | NONE | F0   |      |  C2  |  O1  |
+W17     |      |      | NONE | F0   |      |  C2  |  O1  |
+W170    |      |      | NONE | F0   |      |  C2  |  O1  |
+W171    |      |      | NONE | F0   |      |  C2  |  O1  |
+W172    |      |      | NONE | F0   |      |  C2  |  O1  |
+W173    |      |      | NONE | F0   |      |  C2  |  O1  |
+W174    |      |      | NONE | F0   |      |  C2  |  O1  |
+W175    |      |      | NONE | F0   |      |  C2  |  O1  |
+W176    |      |      | NONE | F0   |      |  C2  |  O1  |
+W177    |      |      | NONE | F0   |      |  C2  |  O1  |
+W178    |      |      | NONE | F0   |      |  C2  |  O1  |
+W179    |      |      | NONE | F0   |      |  C2  |  O1  |
+W18     |      |      | NONE | F0   |      |  C2  |  O1  |
+W180    |      |      | NONE | F0   |      |  C2  |  O1  |
+W181    |      |      | NONE | F0   |      |  C2  |  O1  |
+W182    |      |      | NONE | F0   |      |  C2  |  O1  |
+W183    |      |      | NONE | F0   |      |  C2  |  O1  |
+W184    |      |      | NONE | F0   |      |  C2  |  O1  |
+W185    |      |      | NONE | F0   |      |  C2  |  O1  |
+W186    |      |      | NONE | F0   |      |  C2  |  O1  |
+W187    |      |      | NONE | F0   |      |  C2  |  O1  |
+W188    |      |      | NONE | F0   |      |  C2  |  O1  |
+W189    |      |      | NONE | F0   |      |  C2  |  O1  |
+W19     |      |      | NONE | F0   |      |  C2  |  O1  |
+W190    |      |      | NONE | F0   |      |  C2  |  O1  |
+W191    |      |      | NONE | F0   |      |  C2  |  O1  |
+W192    |      |      | NONE | F0   |      |  C2  |  O1  |
+W193    |      |      | NONE | F0   |      |  C2  |  O1  |
+W194    |      |      | NONE | F0   |      |  C2  |  O1  |
+W197    |      |      | NONE | F0   |      |  C2  |  O1  |
+W198    |      |      | NONE | F0   |      |  C2  |  O1  |
+W199    |      |      | NONE | F0   |      |  C2  |  O1  |
+W2      |      |      | NONE | F0   |      |  C2  |  O1  |
+W20     |      |      | NONE | F0   |      |  C2  |  O1  |
+W200    |      |      | NONE | F0   |      |  C2  |  O1  |
+W201    |      |      | NONE | F0   |      |  C2  |  O1  |
+W202    |      |      | NONE | F0   |      |  C2  |  O1  |
+W203    |      |      | NONE | F0   |      |  C2  |  O1  |
+W204    |      |      | NONE | F0   |      |  C2  |  O1  |
+W205    |      |      | NONE | F0   |      |  C2  |  O1  |
+W206    |      |      | NONE | F0   |      |  C2  |  O1  |
+W207    |      |      | NONE | F0   |      |  C2  |  O1  |
+W208    |      |      | NONE | F0   |      |  C2  |  O1  |
+W209    |      |      | NONE | F0   |      |  C2  |  O1  |
+W21     |      |      | NONE | F0   |      |  C2  |  O1  |
+W210    |      |      | NONE | F0   |      |  C2  |  O1  |
+W211    |      |      | NONE | F0   |      |  C2  |  O1  |
+W212    |      |      | NONE | F0   |      |  C2  |  O1  |
+W213    |      |      | NONE | F0   |      |  C2  |  O1  |
+W214    |      |      | NONE | F0   |      |  C2  |  O1  |
+W215    |      |      | NONE | F0   |      |  C2  |  O1  |
+W216    |      |      | NONE | F0   |      |  C2  |  O1  |
+W217    |      |      | NONE | F0   |      |  C2  |  O1  |
+W218    |      |      | NONE | F0   |      |  C2  |  O1  |
+W219    |      |      | NONE | F0   |      |  C2  |  O1  |
+W22     |      |      | NONE | F0   |      |  C2  |  O1  |
+W220    |      |      | NONE | F0   |      |  C2  |  O1  |
+W222    |      |      | NONE | F0   |      |  C2  |  O1  |
+W223    |      |      | NONE | F0   |      |  C2  |  O1  |
+W224    |      |      | NONE | F0   |      |  C2  |  O1  |
+W225    |      |      | NONE | F0   |      |  C2  |  O1  |
+W226    |      |      | NONE | F0   |      |  C2  |  O1  |
+W227    |      |      | NONE | F0   |      |  C2  |  O1  |
+W23     |      |      | NONE | F0   |      |  C2  |  O1  |
+W230    |      |      | NONE | F0   |      |  C2  |  O1  |
+W231    |      |      | NONE | F0   |      |  C2  |  O1  |
+W232    |      |      | NONE | F0   |      |  C2  |  O1  |
+W233    |      |      | NONE | F0   |      |  C2  |  O1  |
+W234    |      |      | NONE | F0   |      |  C2  |  O1  |
+W235    |      |      | NONE | F0   |      |  C2  |  O1  |
+W236    |      |      | NONE | F0   |      |  C2  |  O1  |
+W237    |      |      | NONE | F0   |      |  C2  |  O1  |
+W238    |      |      | NONE | F0   |      |  C2  |  O1  |
+W239    |      |      | NONE | F0   |      |  C2  |  O1  |
+W24     |      |      | NONE | F0   |      |  C2  |  O1  |
+W240    |      |      | NONE | F0   |      |  C2  |  O1  |
+W241    |      |      | NONE | F0   |      |  C2  |  O1  |
+W242    |      |      | NONE | F0   |      |  C2  |  O1  |
+W243    |      |      | NONE | F0   |      |  C2  |  O1  |
+W244    |      |      | NONE | F0   |      |  C2  |  O1  |
+W246    |      |      | NONE | F0   |      |  C2  |  O1  |
+W247    |      |      | NONE | F0   |      |  C2  |  O1  |
+W25     |      |      | NONE | F0   |      |  C2  |  O1  |
+W26     |      |      | NONE | F0   |      |  C2  |  O1  |
+W260    |      |      | NONE | F0   |      |  C2  |  O1  |
+W261    |      |      | NONE | F0   |      |  C2  |  O1  |
+W262    |      |      | NONE | F0   |      |  C2  |  O1  |
+W27     |      |      | NONE | F0   |      |  C2  |  O1  |
+W28     |      |      | NONE | F0   |      |  C2  |  O1  |
+W3      |      |      | NONE | F0   |      |  C2  |  O1  |
+W30     |      |      | NONE | F0   |      |  C2  |  O1  |
+W31     |      |      | NONE | F0   |      |  C2  |  O1  |
+W32     |      |      | NONE | F0   |      |  C2  |  O1  |
+W33     |      |      | NONE | F0   |      |  C2  |  O1  |
+W34     |      |      | NONE | F0   |      |  C2  |  O1  |
+W35     |      |      | NONE | F0   |      |  C2  |  O1  |
+W36     |      |      | NONE | F0   |      |  C2  |  O1  |
+W37     |      |      | NONE | F0   |      |  C2  |  O1  |
+W38     |      |      | NONE | F0   |      |  C2  |  O1  |
+W39     |      |      | NONE | F0   |      |  C2  |  O1  |
+W4      |      |      | NONE | F0   |      |  C2  |  O1  |
+W40     |      |      | NONE | F0   |      |  C2  |  O1  |
+W41     |      |      | NONE | F0   |      |  C2  |  O1  |
+W42     |      |      | NONE | F0   |      |  C2  |  O1  |
+W43     |      |      | NONE | F0   |      |  C2  |  O1  |
+W44     |      |      | NONE | F0   |      |  C2  |  O1  |
+W45     |      |      | NONE | F0   |      |  C2  |  O1  |
+W46     |      |      | NONE | F0   |      |  C2  |  O1  |
+W47     |      |      | NONE | F0   |      |  C2  |  O1  |
+W48     |      |      | NONE | F0   |      |  C2  |  O1  |
+W49     |      |      | NONE | F0   |      |  C2  |  O1  |
+W5      |      |      | NONE | F0   |      |  C2  |  O1  |
+W50     |      |      | NONE | F0   |      |  C2  |  O1  |
+W500    |      |      | NONE | F0   |      |  C2  |  O1  |
+W501    |      |      | NONE | F0   |      |  C2  |  O1  |
+W502    |      |      | NONE | F0   |      |  C2  |  O1  |
+W503    |      |      | NONE | F0   |      |  C2  |  O1  |
+W504    |      |      | NONE | F0   |      |  C2  |  O1  |
+W505    |      |      | NONE | F0   |      |  C2  |  O1  |
+W506    |      |      | NONE | F0   |      |  C2  |  O1  |
+W507    |      |      | NONE | F0   |      |  C2  |  O1  |
+W508    |      |      | NONE | F0   |      |  C2  |  O1  |
+W509    |      |      | NONE | F0   |      |  C2  |  O1  |
+W51     |      |      | NONE | F0   |      |  C2  |  O1  |
+W510    |      |      | NONE | F0   |      |  C2  |  O1  |
+W511    |      |      | NONE | F0   |      |  C2  |  O1  |
+W512    |      |      | NONE | F0   |      |  C2  |  O1  |
+W514    |      |      | NONE | F0   |      |  C2  |  O1  |
+W515    |      |      | NONE | F0   |      |  C2  |  O1  |
+W516    |      |      | NONE | F0   |      |  C2  |  O1  |
+W52     |      |      | NONE | F0   |      |  C2  |  O1  |
+W521    |      |      | NONE | F0   |      |  C2  |  O1  |
+W522    |      |      | NONE | F0   |      |  C2  |  O1  |
+W523    |      |      | NONE | F0   |      |  C2  |  O1  |
+W524    |      |      | NONE | F0   |      |  C2  |  O1  |
+W525    |      |      | NONE | F0   |      |  C2  |  O1  |
+W526    |      |      | NONE | F0   |      |  C2  |  O1  |
+W527    |      |      | NONE | F0   |      |  C2  |  O1  |
+W528    |      |      | NONE | F0   |      |  C2  |  O1  |
+W529    |      |      | NONE | F0   |      |  C2  |  O1  |
+W53     |      |      | NONE | F0   |      |  C2  |  O1  |
+W530    |      |      | NONE | F0   |      |  C2  |  O1  |
+W531    |      |      | NONE | F0   |      |  C2  |  O1  |
+W532    |      |      | NONE | F0   |      |  C2  |  O1  |
+W533    |      |      | NONE | F0   |      |  C2  |  O1  |
+W534    |      |      | NONE | F0   |      |  C2  |  O1  |
+W535    |      |      | NONE | F0   |      |  C2  |  O1  |
+W536    |      |      | NONE | F0   |      |  C2  |  O1  |
+W537    |      |      | NONE | F0   |      |  C2  |  O1  |
+W538    |      |      | NONE | F0   |      |  C2  |  O1  |
+W539    |      |      | NONE | F0   |      |  C2  |  O1  |
+W54     |      |      | NONE | F0   |      |  C2  |  O1  |
+W540    |      |      | NONE | F0   |      |  C2  |  O1  |
+W541    |      |      | NONE | F0   |      |  C2  |  O1  |
+W543    |      |      | NONE | F0   |      |  C2  |  O1  |
+W545    |      |      | NONE | F0   |      |  C2  |  O1  |
+W546    |      |      | NONE | F0   |      |  C2  |  O1  |
+W547    |      |      | NONE | F0   |      |  C2  |  O1  |
+W548    |      |      | NONE | F0   |      |  C2  |  O1  |
+W55     |      |      | NONE | F0   |      |  C2  |  O1  |
+W550    |      |      | NONE | F0   |      |  C2  |  O1  |
+W552    |      |      | NONE | F0   |      |  C2  |  O1  |
+W553    |      |      | NONE | F0   |      |  C2  |  O1  |
+W558    |      |      | NONE | F0   |      |  C2  |  O1  |
+W559    |      |      | NONE | F0   |      |  C2  |  O1  |
+W56     |      |      | NONE | F0   |      |  C2  |  O1  |
+W560    |      |      | NONE | F0   |      |  C2  |  O1  |
+W561    |      |      | NONE | F0   |      |  C2  |  O1  |
+W562    |      |      | NONE | F0   |      |  C2  |  O1  |
+W563    |      |      | NONE | F0   |      |  C2  |  O1  |
+W564    |      |      | NONE | F0   |      |  C2  |  O1  |
+W565    |      |      | NONE | F0   |      |  C2  |  O1  |
+W567    |      |      | NONE | F0   |      |  C2  |  O1  |
+W568    |      |      | NONE | F0   |      |  C2  |  O1  |
+W569    |      |      | NONE | F0   |      |  C2  |  O1  |
+W57     |      |      | NONE | F0   |      |  C2  |  O1  |
+W570    |      |      | NONE | F0   |      |  C2  |  O1  |
+W571    |      |      | NONE | F0   |      |  C2  |  O1  |
+W573    |      |      | NONE | F0   |      |  C2  |  O1  |
+W574    |      |      | NONE | F0   |      |  C2  |  O1  |
+W575    |      |      | NONE | F0   |      |  C2  |  O1  |
+W576    |      |      | NONE | F0   |      |  C2  |  O1  |
+W577    |      |      | NONE | F0   |      |  C2  |  O1  |
+W578    |      |      | NONE | F0   |      |  C2  |  O1  |
+W579    |      |      | NONE | F0   |      |  C2  |  O1  |
+W58     |      |      | NONE | F0   |      |  C2  |  O1  |
+W581    |      |      | NONE | F0   |      |  C2  |  O1  |
+W582    |      |      | NONE | F0   |      |  C2  |  O1  |
+W583    |      |      | NONE | F0   |      |  C2  |  O1  |
+W584    |      |      | NONE | F0   |      |  C2  |  O1  |
+W585    |      |      | NONE | F0   |      |  C2  |  O1  |
+W586    |      |      | NONE | F0   |      |  C2  |  O1  |
+W587    |      |      | NONE | F0   |      |  C2  |  O1  |
+W588    |      |      | NONE | F0   |      |  C2  |  O1  |
+W589    |      |      | NONE | F0   |      |  C2  |  O1  |
+W590    |      |      | NONE | F0   |      |  C2  |  O1  |
+W591    |      |      | NONE | F0   |      |  C2  |  O1  |
+W592    |      |      | NONE | F0   |      |  C2  |  O1  |
+W593    |      |      | NONE | F0   |      |  C2  |  O1  |
+W594    |      |      | NONE | F0   |      |  C2  |  O1  |
+W595    |      |      | NONE | F0   |      |  C2  |  O1  |
+W596    |      |      | NONE | F0   |      |  C2  |  O1  |
+W597    |      |      | NONE | F0   |      |  C2  |  O1  |
+W598    |      |      | NONE | F0   |      |  C2  |  O1  |
+W599    |      |      | NONE | F0   |      |  C2  |  O1  |
+W6      |      |      | NONE | F0   |      |  C2  |  O1  |
+W600    |      |      | NONE | F0   |      |  C2  |  O1  |
+W601    |      |      | NONE | F0   |      |  C2  |  O1  |
+W602    |      |      | NONE | F0   |      |  C2  |  O1  |
+W603    |      |      | NONE | F0   |      |  C2  |  O1  |
+W604    |      |      | NONE | F0   |      |  C2  |  O1  |
+W605    |      |      | NONE | F0   |      |  C2  |  O1  |
+W606    |      |      | NONE | F0   |      |  C2  |  O1  |
+W607    |      |      | NONE | F0   |      |  C2  |  O1  |
+W608    |      |      | NONE | F0   |      |  C2  |  O1  |
+W609    |      |      | NONE | F0   |      |  C2  |  O1  |
+W61     |      |      | NONE | F0   |      |  C2  |  O1  |
+W610    |      |      | NONE | F0   |      |  C2  |  O1  |
+W611    |      |      | NONE | F0   |      |  C2  |  O1  |
+W613    |      |      | NONE | F0   |      |  C2  |  O1  |
+W615    |      |      | NONE | F0   |      |  C2  |  O1  |
+W616    |      |      | NONE | F0   |      |  C2  |  O1  |
+W617    |      |      | NONE | F0   |      |  C2  |  O1  |
+W618    |      |      | NONE | F0   |      |  C2  |  O1  |
+W619    |      |      | NONE | F0   |      |  C2  |  O1  |
+W62     |      |      | NONE | F0   |      |  C2  |  O1  |
+W620    |      |      | NONE | F0   |      |  C2  |  O1  |
+W621    |      |      | NONE | F0   |      |  C2  |  O1  |
+W622    |      |      | NONE | F0   |      |  C2  |  O1  |
+W623    |      |      | NONE | F0   |      |  C2  |  O1  |
+W624    |      |      | NONE | F0   |      |  C2  |  O1  |
+W625    |      |      | NONE | F0   |      |  C2  |  O1  |
+W626    |      |      | NONE | F0   |      |  C2  |  O1  |
+W627    |      |      | NONE | F0   |      |  C2  |  O1  |
+W628    |      |      | NONE | F0   |      |  C2  |  O1  |
+W629    |      |      | NONE | F0   |      |  C2  |  O1  |
+W630    |      |      | NONE | F0   |      |  C2  |  O1  |
+W631    |      |      | NONE | F0   |      |  C2  |  O1  |
+W632    |      |      | NONE | F0   |      |  C2  |  O1  |
+W633    |      |      | NONE | F0   |      |  C2  |  O1  |
+W634    |      |      | NONE | F0   |      |  C2  |  O1  |
+W635    |      |      | NONE | F0   |      |  C2  |  O1  |
+W638    |      |      | NONE | F0   |      |  C2  |  O1  |
+W639    |      |      | NONE | F0   |      |  C2  |  O1  |
+W64     |      |      | NONE | F0   |      |  C2  |  O1  |
+W640    |      |      | NONE | F0   |      |  C2  |  O1  |
+W643    |      |      | NONE | F0   |      |  C2  |  O1  |
+W644    |      |      | NONE | F0   |      |  C2  |  O1  |
+W645    |      |      | NONE | F0   |      |  C2  |  O1  |
+W65     |      |      | NONE | F0   |      |  C2  |  O1  |
+W650    |      |      | NONE | F0   |      |  C2  |  O1  |
+W651    |      |      | NONE | F0   |      |  C2  |  O1  |
+W652    |      |      | NONE | F0   |      |  C2  |  O1  |
+W653    |      |      | NONE | F0   |      |  C2  |  O1  |
+W654    |      |      | NONE | F0   |      |  C2  |  O1  |
+W655    |      |      | NONE | F0   |      |  C2  |  O1  |
+W656    |      |      | NONE | F0   |      |  C2  |  O1  |
+W657    |      |      | NONE | F0   |      |  C2  |  O1  |
+W658    |      |      | NONE | F0   |      |  C2  |  O1  |
+W659    |      |      | NONE | F0   |      |  C2  |  O1  |
+W66     |      |      | NONE | F0   |      |  C2  |  O1  |
+W660    |      |      | NONE | F0   |      |  C2  |  O1  |
+W661    |      |      | NONE | F0   |      |  C2  |  O1  |
+W662    |      |      | NONE | F0   |      |  C2  |  O1  |
+W663    |      |      | NONE | F0   |      |  C2  |  O1  |
+W664    |      |      | NONE | F0   |      |  C2  |  O1  |
+W665    |      |      | NONE | F0   |      |  C2  |  O1  |
+W667    |      |      | NONE | F0   |      |  C2  |  O1  |
+W668    |      |      | NONE | F0   |      |  C2  |  O1  |
+W669    |      |      | NONE | F0   |      |  C2  |  O1  |
+W67     |      |      | NONE | F0   |      |  C2  |  O1  |
+W670    |      |      | NONE | F0   |      |  C2  |  O1  |
+W671    |      |      | NONE | F0   |      |  C2  |  O1  |
+W672    |      |      | NONE | F0   |      |  C2  |  O1  |
+W673    |      |      | NONE | F0   |      |  C2  |  O1  |
+W674    |      |      | NONE | F0   |      |  C2  |  O1  |
+W675    |      |      | NONE | F0   |      |  C2  |  O1  |
+W676    |      |      | NONE | F0   |      |  C2  |  O1  |
+W679    |      |      | NONE | F0   |      |  C2  |  O1  |
+W68     |      |      | NONE | F0   |      |  C2  |  O1  |
+W69     |      |      | NONE | F0   |      |  C2  |  O1  |
+W7      |      |      | NONE | F0   |      |  C2  |  O1  |
+W70     |      |      | NONE | F0   |      |  C2  |  O1  |
+W71     |      |      | NONE | F0   |      |  C2  |  O1  |
+W72     |      |      | NONE | F0   |      |  C2  |  O1  |
+W73     |      |      | NONE | F0   |      |  C2  |  O1  |
+W8      |      |      | NONE | F0   |      |  C2  |  O1  |
+W80     |      |      | NONE | F0   |      |  C2  |  O1  |
+W81     |      |      | NONE | F0   |      |  C2  |  O1  |
+W82     |      |      | NONE | F0   |      |  C2  |  O1  |
+W83     |      |      | NONE | F0   |      |  C2  |  O1  |
+W84     |      |      | NONE | F0   |      |  C2  |  O1  |
+W85     |      |      | NONE | F0   |      |  C2  |  O1  |
+W86     |      |      | NONE | F0   |      |  C2  |  O1  |
+W87     |      |      | NONE | F0   |      |  C2  |  O1  |
+W89     |      |      | NONE | F0   |      |  C2  |  O1  |
+W9      |      |      | NONE | F0   |      |  C2  |  O1  |
+W90     |      |      | NONE | F0   |      |  C2  |  O1  |
+W91     |      |      | NONE | F0   |      |  C2  |  O1  |
+W93     |      |      | NONE | F0   |      |  C2  |  O1  |
+W94     |      |      | NONE | F0   |      |  C2  |  O1  |
+W95     |      |      | NONE | F0   |      |  C2  |  O1  |
+W96     |      |      | NONE | F0   |      |  C2  |  O1  |
+W97     |      |      | NONE | F0   |      |  C2  |  O1  |
+W98     |      |      | NONE | F0   |      |  C2  |  O1  |
+W99     |      |      | NONE | F0   |      |  C2  |  O1  |
+X1      |      |      | NONE | F0   |      |  C2  |  O1  |
+X10     |      |      | NONE | F0   |      |  C2  |  O1  |
+X100    |      |      | NONE | F0   |      |  C2  |  O1  |
+X101    |      |      | NONE | F0   |      |  C2  |  O1  |
+X104    |      |      | NONE | F0   |      |  C2  |  O1  |
+X105    |      |      | NONE | F0   |      |  C2  |  O1  |
+X107    |      |      | NONE | F0   |      |  C2  |  O1  |
+X108    |      |      | NONE | F0   |      |  C2  |  O1  |
+X109    |      |      | NONE | F0   |      |  C2  |  O1  |
+X11     |      |      | NONE | F0   |      |  C2  |  O1  |
+X110    |      |      | NONE | F0   |      |  C2  |  O1  |
+X111    |      |      | NONE | F0   |      |  C2  |  O1  |
+X112    |      |      | NONE | F0   |      |  C2  |  O1  |
+X113    |      |      | NONE | F0   |      |  C2  |  O1  |
+X114    |      |      | NONE | F0   |      |  C2  |  O1  |
+X115    |      |      | NONE | F0   |      |  C2  |  O1  |
+X116    |      |      | NONE | F0   |      |  C2  |  O1  |
+X117    |      |      | NONE | F0   |      |  C2  |  O1  |
+X118    |      |      | NONE | F0   |      |  C2  |  O1  |
+X119    |      |      | NONE | F0   |      |  C2  |  O1  |
+X12     |      |      | NONE | F0   |      |  C2  |  O1  |
+X120    |      |      | NONE | F0   |      |  C2  |  O1  |
+X121    |      |      | NONE | F0   |      |  C2  |  O1  |
+X122    |      |      | NONE | F0   |      |  C2  |  O1  |
+X123    |      |      | NONE | F0   |      |  C2  |  O1  |
+X124    |      |      | NONE | F0   |      |  C2  |  O1  |
+X125    |      |      | NONE | F0   |      |  C2  |  O1  |
+X126    |      |      | NONE | F0   |      |  C2  |  O1  |
+X127    |      |      | NONE | F0   |      |  C2  |  O1  |
+X128    |      |      | NONE | F0   |      |  C2  |  O1  |
+X129    |      |      | NONE | F0   |      |  C2  |  O1  |
+X13     |      |      | NONE | F0   |      |  C2  |  O1  |
+X130    |      |      | NONE | F0   |      |  C2  |  O1  |
+X131    |      |      | NONE | F0   |      |  C2  |  O1  |
+X132    |      |      | NONE | F0   |      |  C2  |  O1  |
+X133    |      |      | NONE | F0   |      |  C2  |  O1  |
+X134    |      |      | NONE | F0   |      |  C2  |  O1  |
+X136    |      |      | NONE | F0   |      |  C2  |  O1  |
+X138    |      |      | NONE | F0   |      |  C2  |  O1  |
+X139    |      |      | NONE | F0   |      |  C2  |  O1  |
+X14     |      |      | NONE | F0   |      |  C2  |  O1  |
+X140    |      |      | NONE | F0   |      |  C2  |  O1  |
+X141    |      |      | NONE | F0   |      |  C2  |  O1  |
+X142    |      |      | NONE | F0   |      |  C2  |  O1  |
+X143    |      |      | NONE | F0   |      |  C2  |  O1  |
+X144    |      |      | NONE | F0   |      |  C2  |  O1  |
+X145    |      |      | NONE | F0   |      |  C2  |  O1  |
+X146    |      |      | NONE | F0   |      |  C2  |  O1  |
+X147    |      |      | NONE | F0   |      |  C2  |  O1  |
+X148    |      |      | NONE | F0   |      |  C2  |  O1  |
+X149    |      |      | NONE | F0   |      |  C2  |  O1  |
+X15     |      |      | NONE | F0   |      |  C2  |  O1  |
+X150    |      |      | NONE | F0   |      |  C2  |  O1  |
+X151    |      |      | NONE | F0   |      |  C2  |  O1  |
+X152    |      |      | NONE | F0   |      |  C2  |  O1  |
+X153    |      |      | NONE | F0   |      |  C2  |  O1  |
+X154    |      |      | NONE | F0   |      |  C2  |  O1  |
+X155    |      |      | NONE | F0   |      |  C2  |  O1  |
+X156    |      |      | NONE | F0   |      |  C2  |  O1  |
+X157    |      |      | NONE | F0   |      |  C2  |  O1  |
+X158    |      |      | NONE | F0   |      |  C2  |  O1  |
+X159    |      |      | NONE | F0   |      |  C2  |  O1  |
+X16     |      |      | NONE | F0   |      |  C2  |  O1  |
+X160    |      |      | NONE | F0   |      |  C2  |  O1  |
+X161    |      |      | NONE | F0   |      |  C2  |  O1  |
+X162    |      |      | NONE | F0   |      |  C2  |  O1  |
+X163    |      |      | NONE | F0   |      |  C2  |  O1  |
+X164    |      |      | NONE | F0   |      |  C2  |  O1  |
+X165    |      |      | NONE | F0   |      |  C2  |  O1  |
+X166    |      |      | NONE | F0   |      |  C2  |  O1  |
+X168    |      |      | NONE | F0   |      |  C2  |  O1  |
+X169    |      |      | NONE | F0   |      |  C2  |  O1  |
+X17     |      |      | NONE | F0   |      |  C2  |  O1  |
+X172    |      |      | NONE | F0   |      |  C2  |  O1  |
+X173    |      |      | NONE | F0   |      |  C2  |  O1  |
+X174    |      |      | NONE | F0   |      |  C2  |  O1  |
+X175    |      |      | NONE | F0   |      |  C2  |  O1  |
+X176    |      |      | NONE | F0   |      |  C2  |  O1  |
+X177    |      |      | NONE | F0   |      |  C2  |  O1  |
+X178    |      |      | NONE | F0   |      |  C2  |  O1  |
+X179    |      |      | NONE | F0   |      |  C2  |  O1  |
+X18     |      |      | NONE | F0   |      |  C2  |  O1  |
+X180    |      |      | NONE | F0   |      |  C2  |  O1  |
+X181    |      |      | NONE | F0   |      |  C2  |  O1  |
+X182    |      |      | NONE | F0   |      |  C2  |  O1  |
+X184    |      |      | NONE | F0   |      |  C2  |  O1  |
+X185    |      |      | NONE | F0   |      |  C2  |  O1  |
+X186    |      |      | NONE | F0   |      |  C2  |  O1  |
+X187    |      |      | NONE | F0   |      |  C2  |  O1  |
+X19     |      |      | NONE | F0   |      |  C2  |  O1  |
+X190    |      |      | NONE | F0   |      |  C2  |  O1  |
+X191    |      |      | NONE | F0   |      |  C2  |  O1  |
+X192    |      |      | NONE | F0   |      |  C2  |  O1  |
+X193    |      |      | NONE | F0   |      |  C2  |  O1  |
+X194    |      |      | NONE | F0   |      |  C2  |  O1  |
+X195    |      |      | NONE | F0   |      |  C2  |  O1  |
+X196    |      |      | NONE | F0   |      |  C2  |  O1  |
+X198    |      |      | NONE | F0   |      |  C2  |  O1  |
+X2      |      |      | NONE | F0   |      |  C2  |  O1  |
+X20     |      |      | NONE | F0   |      |  C2  |  O1  |
+X200    |      |      | NONE | F0   |      |  C2  |  O1  |
+X201    |      |      | NONE | F0   |      |  C2  |  O1  |
+X202    |      |      | NONE | F0   |      |  C2  |  O1  |
+X203    |      |      | NONE | F0   |      |  C2  |  O1  |
+X204    |      |      | NONE | F0   |      |  C2  |  O1  |
+X205    |      |      | NONE | F0   |      |  C2  |  O1  |
+X206    |      |      | NONE | F0   |      |  C2  |  O1  |
+X207    |      |      | NONE | F0   |      |  C2  |  O1  |
+X22     |      |      | NONE | F0   |      |  C2  |  O1  |
+X23     |      |      | NONE | F0   |      |  C2  |  O1  |
+X24     |      |      | NONE | F0   |      |  C2  |  O1  |
+X250    |      |      | NONE | F0   |      |  C2  |  O1  |
+X251    |      |      | NONE | F0   |      |  C2  |  O1  |
+X252    |      |      | NONE | F0   |      |  C2  |  O1  |
+X253    |      |      | NONE | F0   |      |  C2  |  O1  |
+X254    |      |      | NONE | F0   |      |  C2  |  O1  |
+X255    |      |      | NONE | F0   |      |  C2  |  O1  |
+X256    |      |      | NONE | F0   |      |  C2  |  O1  |
+X257    |      |      | NONE | F0   |      |  C2  |  O1  |
+X258    |      |      | NONE | F0   |      |  C2  |  O1  |
+X259    |      |      | NONE | F0   |      |  C2  |  O1  |
+X26     |      |      | NONE | F0   |      |  C2  |  O1  |
+X261    |      |      | NONE | F0   |      |  C2  |  O1  |
+X262    |      |      | NONE | F0   |      |  C2  |  O1  |
+X263    |      |      | NONE | F0   |      |  C2  |  O1  |
+X27     |      |      | NONE | F0   |      |  C2  |  O1  |
+X28     |      |      | NONE | F0   |      |  C2  |  O1  |
+X3      |      |      | NONE | F0   |      |  C2  |  O1  |
+X31     |      |      | NONE | F0   |      |  C2  |  O1  |
+X32     |      |      | NONE | F0   |      |  C2  |  O1  |
+X33     |      |      | NONE | F0   |      |  C2  |  O1  |
+X35     |      |      | NONE | F0   |      |  C2  |  O1  |
+X36     |      |      | NONE | F0   |      |  C2  |  O1  |
+X37     |      |      | NONE | F0   |      |  C2  |  O1  |
+X38     |      |      | NONE | F0   |      |  C2  |  O1  |
+X39     |      |      | NONE | F0   |      |  C2  |  O1  |
+X4      |      |      | NONE | F0   |      |  C2  |  O1  |
+X40     |      |      | NONE | F0   |      |  C2  |  O1  |
+X41     |      |      | NONE | F0   |      |  C2  |  O1  |
+X42     |      |      | NONE | F0   |      |  C2  |  O1  |
+X43     |      |      | NONE | F0   |      |  C2  |  O1  |
+X44     |      |      | NONE | F0   |      |  C2  |  O1  |
+X51     |      |      | NONE | F0   |      |  C2  |  O1  |
+X52     |      |      | NONE | F0   |      |  C2  |  O1  |
+X53     |      |      | NONE | F0   |      |  C2  |  O1  |
+X54     |      |      | NONE | F0   |      |  C2  |  O1  |
+X55     |      |      | NONE | F0   |      |  C2  |  O1  |
+X56     |      |      | NONE | F0   |      |  C2  |  O1  |
+X57     |      |      | NONE | F0   |      |  C2  |  O1  |
+X59     |      |      | NONE | F0   |      |  C2  |  O1  |
+X6      |      |      | NONE | F0   |      |  C2  |  O1  |
+X61     |      |      | NONE | F0   |      |  C2  |  O1  |
+X62     |      |      | NONE | F0   |      |  C2  |  O1  |
+X63     |      |      | NONE | F0   |      |  C2  |  O1  |
+X64     |      |      | NONE | F0   |      |  C2  |  O1  |
+X65     |      |      | NONE | F0   |      |  C2  |  O1  |
+X66     |      |      | NONE | F0   |      |  C2  |  O1  |
+X67     |      |      | NONE | F0   |      |  C2  |  O1  |
+X69     |      |      | NONE | F0   |      |  C2  |  O1  |
+X71     |      |      | NONE | F0   |      |  C2  |  O1  |
+X72     |      |      | NONE | F0   |      |  C2  |  O1  |
+X73     |      |      | NONE | F0   |      |  C2  |  O1  |
+X74     |      |      | NONE | F0   |      |  C2  |  O1  |
+X76     |      |      | NONE | F0   |      |  C2  |  O1  |
+X77     |      |      | NONE | F0   |      |  C2  |  O1  |
+X78     |      |      | NONE | F0   |      |  C2  |  O1  |
+X79     |      |      | NONE | F0   |      |  C2  |  O1  |
+X81     |      |      | NONE | F0   |      |  C2  |  O1  |
+X82     |      |      | NONE | F0   |      |  C2  |  O1  |
+X83     |      |      | NONE | F0   |      |  C2  |  O1  |
+X84     |      |      | NONE | F0   |      |  C2  |  O1  |
+X85     |      |      | NONE | F0   |      |  C2  |  O1  |
+X86     |      |      | NONE | F0   |      |  C2  |  O1  |
+X89     |      |      | NONE | F0   |      |  C2  |  O1  |
+X90     |      |      | NONE | F0   |      |  C2  |  O1  |
+X91     |      |      | NONE | F0   |      |  C2  |  O1  |
+X92     |      |      | NONE | F0   |      |  C2  |  O1  |
+X93     |      |      | NONE | F0   |      |  C2  |  O1  |
+X94     |      |      | NONE | F0   |      |  C2  |  O1  |
+X95     |      |      | NONE | F0   |      |  C2  |  O1  |
+X96     |      |      | NONE | F0   |      |  C2  |  O1  |
+X97     |      |      | NONE | F0   |      |  C2  |  O1  |
+X98     |      |      | NONE | F0   |      |  C2  |  O1  |
+XXX01   |      |      | NONE | F0   |      |  C2  |  O1  |
+XXX02   |      |      | NONE | F0   |      |  C2  |  O1  |
+XXX03   |      |      | NONE | F0   |      |  C2  |  O1  |
+Y1      |      |      | NONE | F0   |      |  C2  |  O1  |
+Y2      |      |      | NONE | F0   |      |  C2  |  O1  |
+Y3      |      |      | NONE | F0   |      |  C2  |  O1  |
+Z1      |      |      | NONE | F0   |      |  C2  |  O1  |
+Z10     |      |      | NONE | F0   |      |  C2  |  O1  |
+Z11     |      |      | NONE | F0   |      |  C2  |  O1  |
+Z3      |      |      | NONE | F0   |      |  C2  |  O1  |
+Z5      |      |      | NONE | F0   |      |  C2  |  O1  |
+Z6      |      |      | NONE | F0   |      |  C2  |  O1  |
+Z7      |      |      | NONE | F0   |      |  C2  |  O1  |
+Z8      |      |      | NONE | F0   |      |  C2  |  O1  |
+Z9      |      |      | NONE | F0   |      |  C2  |  O1  |
+------------------------------------------------
+
+/SID/
+-----BOVMA-----
+BOVMA101L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG664 GG665 GG689 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+
+BOVMA101R | ZGGG | LMH | 01R| D1 | O1 | GG661 GG664 GG665 GG689 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+
+BOVMA102L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG668 GG667 GG686 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+
+BOVMA102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG668 GG667 GG686 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+
+BOVMA119L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 GG573 GG562 GG563 GG585 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+
+BOVMA119R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 GG573 GG562 GG563 GG585 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+
+BOVMA120L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG564 GG565 GG581 GG586 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+
+BOVMA120R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG564 GG565 GG581 GG586 BOVMA
+ELIGIBLE_ROUTE | BOVMA
+-----LMN-----
+LMN101L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG664 GG665 GG689 LMN
+ELIGIBLE_ROUTE | LMN
+
+LMN101R | ZGGG | LMH | 01R| D1 | O1 | GG661 GG664 GG665 GG689 LMN
+ELIGIBLE_ROUTE | LMN
+
+LMN102L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG668 GG667 GG686 LMN
+ELIGIBLE_ROUTE | LMN
+
+LMN102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG668 GG667 GG686 LMN
+ELIGIBLE_ROUTE | LMN
+
+LMN119L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 GG573 GG562 GG563 GG585 LMN
+ELIGIBLE_ROUTE | LMN
+
+LMN119R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 GG573 GG562 GG563 GG585 LMN
+ELIGIBLE_ROUTE | LMN
+
+LMN120L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG564 GG565 GG581 GG586 LMN
+ELIGIBLE_ROUTE | LMN
+
+LMN120R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG564 GG565 GG581 GG586 LMN
+ELIGIBLE_ROUTE | LMN
+-----P270-----
+P270201L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG664 GG665 GG667 GG683 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270201R | ZGGG | LMH | 01R| D1 | O1 | GG661 GG664 GG665 GG667 GG683 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270202L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG668 GG667 GG683 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270202R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG668 GG667 GG683 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270219L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG562 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270219R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG562 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270220L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG564 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270220R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG564 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270319L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 GG573 GG562 SHL P270
+ELIGIBLE_ROUTE | P270
+
+P270319R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 GG573 GG562 SHL P270
+ELIGIBLE_ROUTE | P270
+-----SAREX-----
+SAREX101L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG662 GG663 GG666 GG669 POU SAREX
+ELIGIBLE_ROUTE | SAREX
+
+SAREX101R | ZGGG | LMH | 01R| D1 | O1 |GG661 GG662 GG663 GG666 GG669 POU SAREX
+ELIGIBLE_ROUTE | SAREX
+
+SAREX102L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG668 GG670 GG671 GG681 SAREX
+ELIGIBLE_ROUTE | SAREX
+
+SAREX102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG668 GG670 GG671 GG681 SAREX
+ELIGIBLE_ROUTE | SAREX
+
+SAREX119L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 POU SAREX
+ELIGIBLE_ROUTE | SAREX
+
+SAREX119R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 POU SAREX
+ELIGIBLE_ROUTE | SAREX
+
+SAREX220L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG566 GG577 GG582 GG579 SAREX
+ELIGIBLE_ROUTE | SAREX
+
+SAREX220R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG566 GG577 GG582 GG579 SAREX
+ELIGIBLE_ROUTE | SAREX
+-----VIBOS-----
+VIBOS101L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG662 GG663 GG666 GG669 POU VIBOS
+ELIGIBLE_ROUTE | VIBOS
+
+VIBOS101R | ZGGG | LMH | 01R| D1 | O1 | GG661 GG662 GG663 GG666 GG669 POU VIBOS
+ELIGIBLE_ROUTE | VIBOS
+
+VIBOS102L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG668 GG670 GG671 GG681 GG680 VIBOS
+ELIGIBLE_ROUTE | VIBOS
+
+VIBOS102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG668 GG670 GG671 GG681 GG680 VIBOS
+ELIGIBLE_ROUTE | VIBOS
+
+VIBOS119L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 POU VIBOS
+ELIGIBLE_ROUTE | VIBOS
+
+VIBOS119R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 POU VIBOS
+ELIGIBLE_ROUTE | VIBOS
+
+VIBOS220L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG566 GG577 GG582 GG579 GG580 VIBOS
+ELIGIBLE_ROUTE | VIBOS
+
+VIBOS220R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG566 GG577 GG582 GG579 GG580 VIBOS
+ELIGIBLE_ROUTE | VIBOS
+----P50-----
+P50101L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG662 GG663 P50
+ELIGIBLE_ROUTE | P50
+
+P50101R | ZGGG | LMH | 01R| D1 | O1 | GG661 GG662 GG663 P50
+ELIGIBLE_ROUTE | P50
+
+P50102L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG668 GG670 GG671 GG681 GG680 P50
+ELIGIBLE_ROUTE | P50
+
+P50102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG668 GG670 GG671 GG681 GG680 P50
+ELIGIBLE_ROUTE | P50
+
+P50119L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 POU P50
+ELIGIBLE_ROUTE | P50
+
+P50119R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 POU P50
+ELIGIBLE_ROUTE | P50
+
+P50120L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG566 GG577 GG582 GG579 P50
+ELIGIBLE_ROUTE | P50
+
+P50120R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG566 GG577 GG582 GG579 P50
+ELIGIBLE_ROUTE | P50
+------P118------
+P118101L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG662 GG672 P118
+ELIGIBLE_ROUTE | P118
+
+P118101R | ZGGG | LMH | 01R| D1 | O1 | GG661 GG662 GG672 P118
+ELIGIBLE_ROUTE | P118
+
+P118102L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG675 GG678 GG685 P118
+ELIGIBLE_ROUTE | P118
+
+P118102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG675 GG678 GG685 P118
+ELIGIBLE_ROUTE | P118
+
+P118119L | ZGGG | LMH | 19L| D1 | O1 | TURN4 TURN5 TURN3 GG575 P118
+ELIGIBLE_ROUTE | P118
+
+P118119R | ZGGG | LMH | 19R| D1 | O1 | TURN1 TURN2 TURN3 GG575 P118
+ELIGIBLE_ROUTE | P118
+
+P118120L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG564 GG565 GG569 GG571 P118
+ELIGIBLE_ROUTE | P118
+
+P118120R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG564 GG565 GG569 GG571 P118
+ELIGIBLE_ROUTE | P118
+-----AGVIL-----
+AGVIL101L | ZGGG | LMH | 01L| D1 | O1 |  GG688 GG662 GG672 GG684 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL101R | ZGGG | LMH | 01R| D1 | O1 |  GG661 GG662 GG672 GG684 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL102L | ZGGG | LMH | 02L| D1 | O1 |  GG677 GG675 GG678 GG685 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG675 GG678 GG685 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL119L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 POU TURN6 TURN7 AGVOS GG574 GG583 GG575 GG578 GG570 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL119R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 POU TURN6 TURN7 AGVOS GG574 GG583 GG575 GG578 GG570 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL120L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG564 GG565 GG569 GG571 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL120R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG564 GG565 GG569 GG571 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL219L | ZGGG | LMH | 19L| D1 | O1 | TURN4 TURN5 TURN3 GG575 GG578 GG570 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+
+AGVIL219R | ZGGG | LMH | 19R| D1 | O1 | TURN1 TURN2 TURN3 GG575 GG578 GG570 AGVIL
+ELIGIBLE_ROUTE | AGVIL
+------------MIKIP----------
+MIKIP101L | ZGGG | LMH | 01L| D1 | O1 | GG688 GG664 GG673 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP101R | ZGGG | LMH | 01R| D1 | O1 | GG661 GG664 GG673 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP102L | ZGGG | LMH | 02L| D1 | O1 | GG677 GG675 GG678 GG679 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP102R | ZGGG | LMH | 02R| D1 | O1 | GG677 GG675 GG678 GG679 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP119L | ZGGG | LMH | 19L| D1 | O1 | GG561 GG572 POU TURN6 TURN7 AGVOS GG574 GG583 GG575 GG578 GG570 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP119R | ZGGG | LMH | 19R| D1 | O1 | GG561 GG572 POU TURN6 TURN7 AGVOS GG574 GG583 GG575 GG578 GG570 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP120L | ZGGG | LMH | 20L| D1 | O1 | GG576 GG564 GG565 GG569 GG571 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP120R | ZGGG | LMH | 20R| D1 | O1 | GG576 GG564 GG565 GG569 GG571 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP219L | ZGGG | LMH | 19L| D1 | O1 | TURN4 TURN5 TURN3 GG575 GG578 GG570 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+MIKIP219R | ZGGG | LMH | 19R| D1 | O1 | TURN1 TURN2 TURN3 GG575 GG578 GG570 MIKIP
+ELIGIBLE_ROUTE | MIKIP
+
+/STAR/
+----------------------------------------------------------------
+-----OLPAB-----
+OLPAB101L|ZGGG | LMH | 01L| D1 | O1 | OLPAB GG639 GG638 GG626 GG625 GG624 GG623 GG522 GG621 GG612 GG405 GG403
+ELIGIBLE_ROUTE | OLPAB
+
+OLPAB101R|ZGGG | LMH | 01R| D1 | O1 | OLPAB GG639 GG638 GG626 GG625 GG624 GG623 GG522 GG621 GG612 GG205 GG203
+ELIGIBLE_ROUTE | OLPAB
+
+OLPAB102L|ZGGG | LMH | 02L| D1 | O1 | OLPAB GG639 GG638 GG626 GG620 GG619 GG618 GG617 GG616 GG615 GG614 GG611 GG107 GG105 GG103
+ELIGIBLE_ROUTE | OLPAB
+
+OLPAB102R|ZGGG | LMH | 02R| D1 | O1 | OLPAB GG639 GG638 GG626 GG620 GG619 GG618 GG617 GG616 GG615 GG614 GG611 GG307 GG305 GG303
+ELIGIBLE_ROUTE | OLPAB
+
+OLPAB119L|ZGGG | LMH | 19L| D1 | O1 | OLPAB GG528 GG524 GG513 GG208 GG206 GG204
+ELIGIBLE_ROUTE | OLPAB
+
+OLPAB119R|ZGGG | LMH | 19R| D1 | O1 | OLPAB GG528 GG524 GG513 GG408 GG406 GG404
+ELIGIBLE_ROUTE | OLPAB
+
+OLPAB120L|ZGGG | LMH | 20L| D1 | O1 | OLPAB GG529 GG527 GG523 GG511 GG306 GG304
+ELIGIBLE_ROUTE | OLPAB
+
+OLPAB120R|ZGGG | LMH | 20R| D1 | O1 | OLPAB GG529 GG527 GG523 GG511 GG106 GG104
+ELIGIBLE_ROUTE | OLPAB
+-----IKAVO-----
+IKAVO101L|ZGGG | LMH | 01L| D1 | O1 | IKAVO GG636 LUPVU GG635 TAN GG624 GG623 GG522 GG621 GG612 GG405 GG403
+ELIGIBLE_ROUTE | IKAVO
+
+IKAVO101R|ZGGG | LMH | 01R| D1 | O1 | IKAVO GG636 LUPVU GG635 TAN GG624 GG623 GG522 GG621 GG612 GG205 GG203
+ELIGIBLE_ROUTE | IKAVO
+
+IKAVO102L|ZGGG | LMH | 02L| D1 | O1 | IKAVO GG636 LUPVU GG635 TAN GG624 GG623 GG617 GG616 GG615 GG614 GG611 GG107 GG105 GG103
+ELIGIBLE_ROUTE | IKAVO
+
+IKAVO102R|ZGGG | LMH | 02R| D1 | O1 | IKAVO GG636 LUPVU GG635 TAN GG624 GG623 GG617 GG616 GG615 GG614 GG611 GG307 GG305 GG303
+ELIGIBLE_ROUTE | IKAVO
+
+IKAVO119L|ZGGG | LMH | 19L| D1 | O1 | IKAVO GG517 GG516 GG512 GG208 GG206 GG204
+ELIGIBLE_ROUTE | IKAVO
+
+IKAVO119R|ZGGG | LMH | 19R| D1 | O1 | IKAVO GG517 GG516 GG512 GG408 GG406 GG404
+ELIGIBLE_ROUTE | IKAVO
+
+IKAVO120L|ZGGG | LMH | 20L| D1 | O1 | IKAVO GG517 GG516 GG512 GG308 GG306 GG304
+ELIGIBLE_ROUTE | IKAVO
+
+IKAVO120R|ZGGG | LMH | 20R| D1 | O1 | IKAVO GG517 GG516 GG512 GG108 GG106 GG104
+ELIGIBLE_ROUTE | IKAVO
+-----ENVIP-----
+ENVIP101L|ZGGG | LMH | 01L| D1 | O1 | ENVIP ATAGA GG637 GG626 GG625 GG624 GG623 GG522 GG621 GG612 GG405 GG403
+ELIGIBLE_ROUTE | ENVIP
+
+ENVIP101R|ZGGG | LMH | 01R| D1 | O1 | ENVIP ATAGA GG637 GG626 GG625 GG624 GG623 GG522 GG621 GG612 GG205 GG203
+ELIGIBLE_ROUTE | ENVIP
+
+ENVIP102L|ZGGG | LMH | 02L| D1 | O1 | ENVIP ATAGA GG637 GG626 GG620 GG619 GG618 GG617 GG616 GG615 GG614 GG611 GG107 GG105 GG103
+ELIGIBLE_ROUTE | ENVIP
+
+ENVIP102R|ZGGG | LMH | 02R| D1 | O1 | ENVIP ATAGA GG637 GG626 GG620 GG619 GG618 GG617 GG616 GG615 GG614 GG611 GG307 GG305 GG303
+ELIGIBLE_ROUTE | ENVIP
+
+ENVIP119L|ZGGG | LMH | 19L| D1 | O1 | ENVIP GG525 GG524 GG513 GG208 GG206 GG204
+ELIGIBLE_ROUTE | ENVIP
+
+ENVIP119R|ZGGG | LMH | 19R| D1 | O1 | ENVIP GG525 GG524 GG513 GG408 GG406 GG404
+ELIGIBLE_ROUTE | ENVIP
+
+ENVIP120L|ZGGG | LMH | 20L| D1 | O1 | ENVIP GG526 GG523 GG511 GG306 GG304
+ELIGIBLE_ROUTE | ENVIP
+
+ENVIP120R|ZGGG | LMH | 20R| D1 | O1 | ENVIP GG526 GG523 GG511 GG106 GG104
+ELIGIBLE_ROUTE | ENVIP
+-----P270-----
+P270101L |ZGGG | LMH | 01L| D1 | O1 | P270 GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG407 GG405 GG403
+ELIGIBLE_ROUTE | P270
+
+P270101R |ZGGG | LMH | 01R| D1 | O1 | P270 GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG207 GG205 GG203
+ELIGIBLE_ROUTE | P270
+
+P270102L |ZGGG | LMH | 02L| D1 | O1 | P270 GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG107 GG105 GG103
+ELIGIBLE_ROUTE | P270
+
+P270102R |ZGGG | LMH | 02R| D1 | O1 | P270 GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG307 GG305 GG303
+ELIGIBLE_ROUTE | P270
+
+P270119L |ZGGG | LMH | 19L| D1 | O1 | P270 GG533 GG532 GG531 GG527 GG523 GG511 GG206 GG204
+ELIGIBLE_ROUTE | P270
+
+P270119R |ZGGG | LMH | 19R| D1 | O1 | P270 GG533 GG532 GG531 GG527 GG523 GG511 GG406 GG404
+ELIGIBLE_ROUTE | P270
+
+P270120L |ZGGG | LMH | 20L| D1 | O1 | P270 GG533 GG532 GG531 GG527 GG523 GG511 GG306 GG304
+ELIGIBLE_ROUTE | P270
+
+P270120R |ZGGG | LMH | 20R| D1 | O1 | P270 GG533 GG532 GG531 GG527 GG523 GG511 GG106 GG104
+ELIGIBLE_ROUTE | P270
+-----IDUMA-----
+IDUMA101L|ZGGG | LMH | 01L| D1 | O1 | IDUMA GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG407 GG405 GG403
+ELIGIBLE_ROUTE | IDUMA
+
+IDUMA101R|ZGGG | LMH | 01R| D1 | O1 | IDUMA GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG207 GG205 GG203
+ELIGIBLE_ROUTE | IDUMA
+
+IDUMA102L|ZGGG | LMH | 02L| D1 | O1 | IDUMA GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG107 GG105 GG103
+ELIGIBLE_ROUTE | IDUMA
+
+IDUMA102R|ZGGG | LMH | 02R| D1 | O1 | IDUMA GG533 GG633 GG632 GG631 GG616 GG615 GG614 GG611 GG307 GG305 GG303
+ELIGIBLE_ROUTE | IDUMA
+
+IDUMA119L|ZGGG | LMH | 19L| D1 | O1 | IDUMA GG533 GG532 GG531 GG527 GG523 GG511 GG206 GG204
+ELIGIBLE_ROUTE | IDUMA
+
+IDUMA119R|ZGGG | LMH | 19R| D1 | O1 | IDUMA GG533 GG532 GG531 GG527 GG523 GG511 GG406 GG404
+ELIGIBLE_ROUTE | IDUMA
+
+IDUMA120L|ZGGG | LMH | 20L| D1 | O1 | IDUMA GG533 GG532 GG531 GG527 GG523 GG511 GG306 GG304
+ELIGIBLE_ROUTE | IDUMA
+
+IDUMA120R|ZGGG | LMH | 20R| D1 | O1 | IDUMA GG533 GG532 GG531 GG527 GG523 GG511 GG106 GG104
+ELIGIBLE_ROUTE | IDUMA
+-----GYA-----
+GYA101L  |ZGGG | LMH | 01L| D1 | O1 | GYA GG534 AGVOS GG612 GG405 GG403
+ELIGIBLE_ROUTE | GYA
+
+GYA101R  |ZGGG | LMH | 01R| D1 | O1 | GYA GG534 AGVOS GG612 GG205 GG203
+ELIGIBLE_ROUTE | GYA
+
+GYA102L  |ZGGG | LMH | 02L| D1 | O1 | GYA GG534 AGVOS GG612 GG105 GG103
+ELIGIBLE_ROUTE | GYA
+
+GYA102R  |ZGGG | LMH | 02R| D1 | O1 | GYA GG534 AGVOS GG612 GG305 GG303
+ELIGIBLE_ROUTE | GYA
+
+GYA119L  |ZGGG | LMH | 19L| D1 | O1 | GYA GG534 AGVOS GG518 GG522 GG521 TAN GG512 GG208 GG206 GG204
+ELIGIBLE_ROUTE | GYA
+
+GYA119R  |ZGGG | LMH | 19R| D1 | O1 | GYA GG534 AGVOS GG518 GG522 GG521 TAN GG512 GG408 GG406 GG404
+ELIGIBLE_ROUTE | GYA
+
+GYA120L  |ZGGG | LMH | 20L| D1 | O1 | GYA GG534 AGVOS GG518 GG522 GG515 GG514 GG511 GG306 GG304
+ELIGIBLE_ROUTE | GYA
+
+GYA120R  |ZGGG | LMH | 20R| D1 | O1 | GYA GG534 AGVOS GG518 GG522 GG515 GG514 GG511 GG106 GG104
+ELIGIBLE_ROUTE | GYA
+
+GYA201L  |ZGGG | LMH | 01L| D1 | O1 | GYA GG634 GG613 GG407 GG405 GG403
+ELIGIBLE_ROUTE | GYA
+
+GYA201R  |ZGGG | LMH | 01R| D1 | O1 | GYA GG634 GG613 GG207 GG205 GG203
+ELIGIBLE_ROUTE | GYA
+
+GYA202L  |ZGGG | LMH | 02L| D1 | O1 | GYA GG634 GG613 GG107 GG105 GG103
+ELIGIBLE_ROUTE | GYA
+
+GYA202R  |ZGGG | LMH | 02R| D1 | O1 | GYA GG634 GG613 GG307 GG305 GG303
+ELIGIBLE_ROUTE | GYA
+--
+
+/SPR/
+--
+--
+/STANDARD_ROUTES/
+--NAME | SENSE | LOWER LEVEL | UPPER LEVEL| ROUTE POINTS
+--
+--
+/PREFERENTIAL_ROUTES/
+--
+--BPN | ADES | ROUTE PTS
+--
+BEMAG | ZGGG | BEMAG NNX WYN CON
+PLT   | ZGGG | PLT MABAG CON
+BIPOP | ZGGG | BIPOP GYA
+MUBEL | ZGGG | MUBEL GYA
+P101  | ZGGG | P101 GYA
+OSIKA | ZGGG | OSIKA GYA
+P154  | ZGGG | P154 P270 SHL
+SUMDO | ZGGG | SUMDO VIPAP
+DABER | ZGGG | DABER QU XEBUL MABAG CON
+BEKOL | ZGGG | BEKOL IDUMA
+
+/STANDARD_ROUTE_SEGMENTS/
+--
+/CONDITIONAL_ROUTES/
+--
+/COND_ALT_ROUTES/
+--
+--
+/PBN_PRIORITY/
+RULE_1 | D1 D2 D3 D4 C1 C2 C3 C4 | N |
+RULE_2 | D1 D2 D3 D4 | Y |
+--
+RULE_3  | O1 O2 O3 O4 | N |
+RULE_4  | C1 C2 C3 C4 | N |
+--
+

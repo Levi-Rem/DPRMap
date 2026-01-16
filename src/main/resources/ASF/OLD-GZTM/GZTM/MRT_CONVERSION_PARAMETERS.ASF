@@ -1,0 +1,125 @@
+--
+--           FILE :  MRT_CONVERSION_PARAMETERS.ASF
+-- 
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--
+--
+--
+CARMAG_RO_THRESHOLD 			| 0.7
+CARMAG_THETA_THRESHOLD 			| 90
+CARMAG_MAX_RADAR_COMPUT_PER_REFRESH 	| 500
+CARMAG_RO_CONVERG_COEF 			| 0.0005
+CARMAG_THETA_CONVERG_COEF 		| 0.0005
+CARMAG_DELTA_RO_THRESHOLD 		| 3.0
+CARMAG_DELTA_THETA_THRESHOLD 		| 3.0
+CARMAG_ASSOC_FACTOR_THRESHOLD 		| 0.5
+CARMAG_BIAS_STORING_PERIOD 		| 300
+-- accepted delay for north signal message reception (percentage)
+RDF_HNDL_NORTH_DELAY            | 0.125
+-- nb of consecutive missed north messages to declare the radar
+-- line in failure
+RDF_HNDL_NORTH_MISSES           | 3
+-- nb of scans while radar tracker switch processing is active
+RDF_HNDL_NBSCAN                 | 3
+-- nb of consecutive misses for a site monitor track before declaring a radar failure
+RDF_HNDL_NB_MISSES              | 5
+-- nb of consecutive scans for an out site monitor track before declaring a radar failure
+RDF_SMON_NBOUT                  | 4
+-- Rho value used to define the size of the large window of the site  monitoring processing (Nm)
+RDF_RO_LW                       | 2.0
+-- Theta value used to define the size of the large window of the site  monitoring processing (degree)
+RDF_THETA_LW                    | 5.0
+-- Rho value used to define the size of the small window of the site  monitoring processing (Nm)
+RDF_RO_SW                       | 0.3
+-- Theta value used to define the size of the small window of the site  monitoring processing (degree)
+RDF_THETA_SW                    | 0.3
+-- manoeuver factor used in weighting barycentre computation of a local track
+RDF_WEIGHT_BAR_MANOEUVER        | 0.5
+-- detection misses factor used in weighting barycentre computation of a local track
+RDF_WEIGHT_BAR_DETECTION        | 20.0
+-- factor applied to nb of detection misses for a local track
+-- resulting value is then removed to credibility factor
+RDF_MRT_POS_MISSES_FACTOR       | 0.0
+-- value added to credibility factor if position criterion is satisfied
+RDF_MRT_POS_CREDIBILITY_FACTOR  | 30.0
+-- bonus added to credibility factor if local tracks in the small window
+RDF_MRT_POS_BONUS_FACTOR        | 20.0
+-- minimum level of credibility factor to allow local to system track association
+RDF_MRT_CREDIBILITY_LEVEL       | 40.0
+-- threshold of credibility factor to association checking
+RDF_MRT_CREDIBILITY_THRESHOLD   | 20.0
+-- minimum speed difference with stabilization speed of the radar before declaring radar in evolution
+-- (in tenth degree / second)
+RDF_HNDL_ROTATION_SPD_THRESHOLD | 100.0
+-- End of overload threshold for system tracks
+RDF_MRT_END_OVERLOAD            | 380
+-- System tracks pre-overload threshold
+RDF_MRT_PRE_OVERLOAD            | 360
+-- End of preoverload threshold
+RDF_MRT_END_PRE_OVERLOAD        | 340
+-- Number of subperiods in a total MRT period
+RDF_MRT_SUBPERIOD_NUMBER        | 16
+-- minimum value of MTQ used in choice of Local tracks
+OFL_MTQ_THRESHOLD               | 15
+-- base speed value to apply speed criterion (Nm in 10s)
+RDF_MRT_MINIMUM_SPEED           | 0.075
+-- accepted difference (percentage) between local and system track
+-- speed components to satisfiy speed criterion
+RDF_MRT_SPEED_DELTA             | 0.85
+-- Minimum value of MTQ used in comp. of system track SSR data
+OFL_MTQ_THRESHOLD_SSR           | 12
+-- Accepted age of tracked altitude used for slant range correction and RAC's (seconds)
+RDF_AGED_ALTITUDE               | 40
+-- Lower speed threshold used for default altitude in slant range correction  (kt)
+RDF_MRT_LOW_SPEED               | 40.0
+-- Upper speed threshold used for default altitude in slant range correction  (kt)
+RDF_MRT_UPPER_SPEED             | 600.0
+-- upper altitude (default) used in slant range correction (100 feet)
+RDF_MRT_UPPER_ALTITUDE          | 300.0
+-- Threshold used in altitude criterion (feet)
+RDF_MRT_ALTITUDE_THRESHOLD      | 2000
+-- value added to credibility factor if speed criterion is satisfied
+RDF_MRT_SPEED_CREDIBILITY_FACTOR        | 10.0
+-- nb of consecutive update cycles before deassociation of a local track from a system track
+RDF_MRT_DEASSOCIATION_UPDATE_NUMBER     | 3
+-- value removed to credibility factor if speed criterion not satisfied
+RDF_MRT_NEGATIVE_SPEED_CREDIBILITY_FACTOR       | -20.0
+-- value added to credibility factor if altitude criterion is satisfied
+RDF_MRT_ALTITUDE_CREDIBILITY_FACTOR             | 10.0
+-- value removed to credibility factor if altitude criterion is not satisfied
+RDF_MRT_NEGATIVE_ALTITUDE_CREDIBILITY_FACTOR    | -100.0
+
+-- Offset value to be added to credibility factor in SSR criterion
+-- processing, depends on the SSR code type of the two compared tracks
+-- and the matching or mismatching of these two codes
+--                              |   DISCRETE    | NON-DISCRETE |   SPECIAL      |
+--                              -------------------------------------------------
+--                              | MATCH |  MIS  | MATCH |  MIS  | MATCH |  MIS  |
+---------------------------------------------------------------------------------
+DISCRETE_CREDIBILITY_FACTOR     |  40.0 |-100.0 |-100.0 |-100.0 |  0.0  |   0.0 |
+NON_DISCRETE_CREDIBILITY_FACTOR |-100.0 |-100.0 |  20.0 |-100.0 |  0.0  |   0.0 |
+SPECIAL_CREDIBILITY_FACTOR      |   0.0 |   0.0 |   0.0 |   0.0 | 40.0  |-100.0 |
+
+
+-- range of local track from the radar, used for dimension of associated window
+RDF_MRT_RADAR_DISTANCE  | 256
+
+-- Window size for local track association processing (unit is 1NM)
+
+--                                      |             TRACKS                |
+--                                      -------------------------------------
+--                                      |   D0   |   D1   |   D2   |   D3   |
+-----------------------------------------------------------------------------
+RDF_MRT_POSITION_WINDOW_SIZE_PRM        | 1.0    | 1.54   | 2.18   | 4.26   |
+RDF_MRT_POSITION_WINDOW_SIZE_SEC        | 1.0    | 1.54   | 2.18   | 4.26   |
+RDF_MRT_POSITION_WINDOW_SIZE_ASS        | 1.0    | 1.54   | 2.18   | 4.26   |
+

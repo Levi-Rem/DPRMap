@@ -1,0 +1,49 @@
+-- 
+--           FILE :  SECTORIZATION.ASF
+--
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--
+--
+--
+/OPS/ 
+--
+--
+-- 
+----------------------------------------------------------------------------
+-- Name  | STP | Logical Pos  | Logical Pos  | Logical Pos  | Logical Pos |
+----------------------------------------------------------------------------
+--
+-- TMA
+--
+  AP01	 | 1   | HE09	  | HE09     | HE09  | HE09  | 
+  AP02	 | 1   | HE08	  | HE08     | HE08  | HE08  | 
+  AP03   | 1   | HE06	  | HE06     | HE06  | HE06  |
+  AP04	 | 1   | HE15	  | HE15     | HE15  | HE15  |
+  AP05	 | 1   | HE14	  | HE14     | HE14  | HE14  |
+  AP06   | 1   | HE10	  | HE10     | HE10  | HE10  |
+  AP07   | 1   | HE07	  | HE07     | HE07  | HE07  |
+  AM	 | 1   | HE15	  | HE15     | HE15  | HE15  |
+  AP08   | 1   | HE14 	  | HE14     | HE14  | HE14  |
+  GYATM  | 1   | AMAN1	  | AMAN1    | AMAN1 | AMAN1 |
+  AMAN   | 1   | AMAN1	  | AMAN1    | AMAN1 | AMAN1 |
+
+--
+-- Baiyun Tower
+--
+  CTR1   | 3   | BYC1	  | BYC1     | BYC1   | BYC1  |
+  CTR2   | 3   | BYC2	  | BYC2     | BYC2   | BYC2  |
+  CTR3   | 3   | BYC3	  | BYC3     | BYC3   | BYC3  |
+  CTR4   | 3   | BYC4     | BYC4     | BYC4   | BYC4  | 
+
+  AST1   | 3   | BYA1 	  | BYA1     | BYA1   | BYA1  |
+  AST2   | 3   | BYA2 	  | BYA2     | BYA2   | BYA2  |
+  AST3   | 3   | BYA3 	  | BYA3     | BYA3   | BYA3  |
+  AST4   | 3   | BYA4     | BYA4     | BYA4   | BYA4  |  
+
+
+/SECTORS_IN_FDECM_AREA/
+ZGAC | AC1 AC2 AC3 AC4 AC5 AC6 AC7 AC9 AC23 AC24 AC33 AC45 AC4T

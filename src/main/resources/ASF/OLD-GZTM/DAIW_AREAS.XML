@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE daiw_ads_area SYSTEM "daiw_ads_area.dtd">
+<daiw_ads_area>
+
+  <points>
+    <point id="ZGD155_1">
+      <latitude>19.999996</latitude>
+      <longitude>111.000000</longitude>
+    </point>
+    <point id="ZGD155_2">
+      <latitude>19.333330</latitude>
+      <longitude>111.000000</longitude>
+    </point>
+    <point id="ZGD155_3">
+      <latitude>19.333616</latitude>
+      <longitude>111.881325</longitude>
+    </point>
+    <point id="ZGD155_4">
+      <latitude>19.333330</latitude>
+      <longitude>112.000000</longitude>
+    </point>
+    <point id="ZGD155_5">
+      <latitude>19.999996</latitude>
+      <longitude>112.000000</longitude>
+    </point>
+    <point id="ZGD155_6">
+      <latitude>20.000282</latitude>
+      <longitude>111.884956</longitude>
+    </point>
+    <point id="ZGD156_1">
+      <latitude>18.999996</latitude>
+      <longitude>110.666664</longitude>
+    </point>
+    <point id="ZGD156_2">
+      <latitude>18.809671</latitude>
+      <longitude>110.551903</longitude>
+    </point>
+    <point id="ZGD156_3">
+      <latitude>18.083330</latitude>
+      <longitude>110.116669</longitude>
+    </point>
+    <point id="ZGD156_4">
+      <latitude>17.699997</latitude>
+      <longitude>110.800003</longitude>
+    </point>
+    <point id="ZGD156_5">
+      <latitude>18.434471</latitude>
+      <longitude>111.219154</longitude>
+    </point>
+    <point id="ZGD156_6">
+      <latitude>18.633329</latitude>
+      <longitude>111.333336</longitude>
+    </point>
+    <point id="ZGD157_1">
+      <latitude>18.166662</latitude>
+      <longitude>109.333336</longitude>
+    </point>
+    <point id="ZGD157_2">
+      <latitude>17.499996</latitude>
+      <longitude>109.333336</longitude>
+    </point>
+    <point id="ZGD157_3">
+      <latitude>17.499996</latitude>
+      <longitude>110.000000</longitude>
+    </point>
+    <point id="ZGD157_4">
+      <latitude>18.166662</latitude>
+      <longitude>110.000000</longitude>
+    </point>
+    <point id="ZGD158_1">
+      <latitude>17.416662</latitude>
+      <longitude>111.000000</longitude>
+    </point>
+    <point id="ZGD158_2">
+      <latitude>16.999996</latitude>
+      <longitude>111.000000</longitude>
+    </point>
+    <point id="ZGD158_3">
+      <latitude>16.999996</latitude>
+      <longitude>111.666664</longitude>
+    </point>
+    <point id="ZGD158_4">
+      <latitude>17.416662</latitude>
+      <longitude>111.666664</longitude>
+    </point>
+  </points>
+
+  <volumes>
+    <volume fpcf_elig="TRUE" limit_points="ZGD155_6 ZGD155_5 ZGD155_4 ZGD155_3 ZGD155_2 ZGD155_1" max_feet="49212.597656" min_feet="19685.039062" name="ZGD155"/>
+    <volume fpcf_elig="TRUE" limit_points="ZGD156_6 ZGD156_5 ZGD156_4 ZGD156_3 ZGD156_2 ZGD156_1" max_feet="65616.796875" min_feet="3280.839844" name="ZGD156"/>
+    <volume fpcf_elig="TRUE" limit_points="ZGD157_4 ZGD157_3 ZGD157_2 ZGD157_1" max_feet="49212.597656" min_feet="19685.039062" name="ZGD157"/>
+    <volume fpcf_elig="TRUE" limit_points="ZGD158_4 ZGD158_3 ZGD158_2 ZGD158_1" max_feet="59055.117188" min_feet="13123.359375" name="ZGD158"/>
+  </volumes>
+
+  <attributes>
+    <attribute activation_period_1="22: 22* 4 : 0 " activation_period_2="6 : 6 * 12: 0 " activation_period_3="0 : 0 * 0 : 0 " activation_period_4="0 : 0 * 0 : 0 " activation_period_5="0 : 0 * 0 : 0 " activation_period_6="0 : 0 * 0 : 0 " activation_period_7="0 : 0 * 0 : 0 " activation_period_8="0 : 0 * 0 : 0 " dash="DASH_DOT" grt_circle_precision="GC_PREC_HIGH" line="THIN" name="ZGD155" pattern="0" surface="FALSE"/>
+    <attribute activation_period_1="22: 22* 14: 0 " activation_period_2="0 : 0 * 0 : 0 " activation_period_3="0 : 0 * 0 : 0 " activation_period_4="0 : 0 * 0 : 0 " activation_period_5="0 : 0 * 0 : 0 " activation_period_6="0 : 0 * 0 : 0 " activation_period_7="0 : 0 * 0 : 0 " activation_period_8="0 : 0 * 0 : 0 " dash="DASH_DOT" grt_circle_precision="GC_PREC_HIGH" line="THIN" name="ZGD156" pattern="0" surface="FALSE"/>
+    <attribute activation_period_1="2 : 2 * 13: 0 " activation_period_2="0 : 0 * 0 : 0 " activation_period_3="0 : 0 * 0 : 0 " activation_period_4="0 : 0 * 0 : 0 " activation_period_5="0 : 0 * 0 : 0 " activation_period_6="0 : 0 * 0 : 0 " activation_period_7="0 : 0 * 0 : 0 " activation_period_8="0 : 0 * 0 : 0 " dash="DASH_DOT" grt_circle_precision="GC_PREC_HIGH" line="THIN" name="ZGD157" pattern="0" surface="FALSE"/>
+    <attribute activation_period_1="23: 23* 0 : 30" activation_period_2="14: 14* 17: 0 " activation_period_3="0 : 0 * 0 : 0 " activation_period_4="0 : 0 * 0 : 0 " activation_period_5="0 : 0 * 0 : 0 " activation_period_6="0 : 0 * 0 : 0 " activation_period_7="0 : 0 * 0 : 0 " activation_period_8="0 : 0 * 0 : 0 " dash="DASH_DOT" grt_circle_precision="GC_PREC_HIGH" line="THIN" name="ZGD158" pattern="0" surface="TRUE"/>
+  </attributes>
+
+</daiw_ads_area>

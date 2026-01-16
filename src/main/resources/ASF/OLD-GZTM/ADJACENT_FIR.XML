@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE adjacent_fir SYSTEM "adjacent_fir.dtd">
+<adjacent_fir>
+
+  <local_fir>
+    <fir name="VTMA"/>
+  </local_fir>
+
+  <adjacent_firs>
+    <adjacent_fir name="ZGAC"/>
+  </adjacent_firs>
+
+</adjacent_fir>

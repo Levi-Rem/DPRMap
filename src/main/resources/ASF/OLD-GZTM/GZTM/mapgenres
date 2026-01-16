@@ -1,0 +1,1975 @@
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name CC301
+SortElementLists===
+SelectProject EXTERNAL name FS2V
+SortElementLists===
+SelectProject EXTERNAL name NB
+SortElementLists===
+SelectProject EXTERNAL name HY
+SortElementLists===
+SelectProject EXTERNAL name X63N
+SortElementLists===
+SelectProject EXTERNAL name X63N10
+SortElementLists===
+SelectProject EXTERNAL name X63N20
+SortElementLists===
+SelectProject EXTERNAL name X63N30
+SortElementLists===
+SelectProject EXTERNAL name FS30KM
+SortElementLists===
+SelectProject EXTERNAL name FS35KM
+SortElementLists===
+SelectProject EXTERNAL name FS35NO
+SortElementLists===
+SelectProject EXTERNAL name FSE18
+SortElementLists===
+SelectProject EXTERNAL name SSFS12
+SortElementLists===
+SelectProject EXTERNAL name SSFS16
+SortElementLists===
+SelectProject EXTERNAL name JUNMIN
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RDP_DAIW
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RDP_DAIW/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RDP_DAIW
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RDP_DAIW/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RDP_DAIW
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RDP_DAIW/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name MSAW_INH
+SortElementLists===
+SelectProject EXTERNAL name MSAW_OB
+SortElementLists===
+SelectProject EXTERNAL name MSAW_TER
+SortElementLists===
+SelectProject EXTERNAL name MSAW_PLG
+SortElementLists===
+SortElementLists===
+SortElementLists===
+ResolveLinkedCoords from SelectProject
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.250000
+arc_ring_stereo_calc start_radius 3.250000 end_radius 3.250000
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.353673 end_angle 0.353673 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823700 end_angle 359.823700 radius: 3.250015
+arc_ring_stereo_calc start_radius 3.250015 end_radius 3.250015
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.646332 end_angle 359.646332 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.771729 end_angle 359.771729 radius: 5.020040
+arc_ring_stereo_calc start_radius 5.020040 end_radius 5.020040
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823700 end_angle 359.823700 radius: 3.250015
+arc_ring_stereo_calc start_radius 3.250015 end_radius 3.250015
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.250000
+arc_ring_stereo_calc start_radius 3.250000 end_radius 3.250000
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.620000
+arc_ring_stereo_calc start_radius 3.620000 end_radius 3.620000
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.353673 end_angle 0.353673 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.353673 end_angle 0.353673 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.530501 end_angle 0.530501 radius: 3.240139
+arc_ring_stereo_calc start_radius 3.240139 end_radius 3.240139
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.646332 end_angle 359.646332 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.647400 end_angle 359.647400 radius: 3.250062
+arc_ring_stereo_calc start_radius 3.250062 end_radius 3.250062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.250000
+arc_ring_stereo_calc start_radius 3.250000 end_radius 3.250000
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.353673 end_angle 0.353673 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823700 end_angle 359.823700 radius: 3.250015
+arc_ring_stereo_calc start_radius 3.250015 end_radius 3.250015
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.646332 end_angle 359.646332 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.771729 end_angle 359.771729 radius: 5.020040
+arc_ring_stereo_calc start_radius 5.020040 end_radius 5.020040
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823700 end_angle 359.823700 radius: 3.250015
+arc_ring_stereo_calc start_radius 3.250015 end_radius 3.250015
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.250000
+arc_ring_stereo_calc start_radius 3.250000 end_radius 3.250000
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.620000
+arc_ring_stereo_calc start_radius 3.620000 end_radius 3.620000
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.353673 end_angle 0.353673 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.353673 end_angle 0.353673 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.530501 end_angle 0.530501 radius: 3.240139
+arc_ring_stereo_calc start_radius 3.240139 end_radius 3.240139
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.176838 end_angle 0.176838 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.646332 end_angle 359.646332 radius: 3.240062
+arc_ring_stereo_calc start_radius 3.240062 end_radius 3.240062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.647400 end_angle 359.647400 radius: 3.250062
+arc_ring_stereo_calc start_radius 3.250062 end_radius 3.250062
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 271.813507 end_angle 33.607090 radius: 3.811054
+arc_ring_stereo_calc start_radius 3.791899 end_radius 3.830209
+arc_ring_stereo_calc start_angle 271.813507 end_angle 33.607090 radius: 3.811054
+arc_ring_stereo_calc start_radius 3.791899 end_radius 3.830209
+arc_ring_stereo_calc start_angle 271.813507 end_angle 33.607090 radius: 3.811054
+arc_ring_stereo_calc start_radius 3.791899 end_radius 3.830209
+arc_ring_stereo_calc start_angle 271.813507 end_angle 33.607090 radius: 3.811054
+arc_ring_stereo_calc start_radius 3.791899 end_radius 3.830209
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MSAW
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MSAW/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MSAW
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MSAW/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MSAW
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MSAW/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name DUMMY
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/ADS_DAIW
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/ADS_DAIW/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/ADS_DAIW
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/ADS_DAIW/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/ADS_DAIW
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/ADS_DAIW/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name ZGR120
+SortElementLists===
+SelectProject EXTERNAL name ZGR128
+SortElementLists===
+SelectProject EXTERNAL name ZGR129
+SortElementLists===
+SelectProject EXTERNAL name ZGR130
+SortElementLists===
+SelectProject EXTERNAL name ZGR133
+SortElementLists===
+SelectProject EXTERNAL name ZGR139
+SortElementLists===
+SelectProject EXTERNAL name ZGR145
+SortElementLists===
+SelectProject EXTERNAL name ZGR148
+SortElementLists===
+SelectProject EXTERNAL name ZGR149
+SortElementLists===
+SelectProject EXTERNAL name ZGR150
+SortElementLists===
+SelectProject EXTERNAL name ZGR151
+SortElementLists===
+SelectProject EXTERNAL name ZGR152
+SortElementLists===
+SelectProject EXTERNAL name ZGR153
+SortElementLists===
+SelectProject EXTERNAL name ZGR154
+SortElementLists===
+SelectProject EXTERNAL name ZGR114
+SortElementLists===
+SelectProject EXTERNAL name ZGR124
+SortElementLists===
+SelectProject EXTERNAL name ZGR160
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RESTRICTED
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RESTRICTED/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RESTRICTED
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RESTRICTED/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RESTRICTED
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RESTRICTED/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name NAI1
+SortElementLists===
+SelectProject EXTERNAL name NAI2
+SortElementLists===
+SelectProject EXTERNAL name NAI3
+SortElementLists===
+SelectProject EXTERNAL name BLK1
+SortElementLists===
+SelectProject EXTERNAL name BLK2
+SortElementLists===
+SelectProject EXTERNAL name BLK3
+SortElementLists===
+SelectProject EXTERNAL name W1W2B1
+SortElementLists===
+SelectProject EXTERNAL name W1W2B2
+SortElementLists===
+SelectProject EXTERNAL name W1W2B3
+SortElementLists===
+SelectProject EXTERNAL name BLK5
+SortElementLists===
+SelectProject EXTERNAL name BLK6
+SortElementLists===
+SelectProject EXTERNAL name AIR1
+SortElementLists===
+SelectProject EXTERNAL name AIR2
+SortElementLists===
+SelectProject EXTERNAL name RI01L
+SortElementLists===
+SelectProject EXTERNAL name RI01R
+SortElementLists===
+SelectProject EXTERNAL name RI19L
+SortElementLists===
+SelectProject EXTERNAL name RI19R
+SortElementLists===
+SelectProject EXTERNAL name RI02R
+SortElementLists===
+SelectProject EXTERNAL name RI20L
+SortElementLists===
+SelectProject EXTERNAL name RI02L
+SortElementLists===
+SelectProject EXTERNAL name RI20R
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/ADMS
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/ADMS/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/ADMS
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/ADMS/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/ADMS
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/ADMS/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name MTCD_REG
+SortElementLists===
+SelectProject EXTERNAL name MTCD_PRO
+SortElementLists===
+SelectProject EXTERNAL name MTCD_INH
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+ResolveLinkedCoords from SelectProject
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 2.700167
+arc_ring_stereo_calc start_radius 2.700167 end_radius 2.700167
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 2.700167
+arc_ring_stereo_calc start_radius 2.700167 end_radius 2.700167
+arc_ring_stereo_calc start_angle 243.579269 end_angle 49.729736 radius: 7.024002
+arc_ring_stereo_calc start_radius 7.101774 end_radius 6.946229
+arc_ring_stereo_calc start_angle 50.575851 end_angle 90.000000 radius: 5.392675
+arc_ring_stereo_calc start_radius 5.385351 end_radius 5.400000
+arc_ring_stereo_calc start_angle 18.653633 end_angle 130.700745 radius: 4.985153
+arc_ring_stereo_calc start_radius 4.971137 end_radius 4.999170
+arc_ring_stereo_calc start_angle 303.943573 end_angle 351.902496 radius: 4.992043
+arc_ring_stereo_calc start_radius 5.014539 end_radius 4.969547
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 2.700167
+arc_ring_stereo_calc start_radius 2.700167 end_radius 2.700167
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 2.700167
+arc_ring_stereo_calc start_radius 2.700167 end_radius 2.700167
+arc_ring_stereo_calc start_angle 18.653633 end_angle 130.700745 radius: 4.985153
+arc_ring_stereo_calc start_radius 4.971137 end_radius 4.999170
+arc_ring_stereo_calc start_angle 303.943573 end_angle 351.902496 radius: 4.992043
+arc_ring_stereo_calc start_radius 5.014539 end_radius 4.969547
+arc_ring_stereo_calc start_angle 243.579269 end_angle 49.729736 radius: 7.024002
+arc_ring_stereo_calc start_radius 7.101774 end_radius 6.946229
+arc_ring_stereo_calc start_angle 50.575851 end_angle 90.000000 radius: 5.392675
+arc_ring_stereo_calc start_radius 5.385351 end_radius 5.400000
+arc_ring_stereo_calc start_angle 74.277420 end_angle 268.858795 radius: 2.491503
+arc_ring_stereo_calc start_radius 2.472509 end_radius 2.510498
+arc_ring_stereo_calc start_angle 74.277420 end_angle 268.858795 radius: 2.491503
+arc_ring_stereo_calc start_radius 2.472509 end_radius 2.510498
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 156.648483 end_angle 88.231567 radius: 5.868168
+arc_ring_stereo_calc start_radius 5.903558 end_radius 5.832778
+arc_ring_stereo_calc start_angle 239.652969 end_angle 299.700317 radius: 3.187781
+arc_ring_stereo_calc start_radius 3.186628 end_radius 3.188934
+arc_ring_stereo_calc start_angle 94.653351 end_angle 223.866821 radius: 3.334671
+arc_ring_stereo_calc start_radius 3.451376 end_radius 3.217965
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 156.648483 end_angle 88.231567 radius: 5.868168
+arc_ring_stereo_calc start_radius 5.903558 end_radius 5.832778
+arc_ring_stereo_calc start_angle 239.652969 end_angle 299.700317 radius: 3.187781
+arc_ring_stereo_calc start_radius 3.186628 end_radius 3.188934
+arc_ring_stereo_calc start_angle 94.653351 end_angle 223.866821 radius: 3.334671
+arc_ring_stereo_calc start_radius 3.451376 end_radius 3.217965
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 156.648483 end_angle 88.231567 radius: 5.868168
+arc_ring_stereo_calc start_radius 5.903558 end_radius 5.832778
+arc_ring_stereo_calc start_angle 94.909065 end_angle 299.700317 radius: 3.230468
+arc_ring_stereo_calc start_radius 3.272002 end_radius 3.188934
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.591919 end_angle 359.591919 radius: 7.020178
+arc_ring_stereo_calc start_radius 7.020178 end_radius 7.020178
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 359.696838 end_angle 359.696838 radius: 5.670079
+arc_ring_stereo_calc start_radius 5.670079 end_radius 5.670079
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.780000
+arc_ring_stereo_calc start_radius 3.780000 end_radius 3.780000
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.176566 end_angle 0.176566 radius: 6.490031
+arc_ring_stereo_calc start_radius 6.490031 end_radius 6.490031
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.288884 end_angle 0.288884 radius: 5.950076
+arc_ring_stereo_calc start_radius 5.950076 end_radius 5.950076
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.529521 end_angle 0.529521 radius: 5.410231
+arc_ring_stereo_calc start_radius 5.410231 end_radius 5.410231
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 0.423621 end_angle 0.423621 radius: 5.410148
+arc_ring_stereo_calc start_radius 5.410148 end_radius 5.410148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.575592 end_angle 359.575592 radius: 5.400148
+arc_ring_stereo_calc start_radius 5.400148 end_radius 5.400148
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.363403 end_angle 359.363403 radius: 5.400333
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.400333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 359.364594 end_angle 359.364594 radius: 5.410333
+arc_ring_stereo_calc start_radius 5.410333 end_radius 5.410333
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 3.240000
+arc_ring_stereo_calc start_radius 3.240000 end_radius 3.240000
+arc_ring_stereo_calc start_angle 156.648483 end_angle 88.231567 radius: 5.868168
+arc_ring_stereo_calc start_radius 5.903558 end_radius 5.832778
+arc_ring_stereo_calc start_angle 94.909065 end_angle 299.700317 radius: 3.230468
+arc_ring_stereo_calc start_radius 3.272002 end_radius 3.188934
+appr_stereo_calc  angle -90.061020 length: 9.390005
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -89.938919 length: 9.380005
+appr_stereo_calc  angle -89.938919 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -89.938919 length: 9.380005
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle 0.000000 length: 10.460000
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -90.061020 length: 9.390005
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.061081 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -89.938919 length: 9.380005
+appr_stereo_calc  angle -89.938919 length: 9.380005
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -90.000000 length: 9.380000
+appr_stereo_calc  angle -89.938919 length: 9.380005
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle 0.000000 length: 10.460000
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle -0.054776 length: 10.460005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -0.054724 length: 10.470005
+appr_stereo_calc  angle -134.962509 length: 21.609188
+appr_stereo_calc  angle -134.962509 length: 21.609188
+appr_stereo_calc  angle -134.962509 length: 21.609188
+appr_stereo_calc  angle -134.962509 length: 21.609188
+appr_stereo_calc  angle -134.962509 length: 21.609188
+appr_stereo_calc  angle 45.046848 length: 8.647919
+appr_stereo_calc  angle 45.046848 length: 8.647919
+appr_stereo_calc  angle 45.046848 length: 8.647919
+appr_stereo_calc  angle 45.046848 length: 8.647919
+appr_stereo_calc  angle 45.046848 length: 8.647919
+arc_ring_stereo_calc start_angle 116.952179 end_angle 301.270569 radius: 2.604895
+arc_ring_stereo_calc start_radius 2.647565 end_radius 2.562226
+arc_ring_stereo_calc start_angle 116.952179 end_angle 301.270569 radius: 2.604895
+arc_ring_stereo_calc start_radius 2.647565 end_radius 2.562226
+appr_stereo_calc  angle 117.205330 length: 21.610710
+appr_stereo_calc  angle 117.205330 length: 21.610710
+appr_stereo_calc  angle 117.205330 length: 21.610710
+appr_stereo_calc  angle 117.205330 length: 21.610710
+appr_stereo_calc  angle 117.205330 length: 21.610710
+appr_stereo_calc  angle 117.169640 length: 21.615036
+appr_stereo_calc  angle 117.169640 length: 21.615036
+appr_stereo_calc  angle 117.169640 length: 21.615036
+appr_stereo_calc  angle 117.169640 length: 21.615036
+appr_stereo_calc  angle 117.169640 length: 21.615036
+appr_stereo_calc  angle -62.794666 length: 10.805355
+appr_stereo_calc  angle -62.794666 length: 10.805355
+appr_stereo_calc  angle -62.794666 length: 10.805355
+appr_stereo_calc  angle -62.794666 length: 10.805355
+appr_stereo_calc  angle -62.794666 length: 10.805355
+appr_stereo_calc  angle -62.818890 length: 10.814250
+appr_stereo_calc  angle -62.818890 length: 10.814250
+appr_stereo_calc  angle -62.818890 length: 10.814250
+appr_stereo_calc  angle -62.818890 length: 10.814250
+appr_stereo_calc  angle -62.818890 length: 10.814250
+arc_ring_stereo_calc start_angle 228.912476 end_angle 11.015809 radius: 3.827388
+arc_ring_stereo_calc start_radius 3.834384 end_radius 3.820393
+arc_ring_stereo_calc start_angle 228.912476 end_angle 11.015809 radius: 3.827388
+arc_ring_stereo_calc start_radius 3.834384 end_radius 3.820393
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MTCD
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MTCD/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MTCD
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MTCD/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MTCD
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MTCD/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name STCA_MAP
+SortElementLists===
+SelectProject EXTERNAL name STCA_INH
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/STCA
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/STCA/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/STCA
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/STCA/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/STCA
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/STCA/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name FILTER_VO1
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/FILTERS
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/FILTERS/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/FILTERS
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/FILTERS/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/FILTERS
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/FILTERS/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name PNX
+SortElementLists===
+SelectProject EXTERNAL name XLN
+SortElementLists===
+SelectProject EXTERNAL name STL
+SortElementLists===
+SelectProject EXTERNAL name GLZ
+SortElementLists===
+SelectProject EXTERNAL name SZQ
+SortElementLists===
+SelectProject EXTERNAL name ZHL
+SortElementLists===
+SelectProject EXTERNAL name HKJ
+SortElementLists===
+SelectProject EXTERNAL name CSE
+SortElementLists===
+SelectProject EXTERNAL name DHZ
+SortElementLists===
+SelectProject EXTERNAL name WZS
+SortElementLists===
+SelectProject EXTERNAL name STM
+SortElementLists===
+SelectProject EXTERNAL name NNC
+SortElementLists===
+SelectProject EXTERNAL name AOM
+SortElementLists===
+SelectProject EXTERNAL name HKG
+SortElementLists===
+SelectProject EXTERNAL name ZJG
+SortElementLists===
+SelectProject EXTERNAL name SHG
+SortElementLists===
+SelectProject EXTERNAL name RADAR
+SortElementLists===
+SelectProject EXTERNAL name MOSAIC
+ResolveLinkedCoords from SelectProject
+arc_ring_stereo_calc start_angle 359.995514 end_angle 359.995514 radius: 256.220001
+arc_ring_stereo_calc start_radius 256.220001 end_radius 256.220001
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 80.029999
+arc_ring_stereo_calc start_radius 80.029999 end_radius 80.029999
+arc_ring_stereo_calc start_angle 359.995514 end_angle 359.995514 radius: 256.220001
+arc_ring_stereo_calc start_radius 256.220001 end_radius 256.220001
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 80.029999
+arc_ring_stereo_calc start_radius 80.029999 end_radius 80.029999
+arc_ring_stereo_calc start_angle 0.015652 end_angle 0.015652 radius: 256.240021
+arc_ring_stereo_calc start_radius 256.240021 end_radius 256.240021
+arc_ring_stereo_calc start_angle 0.014315 end_angle 0.014315 radius: 80.050003
+arc_ring_stereo_calc start_radius 80.050003 end_radius 80.050003
+arc_ring_stereo_calc start_angle 0.015652 end_angle 0.015652 radius: 256.240021
+arc_ring_stereo_calc start_radius 256.240021 end_radius 256.240021
+arc_ring_stereo_calc start_angle 0.014315 end_angle 0.014315 radius: 80.050003
+arc_ring_stereo_calc start_radius 80.050003 end_radius 80.050003
+arc_ring_stereo_calc start_angle 358.529724 end_angle 358.529724 radius: 256.444427
+arc_ring_stereo_calc start_radius 256.444427 end_radius 256.444427
+arc_ring_stereo_calc start_angle 358.576477 end_angle 358.576477 radius: 80.104721
+arc_ring_stereo_calc start_radius 80.104721 end_radius 80.104721
+arc_ring_stereo_calc start_angle 358.529724 end_angle 358.529724 radius: 256.444427
+arc_ring_stereo_calc start_radius 256.444427 end_radius 256.444427
+arc_ring_stereo_calc start_angle 358.576477 end_angle 358.576477 radius: 80.104721
+arc_ring_stereo_calc start_radius 80.104721 end_radius 80.104721
+arc_ring_stereo_calc start_angle 1.386836 end_angle 1.386836 radius: 256.585175
+arc_ring_stereo_calc start_radius 256.585175 end_radius 256.585175
+arc_ring_stereo_calc start_angle 1.372092 end_angle 1.372092 radius: 10.022874
+arc_ring_stereo_calc start_radius 10.022874 end_radius 10.022874
+arc_ring_stereo_calc start_angle 1.386836 end_angle 1.386836 radius: 256.585175
+arc_ring_stereo_calc start_radius 256.585175 end_radius 256.585175
+arc_ring_stereo_calc start_angle 1.372092 end_angle 1.372092 radius: 10.022874
+arc_ring_stereo_calc start_radius 10.022874 end_radius 10.022874
+arc_ring_stereo_calc start_angle 359.780823 end_angle 359.780823 radius: 256.201874
+arc_ring_stereo_calc start_radius 256.201874 end_radius 256.201874
+arc_ring_stereo_calc start_angle 359.785248 end_angle 359.785248 radius: 80.040565
+arc_ring_stereo_calc start_radius 80.040565 end_radius 80.040565
+arc_ring_stereo_calc start_angle 359.780823 end_angle 359.780823 radius: 256.201874
+arc_ring_stereo_calc start_radius 256.201874 end_radius 256.201874
+arc_ring_stereo_calc start_angle 359.785248 end_angle 359.785248 radius: 80.040565
+arc_ring_stereo_calc start_radius 80.040565 end_radius 80.040565
+arc_ring_stereo_calc start_angle 359.979858 end_angle 359.979858 radius: 256.170013
+arc_ring_stereo_calc start_radius 256.170013 end_radius 256.170013
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 10.010000
+arc_ring_stereo_calc start_radius 10.010000 end_radius 10.010000
+arc_ring_stereo_calc start_angle 359.979858 end_angle 359.979858 radius: 256.170013
+arc_ring_stereo_calc start_radius 256.170013 end_radius 256.170013
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 10.010000
+arc_ring_stereo_calc start_radius 10.010000 end_radius 10.010000
+arc_ring_stereo_calc start_angle 1.107155 end_angle 1.107155 radius: 216.330383
+arc_ring_stereo_calc start_radius 216.330383 end_radius 216.330383
+arc_ring_stereo_calc start_angle 1.086317 end_angle 1.086317 radius: 10.021801
+arc_ring_stereo_calc start_radius 10.021801 end_radius 10.021801
+arc_ring_stereo_calc start_angle 1.107155 end_angle 1.107155 radius: 216.330383
+arc_ring_stereo_calc start_radius 216.330383 end_radius 216.330383
+arc_ring_stereo_calc start_angle 1.086317 end_angle 1.086317 radius: 10.021801
+arc_ring_stereo_calc start_radius 10.021801 end_radius 10.021801
+arc_ring_stereo_calc start_angle 0.058719 end_angle 0.058719 radius: 243.940125
+arc_ring_stereo_calc start_radius 243.940125 end_radius 243.940125
+arc_ring_stereo_calc start_angle 0.057181 end_angle 0.057181 radius: 10.020005
+arc_ring_stereo_calc start_radius 10.020005 end_radius 10.020005
+arc_ring_stereo_calc start_angle 0.058719 end_angle 0.058719 radius: 243.940125
+arc_ring_stereo_calc start_radius 243.940125 end_radius 243.940125
+arc_ring_stereo_calc start_angle 0.057181 end_angle 0.057181 radius: 10.020005
+arc_ring_stereo_calc start_radius 10.020005 end_radius 10.020005
+arc_ring_stereo_calc start_angle 359.977631 end_angle 359.977631 radius: 256.220032
+arc_ring_stereo_calc start_radius 256.220032 end_radius 256.220032
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 9.990000
+arc_ring_stereo_calc start_radius 9.990000 end_radius 9.990000
+arc_ring_stereo_calc start_angle 359.977631 end_angle 359.977631 radius: 256.220032
+arc_ring_stereo_calc start_radius 256.220032 end_radius 256.220032
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 9.990000
+arc_ring_stereo_calc start_radius 9.990000 end_radius 9.990000
+arc_ring_stereo_calc start_angle 0.035775 end_angle 0.035775 radius: 256.250061
+arc_ring_stereo_calc start_radius 256.250061 end_radius 256.250061
+arc_ring_stereo_calc start_angle 0.035787 end_angle 0.035787 radius: 80.050018
+arc_ring_stereo_calc start_radius 80.050018 end_radius 80.050018
+arc_ring_stereo_calc start_angle 0.035775 end_angle 0.035775 radius: 256.250061
+arc_ring_stereo_calc start_radius 256.250061 end_radius 256.250061
+arc_ring_stereo_calc start_angle 0.035787 end_angle 0.035787 radius: 80.050018
+arc_ring_stereo_calc start_radius 80.050018 end_radius 80.050018
+arc_ring_stereo_calc start_angle 358.677124 end_angle 358.677124 radius: 256.428345
+arc_ring_stereo_calc start_radius 256.428345 end_radius 256.428345
+arc_ring_stereo_calc start_angle 358.712341 end_angle 358.712341 radius: 80.100227
+arc_ring_stereo_calc start_radius 80.100227 end_radius 80.100227
+arc_ring_stereo_calc start_angle 358.677124 end_angle 358.677124 radius: 256.428345
+arc_ring_stereo_calc start_radius 256.428345 end_radius 256.428345
+arc_ring_stereo_calc start_angle 358.712341 end_angle 358.712341 radius: 80.100227
+arc_ring_stereo_calc start_radius 80.100227 end_radius 80.100227
+arc_ring_stereo_calc start_angle 2.361880 end_angle 2.361880 radius: 256.728088
+arc_ring_stereo_calc start_radius 256.728088 end_radius 256.728088
+arc_ring_stereo_calc start_angle 2.286043 end_angle 2.286043 radius: 10.027981
+arc_ring_stereo_calc start_radius 10.027981 end_radius 10.027981
+arc_ring_stereo_calc start_angle 2.361880 end_angle 2.361880 radius: 256.728088
+arc_ring_stereo_calc start_radius 256.728088 end_radius 256.728088
+arc_ring_stereo_calc start_angle 2.286043 end_angle 2.286043 radius: 10.027981
+arc_ring_stereo_calc start_radius 10.027981 end_radius 10.027981
+arc_ring_stereo_calc start_angle 359.899353 end_angle 359.899353 radius: 256.170410
+arc_ring_stereo_calc start_radius 256.170410 end_radius 256.170410
+arc_ring_stereo_calc start_angle 359.899780 end_angle 359.899780 radius: 80.040123
+arc_ring_stereo_calc start_radius 80.040123 end_radius 80.040123
+arc_ring_stereo_calc start_angle 359.899353 end_angle 359.899353 radius: 256.170410
+arc_ring_stereo_calc start_radius 256.170410 end_radius 256.170410
+arc_ring_stereo_calc start_angle 359.899780 end_angle 359.899780 radius: 80.040123
+arc_ring_stereo_calc start_radius 80.040123 end_radius 80.040123
+arc_ring_stereo_calc start_angle 359.628754 end_angle 359.628754 radius: 256.185364
+arc_ring_stereo_calc start_radius 256.185364 end_radius 256.185364
+arc_ring_stereo_calc start_angle 359.656219 end_angle 359.656219 radius: 10.000180
+arc_ring_stereo_calc start_radius 10.000180 end_radius 10.000180
+arc_ring_stereo_calc start_angle 359.628754 end_angle 359.628754 radius: 256.185364
+arc_ring_stereo_calc start_radius 256.185364 end_radius 256.185364
+arc_ring_stereo_calc start_angle 359.656219 end_angle 359.656219 radius: 10.000180
+arc_ring_stereo_calc start_radius 10.000180 end_radius 10.000180
+arc_ring_stereo_calc start_angle 1.087780 end_angle 1.087780 radius: 227.030914
+arc_ring_stereo_calc start_radius 227.030914 end_radius 227.030914
+arc_ring_stereo_calc start_angle 1.030183 end_angle 1.030183 radius: 10.011619
+arc_ring_stereo_calc start_radius 10.011619 end_radius 10.011619
+arc_ring_stereo_calc start_angle 1.087780 end_angle 1.087780 radius: 227.030914
+arc_ring_stereo_calc start_radius 227.030914 end_radius 227.030914
+arc_ring_stereo_calc start_angle 1.030183 end_angle 1.030183 radius: 10.011619
+arc_ring_stereo_calc start_radius 10.011619 end_radius 10.011619
+arc_ring_stereo_calc start_angle 359.886017 end_angle 359.886017 radius: 256.390503
+arc_ring_stereo_calc start_radius 256.390503 end_radius 256.390503
+arc_ring_stereo_calc start_angle 359.885529 end_angle 359.885529 radius: 10.010020
+arc_ring_stereo_calc start_radius 10.010020 end_radius 10.010020
+arc_ring_stereo_calc start_angle 359.886017 end_angle 359.886017 radius: 256.390503
+arc_ring_stereo_calc start_radius 256.390503 end_radius 256.390503
+arc_ring_stereo_calc start_angle 359.885529 end_angle 359.885529 radius: 10.010020
+arc_ring_stereo_calc start_radius 10.010020 end_radius 10.010020
+arc_ring_stereo_calc start_angle 359.899353 end_angle 359.899353 radius: 256.170410
+arc_ring_stereo_calc start_radius 256.170410 end_radius 256.170410
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.058719 end_angle 0.058719 radius: 243.940125
+arc_ring_stereo_calc start_radius 243.940125 end_radius 243.940125
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.977631 end_angle 359.977631 radius: 256.220032
+arc_ring_stereo_calc start_radius 256.220032 end_radius 256.220032
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 1.386836 end_angle 1.386836 radius: 256.585175
+arc_ring_stereo_calc start_radius 256.585175 end_radius 256.585175
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.628754 end_angle 359.628754 radius: 256.185364
+arc_ring_stereo_calc start_radius 256.185364 end_radius 256.185364
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 1.107155 end_angle 1.107155 radius: 216.330383
+arc_ring_stereo_calc start_radius 216.330383 end_radius 216.330383
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 2.361880 end_angle 2.361880 radius: 256.728088
+arc_ring_stereo_calc start_radius 256.728088 end_radius 256.728088
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.995514 end_angle 359.995514 radius: 256.220001
+arc_ring_stereo_calc start_radius 256.220001 end_radius 256.220001
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.886017 end_angle 359.886017 radius: 256.390503
+arc_ring_stereo_calc start_radius 256.390503 end_radius 256.390503
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 358.529724 end_angle 358.529724 radius: 256.444427
+arc_ring_stereo_calc start_radius 256.444427 end_radius 256.444427
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 358.677124 end_angle 358.677124 radius: 256.428345
+arc_ring_stereo_calc start_radius 256.428345 end_radius 256.428345
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.780823 end_angle 359.780823 radius: 256.201874
+arc_ring_stereo_calc start_radius 256.201874 end_radius 256.201874
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.035775 end_angle 0.035775 radius: 256.250061
+arc_ring_stereo_calc start_radius 256.250061 end_radius 256.250061
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.015652 end_angle 0.015652 radius: 256.240021
+arc_ring_stereo_calc start_radius 256.240021 end_radius 256.240021
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.979858 end_angle 359.979858 radius: 256.170013
+arc_ring_stereo_calc start_radius 256.170013 end_radius 256.170013
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 1.087780 end_angle 1.087780 radius: 227.030914
+arc_ring_stereo_calc start_radius 227.030914 end_radius 227.030914
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.899353 end_angle 359.899353 radius: 256.170410
+arc_ring_stereo_calc start_radius 256.170410 end_radius 256.170410
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.058719 end_angle 0.058719 radius: 243.940125
+arc_ring_stereo_calc start_radius 243.940125 end_radius 243.940125
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.977631 end_angle 359.977631 radius: 256.220032
+arc_ring_stereo_calc start_radius 256.220032 end_radius 256.220032
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 1.386836 end_angle 1.386836 radius: 256.585175
+arc_ring_stereo_calc start_radius 256.585175 end_radius 256.585175
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.628754 end_angle 359.628754 radius: 256.185364
+arc_ring_stereo_calc start_radius 256.185364 end_radius 256.185364
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 1.107155 end_angle 1.107155 radius: 216.330383
+arc_ring_stereo_calc start_radius 216.330383 end_radius 216.330383
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 2.361880 end_angle 2.361880 radius: 256.728088
+arc_ring_stereo_calc start_radius 256.728088 end_radius 256.728088
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.995514 end_angle 359.995514 radius: 256.220001
+arc_ring_stereo_calc start_radius 256.220001 end_radius 256.220001
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.886017 end_angle 359.886017 radius: 256.390503
+arc_ring_stereo_calc start_radius 256.390503 end_radius 256.390503
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 358.529724 end_angle 358.529724 radius: 256.444427
+arc_ring_stereo_calc start_radius 256.444427 end_radius 256.444427
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 358.677124 end_angle 358.677124 radius: 256.428345
+arc_ring_stereo_calc start_radius 256.428345 end_radius 256.428345
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.780823 end_angle 359.780823 radius: 256.201874
+arc_ring_stereo_calc start_radius 256.201874 end_radius 256.201874
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.035775 end_angle 0.035775 radius: 256.250061
+arc_ring_stereo_calc start_radius 256.250061 end_radius 256.250061
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 0.015652 end_angle 0.015652 radius: 256.240021
+arc_ring_stereo_calc start_radius 256.240021 end_radius 256.240021
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 359.979858 end_angle 359.979858 radius: 256.170013
+arc_ring_stereo_calc start_radius 256.170013 end_radius 256.170013
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+arc_ring_stereo_calc start_angle 1.087780 end_angle 1.087780 radius: 227.030914
+arc_ring_stereo_calc start_radius 227.030914 end_radius 227.030914
+arc_ring_stereo_calc start_angle 90.000000 end_angle 90.000000 radius: 0.000000
+arc_ring_stereo_calc start_radius 0.000000 end_radius 0.000000
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RADAR
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RADAR/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RADAR
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RADAR/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/RADAR
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/RADAR/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name SHOEBOX
+SortElementLists===
+SortElementLists===
+ResolveLinkedCoords from SelectProject
+arc_ring_stereo_calc start_angle 119.148071 end_angle 220.738770 radius: 1.797159
+arc_ring_stereo_calc start_radius 1.786197 end_radius 1.808121
+arc_ring_stereo_calc start_angle 119.148071 end_angle 220.738770 radius: 1.797159
+arc_ring_stereo_calc start_radius 1.786197 end_radius 1.808121
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/AIRPORT
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/AIRPORT/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/AIRPORT
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/AIRPORT/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/AIRPORT
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/AIRPORT/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name DTZN
+SortElementLists===
+SelectProject EXTERNAL name DTZS
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/DTZ
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/DTZ/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/DTZ
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/DTZ/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/DTZ
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/DTZ/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+ResolveLinkedCoords from SelectProject
+arc_ring_stereo_calc start_angle 359.787781 end_angle 359.787781 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 359.787781 end_angle 359.787781 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 359.787781 end_angle 359.787781 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 359.787781 end_angle 359.787781 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 359.807739 end_angle 359.807739 radius: 2.980017
+arc_ring_stereo_calc start_radius 2.980017 end_radius 2.980017
+arc_ring_stereo_calc start_angle 359.807739 end_angle 359.807739 radius: 2.980017
+arc_ring_stereo_calc start_radius 2.980017 end_radius 2.980017
+arc_ring_stereo_calc start_angle 359.807739 end_angle 359.807739 radius: 2.980017
+arc_ring_stereo_calc start_radius 2.980017 end_radius 2.980017
+arc_ring_stereo_calc start_angle 359.807739 end_angle 359.807739 radius: 2.980017
+arc_ring_stereo_calc start_radius 2.980017 end_radius 2.980017
+arc_ring_stereo_calc start_angle 0.090898 end_angle 0.090898 radius: 18.910025
+arc_ring_stereo_calc start_radius 18.910025 end_radius 18.910025
+arc_ring_stereo_calc start_angle 0.090898 end_angle 0.090898 radius: 18.910025
+arc_ring_stereo_calc start_radius 18.910025 end_radius 18.910025
+arc_ring_stereo_calc start_angle 0.090898 end_angle 0.090898 radius: 18.910025
+arc_ring_stereo_calc start_radius 18.910025 end_radius 18.910025
+arc_ring_stereo_calc start_angle 0.090898 end_angle 0.090898 radius: 18.910025
+arc_ring_stereo_calc start_radius 18.910025 end_radius 18.910025
+arc_ring_stereo_calc start_angle 0.090946 end_angle 0.090946 radius: 18.900024
+arc_ring_stereo_calc start_radius 18.900024 end_radius 18.900024
+arc_ring_stereo_calc start_angle 0.090946 end_angle 0.090946 radius: 18.900024
+arc_ring_stereo_calc start_radius 18.900024 end_radius 18.900024
+arc_ring_stereo_calc start_angle 0.090946 end_angle 0.090946 radius: 18.900024
+arc_ring_stereo_calc start_radius 18.900024 end_radius 18.900024
+arc_ring_stereo_calc start_angle 0.090946 end_angle 0.090946 radius: 18.900024
+arc_ring_stereo_calc start_radius 18.900024 end_radius 18.900024
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 359.504852 end_angle 359.504852 radius: 8.100303
+arc_ring_stereo_calc start_radius 8.100303 end_radius 8.100303
+arc_ring_stereo_calc start_angle 359.504852 end_angle 359.504852 radius: 8.100303
+arc_ring_stereo_calc start_radius 8.100303 end_radius 8.100303
+arc_ring_stereo_calc start_angle 359.504852 end_angle 359.504852 radius: 8.100303
+arc_ring_stereo_calc start_radius 8.100303 end_radius 8.100303
+arc_ring_stereo_calc start_angle 359.504852 end_angle 359.504852 radius: 8.100303
+arc_ring_stereo_calc start_radius 8.100303 end_radius 8.100303
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 1.620000
+arc_ring_stereo_calc start_radius 1.620000 end_radius 1.620000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 1.620000
+arc_ring_stereo_calc start_radius 1.620000 end_radius 1.620000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 1.620000
+arc_ring_stereo_calc start_radius 1.620000 end_radius 1.620000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 1.620000
+arc_ring_stereo_calc start_radius 1.620000 end_radius 1.620000
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.317718 end_angle 0.317718 radius: 5.410083
+arc_ring_stereo_calc start_radius 5.410083 end_radius 5.410083
+arc_ring_stereo_calc start_angle 0.317718 end_angle 0.317718 radius: 5.410083
+arc_ring_stereo_calc start_radius 5.410083 end_radius 5.410083
+arc_ring_stereo_calc start_angle 0.212994 end_angle 0.212994 radius: 2.690019
+arc_ring_stereo_calc start_radius 2.690019 end_radius 2.690019
+arc_ring_stereo_calc start_angle 0.212994 end_angle 0.212994 radius: 2.690019
+arc_ring_stereo_calc start_radius 2.690019 end_radius 2.690019
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.000000 end_angle 0.000000 radius: 2.700000
+arc_ring_stereo_calc start_radius 2.700000 end_radius 2.700000
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.212206 end_angle 0.212206 radius: 2.700018
+arc_ring_stereo_calc start_radius 2.700018 end_radius 2.700018
+arc_ring_stereo_calc start_angle 0.317718 end_angle 0.317718 radius: 5.410083
+arc_ring_stereo_calc start_radius 5.410083 end_radius 5.410083
+arc_ring_stereo_calc start_angle 0.317718 end_angle 0.317718 radius: 5.410083
+arc_ring_stereo_calc start_radius 5.410083 end_radius 5.410083
+arc_ring_stereo_calc start_angle 0.212994 end_angle 0.212994 radius: 2.690019
+arc_ring_stereo_calc start_radius 2.690019 end_radius 2.690019
+arc_ring_stereo_calc start_angle 0.212994 end_angle 0.212994 radius: 2.690019
+arc_ring_stereo_calc start_radius 2.690019 end_radius 2.690019
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 0.105907 end_angle 0.105907 radius: 5.410009
+arc_ring_stereo_calc start_radius 5.410009 end_radius 5.410009
+arc_ring_stereo_calc start_angle 96.340195 end_angle 143.300247 radius: 8.070664
+arc_ring_stereo_calc start_radius 8.059293 end_radius 8.082036
+arc_ring_stereo_calc start_angle 310.304382 end_angle 75.347969 radius: 5.428954
+arc_ring_stereo_calc start_radius 5.441773 end_radius 5.416133
+arc_ring_stereo_calc start_angle 112.479431 end_angle 188.372116 radius: 5.346245
+arc_ring_stereo_calc start_radius 5.335401 end_radius 5.357089
+arc_ring_stereo_calc start_angle 96.340195 end_angle 143.300247 radius: 8.070664
+arc_ring_stereo_calc start_radius 8.059293 end_radius 8.082036
+arc_ring_stereo_calc start_angle 310.304382 end_angle 75.347969 radius: 5.428954
+arc_ring_stereo_calc start_radius 5.441773 end_radius 5.416133
+arc_ring_stereo_calc start_angle 112.479431 end_angle 188.372116 radius: 5.346245
+arc_ring_stereo_calc start_radius 5.335401 end_radius 5.357089
+arc_ring_stereo_calc start_angle 170.922318 end_angle 300.981750 radius: 5.423138
+arc_ring_stereo_calc start_radius 5.387476 end_radius 5.458800
+arc_ring_stereo_calc start_angle 300.999908 end_angle 29.784250 radius: 5.425932
+arc_ring_stereo_calc start_radius 5.436506 end_radius 5.415358
+arc_ring_stereo_calc start_angle 120.891685 end_angle 168.669037 radius: 5.398912
+arc_ring_stereo_calc start_radius 5.453660 end_radius 5.344165
+arc_ring_stereo_calc start_angle 96.340195 end_angle 143.300247 radius: 8.070664
+arc_ring_stereo_calc start_radius 8.059293 end_radius 8.082036
+arc_ring_stereo_calc start_angle 112.479431 end_angle 188.372116 radius: 5.346245
+arc_ring_stereo_calc start_radius 5.335401 end_radius 5.357089
+arc_ring_stereo_calc start_angle 30.054377 end_angle 83.240921 radius: 5.474369
+arc_ring_stereo_calc start_radius 5.510944 end_radius 5.437794
+arc_ring_stereo_calc start_angle 310.304382 end_angle 75.347969 radius: 5.428954
+arc_ring_stereo_calc start_radius 5.441773 end_radius 5.416133
+arc_ring_stereo_calc start_angle 170.922318 end_angle 300.981750 radius: 5.423138
+arc_ring_stereo_calc start_radius 5.387476 end_radius 5.458800
+arc_ring_stereo_calc start_angle 300.999908 end_angle 29.784250 radius: 5.425932
+arc_ring_stereo_calc start_radius 5.436506 end_radius 5.415358
+arc_ring_stereo_calc start_angle 30.054377 end_angle 83.240921 radius: 5.474369
+arc_ring_stereo_calc start_radius 5.510944 end_radius 5.437794
+arc_ring_stereo_calc start_angle 120.891685 end_angle 168.669037 radius: 5.398912
+arc_ring_stereo_calc start_radius 5.453660 end_radius 5.344165
+arc_ring_stereo_calc start_angle 96.340195 end_angle 143.300247 radius: 8.070664
+arc_ring_stereo_calc start_radius 8.059293 end_radius 8.082036
+arc_ring_stereo_calc start_angle 310.304382 end_angle 75.347969 radius: 5.428954
+arc_ring_stereo_calc start_radius 5.441773 end_radius 5.416133
+arc_ring_stereo_calc start_angle 112.479431 end_angle 188.372116 radius: 5.346245
+arc_ring_stereo_calc start_radius 5.335401 end_radius 5.357089
+arc_ring_stereo_calc start_angle 30.054377 end_angle 168.669037 radius: 5.427554
+arc_ring_stereo_calc start_radius 5.510944 end_radius 5.344165
+arc_ring_stereo_calc start_angle 170.922318 end_angle 300.981750 radius: 5.423138
+arc_ring_stereo_calc start_radius 5.387476 end_radius 5.458800
+arc_ring_stereo_calc start_angle 300.999908 end_angle 29.784250 radius: 5.425932
+arc_ring_stereo_calc start_radius 5.436506 end_radius 5.415358
+arc_ring_stereo_calc start_angle 30.054377 end_angle 168.669037 radius: 5.427554
+arc_ring_stereo_calc start_radius 5.510944 end_radius 5.344165
+arc_ring_stereo_calc start_angle 170.922318 end_angle 300.981750 radius: 5.423138
+arc_ring_stereo_calc start_radius 5.387476 end_radius 5.458800
+arc_ring_stereo_calc start_angle 300.999908 end_angle 29.784250 radius: 5.425932
+arc_ring_stereo_calc start_radius 5.436506 end_radius 5.415358
+arc_ring_stereo_calc start_angle 14.856529 end_angle 102.206085 radius: 5.406559
+arc_ring_stereo_calc start_radius 5.421227 end_radius 5.391892
+arc_ring_stereo_calc start_angle 282.403320 end_angle 4.236395 radius: 5.430966
+arc_ring_stereo_calc start_radius 5.447137 end_radius 5.414794
+arc_ring_stereo_calc start_angle 203.460846 end_angle 282.050781 radius: 5.455458
+arc_ring_stereo_calc start_radius 5.450587 end_radius 5.460330
+arc_ring_stereo_calc start_angle 102.413643 end_angle 195.088135 radius: 5.406445
+arc_ring_stereo_calc start_radius 5.396156 end_radius 5.416733
+arc_ring_stereo_calc start_angle 14.856529 end_angle 102.206085 radius: 5.406559
+arc_ring_stereo_calc start_radius 5.421227 end_radius 5.391892
+arc_ring_stereo_calc start_angle 282.403320 end_angle 4.236395 radius: 5.430966
+arc_ring_stereo_calc start_radius 5.447137 end_radius 5.414794
+arc_ring_stereo_calc start_angle 203.460846 end_angle 282.050781 radius: 5.455458
+arc_ring_stereo_calc start_radius 5.450587 end_radius 5.460330
+arc_ring_stereo_calc start_angle 102.413643 end_angle 195.088135 radius: 5.406445
+arc_ring_stereo_calc start_radius 5.396156 end_radius 5.416733
+arc_ring_stereo_calc start_angle 14.856529 end_angle 102.206085 radius: 5.406559
+arc_ring_stereo_calc start_radius 5.421227 end_radius 5.391892
+arc_ring_stereo_calc start_angle 282.403320 end_angle 4.236395 radius: 5.430966
+arc_ring_stereo_calc start_radius 5.447137 end_radius 5.414794
+arc_ring_stereo_calc start_angle 203.460846 end_angle 282.050781 radius: 5.455458
+arc_ring_stereo_calc start_radius 5.450587 end_radius 5.460330
+arc_ring_stereo_calc start_angle 102.413643 end_angle 195.088135 radius: 5.406445
+arc_ring_stereo_calc start_radius 5.396156 end_radius 5.416733
+arc_ring_stereo_calc start_angle 14.856529 end_angle 102.206085 radius: 5.406559
+arc_ring_stereo_calc start_radius 5.421227 end_radius 5.391892
+arc_ring_stereo_calc start_angle 282.403320 end_angle 4.236395 radius: 5.430966
+arc_ring_stereo_calc start_radius 5.447137 end_radius 5.414794
+arc_ring_stereo_calc start_angle 203.460846 end_angle 282.050781 radius: 5.455458
+arc_ring_stereo_calc start_radius 5.450587 end_radius 5.460330
+arc_ring_stereo_calc start_angle 102.413643 end_angle 195.088135 radius: 5.406445
+arc_ring_stereo_calc start_radius 5.396156 end_radius 5.416733
+arc_ring_stereo_calc start_angle 212.983841 end_angle 284.241882 radius: 5.403286
+arc_ring_stereo_calc start_radius 5.400417 end_radius 5.406154
+arc_ring_stereo_calc start_angle 101.184189 end_angle 214.715195 radius: 5.393832
+arc_ring_stereo_calc start_radius 5.361828 end_radius 5.425837
+arc_ring_stereo_calc start_angle 0.951319 end_angle 101.268112 radius: 5.397165
+arc_ring_stereo_calc start_radius 5.420747 end_radius 5.373583
+arc_ring_stereo_calc start_angle 284.473602 end_angle 1.813227 radius: 5.387058
+arc_ring_stereo_calc start_radius 5.401426 end_radius 5.372690
+arc_ring_stereo_calc start_angle 212.983841 end_angle 284.241882 radius: 5.403286
+arc_ring_stereo_calc start_radius 5.400417 end_radius 5.406154
+arc_ring_stereo_calc start_angle 101.184189 end_angle 214.715195 radius: 5.393832
+arc_ring_stereo_calc start_radius 5.361828 end_radius 5.425837
+arc_ring_stereo_calc start_angle 0.951319 end_angle 101.268112 radius: 5.397165
+arc_ring_stereo_calc start_radius 5.420747 end_radius 5.373583
+arc_ring_stereo_calc start_angle 284.473602 end_angle 1.813227 radius: 5.387058
+arc_ring_stereo_calc start_radius 5.401426 end_radius 5.372690
+arc_ring_stereo_calc start_angle 359.363403 end_angle 33.103642 radius: 5.410019
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.419705
+arc_ring_stereo_calc start_angle 33.130672 end_angle 88.186775 radius: 5.385090
+arc_ring_stereo_calc start_radius 5.397490 end_radius 5.372690
+arc_ring_stereo_calc start_angle 89.469498 end_angle 178.939087 radius: 5.400578
+arc_ring_stereo_calc start_radius 5.400231 end_radius 5.400926
+arc_ring_stereo_calc start_angle 25.513870 end_angle 101.268112 radius: 5.368289
+arc_ring_stereo_calc start_radius 5.362994 end_radius 5.373583
+arc_ring_stereo_calc start_angle 101.184189 end_angle 214.715195 radius: 5.393832
+arc_ring_stereo_calc start_radius 5.361828 end_radius 5.425837
+arc_ring_stereo_calc start_angle 212.983841 end_angle 257.712708 radius: 5.402101
+arc_ring_stereo_calc start_radius 5.400417 end_radius 5.403786
+arc_ring_stereo_calc start_angle 359.363403 end_angle 33.103642 radius: 5.410019
+arc_ring_stereo_calc start_radius 5.400333 end_radius 5.419705
+arc_ring_stereo_calc start_angle 33.130672 end_angle 88.186775 radius: 5.385090
+arc_ring_stereo_calc start_radius 5.397490 end_radius 5.372690
+arc_ring_stereo_calc start_angle 89.469498 end_angle 178.939087 radius: 5.400578
+arc_ring_stereo_calc start_radius 5.400231 end_radius 5.400926
+arc_ring_stereo_calc start_angle 25.513870 end_angle 101.268112 radius: 5.368289
+arc_ring_stereo_calc start_radius 5.362994 end_radius 5.373583
+arc_ring_stereo_calc start_angle 101.184189 end_angle 214.715195 radius: 5.393832
+arc_ring_stereo_calc start_radius 5.361828 end_radius 5.425837
+arc_ring_stereo_calc start_angle 212.983841 end_angle 257.712708 radius: 5.402101
+arc_ring_stereo_calc start_radius 5.400417 end_radius 5.403786
+arc_ring_stereo_calc start_angle 0.318307 end_angle 0.318307 radius: 5.400084
+arc_ring_stereo_calc start_radius 5.400084 end_radius 5.400084
+arc_ring_stereo_calc start_angle 0.318307 end_angle 0.318307 radius: 5.400084
+arc_ring_stereo_calc start_radius 5.400084 end_radius 5.400084
+arc_ring_stereo_calc start_angle 0.318307 end_angle 0.318307 radius: 5.400084
+arc_ring_stereo_calc start_radius 5.400084 end_radius 5.400084
+arc_ring_stereo_calc start_angle 0.318307 end_angle 0.318307 radius: 5.400084
+arc_ring_stereo_calc start_radius 5.400084 end_radius 5.400084
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MAPS
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MAPS/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MAPS
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MAPS/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/MAPS
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/MAPS/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name FDRG
+SortElementLists===
+SelectProject EXTERNAL name VAD
+SortElementLists===
+SelectProject EXTERNAL name VTMA
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/SECTORS
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/SECTORS/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/SECTORS
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/SECTORS/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/SECTORS
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/SECTORS/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SelectProject EXTERNAL name W2E2N1
+SortElementLists===
+SelectProject EXTERNAL name W2E2N2
+SortElementLists===
+SelectProject EXTERNAL name W2E2N3
+SortElementLists===
+SelectProject EXTERNAL name W2E2S1
+SortElementLists===
+SelectProject EXTERNAL name W2E2S2
+SortElementLists===
+SelectProject EXTERNAL name W2E2S3
+SortElementLists===
+SelectProject EXTERNAL name W1E2N1
+SortElementLists===
+SelectProject EXTERNAL name W1E2N2
+SortElementLists===
+SelectProject EXTERNAL name W1E2N3
+SortElementLists===
+SelectProject EXTERNAL name W1E2S1
+SortElementLists===
+SelectProject EXTERNAL name W1E2S2
+SortElementLists===
+SelectProject EXTERNAL name W1E2S3
+SortElementLists===
+SelectProject EXTERNAL name W1E1S1
+SortElementLists===
+SelectProject EXTERNAL name W1E1S2
+SortElementLists===
+SelectProject EXTERNAL name W1E1S3
+SortElementLists===
+SelectProject EXTERNAL name W2E1S1
+SortElementLists===
+SelectProject EXTERNAL name W2E1S2
+SortElementLists===
+SelectProject EXTERNAL name W2E1S3
+SortElementLists===
+SelectProject EXTERNAL name W1E1N1
+SortElementLists===
+SelectProject EXTERNAL name W1E1N2
+SortElementLists===
+SelectProject EXTERNAL name W1E1N3
+SortElementLists===
+SelectProject EXTERNAL name W2E1N1
+SortElementLists===
+SelectProject EXTERNAL name W2E1N2
+SortElementLists===
+SelectProject EXTERNAL name W2E1N3
+ResolveLinkedCoords from SelectProject
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/NTZ
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/NTZ/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/NTZ
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/NTZ/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/NTZ
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/NTZ/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+SortPointLists$$$$$$$$$$$$$$$$$
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+SortElementLists===
+ResolveLinkedCoords from SelectProject
+appr_stereo_calc  angle -104.011467 length: 28.044397
+appr_stereo_calc  angle -104.011467 length: 28.044397
+appr_stereo_calc  angle -104.011467 length: 28.044397
+appr_stereo_calc  angle -104.011467 length: 28.044397
+appr_stereo_calc  angle -104.011467 length: 28.044397
+appr_stereo_calc  angle -104.011467 length: 28.044397
+appr_stereo_calc  angle -104.011467 length: 28.044397
+appr_stereo_calc  angle -104.001534 length: 28.022572
+appr_stereo_calc  angle -104.001534 length: 28.022572
+appr_stereo_calc  angle -104.011398 length: 27.961935
+appr_stereo_calc  angle -104.011398 length: 27.961935
+appr_stereo_calc  angle 76.015182 length: 27.020905
+appr_stereo_calc  angle 76.015182 length: 27.020905
+appr_stereo_calc  angle 76.010056 length: 27.011202
+appr_stereo_calc  angle 76.010056 length: 27.011202
+appr_stereo_calc  angle 76.010056 length: 27.011202
+appr_stereo_calc  angle 76.010056 length: 27.011202
+appr_stereo_calc  angle 76.010056 length: 27.011202
+appr_stereo_calc  angle 76.010056 length: 27.011202
+appr_stereo_calc  angle 76.010056 length: 27.011202
+appr_stereo_calc  angle 75.989479 length: 27.013620
+appr_stereo_calc  angle 75.989479 length: 27.013620
+arc_ring_stereo_calc start_angle 157.080444 end_angle 334.687103 radius: 1.627454
+arc_ring_stereo_calc start_radius 1.617714 end_radius 1.637193
+arc_ring_stereo_calc start_angle 335.026093 end_angle 157.094223 radius: 1.576074
+arc_ring_stereo_calc start_radius 1.610590 end_radius 1.541558
+arc_ring_stereo_calc start_angle 0.329282 end_angle 180.329285 radius: 1.740029
+arc_ring_stereo_calc start_radius 1.740029 end_radius 1.740029
+arc_ring_stereo_calc start_angle 180.349365 end_angle 0.690277 radius: 1.650075
+arc_ring_stereo_calc start_radius 1.640031 end_radius 1.660120
+arc_ring_stereo_calc start_angle 182.474197 end_angle 1.414423 radius: 1.621003
+arc_ring_stereo_calc start_radius 1.621512 end_radius 1.620494
+arc_ring_stereo_calc start_angle 1.388717 end_angle 182.489548 radius: 1.631003
+arc_ring_stereo_calc start_radius 1.650485 end_radius 1.611521
+arc_ring_stereo_calc start_angle 283.099854 end_angle 103.950340 radius: 1.625099
+arc_ring_stereo_calc start_radius 1.632483 end_radius 1.617714
+arc_ring_stereo_calc start_angle 103.360222 end_angle 283.606110 radius: 1.629919
+arc_ring_stereo_calc start_radius 1.644506 end_radius 1.615333
+arc_ring_stereo_calc start_angle 99.173538 end_angle 279.344666 radius: 1.616054
+arc_ring_stereo_calc start_radius 1.630859 end_radius 1.601249
+arc_ring_stereo_calc start_angle 279.173523 end_angle 98.180229 radius: 1.623653
+arc_ring_stereo_calc start_radius 1.630859 end_radius 1.616447
+arc_ring_stereo_calc start_angle 80.302620 end_angle 259.789124 radius: 1.619407
+arc_ring_stereo_calc start_radius 1.602904 end_radius 1.635910
+arc_ring_stereo_calc start_angle 260.368835 end_angle 81.665634 radius: 1.630173
+arc_ring_stereo_calc start_radius 1.673589 end_radius 1.586758
+arc_ring_stereo_calc start_angle 157.080444 end_angle 334.687103 radius: 1.627454
+arc_ring_stereo_calc start_radius 1.617714 end_radius 1.637193
+arc_ring_stereo_calc start_angle 335.026093 end_angle 157.094223 radius: 1.576074
+arc_ring_stereo_calc start_radius 1.610590 end_radius 1.541558
+arc_ring_stereo_calc start_angle 0.329282 end_angle 180.329285 radius: 1.740029
+arc_ring_stereo_calc start_radius 1.740029 end_radius 1.740029
+arc_ring_stereo_calc start_angle 180.349365 end_angle 0.690277 radius: 1.650075
+arc_ring_stereo_calc start_radius 1.640031 end_radius 1.660120
+arc_ring_stereo_calc start_angle 182.474197 end_angle 1.414423 radius: 1.621003
+arc_ring_stereo_calc start_radius 1.621512 end_radius 1.620494
+arc_ring_stereo_calc start_angle 1.388717 end_angle 182.489548 radius: 1.631003
+arc_ring_stereo_calc start_radius 1.650485 end_radius 1.611521
+arc_ring_stereo_calc start_angle 283.099854 end_angle 103.950340 radius: 1.625099
+arc_ring_stereo_calc start_radius 1.632483 end_radius 1.617714
+arc_ring_stereo_calc start_angle 103.360222 end_angle 283.606110 radius: 1.629919
+arc_ring_stereo_calc start_radius 1.644506 end_radius 1.615333
+arc_ring_stereo_calc start_angle 99.173538 end_angle 279.344666 radius: 1.616054
+arc_ring_stereo_calc start_radius 1.630859 end_radius 1.601249
+arc_ring_stereo_calc start_angle 279.173523 end_angle 98.180229 radius: 1.623653
+arc_ring_stereo_calc start_radius 1.630859 end_radius 1.616447
+arc_ring_stereo_calc start_angle 80.302620 end_angle 259.789124 radius: 1.619407
+arc_ring_stereo_calc start_radius 1.602904 end_radius 1.635910
+arc_ring_stereo_calc start_angle 260.368835 end_angle 81.665634 radius: 1.630173
+arc_ring_stereo_calc start_radius 1.673589 end_radius 1.586758
+arc_ring_stereo_calc start_angle 0.329282 end_angle 180.329285 radius: 1.740029
+arc_ring_stereo_calc start_radius 1.740029 end_radius 1.740029
+arc_ring_stereo_calc start_angle 180.349365 end_angle 0.690277 radius: 1.650075
+arc_ring_stereo_calc start_radius 1.640031 end_radius 1.660120
+arc_ring_stereo_calc start_angle 119.124054 end_angle 300.052460 radius: 1.610030
+arc_ring_stereo_calc start_radius 1.602623 end_radius 1.617436
+arc_ring_stereo_calc start_angle 292.919556 end_angle 115.463348 radius: 1.622936
+arc_ring_stereo_calc start_radius 1.617714 end_radius 1.628158
+arc_ring_stereo_calc start_angle 176.139267 end_angle 354.393829 radius: 1.635771
+arc_ring_stereo_calc start_radius 1.633707 end_radius 1.637834
+arc_ring_stereo_calc start_angle 355.030273 end_angle 174.774078 radius: 1.631460
+arc_ring_stereo_calc start_radius 1.616076 end_radius 1.646845
+arc_ring_stereo_calc start_angle 83.375969 end_angle 260.537689 radius: 1.601381
+arc_ring_stereo_calc start_radius 1.560417 end_radius 1.642346
+arc_ring_stereo_calc start_angle 265.179230 end_angle 86.423668 radius: 1.634508
+arc_ring_stereo_calc start_radius 1.665893 end_radius 1.603122
+arc_ring_stereo_calc start_angle 264.427795 end_angle 83.858887 radius: 1.618453
+arc_ring_stereo_calc start_radius 1.647786 end_radius 1.589119
+arc_ring_stereo_calc start_angle 85.150154 end_angle 264.576782 radius: 1.621516
+arc_ring_stereo_calc start_radius 1.655929 end_radius 1.587104
+arc_ring_stereo_calc start_angle 131.905945 end_angle 310.377625 radius: 1.619596
+arc_ring_stereo_calc start_radius 1.572069 end_radius 1.667123
+arc_ring_stereo_calc start_angle 311.833679 end_angle 130.791016 radius: 1.651038
+arc_ring_stereo_calc start_radius 1.664242 end_radius 1.637834
+arc_ring_stereo_calc start_angle 0.329282 end_angle 180.329285 radius: 1.740029
+arc_ring_stereo_calc start_radius 1.740029 end_radius 1.740029
+arc_ring_stereo_calc start_angle 180.349365 end_angle 0.690277 radius: 1.650075
+arc_ring_stereo_calc start_radius 1.640031 end_radius 1.660120
+arc_ring_stereo_calc start_angle 119.124054 end_angle 300.052460 radius: 1.610030
+arc_ring_stereo_calc start_radius 1.602623 end_radius 1.617436
+arc_ring_stereo_calc start_angle 292.919556 end_angle 115.463348 radius: 1.622936
+arc_ring_stereo_calc start_radius 1.617714 end_radius 1.628158
+arc_ring_stereo_calc start_angle 176.139267 end_angle 354.393829 radius: 1.635771
+arc_ring_stereo_calc start_radius 1.633707 end_radius 1.637834
+arc_ring_stereo_calc start_angle 355.030273 end_angle 174.774078 radius: 1.631460
+arc_ring_stereo_calc start_radius 1.616076 end_radius 1.646845
+arc_ring_stereo_calc start_angle 83.375969 end_angle 260.537689 radius: 1.601381
+arc_ring_stereo_calc start_radius 1.560417 end_radius 1.642346
+arc_ring_stereo_calc start_angle 265.179230 end_angle 86.423668 radius: 1.634508
+arc_ring_stereo_calc start_radius 1.665893 end_radius 1.603122
+arc_ring_stereo_calc start_angle 264.427795 end_angle 83.858887 radius: 1.618453
+arc_ring_stereo_calc start_radius 1.647786 end_radius 1.589119
+arc_ring_stereo_calc start_angle 85.150154 end_angle 264.576782 radius: 1.621516
+arc_ring_stereo_calc start_radius 1.655929 end_radius 1.587104
+arc_ring_stereo_calc start_angle 131.905945 end_angle 310.377625 radius: 1.619596
+arc_ring_stereo_calc start_radius 1.572069 end_radius 1.667123
+arc_ring_stereo_calc start_angle 311.833679 end_angle 130.791016 radius: 1.651038
+arc_ring_stereo_calc start_radius 1.664242 end_radius 1.637834
+arc_ring_stereo_calc start_angle 15.679524 end_angle 194.272507 radius: 2.360368
+arc_ring_stereo_calc start_radius 2.368122 end_radius 2.352616
+arc_ring_stereo_calc start_angle 10.926546 end_angle 190.343185 radius: 2.655632
+arc_ring_stereo_calc start_radius 2.637821 end_radius 2.673444
+arc_ring_stereo_calc start_angle 15.679524 end_angle 194.272507 radius: 2.360368
+arc_ring_stereo_calc start_radius 2.368122 end_radius 2.352616
+arc_ring_stereo_calc start_angle 10.926546 end_angle 190.343185 radius: 2.655632
+arc_ring_stereo_calc start_radius 2.637821 end_radius 2.673444
+arc_ring_stereo_calc start_angle 175.914383 end_angle 215.022293 radius: 1.547365
+arc_ring_stereo_calc start_radius 1.543924 end_radius 1.550806
+arc_ring_stereo_calc start_angle 175.914383 end_angle 215.022293 radius: 1.547365
+arc_ring_stereo_calc start_radius 1.543924 end_radius 1.550806
+arc_ring_stereo_calc start_angle 89.810905 end_angle 269.623047 radius: 3.035041
+arc_ring_stereo_calc start_radius 3.030016 end_radius 3.040066
+arc_ring_stereo_calc start_angle 89.810905 end_angle 269.623047 radius: 3.035041
+arc_ring_stereo_calc start_radius 3.030016 end_radius 3.040066
+arc_ring_stereo_calc start_angle 66.529007 end_angle 244.687119 radius: 1.647149
+arc_ring_stereo_calc start_radius 1.657106 end_radius 1.637193
+arc_ring_stereo_calc start_angle 243.917770 end_angle 68.131424 radius: 1.588060
+arc_ring_stereo_calc start_radius 1.592137 end_radius 1.583982
+arc_ring_stereo_calc start_angle 148.854736 end_angle 330.839752 radius: 1.602192
+arc_ring_stereo_calc start_radius 1.624100 end_radius 1.580285
+arc_ring_stereo_calc start_angle 327.475098 end_angle 146.408722 radius: 1.622669
+arc_ring_stereo_calc start_radius 1.636704 end_radius 1.608633
+arc_ring_stereo_calc start_angle 66.529007 end_angle 244.687119 radius: 1.647149
+arc_ring_stereo_calc start_radius 1.657106 end_radius 1.637193
+arc_ring_stereo_calc start_angle 243.917770 end_angle 68.131424 radius: 1.588060
+arc_ring_stereo_calc start_radius 1.592137 end_radius 1.583982
+arc_ring_stereo_calc start_angle 148.854736 end_angle 330.839752 radius: 1.602192
+arc_ring_stereo_calc start_radius 1.624100 end_radius 1.580285
+arc_ring_stereo_calc start_angle 327.475098 end_angle 146.408722 radius: 1.622669
+arc_ring_stereo_calc start_radius 1.636704 end_radius 1.608633
+arc_ring_stereo_calc start_angle 126.966270 end_angle 270.485535 radius: 2.369044
+arc_ring_stereo_calc start_radius 2.378003 end_radius 2.360085
+arc_ring_stereo_calc start_angle 257.432556 end_angle 76.675468 radius: 1.585295
+arc_ring_stereo_calc start_radius 1.608540 end_radius 1.562050
+arc_ring_stereo_calc start_angle 73.373787 end_angle 254.240479 radius: 1.598248
+arc_ring_stereo_calc start_radius 1.502831 end_radius 1.693665
+arc_ring_stereo_calc start_angle 121.558792 end_angle 284.338104 radius: 2.306810
+arc_ring_stereo_calc start_radius 2.311926 end_radius 2.301695
+arc_ring_stereo_calc start_angle 243.434952 end_angle 63.281342 radius: 1.661402
+arc_ring_stereo_calc start_radius 1.654690 end_radius 1.668113
+arc_ring_stereo_calc start_angle 62.513382 end_angle 242.969147 radius: 1.659298
+arc_ring_stereo_calc start_radius 1.668323 end_radius 1.650273
+arc_ring_stereo_calc start_angle 126.966270 end_angle 270.485535 radius: 2.369044
+arc_ring_stereo_calc start_radius 2.378003 end_radius 2.360085
+arc_ring_stereo_calc start_angle 257.432556 end_angle 76.675468 radius: 1.585295
+arc_ring_stereo_calc start_radius 1.608540 end_radius 1.562050
+arc_ring_stereo_calc start_angle 73.373787 end_angle 254.240479 radius: 1.598248
+arc_ring_stereo_calc start_radius 1.502831 end_radius 1.693665
+arc_ring_stereo_calc start_angle 121.558792 end_angle 284.338104 radius: 2.306810
+arc_ring_stereo_calc start_radius 2.311926 end_radius 2.301695
+arc_ring_stereo_calc start_angle 243.434952 end_angle 63.281342 radius: 1.661402
+arc_ring_stereo_calc start_radius 1.654690 end_radius 1.668113
+arc_ring_stereo_calc start_angle 62.513382 end_angle 242.969147 radius: 1.659298
+arc_ring_stereo_calc start_radius 1.668323 end_radius 1.650273
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 359.823151 end_angle 359.823151 radius: 3.240016
+arc_ring_stereo_calc start_radius 3.240016 end_radius 3.240016
+arc_ring_stereo_calc start_angle 4.920616 end_angle 58.918743 radius: 24.250519
+arc_ring_stereo_calc start_radius 24.249371 end_radius 24.251665
+arc_ring_stereo_calc start_angle 4.920616 end_angle 58.918743 radius: 24.250519
+arc_ring_stereo_calc start_radius 24.249371 end_radius 24.251665
+arc_ring_stereo_calc start_angle 4.930243 end_angle 58.932014 radius: 18.852163
+arc_ring_stereo_calc start_radius 18.849743 end_radius 18.854586
+arc_ring_stereo_calc start_angle 4.930243 end_angle 58.932014 radius: 18.852163
+arc_ring_stereo_calc start_radius 18.849743 end_radius 18.854586
+arc_ring_stereo_calc start_angle 4.908802 end_angle 58.933956 radius: 13.444117
+arc_ring_stereo_calc start_radius 13.439293 end_radius 13.448940
+arc_ring_stereo_calc start_angle 4.908802 end_angle 58.933956 radius: 13.444117
+arc_ring_stereo_calc start_radius 13.439293 end_radius 13.448940
+arc_ring_stereo_calc start_angle 4.917328 end_angle 58.914288 radius: 8.053325
+arc_ring_stereo_calc start_radius 8.049627 end_radius 8.057022
+arc_ring_stereo_calc start_angle 4.917328 end_angle 58.914288 radius: 8.053325
+arc_ring_stereo_calc start_radius 8.049627 end_radius 8.057022
+arc_ring_stereo_calc start_angle 4.920616 end_angle 58.918743 radius: 24.250519
+arc_ring_stereo_calc start_radius 24.249371 end_radius 24.251665
+arc_ring_stereo_calc start_angle 4.920616 end_angle 58.918743 radius: 24.250519
+arc_ring_stereo_calc start_radius 24.249371 end_radius 24.251665
+arc_ring_stereo_calc start_angle 4.930243 end_angle 58.932014 radius: 18.852163
+arc_ring_stereo_calc start_radius 18.849743 end_radius 18.854586
+arc_ring_stereo_calc start_angle 4.930243 end_angle 58.932014 radius: 18.852163
+arc_ring_stereo_calc start_radius 18.849743 end_radius 18.854586
+arc_ring_stereo_calc start_angle 4.908802 end_angle 58.933956 radius: 13.444117
+arc_ring_stereo_calc start_radius 13.439293 end_radius 13.448940
+arc_ring_stereo_calc start_angle 4.908802 end_angle 58.933956 radius: 13.444117
+arc_ring_stereo_calc start_radius 13.439293 end_radius 13.448940
+arc_ring_stereo_calc start_angle 4.917328 end_angle 58.914288 radius: 8.053325
+arc_ring_stereo_calc start_radius 8.049627 end_radius 8.057022
+arc_ring_stereo_calc start_angle 4.917328 end_angle 58.914288 radius: 8.053325
+arc_ring_stereo_calc start_radius 8.049627 end_radius 8.057022
+arc_ring_stereo_calc start_angle 119.148071 end_angle 220.738770 radius: 1.797159
+arc_ring_stereo_calc start_radius 1.786197 end_radius 1.808121
+arc_ring_stereo_calc start_angle 119.148071 end_angle 220.738770 radius: 1.797159
+arc_ring_stereo_calc start_radius 1.786197 end_radius 1.808121
+appr_stereo_calc  angle -21.412970 length: 0.547814
+appr_stereo_calc  angle -21.113501 length: 1.082682
+appr_stereo_calc  angle -21.412970 length: 0.547814
+appr_stereo_calc  angle -21.113501 length: 1.082682
+appr_stereo_calc  angle -21.801409 length: 0.538516
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -95.869598 length: 1.075639
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -96.398956 length: 1.076708
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -95.869598 length: 1.075639
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -96.340195 length: 1.086646
+appr_stereo_calc  angle -21.113501 length: 1.082682
+appr_stereo_calc  angle -21.412970 length: 0.547814
+appr_stereo_calc  angle -21.113501 length: 1.082682
+appr_stereo_calc  angle -21.412970 length: 0.547814
+appr_stereo_calc  angle -21.113501 length: 1.082682
+appr_stereo_calc  angle -21.801409 length: 0.538516
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -95.869598 length: 1.075639
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -96.398956 length: 1.076708
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -95.869598 length: 1.075639
+appr_stereo_calc  angle -96.340195 length: 0.543323
+appr_stereo_calc  angle -96.340195 length: 1.086646
+appr_stereo_calc  angle -21.113501 length: 1.082682
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+arc_ring_stereo_calc start_angle 7.696052 end_angle 105.068489 radius: 4.850184
+arc_ring_stereo_calc start_radius 4.853720 end_radius 4.846648
+arc_ring_stereo_calc start_angle 7.696052 end_angle 105.068489 radius: 4.850184
+arc_ring_stereo_calc start_radius 4.853720 end_radius 4.846648
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+arc_ring_stereo_calc start_angle 119.126358 end_angle 220.581375 radius: 3.111417
+arc_ring_stereo_calc start_radius 3.102289 end_radius 3.120545
+arc_ring_stereo_calc start_angle 115.004494 end_angle 220.535080 radius: 2.803704
+arc_ring_stereo_calc start_radius 2.791648 end_radius 2.815759
+SaveProject savedir: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/POINTS
+ -------  savedir_tmp: /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/POINTS/
+SaveProject first remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/POINTS
+SaveProject copy: cp -r /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/POINTS/* /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/POINTS
+SaveProject second remove: rm -fr /opt/system/OFFL/V25.03.26/OPS/GZTM/SYSTEM_MAPS.ASF/tmp_sav/POINTS/*
+SaveProject TEMPORARY_SAVE:::::::: 1
+ " capacity_parse is active ! "
+ " color_parse is active ! "
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !
+ "pro_parse" is active !_
+ "proupdate" is active !
+
+ "pro_parse" is active !_
+ "proupdate" is active !

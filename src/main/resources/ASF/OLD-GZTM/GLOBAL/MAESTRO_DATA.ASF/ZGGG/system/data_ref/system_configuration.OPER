@@ -1,0 +1,88 @@
+# System Configuration File
+
+NumberOfDomains	= 1;
+
+#    Domain: ZGGG
+
+Domain.1.Name		= ZGGG;
+Domain.1.HasBackup	= TRUE;
+Domain.1.Host1		= gztmamn1ali;
+Domain.1.Host2		= gztmamn1bli;
+Domain.1.Permission	= PERMANENT;
+Domain.1.Managed	= FALSE;
+Domain.1.Restart	= NEVER;
+Domain.1.NumberOfTools	= 9;
+Domain.1.DISPLAY_START_BTN	= FALSE;
+Domain.1.DISPLAY_STOP_BTN	= FALSE;
+
+Domain.1.Tool.1.Class		= .Tie.Tools.Maestro.Interfaces.Supervision;
+Domain.1.Tool.1.Name		= ZGGG;
+Domain.1.Tool.1.Permission	= PERMANENT;
+Domain.1.Tool.1.Managed		= TRUE;
+Domain.1.Tool.1.Restart		= ALWAYS;
+Domain.1.Tool.1.DISPLAY_STOP_BTN	= FALSE;
+Domain.1.Tool.1.DISPLAY_START_BTN	= FALSE;
+Domain.1.Tool.1.DISPLAY	= gztmdbm01lis:0.0;
+
+Domain.1.Tool.2.Class		= .Tie.Tools.Maestro.Edr;
+Domain.1.Tool.2.Name		= ZGGG;
+Domain.1.Tool.2.Permission	= WHEN_ACTIVE;
+Domain.1.Tool.2.Managed		= TRUE;
+Domain.1.Tool.2.Restart		= ALWAYS;
+Domain.1.Tool.2.DISPLAY_STOP_BTN	= FALSE;
+Domain.1.Tool.2.DISPLAY_START_BTN	= FALSE;
+
+Domain.1.Tool.3.Class		= .Tie.Tools.Maestro.Interfaces.AmanHmi;
+Domain.1.Tool.3.Name		= TMP01;
+Domain.1.Tool.3.Permission	= WHEN_NOT_IN_BACKUP;
+Domain.1.Tool.3.Managed		= FALSE;
+Domain.1.Tool.3.Restart		= NEVER;
+Domain.1.Tool.3.TOOL_HOST	= gztmtmp01li;
+Domain.1.Tool.3.DISPLAY_STOP_BTN	= FALSE;
+Domain.1.Tool.3.DISPLAY_START_BTN	= FALSE;
+Domain.1.Tool.3.DISPLAY	= :0.0;
+
+Domain.1.Tool.4.Class		= .Tie.Tools.Maestro.Links.IodeTower;
+Domain.1.Tool.4.Name		= AIRPORT;
+Domain.1.Tool.4.Permission	= WHEN_ACTIVE;
+Domain.1.Tool.4.Managed		= TRUE;
+Domain.1.Tool.4.Restart		= ALWAYS;
+Domain.1.Tool.4.DISPLAY_STOP_BTN	= FALSE;
+Domain.1.Tool.4.DISPLAY_START_BTN	= FALSE;
+
+Domain.1.Tool.5.Class		= .Tie.Tools.Maestro.Scheduler;
+Domain.1.Tool.5.Name		= ASEQ;
+Domain.1.Tool.5.Permission	= WHEN_ACTIVE;
+Domain.1.Tool.5.Managed		= TRUE;
+Domain.1.Tool.5.Restart		= ALWAYS;
+
+Domain.1.Tool.6.Class		= .Tie.Tools.Maestro.Links.Rdps;
+Domain.1.Tool.6.Name		= GTMA;
+Domain.1.Tool.6.Permission	= WHEN_ACTIVE;
+Domain.1.Tool.6.Managed		= TRUE;
+Domain.1.Tool.6.Restart		= ALWAYS;
+
+Domain.1.Tool.7.Class		= .Tie.Tools.Maestro.Tp;
+Domain.1.Tool.7.Name		= TP;
+Domain.1.Tool.7.Permission	= WHEN_ACTIVE;
+Domain.1.Tool.7.Managed		= TRUE;
+Domain.1.Tool.7.Restart		= NEVER;
+
+Domain.1.Tool.8.Class		= .Tie.Tools.Maestro.Interfaces.AmanHmi;
+Domain.1.Tool.8.Name		= MMI003;
+Domain.1.Tool.8.Permission	= WHEN_NOT_IN_BACKUP;
+Domain.1.Tool.8.Managed		= FALSE;
+Domain.1.Tool.8.Restart		= NEVER;
+Domain.1.Tool.8.TOOL_HOST	= gztmod003li;
+Domain.1.Tool.8.DISPLAY	= :0.0;
+
+Domain.1.Tool.9.Class		= .Tie.Tools.Maestro.Interfaces.AmanHmi;
+Domain.1.Tool.9.Name		= MMI004;
+Domain.1.Tool.9.Permission	= PERMANENT;
+Domain.1.Tool.9.Managed		= FALSE;
+Domain.1.Tool.9.Restart		= NEVER;
+Domain.1.Tool.9.TOOL_HOST	= gztmod004li;
+Domain.1.Tool.9.DISPLAY	= :0.0;
+#    End Domain: ZGGG
+
+

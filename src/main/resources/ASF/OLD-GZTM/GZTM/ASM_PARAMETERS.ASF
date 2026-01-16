@@ -1,0 +1,37 @@
+----------------------
+--           FILE : ASM_PARAMETERS.ASF
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+----
+--
+--      Version | Date    | Responsible | Comment
+----------------|---------|-------------|---------
+--              |240311 | K WAN       | INITIAL
+--
+--
+LENGTH_Q_MIN_DC              | 10000.0
+WIDTH_Q_MIN_DC               | 10000.0
+GAMMA_DT_MAX_DC              | 98.1
+DT_MAX_DC                    | 60.0
+LENGTH_A_COEFF_DC            | 100.0
+GAMMA_L_MAX_DC               | 98.1
+ALPHA_DC                     | 10.0
+Q_MIN_CAP_DC                 | 180.0
+CAP_THRESHOLD_MAX_DC         | 180.0
+CAP_SPEED_COEFF_DC           | 200.0
+ALTITUDE_THRESHOLD_DC        | 1000.0
+NB_OF_SUCC_DECORRELATION_MAX | 10
+LENGTH_Q_MIN                 | 10000.0
+WIDTH_Q_MIN                  | 10000.0
+GAMMA_DT_MAX                 | 98.1
+DT_MAX                       | 60.0
+LENGTH_A_COEFF               | 100.0
+GAMMA_L_MAX                  | 98.1
+ALPHA                        | 98.1
+Q_MIN_CAP                    | 180.0
+CAP_THRESHOLD_MAX            | 180.0
+CAP_SPEED_COEFF              | 200.0
+ALTITUDE_THRESHOLD           | 1000.0
+MOSAIC_CELL_SIZE             | 64.0

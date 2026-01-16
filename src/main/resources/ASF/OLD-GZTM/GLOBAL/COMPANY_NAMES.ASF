@@ -1,0 +1,101 @@
+-- 
+--      FILE: COMPANY_NAMES.ASF 
+-- 
+--
+--      Version | Date   | Responsible     | Comment
+--
+-- .ver 4.10.01 | 960604 | M.Watson (TRAC) | V3.10 simulator data -> v4.10 format
+--  
+-- 
+-- 
+-- ATC company prefix  
+--  |   Full company name    |   Comments 
+----------------------------------------- 
+AAA | ANSETT_AUS             | ANSETT_AUSTRALIA              
+AAL | AMERICAN_A             | AMERICAN_AIRLINES             
+AAU | AUSTRALIA_             | AUSTRALIA_ASIA                
+ACI | AIR_CALEDO             | AIR_CALEDONIE                 
+ADA | CAA_FLYING             | CAA_FLYING_UNIT               
+ADB | ANTONOV_DE             | ANTONOV_DESIGN_B              
+AFL | AEROFLOT               | AEROFLOT                      
+AFM | AFFRETAIR              | AFFRETAIR                     
+AHK | AIR_HONG_K             | AIR_HONG_KONG                 
+AIC | AIR_INDIA              | AIR_INDIA                     
+AIN | AFRICAN_IN             | AFRICAN_INTERNATIONAL         
+AIR | AIRLIFT_IN             | AIRLIFT_INTERNATIONAL         
+AIT | AMERICAN_I             | AMERICAN_INTL.                
+ALK | AIR_LANKA              | AIR_LANKA                     
+AMT | AMERICAN_T             | AMERICAN_TRANSAIR             
+ANA | ALL_NIPPON             | ALL_NIPPON_AIRWAYS            
+ANG | AIR_NIUGIN             | AIR_NIUGINI                   
+ANO | AIR_NORTH_             | AIR_NORTH_REGIONAL            
+ANZ | AIR_NEW_ZE             | AIR_NEW_ZEALAND               
+APD | ASIA_PACIF             | ASIA_PACIFIC                  
+ARG | AEROLINAS_             | AEROLINAS_ARGENTINAS          
+ASY | RAAF                   | RAAF                          
+ATM | AIRLINES_O             | AIRLINES_OF_TAS               
+AVN | AIR_VANUAT             | AIR_VANUATU                   
+AZA | ALITALIA               | ALITALIA                      
+BAL | BRITANNIA_             | BRITANNIA_AIRWAYS             
+BAW | BRITISH_AI             | BRITISH_AIRWAYS               
+CCA | AIR_CHINA              | AIR_CHINA                     
+CDO | CARGO_D'OR             | CARGO_D'OR                    
+CFG | CONDOR_FLU             | CONDOR_FLUGDIENST             
+CHS | CHALLENGE_             | CHALLENGE_AVIATION            
+COA | CONTINENTA             | CONTINENTAL_AIRLINES          
+CPA | CATHAY_PAC             | CATHAY_PACIFIC                
+DLH | DEUSCHE_LU             | DEUSCHE_LUFTHANSA             
+EIA | EVERGREEN_             | EVERGREEN_INTL                
+ELA | EASTLAND_A             | EASTLAND_AIR                  
+EWW | EMERY_WORL             | EMERY_WORLDWIDE               
+FDX | FEDERAL_EX             | FEDERAL_EXPRESS               
+FJI | AIR_PACIFI             | AIR_PACIFIC                   
+FSH | FLAGSHIP_E             | FLAGSHIP_EXPRESS              
+FWQ | FLIGHT_WES             | FLIGHT_WEST                   
+GFA | GULF_AIR               | GULF_AIR                      
+GFW | GFW_AVIATI             | GFW_AVIATION                  
+GIA | GARUDA_IND             | GARUDA_INDONESIA              
+GOS | GOLDFIELDS             | GOLDFIELDS_AIR                
+HAL | HAWAIIAN_A             | HAWAIIAN_AIRLINES             
+HZL | HAZLETON_A             | HAZLETON_AIRLINES             
+JAL | JAPN_AIRLI             | JAPN_AIRLINES                 
+JAT | JUOSLOVENS             | JUOSLOVENSKI_AEROT            
+JAZ | JAPAN_AIR_             | JAPAN_AIR_CHARTER             
+JES | JES_AIR                | JES_AIR                       
+JOA | AIR_SWIFT_             | AIR_SWIFT_AVIATION            
+KAL | KOREAN_AIR             | KOREAN_AIRLINES               
+KDA | KENDALL_AI             | KENDALL_AIRLINES              
+KLM | KLM_ROYAL_             | KLM_ROYAL_DUTCH               
+LAW | LINK_AIRWA             | LINK_AIRWAYS                  
+LDA | LAUDA_AIR              | LAUDA_AIR                     
+MAS | MALAYSIAN_             | MALAYSIAN_AIRLINES            
+MAU | AIR_MAURIT             | AIR_MAURITIUS                 
+MNA | MERPATI_NU             | MERPATI_NUSANTARA             
+MPH | MARTINAIR_             | MARTINAIR_HOLLAND             
+MSR | EGYPT_AIR              | EGYPT_AIR                     
+MTD | MACKNIGHT_             | MACKNIGHT_AIRLINES            
+NDS | NORDSTRESS             | NORDSTRESS_AUSTRALIA          
+NWA | NORTHWEST_             | NORTHWEST_AIRLINES            
+NWW | NORTH_WEST             | NORTH_WEST_AIRLINES           
+OAL | OLYMPIC_AI             | OLYMPIC_AIRWAYS               
+OAX | OPERATIONA             | OPERATIONAL_AVIATION          
+PAL | PHILIPPINE             | PHILIPPINE_AIRLINES           
+PAO | POLYNESIAN             | POLYNESIAN_AIRLINE            
+PAS | PELITA_AIR             | PELITA_AIR_SERVICE            
+PEL | AEROPELICA             | AEROPELICAN                   
+QFA | QANTAS                 | QANTAS                        
+QWA | QWESTAIR               | QWESTAIR                      
+RBA | ROYAL_BRUN             | ROYAL_BRUNEI                  
+RON | AIR_NAURU              | AIR_NAURU                     
+SAA | SOUTH_AFRI             | SOUTH_AFRICAN_AIR             
+SIA | SINGAPORE_             | SINGAPORE_AIRLINES            
+SOL | SOLOMON_IS             | SOLOMON_ISLAND_AIR            
+SSQ | SUNSTATE_A             | SUNSTATE_AIRLINES             
+SWN | SOUTHERN_W             | SOUTHERN_WORLD_AIR            
+SWR | SWISSAIR               | SWISSAIR                      
+THA | THAI_AIRWA             | THAI_AIRWAYS_INTL             
+UAL | UNITED_AIR             | UNITED_AIRLINES               
+UPS | UNITED_PAR             | UNITED_PARCEL_SERV            
+UTA | UNION_DES_             | UNION_DES_TRANSPORT           
+WAC | WORLD_AIR_             | WORLD_AIR_NETWORK             
+WOA | WORLD_AIRW             | WORLD_AIRWAYS                 

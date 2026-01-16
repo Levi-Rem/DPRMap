@@ -1,0 +1,279 @@
+-- 
+--           FILE :  SSR_CODE.ASF 
+-- 
+--
+-- CREATION DATE  :  
+-- BY		  :  
+-- VERSION	  :  
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.1  |30/09/04 | K WAN       | updated for Guangzhou SAT
+--      V2.3.2  |30/09/04 | K WAN       | modified for PreSAT3
+--
+--
+--
+--
+--    
+/RETAINED/
+--
+0001-0600
+0615-0652
+0666-1777
+2001-2077
+2101-2221
+2223-3100
+
+3134-3332
+3334-4521
+4536-5554
+5556-7477
+7501-7577
+7601-7677
+7701-7777
+
+
+--
+--
+/OTHER_DISCRETE/ 
+--
+1001-1027
+0601-0603
+0604-0614
+0653-0665
+4522-4535
+3101-3112
+3113-3117
+3120-3121
+3122-3133
+2100
+2222
+3333
+5555
+---------------for zhuhai app-2005-9-21----
+0615-0624
+0630-0632
+3447-3453
+3456-3457
+3134-3154
+2426-2433
+3164-3170
+2436-2437
+---------------for zhuhai app 2005-9-21 --------
+--
+/ENTRY_EXIT_FIR/
+--
+--
+/ENTRY_FIR/
+--
+--SYSTEM SHOULD TRY TO RETAIN THE CODES FOR FLIGHTS COMING FROM
+--THE FOLLOWING LISTED FIRs
+--
+ZGHA 
+ZSCN 
+ZSAM 
+VHHH 
+ZGZJ 
+ZGNN 
+ZGOW 
+ZGJD 
+ZSHA
+ZUUU
+ZUGY
+ZHHH
+ZLXY
+ZHCC
+RCTP
+ZBAA
+ZJSY
+ZGAC
+--
+--Start of other flights than INBOUND
+--
+/GROUP/
+1
+--
+--WITHIN OWN FDRG: DOMESTIC
+0601-0614
+0637
+1001-1027
+--
+/GROUP/ 
+2
+--
+--ADEP IN FDRG / ADES NOT IN FDRG, BUT IN CHINA: SUPERDOMESTIC
+--
+0660-0665
+--4522-4535
+--
+/GROUP/ 
+3
+--
+--ADEP IN FDRG / ADES INTERNATIONAL: TRANSIT
+--
+4522-4535
+4200-4216
+
+--3114-3117
+--
+/GROUP/ 
+4
+--
+--SAME AS GROUP 3: SPARE FOR 2 & 3
+--
+3101-3133
+3177
+
+--3120-3133
+
+--
+/GROUP/
+5
+--ADEP=ADES=ZGGG: SUBDOMESTIC
+0600
+--2222
+--3333
+--5555
+
+--
+/GROUP/
+6
+--0002
+--0600
+3100
+2100
+--2000
+/GROUP/
+7
+--0660-0665
+  2222
+  3333
+  5555 
+
+/GROUP/
+8
+0615-0624
+0630-0632
+3447-3453
+3456-3457
+3134-3154
+2426-2433
+3164-3170
+2436-2437
+
+
+/GROUP/
+9
+--0653-0657
+0652-0657
+---------------------------------change 20160519
+
+
+
+
+
+/CATEGORY/ 
+DOMESTIC | 0001 
+*MAIN 
+1
+*SPARE
+2
+9
+
+--
+/CATEGORY/ 
+SUPERDOMESTIC | 0001 
+*MAIN 
+3
+*SPARE
+4
+--4
+--8
+
+/CATEGORY/
+TRANSIT | 0001
+*MAIN
+8
+*SPARE
+--2
+--3
+--4
+--8
+
+--
+/CATEGORY/			 
+SUPERTRANSIT | 0001		 
+*MAIN 			 
+4
+*SPARE
+--4
+
+		 
+--	-
+
+/CATEGORY/
+SUBDOMESTIC | 0001
+*MAIN
+7
+*SPARE
+--
+--
+--*********************************
+/CATEGORY/			 
+MILITARY | 0001		 
+*MAIN 
+6			 
+*SPARE			 
+--				 
+/CATEGORY/			 
+VFR | 0001			 
+*MAIN 			 
+5
+6
+--				 
+*SPARE			 
+
+--				 
+			 
+--*********************************
+--
+--
+/ADEP_ADES_CATEGORY/
+ZGGG | ZGGG | SUBDOMESTIC
+--
+--
+
+???? | ZGGG | DOMESTIC
+???? | ZG?? | DOMESTIC
+???? | ZH?? | DOMESTIC
+???? | ZJ?? | DOMESTIC
+???? | Z??? | SUPERDOMESTIC
+???? | ???? | SUPERTRANSIT
+???? | ???? | TRANSIT
+--
+--
+
+/DEST_FIR/
+ZGZU | DOMESTIC
+--
+/EXIT_FIR/
+--
+--
+/SSR_MMI/
+--HE01  | 1001-1177
+--HP01  | 1201-1377
+--HP02  | 2101-2777
+--HE02  | 3000-3777
+
+--
+/MMI_TRACK_SYMBOL/
+--1 | 0001
+2 | 2000 | Y
+--3 | 0100
+--4 | 1200
+--5 | 1000
+--
+--

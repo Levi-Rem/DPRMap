@@ -1,0 +1,97 @@
+--
+--           FILE :  CA_PARAMETERS.ASF
+--
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+--
+--
+--
+-- MODIFICATION DATE | MODIFIED BY | COMMENT 
+---------------------|-------------|--------------
+--    2015-9-10      |  DPR GROUP  | 
+--
+--
+--
+--
+-- PARAMS COMMON TO BOTH ACC AND APP
+----------------------------------------------------------
+--
+-- period of STCA processing
+-- in number of system track update
+STCA_UPDATE_PERIOD              | 1
+--
+-- Threshold of climb/descent rate used in limitation of predicted flight 
+-- level by CFL
+-- given in feet/mn
+STCA_RATE_THRESHOLD                 | 3000FTM
+--
+-- Threshold of difference between tracked flight level and CFL,
+-- used in limitation of predicted flight level by CFL
+-- given in feet
+STCA_LEVEL_THRESHOLD                    | 1000.0FT
+--
+-- Lower speed used for track eligibility for STCA
+-- given in kt
+STCA_LOWER_SPEED                        | N0030
+--
+-- Maximum speed used for determination of the number of adjacent cells
+-- given in kt
+STCA_MAX_SPEED                  | N0990
+--
+--
+-- Maximum overshoot/undershoot value used in altitude limitation by CFL 
+-- given in feet
+SNMAP_MAX_LEVEL_OVERSHOOT               | 40M
+--
+-- default value of ROC used for an uncoupled track in STCA processing
+-- when computed rate is not valid 
+-- given in feet/s 
+STCA_UNCOUPLED_TRACK_ROC            | 30FTS
+--
+-- default value of ROD used for an uncoupled track in STCA processing
+-- when computed rate is not valid 
+-- given in feet/s 
+STCA_UNCOUPLED_TRACK_ROD            | -30.0FTS
+--
+-- Warning time used in STCA
+-- given in sec 
+STCA_WARNING_TIME                       | 60
+--
+-- Imminent time used in STCA
+-- given in sec
+STCA_IMMINENT_TIME                      | 40
+--
+-- Threshold of conflict quality used to consider an
+-- STCA conflict as actual
+STCA_CONFLICT_QUALITY_THRESHOLD     | 0.7
+--
+-- Threshold of conflict counter used to consider an STCA conflict as actual
+STCA_COUNTER_THRESHOLD          | 2
+--
+-- Maximum value of STCA conflict misses used to consider 
+-- the conflict as solved
+STCA_SOLVED_COUNTER_THRESHOLD       | 2
+--
+-- Severe minimum separation distance
+-- given in Nm
+STCA_SEVERE_SEPARATION_DISTANCE     | 2.8NM
+--
+--
+STCA_ELIGIBILITY                        | COUPLED_FPL
+--
+--
+STCA_EXCLUDE_VFR                | TRUE
+--
+STCA_EXCLUDE_IFR                | FALSE
+--
+STCA_USE_RRL                    | TRUE
+--
+STCA_ALT_EXCLUDE_VFR_THRESHOLD  | S0600
+--
+--
+ENABLE_STCA_INHIB_AREA_IN_ACTIVE_LMA_NTZ  | TRUE
+ENABLE_STCA_INHIB_AREA_IN_ACTIVE_DMA_DTZ  | TRUE
+--
+--

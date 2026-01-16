@@ -1,0 +1,64 @@
+# Eurocat Configuration
+
+
+# Do we take wind update into account?
+#UpdateUpperWind = TRUE;
+
+# Earth Definition
+# Half great axis of the ellipsoide in meter (max = 6_500_000)
+#EarthHalfGreatAxis = ;
+# Half small axis of the ellipsoide in meter (max = 6_500_000)
+#EarthHalfSmallAxis = ;
+
+# System Definition
+#SystemCenterLatNorth = TRUE;
+#SystemCenterLatDeg = ;
+#SystemCenterLatMin = ;
+#SystemCenterLatSec = ;
+#SystemCenterLongEast = TRUE;
+#SystemCenterLongDeg = ;
+#SystemCenterLongMin = ;
+#SystemCenterLongSec = ;
+#SystemHalfGreatAxis = ;
+#SystemHalfSmallAxis = ;
+
+# Approach Definition
+#ApproachCenterLatNorth = TRUE;
+#ApproachCenterLatDeg = ;
+#ApproachCenterLatMin = ;
+#ApproachCenterLatSec = ;
+#ApproachCenterLongEast = TRUE;
+#ApproachCenterLongDeg = ;
+#ApproachCenterLongMin = ;
+#ApproachCenterLongSec = ;
+#ApproachHalfGreatAxis = ;
+#ApproachHalfSmallAxis = ;
+
+# Approach South West point
+#ApproachSWLatNorth = TRUE;
+#ApproachSWLatDeg = ;
+#ApproachSWLatMin = ;
+#ApproachSWLatSec = ;
+#ApproachSWLongEast = TRUE;
+#ApproachSWLongDeg = ;
+#ApproachSWLongMin = ;
+#ApproachSWLongSec = ;
+
+# Approach North East point
+#ApproachNELatNorth = TRUE;
+#ApproachNELatDeg = ;
+#ApproachNELatMin = ;
+#ApproachNELatSec = ;
+#ApproachNELongEast = TRUE;
+#ApproachNELongDeg = ;
+#ApproachNELongMin = ;
+#ApproachNELongSec = ;
+
+# Altitude : integer range 0 .. 999
+#Altitude = ;
+
+# Octans : I, J, K, L, M, N, O, P or NONE
+#Octan1 = NONE;
+#Octan2 = NONE;
+#Octan3 = NONE;
+#Octan4 = NONE;

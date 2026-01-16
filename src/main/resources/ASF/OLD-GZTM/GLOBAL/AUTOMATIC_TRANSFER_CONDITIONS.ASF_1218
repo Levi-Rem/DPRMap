@@ -1,0 +1,490 @@
+--
+--           FILE :  AUTOMATIC_TRANSFER_CONDITIONS.ASF 
+--
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      V2.3.5  |7/01/05  | GZ ATMB     | updated Guangzhou OPS
+--
+
+/VTMA/
+
+ if DEP is ZGGG,SRE 0 IS MIKIP,,,,,,
+           JUMP ZAN
+
+ if DEP is ZGGG,SRE 0 IS P118,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGGG,SRE 0 IS AGVIL,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGGG,SRE 0 IS P50,,,,,,
+           JUMP TAS
+       
+ if DEP is ZGGG,SRE 0 IS SAREX,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGGG,SRE 0 IS VIBOS,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGGG,SRE 0 IS LMN,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGGG,SRE 0 IS P270,,,,,,
+           JUMP CAS
+       
+-------------ZGFS-------------------------------------------
+
+
+ if DEP is ZGFS,SRE 0 IS MIKIP,,,,,,
+           JUMP ZAN
+
+ if DEP is ZGFS,SRE 0 IS P118,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGFS,SRE 0 IS AGVIL,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGFS,SRE 0 IS P50,,,,,,
+           JUMP TAS
+       
+ if DEP is ZGFS,SRE 0 IS SAREX,,,,,,
+           JUMP TAS
+   
+ if DEP is ZGFS,SRE 0 IS VIBOS,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGFS,SRE 0 IS LMN,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGFS,SRE 0 IS P270,,,,,,
+           JUMP CAS
+       
+
+-------------ZGCC-------------------------------------------
+
+
+ if DEP is ZGCC,SRE 0 IS MIKIP,,,,,,
+           JUMP ZAN
+
+ if DEP is ZGCC,SRE 0 IS P118,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGCC,SRE 0 IS AGVIL,,,,,,
+           JUMP ZAN
+     
+ if DEP is ZGCC,SRE 0 IS P50,,,,,,
+           JUMP TAS
+       
+ if DEP is ZGCC,SRE 0 IS SAREX,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGCC,SRE 0 IS VIBOS,,,,,,
+           JUMP TAS
+ 
+ if DEP is ZGCC,SRE 0 IS LMN,,,,,,
+           JUMP CAS
+         
+ if DEP is ZGCC,SRE 0 IS P270,,,,,,
+           JUMP CAS
+       
+
+--------------------------------------------------------
+
+
+ if DEP is ZGSZ,SRE 0 IS MIPAG,,,,,,
+           JUMP XAM
+
+ if DEP is ZGSD,SRE 0 IS MIPAG,,,,,,
+           JUMP XAM
+
+ if DEP is VMMC,SRE 0 IS MIPAG,,,,,,
+           JUMP XAM
+
+
+
+---------------------------------------------------------------------
+
+
+ 
+ 
+ 
+ 
+  if DEP is  ZGSZ,,,,,,,
+ 
+           JUMP XAS
+
+ if DEP is  ZGSD,,,,,,,
+ 
+           JUMP XAS
+
+ if DEP is  VMMC,,,,,,,
+ 
+           JUMP XAS               
+
+ 
+ if DEP is  ZGHZ,,,,,,,
+ 
+           JUMP CAS               
+
+ 
+ 
+ if PRE 0 IS IDUMA,DES is ZGGG,,,,,,
+           JUMP CAS
+ 
+ 
+ if PRE 0 IS P270,DES is ZGGG,,,,,,
+           JUMP CAS
+               
+ if PRE 0 IS GYA,DES is ZGGG,,,,,,
+
+           JUMP ZAN
+           
+   if PRE 0 IS P270,DES is ZGFS,,,,,,
+           JUMP CAS
+               
+ if PRE 0 IS GYA,DES is ZGFS,,,,,,
+
+           JUMP ZAN
+          
+   if PRE 0 IS P270,DES is ZGCC,,,,,,
+           JUMP CAS
+               
+ if PRE 0 IS GYA,DES is ZGCC,,,,,,
+
+           JUMP ZAN
+  
+  if PRE 0 IS GYA,DES is ZGHZ,,,,,,
+              
+            JUMP ZAN
+
+    if PRE 0 IS NOLON,DES is ZGHZ,,,,,,
+              
+            JUMP TAS
+        
+           
+           
+           
+	  
+ if PRE 0 IS GYA,DES is ZGSD,,,,,,
+
+           JUMP TAS	   
+	   
+ if PRE 0 IS GYA,DES is ZGSZ,,,,,,
+
+           JUMP TAS	   
+	   
+ if PRE 0 IS GYA,DES is VMMC,,,,,,
+
+           JUMP TAS	   
+	   
+	   
+ if ,DES is ZGSZ,,,,,,
+           JUMP TAS
+       
+ if ,DES is ZGSD,,,,,,
+           JUMP TAS
+       
+      
+ if ,DES is VMMC,,,,,,
+           JUMP TAS	   
+
+if PRE 0 IS TAMOT,DES is ZGGG,,,,,,
+           JUMP CAS	  
+	   
+ if PRE 0 IS BEKOL,DES is ZGGG,,,,,,
+           JUMP CAS	 	   
+	   
+ if PRE 0 IS P270,DES is ZGGG,,,,,,
+           JUMP CAS
+  
+   if PRE 0 IS TAMOT,DES is ZGFS,,,,,,
+           JUMP CAS	        
+ 
+  if PRE 0 IS BEKOL,DES is ZGFS,,,,,,
+           JUMP CAS	 	   
+	   
+ if PRE 0 IS P270,DES is ZGFS,,,,,,
+           JUMP CAS
+          
+  if PRE 0 IS BEKOL,DES is ZGCC,,,,,,
+           JUMP CAS	 	   
+	   
+ if PRE 0 IS P270,DES is ZGCC,,,,,,
+           JUMP CAS
+          
+       ----------------2005_6_9 10:38
+      
+         if ,DES IS  ZGGG,,,,,,	
+           JUMP ZAN
+         if ,DES IS  ZGFS,,,,,,	
+           JUMP ZAN
+         if ,DES IS  ZGCC,,,,,,	
+           JUMP ZAN
+         
+           
+         if ,DES NOT  ZGGG,,,,,,	
+           JUMP NON
+      
+       ----------------2005_6_9 10:38
+           
+           
+  CAS  if ,,,,,,,	   
+	   
+	   NO_HAND_RAM AP04
+	   
+     if ,,,,,,, 
+          JUMP NON
+          
+	   
+-- 
+-- 
+--     ZAS  if ,,,,,,,	   
+--	   
+-- 	   NO_HAND_RAM AP04
+--	   
+--   
+--    
+--     if ,,,,,,, 
+--          JUMP NON
+--          
+--  
+--   QAS  if ,,,,,,,	   
+--	   
+--	   NO_HAND_RAM AP04
+--	   
+--     if ,,,,,,, 
+--          JUMP NON
+          
+  TAS  if ,,,,,,,	   
+	   
+	   NO_HAND_RAM AP05
+	   
+     if ,,,,,,, 
+          JUMP NON
+   
+-- 
+-- 
+--    SAS  if ,,,,,,,	   
+--	   
+--	   NO_HAND_RAM AP05
+--     if ,,,,,,, 
+--          JUMP NON      
+          
+    XAS  if PRE 0 IS IDUMA,,CL OUT S0455 S3000,,,,,	   
+	   
+	   NO_HAND_RAM AP04
+     if ,,,,,,, 
+          JUMP NON  
+	
+-----------------------------------------------------------	
+    XAM  if ,,,,,,,	   
+	   
+	   NO_HAND_RAM AM
+	   
+     if ,,,,,,, 
+          JUMP NON
+ 	
+-----------------------------------------------------------	
+	
+	   
+    ZAN  if ,,,,,,,	   
+	   
+	   NO_HAND_RAM AP03
+	   
+    if ,,,,,,, 
+	       JUMP NON
+  
+  
+  	   
+--    SAN  if ,,,,,,,	   
+--	   
+--	   NO_HAND_RAM AP03
+--	   
+--    if ,,,,,,, 
+--	       JUMP NON
+  
+  
+  
+  
+  
+	NON if ,,,,,,,
+	    NULL
+	      
+	    
+ 
+---------------------------------
+
+
+/VAD/
+	   
+-----RUNWAY 01-----
+
+    if SID IS MIKIP3A, , , , , , ,
+        ASS AP02
+    if SID IS P1183A, , , , , , ,
+        ASS AP02
+    if SID IS AGVIL3A, , , , , , ,
+        ASS AP02
+    if SID IS P503A, , , , , , ,
+        ASS AP02
+    if SID IS VIBOS3A, , , , , , ,
+        ASS AP02
+    if SID IS SAREX3A, , , , , , ,
+        ASS AP02
+    if SID IS LMN3A, , , , , , ,
+        ASS AP02
+    if SID IS P2703G, , , , , , ,
+        ASS AP02
+
+-----RUNWAY 02L-----
+
+    if SID IS MIKIP3C, , , , , , ,
+        ASS AP02
+    if SID IS P1183C, , , , , , ,
+        ASS AP02
+    if SID IS AGVIL3C, , , , , , ,
+        ASS AP02
+    if SID IS LMN3C, , , , , , ,
+        ASS AP02
+    if SID IS P2703C, , , , , , ,
+        ASS AP02
+    if SID IS P503C, , , , , , ,
+        ASS AP02
+    if SID IS VIBOS3C, , , , , , ,
+        ASS AP02
+    if SID IS SAREX3C, , , , , , ,
+        ASS AP02
+
+-----RUNWAY 02R-----
+
+    if SID IS MIKIP3E, , , , , , ,
+        ASS AP02
+    if SID IS P1183E, , , , , , ,
+        ASS AP02
+    if SID IS AGVIL3E, , , , , , ,
+        ASS AP02
+    if SID IS LMN3E, , , , , , ,
+        ASS AP02
+    if SID IS P2703E, , , , , , ,
+        ASS AP02
+    if SID IS P503E, , , , , , ,
+        ASS AP02
+    if SID IS VIBOS3E, , , , , , ,
+        ASS AP02
+    if SID IS SAREX3E, , , , , , ,
+        ASS AP02
+
+-----RUNWAY 19-----
+
+    if SID IS P503B, , , , , , ,
+        ASS AP02
+    if SID IS VIBOS3B, , , , , , ,
+        ASS AP02
+    if SID IS SAREX3B, , , , , , ,
+        ASS AP02
+    if SID IS P2703H, , , , , , ,
+        ASS AP02
+    if SID IS P2703P, , , , , , ,
+        ASS AP02
+    if SID IS LMN3B, , , , , , ,
+        ASS AP02
+    if SID IS P1183B, , , , , , ,
+        ASS AP02
+    if SID IS MIKIP3B, , , , , , ,
+        ASS AP02
+    if SID IS MIKIP3P, , , , , , ,
+        ASS AP02
+    if SID IS AGVIL3B, , , , , , ,
+        ASS AP02
+    if SID IS AGVIL3P, , , , , , ,
+        ASS AP02
+
+-----RUNWAY 20R-----
+
+    if SID IS P1183D, , , , , , ,
+        ASS AP02
+    if SID IS MIKIP3D, , , , , , ,
+        ASS AP02
+    if SID IS AGVIL3D, , , , , , ,
+        ASS AP02
+    if SID IS P503D, , , , , , ,
+        ASS AP02
+    if SID IS VIBOS3D, , , , , , ,
+        ASS AP02
+    if SID IS SAREX3D, , , , , , ,
+        ASS AP02
+    if SID IS P2703K, , , , , , ,
+        ASS AP02
+    if SID IS LMN3D, , , , , , ,
+        ASS AP02
+
+-----RUNWAY 20L-----
+
+    if SID IS P1183F, , , , , , ,
+        ASS AP02
+    if SID IS MIKIP3F, , , , , , ,
+        ASS AP02
+    if SID IS AGVIL3F, , , , , , ,
+        ASS AP02
+    if SID IS P503F, , , , , , ,
+        ASS AP02
+    if SID IS VIBOS3F, , , , , , ,
+        ASS AP02
+    if SID IS SAREX3F, , , , , , ,
+        ASS AP02
+    if SID IS P2703F, , , , , , ,
+        ASS AP02
+    if SID IS LMN3F, , , , , , ,
+        ASS AP02
+    
+-----SID ASS END-----
+    
+    if PRE 0 IS GYA,DES is ZGGG,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS ENVIP,DES is ZGGG,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS IKAVO,DES is ZGGG,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS GYA,DES is ZGFS,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS ENVIP,DES is ZGFS,,,,,,
+           NO_HAND_RAM AP01
+     
+    if PRE 0 IS IKAVO,DES is ZGFS,,,,,,
+           NO_HAND_RAM AP01
+     
+    if PRE 0 IS GYA,DES is ZGCC,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS ENVIP,DES is ZGCC,,,,,,
+           NO_HAND_RAM AP01
+
+    if PRE 0 IS IKAVO,DES is ZGCC,,,,,,
+           NO_HAND_RAM AP01
+
+    
+    if ,DES IS ZGGG, , , , , ,
+	   NO_HAND_RAM AP06
+	   
+    if ,DES IS ZGFS, , , , , ,
+	   NO_HAND_RAM AP06
+    if ,DES IS ZGCC, , , , , ,
+	   NO_HAND_RAM AP06
+
+      
+     
+      if ,,,,,,,
+	    NULL
+	      
+----------------------------------------------

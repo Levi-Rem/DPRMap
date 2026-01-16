@@ -1,0 +1,27 @@
+--
+--  FILE: RAIM_PARAMETERS.ASF
+--
+-- CREATION DATE  :  24 Mar 2011
+-- BY             :  Kwang Wan
+-- VERSION        :  Initial
+--
+--
+--      Version | Date    | Responsible | Comment
+----------------|---------|-------------|---------------------------------------
+--      Initial |19/03/07 | K WAN       | NOT USED IN PHILIPPINES
+--
+--
+ RAIM_ID                      | RAIM0001
+ EUROCAT_X_ID                 | FDPS0001
+ RAIM_MOSAIC                  | 200000N0900000E | 540000N1300000E
+ NUISANCE_OUTAGE_INTERVAL     | 1
+ MERGE_OUTAGE_INTERVAL        | 2
+ IMMINENT_RAIM_TIME           | 5
+
+--Time Categories             | IMMEDIATE     | EARLY         | LATE
+ RAIM_TIME                    | 60            | 120           | 1440
+ HEARTBEAT_HYSTERESIS         | 1
+ HEARTBEAT_INTERVAL           | 60
+ MAX_HEARTBEAT_LATENCY        | 7
+ DATA_DUMP_TIMEOUT            | 10
+

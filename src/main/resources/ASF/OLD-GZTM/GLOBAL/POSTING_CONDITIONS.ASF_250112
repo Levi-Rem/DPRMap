@@ -1,0 +1,2918 @@
+--
+--
+--           FILE :  POSTING_CONDITIONS.ASF 
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      V2.3.5  |01/04/05 | GZ ATMB     | 
+--
+--
+--
+--
+-- Flight data type definition 
+-- ===========================
+--
+-- The strip format is a 3 digits number organised as follows : 
+--     - 1st digit = flight data type : 
+--            1 --> Preactive inbound
+--            2 --> Preactive departure
+--            3 --> Coordinated Inbound
+--            4 --> Coordinated Departure
+--            5 --> Active landing (in FDRG)
+--            6 --> Active exiting (FDRG)
+--
+--    - 3rd digit = electronic strip format :
+--            1 --> TMA 
+--            2 --> Enroute 
+--            3 --> Tower 
+--
+--  for paper strips, 3rd digit: refer to STRIP.ASF for formats  
+--
+--            1 --> TWR_DEP 
+--            2 --> TWR_ARR 
+--            3 --> TMA_ARR 
+--            4 --> TMA_DEP
+--            5 --> TMA_OVER
+--            6 --> TMA_BLANK
+--            7 --> ACC_INB
+--            8 --> ACC_OUB
+--            9 --> ACC_OVER
+--           10 --> ACC_BLANK
+--
+-- All boundary sectors will receive preactive and coordinated inbound strips
+--
+--
+--========================================================================
+--[   GLOBAL   ] 
+--========================================================================
+--
+
+-------------------------------------------------------------------
+
+/TVTMA/
+
+-----------------ZGGG DES DEFAULT POSTING ----------------------------
+
+if , DES IS ZGGG, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGGG, , , , , ,
+    post 1 03 GEO STP AP01
+    post 2 03 GEO STP AP01
+    post 3 03 GEO STP AP01
+    post 4 03 GEO STP AP01
+    post 5 03 GEO STP AP01
+    post 6 03 GEO STP AP01
+
+if , DES IS ZGGG, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGGG, , , , , ,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if , DES IS ZGGG, , , , , ,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if , DES IS ZGGG, , , , , ,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if , DES IS ZGGG, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------ZGGG DES PRIVATE POSTING ----------------------------
+
+if ,ARUNW IS 01R OF ZGGG, , , , , ,
+    JUMP I01
+
+if ,ARUNW IS 01L OF ZGGG, , , , , ,
+    JUMP I01
+
+if ,ARUNW IS 19L OF ZGGG, , , , , ,
+    JUMP I02
+
+if ,ARUNW IS 19R OF ZGGG, , , , , ,
+    JUMP I02
+
+if ,ARUNW IS 02L OF ZGGG, , , , , ,
+    JUMP I07
+
+if ,ARUNW IS 02R OF ZGGG, , , , , ,
+    JUMP I07
+
+if ,ARUNW IS 20L OF ZGGG, , , , , ,
+    JUMP I03
+
+if ,ARUNW IS 20R OF ZGGG, , , , , ,
+    JUMP I03
+
+-----------------ZGFS DES DEFAULT POSTING ----------------------------
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGFS, , , , , ,
+    post 1 03 GEO STP AP01
+    post 2 03 GEO STP AP01
+    post 3 03 GEO STP AP01
+    post 4 03 GEO STP AP01
+    post 5 03 GEO STP AP01
+    post 6 03 GEO STP AP01
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if , DES IS ZGFS, , , , , ,
+    post 1 03 GEO STP AP02
+    post 2 03 GEO STP AP02
+    post 3 03 GEO STP AP02
+    post 4 03 GEO STP AP02
+    post 5 03 GEO STP AP02
+    post 6 03 GEO STP AP02
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGFS, , , , , ,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------ZGFS DES PRIVATE POSTING ----------------------------
+
+if , DES IS ZGFS, , , , , ,
+    JUMP I04
+
+-----------------ZGCC DES DEFAULT POSTING ----------------------------
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGCC, , , , , ,
+    post 1 03 GEO STP AP01
+    post 2 03 GEO STP AP01
+    post 3 03 GEO STP AP01
+    post 4 03 GEO STP AP01
+    post 5 03 GEO STP AP01
+    post 6 03 GEO STP AP01
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if , DES IS ZGCC, , , , , ,
+    post 1 03 GEO STP AP02
+    post 2 03 GEO STP AP02
+    post 3 03 GEO STP AP02
+    post 4 03 GEO STP AP02
+    post 5 03 GEO STP AP02
+    post 6 03 GEO STP AP02
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGCC, , , , , ,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------ZGCC DES PRIVATE POSTING ----------------------------
+
+if , DES IS ZGCC, , , , , ,
+    JUMP I04
+
+-----------------ZGHZ DES DEFAULT POSTING ----------------------------
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 05 GEO STP AP01
+    post 2 05 GEO STP AP01
+    post 3 05 GEO STP AP01
+    post 4 05 GEO STP AP01
+    post 5 05 GEO STP AP01
+    post 6 05 GEO STP AP01
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 05 GEO STP AP02
+    post 2 05 GEO STP AP02
+    post 3 05 GEO STP AP02
+    post 4 05 GEO STP AP02
+    post 5 05 GEO STP AP02
+    post 6 05 GEO STP AP02
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 05 GEO STP AP03
+    post 2 05 GEO STP AP03
+    post 3 05 GEO STP AP03
+    post 4 05 GEO STP AP03
+    post 5 05 GEO STP AP03
+    post 6 05 GEO STP AP03
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 05 GEO STP AP04
+    post 2 05 GEO STP AP04
+    post 3 05 GEO STP AP04
+    post 4 05 GEO STP AP04
+    post 5 05 GEO STP AP04
+    post 6 05 GEO STP AP04
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 05 GEO STP AP06
+    post 2 05 GEO STP AP06
+    post 3 05 GEO STP AP06
+    post 4 05 GEO STP AP06
+    post 5 05 GEO STP AP06
+    post 6 05 GEO STP AP06
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------ZGHZ DES PRIVATE POSTING ----------------------------
+
+if , DES IS ZGHZ, , , , , ,
+    JUMP I05
+
+-----------------ZGSZ DES DEFAULT POSTING ----------------------------
+
+if , DES IS ZGSZ, , , , , ,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if , DES IS ZGSZ, , , , , ,
+    post 1 05 GEO STP AP05
+    post 2 05 GEO STP AP05
+    post 3 05 GEO STP AP05
+    post 4 05 GEO STP AP05
+    post 5 05 GEO STP AP05
+    post 6 05 GEO STP AP05
+
+-----------------ZGSZ DES PRIVATE POSTING ----------------------------
+
+if , DES IS ZGSZ, , , , , ,
+    JUMP I06
+
+-----------------ZGSD DES DEFAULT POSTING ----------------------------
+
+if , DES IS ZGSD, , , , , ,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if , DES IS ZGSD, , , , , ,
+    post 1 05 GEO STP AP05
+    post 2 05 GEO STP AP05
+    post 3 05 GEO STP AP05
+    post 4 05 GEO STP AP05
+    post 5 05 GEO STP AP05
+    post 6 05 GEO STP AP05
+
+-----------------ZGSD DES PRIVATE POSTING ----------------------------
+
+if , DES IS ZGSD, , , , , ,
+    JUMP I06
+
+-----------------VMMC DES DEFAULT POSTING ----------------------------
+
+if , DES IS VMMC, , , , , ,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if , DES IS VMMC, , , , , ,
+    post 1 05 GEO STP AP05
+    post 2 05 GEO STP AP05
+    post 3 05 GEO STP AP05
+    post 4 05 GEO STP AP05
+    post 5 05 GEO STP AP05
+    post 6 05 GEO STP AP05
+
+-----------------VMMC DES PRIVATE POSTING ----------------------------
+
+if , DES IS VMMC, , , , , ,
+    JUMP I06
+
+-----------------ZGGG 01 DEP----------------------------------------
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P10
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P01
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P01
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P11
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P11
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P11
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P12
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P06
+
+if DRUNW IS 01R OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P06
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P10
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P01
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P01
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P11
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P11
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P11
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P12
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P06
+
+if DRUNW IS 01L OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P06
+
+-----------------ZGGG 19 DEP----------------------------------------
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P01
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P01
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P01
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P11
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P11
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P11
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P13
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P13
+
+if DRUNW IS 19L OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P13
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P01
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P01
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P01
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P11
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P11
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P11
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P13
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P13
+
+if DRUNW IS 19R OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P13
+
+-----------------ZGGG 02L DEP----------------------------------------
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P10
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P10
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P10
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P14
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P14
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P14
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P15
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P15
+
+if DRUNW IS 02L OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P15
+
+-----------------ZGGG 02R DEP----------------------------------------
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P10
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P10
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P10
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P14
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P14
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P14
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P15
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P15
+
+if DRUNW IS 02R OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P15
+
+-----------------ZGGG 20L DEP----------------------------------------
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P22
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P22
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P22
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P20
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P20
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P20
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P05
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P24
+
+if DRUNW IS 20L OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P24
+
+-----------------ZGGG 20R DEP----------------------------------------
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS MIKIP,,,,,,
+    JUMP P22
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS AGVIL,,,,,,
+    JUMP P22
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS P118,,,,,,
+    JUMP P22
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS VIBOS,,,,,,
+    JUMP P20
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS P50,,,,,,
+    JUMP P20
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS SAREX,,,,,,
+    JUMP P20
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS P270,,,,,,
+    JUMP P05
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS LMN,,,,,,
+    JUMP P24
+
+if DRUNW IS 20R OF ZGGG,SRE 0 IS BOVMA,,,,,,
+    JUMP P24
+
+-----------------ZGFS DEP DEFAULT POSTING ----------------------------
+
+if DEP is ZGFS,,,,,,,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01 
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if DEP is ZGFS,,,,,,,
+    post 1 05 GEO STP AP01
+    post 2 05 GEO STP AP01
+    post 3 05 GEO STP AP01
+    post 4 05 GEO STP AP01
+    post 5 05 GEO STP AP01
+    post 6 05 GEO STP AP01
+
+if DEP is ZGFS,,,,,,,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02 
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if DEP is ZGFS,,,,,,,
+    post 1 05 GEO STP AP02
+    post 2 05 GEO STP AP02
+    post 3 05 GEO STP AP02
+    post 4 05 GEO STP AP02
+    post 5 05 GEO STP AP02
+    post 6 05 GEO STP AP02
+
+if DEP is ZGFS,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03 
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if DEP is ZGFS,,,,,,,
+    post 1 05 GEO STP AP03
+    post 2 05 GEO STP AP03
+    post 3 05 GEO STP AP03
+    post 4 05 GEO STP AP03
+    post 5 05 GEO STP AP03
+    post 6 05 GEO STP AP03
+
+if DEP is ZGFS,,,,,,,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06 
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if DEP is ZGFS,,,,,,,
+    post 1 05 GEO STP AP06
+    post 2 05 GEO STP AP06
+    post 3 05 GEO STP AP06
+    post 4 05 GEO STP AP06
+    post 5 05 GEO STP AP06
+    post 6 05 GEO STP AP06
+
+-----------------ZGFS DEP PRIVATE POSTING ----------------------------
+
+if DEP is ZGFS,SRE 0 IS MIKIP,,,,,,
+    JUMP P16
+
+if DEP is ZGFS,SRE 0 IS AGVIL,,,,,,
+    JUMP P16
+
+if DEP is ZGFS,SRE 0 IS P118,,,,,,
+    JUMP P16
+
+if DEP is ZGFS,SRE 0 IS VIBOS,,,,,,
+    JUMP P17
+
+if DEP is ZGFS,SRE 0 IS P50,,,,,,
+    JUMP P17
+
+if DEP is ZGFS,SRE 0 IS SAREX,,,,,,
+    JUMP P17
+
+if DEP is ZGFS,SRE 0 IS P270,,,,,,
+    JUMP P18
+
+if DEP is ZGFS,SRE 0 IS LMN,,,,,,
+    JUMP P18
+
+if DEP is ZGFS,SRE 0 IS BOVMA,,,,,,
+    JUMP P18
+
+-----------------ZGCC DEP DEFAULT POSTING ----------------------------
+
+if DEP is ZGCC,,,,,,,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01 
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if DEP is ZGCC,,,,,,,
+    post 1 05 GEO STP AP01
+    post 2 05 GEO STP AP01
+    post 3 05 GEO STP AP01
+    post 4 05 GEO STP AP01
+    post 5 05 GEO STP AP01
+    post 6 05 GEO STP AP01
+
+if DEP is ZGCC,,,,,,,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02 
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if DEP is ZGCC,,,,,,,
+    post 1 05 GEO STP AP02
+    post 2 05 GEO STP AP02
+    post 3 05 GEO STP AP02
+    post 4 05 GEO STP AP02
+    post 5 05 GEO STP AP02
+    post 6 05 GEO STP AP02
+
+if DEP is ZGCC,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03 
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if DEP is ZGCC,,,,,,,
+    post 1 05 GEO STP AP03
+    post 2 05 GEO STP AP03
+    post 3 05 GEO STP AP03
+    post 4 05 GEO STP AP03
+    post 5 05 GEO STP AP03
+    post 6 05 GEO STP AP03
+
+if DEP is ZGCC,,,,,,,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06 
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if DEP is ZGCC,,,,,,,
+    post 1 05 GEO STP AP06
+    post 2 05 GEO STP AP06
+    post 3 05 GEO STP AP06
+    post 4 05 GEO STP AP06
+    post 5 05 GEO STP AP06
+    post 6 05 GEO STP AP06
+
+-----------------ZGCC DEP PRIVATE POSTING ----------------------------
+
+if DEP is ZGCC,SRE 0 IS MIKIP,,,,,,
+    JUMP P16
+
+if DEP is ZGCC,SRE 0 IS AGVIL,,,,,,
+    JUMP P16
+
+if DEP is ZGCC,SRE 0 IS P118,,,,,,
+    JUMP P16
+
+if DEP is ZGCC,SRE 0 IS VIBOS,,,,,,
+    JUMP P17
+
+if DEP is ZGCC,SRE 0 IS P50,,,,,,
+    JUMP P17
+
+if DEP is ZGCC,SRE 0 IS SAREX,,,,,,
+    JUMP P17
+
+if DEP is ZGCC,SRE 0 IS P270,,,,,,
+    JUMP P18
+
+if DEP is ZGCC,SRE 0 IS LMN,,,,,,
+    JUMP P18
+
+if DEP is ZGCC,SRE 0 IS BOVMA,,,,,,
+    JUMP P18
+
+-----------------ZGHZ DEP DEFAULT POSTING ----------------------------
+
+if DEP is ZGHZ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04 
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if DEP is ZGHZ,,,,,,,
+    post 1 05 GEO STP AP04
+    post 2 05 GEO STP AP04
+    post 3 05 GEO STP AP04
+    post 4 05 GEO STP AP04
+    post 5 05 GEO STP AP04
+    post 6 05 GEO STP AP04
+
+if DEP is ZGHZ,,,,,,,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN 
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------ZGHZ DEP PRIVATE POSTING ----------------------------
+
+-- if DEP is ZGHZ,SRE 0 IS TEPID,,,,,,
+--     JUMP P09
+
+-- if DEP is ZGHZ,SRE 0 IS SHL,,,,,,
+--     JUMP P09
+
+-----------------ZGSZ DEP DEFAULT POSTING ----------------------------
+if DEP is ZGSZ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04 
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if DEP is ZGSZ,,,,,,,
+    post 1 05 GEO STP AP04
+    post 2 05 GEO STP AP04
+    post 3 05 GEO STP AP04
+    post 4 05 GEO STP AP04
+    post 5 05 GEO STP AP04
+    post 6 05 GEO STP AP04
+
+if DEP is ZGSZ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM 
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if DEP is ZGSZ,,,,,,,
+    post 1 05 GEO STP AM
+    post 2 05 GEO STP AM
+    post 3 05 GEO STP AM
+    post 4 05 GEO STP AM
+    post 5 05 GEO STP AM
+    post 6 05 GEO STP AM
+
+-----------------ZGSZ DEP PRIVATE POSTING ----------------------------
+
+if DEP is ZGSZ,SRE 0 IS MIPAG,,,,,,
+    JUMP P23
+
+-----------------ZGSD DEP DEFAULT POSTING ----------------------------
+if DEP is ZGSD,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04 
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if DEP is ZGSD,,,,,,,
+    post 1 05 GEO STP AP04
+    post 2 05 GEO STP AP04
+    post 3 05 GEO STP AP04
+    post 4 05 GEO STP AP04
+    post 5 05 GEO STP AP04
+    post 6 05 GEO STP AP04
+
+if DEP is ZGSD,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM 
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if DEP is ZGSD,,,,,,,
+    post 1 05 GEO STP AM
+    post 2 05 GEO STP AM
+    post 3 05 GEO STP AM
+    post 4 05 GEO STP AM
+    post 5 05 GEO STP AM
+    post 6 05 GEO STP AM
+
+-----------------ZGSD DEP PRIVATE POSTING ----------------------------
+
+if DEP is ZGSD,SRE 0 IS MIPAG,,,,,,
+    JUMP P23
+
+-----------------VMMC DEP DEFAULT POSTING ----------------------------
+if DEP is VMMC,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04 
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if DEP is VMMC,,,,,,,
+    post 1 05 GEO STP AP04
+    post 2 05 GEO STP AP04
+    post 3 05 GEO STP AP04
+    post 4 05 GEO STP AP04
+    post 5 05 GEO STP AP04
+    post 6 05 GEO STP AP04
+
+if DEP is VMMC,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM 
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if DEP is VMMC,,,,,,,
+    post 1 05 GEO STP AM
+    post 2 05 GEO STP AM
+    post 3 05 GEO STP AM
+    post 4 05 GEO STP AM
+    post 5 05 GEO STP AM
+    post 6 05 GEO STP AM
+
+-----------------VMMC DEP PRIVATE POSTING ----------------------------
+
+if DEP is VMMC,SRE 0 IS MIPAG,,,,,,
+    JUMP P23
+
+--------------End Before Labels-----------------
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------I01---------------------
+I01 if PRE 0 IS ENVIP,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS ENVIP,,,,,,
+    JUMP P01
+
+if PRE 0 IS OLPAB,,,,,,,
+    JUMP P21
+
+if ,SRE 0 IS OLPAB,,,,,,
+    JUMP P21
+
+if PRE 0 IS P270,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS P270,,,,,,
+    JUMP P05
+
+if PRE 0 IS IDUMA,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS IDUMA,,,,,,
+    JUMP P05
+
+if PRE 0 IS GYA,,,,,,,
+    JUMP P03
+
+if ,SRE 0 IS GYA,,,,,,
+    JUMP P03
+
+if PRE 0 IS IKAVO,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS IKAVO,,,,,,
+    JUMP P01
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------I02---------------------
+I02 if PRE 0 IS ENVIP,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS ENVIP,,,,,,
+    JUMP P01
+
+if PRE 0 IS OLPAB,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS OLPAB,,,,,,
+    JUMP P01
+
+if PRE 0 IS P270,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS P270,,,,,,
+    JUMP P05
+
+if PRE 0 IS IDUMA,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS IDUMA,,,,,,
+    JUMP P05
+
+if PRE 0 IS GYA,,,,,,,
+    JUMP P04
+
+if ,SRE 0 IS GYA,,,,,,
+    JUMP P04
+
+if PRE 0 IS IKAVO,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS IKAVO,,,,,,
+    JUMP P01
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------I03---------------------
+I03 if PRE 0 IS ENVIP,,,,,,,
+    JUMP P21
+
+if ,SRE 0 IS ENVIP,,,,,,
+    JUMP P21
+
+if PRE 0 IS OLPAB,,,,,,,
+    JUMP P21
+
+if ,SRE 0 IS OLPAB,,,,,,
+    JUMP P21
+
+if PRE 0 IS P270,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS P270,,,,,,
+    JUMP P05
+
+if PRE 0 IS IDUMA,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS IDUMA,,,,,,
+    JUMP P05
+
+if PRE 0 IS GYA,,,,,,,
+    JUMP P04
+
+if ,SRE 0 IS GYA,,,,,,
+    JUMP P04
+
+if PRE 0 IS IKAVO,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS IKAVO,,,,,,
+    JUMP P01
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------I04---------------------
+I04 if PRE 0 IS ENVIP,,,,,,,
+    JUMP P06
+
+if ,SRE 0 IS ENVIP,,,,,,
+    JUMP P06
+
+if ,SRE 0 IS ATAGA,,,,,,
+    JUMP P06
+
+if PRE 0 IS OLPAB,,,,,,,
+    JUMP P06
+
+if ,SRE 0 IS OLPAB,,,,,,
+    JUMP P06
+
+if ,SRE 0 IS IGONO,,,,,,
+    JUMP P06
+
+if PRE 0 IS P270,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS P270,,,,,,
+    JUMP P05
+
+if PRE 0 IS IDUMA,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS IDUMA,,,,,,
+    JUMP P05
+
+if PRE 0 IS GYA,,,,,,,
+    JUMP P03
+
+if ,SRE 0 IS GYA,,,,,,
+    JUMP P03
+
+if PRE 0 IS IKAVO,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS IKAVO,,,,,,
+    JUMP P01
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------I05---------------------
+I05 if PRE 0 IS ENVIP,,,,,,,
+    JUMP P07
+
+if ,SRE 0 IS ENVIP,,,,,,
+    JUMP P07
+
+if ,SRE 0 IS ATAGA,,,,,,
+    JUMP P07
+
+if PRE 0 IS OLPAB,,,,,,,
+    JUMP P07
+
+if ,SRE 0 IS OLPAB,,,,,,
+    JUMP P07
+
+if ,SRE 0 IS IGONO,,,,,,
+    JUMP P07
+
+if ,SRE 0 IS OGABI,,,,,,
+    JUMP P07
+
+if PRE 0 IS GYA,,,,,,,
+    JUMP P08
+
+if ,SRE 0 IS GYA,,,,,,
+    JUMP P08
+
+if PRE 0 IS IKAVO,,,,,,,
+    JUMP P19
+
+if ,SRE 0 IS IKAVO,,,,,,
+    JUMP P19
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------I06---------------------
+I06 if PRE 0 IS NOLON,,,,,,,
+    JUMP P09
+
+if ,SRE 0 IS NOLON,,,,,,
+    JUMP P09
+
+--if PRE 0 IS GYA,,,,,,,
+--    JUMP P25
+--
+--if ,SRE 0 IS GYA,,,,,,
+--    JUMP P25
+
+if PRE 0 IS P270,,,,,,,
+    JUMP P02
+
+if ,SRE 0 IS P270,,,,,,
+    JUMP P02
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------I07---------------------
+I07 if PRE 0 IS ENVIP,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS ENVIP,,,,,,
+    JUMP P01
+
+if PRE 0 IS OLPAB,,,,,,,
+    JUMP P21
+
+if ,SRE 0 IS OLPAB,,,,,,
+    JUMP P21
+
+if PRE 0 IS P270,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS P270,,,,,,
+    JUMP P05
+
+if PRE 0 IS IDUMA,,,,,,,
+    JUMP P05
+
+if ,SRE 0 IS IDUMA,,,,,,
+    JUMP P05
+
+if PRE 0 IS GYA,,,,,,,
+    JUMP P03
+
+if ,SRE 0 IS GYA,,,,,,
+    JUMP P03
+
+if PRE 0 IS IKAVO,,,,,,,
+    JUMP P01
+
+if ,SRE 0 IS IKAVO,,,,,,
+    JUMP P01
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P01---------------------
+P01 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P02---------------------
+P02 if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP08
+    post 2 01 GEO MMI AP08
+    post 3 01 GEO MMI AP08
+    post 4 01 GEO MMI AP08
+    post 5 01 GEO MMI AP08
+    post 6 01 GEO MMI AP08
+
+if ,,,,,,,
+    post 1 03 GEO STP AP08
+    post 2 03 GEO STP AP08
+    post 3 03 GEO STP AP08
+    post 4 03 GEO STP AP08
+    post 5 03 GEO STP AP08
+    post 6 03 GEO STP AP08
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P03---------------------
+P03 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI GYATM
+    post 2 01 GEO MMI GYATM
+    post 3 01 GEO MMI GYATM
+    post 4 01 GEO MMI GYATM
+    post 5 01 GEO MMI GYATM
+    post 6 01 GEO MMI GYATM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P04---------------------
+P04 if ,,,,,,,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if ,,,,,,,
+    post 1 03 GEO STP AP02
+    post 2 03 GEO STP AP02
+    post 3 03 GEO STP AP02
+    post 4 03 GEO STP AP02
+    post 5 03 GEO STP AP02
+    post 6 03 GEO STP AP02
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI GYATM
+    post 2 01 GEO MMI GYATM
+    post 3 01 GEO MMI GYATM
+    post 4 01 GEO MMI GYATM
+    post 5 01 GEO MMI GYATM
+    post 6 01 GEO MMI GYATM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P05---------------------
+P05 if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P06---------------------
+P06 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P07---------------------
+P07 if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P08---------------------
+P08 if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,,
+    post 1 01 GEO MMI GYATM
+    post 2 01 GEO MMI GYATM
+    post 3 01 GEO MMI GYATM
+    post 4 01 GEO MMI GYATM
+    post 5 01 GEO MMI GYATM
+    post 6 01 GEO MMI GYATM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P09---------------------
+P09 if ,,,,,,,
+    post 1 01 GEO MMI AP08
+    post 2 01 GEO MMI AP08
+    post 3 01 GEO MMI AP08
+    post 4 01 GEO MMI AP08
+    post 5 01 GEO MMI AP08
+    post 6 01 GEO MMI AP08
+
+if ,,,,,,,
+    post 1 03 GEO STP AP08
+    post 2 03 GEO STP AP08
+    post 3 03 GEO STP AP08
+    post 4 03 GEO STP AP08
+    post 5 03 GEO STP AP08
+    post 6 03 GEO STP AP08
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P10---------------------
+P10 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P11---------------------
+P11 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P12---------------------
+P12 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP08
+    post 2 01 GEO MMI AP08
+    post 3 01 GEO MMI AP08
+    post 4 01 GEO MMI AP08
+    post 5 01 GEO MMI AP08
+    post 6 01 GEO MMI AP08
+
+if ,,,,,,,
+    post 1 03 GEO STP AP08
+    post 2 03 GEO STP AP08
+    post 3 03 GEO STP AP08
+    post 4 03 GEO STP AP08
+    post 5 03 GEO STP AP08
+    post 6 03 GEO STP AP08
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P13---------------------
+P13 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P14---------------------
+P14 if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if ,,,,,,,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P15---------------------
+P15 if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P16---------------------
+P16 if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P17---------------------
+P17 if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P18---------------------
+P18 if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P19---------------------
+P19 if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+
+if ,,,,,,,
+    post 1 01 GEO MMI GYATM
+    post 2 01 GEO MMI GYATM
+    post 3 01 GEO MMI GYATM
+    post 4 01 GEO MMI GYATM
+    post 5 01 GEO MMI GYATM
+    post 6 01 GEO MMI GYATM
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P20---------------------
+P20 if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P21---------------------
+P21 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P22---------------------
+P22 if ,,,,,,,
+    post 1 01 GEO MMI AP03
+    post 2 01 GEO MMI AP03
+    post 3 01 GEO MMI AP03
+    post 4 01 GEO MMI AP03
+    post 5 01 GEO MMI AP03
+    post 6 01 GEO MMI AP03
+
+if ,,,,,,,
+    post 1 03 GEO STP AP03
+    post 2 03 GEO STP AP03
+    post 3 03 GEO STP AP03
+    post 4 03 GEO STP AP03
+    post 5 03 GEO STP AP03
+    post 6 03 GEO STP AP03
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if ,,,,,,,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P23---------------------
+P23 if ,,,,,,,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if ,,,,,,,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP08
+    post 2 01 GEO MMI AP08
+    post 3 01 GEO MMI AP08 
+    post 4 01 GEO MMI AP08
+    post 5 01 GEO MMI AP08
+    post 6 01 GEO MMI AP08
+
+if ,,,,,,,
+    post 1 05 GEO STP AP08
+    post 2 05 GEO STP AP08
+    post 3 05 GEO STP AP08
+    post 4 05 GEO STP AP08
+    post 5 05 GEO STP AP08
+    post 6 05 GEO STP AP08
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P24---------------------
+P24 if ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if ,,,,,,,
+    post 1 03 GEO STP AP04
+    post 2 03 GEO STP AP04
+    post 3 03 GEO STP AP04
+    post 4 03 GEO STP AP04
+    post 5 03 GEO STP AP04
+    post 6 03 GEO STP AP04
+
+if ,,,,,,,
+    post 1 01 GEO MMI AP07
+    post 2 01 GEO MMI AP07
+    post 3 01 GEO MMI AP07
+    post 4 01 GEO MMI AP07
+    post 5 01 GEO MMI AP07
+    post 6 01 GEO MMI AP07
+
+if ,,,,,,,
+    post 1 03 GEO STP AP07
+    post 2 03 GEO STP AP07
+    post 3 03 GEO STP AP07
+    post 4 03 GEO STP AP07
+    post 5 03 GEO STP AP07
+    post 6 03 GEO STP AP07
+
+if ,,,,,,, 
+    JUMP NON
+
+------------------------P25---------------------
+P25 if ,,,,,,,
+    post 1 01 GEO MMI AP08
+    post 2 01 GEO MMI AP08
+    post 3 01 GEO MMI AP08
+    post 4 01 GEO MMI AP08
+    post 5 01 GEO MMI AP08
+    post 6 01 GEO MMI AP08
+
+if ,,,,,,,
+    post 1 03 GEO STP AP08
+    post 2 03 GEO STP AP08
+    post 3 03 GEO STP AP08
+    post 4 03 GEO STP AP08
+    post 5 03 GEO STP AP08
+    post 6 03 GEO STP AP08
+
+if ,,,,,,, 
+    JUMP NON
+
+NON if ,,,,,,,
+         NULL
+    
+ 
+/TVAD/
+
+------------DES IS ZGGG-----------
+
+if , DES IS ZGGG, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGGG, , , , , ,
+    post 1 03 GEO STP AP01
+    post 2 03 GEO STP AP01
+    post 3 03 GEO STP AP01
+    post 4 03 GEO STP AP01
+    post 5 03 GEO STP AP01
+    post 6 03 GEO STP AP01
+
+if , DES IS ZGGG, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGGG, , , , , ,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if , DES IS ZGGG, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+------------DES IS ZGFS-----------
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGFS, , , , , ,
+    post 1 03 GEO STP AP01
+    post 2 03 GEO STP AP01
+    post 3 03 GEO STP AP01
+    post 4 03 GEO STP AP01
+    post 5 03 GEO STP AP01
+    post 6 03 GEO STP AP01
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if , DES IS ZGFS, , , , , ,
+    post 1 03 GEO STP AP02
+    post 2 03 GEO STP AP02
+    post 3 03 GEO STP AP02
+    post 4 03 GEO STP AP02
+    post 5 03 GEO STP AP02
+    post 6 03 GEO STP AP02
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGFS, , , , , ,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if , DES IS ZGFS, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+------------DES IS ZGCC-----------
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGCC, , , , , ,
+    post 1 03 GEO STP AP01
+    post 2 03 GEO STP AP01
+    post 3 03 GEO STP AP01
+    post 4 03 GEO STP AP01
+    post 5 03 GEO STP AP01
+    post 6 03 GEO STP AP01
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if , DES IS ZGCC, , , , , ,
+    post 1 03 GEO STP AP02
+    post 2 03 GEO STP AP02
+    post 3 03 GEO STP AP02
+    post 4 03 GEO STP AP02
+    post 5 03 GEO STP AP02
+    post 6 03 GEO STP AP02
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGCC, , , , , ,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if , DES IS ZGCC, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+------------DES IS ZGHZ-----------
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 03 GEO STP AP01
+    post 2 03 GEO STP AP01
+    post 3 03 GEO STP AP01
+    post 4 03 GEO STP AP01
+    post 5 03 GEO STP AP01
+    post 6 03 GEO STP AP01
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 03 GEO STP AP02
+    post 2 03 GEO STP AP02
+    post 3 03 GEO STP AP02
+    post 4 03 GEO STP AP02
+    post 5 03 GEO STP AP02
+    post 6 03 GEO STP AP02
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 03 GEO STP AP06
+    post 2 03 GEO STP AP06
+    post 3 03 GEO STP AP06
+    post 4 03 GEO STP AP06
+    post 5 03 GEO STP AP06
+    post 6 03 GEO STP AP06
+
+if , DES IS ZGHZ, , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+------------DES IS ZGSZ-----------
+
+if , DES IS ZGSZ, , , , , ,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if , DES IS ZGSZ, , , , , ,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+------------DES IS ZGSD-----------
+
+if , DES IS ZGSD, , , , , ,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if , DES IS ZGSD, , , , , ,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+------------DES IS VMMC-----------
+
+if , DES IS VMMC, , , , , ,
+    post 1 01 GEO MMI AP05
+    post 2 01 GEO MMI AP05
+    post 3 01 GEO MMI AP05
+    post 4 01 GEO MMI AP05
+    post 5 01 GEO MMI AP05
+    post 6 01 GEO MMI AP05
+
+if , DES IS VMMC, , , , , ,
+    post 1 03 GEO STP AP05
+    post 2 03 GEO STP AP05
+    post 3 03 GEO STP AP05
+    post 4 03 GEO STP AP05
+    post 5 03 GEO STP AP05
+    post 6 03 GEO STP AP05
+
+-----------------ZGGG DEP DEFAULT POSTING ----------------------------
+
+if DEP IS ZGGG, , , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if DEP IS ZGGG, , , , , , ,
+    post 1 04 GEO STP AP02
+    post 2 04 GEO STP AP02
+    post 3 04 GEO STP AP02
+    post 4 04 GEO STP AP02
+    post 5 04 GEO STP AP02
+    post 6 04 GEO STP AP02
+
+-----------------ZGFS DEP DEFAULT POSTING ----------------------------
+
+if DEP IS ZGFS, , , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if DEP IS ZGFS, , , , , , ,
+    post 1 04 GEO STP AP01
+    post 2 04 GEO STP AP01
+    post 3 04 GEO STP AP01
+    post 4 04 GEO STP AP01
+    post 5 04 GEO STP AP01
+    post 6 04 GEO STP AP01
+
+if DEP IS ZGFS, , , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if DEP IS ZGFS, , , , , , ,
+    post 1 04 GEO STP AP02
+    post 2 04 GEO STP AP02
+    post 3 04 GEO STP AP02
+    post 4 04 GEO STP AP02
+    post 5 04 GEO STP AP02
+    post 6 04 GEO STP AP02
+
+if DEP IS ZGFS, , , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if DEP IS ZGFS, , , , , , ,
+    post 1 04 GEO STP AP06
+    post 2 04 GEO STP AP06
+    post 3 04 GEO STP AP06
+    post 4 04 GEO STP AP06
+    post 5 04 GEO STP AP06
+    post 6 04 GEO STP AP06
+
+if DEP IS ZGFS, , , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------ZGCC DEP DEFAULT POSTING ----------------------------
+
+if DEP IS ZGCC, , , , , , ,
+    post 1 01 GEO MMI AP01
+    post 2 01 GEO MMI AP01
+    post 3 01 GEO MMI AP01
+    post 4 01 GEO MMI AP01
+    post 5 01 GEO MMI AP01
+    post 6 01 GEO MMI AP01
+
+if DEP IS ZGCC, , , , , , ,
+    post 1 04 GEO STP AP01
+    post 2 04 GEO STP AP01
+    post 3 04 GEO STP AP01
+    post 4 04 GEO STP AP01
+    post 5 04 GEO STP AP01
+    post 6 04 GEO STP AP01
+
+if DEP IS ZGCC, , , , , , ,
+    post 1 01 GEO MMI AP02
+    post 2 01 GEO MMI AP02
+    post 3 01 GEO MMI AP02
+    post 4 01 GEO MMI AP02
+    post 5 01 GEO MMI AP02
+    post 6 01 GEO MMI AP02
+
+if DEP IS ZGCC, , , , , , ,
+    post 1 04 GEO STP AP02
+    post 2 04 GEO STP AP02
+    post 3 04 GEO STP AP02
+    post 4 04 GEO STP AP02
+    post 5 04 GEO STP AP02
+    post 6 04 GEO STP AP02
+
+if DEP IS ZGCC, , , , , , ,
+    post 1 01 GEO MMI AP06
+    post 2 01 GEO MMI AP06
+    post 3 01 GEO MMI AP06
+    post 4 01 GEO MMI AP06
+    post 5 01 GEO MMI AP06
+    post 6 01 GEO MMI AP06
+
+if DEP IS ZGCC, , , , , , ,
+    post 1 04 GEO STP AP06
+    post 2 04 GEO STP AP06
+    post 3 04 GEO STP AP06
+    post 4 04 GEO STP AP06
+    post 5 04 GEO STP AP06
+    post 6 04 GEO STP AP06
+
+if DEP IS ZGCC, , , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------ZGHZ DEP DEFAULT POSTING ----------------------------
+
+if DEP IS ZGHZ, , , , , , ,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+-----------------------TWR VAD POSTING------------------------------
+
+if DEP IS ZGGG, , , , , , ,
+    post 2 03 GEO MMI AST1
+    post 4 03 GEO MMI AST1
+    post 6 03 GEO MMI AST1
+    post 1 03 GEO MMI AST1
+    post 3 03 GEO MMI AST1
+    post 5 03 GEO MMI AST1
+
+if DEP IS ZGGG, , , , , , ,	 
+    post 1 03 GEO MMI CTR1
+    post 3 03 GEO MMI CTR1
+    post 5 03 GEO MMI CTR1
+    post 2 03 GEO MMI CTR1
+    post 4 03 GEO MMI CTR1
+    post 6 03 GEO MMI CTR1
+
+if DEP IS ZGGG, , , , , , ,
+    post 2 03 GEO MMI CTR2
+    post 4 03 GEO MMI CTR2
+    post 6 03 GEO MMI CTR2 
+    post 1 03 GEO MMI CTR2
+    post 3 03 GEO MMI CTR2
+    post 5 03 GEO MMI CTR2 
+   
+if DEP IS ZGGG, , , , , , , 
+    post 2 03 GEO MMI AST2
+    post 4 03 GEO MMI AST2 
+    post 6 03 GEO MMI AST2 
+    post 1 03 GEO MMI AST2
+    post 3 03 GEO MMI AST2 
+    post 5 03 GEO MMI AST2
+              
+if DEP IS ZGGG, , , , , , ,
+    post 2 03 GEO MMI CTR3
+    post 4 03 GEO MMI CTR3
+    post 6 03 GEO MMI CTR3 
+    post 1 03 GEO MMI CTR3
+    post 3 03 GEO MMI CTR3
+    post 5 03 GEO MMI CTR3 
+   
+if DEP IS ZGGG, , , , , , , 
+    post 2 03 GEO MMI AST3
+    post 4 03 GEO MMI AST3 
+    post 6 03 GEO MMI AST3 
+    post 1 03 GEO MMI AST3
+    post 3 03 GEO MMI AST3 
+    post 5 03 GEO MMI AST3
+
+if DEP IS ZGGG, , , , , , ,
+    post 2 03 GEO MMI CTR4
+    post 4 03 GEO MMI CTR4
+    post 6 03 GEO MMI CTR4
+    post 1 03 GEO MMI CTR4
+    post 3 03 GEO MMI CTR4
+    post 5 03 GEO MMI CTR4
+
+if DEP IS ZGGG, , , , , , ,
+    post 2 03 GEO MMI AST4
+    post 4 03 GEO MMI AST4
+    post 6 03 GEO MMI AST4
+    post 1 03 GEO MMI AST4
+    post 3 03 GEO MMI AST4
+    post 5 03 GEO MMI AST4
+        
+if ,DES IS ZGGG, , , , , ,
+    post 3 03 GEO MMI AST1
+    post 5 03 GEO MMI AST1
+    post 2 03 GEO MMI AST1
+    post 4 03 GEO MMI AST1
+    post 6 03 GEO MMI AST1
+	 
+if ,DES IS ZGGG, , , , , ,	 
+    post 3 03 GEO MMI CTR1
+    post 5 03 GEO MMI CTR1
+    post 2 03 GEO MMI CTR1
+    post 4 03 GEO MMI CTR1
+    post 6 03 GEO MMI CTR1
+  
+if ,DES IS ZGGG, , , , , , 
+    post 3 03 GEO MMI AST2
+    post 5 03 GEO MMI AST2
+    post 2 03 GEO MMI AST2
+    post 4 03 GEO MMI AST2
+    post 6 03 GEO MMI AST2
+    
+if ,DES IS ZGGG, , , , , ,       
+    post 3 03 GEO MMI CTR2
+    post 5 03 GEO MMI CTR2
+    post 2 03 GEO MMI CTR2
+    post 4 03 GEO MMI CTR2
+    post 6 03 GEO MMI CTR2
+	 
+if ,DES IS ZGGG, , , , , , 
+    post 3 03 GEO MMI AST3
+    post 5 03 GEO MMI AST3
+    post 2 03 GEO MMI AST3
+    post 4 03 GEO MMI AST3
+    post 6 03 GEO MMI AST3
+    
+if ,DES IS ZGGG, , , , , ,       
+    post 3 03 GEO MMI CTR3
+    post 5 03 GEO MMI CTR3
+    post 2 03 GEO MMI CTR3
+    post 4 03 GEO MMI CTR3
+    post 6 03 GEO MMI CTR3
+
+if ,DES IS ZGGG, , , , , ,
+    post 3 03 GEO MMI AST4
+    post 5 03 GEO MMI AST4
+    post 2 03 GEO MMI AST4
+    post 4 03 GEO MMI AST4
+    post 6 03 GEO MMI AST4
+
+if ,DES IS ZGGG, , , , , ,
+    post 3 03 GEO MMI CTR4
+    post 5 03 GEO MMI CTR4
+    post 2 03 GEO MMI CTR4
+    post 4 03 GEO MMI CTR4
+    post 6 03 GEO MMI CTR4
+
+NON if ,,,,,,,
+	NULL
+    
+
+/TEPID/
+if DEP is ZGHZ,,,,,,,
+    post 1 01 GEO MMI AP04
+    post 2 01 GEO MMI AP04
+    post 3 01 GEO MMI AP04 
+    post 4 01 GEO MMI AP04
+    post 5 01 GEO MMI AP04
+    post 6 01 GEO MMI AP04
+
+if DEP is ZGHZ,,,,,,,
+    post 1 05 GEO STP AP04
+    post 2 05 GEO STP AP04
+    post 3 05 GEO STP AP04
+    post 4 05 GEO STP AP04
+    post 5 05 GEO STP AP04
+    post 6 05 GEO STP AP04
+
+if DEP is ZGHZ,,,,,,,
+    post 1 01 GEO MMI AMAN
+    post 2 01 GEO MMI AMAN
+    post 3 01 GEO MMI AMAN 
+    post 4 01 GEO MMI AMAN
+    post 5 01 GEO MMI AMAN
+    post 6 01 GEO MMI AMAN
+
+if DEP is ZGHZ,,,,,,,
+    post 1 01 GEO MMI AP08
+    post 2 01 GEO MMI AP08
+    post 3 01 GEO MMI AP08
+    post 4 01 GEO MMI AP08
+    post 5 01 GEO MMI AP08
+    post 6 01 GEO MMI AP08
+
+if DEP is ZGHZ,,,,,,,
+    post 1 03 GEO STP AP08
+    post 2 03 GEO STP AP08
+    post 3 03 GEO STP AP08
+    post 4 03 GEO STP AP08
+    post 5 03 GEO STP AP08
+    post 6 03 GEO STP AP08
+
+if DEP is ZGHZ,,,,,,,
+    post 1 01 GEO MMI AM
+    post 2 01 GEO MMI AM
+    post 3 01 GEO MMI AM
+    post 4 01 GEO MMI AM
+    post 5 01 GEO MMI AM
+    post 6 01 GEO MMI AM
+
+if DEP is ZGHZ,,,,,,,
+    post 1 03 GEO STP AM
+    post 2 03 GEO STP AM
+    post 3 03 GEO STP AM
+    post 4 03 GEO STP AM
+    post 5 03 GEO STP AM
+    post 6 03 GEO STP AM
+

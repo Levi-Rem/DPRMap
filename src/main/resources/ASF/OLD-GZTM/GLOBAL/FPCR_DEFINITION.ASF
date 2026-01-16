@@ -1,0 +1,191 @@
+--
+--           FILE :  FPCR_DEFINITION.ASF
+--
+--  CREATION DATE :  August 4, 2003
+--  BY            :  YAN ZHONG
+--  VERSION       :  ISIM_01
+--
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|----------------------------------
+--     ISIM_01  | 4/08/03 | Z. YAN      | NESACC GUANGZHOU SIM PLATFORM
+--	2.3.3	| 1/11/04 | K Grose     | 3 FPCF areas defined
+--      2.3.4   | 8/11/04 | Fairweather | FPCF_ATD REQUIRED airports commented out, FPCF_VERT_HIGH set to Y S0900-1950
+--      2.3.4   |17/11/04 | K Wan       | updated for SAT3
+--
+--
+--
+/POINTS/
+--
+--START OF FIR
+--
+VTMA1 | 222630N1122933E |
+VTMA2 | 230413N1122914E |
+VTMA3 | 232433N1123202E |
+VTMA4 | 233818N1122544E |
+VTMA6 | 233852N1141951E |
+VTMA7 | 225412N1140358E |
+VTMA8 | 224747N1132733E |
+VTMA9 | 223739N1131945E |
+VTM10 | 222612N1130000E |
+MUBEL | 241218N1111636E |
+VAC32 | 251659N1112050E |
+VAC33 | 255647N1134202E |
+OSIKA | 225112N1103224E |
+BIGRO | 213412N1114948E |
+GBL   | 230525N1135112E |
+--BEMAG | 260000N1140000E |
+YIN   | 241224N1132436E |
+GRUPA | 205044N1155659E |
+DABER | 240848N1165100E |
+PH    | 232148N1132218E |
+SIKOU | 205036N1113000E |
+
+NW    | 260000N1100000E |
+NE    | 260000N1170000E |
+SE    | 210000N1170000E |
+SW    | 210000N1100000E |
+
+VFIR1 | 222507N1144458E |
+VFIR2 | 211820N1125954E |
+
+KG1   | 260000N1132000E |
+KG2   | 260000N1140000E |
+KG3   | 260000N1160000E |
+KG4   | 210000N1132000E |
+KG5   | 210000N1140000E |
+KG6   | 210000N1160000E |
+
+KG7   | 234400N1130000E |
+KG8   | 234400N1133600E |
+KG9   | 230000N1130000E |
+KG10  | 230000N1133600E |
+
+
+--
+--
+--
+/ARCS/
+--
+--
+/RHUMB_LINES/
+--
+--
+/MTCD/
+
+--
+--BEIJING SECTORS
+--
+
+/FPCA01/
+--
+SMOOTHING | TRUE
+--
+--
+-- Levels	| Limit points, arcs & rhumb lines defining area
+------------+---------------------------------------------------
+S0000-1950 | NW KG1 KG4 SW    
+
+-- Longitudinal time separation standards
+-- <Long_TimeX>|<Use>|<T_Tol>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Long_Others>
+
+--FPCF_LONG_T1      | Y | 300    |
+FPCF_LONG_T1   |  Y  | 300  |  0   |    |    |    | NONE
+NON_SURV             | 600  |
+
+-- Lateral distance separation standards
+-- <Lat_DistX>|<Use>|<D_Tol>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Lat_Others>
+
+FPCF_LAT_D1   | Y| 10NM |                               |NONE
+NON_SURV             | 80NM |
+
+-- Vertical separation standards
+-- <VertX>|<Use>|<V_Tol>|<Lvl_Rng>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Vert_Others>(THIS SHOULDN'T EXIST)
+
+--FPCF_VERT_LOW 	      |Y | 305M |S0000-0900 | 
+--FPCF_VERT_HIGH	      |Y | 600M |S0900-1950 | 
+--FPCF_VERT_RVSM	      |Y | 600M |S0900-1950 | W AND_NOT M
+FPCF_VERT_LOW           |  Y  | 1000FT | 100FT | S0000-0900|
+FPCF_VERT_HIGH          |  Y  | 2000FT | 100FT | S0900-1950|
+FPCF_VERT_RVSM          |  Y  | 1000FT | 100FT | S0900-1950| W
+
+
+--/FPCA02/
+-- Levels       | Limit points, arcs & rhumb lines defining area
+------------+---------------------------------------------------
+--S0000-1950 | KG1 KG2 KG5 KG4 
+
+-- Longitudinal time separation standards
+-- <Long_TimeX>|<Use>|<T_Tol>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Long_Others>
+
+--FPCF_LONG_T1      | Y | 10    |
+
+-- Lateral distance separation standards
+-- <Lat_DistX>|<Use>|<D_Tol>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Lat_Others>
+
+--FPCF_LAT_D1   | Y| 10NM |                               |NONE
+
+-- Vertical separation standards
+-- <VertX>|<Use>|<V_Tol>|<Lvl_Rng>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Vert_Others>(THIS SHOULDN'T EXIST)
+
+--FPCF_VERT_LOW         |Y | 305M |S0000-0900 |
+--FPCF_VERT_HIGH        |Y | 600M |S0900-1950 |
+--FPCF_VERT_RVSM        |Y | 600M |S0900-1950 | W AND_NOT M
+
+--/FPCA03/
+-- Levels       | Limit points, arcs & rhumb lines defining area
+------------+---------------------------------------------------
+--S0000-1950 | KG2 KG3 KG6 KG5 
+
+-- Longitudinal time separation standards
+-- <Long_TimeX>|<Use>|<T_Tol>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Long_Others>
+
+--FPCF_LONG_T1      | Y | 10    |
+
+-- Lateral distance separation standards
+-- <Lat_DistX>|<Use>|<D_Tol>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Lat_Others>
+
+--FPCF_LAT_D1   | Y| 10NM |                               |NONE
+
+-- Vertical separation standards
+-- <VertX>|<Use>|<V_Tol>|<Lvl_Rng>|<EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ><LO><EQ>|<Vert_Others>(THIS SHOULDN'T EXIST)
+
+--FPCF_VERT_LOW         |Y | 305M |S0000-0900 |
+--FPCF_VERT_HIGH        |Y | 600M |S0900-1950 |
+--FPCF_VERT_RVSM        |Y | 600M |S0900-1950 | W AND_NOT M
+
+
+/INHIBIT/ -- FPCF Inhibition Areas Definition
+-- <Inh_AreaXX>|<Active>|<Lvl_Rng>|<Point_id> ... ... <Arc_Id> ... ... <Rline_Id> ... ...-- Comment
+--FPCI01         |N       | S0000-1950 | KG7 KG8 KG10 KG9 
+
+--
+
+/FPCF_ATD_REQUIRED/ -- List of airports for which ATD is required prior to entry into FPCF database.
+--ZGGG
+--NGMK
+--NGMN
+--RPMB
+--RPMN
+--VHHH
+--VTSC
+--WSAG
+--WSAP
+--WSAR
+--WSAT
+--WSSL
+
+--
+
+/SSR_CODE/
+
+--
+
+/AIRCRAFT_TYPES/
+
+/SSR_CODE_FAMILIES/
+--
+/DEEMED_SEPARATED/
+--
+

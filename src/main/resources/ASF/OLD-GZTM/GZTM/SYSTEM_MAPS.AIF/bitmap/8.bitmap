@@ -1,0 +1,6 @@
+#define 8_width 5
+#define 8_height 5
+#define 8_x_hot 2
+#define 8_y_hot 2
+static char 8_bits[] = {
+   0x04, 0x0e, 0x1f, 0x0e, 0x04};

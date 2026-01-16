@@ -1,0 +1,24 @@
+AOLW_LOOK_AHEAD_TIME    |    100
+AOLW_WARNING_TIME   | 90
+AOLW_UPDATE_PERIOD   | 2
+AOLW_INTENSITY_THRESHOLD |2
+
+/POINTS/
+A1 |435107N0805814E|
+A2 |434152N0805814E|
+A3 |434613N0811621E|
+------------added  by  luol for  MHT_TWR-----------------------------------
+T1 |242306N1130312E|
+T2 |240314N1142118E|
+T3 |222704N1124558E|
+T4 |233719N1122007E|
+
+
+
+
+
+/AOLW_AREA_DEFINITION/
+--Name   |Status | Low_Limit | Upper_Limit | limit points (max20 )
+ADSB1 | Y        | 0300M | 1700M |  A1 A2 A3
+TEST1 | Y        | 0300M | 1700M |  T1 T2 T3 T4
+

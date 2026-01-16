@@ -1,0 +1,51 @@
+--
+--  FILE: FUNCTIONAL_SECTOR_VOLUME_LINK 
+--
+--
+-- CREATION DATE  :  Sep, 2015
+-- BY		  :  Lee FOR GUANGZHOU
+-- VERSION	  :  v5_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | NESACC Guangzhou OPS for Guangzhou FAT
+--      V2.3.1  |30/09/04 | K WAN       | updated for Guangzhou SAT
+--
+--
+--
+--Volumic Sector
+--   |FDP Category
+--   |   |Functional Sector Name
+--   |   |     |Transition Fix
+-----------------------
+--
+-- 
+VAD    | A |  AP01 |  TVAD |
+VAD    | A |  AP02 |  TVAD |
+VTMA   | A |  AP03 |  TVTMA |
+VTMA   | A |  AP04 |  TVTMA |
+VTMA   | A |  AP05 |  TVTMA |
+VAD    | A |  AP06 |  TVAD |
+VTMA   | A |  AP07 |  TVTMA |
+VTMA   | A |  AM   |  TVTMA |
+VTMA   | A |  AP08 |  TVTMA |
+VTMA   | A | GYATM |  TVTMA |
+VTMA   | A |  AMAN |  TVTMA |
+
+---------------------------------
+
+--
+VAD    | A | CTR1  | TVAD |
+VAD    | A | AST1  | TVAD |
+VAD    | A | CTR2  | TVAD |
+VAD    | A | AST2  | TVAD |
+VAD    | A | CTR3  | TVAD |
+VAD    | A | AST3  | TVAD |
+
+
+--
+--
+
+

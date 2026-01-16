@@ -1,0 +1,25 @@
+--
+--           File :  ADSB_RECEIVER.ASF - PNG ADSB
+--
+--
+-- CREATION DATE  :  August 3, 2003
+-- BY		  :  YAN ZHONG FOR GUANGZHOU
+-- VERSION	  :  ISAT_01
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--      ISAT_01 | 3/08/03 | Z YAN       | Data not applicable to NESACC
+--
+--
+--
+-- 
+--
+/RH/
+--ADS-B ronghe xinhao
+ADSB_STATION_CHARAC | 230FT | 232329N1131835E | 540NM | 131 | 132 | 22 | FALSE | TRUE | 30 | 2_1  |
+ADSB_SMON_CHARAC    | FFFFFF | 1000M | 223937N1153718E |
+SECTORS             | GYATM |
+MAX_ADSB_REPORT_CHECK_TABLE | TRUE | 20000 | 30 |
+

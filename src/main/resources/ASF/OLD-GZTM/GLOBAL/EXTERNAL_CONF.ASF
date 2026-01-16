@@ -1,0 +1,53 @@
+--
+--           FILE :  EXTERNAL_CONF.ASF
+--
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+
+--
+/FD_EX/
+--
+
+-- FD_EX_center_Id | connection |Message type | protocol | channel |EUROCAT-X addresses| EUROCAT-X service address| AIDC Addr| comment
+------------------------------------------------------------
+   EXT_1   |    X25      |     IA5      |   AFTN   |   IFH     |  ZGGGTMAX  |  ZGTMFDPX   | ZGGGTMAA    |
+------------------------------------------------------------
+
+--AIDC_1: This Address is defined for EuroCat TXD or RXD AIDC MSG to ZSHA Via AIDC Direct Line 1
+-- EXT_2   |    X25      |     IA5      |   AIDC_D |   CMA     |  ZGACADTM  |             |             |
+------------------------------------------------------------
+--AIDC_2: This Address is defined for EuroCat TXD or RXD AIDC MSG to RCTP Via AIDC Direct Line 2
+-- EXT_3   |    X25      |     IA5      |   AIDC_D |   CMB     |  ZGACRCTP  |             |             |
+------------------------------------------------------------
+--AIDC_3: This Address is defined for EuroCat TXD or RXD AIDC MSG to ZSSS Via AIDC Direct Line 3
+-- EXT_4   |    X25      |     IA5      |   AIDC_D |   CMC     |  ZGACZBAD  |             |             |
+------------------------------------------------------------
+
+--METEO: GRIB data
+   EXT_22  |    X25      |     IA5      |   METEO  |           |            |             |             |
+------------------------------------------------------------
+
+   EXT_24  |    TCPIP  |    4029_3     | FDEXM   |     ATX   | ZGTMZXZX |           |          | FIPS
+--   EXT_25  |    TCPIP  |    4029_3     | AMAN   |     ATX   | ZGTMZXZX |           |          |  
+   EXT_25  |    TCPIP  |    4029_3     | MHT_TWR |     ATX   | ZGTWZXZX |           |          |  
+   EXT_26  |    TCPIP  |    4029_3     | FDECM   |     ATX   | ZGTMZXZX |           |          |  
+   EXT_27  |    TCPIP  |    4029_3     | FDECM   |     ATX   | ZGTMZXZX |           |          |  
+--
+
+--/FDEXM_INPUT_TIMER/ 
+--period | count
+  --   20  |  5
+
+/CONNECTION_GROUP/
+ZGTW | ZGTWZXZX | ZGGGITWR  | EXT_25 | 120 | 120 |
+
+/FDEXM_MONITORING_TIMER/
+FDEXM_RECEIVING_CHECKING_PERIOD | 2
+HB_TRANSMISSION_PERIOD          | 1    
+
+
+/DEP_ARR_ORIGINATOR_ADDRESS/
+

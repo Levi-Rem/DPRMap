@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE SidRules [
+<!ELEMENT SidRules (SidRule*)>
+<!ATTLIST SidRules
+    default_sector CDATA #REQUIRED>
+<!ATTLIST SidRule
+    exit_point CDATA #REQUIRED
+    runway CDATA #REQUIRED>
+]>
+<SidRules default_sector="EAST" >
+</SidRules>

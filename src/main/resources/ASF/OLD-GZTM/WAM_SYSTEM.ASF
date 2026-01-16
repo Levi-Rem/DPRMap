@@ -1,0 +1,15 @@
+--
+--           File :  WAM_SYSTEM.ASF
+--
+--
+--      Version | Date    | Responsible         | Comment
+----------------|---------|--------------------|----------------------------------
+--              | 091021  | K Wan              |
+--
+
+/WAMMANILA/
+WAM_SYSTEM_CHARAC| 1000FT | 303442N1035654E | 200NM | 128 | 32 | FALSE | 30 | 3.0 |
+WAM_SMON_CHARAC  | FFFF01 | 303442N1035654E   |
+SECTORS | AP05   |
+MAX_WAM_REPORT_CHECK_TABLE | TRUE |4500 | 15 |
+

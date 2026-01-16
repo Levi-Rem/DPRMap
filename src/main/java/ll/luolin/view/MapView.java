@@ -1,7 +1,6 @@
 // view/MapView.java - 修改部分
 package ll.luolin.view;
 
-import javafx.application.Platform;
 import javafx.application.Application;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
@@ -18,7 +17,7 @@ import ll.luolin.controller.NavPointController;
 import ll.luolin.model.LayerModel;
 import ll.luolin.model.MapModel;
 import ll.luolin.model.NavPointLayerModel;
-import ll.luolin.model.NavPointModel;
+import ll.luolin.model.ASFModel.NavPointModel;
 import ll.luolin.service.AutoLoadService;
 import ll.luolin.utils.LogUtils;
 

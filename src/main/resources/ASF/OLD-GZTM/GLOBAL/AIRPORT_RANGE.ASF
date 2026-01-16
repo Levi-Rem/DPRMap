@@ -1,0 +1,333 @@
+--
+--           FILE :  AIRPORT_RANGE.ASF 
+--
+--
+-- CREATION DATE  : 2015.09
+-- BY		  :  SIMON
+-- VERSION	  :   V5
+-- 
+--
+--
+--      Version | Date    | Responsible | Comment 
+----------------|---------|-------------|---------------------------------------
+--
+--
+--
+-- Data are used to calculate:
+--       1,  FDRG boundary ETO
+--       2,  Date Of Flight for each FDR
+--
+-- Airport   |  Distance  |  Comment 
+-------------|------------|-----------------------------------------------
+--   VTBD	     |   1360KM   |  SIKOU
+   VTSP	     |   2200KM   |  SIKOU
+   ZJSY	     |   373KM    |  SIKOU
+   RCTP	     |   1160KM   |  SIKOU
+   ZJHK	     |    173KM   |  SIKOU
+
+   ZGHZ	     |   200KM    |  YIN
+   ZGFS	     |   150KM    |  YIN
+   ZGGG	     |   130KM    |  YIN
+-- ZGFS	     |    200KM   |   ABVAX
+-- ZGFS	     |    200KM   |  UF
+--   ZGHZ	     |    106KM   |  UF
+--   ZGSZ	     |    173KM   |  UF
+--   ZGSD	     |   200KM    |  UF
+--   VMMC     |   173KM    |  UF
+   ZGLD	     |    0KM     |  AM
+   WBKK	     |    1826KM  |    BEKOL
+   PGSN	     |   3826KM   |   BEKOL
+   YPDN	     |   4186KM   |     BEKOL
+   RPLC	     |   1040KM   |    BEKOL
+   RPLB	     |   1160KM   |    BEKOL
+--  ZJSY	     |    373KM   |   BEKOL
+   RPLI	     |    773KM   |    BEKOL
+   YMML	     |   6800KM   |    BEKOL
+   WSAP	     |   4293KM   |    BEKOL
+--   VTSP	     |   2386KM   |    BEKOL
+   YSSY	     |   7013KM   |    BEKOL
+   RPLL	     |   1120KM   |    BEKOL
+   VDPP	     |   1573KM   |    BEKOL
+   ABBN	     |   7240KM   |    BEKOL
+   YBBN	     |    7240KM  |    BEKOL
+   ASSY	     |   8133KM   |   BEKOL
+   WSSL	     |   2480KM   |    BEKOL
+   WIII	     |    3413KM  |     BEKOL
+   WIMM	     |    3533KM  |    BEKOL
+   WMKK	     |    2653KM  |     BEKOL
+   WMKP	     |    2493KM  |     BEKOL
+   VBSB	     |    1853KM  |     BEKOL
+   VVTS	     |    1586KM  |    BEKOL
+--   VBSB	     |    1853KM  |    BEKOL
+   WSSS	     |    2560KM  |     BEKOL
+   VHHH	     |     106KM  |     BEKOL
+   RPMM	     |    1346KM  |     BEKOL
+--   VTBD	     |    1746KM  |     BEKOL
+   CYYZ	     |   10986KM  |     BEMAG
+   KJFK	     |    11493KM |      BEMAG
+   ZBXG	     |    1600KM  |     BEMAG
+  -- RKSI	     |     2240KM |      BEMAG
+   ZBXJ	     |    1706KM  |    BEMAG
+   ZHKF	     |     1066KM |     BEMAG
+--   LIMC	     |     9320KM |     BEMAG
+   ZYAS	     |    2400KM  |      BEMAG
+   ZSJG	     |     1400KM |     BEMAG
+   ZBSJ	     |     1320KM |     BEMAG
+   ZBNY	     |     1440KM |     BEMAG
+   ZYJL	     |    2386KM  |    BEMAG
+   ZYQQ	     |    2653KM  |    BEMAG
+   UWLW	     |     9106KM |     BEMAG
+   ZBDT	     |     1786KM |     BEMAG
+   ZBHH	     |    1626KM  |    BEMAG
+   ZBSH	     |     1840KM |     BEMAG
+   ZHLY	     |    1080KM  |    BEMAG
+   ZSFY	     |    1053KM  |     BEMAG
+   ZBCZ	     |    1093KM  |    BEMAG
+   KSFO	     |    10773KM |     BEMAG
+   ZHWT	     |    520KM   |   BEMAG
+   ZHXF	     |    733KM   |    BEMAG
+   KEWR	     |	11986KM   |    BEMAG
+   KLAX	     |	11333KM   |     BEMAG
+--   KEWR	     |	11986KM   |    BEMAG
+   KORD	     |	11426KM   |    BEMAG
+   PANC	     |    7306KM  |    BEMAG
+   UUEE	     |    6613KM  |    BEMAG
+   CYVR	     |    9546KM  |    BEMAG
+   UIII	     |    3146KM  |    BEMAG
+   UNNT	     |    4146KM  |    BEMAG
+   UNNN	     |    6320KM  |    BEMAG
+   ZKPY      |    2386KM  |    BEMAG
+   UIBB	     |    3613KM  |    BEMAG
+
+   UHHH	     |    3373KM  |    BEMAG
+   ZYTX	     |    2266KM  |    BEMAG
+   ZYCC	     |    2480KM  |    BEMAG
+   ZYHB	     |    2626KM  |    BEMAG
+   ZBTJ	     |    1520KM  |     BEMAG
+   ZBAA	     |    1546KM  |     BEMAG
+--   ZYTL	     |    1960KM  |    BEMAG
+   ZHNY	     |    800KM   |   BEMAG
+   ZHCC	     |    933KM   |    BEMAG
+   ZBYN	     |    1253KM  |    BEMAG
+   ZHHH	     |    533KM   |    BEMAG
+   ZHSS	     |    626KM   |    BEMAG
+   ZHYC	     |    573KM   |   BEMAG
+   ZGHA	     |    253KM   |   BEMAG
+   ZGCD	     |    413KM   |    BEMAG
+   ZGDY	     |    533KM   |    BEMAG
+--   VTBD	     |    1386KM  |     BIGRO
+   ZPLJ	     |    800KM   |    BIGRO
+--   ZJHK	     |    293KM   |    BIGRO
+--   ZGNN	     |    440KM   |    BIGRO
+   ZGPT	     |    453KM   |    BIGRO
+--   ZGBH	     |    280KM   |    BIGRO
+--  ZJSY	     |    480KM   |   BIGRO
+--   ZGZJ	     |    160KM   |   BIGRO
+   ZGYJ	     |    53KM    |    BIGRO
+--   ELLX	     |    8933KM  |     BIPOP
+--   EHAM	     |    8506KM  |     BIPOP
+--   LFPG	     |    9600KM  |     BIPOP
+--   ZPLJ	     |    1120KM  |     BIPOP
+   VOMM	     |    3200KM  |     BIPOP
+   OIII	     |    7266KM  |     BIPOP
+   OTBH	     |    4800KM  |     BIPOP
+   ZGWZ	     |     26KM   |     BIPOP
+   ZPMS	     |    1186KM  |     BIPOP
+   ZUXC	     |    1133KM  |     BIPOP
+ --  LIMC	     |    8466KM  |     BIPOP
+--  EDDF	     |    8786KM  |     BIPOP
+--   EGSS	     |    10560KM |      BIPOP
+   LTBA	     |    8133KM  |     BIPOP
+--   LSZH	     |    8200KM  |     BIPOP
+--   LIRF	     |    8040KM  |     BIPOP
+   OKBK	     |    6160KM  |     BIPOP
+   OMAA	     |    5453KM  |	BIPOP
+   OBBI	     |    5226KM  |	BIPOP
+   OMSJ	     |    5173KM  |	BIPOP
+   OOMS	     |    4973KM  |	BIPOP
+   OMDB	     |    5173KM  |	BIPOP
+   VIDP	     |    3240KM  |     BIPOP
+   OERK	     |    6053KM  |	BIPOP
+   OPKC	     |    4453KM  |	BIPOP
+   VGZR	     |    2066KM  |      BIPOP
+   VNKT	     |    2773KM  |      BIPOP
+   VABB	     |    3466KM  |	BIPOP
+   ZGZH	     |    240KM   |    BIPOP
+   ZPPP	     |    813KM   |    BIPOP
+-- ZGZH	     |    240KM   |    BIPOP
+
+-- ZGWZ	     |    0KM	  |  KD
+   RJFF	     |    1680KM  |	PLT
+   ZSWX	     |    986KM   |    PLT
+--  RJFF     |    1680KM  |	PLT
+   ZSWU	     |    800KM   |    PLT
+   RKTN	     |    2400KM  |    PLT
+   ZSSZ	     |    933KM   |    PLT
+-- RKTN	     |    2400KM  |	PLT
+   ZSZS	     |    853KM   |    PLT
+   RKSI	     |    2400KM   |    PLT
+   ZYDD	     |    2386KM   |    PLT
+   ZSJU	     |     546KM   |    PLT
+   ZSAQ	     |    626KM   |    PLT
+   ZSLY	     |    1106KM   |    PLT
+   ZYQD	     |    1586KM   |    PLT
+
+   ZSCN	     |     360KM   |    PLT
+   ZSYW	     |     626KM  |	PLT
+   RJNN	     |    2666KM  |	PLT
+   RJSS	     |    3160KM  |	PLT
+   UHWW	     |    3306KM  |    PLT
+   RKSS	     |    2173KM  |    PLT
+   RJAA	     |    2666KM  |     PLT
+   RJBB	     |     2186KM  |	PLT
+   ZYTL	     |     1900KM  |    PLT
+   RKPC	     |     2253KM  |     PLT
+   RKPK	    |     2253KM  |    PLT
+   ZSWF	    |     1466KM  |    PLT
+   ZSWH	    |     1653KM  |   PLT
+   ZSYT	    |     1733KM  |   PLT
+   ZSJN	    |     1213KM  |   PLT
+   ZSLG	     |    1120KM  |   PLT
+   ZSQD	     |    1440KM  |    PLT
+   ZSCG	    |     946KM   |   PLT
+   ZSNT	    |     946KM   |   PLT
+   ZSXZ	    |     946KM   |   PLT
+   ZSNB	     |    800KM   |   PLT
+   ZSNJ	     |    866KM   |   PLT
+   ZSYN	    |    1186KM   |   PLT
+   ZSPD	     |    906KM   |   PLT
+   ZSHC	     |    706KM   |   PLT
+--   ZSPD	     |    906KM   |   PLT
+   ZSSS	     |    826KM     |   PLT
+   ZSTX	     |    546KM     |   PLT
+   ZSOF	     |    693KM     |   PLT
+--   ZSFZ	     |    893KM   |    PLT
+   ZSJJ	     |    426KM     |   PLT
+   ZSWY	     |    400KM     |   PLT
+   ZSJD	     |    493KM     |   PLT
+
+   EDDK	    |    8266KM     |   MUBEL
+   ZUTR	     |    466KM     |   MUBEL
+   ZUNC	     |    853KM     |   MUBEL
+   LIMC	    |    8906KM     |   MUBEL
+   ZUWX	     |    800KM     |   MUBEL
+--   UNNT	     |    4213KM   |    MUBEL
+   EFHK	     |    6800KM    |   MUBEL
+   UTTT	     |    4493KM    |   MUBEL
+   EDMM	     |    7866KM    |   MUBEL
+   ZGLG	     |    266KM     |   MUBEL
+   OPRN	     |    4600KM    |   MUBEL
+   ZUMY	     |    1066KM    |   MUBEL
+   EDDM	     |    8053KM    |   MUBEL
+   ZLXY	     |    1173KM    |   MUBEL
+   ZULP	     |    880KM     |   MUBEL
+   ZULZ	     |    760KM     |   MUBEL
+   EBBR	     |    8920KM    |   MUBEL
+   UAAA	     |    10253KM   |   MUBEL
+   UWWW	     |    10253KM   |   MUBEL
+   ZUYB	     |      826KM   |   MUBEL
+   LSZH	     |     8440KM   |   MUBEL
+   EGSS	     |    9800KM    |   MUBEL
+   ELLX	     |    8626KM    |   MUBEL
+   EDDF	     |    8013KM    |   MUBEL
+   LFPG	     |    8373KM    |   MUBEL
+   EGLL	     |    8266KM    |   MUBEL
+   ZWWW	     |    3053KM    |   MUBEL
+   LLBG	     |    8026KM    |   MUBEL
+   EHAM	     |    8106KM    |   MUBEL
+   ZUGU	     |    1320KM    |   MUBEL
+   ZLIC	     |    1560KM    |   MUBEL
+   ZLLL	     |    1586KM    |   MUBEL
+   ZUCK	     |    720KM     |   MUBEL
+   ZUUU	     |    986KM     |   MUBEL
+   ZLXN	     |    1733KM    |   MUBEL
+   LIRF	     |    8506KM    |   MUBEL
+   ZGKL	     |    160KM     |   MUBEL
+   ZUGY	     |    493KM     |   MUBEL
+--   ZUCK	     |    693KM   |    NODOG
+--   ZUUU	     |    933KM   |    NODOG
+--   ZUGY	     |    480KM   |    NODOG
+--   ZGKL	     |    160KM   |    NODOG
+--   ZGNN	     |    400KM   |    NODOG
+--   ZSGZ	     |    93KM	  |  NS
+   VTBD	     |    1520KM  |    OSIKA
+   ZGBH	     |    240KM   |   OSIKA
+   VVNB	     |    520KM   |   OSIKA
+   ZGNN	     |    240KM   |   OSIKA
+
+   ZGNT	     |    133KM   |   P03
+
+-- ZGZJ	      |    146KM   |   P101
+
+   ZSLQ	      |    813KM   |     P154
+--   ZSPD   |    1266KM   |     P154
+   ZSQZ	      |     333KM   |     P154
+   ZSFZ	      |    493KM   |     P154
+   ZSWZ	      |    733KM   |     P154
+--   ZGOW	      |    133KM   |     P154
+   ZSAM	      |    306KM  |      P154
+--   ZSLQ     |    840KM   |     P155
+--   ZSQZ	      |    346KM   |    P155
+--   ZSNT	     |    1453KM   |    P155
+--   ZSYT	     |    1826KM  |     P155
+--   ZSAM	     |     306KM  |     P155
+--   ZYTL	     |    2066KM   |    P155
+--   ZSWY	     |     586KM   |    P155
+--   ZSYW	     |    920KM    |    P155
+--   ZSHC	     |    946KM    |    P155
+--   ZSNB	     |    1000KM   |    P155
+--   ZSQD	     |    1680KM    |   P155
+--   ZSWZ	     |     733KM    |   P155
+--   ZSPD	     |    1186KM   |    P155
+--   ZSSS	     |    1106KM   |    P155
+   ZGOW	     |     133KM   |    P155
+--   ZSFZ	     |    520KM    |    P155
+  -- RKSI	     |    2133KM    |   DOTMI
+--   PGSN	     |    2853KM    |   DOTMI
+--   ZBAA	     |    1706KM    |   DOTMI
+--   WBGG	    |     1453KM    |   DOTMI
+--   ZSLY	     |    1720KM   |    DOTMI
+--   RKTU	     |    2786KM   |    DOTMI
+--   ZSWY	     |     586KM    |   DOTMI
+--   RPLL	     |    1186KM    |   DOTMI
+--   RPMM	     |    1386KM   |    DOTMI
+--   ZSQZ	     |    400KM    |   DOTMI
+ --  RPMM	     |    1386KM    |   DOTMI
+--   NZAA	     |    386KM     |  DOTMI
+--   ZSWZ	     |    386KM    |   DOTMI
+--   ASSY	     |    7240KM   |    DOTMI
+--   YMML	     |    8133KM   |    DOTMI
+--   YSSY	     |    7013KM   |    DOTMI
+--   WNKT	     |    3013KM   |    DOTMI
+--   WSSS	    |     2600KM   |    DOTMI
+--   WMKP	    |     2613KM   |    DOTMI
+--   ZSQD	    |     1680KM   |    DOTMI
+--   ZSYT	    |     1840KM   |    DOTMI
+--   WIII	     |    3013KM   |    DOTMI
+--   ZSSS	     |    1120KM    |   DOTMI
+--   ZSNJ	     |    1120KM   |    DOTMI
+--   WMKK	    |     1653KM   |    DOTMI
+--   ZSHC	    |     946KM    |   DOTMI
+--   RPLB	    |     1120KM   |    DOTMI
+--   ZSPD	     |    1160KM   |    DOTMI
+--   ZSFZ	     |    520KM    |    DOTMI
+--   ZSNB	     |    1040KM   |    DOTMI
+--   ZGOW	    |     133KM    |   DOTMI
+--   ZSAM	    |     293KM    |   DOTMI
+--   ZSWZ	    |     600KM    |   P93
+--   ZSFZ	     |    360KM    |   P93
+--   ZSAM	     |    173KM    |   P93
+--   ZSQZ	     |    200KM    |   P93
+--   ZSLQ	     |    693KM    |   P93
+
+--   ZGYJ	     |    0KM	   |  UR
+
+--   ZGNT	     |    253KM     |   BOKAT
+   ZGUH	   |     53KM    |    BOKAT
+   ZGSZ	   |    120KM    |    BOKAT
+
+   ZGSD	   |    133KM    |  SAKOD
+   ZSGZ	   |     186KM   |   MABAG
+   ZGMX	   |     120KM   |   XEBUL
+
+   VMMC    |     173KM   |   LMN
